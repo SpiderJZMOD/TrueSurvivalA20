@@ -1,0 +1,2048 @@
+Key,English
+[35bd00]Green[-]
+[f21b10]Red[-]
+[fff700]Yellow[-]
+
+
+jz_QZSoldierRadiated,"Security Soldier"
+
+BUFF_________________________XML,BUFF_________________________XML
+jz_BuffGashDesc,"You have a large [f21b10]Gash[-]. You will need to use a [35bd00]Suture Kit[-] to stitch it closed or a [35bd00]Hot Pipe[-] to cauterize it closed. If not treated it could get worse.\n\n-8% Mobility\n-1HP per 20sec"
+jz_BuffGashStitchedUpDesc,"Should leave a nice scar but its going to need at lest a [35bd00]Bandage[-] if you don't want it to get worse.\n-4% Mobility\n-2 Wellness if not treated"
+jz_BuffGashBandagedDesc,"Your Gash is bandaged up and healing. It will need to be changed when it gets dirty\n-2% Mobility"
+jz_BuffGashDirtyBandagedDesc,"Your bandage has gotten dirty and needs changed with at lest another [35bd00]Bandage[-] soon or it could get worse\n-3% Mobility\n-1 Wellness if not treated"
+jz_BuffPuncturedDesc,"You have a deep [f21b10]Puncture Wound[-]. Your going to need a [35bd00]Sanitize Bandage[-] to clean and pack the hole\n-10% Mobility\n-1HP per 20sec\n-1 Wellness"
+jz_BuffThrobbingPainDesc,"OOww! That hurts take some [35bd00]Painkillers[-] to relieve the pain\n\n-1 Stamina every 5 sec\n+10 Core Temp"
+jz_BuffGangreneWoundDesc,"Your wound has become [f21b10]Gangrene[-]. The only option you have is to cut off the dead tissue, this will leave you permanently scared. Use a bladed weapon to cute away the [f21b10]Gangrene[-] tissue. You will then have to treat and care for the remaining wound\n\n-4 Stamina every 1 sec\n-1 Health every 10 sec\n-12% Mobility\n-1 Wellness every 1 min\n30% more Health Loss\nUntil Treated"
+jz_BuffTendingEDesc,"Your [f21b10]Sever Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another  [35bd00]Sanitizing Bandage[-] when it gets dirty so it does not get worse..\n\n-1 Stamina every 4 sec\n-6% Mobility\n12% more Health Loss"
+jz_BuffDirtyBandageEDesc,"Your [f21b10]Sever Wounds[-] bandage is dirty and starting to smell. Change it with another [35bd00]Sanitizing Bandage[-] soon or it could get worse.\n\n-2 Stamina every 1 sec\n-8% Mobility\n18% more Health Loss\nUntil Treated"
+jz_BuffTendingFDesc,"Your [f21b10]Sever Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another  [35bd00]Sanitizing Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 2 sec\n-8% Mobility\n14% more Health Loss"
+jz_BuffTendingCDesc,"Your [f21b10]Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another [35bd00]First Aid Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 8 sec\n-3% Mobility\n8% more Health Loss"
+jz_BuffDirtyBandageCDesc,"Your [f21b10]Wounds[-] bandage is dirty and starting to smell. Change it with another [35bd00]First Aid Bandage[-] soon or it could get worse\n\n-1 Stamina every 1 sec\n-6% Mobility\n14% more Health Loss\nUntil Treated"
+jz_BuffDirtyBandageFDesc,"Your [f21b10]Amputation Wounds[-] bandage is dirty and starting to smell. Change it with a [35bd00]Sanitizing Bandage[-] soon or it could get worse.\n\n-2 Stamina every 1 sec\n-10% Mobility\n20% more Health Loss\nUntil Treated"
+jz_BuffDirtyBandageBDesc,"Your [f21b10]Wounds[-] bandage is dirty and starting to smell. Change it with a [35bd00]Bandage[-] soon or it could get worse\n\n-1 Stamina every 2 sec\n-5% Mobility\n12% more Health Loss\nUntil Treated"
+jz_BuffTendingGDesc,"Your [f21b10]Amputation Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with a [35bd00]Sanitizing Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 1 sec\n-10% Mobility\n16% more Health Loss"
+jz_BuffTendingDDesc,"Your [f21b10]Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another [35bd00]First Aid Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 6 sec\n-4% Mobility\n10% more Health Loss"
+jz_BuffDirtyBandageDDesc,"Your [f21b10]Sever Wounds[-] bandage is dirty and starting to smell. Change it with a [35bd00]First Aid Bandage[-] soon or it could get worse.\n\n-1 Stamina every 1 sec\n-7% Mobility\n16% more Health Loss\nUntil Treated"
+jz_BuffAmputationWoundDesc,"You've removed all the dead flesh and now you have a [f21b10]Amputation Wound[-]. Treat it with [35bd00]Bandage[-] to stop the bleeding and be sure to change it with a [35bd00]Sanitizing Bandage[-] when it gets dirty.\n\n-3 Stamina every 1 sec\n-1 Health every 10 sec\n-15% Mobility\n-1 Wellness every 1 min\n25% more Health Loss\nUntil Treated"
+jz_BuffTendingThreeDesc,"Your [f21b10]Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another [35bd00]First Aid Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 2 sec\n-4% Mobility\n10% more Health Loss"
+jz_BuffWoundDesc,"You've gotten a [f21b10]Wound[-]. Treat it with a [35bd00]First Aid Bandage[-] and be sure to change it when it gets dirty.\n\n-1 Stamina every 1 sec\n-1 Health every 20 sec\n-8% Mobility\n-1 Wellness every 2 min\n20% more Health Loss\nUntil Treated"
+jz_BuffTendingADesc,"Your [f21b10]Small Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another [35bd00]Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 10 sec\n-1% Mobility\n4% more Health Loss"
+jz_BuffDirtyBandageADesc,"Your [f21b10]Small Wounds[-] bandage is dirty and starting to smell. Change it with another [35bd00]Bandage[-] soon or it could get worse\n\n-1 Stamina every 3 sec\n-3% Mobility\n10% more Health Loss\nUntil Treated"
+jz_BuffTendingBDesc,"Your [f21b10]Small Wound[-] is bandaged and healing. Try not to get hurt and make sure to change it with another [35bd00]Bandage[-] when it gets dirty so it does not get worse.\n\n-1 Stamina every 9 sec\n-2% Mobility\n6% more Health Loss"
+jz_BuffSevereWoundDesc,"You've gotten a [f21b10]Sever Wound[-]. Treat it with [35bd00]Sanitized Bandage[-] and be sure to change it when it gets dirty.\n\n-2 Stamina every 1 sec\n-1 Health every 15 sec\n-12% Mobility\n-1 Wellness every 1.5 min\n25% more Health Loss\nUntil Treated"
+jz_buffInjuryConcussionDesc,"You have suffered a [f21b10]Concussion[-] and may experience dizziness and headaches. You will not be able to use the iron sights on ranged weapons until its healed\nUse [35bd00]Painkillers[-] to cure this.\n\nYour max health is lowered by {cvar(.ConcussionHealthBlockage:0.0)}."
+jz_BuffSmallWoundDesc,"You've gotten a [f21b10]Small wound[-]. Treat it with a [35bd00]Bandage[-] and be sure to change it when it gets dirty.\n\n-1 Stamina every 2 sec\n-1 Health every 25 sec\n-4% Mobility\n-1 Wellness every 2.5 min\n15% more Health Loss\nUntil Treated"
+jz_buffArmBrokenDesc,"You have gotten a [f21b10]Broken Arm[-], limiting use to one handed weapons and tools and slowing your weapon handling, reload speed and swing speeds. A [35bd00]Splint[-] or cast will speed up healing.\nRanged or power attacks will delay healing or even hurt you.\n\nYour max health is lowered by {cvar(.ArmHurtHealthBlockage:0.0)}."
+jz_buffArmCastDesc,"Your arm is in a cast, limiting use to one handed weapons and tools and slowing your weapon handling, reload and swing speeds. This will take some time to heal.\nRanged or power attacks will delay healing or even hurt you. Further critical hits may result in a broken arm.\n\nYour max health is lowered by {cvar(.ArmHurtHealthBlockage:0.0)}."
+jz_buffArmSplintedDesc,"You arm is splinted, limiting use to one handed weapons and tools and slowing your weapon handling, reload and swing speeds. This will take some time to heal.\nRanged or power attacks will delay healing or even hurt you. Further critical hits may result in a broken arm.\n\nYour max health is lowered by {cvar(.ArmHurtHealthBlockage:0.0)}."
+jz_buffArmSprainedDesc,"Your arm is sprained, limiting use to one handed weapons and tools and slowing your weapon handling, reload and swing speeds. This will take some time to heal.\nRanged or power attacks will delay healing or even hurt you. Further critical hits may result in a broken arm.\n\nYour max health is lowered by {cvar(.ArmHurtHealthBlockage:0.0)}."
+jz_buffNewbieCoatDesc,"All your status effects last through death. This coat temporarily protects you from the heat and the cold and you are also protected from the full penalty of death until level 20.\nWhile your Coat is active there is no XP penalty on death but you will still lose Wellness up to a max of 10 at level 21.\n\nThis protection will decrease and disappear completely so think ahead."
+AmputationTrackerDesc,"Player Amputations {cvar($amputationCounter:00)}\n\n- +{cvar($amputationCounter:00)}% Longer to Pick Locks\n- +{cvar($amputationCounter:00)}% Longer Crafting Time\n-  -{cvar($amputationCounter:00)}% Slower Mobility"
+StimulantDesc,"You are under the effect of Stimulants. The more Stimulants you take the stronger the effect gets, with a max effect of 6 active Stimulants\n\nActive Stimulant Dosage - {cvar($stimulantCounter:0)}\n- Increased Thirst\n- Stops Fatigue drain\n- +{cvar($stimulantSpeedDisplay:00)}% Mobility\n- +{cvar($stimulantDosageDisplay:00)}% Scavenging Speed\n- +{cvar($stimulantDosageDisplay:00)}% Harvesting Amount\n- +{cvar($stimulantCounter:0)} Degrees\n- -{cvar($stimulantDownSideDisplay:0)}% Weapon Handling"
+StimulantWithdrawalDesc,"Looks like those Stimulants have a down side and your going through withdrawal. You can wait for it to pass or take some more stimulants\n\nWithdrawal Severity - Lv.{cvar($withdrawalStrength:0)}\n- Increased Fatigue drain\n- -{cvar($withdrawalSpeedDisplay:00)}% Mobility\n- -{cvar($withdrawalScavengingDisplay:00)}% Scavenging Speed\n- -{cvar($withdrawalShiver:00)} Degrees\n- -{cvar($withdrawalSpeedDisplay:0)}% Weapon Handling"
+jz_BuffInfection01GetBetterDesc,"You have a treated Z-Virus infection. Continue medication until infection is cleared up.\nGetting bite by zombies will make an infection worse."
+jz_BuffInfection01UntreatedDesc,"You have the Z-Virus infection.\nIt will get worse until treated by antibiotics.\nGetting bite by zombies will make the infection worse. If the Infection reaches 100% you will die and not be able to respawn."
+jz_BuffInfection02GetBetterDesc,"You have a treated serious infection. Continue medication and keep an eye on the wound.\nGetting hit by zombies or animals will make an infection worse.\n\nStamina Regeneration -12.5%"
+jz_BuffInfection02UntreatedDesc,"You have a serious Z-Virus infection. If left untreated it could lead to full infection which can cause permanent player death. Take antibiotics as soon as possible.\nGetting bite by zombies will make the infection worse.\n\nStamina Regeneration -25%"
+jz_BuffInfection03GetBetterDesc,"You have a treated life threatening Z-Virus infection. Continue Medication and avoid bites from the infected. If the Infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -17%"
+jz_BuffInfection03UntreatedDesc,"You have a life threatening Z-Virus infection. Take antibiotics immediately.\n\nStamina Regeneration -35%\nAll Attributes -1"
+jz_BuffInfectionCureDisplayDesc,"You have taken antibiotic medicine which will reduce the Z-Virus infection that you may be suffering. You can stack antibiotic medicines to increase duration."
+jz_BuffFatiguedDesc,"Your getting fatigued. Rest on a bed or furniture to raise your Fatigue Level back to full. Resting on Beds will also heal you.\n\n- +10% Health Loss\n- -5% Mobility Speed"
+jz_buffEncumberedInvDesc,"Moving becomes harder when you are carrying too many items in your inventory. Carry less or wear clothes with more pockets or add more pockets to your clothes.\n\nThe number is the number of items that are encumbering you."
+jz_BuffHealthyDietDesc,"Because your eating a very balanced diet you gain these benefits\n\n- Naturally healing when full\n- Able to gain Wellness from food\n- Able to gain Health from food\n- +1 Stamina Per 3 seconds\n- +10% Movement Speed"
+jz_BuffLacerationLeftFootDesc,"You have recived a deep cut on your left foot. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationLeftFootStitchedDesc,"The laceration on your left foot is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationLeftFootDirtyBandageDesc,"The laceration on your left foot needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationLeftFootTendedDesc,"The laceration on your left foot is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationRightFootDesc,"You have recived a deep cut on your right foot. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationRightFootStitchedDesc,"The laceration on your right foot is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationRightFootDirtyBandageDesc,"The laceration on your right foot needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationRightFootTendedDesc,"The laceration on your right foot is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationLeftLegDesc,"You have recived a deep cut on your left leg. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationLeftLegStitchedDesc,"The laceration on your left leg is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationLeftLegDirtyBandageDesc,"The laceration on your left leg needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationLeftLegTendedDesc,"The laceration on your left leg is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationRightLegDesc,"You have recived a deep cut on your right leg. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationRightLegStitchedDesc,"The laceration on your right leg is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationRightLegDirtyBandageDesc,"The laceration on your right leg needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationRightLegTendedDesc,"The laceration on your right leg is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationLeftArmDesc,"You have recived a deep cut on your left arm. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationLeftArmStitchedDesc,"The laceration on your left arm is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationLeftArmDirtyBandageDesc,"The laceration on your left arm needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationLeftArmTendedDesc,"The laceration on your left arm is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationRightArmDesc,"You have recived a deep cut on your right arm. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationRightArmStitchedDesc,"The laceration on your right arm is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationRightArmDirtyBandageDesc,"The laceration on your right arm needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationRightArmTendedDesc,"The laceration on your right arm is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationLeftHandDesc,"You have recived a deep cut on your left hand. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationLeftHandStitchedDesc,"The laceration on your left hand is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationLeftHandDirtyBandageDesc,"The laceration on your left hand needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationLeftHandTendedDesc,"The laceration on your left hand is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationRightHandDesc,"You have recived a deep cut on your right hand. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationRightHandStitchedDesc,"The laceration on your right hand is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationRightHandDirtyBandageDesc,"The laceration on your right hand needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationRightHandTendedDesc,"The laceration on your right hand is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationStomachDesc,"You have recived a deep cut on your stomach. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationStomachStitchedDesc,"The laceration on your stomach is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationStomachDirtyBandageDesc,"The laceration on your stomach needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationStomachTendedDesc,"The laceration on your stomach is treated. Try not to hurt it so it will heal"
+jz_BuffLacerationNeckDesc,"You have recived a deep cut on your neck. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If you dont treat it it will get infected"
+jz_BuffLacerationNeckStitchedDesc,"The laceration on your neck is treated for now but it will need a new [35bd00]Bandage[-] soon."
+jz_BuffLacerationNeckDirtyBandageDesc,"The laceration on your neck needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will get infected."
+jz_BuffLacerationNeckTendedDesc,"The laceration on your neck is treated. Try not to hurt it so it will heal"
+jz_BuffSprainedLeftAnkleDesc,"You have sprained your left ankle. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenLeftAnkleDesc,"You have broken your left ankle. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffLeftAnkleSplintedDesc,"Your left ankle is splinted and healing. Try not to hurt it while its healing"
+jz_BuffLeftAnkleCastDesc,"Your left ankle is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedRightAnkleDesc,"You have sprained your right ankle. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenRightAnkleDesc,"You have broken your right ankle. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffRightAnkleSplintedDesc,"Your right ankle is splinted and healing. Try not to hurt it while its healing"
+jz_BuffRightAnkleCastDesc,"Your right ankle is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedLeftLegDesc,"You have sprained your left leg. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenLeftLegDesc,"You have broken your left leg. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffLeftLegSplintedDesc,"Your left leg is splinted and healing. Try not to hurt it while its healing"
+jz_BuffLeftLegCastDesc,"Your left leg is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedRightLegDesc,"You have sprained your right leg. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenRightLegDesc,"You have broken your right leg. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffRightLegSplintedDesc,"Your right leg is splinted and healing. Try not to hurt it while its healing"
+jz_BuffRightLegCastDesc,"Your right leg is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedLeftArmDesc,"You have sprained your left arm. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenLeftArmDesc,"You have broken your left arm. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffLeftArmSplintedDesc,"Your left arm is splinted and healing. Try not to hurt it while its healing"
+jz_BuffLeftArmCastDesc,"Your left arm is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedRightArmDesc,"You have sprained your right arm. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenRightArmDesc,"You have broken your right arm. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffRightArmSplintedDesc,"Your right arm is splinted and healing. Try not to hurt it while its healing"
+jz_BuffRightArmCastDesc,"Your right arm is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedLeftWristDesc,"You have sprained your left wrist. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenLeftWristDesc,"You have broken your left wrist. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffLeftWristSplintedDesc,"Your left wrist is splinted and healing. Try not to hurt it while its healing"
+jz_BuffLeftWristCastDesc,"Your left wrist is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedRightWristDesc,"You have sprained your right wrist. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenRightWristDesc,"You have broken your right wrist. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffRightWristSplintedDesc,"Your right wrist is splinted and healing. Try not to hurt it while its healing"
+jz_BuffRightWristCastDesc,"Your right wrist is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedRibsDesc,"You have sprained your ribs. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenRibsDesc,"You have broken your ribs. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffRibsSplintedDesc,"Your ribs is splinted and healing. Try not to hurt it while its healing"
+jz_BuffRibsCastDesc,"Your ribs is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffSprainedNeckDesc,"You have sprained your neck. Be careful not to hurt it more or you could break it. Rest or Sleep to speed up the healing"
+jz_BuffBrokenNeckDesc,"You have broken your neck. Use a [35bd00]Splint[-] or [35bd00]Cast[-] to begin healing it. If not treated it will lead to an infection"
+jz_BuffNeckSplintedDesc,"Your neck is splinted and healing. Try not to hurt it while its healing"
+jz_BuffNeckCastDesc,"Your neck is in a cast and healing. Try not to hurt it while its healing"
+jz_BuffGashLeftFootDesc,"You recived a large gash on your left foot. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashLeftFootDesc,"The gash on your left foot is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashLeftFootDryingDesc,"The gash on your left foot is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashLeftFootNeedsBandageDesc,"The gash on your left foot is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashLeftFootTendedDesc,"The gash on your left foot is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashRightFootDesc,"You recived a large gash on your right foot. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashRightFootDesc,"The gash on your right foot is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashRightFootDryingDesc,"The gash on your right foot is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashRightFootNeedsBandageDesc,"The gash on your right foot is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashRightFootTendedDesc,"The gash on your right foot is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashLeftLegDesc,"You recived a large gash on your left leg. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashLeftLegDesc,"The gash on your left leg is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashLeftLegDryingDesc,"The gash on your left leg is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashLeftLegNeedsBandageDesc,"The gash on your left leg is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashLeftLegTendedDesc,"The gash on your left leg is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashRightLegDesc,"You recived a large gash on your right leg. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashRightLegDesc,"The gash on your right leg is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashRightLegDryingDesc,"The gash on your right leg is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashRightLegNeedsBandageDesc,"The gash on your right leg is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashRightLegTendedDesc,"The gash on your right leg is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashLeftArmDesc,"You recived a large gash on your left arm. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashLeftArmDesc,"The gash on your left arm is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashLeftArmDryingDesc,"The gash on your left arm is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashLeftArmNeedsBandageDesc,"The gash on your left arm is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashLeftArmTendedDesc,"The gash on your left arm is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashRightArmDesc,"You recived a large gash on your right arm. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashRightArmDesc,"The gash on your right arm is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashRightArmDryingDesc,"The gash on your right arm is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashRightArmNeedsBandageDesc,"The gash on your right arm is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashRightArmTendedDesc,"The gash on your right arm is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashLeftHandDesc,"You recived a large gash on your left hand. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashLeftHandDesc,"The gash on your left hand is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashLeftHandDryingDesc,"The gash on your left hand is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashLeftHandNeedsBandageDesc,"The gash on your left hand is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashLeftHandTendedDesc,"The gash on your left hand is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashRightHandDesc,"You recived a large gash on your right hand. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashRightHandDesc,"The gash on your right hand is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashRightHandDryingDesc,"The gash on your right hand is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashRightHandNeedsBandageDesc,"The gash on your right hand is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashRightHandTendedDesc,"The gash on your right hand is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashNeckDesc,"You recived a large gash on your neck. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashNeckDesc,"The gash on your neck is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashNeckDryingDesc,"The gash on your neck is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashNeckNeedsBandageDesc,"The gash on your neck is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashNeckTendedDesc,"The gash on your neck is bandaged and healing. Try not to get hurt so it will heal."
+jz_BuffGashStomachDesc,"You recived a large gash on your stomach. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to an infection"
+jz_BuffDirtyGashStomachDesc,"The gash on your stomach is dirty and needs to be cleansed. If not treated it will lead to an infection"
+jz_BuffGashStomachDryingDesc,"The gash on your stomach is clean and drying off. Once its dry it will need bandaging"
+jz_BuffGashStomachNeedsBandageDesc,"The gash on your stomach is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to an infection"
+jz_BuffGashStomachTendedDesc,"The gash on your stomach is bandaged and healing. Try not to get hurt so it will heal."
+
+jz_BuffBurnWoundDesc,"You have received a [f21b10]Burn Wound[-]. Use [35bd00]Plant Salve[-] to help heal it or it could get worse\n\n-4 Stamina per 5 seconds\n-1 HP every 30 seconds\nUntil Treated"
+
+
+
+
+
+
+
+
+
+
+
+
+
+BLOCK_________________________XML,BLOCK_________________________XML
+jz_SimpleScaffoldingBlock,"Scaffolding Block"
+jz_SimpleScaffoldingBlockDesc,"Simple scaffolding that can be picked back up when placed"
+jz_SimpleConcreteShapesBlock,"Simple Concrete Shapes" 
+jz_SimpleConcreteShapesBlockDesc,"Basic Concrete block shapes"
+jz_SimpleCobblestoneShapesBlock,"Simple Cobblestone Shapes" 
+jz_SimpleCobblestoneShapesBlockDesc,"Basic Cobblestone block shapes"
+jz_SimpleIronShapesBlock,"Simple Iron Shapes"
+jz_SimpleIronShapesBlockDesc,"Basic Iron block shapes"
+jz_SimpleWoodShapesBlock,"Simple Wood Shapes"
+jz_SimpleWoodShapesBlockDesc,"Basic Wood block shapes"
+jz_refrigeratorGroupDesc,"A modern refrigerator, its seen better days but will still do a good job of stopping perishable goods from spoiling when used for storage."
+jz_cntCoolerClosedDesc,"A well insulated Cooler that can be used to store and slow the spoiling of perishable goods."
+jz_trapSpikesIronDmg0Dec,"Iron Pipes sharpened and bolted together.\n\nRepair with Iron Pipes using a Wrench"
+jz_ZombieLoot,"Zombie Corpse"
+jz_QISatRadioStation,"Satellite Radio"
+jz_QISatRadioStationDesc,"A crudely crafted device capable of sending and receiving communications with satellites."
+jz_QIHospitalLabStation,"Tissue Testing Station"
+jz_QIHospitalLabStationDesc,"All the equipment needed to analyze tissue samples."
+jz_QIMilitarySecurityStation,"Security Card Scanner"
+jz_FlagstoneFrameBlock,Flagstone Frame Block
+jz_FlagstoneFrameBlockV,Flagstone Frame Block
+jz_FlagstoneFrameRamp,Flagstone Frame Ramp
+jz_FlagstoneFrameArch,Flagstone Frame Arch
+jz_FlagstoneFrameSlitHalf,Flagstone Frame Slit Half
+jz_FlagstoneFrameCNRFull,Flagstone Frame CNR Full
+jz_FlagstoneFrameCNRInside,Flagstone Frame CNR Inside
+jz_FlagstoneFrameCNRRampFiller,Flagstone Frame CNR Ramp Filler
+jz_FlagstoneFrameGableInvertedHalf,Flagstone Frame Gable Inverted Half
+jz_FlagstoneFrameGableInvertedQuarter,Flagstone Frame Gable Inverted Qtr
+jz_FlagstoneFrameGableInvertedSteep,Flagstone Frame Gable Inverted Steep
+jz_FlagstoneFrameGableQuarter,Flagstone Frame Gable Qtr
+jz_FlagstoneFrameHalf,Flagstone Frame Half
+jz_FlagstoneFrameQuarterCNR,Flagstone Frame Qtr CNR
+jz_FlagstoneFrameQuarterCNR3Way,Flagstone Frame Qtr CNR 3 Way
+jz_FlagstoneFrameQuarterSCtr,Flagstone Frame Qtr SCtr
+jz_FlagstoneFrameQuarterTeeSCtr,Flagstone Frame Qtr Tee SCtr
+jz_FlagstoneFrameStairs25CornerCNR,Flagstone Frame Stairs 25 Corner CNR
+jz_FlagstoneFrameWedge,Flagstone Frame Wedge
+jz_FlagstoneFrameWedgeCNRInsideBottom,Flagstone Frame Wedge CNR Inside Bottom
+jz_FlagstoneFrameWedgeCNRInsideSteepBase,Flagstone Frame Wedge CNR Inside Steep Base
+jz_FlagstoneFrameWedgeCNRInsideSteepTop,Flagstone Frame Wedge CNR Inside Steep Top
+jz_FlagstoneFrameWedgeCNRInsideTop,Flagstone Frame Wedge CNR Inside Top
+jz_FlagstoneFrameWedgeCNRSteepBase,Flagstone Frame Wedge CNR Steep Base
+jz_FlagstoneFrameWedgeCNRSteepTop,Flagstone Frame Wedge CNR Steep Top
+jz_FlagstoneFrameWedgeIncline,Flagstone Frame Wedge Incline
+jz_FlagstoneFrameWedgeStairs,Flagstone Frame Wedge Stairs
+jz_FlagstoneFrameWedgeTip,Flagstone Frame Wedge Tip
+jz_FlagstoneFrameWedgeTipCNRFullBottom,Flagstone Frame Wedge Tip CNR Full Bottom
+jz_FlagstoneFrameWedgeTipCNRFullTop,Flagstone Frame Wedge Tip CNR Full Top
+jz_FlagstoneFrameWedgeTipStairs,Flagstone Frame Wedge Tip Stairs
+jz_FlagstoneFramePillar100,Flagstone Frame Pillar100
+jz_BrickFrameBlock,Brick Frame Block
+jz_BrickFrameBlockV,Brick Frame Block
+jz_BrickFrameRamp,Brick Frame Ramp
+jz_BrickFrameArch,Brick Frame Arch
+jz_BrickFrameCNRFull,Brick Frame CNR Full
+jz_BrickFrameCNRInside,Brick Frame CNR Inside
+jz_BrickFrameCNRRampFiller,Brick Frame CNR Ramp Filler
+jz_BrickFrameGableInvertedHalf,Brick Frame Gable Inverted Half
+jz_BrickFrameGableInvertedQuarter,Brick Frame Gable Inverted Qtr
+jz_BrickFrameGableInvertedSteep,Brick Frame Gable Inverted Steep
+jz_BrickFrameGableQuarter,Brick Frame Gable Qtr
+jz_BrickFrameQuarterCNR,Brick Frame Qtr CNR
+jz_BrickFrameQuarterCNR3Way,Brick Frame Qtr CNR 3Way
+jz_BrickFrameQuarterSCtr,Brick Frame Qtr SCtr
+jz_BrickFrameQuarterTeeSCtr,Brick Frame Qtr Tee SCtr
+jz_BrickFrameStairs25CornerCNR,Brick Frame Stairs 25Corner CNR
+jz_BrickFrameWedgeCNRInsideBottom,Brick Frame Wedge CNR Inside Bottom
+jz_BrickFrameWedgeCNRInsideSteepBase,Brick Frame Wedge CNR Inside Steep Base
+jz_BrickFrameWedgeCNRInsideSteepTop,Brick Frame Wedge CNR Inside Steep Top
+jz_BrickFrameWedgeCNRInsideTop,Brick Frame Wedge CNR Inside Top
+jz_BrickFrameWedgeCNRSteepBase,Brick Frame Wedge CNR Steep Base
+jz_BrickFrameWedgeCNRSteepTop,Brick Frame Wedge CNR Steep Top
+jz_BrickFrameWedgeIncline,Brick Frame Wedge Incline
+jz_BrickFrameWedgeStairs,Brick Frame Wedge Stairs
+jz_BrickFrameWedgeTipCNRFullBottom,Brick Frame Wedge Tip CNR Full Bottom
+jz_BrickFrameWedgeTipCNRFullTop,Brick Frame Wedge Tip CNR Full Top
+jz_BrickFrameWedgeTipStairs,Brick Frame Wedge Tip Stairs
+jz_BrickFrameVariantHelper,Brick Frame Variants
+jz_SteelFrameBlock,Steel Frame Block
+jz_SteelFrameBlockV,Steel Frame Block
+jz_SteelFrameRamp,Steel Frame Ramp
+jz_SteelFrameArch,Steel Frame Arch
+jz_SteelFrameCNRFull,Steel Frame CNR Full
+jz_SteelFrameCNRInside,Steel Frame CNR Inside
+jz_SteelFrameCNRRampFiller,Steel Frame CNR Ramp Filler
+jz_SteelFrameGableInvertedHalf,Steel Frame Gable Inverted Half
+jz_SteelFrameGableInvertedQuarter,Steel Frame Gable Inverted Qtr
+jz_SteelFrameGableInvertedSteep,Steel Frame Gable Inverted Steep
+jz_SteelFrameGableQuarter,Steel Frame Gable Qtr
+jz_SteelFrameHalf,Steel Frame Half
+jz_SteelFramePillar100Cap,Steel Frame Pillar 100 Cap
+jz_SteelFrameQuarterCNR,Steel Frame Qtr CNR
+jz_SteelFrameQuarterCNR3Way,Steel Frame Qtr CNR 3Way
+jz_SteelFrameQuarterSCtr,Steel Frame Qtr SCtr
+jz_SteelFrameStairs25CornerCNR,Steel Frame Stairs 25Corner CNR
+jz_SteelFrameWedge,Steel Frame Wedge
+jz_SteelFrameWedgeCNRInsideBottom,Steel Frame Wedge CNR Inside Bottom
+jz_SteelFrameWedgeCNRInsideSteepBase,Steel Frame Wedge CNR Inside Steep Base
+jz_SteelFrameWedgeCNRInsideSteepTop,Steel Frame Wedge CNR Inside Steep Top
+jz_SteelFrameWedgeCNRInsideTop,Steel Frame Wedge CNR Inside Top
+jz_SteelFrameWedgeCNRSteepBase,Steel Frame Wedge CNR Steep Base
+jz_SteelFrameWedgeCNRSteepTop,Steel Frame Wedge CNR Steep Top
+jz_SteelFrameWedgeIncline,Steel Frame Wedge Incline
+jz_SteelFrameWedgeStairs,Steel Frame Wedge Stairs
+jz_SteelFrameWedgeTip,Steel Frame Wedge Tip
+jz_SteelFrameWedgeTipCNRFullBottom,Steel Frame Wedge Tip CNR Full Bottom
+jz_SteelFrameWedgeTipCNRFullTop,Steel Frame Wedge Tip CNR Full Top
+jz_SteelFrameWedgeTipStairs,Steel Frame Wedge Tip Stairs
+jz_SteelFrameVariantHelper,Steel Frame Variants
+jz_DryingRack,Drying Rack
+dryingRackDesc,"A simple workstation used for drying Skins, Firewood and creating Seeds from crops."
+jz_StoneMill,Stone Mill
+StoneMillDesc,"Large flat stones used to grind objects into powder."
+jz_ResearchDesk,Research Desk
+ResearchDeskDesc,"A workstation used to reverse engineer unknown crafting schematics"
+jz_SteelForge,Steel Forge
+blastFurnaceDesc,"A large forge capable of temperatures high enough to smelt Steel and create advanced glass"
+jz_MortarAndPestle,Mortar & Pestle
+MortarAndPestle1Desc,"A small stone workstation that can be placed and used to grind chemicals and medical items. It can also be used as a tool in the Chemistry Station"
+jz_FermentationBarrel,Fermentation Barrel
+jz_FermentationBarrelDesc,"A simple workstation used to ferment beer and mead."
+jz_MethaneProducer,Methane Producer
+jz_MethaneProducerDesc,"A homemade system for capturing methane from rotting material. Can refill old propane tanks to use as bombs."
+jz_ArmorTable,Armor Table
+armorTableDesc,"A workstation for crafting all types of clothing and armor.\n\nCrafted on the Workbench"
+jz_MethaneTankBomb,Methane Bomb
+jz_MethaneTankBombDesc,"A old propane tank filled with methane. Place on the ground and shoot to cause a large explosion that does no damage to blocks."
+plantedCropsGroupDesc,Plant these seeds on soil or a Farm Plot to grow crops to harvest. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water
+jz_RifleSkillTag,Unlooted Corpse
+jz_CharacterChoiceComputer,Starting Options
+jz_CharacterChoiceComputerDesc,"Immediately place on the ground and use to chose your players starting stats and knowledge"
+jz_TrapWoodenSpikeStarter,Spike Trap Starter
+setUpASpikeTrapDesc,"Place and upgrade with Sticks using a Stoneaxe to build a Spike Trap. Repair with Sticks."
+jz_StorageSack,"Storage Sack"
+jz_StorageSackDesc,"A basic storage container with no lock"
+jz_LogLarge,Large Log
+jz_LogSmall,Small Log
+jz_RebarFrameGroupDesc,"Upgrade these Frames with Cement Mix using a Concrete Sledge"
+jz_ScrapFrameGroupDesc,"Upgrade these Frames with Iron Sheet Metal using a Wrench"
+jz_WoodFrameGroupDesc,"Upgrade these Frames with Planks using a Claw Hammer"
+jz_FlagstoneFrameBlock,Flagstone Frame
+FlagstoneFrameGroupDesc,"Upgrade these Frames with Cobblestone using a Mason Hammer"
+BrickFrameGroupDesc,"Upgrade these Frames with Bricks using a Mason Hammer"
+SteelBlockGroupDesc,"Upgrade these Frames with Steel Sheet Metal using a Welding Torch"
+flagstoneBlockVariantHelper,"Flagstone Frame Variants"
+jz_BrickFrameBlock,Brick Frame
+jz_BrickFrameVariantHelper,"Brick Frame Variants"
+jz_SteelFrameBlock,Steel Frame
+jz_SteelFrameVariantHelper,"Steel Frame Variants"
+jz_GoreBlockHumanBones,"Decaying Body"
+jz_GoreBlockHumanBones2,"Decaying Body"
+jz_GoreBlockHumanBones3,"Decaying Body"
+jz_GoreBlockHumanBones4,"Decaying Body"
+jz_GoreBlockHumanBones5,"Decaying Body"
+jz_GoreBlockHumanBones6,"Decaying Body"
+jz_GoreBlockHumanBones7,"Decaying Body"
+jz_GoreBlockHumanBones8,"Decaying Body"
+jz_GoreBlockHumanBones9,"Decaying Body"
+jz_GoreBlockHumanBonesA,"Decaying Body"
+jz_GoreBlockHumanBones10,"Decaying Body"
+jz_VehiclesBulldozer,Bulldozer
+jz_VehiclesCaprise,Abandoned Vehicle
+jz_VehiclesForkLift,Fork Lift
+jz_VehiclesGarbageTruck,Garbage Truck
+jz_VehiclesHotRod,Abandoned Vehicle
+jz_VehiclesLingo,Abandoned Vehicle
+jz_VehiclesLovo,Abandoned Vehicle
+jz_VehiclesPassied,Abandoned Vehicle
+jz_VehiclesPickup,Abandoned Vehicle
+jz_VehiclesPolice,Police Car
+jz_VehiclesRedVan,Abandoned Vehicle
+jz_VehiclesRustyVan,Abandoned Vehicle
+jz_VehiclesTaxi,Taxi
+jz_VehiclesTowTruck,Tow Truck
+jz_VehiclesTractor,Tractor
+jz_VehiclesTVVan,TV Van
+jz_VehiclesWhiteCar,Abandoned Vehicle
+jz_VehiclesWreckedPassied,Abandoned Vehicle
+jz_VehiclesWreckedGreenCar,Abandoned Vehicle
+jz_VehiclesBigRigWhite,Big Rig
+jz_VehicleOpen18Wheeler,Trailer
+jz_VehiclesCementTruck,Cement Truck
+jz_VehiclesCoolerTrailer,Big Rig
+jz_VehiclesFlatBed,Flat Bed
+jz_VehiclesBigRigRed,Big Rig
+jz_VehiclesWreckedBigRigCab,Big Rig
+jz_VehiclesWreckedRigTrailer,Big Rig
+jz_VehiclesWrecked,Tanker,Tanker
+jz_DecoWaterBottle,Water Bottle
+jz_FoodChips,Chips
+jz_VehiclesTank,Tank
+jz_VehiclesTank2,Tank
+jz_VehiclesWreckedTank,Tank
+jz_VehiclesAPC,APC
+jz_VehiclesCrashedApache,Apache
+jz_VehiclesApache,Apache
+jz_VehiclesHeli,Heli
+jz_VehiclesCrashedHeli,Heli
+jz_RestingSpot,Resting Spot
+jz_RestingSpotDesc,"A basic spot to rest and heal that will not change your respawn location. Does not stop zombie spawns."
+jz_PlantedChrysanthemum1InfestedDesc,"Chrysanthemum Sprout(Infested)"
+jz_PlantedChrysanthemum1DryDesc,"Chrysanthemum Sprout(Dry)"
+jz_PlantedChrysanthemum2InfestedDesc,"Chrysanthemum(Infested)"
+jz_PlantedChrysanthemum2DryDesc,"Chrysanthemum(Dry)"
+jz_PlantedChrysanthemumFertilized1,"Fertilized Chrysanthemum(Seed)"
+jz_PlantedChrysanthemumFertilized1InfestedDesc,"Fertilized Chrysanthemum Sprout(Infested)"
+jz_PlantedChrysanthemumFertilized1DryDesc,"Fertilized Chrysanthemum Sprout(Dry)"
+jz_PlantedChrysanthemumFertilized2,"Fertilized Chrysanthemum(Growing)"
+jz_PlantedChrysanthemumFertilized2InfestedDesc,"Fertilized Chrysanthemum(Infested)"
+jz_PlantedChrysanthemumFertilized2DryDesc,"Fertilized Chrysanthemum(Dry)"
+jz_PlantedChrysanthemumFertilized3HarvestPlayerDesc,"Fertilized Chrysanthemum(Grown)"
+jz_PlantedAloe1InfestedDesc,"Aloe Sprout(Infested)"
+jz_PlantedAloe1DryDesc,"Aloe Sprout(Dry)"
+jz_PlantedAloe2InfestedDesc,"Aloe(Infested)"
+jz_PlantedAloe2Dry,"Aloe(Dry)"
+jz_PlantedAloeFertilized1,"Fertilized Aloe(Seed)"
+jz_PlantedAloeFertilized1InfestedDesc,"Fertilized Aloe Sprout(Infested)"
+jz_PlantedAloeFertilized1DryDesc,"Fertilized Aloe Sprout(Dry)"
+jz_PlantedAloeFertilized2,"Fertilized Aloe(Growing)"
+jz_PlantedAloeFertilized2InfestedDesc,"Fertilized Aloe(Infested)"
+jz_PlantedAloeFertilized2DryDesc,"Fertilized Aloe(Dry)"
+jz_PlantedAloeFertilized3HarvestPlayerDesc,"Fertilized Aloe(Grown)"
+jz_PlantedCoffee1InfestedDesc,"Coffee Sprout(Infested)"
+jz_PlantedCoffee1DryDesc,"Coffee Sprout(Dry)"
+jz_PlantedCoffee2InfestedDesc,"Coffee(Infested)"
+jz_PlantedCoffee2DryDesc,"Coffee(Dry)"
+jz_PlantedCoffeeFertilized1,"Fertilized Coffee(Seed)"
+jz_PlantedCoffeeFertilized1InfestedDesc,"Fertilized Coffee Sprout(Infested)"
+jz_PlantedCoffeeFertilized1DryDesc,"Fertilized Coffee Sprout(Dry)"
+jz_PlantedCoffeeFertilized2,"Fertilized Coffee(Growing)"
+jz_PlantedCoffeeFertilized2InfestedDesc,"Fertilized Coffee(Infested)"
+jz_PlantedCoffeeFertilized2DryDesc,"Fertilized Coffee(Dry)"
+jz_PlantedCoffeeFertilized3HarvestPlayerDesc,"Fertilized Coffee(Grown)"
+jz_PlantedCorn1InfestedDesc,"Corn Sprout(Infested)"
+jz_PlantedCorn1DryDesc,"Corn Sprout(Dry)"
+jz_PlantedCorn2InfestedDesc,"Corn(Infested)"
+jz_PlantedCorn2DryDesc,"Corn(Dry)"
+jz_PlantedCornFertilized1,"Fertilized Corn(Seed)"
+jz_PlantedCornFertilized1InfestedDesc,"Fertilized Corn Sprout(Infested)"
+jz_PlantedCornFertilized1DryDesc,"Fertilized Corn Sprout(Dry)"
+jz_PlantedCornFertilized2,"Fertilized Corn(Growing)"
+jz_PlantedCornFertilized2InfestedDesc,"Fertilized Corn(Infested)"
+jz_PlantedCornFertilized2DryDesc,"Fertilized Corn(Dry)"
+jz_PlantedCornFertilized3HarvestPlayerDesc,"Fertilized Corn(Grown)"
+jz_PlantedCotton1InfestedDesc,"Cotton Sprout(Infested)"
+jz_PlantedCotton1DryDesc,"Cotton Sprout(Dry)"
+jz_PlantedCotton2InfestedDesc,"Cotton(Infested)"
+jz_PlantedCotton2DryDesc,"Cotton(Dry)"
+jz_PlantedCottonFertilized1,"Fertilized Cotton(Seed)"
+jz_PlantedCottonFertilized1InfestedDesc,"Fertilized Cotton Sprout(Infested)"
+jz_PlantedCottonFertilized1DryDesc,"Fertilized Cotton Sprout(Dry)"
+jz_PlantedCottonFertilized2,"Fertilized Cotton(Growing)"
+jz_PlantedCottonFertilized2InfestedDesc,"Fertilized Cotton(Infested)"
+jz_PlantedCottonFertilized2DryDesc,"Fertilized Cotton(Dry)"
+jz_PlantedCottonFertilized3HarvestPlayerDesc,"Fertilized Cotton(Grown)"
+jz_PlantedGoldenrod1InfestedDesc,"Goldenrod Sprout(Infested)"
+jz_PlantedGoldenrod1DryDesc,"Goldenrod Sprout(Dry)"
+jz_PlantedGoldenrod2InfestedDesc,"Goldenrod(Infested)"
+jz_PlantedGoldenrod2DryDesc,"Goldenrod(Dry)"
+jz_PlantedGoldenrodFertilized1,"Fertilized Goldenrod(Seed)"
+jz_PlantedGoldenrodFertilized1InfestedDesc,"Fertilized Goldenrod Sprout(Infested)"
+jz_PlantedGoldenrodFertilized1DryDesc,"Fertilized Goldenrod Sprout(Dry)"
+jz_PlantedGoldenrodFertilized2,"Fertilized Goldenrod(Growing)"
+jz_PlantedGoldenrodFertilized2InfestedDesc,"Fertilized Goldenrod(Infested)"
+jz_PlantedGoldenrodFertilized2DryDesc,"Fertilized Goldenrod(Dry)"
+jz_PlantedGoldenrodFertilized3HarvestPlayerDesc,"Fertilized Goldenrod(Grown)"
+jz_PlantedHop1InfestedDesc,"Hop Sprout(Infested)"
+jz_PlantedHop1DryDesc,"Hop Sprout(Dry)"
+jz_PlantedHop2InfestedDesc,"Hop(Infested)"
+jz_PlantedHop2DryDesc,"Hop(Dry)"
+jz_PlantedHopFertilized1,"Fertilized Hop(Seed)"
+jz_PlantedHopFertilized1InfestedDesc,"Fertilized Hop Sprout(Infested)"
+jz_PlantedHopFertilized1DryDesc,"Fertilized Hop Sprout(Dry)"
+jz_PlantedHopFertilized2,"Fertilized Hop(Growing)"
+jz_PlantedHopFertilized2InfestedDesc,"Fertilized Hop(Infested)"
+jz_PlantedHopFertilized2DryDesc,"Fertilized Hop(Dry)"
+jz_PlantedHopFertilized3HarvestPlayerDesc,"Fertilized Hop(Grown)"
+jz_PlantedMushroom1InfestedDesc,"Mushroom Sprout(Infested)"
+jz_PlantedMushroom1DryDesc,"Mushroom Sprout(Dry)"
+jz_PlantedMushroom2InfestedDesc,"Mushroom(Infested)"
+jz_PlantedMushroom2DryDesc,"Mushroom(Dry)"
+jz_PlantedMushroomFertilized1,"Fertilized Mushroom(Seed)"
+jz_PlantedMushroomFertilized1InfestedDesc,"Fertilized Mushroom Sprout(Infested)"
+jz_PlantedMushroomFertilized1DryDesc,"Fertilized Mushroom Sprout(Dry)"
+jz_PlantedMushroomFertilized2,"Fertilized Mushroom(Growing)"
+jz_PlantedMushroomFertilized2InfestedDesc,"Fertilized Mushroom(Infested)"
+jz_PlantedMushroomFertilized2DryDesc,"Fertilized Mushroom(Dry)"
+jz_PlantedMushroomFertilized3HarvestPlayerDesc,"Fertilized Mushroom(Grown)"
+jz_PlantedPotato1InfestedDesc,"Potato Sprout(Infested)"
+jz_PlantedPotato1DryDesc,"Potato Sprout(Dry)"
+jz_PlantedPotato2InfestedDesc,"Potato(Infested)"
+jz_PlantedPotato2DryDesc,"Potato(Dry)"
+jz_PlantedPotatoFertilized1,"Fertilized Potato(Seed)"
+jz_PlantedPotatoFertilized1InfestedDesc,"Fertilized Potato Sprout(Infested)"
+jz_PlantedPotatoFertilized1DryDesc,"Fertilized Potato Sprout(Dry)"
+jz_PlantedPotatoFertilized2,"Fertilized Potato(Growing)"
+jz_PlantedPotatoFertilized2InfestedDesc,"Fertilized Potato(Infested)"
+jz_PlantedPotatoFertilized2DryDesc,"Fertilized Potato(Dry)"
+jz_PlantedPotatoFertilized3HarvestPlayerDesc,"Fertilized Potato(Grown)"
+jz_PlantedYucca1InfestedDesc,"Yucca Sprout(Infested)"
+jz_PlantedYucca1DryDesc,"Yucca Sprout(Dry)"
+jz_PlantedYucca2InfestedDesc,"Yucca(Infested)"
+jz_PlantedYucca2DryDesc,"Yucca(Dry)"
+jz_PlantedYuccaFertilized1,"Fertilized Yucca(Seed)"
+jz_PlantedYuccaFertilized1InfestedDesc,"Fertilized Yucca Sprout(Infested)"
+jz_PlantedYuccaFertilized1DryDesc,"Fertilized Yucca Sprout(Dry)"
+jz_PlantedYuccaFertilized2,"Fertilized Yucca(Growing)"
+jz_PlantedYuccaFertilized2InfestedDesc,"Fertilized Yucca(Infested)"
+jz_PlantedYuccaFertilized2DryDesc,"Fertilized Yucca(Dry)"
+jz_PlantedYuccaFertilized3HarvestPlayerDesc,"Fertilized Yucca(Grown)"
+jz_PlantedPumpkin1InfestedDesc,"Pumpkin Sprout(Infested)"
+jz_PlantedPumpkin1DryDesc,"Pumpkin Sprout(Dry)"
+jz_PlantedPumpkin2InfestedDesc,"Pumpkin(Infested)"
+jz_PlantedPumpkin2DryDesc,"Pumpkin(Dry)"
+jz_PlantedPumpkinFertilized1,"Fertilized Pumpkin(Seed)"
+jz_PlantedPumpkinFertilized1InfestedDesc,"Fertilized Pumpkin Sprout(Infested)"
+jz_PlantedPumpkinFertilized1DryDesc,"Fertilized Pumpkin Sprout(Dry)"
+jz_PlantedPumpkinFertilized2,"Fertilized Pumpkin(Growing)"
+jz_PlantedPumpkinFertilized2InfestedDesc,"Fertilized Pumpkin(Infested)"
+jz_PlantedPumpkinFertilized2DryDesc,"Fertilized Pumpkin(Dry)"
+jz_PlantedPumpkinFertilized3HarvestPlayerDesc,"Fertilized Pumpkin(Grown)"
+jz_PlantedBlueberry1InfestedDesc,"Blueberry Sprout(Infested)"
+jz_PlantedBlueberry1DryDesc,"Blueberry Sprout(Dry)"
+jz_PlantedBlueberry2InfestedDesc,"Blueberry(Infested)"
+jz_PlantedBlueberry2DryDesc,"Blueberry(Dry)"
+jz_PlantedBlueberryFertilized1,"Fertilized Blueberry(Seed)"
+jz_PlantedBlueberryFertilized1InfestedDesc,"Fertilized Blueberry Sprout(Infested)"
+jz_PlantedBlueberryFertilized1DryDesc,"Fertilized Blueberry Sprout(Dry)"
+jz_PlantedBlueberryFertilized2,"Fertilized Blueberry(Growing)"
+jz_PlantedBlueberryFertilized2InfestedDesc,"Fertilized Blueberry(Infested)"
+jz_PlantedBlueberryFertilized2DryDesc,"Fertilized Blueberry(Dry)"
+jz_PlantedBlueberryFertilized3HarvestPlayerDesc,"Fertilized Blueberry(Grown)"
+jz_PlantedCarrot1,"Carrot(Seed)"
+jz_PlantedCarrot1InfestedDesc,"Carrot Sprout(Infested)"
+jz_PlantedCarrot1DryDesc,"Carrot Sprout(Dry)"
+jz_PlantedCarrot2,"Carrot(Growing)"
+jz_PlantedCarrot2InfestedDesc,"Carrot(Infested)"
+jz_PlantedCarrot2DryDesc,"Carrot(Dry)"
+jz_PlantedCarrot3HarvestDesc,"Carrot(Grown)"
+jz_PlantedCarrot3HarvestPlayerDesc,"Carrot(Grown)"
+jz_PlantedCarrotFertilized1,"Fertilized Carrot(Seed)"
+jz_PlantedCarrotFertilized1InfestedDesc,"Fertilized Carrot Sprout(Infested)"
+jz_PlantedCarrotFertilized1DryDesc,"Fertilized Carrot Sprout(Dry)"
+jz_PlantedCarrotFertilized2,"Fertilized Carrot(Growing)"
+jz_PlantedCarrotFertilized2InfestedDesc,"Fertilized Carrot(Infested)"
+jz_PlantedCarrotFertilized2DryDesc,"Fertilized Carrot(Dry)"
+jz_PlantedCarrot3FertilizedHarvestPlayerDesc,"Fertilized Carrot(Grown)"
+jz_PlantedWheat1,"Wheat(Seed)"
+jz_PlantedWheat1InfestedDesc,"Wheat Sprout(Infested)"
+jz_PlantedWheat1DryDesc,"Wheat Sprout(Dry)"
+jz_PlantedWheat2,"Wheat(Growing)"
+jz_PlantedWheat2InfestedDesc,"Wheat(Infested)"
+jz_PlantedWheat2DryDesc,"Wheat(Dry)"
+jz_PlantedWheat3HarvestDesc,"Wheat(Grown)"
+jz_PlantedWheat3HarvestPlayerDesc,"Wheat(Grown)"
+jz_PlantedWheatFertilized1,"Fertilized Wheat(Seed)"
+jz_PlantedWheatFertilized1InfestedDesc,"Fertilized Wheat Sprout(Infested)"
+jz_PlantedWheatFertilized1DryDesc,"Fertilized Wheat Sprout(Dry)"
+jz_PlantedWheatFertilized2,"Fertilized Wheat(Growing)"
+jz_PlantedWheatFertilized2InfestedDesc,"Fertilized Wheat(Infested)"
+jz_PlantedWheatFertilized2DryDesc,"Fertilized Wheat(Dry)"
+jz_PlantedWheat3FertilizedHarvestPlayerDesc,"Fertilized Wheat(Grown)"
+jz_PlantedBeans1,"Beans(Seed)"
+jz_PlantedBeans1InfestedDesc,"Beans Sprout(Infested)"
+jz_PlantedBeans1DryDesc,"Beans Sprout(Dry)"
+jz_PlantedBeans2,"Beans(Growing)"
+jz_PlantedBeans2InfestedDesc,"Beans(Infested)"
+jz_PlantedBeans2DryDesc,"Beans(Dry)"
+jz_PlantedBeans3HarvestDesc,"Beans(Grown)"
+jz_PlantedBeans3HarvestPlayerDesc,"Beans(Grown)"
+jz_PlantedBeansFertilized1,"Fertilized Beans(Seed)"
+jz_PlantedBeansFertilized1InfestedDesc,"Fertilized Beans Sprout(Infested)"
+jz_PlantedBeansFertilized1DryDesc,"Fertilized Beans Sprout(Dry)"
+jz_PlantedBeansFertilized2,"Fertilized Beans(Growing)"
+jz_PlantedBeansFertilized2InfestedDesc,"Fertilized Beans(Infested)"
+jz_PlantedBeansFertilized2DryDesc,"Fertilized Beans(Dry)"
+jz_PlantedBeans3FertilizedHarvestPlayerDesc,"Fertilized Beans(Grown)"
+jz_PlantedChillis1,"Chilli(Seed)"
+jz_PlantedChillis1InfestedDesc,"Chilli Sprout(Infested)"
+jz_PlantedChillis1DryDesc,"Chilli Sprout(Dry)"
+jz_PlantedChillis2,"Chilli Plant(Growing)"
+jz_PlantedChillis2InfestedDesc,"Chilli(Infested)"
+jz_PlantedChillis2DryDesc,"Chilli(Dry)"
+jz_PlantedChillis3HarvestDesc,"Chilli(Grown)"
+jz_PlantedChillis3HarvestPlayerDesc,"Chilli(Grown)"
+jz_PlantedCucumber1,"Cucumber(Seed)"
+jz_PlantedCucumber1InfestedDesc,"Cucumber Sprout(Infested)"
+jz_PlantedCucumber1DryDesc,"Cucumber Sprout(Dry)"
+jz_PlantedCucumber2,"Cucumber Plant(Growing)"
+jz_PlantedCucumber2InfestedDesc,"Cucumber(Infested)"
+jz_PlantedCucumber2DryDesc,"Cucumber(Dry)"
+jz_PlantedCucumber3HarvestDesc,"Cucumber(Grown)"
+jz_PlantedCucumber3HarvestPlayerDesc,"Cucumber(Grown)"
+jz_PlantedEggPlant1,"Eggplant(Seed)"
+jz_PlantedEggPlant1InfestedDesc,"Eggplant Sprout(Infested)"
+jz_PlantedEggPlant1DryDesc,"Eggplant Sprout(Dry)"
+jz_PlantedEggPlant2,"Eggplant(Growing)"
+jz_PlantedEggPlant2InfestedDesc,"Eggplant(Infested)"
+jz_PlantedEggPlant2DryDesc,"Eggplant(Dry)"
+jz_PlantedEggPlant3HarvestDesc,"Eggplant(Grown)"
+jz_PlantedEggPlant3HarvestPlayerDesc,"Eggplant(Grown)"
+jz_PlantedEggPlantFertilized1,"Fertilized EggPlant(Seed)"
+jz_PlantedEggPlantFertilized1InfestedDesc,"Fertilized EggPlant Sprout(Infested)"
+jz_PlantedEggPlantFertilized1DryDesc,"Fertilized EggPlant Sprout(Dry)"
+jz_PlantedEggPlantFertilized2,"Fertilized EggPlant(Growing)"
+jz_PlantedEggPlantFertilized2InfestedDesc,"Fertilized EggPlant(Infested)"
+jz_PlantedEggPlantFertilized2DryDesc,"Fertilized EggPlant(Dry)"
+jz_PlantedEggPlant3FertilizedHarvestPlayerDesc,"Fertilized EggPlant(Grown)"
+jz_PlantedLeek1,"Leek(Seed)"
+jz_PlantedLeek1InfestedDesc,"Leek Sprout(Infested)"
+jz_PlantedLeek1DryDesc,"Leek Sprout(Dry)"
+jz_PlantedLeek2,"Leek Plant(Growing)"
+jz_PlantedLeek2InfestedDesc,"Leek(Infested)"
+jz_PlantedLeek2DryDesc,"Leek(Dry)"
+jz_PlantedLeek3HarvestDesc,"Leek(Grown)"
+jz_PlantedLeek3HarvestPlayerDesc,"Leek(Grown)"
+jz_PlantedOrange1,"Orange(Seed)"
+jz_PlantedOrangeBare,"Orange(Bare)"
+jz_PlantedOrange1DryDesc,"Orange Sprout(Dry)"
+jz_PlantedOrange2,"Orange Sapling(Growing)"
+jz_PlantedOrange2DryDesc,"Orange Sapling(Dry)"
+jz_PlantedOrange3,"Orange(Growing)"
+jz_PlantedOrange3DryDesc,"Orange(Dry)"
+jz_PlantedOrange4Desc,"Orange(Grown)"
+jz_PlantedFertilizedOrange1,"Fertilized Orange(Seed)"
+jz_PlantedFertilizedOrange1DryDesc,"Fertilized Orange Sprout(Dry)"
+jz_PlantedFertilizedOrange2,"Fertilized Orange Sapling(Growing)"
+jz_PlantedFertilizedOrange2DryDesc,"Fertilized Orange Sapling(Dry)"
+jz_PlantedFertilizedOrange3,"Fertilized Orange(Growing)"
+jz_PlantedFertilizedOrange3DryDesc,"Fertilized Orange(Dry)"
+jz_PlantedFertilizedOrange4Desc,"Fertilized Orange(Grown)"
+jz_SateliteQuestItemDesc,"Satellite Transmitter"
+jz_QIDoctorsTissueExtractorDesc,"Tissue Extractor"
+jz_QISoldierClothesDesc,"Soldiers Belongings"
+jz_QIBossSpawner,"Sonic Projector"
+jz_QIBossSpawnerDesc,"A device invented by the Military that attracts the mutant creatures for killing"
+jz_QISoldierNoteBlockDesc,"Soldiers Note"
+jz_QISoldierBodyBlockDesc,"Soldiers Body"
+jz_WorkstationImprovisedWorkbench,"Improvised Workbench"
+jz_WorkstationImprovisedWorkbenchDesc,"Used to craft primitave and improvised tools and weapons"
+jz_WorkstationPipeGunWorkbench,"Pipe Gun Workbench"
+jz_WorkstationPipeGunWorkbenchDesc,"Used to craft Pipe Guns"
+jz_WorkstationLightArmorWorkbench,"Light Armor Workbench"
+jz_WorkstationLightArmorWorkbenchDesc,"Used to craft Light Armor"
+jz_WorkstationHeavyArmorWorkbench,"Heavy Armor Workbench"
+jz_WorkstationHeavyArmorWorkbenchDesc,"Used to craft Heavy Armor"
+jz_WorkstationToolWorkbench,"Tool Workbenchs"
+jz_WorkstationToolWorkbenchDesc,"Used to craft advanced Tools and Weapons"
+jz_WorkstationElectronicWorkbench,"Electronic Workbench"
+jz_WorkstationElectronicWorkbenchDesc,"Used to craft electronic devices"
+jz_WorkstationHandgunWorkbench,"Handgun Workbench"
+jz_WorkstationHandgunWorkbenchDesc,"Used to craft Handguns"
+jz_WorkstationShotgunWorkbench,"Shotgun Workbench"
+jz_WorkstationShotgunWorkbenchDesc,"Used to craft Shotguns"
+jz_WorkstationMachineGunWorkbench,"Machine Gun Workbench"
+jz_WorkstationMachineGunWorkbenchDesc,"Machine Guns"
+jz_WorkstationRifleWorkbench,"Rifle Workbench"
+jz_WorkstationRifleWorkbenchDesc,"Used to craft Rifles"
+
+
+
+
+
+ITEM_________________________XML,ITEM_________________________XML
+
+jz_BookLockpicking,"Lock Picking"
+jz_BookLockpickingDesc,"Teaches the perk Lock Picking. Collect and read more to learn more levels"
+jz_BookInfiltrator,"Infiltrator"
+jz_BookInfiltratorDesc,"Teaches the perk Infiltrator. Collect and read more to learn more levels"
+jz_BookTreasureHunter,"Treasure Hunter"
+jz_BookTreasureHunterDesc,"Teaches the perk Treasure Hunter. Collect and read more to learn more levels"
+jz_BookSexualTrex,"Sexual T-Rex"
+jz_BookSexualTrexDesc,"Teaches the perk Sexual T-Rex. Collect and read more to learn more levels"
+jz_BookLightArmor,"Light Armor"
+jz_BookLightArmorDesc,"Teaches the perk Light Armor. Collect and read more to learn more levels"
+jz_BookHeavyArmor,"Heavy Armor"
+jz_BookHeavyArmorDesc,"Teaches the perk Heavy Armor. Collect and read more to learn more levels"
+jz_BookWellInsulated,"Well Insulated"
+jz_BookWellInsulatedDesc,"Teaches the perk Well Insulated. Collect and read more to learn more levels"
+jz_BookFlurryOfBlows,"Flurry of Blows"
+jz_BookFlurryOfBlowsDesc,"Teaches the perk Flurry of Blows. Collect and read more to learn more levels"
+jz_BookLuckyLooter,"Lucky looter"
+jz_BookLuckyLooterDesc,"Teaches the perk Lucky looter. Collect and read more to learn more levels"
+jz_BookSalvageOperations,"Salvage Operations"
+jz_BookSalvageOperationsDesc,"Teaches the perk Salvage Operations. Collect and read more to learn more levels"
+jz_BookPackMule,"Pack Mule"
+jz_BookPackMuleDesc,"Teaches the perk Pack Mule. Collect and read more to learn more levels"
+jz_BookMotherLode,"Mother Load"
+jz_BookMotherLodeDesc,"Teaches the perk Mother Load. Collect and read more to learn more levels"
+jz_BookTheHuntsman,"The Huntsman"
+jz_BookTheHuntsmanDesc,"Teaches the perk The Huntsman. Collect and read more to learn more levels"
+jz_BookPainTolerance,"Pain Tolerance"
+jz_BookPainToleranceDesc,"Teaches the perk Pain Tolerance. Collect and read more to learn more levels"
+jz_BookHealingFactor,"Healing Factor"
+jz_BookHealingFactorDesc,"Teaches the perk Healing Factor. Collect and read more to learn more levels"
+jz_BookSlowMetabolism,"Slow Metabolism"
+jz_BookSlowMetabolismDesc,"Teaches the perk Slow Metabolism. Collect and read more to learn more levels"
+jz_BookHiddenStrike,"Hidden Strike"
+jz_BookLockpHiddenStrikeDesc,"Teaches the perk Hidden Strike. Collect and read more to learn more levels"
+jz_BookFromTheShadows,"From the Shadows"
+jz_BookFromTheShadowsDesc,"Teaches the perk From the Shadows. Collect and read more to learn more levels"
+jz_BookCharismaticNature,"Charismatic Nature"
+jz_BookCharismaticNatureDesc,"Teaches the perk Charismatic Nature. Collect and read more to learn more levels"
+jz_ToolCarvingKnife,"Carving Kinfe"
+jz_ToolCarvingKnifeDesc,"Used to craft level 2 quality items on the Improvised Workbench"
+jz_ToolHandSaw,"Hand Saw"
+jz_ToolHandSawDesc,"Used to craft level 3 quality items on the Improvised Workbench"
+jz_ToolHandDrill,"Hand Drill"
+jz_ToolHandDrillDesc,"Used to craft level 4 quality items on the Improvised Workbench"
+jz_ToolWoodChisel"Wood Chisel"
+jz_ToolWoodChiselDesc,"Used to craft level 5 quality items on the Improvised Workbench"
+jz_ToolDrawBlade,"Draw Blade"
+jz_ToolDrawBladeDesc,"Used to craft level 6 quality items on the Improvised Workbench"
+jz_ToolPipeWrench,"Pipe Wrench"
+jz_ToolPipeWrenchDesc,"Used to craft level 2 quality items on the Pipe Gun Workbench"
+jz_ToolPipeSaw,"Pipe Saw"
+jz_ToolPipeSawDesc,"Used to craft level 3 quality items on the Pipe Gun Workbench"
+jz_ToolPipeVise,"Pipe Vise"
+jz_ToolPipeViseDesc,"Used to craft level 4 quality items on the Pipe Gun Workbench"
+jz_ToolAngleGrinder,"Angle Grinder"
+jz_ToolAngleGrinderDesc,"Used to craft level 5 quality items on the Pipe Gun Workbench"
+jz_ToolPropaneTorch,"Propane Torch"
+jz_ToolPropaneTorchDesc,"Used to craft level 6 quality items on the Pipe Gun Workbench"
+jz_ToolSewingNeedle," Sewing Needle"
+jz_ToolSewingNeedleDesc,"Used to craft level 2 quality items on the Light Armor Workbench"
+jz_ToolLeatherNeedle,"Leather Needle"
+jz_ToolLeatherNeedleDesc,"Used to craft level 3 quality items on the Light Armor Workbench"
+jz_ToolSmallLoom," Small Loom"
+jz_ToolSmallLoomDesc,"Used to craft level 4 quality items on the Light Armor Workbench"
+jz_ToolSewingMachine,"Sewing Machine"
+jz_ToolSewingMachineDesc,"Used to craft level 5 quality items on the Light Armor Workbench"
+jz_ToolTailorMannequin,"Tailor Mannequin"
+jz_ToolTailorMannequinDesc,"Used to craft level 6 quality items on the Light Armor Workbench"
+jz_ToolArmorerAnvil,"Armorer Anvil" 
+jz_ToolArmorerAnvilDesc,"Used to craft level 2 quality items on the Heavy Armor Workbench"
+jz_ToolPliers,"Pliers"
+jz_ToolPliersDesc,"Used to craft level 3 quality items on the Heavy Armor Workbench"
+jz_ToolMetalSnips,"Metal Snips"
+jz_ToolMetalSnipsDesc,"Used to craft level 4 quality items on the Heavy Armor Workbench"
+jz_ToolRivetGun,"Rivet Gun"
+jz_ToolRivetGunDesc,"Used to craft level 5 quality items on the Heavy Armor Workbench"
+jz_ToolOxyacetyleneTorch,"Oxyacetylene Torch"
+jz_ToolOxyacetyleneTorchDesc,"Used to craft level 6 quality items on the Heavy Armor Workbench"
+jz_ToolMeasuringTape,"Measuring Tape"
+jz_ToolMeasuringTapeDesc,"Used to craft level 2 quality items on the Tool Workbench"
+jz_ToolCircularSaw,"Circular Saw"
+jz_ToolCircularSawDesc,"Used to craft level 3 quality items on the Tool Workbench"
+jz_ToolSander,"Sander"
+jz_ToolSanderDesc,"Used to craft level 4 quality items on the Tool Workbench"
+jz_ToolDrill,"Drill"
+jz_ToolDrillDesc,"Used to craft level 5 quality items on the Tool Workbench"
+jz_ToolLathe,"Lathe"
+jz_ToolLatheDesc,"Used to craft level 6 quality items on the Tool Workbench"
+jz_ToolHandgunStand,"Handgun Stand"
+jz_ToolHandgunStandDesc,"Used to craft level 2 quality items on the Handgun Workbench"
+jz_ToolHandgunTorxSet,"Handgun Tool Set"
+jz_ToolHandgunTorxSetDesc,"Used to craft level 3 quality items on the Handgun Workbench"
+jz_ToolHandgunSightTool,"Handgun Sight Tool"
+jz_ToolHandgunSightToolDesc,"Used to craft level 4 quality items on the Handgun Workbench"
+jz_ToolHandgunBushingWrench,"Handgun Bushing Wrench"
+jz_ToolHandgunBushingWrenchDesc,"Used to craft level 5 quality items on the Handgun Workbench"
+jz_ToolHandgunBarrelBorer,"Handgun Barrel Borer"
+jz_ToolHandgunBarrelBorerDesc,"Used to craft level 6 quality items on the Handgun Workbench"
+jz_ToolShotgunStand,"Shotgun Stand"
+jz_ToolShotgunStandDesc,"Used to craft level 2 quality items on the Shotgun Workbench"
+jz_ToolShotgunTorxSet,"Shotgun Tool Set"
+jz_ToolShotgunTorxSetDesc,"Used to craft level 3 quality items on the Shotgun Workbench"
+jz_ToolShotgunSightTool,"Shotgun Sight Tool"
+jz_ToolShotgunSightToolDesc,"Used to craft level 4 quality items on the Shotgun Workbench"
+jz_ToolShotgunBushingWrench,"Shotgun Bushing Wrench"
+jz_ToolShotgunBushingWrenchDesc,"Used to craft level 5 quality items on the Shotgun Workbench"
+jz_ToolShotgunBarrelBorer,"Shotgun Barrel Borer"
+jz_ToolShotgunBarrelBorerDesc,"Used to craft level 6 quality items on the Shotgun Workbench"
+jz_ToolMachineGunStand,"Machine Gun Stand"
+jz_ToolMachineGunStandDesc,"Used to craft level 2 quality items on the Machine Gun Workbench"
+jz_ToolMachineGunTorxSet,"Machine Gun Tool Set"
+jz_ToolMachineGunTorxSetDesc,"Used to craft level 3 quality items on the Machine Gun Workbench"
+jz_ToolMachineGunSightTool,"Machine Gun Sight Tool"
+jz_ToolMachineGunSightToolDesc,"Used to craft level 4 quality items on the Machine Gun Workbench"
+jz_ToolMachineGunBushingWrench,"Machine Gun Bushing Wrench"
+jz_ToolMachineGunBushingWrenchDesc,"Used to craft level 5 quality items on the Machine Gun Workbench"
+jz_ToolMachineGunBarrelBorer,"Machine Gun Barrel Borer"
+jz_ToolMachineGunBarrelBorerDesc,"Used to craft level 6 quality items on the Machine Gun Workbench"
+jz_ToolRifleStand,"Rifle Stand"
+jz_ToolRifleStandDesc,"Used to craft level 2 quality items on the Rifle Workbench"
+jz_ToolRifleTorxSet,"Rifle Tool Set"
+jz_ToolRifleTorxSetDesc,"Used to craft level 3 quality items on the Rifle Workbench"
+jz_ToolRifleSightTool,"Rifle Sight Tool"
+jz_ToolRifleSightToolDesc,"Used to craft level 4 quality items on the Rifle Workbench"
+jz_ToolRifleBushingWrench,"Rifle Bushing Wrench"
+jz_ToolRifleBushingWrenchDesc,"Used to craft level 5 quality items on the Rifle Workbench"
+jz_ToolRifleBarrelBorer,"Rifle Barrel Borer"
+jz_ToolRifleBarrelBorerDesc,"Used to craft level 6 quality items on the Rifle Workbench"
+jz_ToolWireStripers,"Wire Stripers"
+jz_ToolWireStripersDesc,"Used to craft level 3 quality items on the Electronic Workbench"
+jz_ToolMagnifyingGlass,"Magnifying Glass"
+jz_ToolMagnifyingGlassDesc,"Used to craft level 4 quality items on the Electronic Workbench"
+jz_ToolSolderingIron,"Soldering Iron"
+jz_ToolSolderingIronDesc,"Used to craft level 5 quality items on the Electronic Workbench"
+jz_ToolVoltTester,"Volt Tester"
+jz_ToolVoltTesterDesc,"Used to craft level 6 quality items on the Electronic Workbench"
+jz_TraitIndoorsBook,"Homebody Trait"
+jz_TraitIndoorsBookDesc,"Teaches the Homebody Trait\nIndoor Effect :\n10% Better Weapon Handling, Faster Reloading And 10% Less Melee Stamina\nOutdoor Effect :\n10% Less Weapon Handling, Slower Reloading And 10% More Melee Stamina"
+jz_TraitOutdoorsBook,"Outdoorsy Trait"
+jz_TraitOutdoorsBookDesc,"Teaches the Outdoorsy Trait\nOutdoor Effect :\n10% Better Weapon Handling, Faster Reloading And 10% Less Melee Stamina\nIndoor Effect :\n10% Less Weapon Handling, Slower Reloading And 10% More Melee Stamina"
+jz_TraitSlowBook,"Slow Trait"
+jz_TraitSlowBookDesc,"Teaches you the Slow Trait\nEffects :\n10% Slower Movment\n10% Less Noise"
+jz_TraitFast,"Fast Trait"
+jz_TraitFastBookDesc,"Teaches you the Fast Trait\nEffects :\n10% Faster Movment\n10% More Noise"
+jz_TraitDarkBook,"Night Owl Trait"
+jz_TraitDarkBookDesc,"Teaches you the Night Owl Trait\nNight Effects :\n10% Better Weapon Handling, Faster Reload and Less Melee Stamina\nDay Effects :\n10% Less Weapon Handling, Slower Reload and More Melee Stamina"
+jz_TraitLightBook,"Early Bird Trait"
+jz_TraitLightBookDesc,"Teaches you the Early Bird Trait\nDay Effects :\n10% Better Weapon Handling, Faster Reload and Less Melee Stamina\nNight Effects :\n10% Less Weapon Handling, Slower Reload and More Melee Stamina"
+jz_TraitRestlessBook,"Restless Trait"
+jz_TraitRestlessBookDesc,"Teaches you the Restless Trait\nEffects :\n 20% Slower HP Recovery When Sleeping\n20% Faster Fatigue Recovery When Sleeping"
+jz_TraitLazyBook,"Lazy Trait"
+jz_TraitLazyBookDesc,"Teaches you the Lazy Trait\nEffects :\n20% Faster HP Recovery When Sleeping\n20% Slower Fatigue Recovery When Sleeping"
+jz_TraitSicklyBook,"Sickly Trait"
+jz_TraitSicklyBookDesc,"Teaches you the Sickly Trait\nEffects :\n10% More Chance For Illness\nIllnesses Last 10% Shorter"
+jz_TraitHealthyBook,"Healthy Trait"
+jz_TraitHealthyBookDesc,"Teaches you the Healthy Trait\nEffects :\n10% Less Chance For Illness\nIllnesses Last 10% Longer"
+jz_TraitFatBook,"Fat Trait"
+jz_TraitFatBookDesc,"Teaches you the Fat Trait\nEffects :\n10 Degrees More Weather Protection\n10% Faster Metabolism"
+jz_TraitSkinnyBook,"Skinny Trait"
+jz_TraitSkinnyBookDesc,"Teaches you the Skinny Trait\nEffects :\n10 Degrees Less Weather Protection\n10% Slower Metabolism"
+jz_TraitWeakBook,"Weak Trait"
+jz_TraitWeakBookDesc,"Teaches you the Weak Trait\nEffects :\n10 More Effect From Encumbrance\n5% More Stamina Useing Melee\n10% Slower Metabolism"
+jz_TraitStrongBook,"Strong Trait"
+jz_TraitStrongBookDesc,"Teaches you the Strong Trait\nEffects :\n10 Less Effect from Encumbrance\n5% Less Stamina Useing Melee\n10% Faster Metabolism"
+jz_HobbiesGardeningBook,"Gardening Hobby"
+jz_HobbiesGardeningBookDesc,"Teaches you the Gardening Hobby\nYou Will Learn :\nInsecticide - Potato Seed - Corn Seed - Goldenrod Seed - Chrysanthemum Seed - Egg Plant - Carrot\nEffects :\nHarvest an aditional produce from all crops"
+jz_HobbiesArcheryBook,"Archery Hobby"
+jz_HobbiesArcheryBookDesc,"Teaches you the Archery Hobby\nEffects :\n10% Faster Bow Reload\n10% Better Bow Handling\n10% Max Bow Range"
+jz_HobbiesVehiclesBook,"Gearhead Hobby"
+jz_HobbiesVehiclesBookDesc,"Teaches you the Gearhead Hobby\nYou Will Learn :\nBicycle - Small Engine - Minibike - Motorcycle\nEffects :\nX2 Crafting Speed for Vehicals"
+jz_HobbiesSportsBook,"Sports Hobby"
+jz_HobbiesSportsBookDesc,"Teaches you the Sports Hobby\nEffects :\n10% More Blunt Damage\n10% Faster Blunt Attack Speed\n10% Less Stamina Used With Blunt Weapons\n10% Faster Mobility"
+jz_HobbiesMedicalBook,"Medic Hobby"
+jz_HobbiesMedicalBookDesc,"Teaches you the Medic Hobby\nEffects :\nWounds you treat heal 10% faster"
+jz_HobbiesElectronicsBook,"Electronics Hobby"
+jz_HobbiesElectronicsBookDesc,"Teaches you the Electronics Hobby\nYou Will Learn :\nBatter Bank - Speaker - Electric Fencepost - Spot Light - Ceiling Light"
+jz_HobbiesFitnessBook,"Crossfit Hobby"
+jz_HobbiesFitnessBookDesc,"Teaches you the Crossfit Hobby\nEffects :\n20% Faster Stamina Regain\n10% More Stamina"
+jz_HobbiesSewingBook,"Sewing Hobby"
+jz_HobbiesSewingBookDesc,"Teaches you the Sewing Hobby\nYou Will Learn :\nDenim Pants - Overalls - Skirts - Tank Top - TShirt - Demin Shorts - Duster - Puffer Coat - Storage Pocket"
+jz_HobbiesDrivingBook,"Racing Hobby"
+jz_HobbiesDrivingBookDesc,"Teaches you the Racing Hobby\nEffects :\n10% Faster Driving Speed"
+jz_HobbiesBuildingBook,"Building Hobby"
+jz_HobbiesBuildingBookDesc,"Teaches you the Building Hobby\nYou Will Learn :\nFrame Shapes - Wood Shapes - Iron Shapes - Cobblestone Shapes - Concrete Shapes - Steel Shapes"
+jz_HobbiesCookingBook,"Cooking Hobby"
+jz_HobbiesCookingBookDesc,"Teaches you the Cooking Hobby\nYou Will Learn :\nCorn Bread - Meat Stew - Bacon and Eggs - Vegetable Stew - Carrot Cake - Bread - Kabob - Chili Dog"
+jz_HobbiesHunterBook,"Hunting Hobby"
+jz_HobbiesHunterBookDesc,"Teaches you the Hunting Hobby\nEffects :\n10% Faster Shotgun Reload\n10% Better Shotgun Handling\nCan Track Deer and Boar when crouched"
+jz_MedicalSalineSolution,"Saline Solution"
+jz_MedicalSalineSolutionDesc,"A mixture of distilled water and salt used in cleaning wounds"
+jz_SteelSheetMetal,"Steel Sheet Metal"
+jz_SteelSheetMetalDesc,"Thin Sheets of Steel used to craft, repair and upgrade Steel Blocks"
+jz_IronSheetMetal,"Iron Sheet Metal"
+jz_IronSheetMetalDesc"Thin Sheets of Iron used to craft, repair and upgrade Iron Blocks"
+jz_TraitChoice,"Trait Knowledge Point"
+jz_TraitChoiceDesc,"Used to purchase your starting Traits. You dont have to use all of these\n\n[f21b10]These Points will not last long, use immediately[-]"
+jz_HobbyChoice,"Hobby Knowledge Point"
+jz_HobbyChoiceDesc,"Used to purchase your starting Hobby.\n\n[f21b10]These Points will not last long, use immediately[-]"
+jz_ProfessionChoice,"Profession Knowledge Point"
+jz_ProfessionChoiceDesc,"Used to purchase your starting Profession.\n\n[f21b10]These Points will not last long, use immediately[-]"
+jz_drugHerbalAntibioticsDesc,"A crudly made pill used to slowly cure [f21b10]Medical Infections[-]"
+jz_drugAntibioticsesc,"Pre collapse pharmaceuticals that can be used to fight a [f21b10]Medical Infection[-]."
+jz_resourceSewingKitDesc,"Use to craft clothing, armor, and make modifications to them. Can also be used to poorly treat [f21b10]Lacerations[-]. Using a [35bd00]Suture Kit[-] would be better.\nUse the secondary action to treat another player."
+jz_QISoldierBody,"Soldier's Body"
+jz_QISoldierBodyDesc,"The body of the Soldier from the CDC."
+jz_QISeedLeek,"Engineered Leek Seeds"
+jz_QISeedLeekDesc,"Leek Seeds that have been genetically engineered by the CDC Doctors to create a cure to the Z-Virus. Plant these seeds in the Burnt Biome and use Burnt Spore Fertilizer crafted from Burnt Zombie Spores gathered by killing Zombies during the Bloodmoon in the Burnt Biome" 
+jz_QISeedChillis,"Engineered Chili Seeds"
+jz_QISeedChillisDesc,"Chili Seeds that have been genetically engineered by the CDC Doctors to create a cure to the Z-Virus. Plant these seeds in the Desert and use Desert Spore Fertilizer crafted from Desert Zombie Spores gathered by killing Zombies during the Bloodmoon in the Desert" 
+jz_QISeedCucumber,"Engineered Cucumber Seeds"
+jz_QISeedCucumberDesc,"Cucumber Seeds that have been genetically engineered by the CDC Doctors to create a cure to the Z-Virus. Plant these seeds in the Wasteland and use Wasteland Spore Fertilizer crafted from Wasteland Zombie Spores gathered by killing Zombies during the Bloodmoon in the Wasteland" 
+jz_QISeedSnowberry,"Engineered Snowberry Seeds"
+jz_QISeedSnowberryDesc,"Snowberry Seeds that have been genetically engineered by the CDC Doctors to create a cure to the Z-Virus. Plant these seeds in the Snow Biome and use Snow Spore Fertilizer crafted from Snow Zombie Spores gathered by killing Zombies during the Bloodmoon in the Snow Biome" 
+jz_QISeedCarrot,"Engineered Carrot Seeds"
+jz_QISeedCarrotDesc,"Carrot Seeds that have been genetically engineered by the CDC Doctors to create a cure to the Z-Virus. Plant these seeds in the Forest and use Forest Spore Fertilizer crafted from Forest Zombie Spores gathered by killing Zombies during the Bloodmoon in the Forest" 
+jz_QIBMSporesForest,"Forest Zombie Fluids"
+jz_QIBMSporesForestDesc,"Fluids gathered from killing Zombies during a Bloodmoon in the Forest"
+jz_QIFertilizerForest,"Forest Fertilizer"
+jz_QIFertilizerForestDesc,"Special Fertilizer used to help Engineered Carrot grow"
+jz_QIBMSporesDesert,"Desert Zombie Fluids"
+jz_QIBMSporesDesertDesc,"Fluids gathered from killing Zombies during a Bloodmoon in the Desert"
+jz_QIFertilizerDesert,"Desert Fertilizer"
+jz_QIFertilizerDesertDesc,"Special Fertilizer used to help Engineered Chillis grow"
+jz_QIBMSporesWasteland,"Wasteland Zombie Fluids"
+jz_QIBMSporesWastelandDesc,"Fluids gathered from killing Zombies during a Bloodmoon in the Wasteland"
+jz_QIFertilizerWasteland,"Wasteland Fertilizer"
+jz_QIFertilizerWastelandDesc,"Special Fertilizer used to help Engineered Cucumbers grow"
+jz_QIBMSporesBurnt,"Burnt Zombie Fluids"
+jz_QIBMSporesBurntDesc,"Fluids gathered from killing Zombies during a Bloodmoon in the Burnt Biome"
+jz_QIFertilizerBurnt,"Burnt Fertilizer"
+jz_QIFertilizerBurntDesc,"Special Fertilizer used to help Engineered Leeks grow"
+jz_QIBMSporesSnow,"Snow Zombie Fluids"
+jz_QIBMSporesSnowDesc,"Fluids gathered from killing Zombies during a Bloodmoon in the Snow Biome"
+jz_QIFertilizerSnow,"Snow Fertilizer"
+jz_QIFertilizerSnowDesc,"Special Fertilizer used to help Engineered Snowberrys grow"
+jz_QISoldierNote,"Soldiers Note"
+jz_QISoldierNoteDesc,"A note left by the soldier you came to find. There is a small drawn map and it says he has the CDC files."
+jz_QICDCFiles,"CDC Files"
+jz_QICDCFilesDesc,"All the information and research that the CDC had gathered on the event and the virus."
+jz_QIReadCDCFiles,"Read CDC Files,"
+jz_QIReadCDCFilesDesc,"All the information and research that the CDC had gathered on the event and the virus."
+jz_QIZAntiVirus,"Z Virus Cure"
+jz_QIZAntiVirusDesc,"A possible cure created from the information gathered by the CDC. Theres only enough for one dose."
+jz_QILeek,"Engineered Leeks"
+jz_QILeekDesc,"A genetically engineered leek altered to produce anti vials for the Z-Virus."
+jz_QICucmber,"Engineered Cucumbers"
+jz_QICucmberDesc,"A genetically engineered leek altered to produce anti vials for the Z-Virus."
+jz_QIChilli,"Engineered Chillis"
+jz_QIChilliDesc,"A genetically engineered leek altered to produce anti vials for the Z-Virus."
+jz_QISnowberry,"Engineered Snowberrys"
+jz_QISnowberryDesc,"A genetically engineered leek altered to produce anti vials for the Z-Virus."
+jz_QICarrot,"Engineered Carrots"
+jz_QICarrotDesc,"A genetically engineered leek altered to produce anti vials for the Z-Virus."
+jz_QIBioKit,"Engineered Seed Packs"
+jz_QIBioKitDesc,"A pack of genetically engineered seeds altered to produce anti vials for the Z-Virus."
+jz_EmptyGun,"Empty Gun"
+jz_SchematicDrawBridge,"Draw Bridge Crafting Guide"
+jz_SchematicBulletproofGlass,"Bulletproof Glass Crafting Guide"
+jz_SchematicCarBattery,"Car Battery Crafting Guide"
+jz_SchematicSolarbank,"Solar Bank Crafting Guide"
+jz_SchematicDoors,"Large Door Crafting Guide"
+jz_SchematicSmallEngine,"Small Engine Crafting Guide"
+jz_meleeToolPickT2SteelPickaxeDesc,"The Steel Pickaxe is the best at breaking any hard surface including steel.\n\nRepair with a Forged Steel."
+jz_meleeToolAxeT1IronFireaxeDesc,"The Iron Fireaxe is good for harvesting wood and breaking wooden objects.\n\nRepair with a Sharpening Stone"
+jz_SchematicIronSpikes,"Iron Spikes Crafting Guide"
+jz_SchematicBearStew,"Bear Stew Crafting Guide"
+jz_SchematicWheatSeed,"Wheat Seed Crafting Guide"
+jz_SchematicOrangeSeed,"Orange Seed Crafting Guide"
+jz_resourceClayLumpDesc,"Clay Soil or Loam is a key resource for forging and farming and can be harvested from the top soil of nearly every biome. It is also used in creating Molds for use in forges."
+jz_meleeWpnClubT0WoodenClubDesc,"A makeshift club good for breaking knees and skulls.\n\nScrap to Sticks"
+jz_armorLeatherGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\n\nRepair with a Leather.\nScrap to Leather"
+jz_SpoiledDrink,"Spoiled Drink"
+jz_SpoiledDrinkDesc,"A crafted drink that has spoiled. Click Open to separate the Dirty Water from the Jar."
+jz_SchematicFertilizer,"Fertilizer Crafting Guide"
+jz_TissueExtractorSpear,"Tissue Extractor Spear"
+jz_TissueExtractorSpearDesc,"By attaching the Tissue Extractor to a spear it should give you a better reach for collecting samples. This item will only work at night during a bloodmoon and only until you collect all your samples for the quest.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_FoodPorkBelly,"Pork Belly"
+meleeWpnKnucklesT1IronKnuckles,"Brass Knuckles"
+jz_SchematicIronArrows,"Iron Arrow Crafting Guide"
+jz_SchematicShotgunShell,"Shotgun Shell Crafting Guide"
+jz_Schematic762MM,"762MM Crafting Guide"
+jz_Schematic44MM,"44MM Crafting Guide"
+jz_Schematic9MM,"9MM Crafting Guide"
+jz_SchematicGlue,"Glue Crafting Guide"
+jz_SchematicSteelShaping,"Steel Shaping Guide"
+jz_SchematicIronShaping,"Iron Shaping Guide"
+jz_SchematicNutAndBolt,"Nut and Bolt Crafting Guide"
+jz_SchematicNails,"Nails Crafting Guide"
+jz_SchematicMethaneProducer,"Methane Producer Crafting Guide"
+jz_SchematicSteelForge,"Steel Forge Crafting Guide"
+jz_SchematicSteelSafe,"Steel Safe Crafting Guide"
+jz_SchematicWoodenChest,"Storage Box Crafting Guide"
+jz_SchematicSteelDoors,"Steel Doors Crafting Guide"
+jz_SchematicIronDoors,"Iron Doors Crafting Guide"
+jz_SchematicWoodenDoors,"Wooden Doors Crafting Guide"
+jz_drugPainkillersDesc,"Painkillers help you shrug off stunns and relieve [35bd00]Throbbing Pain[-]. They will also lower your Wellness by 1 and make you thirsty so take with caution" 
+jz_drinkJarEmptyDesc,"An empty glass jar can be used to make refreshing drinks or to craft other recipes.\n\nThe secretes to its reproduction have been lost to the dead and it can only be found scavenging"
+jz_resourceDuctTapeDesc,"Duct tape is useful for making many things & according to Madmole MacDyver a must have resource for making the cooler stuff.\n\nThe secretes to its reproduction have been lost to the dead and it can only be found scavenging\nScrap to Adhesives"
+jz_ScrapSteel,"Scrap Steel"
+jz_smallEngineDesc,"A working engine for a small vehicle or generator.\n\nRepair with Scavenged Parts"
+jz_EmptyPropaneTank,"Propane Tank(Empty)"
+jz_EmptyPropaneTankDesc,"A old empty propane tank that can be refilled for other uses in the Methane Producer"
+jz_DeadIsDeadResetItem,"Dead is Dead Reset Item"
+jz_DeadIsDeadResetItemDesc,"[f21b10]Warning!!!!Warning!!!!Warning!!!![-]\n\nUsing this item will reset your player to level one and erase all of your players progress. You will respawn as a new player and start from scratch like new. This can not be undone!\n[f21b10]Warning!!!!Warning!!!!Warning!!!![-]"
+resourceFertilizer,"Fertilizer"
+jz_Crowbar,"Crowbar"
+jz_CrowbarDesc,"Not sure what to do with this. ideas?"
+jz_ProfessionPage,"Profession Page"
+professionPageDesc,"With enough of these you can craft a new Profession Skill Book."
+jz_FoodVenisonTenderloin,"Venison Tenderloin"
+venisonDesc,"A fine cut of tender meat from the back of a Deer that takes a experienced hand to retrieve." 
+jz_FoodBearFlank,"Bear Flank"
+bearMeatDesc,"A hearty chunk of meat carved from the tender belly of a Bear that takes a experienced hand to retrieve." 
+jz_FoodBearStew,"Bear Stew"
+meatStewDesc,"A hearty stew with large chucks of delicious Bear meat."
+jz_FoodOrange,"Orange"
+OrangeDesc,"A juicy Orange."
+jz_FoodCarrot,"Carrot"
+carrotDesc,"A healthy crisp Carrot"
+jz_FoodLeek,"Leek"
+jz_FoodEggPlant,"Egg Plant"
+jz_FoodEggPlantDesc,"A large fresh Egg Plant."
+jz_FoodCarrotCake,"Carrot Cake"
+carrotCakeDesc,"Delicious Carrot Cake"
+jz_DrinkFruitJuice,"Fruit Juice"
+fruitJuiceDesc,"A delicious blend of fruit blended in a Blender until drinkable."
+jz_DrinkVeggieJuice,"Veggie Juice"
+veggieJuiceDesc,"A delicious blend of veggies blended in a Blender until drinkable."
+jz_FoodShamSandwich,"Sham Sandwich"
+jz_SandwichDesc,"A yummy sandwich"
+jz_FoodBrainShnitzel,"Brain Shnitzel"
+brainShnitzelDesc,"A great use of left over Protein turned into a lovely gravy. Yumm..."
+jz_VenomSack,"Venom Sack"
+venomSackDesc,"A plump Venom Sack full of venom from a venomous animal. Can be used to craft [35bd00]Anti-Venom[-]."
+jz_PoliceBaton,"Police Baton"
+jz_FoodGrubs,"Grubs"
+grubsDesc,"Plump wiggly Grubs not exactly delicious but should fill your belly for now\n\nSoldiers have become accustomed to these things and do not receive any negative effects from eating raw"
+jz_FoodFlour,"Flour"
+jz_FoodBread,"Bread"
+jz_meleeWpnBladeT3MacheteDesc,"Great for chopping zombies and sometimes trees and gutting animals for meat.\n\n\nRepair with Machete Parts"
+jz_QISateliteRadioStationDesc,"A radio frequency used to communicate using satellites."
+jz_QI887Frequency,"8.87GHz"
+jz_QI934Frequency,"9.34GHz"
+jz_QI1065Frequency,"10.65GHz"
+jz_QI865Frequency,"8.65GHz"
+jz_QI9885Frequency,"98.85GHz"
+jz_QI1079Frequency,"10.79GHz"
+jz_QITissueExtractor,"Tissue Extractor"
+jz_QITissueExtractorDesc,"A medical device used to gather living tissue samples.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIMutatedTissueSample,"Infected Tissue Sample"
+jz_QIMutatedTissueSampleDesc,"A nasty clump of flesh from an Infected. It smells terrible and is still slightly throbbing.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIMutatedTissueReport,"Tissue Analysis Report" 
+jz_QIMutatedTissueReportDesc,"A scientifically detailed report on the Infected Samples.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIMutatedFungusSample,"Fungus Sample"
+jz_QIMutatedFungusSampleDesc,"A spongy fungus that appears to be growing on the plants in the area.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIMutatedFungusReport,"Fungus Analysis Report"
+jz_QIMutatedFungusReportDesc,"A scientifically detailed report on the Fungus Samples.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIMutatedTissueSample2,"Mutated Tissue Sample"
+jz_QIMutatedTissueSample2Desc,"A nasty clump of flesh from a mutated creature. It smells terrible and is still slightly throbbing.\n\n\n[fff700]Quest item, do not lose![-]"
+resourceDoorKnob,"Key Lock"
+resourceDoorKnobDesc,"A working key locking mechanism. Can be used to craft secure Doors and Storage containers.
+resourceElectronicParts,"Computer Parts"
+jz_meleeWpnSledgeT0StoneSledgehammerDesc,"The sledgehammer is one of the best weapons for cracking skulls.\n\nScraps to Small Stone"
+jz_meleeWpnSledgeT1IronSledgehammerDesc,"The sledgehammer is one of the best weapons for cracking skulls.\n\nRepair with a Forged Iron.\nScraps to Scrap Iron"
+jz_meleeWpnSledgeT3SteelSledgehammerDesc,"The sledgehammer is one of the best weapons for cracking skulls.\n\nRepair with Steel Sledgehammer Parts.\nScrap to Steel Sledgehammer Parts"
+jz_Tallow,"Tallow"
+jz_QISateliteRadio,"Satellite Radio Parts"
+jz_QISateliteRadioDesc,"Satellite receiver and transmitter parts for communication devices.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_resourceClothDesc,"Cloth is a staple for survival used for clothing, [35bd00]Bandages[-] and more. It can be harvested from many objects and crafted on the Light Armor Table with a Small Loom"
+jz_meleeWpnBladeT0BoneKnifeDesc,"This primitive makeshift weapon is also useful for gutting animals."
+jz_meleeWpnClubT1BaseballBatDesc,"This club was used in gladiatorial games of the past that were held in huge arenas.\nScraps to Sticks"
+AAAAAAAAAAAAA,Starting Instruction
+StartingInstructionsDesc,"This is where you choose your characters stats and ability's for this play through. Here you can craft Hobbies, Traits and Professions. Any combination can be chosen but these options do not stack. More Professions can be acquired by collecting Profession Pages found in loot." 
+apparelSkiGogglesDesc,"Ski Goggles pimp your look."
+apparelNerdGlassesDesc,"Wearing these nerdy looking glasses might not help your sex appeal but you get faster at crafting and gain extra XP."
+apparelShadesDesc,"Sunglasses make you look cool"
+foodSteakAndPotatoSchematic,Venison and Potato Meal Recipe
+foodSteakAndPotato,"Venison And Potato"
+apparelCigarDesc,"Look intimidating and get a better deal from traders.\nAlso acts as an apatite suppressant and slows stamina regain"
+jz_QIBugOutBag,"Bug Out Bag"
+jz_QIBugOutBagDesc,"A pre packed bag for when shit hits the fan and you have to flee in a hurry.\n\n\n[fff700]Quest item, do not lose![-]"
+foodHoney,"A Serving of Honey"
+jz_foodHoneyDesc,"Honey is one of mother nature's miracles. It gives you some energy, tastes great, and can be used to craft [35bd00]First Aid Bandage[-]."
+jz_schematicGeneralGroupDesc,"Reading the schematic will teach you how to craft this item."
+jz_SplashOfWater,Splash of Water
+jz_SplashOfWaterDesc,"Splash some water on your head to cool off for a while"jz_ProfessionFireFighterBook,The Fire Fighting Profession
+jz_FiremanProfessionDesc,"All the knowledge needed to become a Fire Fighter.\n20% Block Dmg w/Fireaxes\n+5% Max Stamina\nRecipes-[35bd00]Plant Salve[-], [35bd00]First Aid Bandage[-], Molotov Cocktail, Firemans Axe Mod"
+jz_ProfessionPoliceOfficerBook,The Police Profession
+jz_CopProfessionDesc,"All the knowledge needed to become a Police Officer.\n10% Faster Reload & better Aim w/Pistol & Magnums\nRecipes- Pistol, Gun Oil, Stun Baton, Weapon Repair Kit"
+jz_ProfessionParkRangerBook,The Park Ranger Profession
+jz_ParkRangerProfessionDesc,"All the knowledge needed to become a Park Ranger.\n20% Faster Primitive Crafting\nRecipes- Herbal Antibiotics, Spear Iron, Spear Steel"
+jz_ProfessionBouncerBook,The Bouncer Profession
+jz_BouncerProfessionDesc,"All the knowledge needed to become a Bouncer.\n10% Less Stamina w/Brawling\nRecipes- Brass Knuckles Mold, Brass Knuckles, Leather Knuckles, Beer, Mead, Grain Alcohol"
+jz_ProfessionChefBook,The Chef Profession
+jz_ChefProfessionDesc,"All the knowledge needed to become a Chef.\n20% Faster Cooking\nRecipes- All Food Recipes"
+jz_ProfessionBurglarBook,The Burglar Profession
+jz_ThiefProfessionDesc,"All the knowledge needed to become a Burglar.\n10% Faster Movement & Less Noise while Crouching\n20% Faster Looting & Pinpoint Treasure location\nRecipes- Lock Picks"
+jz_ProfessionCarpenterBook,The Carpenter Profession
+jz_CarpenterProfessionDesc,"All the knowledge needed to become a Carpenter.\n20% Faster Crafting on the Workbench and Tablesaw\nRecipes- All Wooden Frame Shapes, Planks"
+jz_ProfessionMasonBook,The Mason Profession
+jz_MasonProfessionDesc,"All the knowledge needed to become a Mason.\n20% Faster Crafting on the Cementmixer\nRecipes- All Brick and Flagstone Frame Shapes, Bricks, Cobblestone"
+jz_ProfessionSoldierBook,The Soldier Profession
+jz_SoldierProfessionDesc,"All the knowledge needed to become a Soldier.\n10% Faster Reload & better Aim w/M60 & AK47\nRecipes- Grubs, Weapon Repair Kit, Blunderbuss, Blunderbuss Ammo, AK47, Pipe Bomb, Cooking Pot Mine"
+jz_ProfessionFitnessInstructorBook,Fitness Instructor Profession
+jz_FitnessInstructorProfessionDesc,"All the knowledge needed to become a Fitness Instructor.\n10% Faster Movment\n5% Less Stamina used while running\nRecipes- Golden Rod Tea, Red Tea, Mega Crush, Wellness Juice, Vitamins"
+jz_ProfessionElectricianBook,The Electrician Profession
+jz_ElectricianProfessionDesc,"All the knowledge needed to become a Electrician.\n10% Faster Electrical Crafting\nRecipes- Generator Bank, Pressure Plate, Battery Bank, Ceiling Light, Timer Relay, Wire Relay, Motion Sensor, Speaker, Switch, Electric Fencepost, Spotlight, Stun Baton"
+jz_ProfessionMetalWorkerBook,The Metal Worker Profession
+jz_MetalWorkerProfessionDesc,"All the knowledge needed to become a Metal Worker.\n10% Faster Crafting on the Forge\nRecipes- All Scrap Iron Frame Shapes, Sheet Metal"
+jz_ProfessionMechanicBook,The Mechanic Profession
+jz_MechanicProfessionDesc,"All the knowledge needed to become a Mechanic.\n20% Faster Vehicle Crafting\nRecipes- Small Engine, Large Engine, All Vehicles"
+jz_ProfessionDoctorBook,The Doctor Profession
+jz_DoctorProfessionDesc,"All the knowledge needed to become a Doctor.\n20% Faster Medical Crafting\nRecipes-[35bd00]Plant Salve[-], [35bd00]First Aid Bandage[-], Stimulant, [35bd00]Suture Kit[-], [35bd00]AntiVenom[-], [35bd00]Painkillers[-], Steroids, [35bd00]Antibiotics[-]"
+jz_ProfessionFarmerBook,The Farmer Profession
+jz_FarmerProfessionDesc,"All the knowledge needed to become a Farmer.\n20% Faster Seed Crafting\nRecipes- All Plantable seeds"
+jz_ProfessionChemistBook,The Chemist Profession
+jz_ChemistProfessionDesc,"All the knowledge needed to become a Chemist.\n20% Faster Chemistry Crafting\nRecipes- Mega Crush, Stimulant, Acid, GunPowder, Purification Tablets"
+jz_ProfessionSoldier,Soldier Profession
+jz_ProfessionSoldierKitDesc,"All the knowledge needed to become a Soldier\nStart with a Old Rifle and ammo\n10% Faster Reload & better Aim w/M60 & AK47\nRecipes- Grubs, Weapon Repair Kit, Blunderbuss, Blunderbuss Ammo, AK47, Pipe Bomb, Cooking Pot Mine"
+jz_ProfessionDoctor,Doctor Profession
+jz_ProfessionDoctorKitDesc,"All the knowledge needed to become a Doctor.\nStart with [35bd00]Painkillers[-], Stimulants, [35bd00]Plant Salve[-] and a [35bd00]Suture Kit[-]\n20% Faster Medical Crafting\nRecipes- [35bd00]Plant Salve[-], [35bd00]First Aid Bandage[-], Stimulant, [35bd00]Suture Kit[-], [35bd00]AntiVenom[-], [35bd00]Painkillers[-], Steroids, [35bd00]Antibiotics[-]"
+jz_ProfessionBouncer,Bouncer Profession
+jz_ProfessionBouncerKitDesc,"All the knowledge needed to become a Bouncer.\nStart with Brass Knuckles\n10% Less Stamina w/Brawling\nRecipes- Brass Knuckles Mold, Brass Knuckles, Leather Knuckles, Beer, Mead, Grain Alcohol"
+jz_ProfessionChemist,Chemist Profession
+jz_ProfessionChemistKitDesc,"All the knowledge needed to become a Chemist.\nStarts with [35bd00]Painkillers[-] and Stimulants\n20% Faster Chemistry Crafting\nRecipes- Mega Crush, Stimulant, Acid, Oil Shale, GunPowder, Purification Tablets"
+jz_ProfessionCarpenter,Carpenter Profession
+jz_ProfessionCarpenterKitDesc,"All the knowledge needed to become a Carpenter.\nStarts with a Claw Hammer and Nails\n20% Faster Crafting on the Workbench and Tablesaw\nRecipes- All Wooden Frame Shapes, Planks"
+jz_ProfessionCop,Cop Profession
+jz_ProfessionCopKitDesc,"All the knowledge needed to become a Cop\nStart with a Old Revolver and ammo\n10% Faster Reload & better Aim w/Pistol & Magnums\nRecipes- Pistol, Gun Oil, Stun Baton, Weapon Repair Kit"
+jz_ProfessionChef,Chef Profession
+jz_ProfessionChefKitDesc,"All the knowledge needed to become a Chef.\nStart with a Old Knife\n20% Faster Cooking\nRecipes- All Food Recipes"
+jz_ProfessionFitnessInstructor,Fitness Instructor Profession
+jz_ProfessionFitnessInstructorKitDesc,"All the knowledge needed to become a Fitness Instructor.\nStart with a Baseball Bat\n10% Faster Movment\n5% Less Stamina used while running\nRecipes- Golden Rod Tea, Red Tea, Mega Crush, Wellness Juice, Vitamins"
+jz_ProfessionFireman,Fireman Profession
+jz_ProfessionFiremanKitDesc,"All the knowledge needed to become a Fire Fighter.\nStart with a Old Axe\n20% Block Dmg w/Fireaxes\n+5% Max Stamina\nRecipes- Aloe Cream, Medical Bandage, Molotov Cocktail, Firemans Axe Mod"
+jz_ProfessionMetalWorker,Metal Worker Profession
+jz_ProfessionMetalWorkerKitDesc,"All the knowledge needed to become a Metal Worker.\nStart with a Wrench\n10% Faster Crafting on the Forge\nRecipes- All Scrap Iron Frame Shapes, Sheet Metal"
+jz_ProfessionElectrician,Electrician Profession
+jz_ProfessionElectricianKitDesc,"All the knowledge needed to become a Electrician.\nStart with a Screwdriver\n10% Faster Electrical Crafting\nRecipes- Generator Bank, Pressure Plate, Battery Bank, Ceiling Light, Timer Relay, Wire Relay, Motion Sensor, Speaker, Switch, Electric Fencepost, Spotlight, Stun Baton"
+jz_ProfessionFarmer,Farmer Profession
+jz_ProfessionFarmerKitDesc,"All the knowledge needed to become a Farmer.\n20% Faster Seed Crafting\nRecipes- All Plantable seeds"
+jz_ProfessionThief,Burglar Profession
+jz_ProfessionThiefKitDesc,"All the knowledge needed to become a Burglar.\nStart with a Old Knife and Lock Picks\n10% Faster Movement & Less Noise while Crouching\n20% Faster Looting & Pinpoint Treasure location\nRecipes- Lock Picks"
+jz_ProfessionParkRanger,Park Ranger Profession
+jz_ProfessionParkRangerKitDesc,"All the knowledge needed to become a Park Ranger.\nStart with a Old Rifle and ammo\n20% Faster Primitive Crafting\nRecipes- Herbal Antibiotics, Spear Iron, Spear Steel"
+jz_ProfessionMechanic,Mechanic Profession
+jz_ProfessionMechanicKitDesc,"All the knowledge needed to become a Mechanic.\nStart with a Wrench\n20% Faster Vehicle Crafting\nRecipes- Small Engine, Large Engine, All Vehicles"
+jz_ProfessionMason,Mason Profession
+jz_ProfessionMasonKitDesc,"All the knowledge needed to become a Mason.\nStart with a Mason Hammer\n20% Faster Crafting on the Cementmixer\nRecipes- All Brick and Flagstone Frame Shapes, Bricks, Cobblestone"
+tatteredClothesDesc,"Threadbare clothing thats just good for not being naked. Can be scraped for Cloth"
+jz_TatteredShirt,"Tattered Shirt"
+jz_TatteredPants,"Tattered Pants"
+jz_TatteredShoes,"Tattered Shoes"
+jz_DrinkDirtyOuncesOfWater,Ounces of Dirty Water
+jz_DrinkDirtyOuncesOfWaterDesc,"This water is dirty and unsafe to drink. Doing so may cause illness. Craft a Dirty Drink of Water for better hydration.\n\nCraft and use a Old Milk Jug to collect water from the environment." 
+jz_DrinkDrityDrinkOfWater,Dirty Drink of Water
+jz_DrinkDrityDrinkOfWaterDesc,"This water is dirty and unsafe to drink. Doing so may cause illness but some time you have to roll the dice.\n\nCraft and use a Old Milk Jug to collect water from the environment."
+jz_DrinkCleanOuncesOfWater,Ounces of Clean Water
+jz_DrinkCleanOuncesOfWaterDesc,"This water is clean and safe to drink and cook with. Craft a Clean Drink of Water for better hydration.\n\nCraft and use a Old Milk Jug to collect water from the environment."
+jz_DrinkCleanDrinkOfWater,Clean Drink of Water
+jz_DrinkCleanDrinkOfWaterDesc,"Clean drink of water.\n\nCraft and use a Old Milk Jug to collect water from the environment."
+qc_ProfessionGroupDesc,Contains your Profession starting weapon
+qc_Carpenter,Carpenter Starting Tool
+qc_Cop,Cop Starting Weapon
+qc_Soldier,Soldier Starting Weapon
+qc_Bouncer,Bouncer Starting Weapon
+qc_Chef,Chef Starting Weapon
+qc_FitnessInstructor,Fitness Instructor Starting Weapon
+qc_IronWorker,Metal Worker Starting Tool
+qc_Electrician,Electrician Starting Tool
+qc_Thief,Thief Starting Weapon
+qc_ParkRanger,Park Ranger Starting Weapon
+qc_Mechanic,Mechanic Starting Tool
+qc_Fireman,Fireman Starting Weapon
+qc_Mason,Mason Starting Tool
+BasicGunPartsDesc,Simple parts that can be used to craft basic Firearms
+jz_BasicGunParts,Basic Gun Parts
+MilitaryGunPartsDesc,High grade parts that can be used to craft Advanced Firearms
+jz_MilitaryGunParts,Military Gun Parts
+oldRevolverDesc,"A old rusty Handgun thats barely able to shoot still. It's so damaged it can only use basic 9MM ammo. Theres no way to repair it but it can be used for parts"
+jz_OldRevolver,"Old Handgun"
+oldRifleDesc,"A old rusty Hunting Rifle thats barely able to shoot still. It's so damaged it can only use basic 762MM ammo.Theres no way to repair it but it can be used for parts"
+jz_OldRifle,Old Hunting Rifle
+steakKnifeDesc,A Basic Steak Knife
+jz_SteakKnife,Steak Knife
+jz_OldKnifeDesc,"A old rusty Knife, there is no repairing this thing."
+jz_OldKnife,Old Knife
+jz_ChefKnifeDesc,"A sharp Chef's knife"
+jz_ChefKnife,Chef's Knife
+OldAxeDesc,"A old rusty Axe, there is no repairing this thing."
+jz_OldAxe,Old Axe
+fryingPanDesc,"A simple iron Frying Pan. Can be used to cook with or to bash a head or two" 
+jz_FryingPan,Frying Pan
+screwdriverDesc,"A well made Screwdriver for disassembling electronics and as a tool to craft items."
+jz_Screwdriver,"Screwdriver"
+jz_ScrewdriverDesc,"Used to harvest more electronic resources when dissasimbling electronics.\n\nUsed to craft level 2 quality items on the Electronic Workbench"
+jz_MasonHammerDesc,"A Mason Hammer used for disassembling Brick and Flagstone Blocks and upgrade and repair them."
+jz_MasonHammer,Mason Hammer
+jz_ConcreteSledgeDesc,"A Concrete Sledge Hammer used for disassembling Concrete Blocks and upgrade and repair them."
+jz_ConcreteSledge,Concrete Sledge Hammer
+welderToolDesc,"A Welding tool used for disassembling Steel Blocks and upgrade and repair them."
+jz_WelderTool,Welder Tool
+jz_LargeEngine,Large Engine
+jz_LargeEngineDesc,A full size vehicle engine
+jz_SchematicLargeEngine,Engine Crafting Guild
+jz_SchematicLargeEngineDesc,"This book completely details how to assemble a vehicles engine from its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicSteelShovel,Steel Shovel Crafting Guide
+jz_SchematicSteelShovelDesc,"This book completely details how to craft and assemble a Steel Shovel and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicSteelAxe,Steel Axe Crafting Guide
+jz_SchematicSteelFireaxeDesc,"This book completely details how to craft and assemble a Steel Fireaxe and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicSteelPickaxe,Steel Pickaxe Crafting Guide
+jz_SchematicSteelPickaxeDesc,"This book completely details how to craft and assemble a Steel Pickaxe and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicClawHammer,Claw Hammer Crafting Guide
+jz_SchematicClawHammerDesc,"This book completely details how to craft and assemble a Claw Hammer and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicIronShovel,Iron Shovel Crafting Guide
+jz_SchematicIronShovelDesc,"This book completely details how to craft and assemble a Iron Shovel and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicIronFireaxe,Iron Fireaxe Crafting Guide
+jz_SchematicIronFireaxeDesc,"This book completely details how to craft and assemble a Iron Fireaxe and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicIronPickaxe,Iron Pickaxe Crafting Guide
+jz_SchematicIronPickaxeDesc,"This book completely details how to craft and assemble a Iron Pickaxe and its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_FoodSchematicDesc,"An battered old Cook Book. Looks like only one recipe is still readable. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicBrainShnitzel,Brain Schnitzel Recipe
+jz_SchematicCarrotCake,Carrot Cake Recipe
+jz_SchematicMead,Mead Recipe
+jz_SchematicBread,Bred Recipe
+jz_SchematicGlazedMeat,Glazed Meats Recipe
+jz_SchematicMeatPie,Meat Pies Recipe
+jz_SchematicKabob,Kabobs Recipe
+jz_GlassJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Broken Glass."
+jz_SteelJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Scrap Steel."
+jz_RubberJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Scrap Rubber."
+jz_MechanicalJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Mechanical Parts."
+jz_ElectricJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Electronic Parts."
+jz_TechJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Tech Parts."
+jz_PlasticJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Plastic Scraps."
+jz_ClothJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Cloth."
+jz_PaperJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Paper."
+jz_WoodJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Sticks."
+jz_StoneJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Stones."
+jz_BrassJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Scrap Brass."
+jz_LeadJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Scrap Lead."
+jz_IronJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Scrap Iron."
+jz_HoneyCombDesc,"A small piece of honeycomb dripping with honey."
+jz_HoneyComb,"Ounces of Honey"
+jz_PaperBookDesc,"An old ragged book with unreadable pages."
+jz_PaperBook,Old Book
+plankDesc,"A cut plank of wood."
+resourceWood,Plank
+ironSledgeHeadDesc,"A Sledge Hammer Head made from Iron."
+jz_SledgeHead,Iron Sledge Hammer Head
+jz_SteelOreDesc,"Raw Steel Ore. Must be processed in a Steel Forge."
+jz_SteelOre,Steel Ore
+jz_CharcoalDesc,"Dusty old bag of Grilling Charcoal."
+jz_Charcoal,Charcoal
+jz_MoldyVeggiesDesc,"Old Rotten Vegetables. Not much use but can be scraped to Compost and used in Farming."
+jz_MoldyVeggies,Moldy Veggies
+jz_MoldyFruitDesc,"Old Rotten Fruit. Not much use but can be scraped to Compost and used in Farming."
+jz_MoldyFruit,Moldy Fruit
+jz_ScrapWireDesc,"Small length of usable Copper wiring"
+jz_ScrapWire,Scrap Wire
+fireWoodDesc,"Dry cut Fire Wood treated with oils to burn much longer than normal wood."
+jz_FireWood,Fire Wood
+jz_WheatDesc,"Dry Wheat Stocks. Not edible in this form but can be ground into Flour."
+jz_Wheat,Wheat
+jz_HammerHeadDesc,"Hammer Head that can be used to craft the tool"
+jz_HammerHead,Claw Hammer Head
+jz_IronShovelHeadDesc,"Iron Shovel Head that can be used to craft the tool"
+jz_IronShovelHead,Iron Shovel Head
+jz_IronFireaxeHeadDesc,"Iron Fireaxe Head that can be used to craft the tool"
+jz_IronFireaxeHead,Iron Fireaxe Head
+jz_IronPickaxeHeadDesc,"Iron Pickaxe Head that can be used to craft the tool"
+jz_IronPickaxeHead,Iron Pickaxe Head
+jz_SmallKnifeBladeDesc,"Hunting Blade that can be used to craft the tool"
+jz_SmallKnifeBlade,HuntingKnife Blade
+jz_SharpeningStoneDesc,"A manufactured stone for sharpening blades" 
+jz_SharpeningStone,Sharpening Stone
+jz_NitroglycerinDesc,"A highly unstable liquid that is used to make high grade explosives."
+jz_Nitroglycerin,Nitroglycerin
+hoofDesc,"Freshly removed foot of a hoofed animal"
+jz_Hoof,Hoof
+CuredSinewDesc,"A animal sinew that has been processed to make it a very strong string"
+jz_CuredSinew,Cured Sinew
+boneMealDesc,"Finely ground bones"
+jz_BoneMeal,Bone Meal
+sinewDesc,"A carefully harvested tendon from a fresh dead animal."
+jz_Sinew,Sinew
+jz_AnimalBladderDesc,"A unpunctured animal bladder harvested from a fresh dead animal."
+jz_AnimalBladder,Animal Bladder
+jz_LightBulbDesc,"A un broken light buld"
+jz_LightBulb,Light Bulb
+nutAndBoltDesc,"A threaded nut and bolt that can be used to craft many things."
+jz_NutAndBolt,"Nut & Bolt"
+zincPowderDesc
+jz_ZincPowder,Zinc Powder
+fiberRopeDesc,"A cord made of natural fibers"
+jz_FiberRope,Fiber Cordage
+jz_ToolLeatherNeedleDesc,"A leather needle strong enough to pierce the toughest hide"
+jz_ToolLeatherNeedle,Leather Needle
+jz_ToolSewingNeedleDesc,"A Sharp slither of metal with a hole. Should work well for sewing"
+jz_ToolSewingNeedle,Sewing Needle
+blankSkillBookDesc,"A blank Skill Book needed to research a unknown crafting recipe."
+jz_BlankSkillBook,Blank Skill Book
+incendiaryPowderDesc,"A needed ingredient for crafting incendiary ammunition"
+jz_IncendiaryPowder,Incendiary Powder
+meltedRubberDesc,"Rubber thats been melted down to be more pliable for crafting."
+jz_MeltedRubber,Melted Rubber
+gunOilDesc,"Specialty Oil needed to clean and maintain firearms" 
+jz_GunOil,Gun Oil
+weaponRepairKitDesc,"Everything needed to clean and repair a firearm."
+jz_WeaponRepairKit,Weapon Repair Kit
+inkPenDesc,"A working ink pen needed to research a unknown crafting recipe."
+jz_InkPen,Ink Pen
+ScavengedPartsDesc,"Scavenged parts and supplies that can be used to repair vehicles."
+resourceRepairKit,"Scavenged Parts"
+jz_ScavengedParts,"Repair Kit"
+jz_RepairKitDesc,"Basic items that can be used to repair common tools and weapons."
+steelPipeDesc,"A solid steel pipe used in many crafting recipes"
+jz_SteelPipe,Steel Pipe
+jz_SkillPaperDesc,"Collect Skill Paper by scraping unneeded schematics. Combine them with a Ink Pen and Book to craft Blank Skill Books that are needed to research unknown schematics on the Research Desk."
+jz_SkillPaper,Skill Paper
+bioMassDesc,Decomposing organic rubbish that can be used in farming."
+jz_BioMass,Compost
+scrapRubberDesc,"Scraps of rubber material"
+jz_ScrapRubber,Scrap Rubber
+curedLeatherDesc,"Animal Hide that has been processed in to usable leather material. Must be dried before using."
+jz_CuredLeather,Cured Leather
+jz_BrainMatterDesc,"Chunky hunks of fresh brain matter. Ewwwwww!"
+jz_BrainMatter,Brain Matter
+jz_AnimalHideDesc,"Animal Hide freshly skinned from a dead animal. Must be processed before it decays."
+jz_AnimalHide,Animal Hide
+stickDesc,"Scrap of wood. Can be used to collect grass"
+jz_Stick,Stick
+jz_BulletPressDesc,"A machine that allows the manual assembling of ammunition."
+jz_BulletPress,Bullet Press
+jz_LabEquipmentDesc,"All the Equipment needed for complex chemical manufacturing."
+jz_LabEquipment,"Lab Equipment"
+jz_StillDesc,"A Copper Pot Still used to refine liquors."
+jz_Still,Copper Still
+jz_SmallLoomDesc,"A small loom capable of creating cloth fabric from raw cotton."
+jz_SmallLoom,Small Loom
+jz_BikeWheelsDesc,"A bike tire that is still in reasonable shape, it should still be usable."
+jz_BikeWheels,Bike Tire
+jz_MinibikeSeatDesc,"A padded seat for the Minibike."
+jz_MinibikeSeat,Minibike Seat
+jz_MoldDDesc,"A clay mold used to craft the given item."
+jz_MoldDart,Dart Mold
+jz_MoldLargeEngineBlock,Large Engine Block Mold
+jz_MoldSmallEngineBlock,Small Engine Block Mold
+jz_MoldAxeHead,Axe Head Mold
+jz_MoldBrassKnuckles,Brass Knuckle Mold
+jz_MoldShovelHead,Shovel Head Mold
+jz_MoldSledgeHead,"Iron Sledge Head Mold"
+jz_MoldScrewdriverHead,"Screwdriver Head Mold"
+jz_MoldWrench,"Wrench Mold"
+jz_FoodBread,"Bread"
+jz_MoldHammerHead,"Claw Hammer Head Mold"
+jz_MoldSmallKnifeBlade,"Hunting Knife Blade Mold"
+jz_MoldSteelPickAxeHead,"Mold Steel Pickaxe Head"
+jz_MoldIronPickAxeHead,"Mold Iron Pickaxe Head"
+jz_MoldCrowbar,Crowbar Mold
+fanBeltDesc,"A old fan belt from a some kind of engine."
+jz_FanBelt,Fan Belt
+alternatorDesc,"A Alternator that hasn't sized up yet. Might still be usable."
+jz_Alternator,Alternator
+jz_PartLargeExhaustDesc,"Long pipes used for exhaust on vehicles."
+jz_PartLargeExhaust,Lg Exhaust
+jz_PartSmallExhaustDesc,"Short pipes used for exhaust on Bikes."
+jz_PartSmallExhaust,Sm Exhaust
+jz_PartLargeEngineBlockDesc,"The engine block from a vehicles engine."
+jz_PartLargeEngineBlock,Lg Engine Block
+jz_PartSmallEngineBlockDesc,"The engine block from a bikes engine."
+jz_PartSmallEngineBlock,Sm Engine Block
+jz_MeatPiesDesc,"A meat pie with flaky crust"
+jz_FoodMeatPie,Meat Pie
+jz_SandwichDesc,"A freshly made sandwich."
+jz_FoodTunaSandwich,Tuna Sandwich
+jz_FoodSalmonSandwich,Salmon Sandwich
+ratOnAStickDesc,"A nicely charred protein meal. Just keep telling your self that and eat it."
+jz_FoodRatOnAStick,Rat on a Stick
+fruitCakeDesc,"Only 2 things survived the apocalypse, Roaches and Fruit Cake."
+jz_FoodFruitCake,Fruit Cake
+MREDesc,"Old military rations. Only slightly radiated."
+jz_FoodMRELarge,Large MRE
+jz_FoodMREMedium,Medium MRE
+jz_FoodMRESmall,Small MRE
+jz_FoodOatMealDesc,"Dry pack of instant Oatmeal. Looks still edible."
+jz_FoodOatMeal,Instant Oatmeal
+jz_FoodPeanutButterDesc,"Creamy roasted peanut butter."
+jz_FoodPeanutButter,Peanut Butter
+deadRatDesc,"A plump dead rat."
+jz_FoodDeadRat,Dead Rat
+jz_FoodChipsDesc,"A unopened bag of Potato Chips. Yummy!"
+jz_FoodChips,Potato Chips
+jz_FoodCerealDesc,"A box of breakfast cereal. Only a little stale."
+jz_FoodCereal,Cereal
+canUnlabeledDesc,"A old dented can thats label been torn off. You cant be certain whats in it but theres only one way to find out."
+jz_FoodCanUnlabeled,Unlabeled Can
+jz_FoodStrawberryDesc,"A fresh Strawberry."
+jz_FoodStrawberry,Strawberry
+jz_KabobDesc,"Meat and Vegetables roasted on a stick"
+jz_FoodKabob,Kabob
+jz_GlazedMeatDesc,"Juicy meat glazed with fresh fruit and cook to perfection."
+jz_FoodGlazedMeat,Glazed Meat
+jz_FoodBoiledSandwich,Boiled Sandwich
+jz_FoodGrilledSandwich,Grilled Sandwich
+jz_FoodCharredSandwich,Charred Sandwich
+veggieSaladDesc,"A health salad made up of fresh vegetables."
+jz_FoodVeggieSalad,Veggie Salad
+fruitSaladDesc,"A health salad made up of fresh vegetables."
+jz_FoodFruitSalad,Fruit Salad
+jz_DrinkMeadDesc,"A alcoholic beverage made from fermenting honey"
+jz_DrinkMead,Mead
+jz_medicalBandageDesc,"A simple bandage that can be used to stop [f21b10]Bleeding[-] and treat many injuries\nUse the secondary action to treat another player."
+jz_medicalFirstAidBandageDesc,"A bandages coated in [00d537]Plant Salve[-] that can be used to stop [f21b10]Bleeding[-] and treat injuries and burns\nUse the secondary action to treat another player."
+jz_medicalFirstAidKitDesc,"A First Aid Kit uses all the contained medical items at once.\nUse the secondary action to unpack the kit and retrive the medical items"
+jz_MedicalCleansingWash,"Cleasing Wash"
+jz_MedicalCleansingWashDesc,"Sterile Saline Solution and a clean rag. Used to clean wounds and prevent a [f21b10]Medical Infection[-]"
+redHotDesc,"A burning red hot pipe that can be used to cauterize a [f21b10]Bite[-] or [f21b10]Puncher Wound[-]. Its really gone hurt though"
+jz_medicalSplintDesc,"Heals a broken bones but does not protect against further injury.\nUse the secondary action to treat another player."
+jz_medicalPlasterCastDesc,"Heals a broken bone more quickly than a splint but does not protect against further injury.\nUse the secondary action to treat another player."
+jz_MedicalRedHotPipeDesc,"A burning red hot pipe that can be used to cauterize a [f21b10]Zombie Bites[-]. Its really gone hurt though"
+jz_MedicalRedHotSteelPipe,Red Hot Pipe
+jz_MedicalRedHotPipe,Red Hot Pipe
+antiVenomDesc,"Anti venom used to treat venomous stings and bites"
+jz_MedicalAntiVenom,Anti Venom
+jz_MedicalStimulant,Stimulant
+stimulantDesc,"A crudely made Stimulant that can get you pretty Zooted! Increases Scavenging & Mobility Speed, Harvesting Amount, and temperature. Decreases Weapon Handling. The more Stimulants you take the stronger the effect gets, with a max effect of 6 active Stimulants"
+jz_PurificationTablets,Purification
+purificationDesc,"A crudely made tablet used for sanitizing water to remove the chance to get Dysentery from it"
+jz_FoodServingFruit,Fruit Serving
+jz_FoodServingGrain,Grain Serving 
+jz_FoodServingVeggie,Veggie Serving
+jz_FoodBioMass,Bio Mass
+bioMassDesc,"Rotting food and scraps that can be used in farming"
+jz_MedicalSutureKitDesc,"A clean needle and organic thread can be used to stitch up [f21b10]Lacerations[-]"
+jz_MedicalSutureKit,Suture Kit
+jz_meleeClubBaseballBatDesc,"This club was used in gladiatorial games of the past that were held in huge arenas."
+jz_gunBowPrimitiveDesc"Good for hunting and killing zombies. Uses arrows for ammunition.\nHold reload to use alternate ammo."
+jz_QIDeadWalkieTalkieDesc,"A commercial Walkie Talkie, doesn't have very much range and this one is dead.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIDeadWalkieTalkie,"Walkie Talkie"
+jz_QIGoodWalkieTalkieDesc,"A commercial Walkie Talkie, doesn't have very much range but at lest it has some juice.\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIGoodWalkieTalkie,"Walkie Talkie"
+jz_CBatterie,"C Battery"
+jz_CBatterieDesc,"A C type battery used to power many things"
+jz_drugVitaminsDesc,"Vitamins cure [f21b10]Fatigue[-] and supply you with a boost of vitamins to maintain your diet and increase your Wellness by 1. While active they make you Fatigue slower and better resist [f21b10]Dysentery[-]"
+jz_GallonOfDirtyRiverWater,Gallon of Dirty River Water
+jz_GallonOfDirtyRiverWaterDesc,A gallon of water collected from a unclean source
+jz_OldMilkJug,"Old Milk Jug"
+jz_OldMilkJugDesc,"A old empty milk jug that can be used to collect a gallon of water from a source"
+jz_FarmingWateringCan,Watering Can
+jz_FarmingWateringCanDesc,"A Watering Can used in farming. Can use fertilizer on planted seeds to increase yield, ounces of dirty water to water cultivated plants and Insecticide to remove insect infestations."
+jz_Insecticide,Insecticide
+jz_InsecticideDesc,Farming Insecticide used on cultivated plants that are having insect infestations
+jz_QIMilitarySecuritySoldier,"Soldiers Belongings"
+jz_QIMilitarySecuritySoldierDesc,"The Security Soldiers belongings. Can be 'Read' to re try quest encounter"
+jz_QIMilitarySecurityCardA,Military Security Card
+jz_QIMilitarySecurityCardADesc,"A Military Access ID with the Clearance Level of Security 1\n\n\n[fff700]Quest item, do not lose![-]"
+jz_QIMilitarySecurityCard,Military Security Card
+jz_QIMilitarySecurityCardDesc,"A Military Access ID with the Clearance Level of Security 1\n\n\n[fff700]Quest item, do not lose![-]"
+jz_MeleePipe,Long Pipe
+jz_MeleePipeDesc,"A long iron pipe that could be used as a weapon but it cant be repaired"
+jz_MeleeRebar,Rebar
+jz_MeleeRebarDesc,"A long piece of iron rebar that could be used as a weapon but it can not be repaired"
+jz_MeleeTableLeg,Table Leg
+jz_MeleeTableLegDesc,"A strong wooden table leg that could be used as a weapon but can not be repaired"
+jz_MeleeTableLegSpiked,Spiked Table Leg
+jz_MeleeTableLegSpikedDesc,"A strong wooden table leg with several long nails in it. Good for bashing but cant be repaired.\n\nCreafting quality based off your Wooden Club Crafting skill."
+jz_MeleePlankSpiked,Spiked Plank
+jz_MeleePlankSpikedDesc,"A strong 2x4 plank of wood with several nails in it. Good for bashing but cant be repaired.\n\nCreafting quality based off your Wooden Club Crafting skill."
+jz_MeleePlank,"Shaped 2x4"
+jz_MeleePlankDesc,"A shaped wooden 2x4 that could be used as a weapon but it can not be repaired"
+jz_ItemSchematicDesc,"Reading this recipe will teach you how to craft the item. If you know this recipe you can scrap it for Skill Paper.\n\nSkill Paper can be used on the Research Desk to reverse engineer unknown schematics"
+jz_SchematicTacticalAR,Tactical AR Crafting Guide
+jz_SchematicTacticalARDesc,"This book completely details how to assemble a Tactical AR from its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicM60,M60 Crafting Guide
+jz_SchematicM60Desc,"This book completely details how to assemble a M 60 from its parts. If you know this recipe you can scrap it for Skill Paper."
+jz_SchematicScrewdriver,Screwdriver Crafting Guide
+jz_SchematicWelder,Welding Torch Crafting Guide
+jz_SchematicStoneSpear,Stone Spear Crafting Guide
+jz_SchematicGyroCopter,Gyro Copter Crafting Guide
+jz_Schematic4x4Truck,4x4 Truck Crafting Guide
+jz_SchematicMotorcycle,Motorcycle Crafting Guide
+jz_SchematicMiniBike,Mini Bike Crafting Guide
+jz_SchematicBicycle,Bicycle Crafting Guide
+jz_SchematicCookingPotMine,Cooking Pot Mine Crafting Guide
+jz_SchematicEggPlantSeed,Egg Plant Seed Crafting Guide
+jz_SchematicCarrotSeed,Carrot Seed Crafting Guide
+jz_SchematicSteelSheetMetal,Steel Sheet Metal Crafting Guide
+jz_SchematicConcreteMix,Concrete Mix Crafting Guide
+jz_SchematicConcreteSledge,Concrete Sledge Crafting Guide
+jz_SchematicPurificationTablets,Purification Tablet Crafting Guide
+jz_SchematicMasonHammer,Mason Hammer Crafting Guide
+jz_SchematicGunPowder,Gun Powder Crafting Guide
+jz_SchematicBlackStrapCoffee,Black Strap Coffee Crafting Guide
+jz_SchematicCeilingLight,Ceiling Light Crafting Guide
+jz_SchematicIronSheetMetal,Iron Sheet Metal Crafting Guide
+jz_SchematicWirerelay,Wire Relay Crafting Guide
+jz_SchematicMegaCrush,Mega Crush Crafting Guide
+jz_SchematicVitamins,Vitamins Crafting Guide
+jz_SchematicWeaponRepairKit,Firearm Repair Kit Crafting Guide
+jz_SchematicCobblestone,Cobblestone Crafting Guide
+jz_SchematicPlank,Plank Crafting Guide
+jz_SchematicLockPick,Lock Pick Crafting Guide
+jz_SchematicGunOil,Gun Oil Crafting Guide
+jz_SchematicPoliceBaton,Police Baton Crafting Guide
+medicalAloeCream,"Plant Salve"
+jz_medicalAloeCreamDesc,"[35bd00]Plant Salve[-] can be applied to a [35bd00]Bandage[-] to craft [35bd00]First Aid Bandages[-]."
+bucketEmptyDesc,A old metal bucket with too many holes to be useful
+medicalBloodDrawKit,Blood Draw Kit
+jz_SchematicTShirtZU,"ZU T-Shirt Pattern"
+jz_SchematicGothBoots,"Goth Boots Pattern"
+jz_SchematicLongShirt,"Long Shirt Pattern"
+jz_SchematicCoatJacketGeneric,"Jacket Pattern"
+jz_SchematicRunningShoesHP,"Running Shoes HP Pattern"
+jz_SchematicCoatLeatherPoncho,"Leather Poncho Pattern"
+jz_SchematicHoodySweatshirt,"Hoody Sweatshirt Pattern"
+jz_SchematicGothPants,"Goth Pants Pattern"
+jz_SchematicPressboyCap,"Pressboy Cap Pattern"
+jz_SchematicSuitPants,"Suit Pants Pattern"
+jz_SchematicSuitJacket,"Suit Jacket Pattern"
+jz_SchematicBandana,"Bandana Pattern"
+jz_SchematicScrapPlateMine,"Scrap Plate Mine Crafting Guide"
+jz_SchematicAirFilterMine,"Air Filter Mine Crafting Guide"
+jz_SchematicHubcapMine,"Hubcap Mine Crafting Guide"
+jz_SchematicCandyTinMine,"Candy Tin Mine Crafting Guide"
+jz_SteelScissors,"Rusty Steel Scissors"
+jz_SteelWeight,"Steel Hand Weight"
+jz_SchematicAloeCream,"Plant Salve Crafting Guide"
+jz_SchematicInsecticide,Ounce of Insecticide
+jz_SchematicFarmingWateringCan,Watering Can
+foodRottingFleshDesc,"Very high chance of food poisoning.\n\n Can be scraped for Compost." 
+foodMoldyBreadDesc,"Very high chance of food poisoning.\n\n Can be scraped for Compost." 
+foodCropMushroomsDesc,"Small edible Mushrooms. Can be used for cooking and when at lest 5 collected scraped for Protein Servings"
+CottonPlantDesc,"Used to craft cloth and other items. Woven with a Small Loom on the Armor Table"
+jz_AdhesiveJunkDesc,"This can be scraped for Adhesives that can be used for crafting" 
+jz_AdhesiveGorillaGlue,"Gorilla Glue"
+jz_AdhesiveSuperGlue,"Super Glue"
+jz_AdhesiveLiquidNail,"LiquidNail"
+jz_AdhesiveGorillaTape,"Gorilla Tape"
+jz_AdhesiveClearTape,"Clear Tape"
+jz_AdhesiveWoodGlue,"Wood Glue"
+jz_AdhesivePlumbersCement,"Plumbers Cement"
+jz_AdhesiveStickySap,"Sticky Pine Sap"
+jz_AdhesiveStickySapDesc"This stuff is really sticky. If only you could figure out a way to make it usable in crafting"
+jz_ClothJacket,"Junk Jacket"
+jz_ClothBlanket,"Junk Blanket"
+jz_ClothTowel,"Junk Towel"
+jz_ClothSock,"Junk Sock"
+jz_ClothDoll,"Junk Doll"
+jz_ClothRags,"Junk Rags"
+jz_ClothMat,"Junk Mat"
+jz_ClothSlipper,"Junk Slipper"
+jz_PaperBook,"Blank Book"
+jz_PaperMagazine,"Junk Magazine"
+jz_PaperAirPlane,"Junk Air Plane"
+jz_PaperOldPapers,"Junk Papers"
+jz_PaperStickyPad,"Junk Sticky Pad"
+jz_PaperPlayingCards,"Junk Cards"
+jz_PaperToiletPaper,Junk Toilet Paper"
+jz_PaperReceipt,"Junk Receipts"
+jz_CircuitPCTower,"Junk PC Tower"
+jz_CircuitPlaystation,"Junk PS4"
+jz_CircuitLaptop,"Junk Laptop"
+jz_CircuitXBox,"Junk XBox"
+jz_CircuitIPad,"Junk IPad"
+jz_CircuitIPod,"Junk IPod"
+jz_CircuitSwitch,"Junk Switch"
+jz_Circuit3DS,"Junk 3DS"
+jz_CircuitCellPhone,"Junk Cell Phone"
+jz_CircuitDoll,"Junk Toy"
+jz_LeadCandleStick,"Junk Candle Stick"
+jz_LeadDumbBell,"Junk Weight"
+jz_LeadPaperWeight,"Junk Paper Weight"
+jz_LeadStatue,"Junk Statue"
+jz_LeadPictureFrame,"Junk Picture Frame"
+jz_LeadRing,"Junk Ring"
+jz_LeadNeckless,"Junk Neckless"
+jz_LeadBracelet,"Junk Bracelet"
+jz_LeadDoll,"Junk Doll"
+jz_LeadToySoldier,"Junk Toy"
+jz_BrassLamp,"Junk Lanp"
+jz_BrassDumbBell,"Junk Weight"
+jz_BrassPlatter,"Junk Platter
+jz_BrassPictureFrame,"Junk Picture Frame"
+jz_BrassStatue,"Junk Statue"
+jz_BrassRing,"Junk Ring"
+jz_BrassBracelet,"Junk Bracelet"
+jz_BrassNeckless,"Junk Neckless"
+jz_BrassAshtray,"Junk Ashtray"
+jz_GlassPot,"Junk Jar"
+jz_GlassPictureFrame,"Junk Picture Frame"
+jz_GlassBong,"Junk Bong"
+jz_GlassStatue,"Junk Statue"
+jz_GlassPlate,"Junk Plate"
+jz_GlassMarbles,"Junk Marbles"
+jz_GlassNecklace,"Junk Neckless"
+jz_GlassBracelet,"Junk Bracelet"
+jz_GlassAshtray,"Junk Ashtray"
+jz_RubberDumbBell,"Junk Weight"
+jz_RubberBoots,"Junk Boot"
+jz_RubberChicken,"Junk Chicken"
+jz_RubberDoll,"Junk Doll"
+jz_RubberApron,"Junk Apron"
+jz_RubberDogToy,"Junk Bog Toy"
+jz_RubberDuck,"Junk Duck"
+jz_RubberMat,"Junk Mat"
+jz_RubberGloves,"Junk Glove"
+jz_RubberDildo,"Junk Dildo"
+jz_MechanicalVacum,"Junk Vacum"
+jz_MechanicalCarJack,"Junk Car Jack"
+jz_MechanicalAlarmClock,"Junk Alarm Clock"
+jz_MechanicalDeskClock,"Junk Desk Clock"
+jz_MechanicalTypewriter,"Junk Typewriter"
+jz_MechanicalPocketWatch,"Junk Pocket Watch"
+jz_MechanicalKeypad,"Junk Keypad"
+jz_MechanicalKeyboard,"Junk Keyboard"
+jz_MechanicalEggTimer,"Junk Egg Timmer"
+jz_MechanicalToys,"Junk Toy"
+jz_ElectronicJunkDesc,"Old junk. If you cant find a use for it you can scrap it for Electric Parts."
+jz_ElectronicBlender,"Blender"
+jz_ElectronicPowerTool,"Junk Power Tool"
+jz_ElectronicBlowDryer,"Junk Dryer"
+jz_ElectronicFan,"Junk Fan"
+jz_ElectronicClockRadio,"Junk Clock Radio"
+jz_ElectronicToothbrush,"Junk Toothbrush"
+jz_ElectronicShaver,"Junk Shaver"
+jz_ElectronicToaster,"Junk Toaster"
+jz_ElectronicVibrator,"Junk Vibrator"
+jz_ElectronicToys,"Junk Toy"
+jz_StoneDoorStop,"Junk Door Stop"
+jz_StoneDumbBell,"Junk Weight"
+jz_StonePot,"Junk Pot"
+jz_StonePaperWeight,"Junk Paper Weight"
+jz_StonePicturFrame,"Junk Picture Frame"
+jz_StonePlate,"Junk Plate"
+jz_StoneJewelry,"Junk Bracelet"
+jz_StoneToy,"Junk Toy"
+jz_StoneStatue,"Junk Statue"
+jz_StoneAshtray,"Junk Ashtray"
+jz_SteelDumbBell,"Junk Weight"
+jz_SteelHelmet,"Junk Helmet"
+jz_SteelTools,"Junk Rusty Tools"
+jz_SteelPotsNPans,"Junk Pan"
+jz_SteelCandleStick,"Junk Candle Stick"
+jz_SteelBracelet,"Junk Bracelet"
+jz_SteelStatue,"Junk Statue"
+jz_SteelToys,"Junk Toy"
+jz_SteelUtensils,"Junk Utensils"
+jz_SteelAshtray,"Junk Ashtray"
+jz_IronDumdBell,"Junk Weight"
+jz_IronClothesIron,"Junk Iron"
+jz_IronToys,"Junk Toys"
+jz_IronCandleSticks,"Junk Candle Stick"
+jz_IronPotsNPans,"Junk Pan"
+jz_IronAerosolCan,"Junk Spray Can"
+jz_IronStatue,"Junk Statue"
+jz_IronAshtray,"Junk Ashtray"
+jz_IronUtensils,"Junk Utensils"
+jz_IronHanger,"Junk Hangers"
+jz_PlasticStatue,"Junk Statue"
+jz_PlasticToy,"Junk Toy"
+jz_PlasticDishes,"Junk Dishes"
+jz_PlasticUtensils,"Junk Utensils"
+jz_PlasticAshtray,"Junk Ashtray"
+jz_PlasticHanger,"Junk Hangers"
+jz_PlasticCDs,"Junk CD's"
+jz_PlasticHairBrush,"Junk Hair Brush"
+jz_PlasticToothbrush,"Junk Toothbrush"
+jz_PlasticLighter,"Junk Lighter"
+jz_WoodDoorStop,"Junk Door Stop"
+jz_WoodDriftWood,"Junk Wood"
+jz_WoodAshtray,"Junk Ashtray"
+jz_WoodStatue,"Junk Statue"
+jz_WoodPictureFrame,"Junk Picture Frame"
+jz_WoodFrisbee,"Junk Toy"
+jz_WoodYoyo,"Junk Toy"
+jz_WoodBowl,"Junk Bowl"
+jz_WoodUtensils,"Junk Utensils"
+jz_WoodPlate,"Junk Plate"
+jz_WoodUtensils,"Junk Utensils"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROGRESSION_________________________XML,PROGRESSION_________________________XML
+jz_CardioSkillDesc,"Gain experience by walking and bonus xp for running. Improves your Run and Walk Speed and increases Stamina Regain while Running\n               [00eb3c]Current XP-{cvar($jz_CardioXP:0000)}                  Next Level-{cvar($jz_CardioSkillNextLvTotal:0000)}[-]"
+jz_ParkourSkillDesc,"Gain experience by jumping and landing. Improves your Jump Height and decrease Stamina used to Jump\n            [00eb3c] Current XP-{cvar($jz_ParkourXP:0000)}             Next Level-{cvar($jz_ParkourSkillNextLvTotal:0000)}[-]"
+jz_FarmingSkillDesc,"Gain experience by harvesting player planted crops. Improves harvest amount\n              [00eb3c] Current XP-{cvar($jz_FarmingXP:000)}                Next Level-{cvar($jz_FarmingSkillNextLvTotal:000)}[-]"
+jz_ActionSkillDesc,"Improve these skills by using or killing with the given skill item. You can also purchase these points to improve"
+jz_CraftingSkillsDesc,"Improve these skills by crafting the stated item"
+jz_ProfessionsDesc,"These are the Professions a Survivor could of had before the event. Use your starting Knowledge Point to purchase these or gather enough skill pages from loot to obtain them."
+jz_HobbieDesc,"These are the Hobbies a Survivor could of had before the event."
+jz_TraitsDesc,"Phisical traits a survivor can have"
+jz_SchematicsDesc,"You can track all unlockable schematics here"
+jz_MiningSkillDesc,"Gain experience by breaking blocks with Pickaxes and Shovels to improve your use of them\n            [00eb3c] Current XP-{cvar($jz_PickaxeXP:000)}             Next Level-{cvar($jz_PickaxeSkillNextLvTotal:000)}[-]"
+jz_AxeSkillDesc,"Gain experience by breaking blocks with Axes to improve your use of them\n            [00eb3c] Current XP-{cvar($jz_AxeXP:000)}             Next Level-{cvar($jz_AxeSkillNextLvTotal:000)}[-]"
+jz_ChainsawSkillDesc,"Gain experience by breaking blocks with Chainsaw to improve your dismemberment chance with them\n            [00eb3c] Current XP-{cvar($jz_ChainsawXP:000)}             Next Level-{cvar($jz_ChainsawSkillNextLvTotal:000)}[-]"
+jz_AugerSkillDesc,"Gain experience by breaking blocks with Augers to improve your dismemberment chance with them\n            [00eb3c] Current XP-{cvar($jz_AugerXP:000)}             Next Level-{cvar($jz_AugerSkillNextLvTotal:000)}[-]"
+jz_BrawlerSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while using Knuckles Weapons to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_BrawlerXP:000)}                 Next Level-{cvar($jz_BrawlerSkillNextLvTotal:000)}[-]"
+jz_BluntSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while wielding Blunt Weapons to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_BluntXP:000)}                 Next Level-{cvar($jz_BluntSkillNextLvTotal:000)}[-]"
+jz_SledgeSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while wielding Sledge Hammer to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_SledgeXP:000)}                 Next Level-{cvar($jz_SledgeSkillNextLvTotal:000)}[-]"
+jz_BladeSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while wielding Bladed Weapons to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_BladeXP:000)}                 Next Level-{cvar($jz_BladeSkillNextLvTotal:000)}[-]"
+jz_ArcherySkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while using a Bow to improve your use of them\n              [00eb3c] Current XP-{cvar($jz_ArcheryXP:000)}                Next Level-{cvar($jz_ArcherySkillNextLvTotal:000)}[-]"
+jz_CrossbowSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while using a Crossbow to improve your use of them\n              [00eb3c] Current XP-{cvar($jz_CrossbowXP:000)}                Next Level-{cvar($jz_CrossbowSkillNextLvTotal:000)}[-]"
+jz_SpearSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while using a Spear to improve your use of them\n            [00eb3c] Current XP-{cvar($jz_SpearXP:000)}             Next Level-{cvar($jz_SpearSkillNextLvTotal:000)}[-]"
+jz_PistolSkillDesc,"Gain experience by shooting enemies and receive bonus xp for the killing blow while using Handguns to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_HandgunXP:000)}                Next Level-{cvar($jz_HandgunSkillNextLvTotal:000)}[-]"
+jz_ShotgunSkillDesc,"Gain experience by shooting enemies and receive bonus xp for the killing blow while using Shotguns to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_ShotgunXP:000)}                Next Level-{cvar($jz_ShotgunSkillNextLvTotal:000)}[-]"
+jz_RifleSkillDesc,"Gain experience by shooting enemies and receive bonus xp for the killing blow while using Rifles to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_RifleXP:000)}                Next Level-{cvar($jz_RifleSkillNextLvTotal:000)}[-]"
+jz_MachineGunSkillDesc,"Gain experience by shooting enemies and receive bonus xp for the killing blow while using Machine Guns to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_MachineGunXP:000)}               Next Level-{cvar($jz_MachineGunSkillNextLvTotal:000)}[-]"
+jz_JunkBotsSkillDesc,"Gain experience by hitting enemies and receive bonus xp for the killing blow while using Junk Bots to improve your use of them\n                 [00eb3c] Current XP-{cvar($jz_JunkBotsXP:000)}                Next Level-{cvar($jz_JunkBotsSkillNextLvTotal:000)}[-]"
+jz_ExposivesSkillDesc,"Gain experience by damaging enemies using Explosives to improve their damage and chance for  dismemberment\n            [00eb3c] Current XP-{cvar($jz_ExposivesXP:000)}             Next Level-{cvar($jz_ExposivesSkillNextLvTotal:000)}[-]"
+jz_CraftingDesc,"Craft more of this item to improve your ability to craft it at a better quality"
+jz_ClothArmorCraftingDesc,"Craft more of this item to improve your ability to craft it at a better quality"
+jz_LeatherArmorCraftingDesc,"Craft more of this item to improve your ability to craft it at a better quality"
+jz_ScrapArmorCraftingDesc,"Craft more of this item to improve your ability to craft it at a better quality"
+jz_IronArmorCraftingDesc,"Craft more of this item to improve your ability to craft it at a better quality"
+jz_SteelArmorCraftingDesc,"Craft more of this item to improve your ability to craft it at a better quality"
+jz_FireFighterDesc,"All the knowledge needed to become a Fire Fighter.\n20% Block Dmg w/Fireaxes\n+5% Max Stamina\nRecipes- [35bd00]Plant Salve[-], [35bd00]First Aid Bandage[-], Molotov Cocktail, Firemans Axe Mod"
+jz_PoliceOfficerDesc,"All the knowledge needed to become a Police Officer.\n10% Faster Reload & better Aim w/Pistol & Magnums\nRecipes- Pistol, Gun Oil, Stun Baton, Weapon Repair Kit"
+jz_ParkRangerDesc,"All the knowledge needed to become a Park Ranger.\n20% Faster Primitive Crafting\nRecipes- Herbal Antibiotics, Spear Iron, Spear Steel"
+jz_BouncerDesc,"All the knowledge needed to become a Bouncer.\n10% Less Stamina w/Brawling\nRecipes- Brass Knuckles Mold, Brass Knuckles, Leather Knuckles, Beer, Mead, Grain Alcohol"
+jz_ChefDesc,"All the knowledge needed to become a Chef.\n20% Faster Cooking\nRecipes- All Food Recipes"
+jz_BurglarDesc,"All the knowledge needed to become a Burglar.\n10% Faster Movement & Less Noise while Crouching\n20% Faster Looting & Pinpoint Treasure location\nRecipes- Lock Picks"
+jz_CarpenterDesc,"All the knowledge needed to become a Carpenter.\n20% Faster Crafting on the Workbench and Table-saw\nRecipes- All Wooden Frame Shapes, Planks"
+jz_MasonDesc,"All the knowledge needed to become a Mason.\n20% Faster Crafting on the Cement mixer\nRecipes- All Brick and Flagstone Frame Shapes, Bricks, Cobblestone"
+jz_SoldierDesc,"All the knowledge needed to become a Soldier\n10% Faster Reload & better Aim w/M60 & AK47\n100% Resistance to Food Poisoning from Grubs\nRecipes- Grubs, Weapon Repair Kit, Blunderbuss, Blunderbuss Ammo, AK47, Pipe Bomb, Cooking Pot Mine"
+jz_FitnessInstructorDesc,"All the knowledge needed to become a Fitness Instructor\n10% Faster Movement\n5% Less Stamina used while running\nRecipes- Golden Rod Tea, Red Tea, Mega Crush, Wellness Juice, Vitamins"
+jz_ElectricianDesc,"All the knowledge needed to become a Electrician\n10% Faster Electrical Crafting\nRecipes- Generator Bank, Pressure Plate, Battery Bank, Ceiling Light, Timer Relay, Wire Relay, Motion Sensor, Speaker, Switch, Electric Fencepost, Spotlight, Stun Baton"
+jz_MetalWorkerDesc,"All the knowledge needed to become a Metal Worker\n10% Faster Crafting on the Forge\nRecipes- All Scrap Iron Frame Shapes, Sheet Metal"
+jz_MechanicDesc,"All the knowledge needed to become a Mechanic\n20% Faster Vehicle Crafting\nRecipes- Small Engine, Large Engine, All Vehicles"
+jz_DoctorDesc,"All the knowledge needed to become a Doctor\n20% Faster Medical Crafting\nRecipes- Aloe Cream, Suture Kit, Painkillers, Steroids, Antibiotics"
+jz_FarmerDesc,"All the knowledge needed to become a Farmer\n20% Faster Seed Crafting\nRecipes- All farm crop seeds, Insecticide, Fertilizer, Watering Can, Farm Plots"
+jz_ChemistDesc,"All the knowledge needed to become a Chemist\n20% Faster Chemistry Crafting\nRecipes- Mega Crush, Stimulant, Acid, Oil Shale, GunPowder, Purification Tablets, Steroids"
+jz_HobbiesHunterDesc,"Theres no place youd rather be than sitting in a tree stand waiting for a buck. All those years of hunting have made you a specialist with a Shotgun and able to smell your pray"
+jz_HobbiesHunterLongDesc,"Effects :\n10% Faster Shotgun Reload\n10% Better Shotgun Handling\nCan Track Deer and Boar when crouched"
+jz_HobbiesCookingDesc,"When you first touched a Spatualer you knew you had found your art form. All that time in the kitchen has taught you a fgew things"
+jz_HobbiesCookingLongDesc,"You Will Learn :\nCorn Bread - Meat Stew - Bacon and Eggs - Vegetable Stew - Carrot Cake - Bread - Kabob - Chili Dog"
+jz_HobbiesBuildingDesc,"When you first played with Legos you were hooked and you have loved building ever since. Years of building have taught you how to build with nearly anything"
+jz_HobbiesBuildingLongDesc,"You Will Learn :\nFrame Shapes - Wood Shapes - Iron Shapes - Cobblestone Shapes - Concrete Shapes - Steel Shapes"
+jz_HobbieDrivingDesc,"Some people just love to go fast and since your first gocart you knew that was you. All that driving has taught you how to squeez every horsepower out of any maching"
+jz_HobbieDrivingLongDesc,"Effects :\n10% Faster Driving Speed"
+jz_HobbieSewingDesc,"You started by making clothes for your toys and now theres nothing you cant make with the right pattern and thread"
+jz_HobbieSewingLongDesc,"You Will Learn :\nDenim Pants - Overalls - Skirts - Tank Top - TShirt - Demin Shorts - Duster - Puffer Coat - Storage Pocket"
+jz_HobbieFitnessDesc,"Some people play games in their free time some watch TV but you like to sweat. All that work is finaly paying off"
+jz_HobbieFitnessLongDesc,"Effects :\n20% Faster Stamina Regain\n10% More Stamina"
+jz_HobbieElectronicsDesc,"Since you were little you have always felt the need to take things apart and see how they work. Years of tinkering has taught you a few things."
+jz_HobbieElectronicsLongDesc,"You Will Learn :\nBatter Bank - Speaker - Electric Fencepost - Spot Light - Ceiling Light"
+jz_HobbieMedicalDesc,"Weather its a stranger or a squirrel when someones hurt you feel the need to help. All that helping others has made you pretty good at tending wounds"
+jz_HobbieMedicalLongDesc,"Effects :\nWounds you treat heal 10% faster"
+jz_HobbieSportsDesc,"From Tee Ball to the Travel Team you have lived and breathed sports your entire life. All that work has made you a specialist with a bat and fast as hell"
+jz_HobbieSportsLongDesc,"Effects :\n10% More Blunt Damage\n10% Faster Blunt Attack Speed\n10% Less Stamina Used With Blunt Weapons\n10% Faster Mobility"
+jz_HobbieVehiclesDesc,"You have been a Greese Monkey since you built your first Bicycle at 5"
+jz_HobbieVehiclesLongDesc,"You Will Learn :\nBicycle - Small Engine - Minibike - Motorcycle\nEffects :\nX2 Crafting Speed for Vehicals"
+jz_HobbiesGardeningDesc,"You always feel better with your hands in the ground. Always keeping a garden has made your thumb at lest a little green"
+jz_HobbiesGardeningLongDesc,"You Will Learn :\nInsecticide - Potato Seed - Corn Seed - Goldenrod Seed - Chrysanthemum Seed - Egg Plant - Carrot\nEffects :\nHarvest an aditional produce from all crops"
+jz_HobbieArcheryDesc,"When you were a child playing Cowboys and Indians you always picked the indian. A love or archery and a life time of practice have made you a specialist with bow."
+jz_HobbieArcheryLongDesc,"Effects :\n10% Faster Archery Reloading\n10% Farther Archery Range\n10% Better Archery Handling\n10% Less Spread When Hip Firing Archery \n10% More Archery Shots per Min"
+jz_TraitStrongDesc,"Your large physique grants you these effects"
+jz_TraitStrongLongDesc,"Effects :\n10 Less Effect from Encumbrance\n5% Less Stamina Useing Melee\n10% Faster Metabolism"
+jz_TraitWeakDesc,"Your small physique grants you these effects"
+jz_TraitWeakLongDesc,"Effects :\n10 More Effect From Encumbrance\n5% More Stamina Useing Melee\n10% Slower Metabolism"
+jz_TraitSkinnyDesc,"Your slim figure grants you these effects"
+jz_TraitSkinnyLongDesc,"Effects :\n10 Degrees Less Weather Protection\n10% Slower Metabolism"
+jz_TraitFatDesc,"Your heavy figure grants you these effects"
+jz_TraitFatLongDesc,"Effects :\n10 Degrees More Weather Protection\n10% Faster Metabolism"
+jz_TraitHealthyDesc,"Your strong immune system grants you these effects"
+jz_TraitHealthyLongDesc,"Effects :\n10% Less Chance For Illness\nIllnesses Last 10% Longer"
+jz_TraitSicklyDesc,"Your weak immune system grants you these effects"
+jz_TraitSicklyLongDesc,"Effects :\n10% More Chance For Illness\nIllnesses Last 10% Shorter"
+jz_TraitLazyDesc,"Your lackadaisical attitude grants you these effects"
+jz_TraitLazyLongDesc,"Effects :\n20% Faster HP Recovery When Sleeping\n20% Slower Fatigue Recovery When Sleeping"
+jz_TraitRestlessDesc,"Your enthusiastic attitude grants you these effects"
+jz_TraitRestlessLongDesc,"Effects :\n 20% Slower HP Recovery When Sleeping\n20% Faster Fatigue Recovery When Sleeping"
+jz_TraitLightDesc,"Your love of the day time grants you these effects"
+jz_TraitLightLongDesc,"Day Effects :\n10% Better Weapon Handling, Faster Reload and Less Melee Stamina\nNight Effects :\n10% Less Weapon Handling, Slower Reload and More Melee Stamina"
+jz_TraitDarkDesc"Your love of the night time grants you these effects"
+jz_TraitDarkLongDesc,"Night Effects :\n10% Better Weapon Handling, Faster Reload and Less Melee Stamina\nDay Effects :\n10% Less Weapon Handling, Slower Reload and More Melee Stamina"
+jz_TraitFastDesc,"Your natrual speed grants you these effects"
+jz_TraitFastLongDesc,"Effects :\n10% Faster Movment\n10% More Noise"
+jz_TraitSlowDesc,"Your natrual carefulness grants you these effects"
+jz_TraitSlowLongDesc,"Effects :\n10% Slower Movment\n10% Less Noise"
+jz_TraitOutdoorsDesc,"Your love of wide open spaces grants you these effects"
+jz_TraitOutdoorsLongDesc,"Outdoor Effect :\n10% Better Weapon Handling, Faster Reloading And 10% Less Melee Stamina\nIndoor Effect :\n10% Less Weapon Handling, Slower Reloading And 10% More Melee Stamina"
+jz_TraitIndoorsDesc,"Your love of wide small spaces grants you these effects"
+jz_TraitIndoorsLongDesc,"Indoor Effect :\n10% Better Weapon Handling, Faster Reloading And 10% Less Melee Stamina\nOutdoor Effect :\n10% Less Weapon Handling, Slower Reloading And 10% More Melee Stamina"
+jz_WoodBuildingSkillDesc,"Gain xp by using the Claw Hammer to upgrade Wooden Frames\nGather materials by using the Claw Hammer to break down Wooden Blocks\n            [00eb3c]Current XP-{cvar($jz_WoodBuildingXP:000)}                  Next Level-{cvar($jz_WoodBuildingNextLvTotal:000)}[-]"
+jz_WoodBuildingSkillRank1Desc,"Shapes"
+jz_WoodBuildingSkillRank1LongDesc,"Teaches you how to craft all of the Wood Frame shapes"
+jz_WoodBuildingSkillRank2Desc,"Tool"
+jz_WoodBuildingSkillRank2LongDesc,"Teaches you how to craft a Claw Hammer"
+jz_WoodBuildingSkillRank3Desc,"Supplies"
+jz_WoodBuildingSkillRank3LongDesc,"Teaches you how to craft Planks and Nails"
+jz_StoneBuildingSkillDesc,"Gain xp by using the Mason Hammer to upgrade Flagstone and Brick Frames. Gather materials by using the Mason Hammer to break down Flagstone and Brick Blocks\n            [00eb3c]Current XP-{cvar($jz_StoneBuildingXP:000)}                  Next Level-{cvar($jz_StoneBuildingNextLvTotal:000)}[-]"
+jz_StoneBuildingSkillRank1Desc,"Shapes"
+jz_StoneBuildingSkillRank1LongDesc,"Teaches you how to craft all of the Flagstone and Brick Frame shapes"
+jz_StoneBuildingSkillRank2Desc,"Tool"
+jz_StoneBuildingSkillRank2LongDesc,"Teaches you how to craft a Mason Hammer"
+jz_StoneBuildingSkillRank3Desc,"Supplies"
+jz_StoneBuildingSkillRank3LongDesc,"Teaches you how to craft Cobblestone"
+jz_StoneBuildingSkillRank4Desc,"Supplies"
+jz_StoneBuildingSkillRank4LongDesc,"Teaches you how to craft Bricks"
+jz_IronBuildingSkillDesc,"Gain xp by using the Wrench to upgrade Scrap Iron Frames\nGather materials by using the Wrench to break down Scrap Iron Blocks\n            [00eb3c]Current XP-{cvar($jz_IronBuildingXP:000)}                  Next Level-{cvar($jz_IronBuildingNextLvTotal:000)}[-]"
+jz_IronBuildingSkillRank1Desc,"Shapes"
+jz_IronBuildingSkillRank1LongDesc,"Teaches you how to craft all of the Scrap Iron Frame shapes"
+jz_IronBuildingSkillRank2Desc,"Tool"
+jz_IronBuildingSkillRank2LongDesc,"Teaches you how to craft a Wrench"
+jz_IronBuildingSkillRank3Desc,"Supplies"
+jz_IronBuildingSkillRank3LongDesc,"Teaches you how to craft Iron Sheet Metal and Nuts and Bolts"
+jz_ConcreteBuildingSkillDesc,"Gain xp by using the Concrete Sledge to upgrade Concrete Frames\nGather materials by using the Concrete Sledge to break down Concrete Blocks\n            [00eb3c]Current XP-{cvar($jz_ConcreteBuildingXP:000)}                  Next Level-{cvar($jz_ConcreteBuildingNextLvTotal:000)}[-]"
+jz_ConcreteBuildingSkillRank1Desc,"Shapes"
+jz_ConcreteBuildingSkillRank1LongDesc,"Teaches you how to craft all of the Rebar Frame shapes"
+jz_ConcreteBuildingSkillRank2Desc,"Tool"
+jz_ConcreteBuildingSkillRank2LongDesc,"Teaches you how to craft a Concrete Sledge"
+jz_ConcreteBuildingSkillRank3Desc,"Supplies"
+jz_ConcreteBuildingSkillRank3LongDesc,"Teaches you how to craft Concrete Mix"
+jz_SteelBuildingSkillDesc,"Gain xp by using the Welder to upgrade Steel Frames\nGather materials by using the Welder to break down Steel Blocks\n            [00eb3c]Current XP-{cvar($jz_SteelBuildingXP:000)}                  Next Level-{cvar($jz_SteelBuildingNextLvTotal:000)}[-]"
+jz_SteelBuildingSkillRank1Desc,"Shapes"
+jz_SteelBuildingSkillRank1LongDesc,"Teaches you how to craft all of the Steel Frame shapes"
+jz_SteelBuildingSkillRank2Desc,"Tool"
+jz_SteelBuildingSkillRank2LongDesc,"Teaches you how to craft a Welder"
+jz_SteelBuildingSkillRank3Desc,"Supplies"
+jz_SteelBuildingSkillRank3LongDesc,"Teaches you how to craft Steel Sheet Metal"
+jz_SmallGameHunterRank1Desc,"Small Game Butcher"
+jz_SmallGameHunterRank1LongDesc,"Harvest twice as much meat and learn to harvest more advanced items from small game."
+jz_SmallGameHunterRank2Desc,"Small Game Hunter"
+jz_SmallGameHunterRank2LongDesc,"Harvest 3X as much meat and learn to harvest all items from small game."
+jz_SmallGameHunterRank3Desc,"Small Game Tracker"
+jz_SmallGameHunterRank3LongDesc,"Learn to track Small Game on your compass when crouched."
+jz_LargeGameHunterRank1Desc,"Large Game Butcher"
+jz_LargeGameHunterRank1LongDesc,"Harvest twice as much meat and learn to harvest more advanced items from small game."
+jz_LargeGameHunterRank2Desc,"Large Game Hunter"
+jz_LargeGameHunterRank2LongDesc,"Harvest 3X as much meat and learn to harvest all items from small game."
+jz_LargeGameHunterRank3Desc,"Large Game Tracker"
+jz_LargeGameHunterRank3LongDesc,"Learn to track Small Game on your compass when crouched."
+jz_SmallPredGameHunterRank1Desc,"Small Predator Butcher"
+jz_SmallPredGameHunterRank1LongDesc,"Harvest twice as much meat and learn to harvest more advanced items from small game."
+jz_SmallPredGameHunterRank2Desc,"Small Predator Hunter"
+jz_SmallPredGameHunterRank2LongDesc,"Harvest 3X as much meat and learn to harvest all items from small game."
+jz_SmallPredGameHunterRank3Desc,"Small Predator Tracker"
+jz_SmallPredGameHunterRank3LongDesc,"Learn to track Small Game on your compass when crouched."
+jz_LargePredGameHunterRank1Desc,"Large Predator Butcher"
+jz_LargePredGameHunterRank1LongDesc,"Harvest twice as much meat and learn to harvest more advanced items from small game."
+jz_LargePredGameHunterRank2Desc,"Large Predator Hunter"
+jz_LargePredGameHunterRank2LongDesc,"Harvest 3X as much meat and learn to harvest all items from small game."
+jz_LargePredGameHunterRank3Desc,"Large Predator Tracker"
+jz_LargePredGameHunterRank3LongDesc,"Learn to track Small Game on your compass when crouched."
+jz_perkLockPickingDesc,"Practicing picking locks in your spare time makes you faster at picking them and lock picks break less often."
+jz_perkInfiltratorDesc,"Studding Traps and Mines in your spare time makes you more aware of them and able to deal with them better."
+jz_perkSexualTrexDesc,"Specialize your upper body training to increase your melee stamina."
+jz_perkLockPickingRank1LongDesc,"Burglar. You are starting to make a name for yourself. You can pick locks 20% faster and have a 10% lower chance to break lockpicks."
+jz_perkLightArmorRank1LongDesc,"You have started on the path of the lightly armored warrior. Reduce light armor movement penalty by 15% and stamina penalty by 10%. Improve durability by 50%."
+jz_perkLightArmorRank2LongDesc,"You've survived some battles and hope to be a knight one day. Reduce light armor movement penalty by 30% and stamina penalty by 20%. Improve durability by 100%."
+jz_perkLightArmorRank3LongDesc,"All the hard training and battles have paid off, you are now a knight. Reduce light armor movement penalty by 50% and stamina penalty by 35%. Improve durability by 150%."
+jz_perkLightArmorRank4LongDesc,"You have made a name for yourself and are feared by nearly all as you are now a gladiator. Reduce light armor movement penalty by 75% and stamina penalty by 50%. Improve durability by 200%."
+jz_perkHeavyArmorRank1LongDesc,"You might move a little awkward in heavy armor but you're alive to talk about it. Reduce heavy armor movement and stamina penalty by 5%. Improve durability by 50%."
+jz_perkHeavyArmorRank2LongDesc,"You can take a hit! Reduce heavy armor movement and stamina penalty by 10%. Improve durability by 100%."
+jz_perkHeavyArmorRank3LongDesc,"Now we're talking about some serious protection. Reduce heavy armor movement and stamina penalty by 17%. Improve durability by 150%."
+jz_perkHeavyArmorRank4LongDesc,"You are now a walking tank. Reduce heavy armor movement and stamina penalty by 25%. Improve durability by 200%."
+
+
+Quest_________________________XML,Quest_________________________XML
+tutorialTipQuest01_title,"True Survival"
+tutorialTipQuest01,"To begin, place your 'Start Here' starting item on the ground to choose your characters stats and abilities for this play through. You will start with 3 Knowledge Points that can be used to select your Profession, Hobby and Trait. Any combination can be chosen but these options do not stack. Additional Professions can be acquired by collecting Profession Pages found in loot." 
+jzquest_Starting,Getting Started
+jzquest_StoryLinePt1,"1 Storyline Quest Pt1: The Get Away!"
+jzquest_StoryLinePt1Sub,"Set Up Camp"
+jzquest_StoryLinePt1Desc,"You barley made it out of there alive. Another camp torn to shreds by a unstoppable Horde. So many killed...so many screams... No time to dwell on it now, you were able to grab a Bug Out Bag but its not safe to go through it here, not if you want to live. Find or make a safe place to set up camp and go through your bag." 
+jzquest_StoryLinePt2,"1 Storyline Quest Pt2: Take a Breather"
+jzquest_StoryLinePt2Sub,"Find Your Walkie"
+jzquest_StoryLinePt2Desc,"Take a look and see if your Bug Out Bag has anything useful like a Walkie Talkie."
+jzquest_StoryLinePt3,"1 Storyline Quest Pt3: Back To Work"
+jzquest_StoryLinePt3Sub,"Find some Batteries"
+jzquest_StoryLinePt3Desc,"Well you found a Walkie but its dead. You will need to find some C Batteries to get the Walkie working if you ever want to find any of the survivors from your camp."
+jzquest_StoryLinePt4,"1 Storyline Quest Pt4: Reaching Out"
+jzquest_StoryLinePt4Sub,"Walkie Communication"
+jzquest_StoryLinePt4Desc,"You snap the batteries in and it crackles to life. As you flip through the channels you start to hear conversation broken up by static. You speak into the Walkie and a familiar female voice answers back. You can't believe it, it's the Doctor from your camp! You tell her you got away ok and ask how she is doing. She explains while running from the camp she ran into a Military Convoy that was headed to the CDC Headquarters and they offered her safety. As you listen you begin to notice the connection is getting weak and relies that the convoy must be moving out of range of the Walkie's. You tell the Doc you are losing her signal and a man gets on the line and tells you they passed by a Radio Tower in the Forest and it has a Satellite Transmitter at the top of the tower. If you use a Screwdriver or Wrench on it you can get the equipment to turn your Walkie into a Satellite Radio and extend its range. He then tells you that 88.7 is the frequency you can reach them at at the CDC." 
+jzquest_StoryLinePt5,"1 Storyline Quest Pt5: Finding a Station"
+jzquest_StoryLinePt5Sub,"Crafting a Sat Phone"
+jzquest_StoryLinePt5Desc,"Now that you have the parts travel back to your base camp and craft and place the Satellite Radio." 
+jzquest_StoryLinePt6,"1 Storyline Quest Pt6: Going Home"
+jzquest_StoryLinePt6Sub,"Collecting Gear"
+jzquest_StoryLinePt6Desc,"You dial in the frequency the man gave you and try to reach the Doctor. She lets you know that they arrived safely at the CDC but as they were traveling they saw a large Horde thats about to pass the CDC and heading your way. She says that she saw something strange in the Horde but not sure what it was. The Doc says the CDC has sub levels and that everyone is going underground till the Horde passes. She's asked you to get some tissue samples from the strange creatures she saw moving with the Horde. To do so you will need the Tissue Extractor from her old Med Bay at your old camp at the Favales Academy. She tells you to contact her after you have the samples"   
+jzquest_StoryLinePt7,"1 Storyline Quest Pt7: A Pound of Flesh"
+jzquest_StoryLinePt7Sub,"Collecting and Testing Samples"
+jzquest_StoryLinePt7Desc,"Now that you have the Extractor craft a Tissue Extractor Spear to use it on Mutated Creatures during the Bloodmoon to gather Mutated Tissue Samples for the Doctor" 
+jzquest_StoryLinePt8,"1 Storyline Quest Pt8: Reporting In"
+jzquest_StoryLinePt8Sub,"Report the results"
+jzquest_StoryLinePt8Desc,"Report your success to the Doc" 
+jzquest_StoryLinePt9,"1 Storyline Quest Pt9: The Hospital"
+jzquest_StoryLinePt9Sub,"Test the Samples"
+jzquest_StoryLinePt9Desc,"You let the Doctor know you have the samples and she explains to you how to test the samples in the local Hospitals Lab. Travel there and find the Laboratory to test the samples. Then report back your findings." 
+jzquest_StoryLinePt10,"1 Storyline Quest Pt10: Reporting In"
+jzquest_StoryLinePt10Sub,"Report the results"
+jzquest_StoryLinePt10Desc,"Report your success to the Doc" 
+jzquest_StoryLinePt11,"1 Storyline Quest Pt11: A Strange Growth"
+jzquest_StoryLinePt11Sub,"Collect the samples"
+jzquest_StoryLinePt11Desc,"After you read her the results she sounds surprised of the findings and leaves for a few minutes to talk to the other scientist. When she returns she tells you the findings have created more questions than answers and more information is needed to explain them. The Doc tells you the Military informed her they saw some unusual plant growths near their missile base and she ask you to travel the to burnt out section of the city and use the Tissue Extractor to get some samples to test at the Hospital. Report back your findings" 
+jzquest_StoryLinePt12,"1 Storyline Quest Pt12: Reporting In"
+jzquest_StoryLinePt12Sub,"Report the results"
+jzquest_StoryLinePt12Desc,"Report your success to the Doc" 
+jzquest_StoryLinePt13,"1 Storyline Quest Pt13: Red Skies at Night"
+jzquest_StoryLinePt13Sub,"Gather more samples "
+jzquest_StoryLinePt13Desc,"When you get in touch with the Doctor to tell her about the findings you notice she sounds like she is getting sick. She says that the flu is spreading through the CDC and many are sick but that the doctors have it under control. She lets you know their scouts have spotted another large horde coming their way and they will be locking up underground until it passes. The Doc tells you the Scientist have an idea but need fresh samples from the mutant creatures in the Hordes to test it. Collect some Mutated Tissue Samples and contact her after the Horde has passes." 
+jzquest_StoryLinePt14,"1 Storyline Quest Pt14: Reporting In"
+jzquest_StoryLinePt14Sub,"Report back"
+jzquest_StoryLinePt14Desc,"Report your success to the Doc" 
+jzquest_StoryLinePt15,"1 Storyline Quest Pt15: Apartment Hunting"
+jzquest_StoryLinePt15Sub,"Find a Security Card" 
+jzquest_StoryLinePt15Desc,"When you call back to report your success a Soldier tells you that the Doctor is sick with the flu like the others and is resting. He tells you they might have an idea where this all started. He explains that there is a secret underground Military testing facility under the Missile Base that they lost contact with a few days before the zombies started showing up. He lets you know you will need a Security Card to access any of the computers and that he knows a Soldier that lives on the top floor of the large apartment building in town that was stationed there. He should have a Security Card in his apartment." 
+jzquest_StoryLinePt15b,"Find a Security Card... Again"
+jzquest_StoryLinePt15bSub,"Find a Security Card... Again"
+jzquest_StoryLinePt15bDesc,"Used to repeat Story Line quest 15's encounter" 
+jzquest_StoryLinePt16,"1 Storyline Quest Pt16: Belly of the Beast"
+jzquest_StoryLinePt16Sub,"Learn the Truth" 
+jzquest_StoryLinePt16Desc,"Now that you have the Security Card find the Military Missile Base and make your way to the bottom test lab and into the Security Room to use the Security Card and learn what happened there" 
+jzquest_StoryLinePt17,"1 Storyline Quest Pt17: The Beginning"
+jzquest_StoryLinePt17Sub,"Report what you have learned" 
+jzquest_StoryLinePt17Desc,"You click on the last recording. Nights Vail Testing flashes in the upper corner of the screen. You see a group of Scientists gathered around a couch sized machine conducting an experiment. As the machine starts, wind appears to move papers around the room and a small ball of electricity begins to form growing to about the size of a beach ball. The Scientists begin to get animated and you see them trying to scream to each other above the noise of the device. The machine begins to smoke and the electric ball appears to explode.The video goes black then comes back on with the camera on the ground facing the back exit.You see the scientist get to their feet looking in fear in the direction of the machine. As they try to open the exit a grotesque foot lands in front of the camera and then a mutated creature comes into view attacking and killing all the scientist in seconds before another foot steps in front of the camera then the video goes to static. Return to your base and contact the CDC with this information. " 
+jzquest_StoryLinePt18,"1 Storyline Quest Pt18: When It Hits the Fan"
+jzquest_StoryLinePt18Sub,"Save the Soldier Save the World"
+jzquest_StoryLinePt18Desc,"You contact the CDC, a frantic soldier answers and tells you a few people died from being sick over night and turned into Z’s, they quickly infected others and then in the confusion the C.D.C entrance was left open and somehow a fire started on the first floor. The Soldier begs you to come save him, he is trapped underground in the lab with Z’s all around and the building is burning above him. He tells you he's located in the CDC and that he has the CDC Files with all the Scientists work on the incident and virus with him and the last thing the Doc told him was to give it to you. Travel to the C.D.C and fight your way to the bottom to save the Soldier and to retrieve the CDC Files""
+jzquest_StoryLinePt19,"1 Storyline Quest Pt19: The Final Piece"
+jzquest_StoryLinePt19Sub,"Down the Hole"
+jzquest_StoryLinePt19Desc,"The Soldier escaped but left a note for you that says he has the CDC Files and he is running to a bunker he knows of. He left you a map."
+jzquest_StoryLinePt20,"1 Storyline Quest Pt20: Learn the whole truth"
+jzquest_StoryLinePt20Sub,"Knowledge is power"
+jzquest_StoryLinePt20Desc,"Now that you have the CDC files read them to learn the truth. 
+jzquest_StoryLinePt21,"1 Storyline Quest Pt21: The Hubris of Man"
+jzquest_StoryLinePt21Sub,"The Whole Truth"
+jzquest_StoryLinePt21Desc,"The CDC Files detail the Military's attempt (code name Nights Veil) to use micro black holes as warheads for projectiles. It details the happenings of the security tape you saw in the military base. It explains a week before that incident the scientist successfully created the first stable singularity that lasted for .01 of a second before they shut it down. The tape you watched was their next attempt to maintain the blackhole for a longer. During that experiment it is believed a hole of some kind opened between earth and somewhere else. It looks like the scientist where trying to figure out if the hole was to another place, time or dimension but they could not agree and did not finish their work."
+jzquest_StoryLinePt22A,"1 Storyline Quest Pt22A: The End Game"
+jzquest_StoryLinePt22ASub,"The Brains"
+jzquest_StoryLinePt22ADesc,"It looks like the medical team had more success trying to cure the virus than the Military did stopping the mutants. They have identified 5 possible compounds that have shown promise in slowing, stopping and reversing the Z Virus. You must finish their work using the BioEngineered seeds in the Bio Kit. Plant each seed in its specific biome and use spores gathered from zombies during Bloodmoons in their biomes to craft specialized Fertilizer for each plant to grow. Harvest 50 of each crop and use them to craft the Z Anti Virus."
+jzquest_StoryLinePt22B,"1 Storyline Quest Pt22B: The End Game"
+jzquest_StoryLinePt22BSub,"The Brawn (Snow)"
+jzquest_StoryLinePt22BDesc,"Even if the Z Anti-Virus works it wont stop the Mutants that have come through the portal. Most of them can be dealt with but a few large mutants have been spotted. Craft the Military's Mutant Attractor and place it in each biome during the Bloodmoon and kill the Boss Mutants that it attracts"
+jzquest_StoryLinePt22C,"1 Storyline Quest Pt22C: The End Game"
+jzquest_StoryLinePt22CSub,"The Brawn (Desert)"
+jzquest_StoryLinePt22CDesc,"Even if the Z Anti-Virus works it wont stop the Mutants that have come through the portal. Most of them can be dealt with but a few large mutants have been spotted. Craft the Military's Mutant Attractor and place it in each biome during the Bloodmoon and kill the Boss Mutants that it attracts"
+jzquest_StoryLinePt22D,"1 Storyline Quest Pt22D: The End Game"
+jzquest_StoryLinePt22DSub,"The Brawn (Wasteland)"
+jzquest_StoryLinePt22DDesc,"Even if the Z Anti-Virus works it wont stop the Mutants that have come through the portal. Most of them can be dealt with but a few large mutants have been spotted. Craft the Military's Mutant Attractor and place it in each biome during the Bloodmoon and kill the Boss Mutants that it attracts"
+jzquest_StoryLinePt22E,"1 Storyline Quest Pt22E: The End Game"
+jzquest_StoryLinePt22ESub,"The Brawn (Burnt)"
+jzquest_StoryLinePt22EDesc,"Even if the Z Anti-Virus works it wont stop the Mutants that have come through the portal. Most of them can be dealt with but a few large mutants have been spotted. Craft the Military's Mutant Attractor and place it in each biome during the Bloodmoon and kill the Boss Mutants that it attracts"
+jzquest_StoryLinePt22F,"1 Storyline Quest Pt22F: The End Game"
+jzquest_StoryLinePt22FSub,"The Brawn (Forest)"
+jzquest_StoryLinePt22FDesc,"Even if the Z Anti-Virus works it wont stop the Mutants that have come through the portal. Most of them can be dealt with but a few large mutants have been spotted. Craft the Military's Mutant Attractor and place it in each biome during the Bloodmoon and kill the Boss Mutants that it attracts"
+jzquest_WorkbenchUpgradesImprovised,"Improvised Upgrading"
+jzquest_Lv1Crafting_description,"Build and place this workbench to craft quality items"
+jzquest_Lv2Crafting_description,"Complete this quest to acquire the tool needed to craft level two quality items on this workbench"
+jzquest_Lv3Crafting_description,"Complete this quest to acquire the tool needed to craft level three quality items on this workbench"
+jzquest_Lv4Crafting_description,"Complete this quest to acquire the tool needed to craft level four quality items on this workbench"
+jzquest_Lv5Crafting_description,"Complete this quest to acquire the tool needed to craft level five quality items on this workbench"
+jzquest_Lv6Crafting_description,"Complete this quest to acquire the tool needed to craft level six quality items on this workbench"
+jzquest_WorkbenchUpgradesPipeGun,"Pipe Gun Upgrading"
+jzquest_WorkbenchUpgradesTool,"Tool Upgrading"
+jzquest_WorkbenchUpgradesElectronic,"Electronic Upgrading"
+jzquest_WorkbenchUpgradesLightArmor,"Light Armor Upgrading"
+jzquest_WorkbenchUpgradesHeavyArmor,"Heavy Armor Upgrading"
+jzquest_WorkbenchUpgradesHandgun,"Handgun Upgrading"
+jzquest_WorkbenchUpgradesShotgun,"Shotgun Upgrading"
+jzquest_WorkbenchUpgradesMachineGun,"Machine Gun Upgrading"
+jzquest_WorkbenchUpgradesRlife,"Rifle Upgrading"
+UI_Display_________________________________XML,UI_Display_________________________________XML
+jz_statStaminaMaxBlockage,"Fatigue Level"
+TSProteinGrainVeggieDisp,"Protein, Carbohydrates & Fiber"
+TSProteinFruitVeggieDisp,"Protein, Vitamins & Fiber"
+TSProteinFruitVeggieGrainDisp,"Protein, Vitamins, Fiber & Carbs"
+TSProteinGrainFruitDisp,"Protein, Carbohydrates & Vitamins"
+LOADINGSCREEN_________________________________XML,LOADINGSCREEN_________________________________XML
+jz_loadingTipBaseUpgrading,"Building blocks can be upgraded to stronger versions using material and it's corresponding tool.\nThe most common upgrade materials are: Planks, Cobblestone Rocks, Bricks, Concrete Mix and Iron and Steel Sheet Metal."
+jz_loadingTipBaseUpgrading_title,"True Survival: Base Upgrading Supplies"
+jz_loadingTipBladedWeapons,"Bladed weapons such as knives and machetes are the best at harvesting resources from animals and can be repaired with Sharpening Stones.\nIncrease and improve the resources you receive when butchering by gaining XP killing and butchering similar animals.\nYou can check your progress in your Skill Menu under Hunting."
+jz_loadingTipBladedWeapons_title,"True Survival: Butchering and Hunting"
+jz_loadingTipCraftingBetterQL,"To improve the crafting quality of an item, craft more of that item. You can see the amount of an item you need to craft to improve it in your Quest Menu and track your current level in your Skill Menu under Crafting" 
+jz_loadingTipCraftingBetterQL_title,"True Survival: Quality Progression"
+jz_loadingTipEncumbrance,"Carrying too many items in your inventory will slow you down.\nThe clothing you wear will determine your inventory, find or craft pocket mods for clothing or armor to increase your capacity even more."
+jz_loadingTipEncumbrance_title,"True Survival: Encumbrance"
+jz_loadingTipExtCharStats,"To access the character menu press [action:local:Inventory][action:permanent:Character], below your character’s name select the Extended Character Stats tab to see all your character’s total stats which include perks, buffs, equipped clothing, nutrition stats, armor and weapons."
+jz_loadingTipExtCharStats_title,"True Survival: Extended Character Stats"
+jz_loadingTipHarvestingResources,"Don't use your fist to harvest resources it will hurt you, instead use Sticks and Branches early to gather Plant Fibers then use tools to harvest other resources.\nA tools material will determine what materials it can damage. Stone tools work well on wood and stone but will do little damage to iron or steel materials; Iron tools will work well on everything except Steel material; Steel tools work well on everything"
+jz_loadingTipHarvestingResources_title,"True Survival: Harvesting Resources"
+jz_loadingTipProperTools,"All player crafted building blocks are started with Frames and upgraded with the proper tool and materials.\nTo collect building supplies before you can craft them use a building tool to reclaim supplies from a corresponding block type.\nThe Mason Hammer uses Bricks or Cobblestone to upgrade Brick and Flagstone Frames. The Claw Hammer uses Planks to upgrade Wooden Frames\nThe Wrench uses Iron Sheet Metal to upgrade Scrap Iron Frames. The Welder uses Steel Sheet Metal to upgrade Steel Frames"
+jz_loadingTipProperTools_title,"True Survival: The Right Tool for the job"
+jz_loadingTipStoneAxe,"The stone axe is a primitive starting tool used to gather resources using [action:local:Primary].\nUse [action:local:Secondary] to repair and upgrade Wooden Spikes."
+jz_loadingTipStoneAxe_title,"True Survival: Stone Axe"
+jz_loadingTipUsingIronTools,"An iron pickaxe damages iron much better than a stone axe, but also costs much more stamina. Increasing your Wellness increases your base stamina.\nBeverages and perks can help with stamina regeneration, stamina cost and calories burned."
+jz_loadingTipUsingIronTools_title,"True Survival: Using Iron Tools"
+jz_loadingTipWrenches,"Wrenches, ratchets and impact drivers are best at harvesting mechanical items.\nIf you see a different animation then you can get special resources like Mechanical Parts that you would not get with a Pickaxe."
+jz_loadingTipWrenches_title,"True Survival: Wrenches"
+jz_loadingTipScrewdivers,"Screwdrivers are best at harvesting Electrical items. If you see a different animation then you can get special resources like Electric and Tech Parts that you would not get with a pickaxe."
+jz_loadingTipScrewdivers_title,"True Survival: Screwdrivers"
+jz_loadingTipTSDeath,"In True Survival death is not an escape and all effects will stay with the you after you have respawned.\nTrue Death happens when your Wellness reaches 0 and you will not be able to respawn with that character. If you want to restart early you can craft a Dead is Dead Reset Item using Broken Glass. Using it will restart your character as a new player wiping all progression"
+jz_loadingTipTSDeath_title,"True Survival: Dead is Dead"
+jz_loadingTipTSNutrition,"Your diet will affect your nutrition giving you important benefits or painful consequences. Your lowest level nutrition stat will determine your current diet.\nYou can view your nutrition stats in your Character Stat screen they are Protein, Essential Vitamins, Fiber and Carbohydrates."
+jz_loadingTipTSNutrition_title,"True Survival: Nutrition"
+jz_loadingTipTSRecovery,"During your day your Fatigue will slowly increase limiting your max Stamina. Resting on furniture or sleeping on beds will lower your Fatigue.\nSleeping on Beds will also recover health. The more comfortable the Bed or furniture the faster you will recover but you can’t get any rest if zombies are around."
+jz_loadingTipTSRecovery_title,"True Survival: A Good Night's Sleep"
+jz_loadingTipTSFarming,"All seed recipes can be found in loot. Seeds can be planted on soil or in Farmplots. All player planted crops can be trampled by non players. Planted Seeds can be fertilized using the Watering Can and Fertilizer increasing the harvest amount and decreasing the grow time. Crops can also get Infested with insects and/or Dry Out, these conditions can be dealt with using the Watering Can and Ounces or Dirty Water or Insecticide."
+jz_loadingTipTSFarming_title,"True Survival: Farming"
+jz_loadingTipTSZVirus,"The only way to catch the Z-Virus is to be bitten by an Infected. In order for an Infected to bite you they must first Grab you. Your chance to be grabbed is based on your current  Health, Stamina, Fatigue and Diet. Once grabbed you can delay a bite from an Infected by a melee strike to their head. If bitten you will catch the Infection.\nAt 100% infected your Wellness will drop to 0 and you will be Dead is Dead."
+jz_loadingTipTSZVirus_title,"True Survival: The Z-Virus"
+jz_loadingTipTSWater,"Water is by the ounce and stacks to 128 ounces, craft a drink of water to rehydrate. Water can be found in 3 forms Clean, Dirty and River Water.\nTo clean Dirty Water boil it, to clean River Water filter and boil it. To collect River Water craft an Old Milk Jug and use it to collect it."
+jz_loadingTipTSWater_title,"True Survival: Water"
+jz_loadingTipAxes,"Axes are excellent at harvesting wood, but are not the weapon of choice for killing zombies.\nFind the recipe to craft it in loot or collect enough Axes in loot and reverse engineer it on the Research Desk."
+jz_loadingTipAxes_title,"True Survival: Axes"
+jz_loadingTipBandages,"Some cuts can be serious and cause you to bleed out. Carry bandages on your belt so you can quickly apply them with [action:local:Primary] to stop bleeding. Use [action:local:Secondary] on an ally to heal them.\nMedical items treat medical conditions and do not heal Health"
+jz_loadingTipBandages_title,"True Survival: Bandages"
+jz_loadingTipBuffs,"During the game you will have many status effects. (buffs and debuffs)\nWhile you are in any game menu such as Skills or Crafting, click on the effect icon at the far left and you will be taken to the effect description.\nNegative effects descriptions will explain how to treat them, make sure you deal with them before they get worse."
+jz_loadingTipBuffs_title,"True Survival: Status Effects"
+jz_loadingTipGlue,"Bones can be ground into Bone Meal and cooked into glue or made into Fertilizer. Glue is an essential ingredient used in many items and Fertilizer will speed up plant growth and increase their yield. Who knew the dead could be so useful."
+jz_loadingTipGlue_title,"True Survival: Bones"
+jz_loadingTipHarvestingCorpses,"Animal corpses and rotten remains can be harvested for hide, meat, and bone. Bone is used for crafting Glue and Fertilizer.\nA stone axe will do but blades are more efficient and the Bone Knife can be crafted early. Corpses also slow you down when moving over them."
+jz_loadingTipHarvestingCorpses_title,"True Survival: Harvesting Corpses"
+jz_loadingTipMainHUD,"On your HUD your Health and Stamina levels are shown as red and blue bars. Food and Water levels are shown as green and blue bars under your toolbelt. Your Fatigue will slowly shorten your stamina bar and your Wellness will increase your max Health and Stamina. Open your character screen with  [action:local:Inventory][action:permanent:Character] to see detailed player stats like your Nutrition Stats in the tabs below your character name."
+jz_loadingTipMainHUD_title,"True Survival: Hud Stat Bars"
+jz_loadingTipPickaxes,"Pickaxes are great for harvesting the various ores such as iron, lead, coal, oil shale and potassium nitrate.\nFind the recipe to craft it in loot or collect enough Pickaxes in loot and reverse engineer it on the Research Desk."
+jz_loadingTipPickaxes_title,"True Survival: Pickaxes"
+jz_loadingTipScrapping,"In your inventory you can scrap many looted and harvested items down to their base material to save space.\nWhen scrapping items you lose 25% of the material but you can also smelt items to get the full value.\nThere are many base materials: Sticks; Scrap Iron; Scrap Steel; Scrap Brass; Scrap Rubber; Scrap Lead; Scrap Plastic; Bio Mass; Military Fiber; Electric Parts; Mechanical Parts; Tech Parts; Broken Glass; Cloth; Leather; Paper; Small Rock; Plant Fiber; Skill Paper; Protein Serving; Grain Serving; Fruit Serving; Veggie Serving."
+jz_loadingTipScrapping_title,"True Survival: Scrapping Items"
+jz_loadingTipSledgehammers,"Sledgehammers are great for breaking things but yield little or no harvest.\nFind the recipe to craft it in loot or collect enough Sledgehammers in loot and reverse engineer it on the Research Desk."
+jz_loadingTipSledgehammers_title,"True Survival: Sledgehammers"
+jz_loadingTipSteelKnuckles,"Steel Knuckles are the most devastating brawling weapon and can also be used to harvest meat from animals and remains.\nFind the recipe to craft it in loot or collect enough Steel Knuckles in loot and reverse engineer it on the Research Desk."
+jz_loadingTipSteelKnuckles_title,"True Survival: Steel Knuckles"
+jz_loadingTipUnlockingRecipes,"If a recipe shows a lock item then you cannot craft it yet. Clicking on it will show how to unlock it.\nIf you find schematics you already know you can scrap them for Skill Paper and use them to research unknown schematics.\nIf you have trouble finding a schematic you can always collect enough of the item and reverse engineer it on the Research Desk.\nAll learnable recipes can be tracked in the Schematic section in your Skill Menu."
+jz_loadingTipUnlockingRecipes_title,"True Survival: Unlocking Recipes"
+jz_loadingTipWorkstations,"You can craft many basic items in your inventory but many recipes will require workstations and some even require specific tools.\nIf a recipe in your backpack shows a small icon then this will tell you which workstation it is crafted with.\nWorkstations include: Forge; Workbench; Chemistry; Campfire; Stonemill; Mortar and Pestle; Armor Table; Research Desk; Drying Rack; Fermentation Barrel; Methane Producer; Anvil; Cement Mixer and Steel Forge. "
+jz_loadingTipWorkstations_title,"True Survival: Workstations"
+jz_loadingTipArmor,"Armor increases your Armor Rating which is visible in the character screen. An armor rating of 90 reduces incoming damage by 90%.\nArmor also can provide some resistance to effects like bleeding or being stunned. Some armor slows you down and uses more stamina to move in."
+jz_loadingTipArmor_title,"True Survival: Armor"
+jz_loadingTipDistraction,"By throwing a small stone or a snowball you may distract an idle or roaming zombie.\nHold down [action:local:Primary] to charge your throw and watch them walk off where your distraction went."
+jz_loadingTipDistraction_title,"True Survival: Distraction"
+jz_loadingTipItemStats,"To view an item’s stats first select it in your inventory. The inspection window will show item stats, including the effects of installed mods.\nLearn more about the item by selecting its description tab.\nLearn more about total stats in the Extended Character Stats tip."
+jz_loadingTipItemStats_title,"True Survival: Items Stats"
+jz_loadingTipJournalEntries,"You can learn how to play the game by reading journal tips signified by the pen icon on the top tool bar.\nPress [action:local:Inventory][action:permanent:Journal] and click on the flashing pen icon to access journal entries."
+jz_loadingTipJournalEntries_title,"True Survival: Journal Entries"
+jz_loadingTipQuestSharing,"If you play with friends you can share most quests so all participants get the reward for completion.\nAfter receiving a quest press [action:local:Inventory][action:permanent:Quests] and click on the exclamation mark icon to access quests.\nIf you click on a quest that can be shared then a button will show above the list of quests.\nIf you receive a shared quest make sure it is the active one so that you see the tasks."
+jz_loadingTipQuestSharing_title,"True Survival: Sharing Quests"
+jz_loadingTipRadials,"The interact [action:local:Activate][action:permanent:Activate], reload [action:local:Reload][action:permanent:Reload], flashlight [action:local:ToggleFlashlight][action:permanent:ToggleFlashlight] and inventory [action:local:Inventory][action:permanent:Inventory] buttons have a radial menu that shows up when keeping the button pressed for a moment. These give you more options depending on the current context."
+jz_loadingTipRadials_title,"True Survival: Radial Menus"
+jz_loadingTipStealth,"If you crouch down you are sneaking. Enemies will have a harder time seeing and hearing you and you can increase your stealthiness with perks, items and item mods.\nThe stealth meter does not show specifically sight or sound but a combined value that lets you see to which degree an action affects your stealth."
+jz_loadingTipStealth_title,"True Survival: Stealth and Sneaking"
+jz_loadingTipWhatIsItGoodFor,"You may loot or harvest an item and not know its importance. In your inventory select an item and then select RECIPES from the action menu.\nThis will display all recipes that can be made using this item and the required workstation."
+jz_loadingTipWhatIsItGoodFor_title,"True Survival: What is this good for?"
+jz_loadingTipTSCrowbar,"A Crowbar can be used to pick up world blocks, many that players can not build like large beds, refrigerators, signs and more. If you use the Crowbar on a broken workstation you can repair it and place a working one. Once you have a Crowbar make sure to craft a mold for it on the Campfire before it breaks so you can craft a new one in the Forge." 
+jz_loadingTipTSCrowbar_title,"True Survival: Crowbar"
+jz_loadingTipTSSpoiling,"Foods will spoil over time and turn into a spoiled version. These spoiled items can be scraped for Biomass that can be used in fertilizer. Prepared drinks will also spoil and revert to water over time. Placing spoiling items in a Cooler will slow their spoiling speed placing them in a refrigerator will slow down the spoiling even more." 
+jz_loadingTipTSSpoiling_title,"True Survival: Spoilage"
+jz_loadingTipTSCooking,"Raw food items can be scraped into Servings. Depending on the food type it may take more than 1 item in the stack to scrap it. Some canned foods can be scrapped to their respective food servings. There are 4 types of Serving  Fruit, Veggie, Protein, and Grain. These items can be used to cook many filling nutritious meals."
+jz_loadingTipTSCooking_title,"True Survival: Food Servings"
+
+JOURNAL_______________________________TIPS,JOURNAL_______________________________TIPS
+TrueSurvivalNutritionTip_title,"True Survival: Nutrition"
+TrueSurvivalNutritionTip,"Staying healthy is key to survival. All food has some form of nutritional value, to find the value of any given consumable look in the Stat Tab of the item.\nThere are 4 nutrition groups;\nProtein - Protein Servings, Raw Meat\nFiber - Vegetable Servings, Raw Vegetables\nCarbohydrates - Breads, anything with grains\nEssential Vitamins - Fruit Servings, Raw Fruits\n\nAs long as your lowest nutritional value is:\n<1.00 - The longer any nutrition stat is below 1.0 the worse you diet will get. Starting at Bad Diet then Vitamin Deficiency and last Malnourished, during these stages you will slowly start dieing from lack of nutrition. To fix this check your Core Character Stats and see what nutrition stats are below 1.0 and consume things to improve them.\n>1.00 - Balanced Diet - will allow you to gain health from consumables\n>2.00 - Good Diet - will allow you to gain health and Wellness from consumables and gain 1 Stamina every 3 seconds\n>3.00 - Healthy Diet - will allow you to gain health and Wellness from consumables, gain 2 Stamina every 3 seconds, a 20% speed increase and grant Natural Healing when full."
+TrueSurvivalFoodServingsTip_title,"True Survival: Food Servings"
+TrueSurvivalFoodServingsTip,"All raw food items can be scrapped into food servings.\nDepending on the food type it may take more than 1 item in the stack to scrap it.\nSome canned foods may be scrapped to their respective food servings."
+
+
+[35bd00]Green[-]
+[f21b10]Red[-]
+[fff700]Yellow[-]
