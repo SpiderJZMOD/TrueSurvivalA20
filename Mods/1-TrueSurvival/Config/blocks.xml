@@ -33223,7 +33223,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
 	<property name="CraftActionName" value="Choose"/>
-	<property name="CraftIcon" value="ui_game_symbol_backpack"/>
+	<property name="WorkstationIcon" value="jz_CharacterChoiceComputer"/>
+	<property name="CraftIcon" value="ui_game_symbol_modded"/>
 	<property name="OpenSound" value="open_workbench"/>
 	<property name="CloseSound" value="close_workbench"/>
 	<property class="RepairItems"> <property name="resourceRockSmall" value="8"/> </property>
@@ -33234,7 +33235,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 	<property name="SortOrder1" value="70i0"/>
-	<property name="CustomIcon" value="ui_game_symbol_Start" />
     <!-- ZMOD ANY -->
     <drop event="Destroy" name="jz_CharacterChoiceComputer" count="1" />
 	<drop event="Destroy" count="0"/>
@@ -37858,14 +37858,32 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="jz_SimpleScaffoldingBlock">
-	<property name="Extends" value="woodFrameMaster" param1="UpgradeBlock"/>
-	<property name="CustomIcon" value="FrameShapes"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="Tags" value="wood"/>
+	<property name="Material" value="Mwood_weak"/>
+	<property name="CustomIcon" value="FrameShapes"/>
+	<property name="MaxDamage" value="50"/>
 	<property name="DescriptionKey" value="jz_SimpleScaffoldingBlockDesc"/>
-	<property name="Group" value="Basics,Building"/>
-	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
-	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="frameShapes:cube"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="FuelValue" value="100"/>
+	<property name="Model" value="cube"/>
+	<property name="Mesh" value="cutout"/>
+	<property name="Frame"/>
+	<property name="Texture" value="381"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="CanPickup" value="true" />
+	<property class="RepairItems">
+		<property name="jz_Stick" value="5"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<drop event="Destroy" name="jz_Stick" count="3"/>
+	<property name="FilterTags" value="MC_building"/>
+	<property name="SortOrder1" value="g0t0"/>
+	<property name="SortOrder2" value="0002"/>
 </block>
 
 <block name="jz_GoreBlockHumanBones">

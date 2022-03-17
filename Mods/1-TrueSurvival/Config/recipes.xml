@@ -851,6 +851,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <!-- Campfire Crafted ******************************************************************************************************************************************************* -->
+<recipe name="jz_FoodFriedGrubs" count="1" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="4" craft_exp_gain="20">
+	<ingredient name="jz_FoodGrubs" count="10"/>
+	<ingredient name="resourceAnimalFat" count="2"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
 <recipe name="drugHerbalAntibiotics" count="1" craft_area="campfire" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="20" tags="learnable">
 	<ingredient name="foodCropMushrooms" count="3"/>
 	<ingredient name="resourceCropChrysanthemumPlant" count="3"/>

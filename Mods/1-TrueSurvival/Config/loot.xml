@@ -804,7 +804,7 @@ If there is no hit the default quality is used.
 			<loot quality="1" prob="0.2"/>
 			<loot quality="2" prob="0.306"/>
 			<loot quality="3" prob="0.44"/>
-			<loot quality="4" prob="0.643"/>
+			<loot quality="4" prob="0.644"/>
 			<loot quality="5" prob="1"/>
 		</qualitytemplate>
 	</lootqualitytemplate>
