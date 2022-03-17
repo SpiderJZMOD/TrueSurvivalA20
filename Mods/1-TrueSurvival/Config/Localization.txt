@@ -662,7 +662,10 @@ jz_WorkstationRifleWorkbenchDesc,"Used to craft Rifles"
 
 
 ITEM_________________________XML,ITEM_________________________XML
-
+jz_MedicalSalineSolution,"Saline Solution"
+jz_MedicalSalineSolutionDesc,"Sterile water good for crafting [35bd00]Cleansing Wash[-]"
+jz_Salt,"Ounces of Salt"
+jz_SaltDesc,"Salt can be used to dry foods and make Saline Solution for [35bd00]Cleansing Wash[-]"
 jz_BookLockpicking,"Lock Picking"
 jz_BookLockpickingDesc,"Teaches the perk Lock Picking. Collect and read more to learn more levels"
 jz_BookInfiltrator,"Infiltrator"

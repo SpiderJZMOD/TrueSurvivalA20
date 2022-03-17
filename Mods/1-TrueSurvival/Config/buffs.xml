@@ -934,7 +934,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="HasBuff" buff="jz_BuffLacerationLeftLegBleed"/>
 				<requirement name="HasBuff" buff="jz_BuffLacerationRightFootBleed"/>
 				<requirement name="HasBuff" buff="jz_BuffLacerationLeftFootBleed"/>		
-				<requirement name="HasBuff" buff="buffInjuryBleedingTwo"/>					
+				<requirement name="HasBuff" buff="buffInjuryBleeding"/>					
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsBandage" operation="set" value="1"/>
 		</effect_group>
