@@ -2447,6 +2447,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<requirement name="HasBuff" buff="buffInjuryStunned01"/>
 			<requirement name="!HasBuff" buff="buffDrugPainkillers"/>
 			<requirement name="!HasBuff" buff="buffInjuryStunned01Cooldown"/>
+			<requirement name="!HasBuff" buff="jz_BuffConcussionDelay"/>
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryConcussion"/>
 		</effect_group>		
@@ -3884,6 +3885,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
 
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffConcussionDelay"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
 				<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
 			</triggered_effect>
@@ -3938,6 +3940,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
 
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffConcussionDelay"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
 				<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
 			</triggered_effect>
@@ -3989,6 +3992,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/>
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_stunned" play_in_head="true"/>
 
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffConcussionDelay"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInjuryStunned01Cooldown">
 				<requirement name="CVarCompare" cvar=".shotgunSuppressCooldown" operation="LT" value="1"/>
 			</triggered_effect>
@@ -4006,6 +4010,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<passive_effect name="BuffResistance" operation="base_add" value="5" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03"/>
 		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffConcussionDelay" hidden="true">
+		<duration value="2"/>
+		<stack_type value="ignore"/>
 	</buff>
 
 	<buff name="buffInjuryConcussion" name_key="buffInjuryConcussionName" remove_on_death="false" description_key="buffInjuryConcussionDesc" tooltip_key="buffInjuryConcussionTooltip" icon="ui_game_symbol_concussion" icon_color="255,128,0">
@@ -22223,7 +22232,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffMedicalInfectionMain" name_key="buff Medical Infection Main" remove_on_death="false" hidden="true" icon="ui_game_symbol_infection">
+	<buff name="jz_BuffMedicalInfectionMain" name_key="Medical Infection Main" remove_on_death="false" hidden="true" icon="ui_game_symbol_infection">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<update_rate value="1"/>
@@ -23378,12 +23387,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="1.5"/>
         <effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffPainKiller"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffMedicalBandage">
                 <requirement name="CVarCompare" cvar="$NeedsMedicalBandage" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffCast">
                 <requirement name="CVarCompare" cvar="$NeedsCast" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffPainKiller">
-                <requirement name="CVarCompare" cvar="$NeedsPainKiller" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSuture">
                 <requirement name="CVarCompare" cvar="$NeedsSuture" operation="Equals" value="1"/></triggered_effect>
             <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffCleanse">

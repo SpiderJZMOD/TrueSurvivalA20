@@ -12671,6 +12671,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="DescriptionKey" value="refrigeratorGroupDesc"/>
 	 <property name="PreserveBonus" value="7" />
+	 <property name="TakeDelay" value="15"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="10"/>
 		<property name="resourceMetalPipe" value="2"/>
@@ -12795,6 +12796,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIconTint" value="183C65"/>
 	<property name="TintColor" value="183C65"/>
 	<property name="PreserveBonus" value="3" />
+	<property name="TakeDelay" value="15"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="cooler"/>
 </block>
@@ -21629,6 +21631,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -33272,6 +33275,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="dryingRackDesc" />
 	<property name="Group" value="Clothing" />
+	<property name="TakeDelay" value="15"/>
 	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
 </block>
@@ -33309,6 +33313,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Group" value="Food/Cooking" />
 	<property name="DescriptionKey" value="StoneMillDesc" />
 	<property name="SellableToTrader" value="false" />
+	<property name="TakeDelay" value="15"/>
 </block>
 
 <block name="jz_ResearchDesk">
@@ -33344,6 +33349,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="TakeDelay" value="15"/>
 </block>
 
 <block name="jz_SteelForge">
@@ -33380,11 +33386,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="blastFurnaceDesc" />
 	<property name="Group" value="Building" />
+	<property name="TakeDelay" value="15"/>
 	<!--JZMOD ANY-->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0" />
-	<!--JZMOD WRENCH-->
-	<drop event="Destroy" name="toolBellows" count="1" tag="ToolWrench" />
 </block>
 
 <block name="jz_MortarAndPestle">
@@ -33414,6 +33419,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Basics" />
     <property name="ItemTypeIcon" value="chemistryStationIcon"/>
+	<property name="TakeDelay" value="15"/>
 </block>
 
 <block name="jz_FermentationBarrel">
@@ -33442,6 +33448,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Basics" />
+	<property name="TakeDelay" value="15"/>
 </block>
 
 <block name="jz_MethaneProducer">
@@ -33470,6 +33477,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_MethaneProducerDesc" />
 	<property name="Group" value="Tools/Traps" />
+	<property name="TakeDelay" value="15"/>
 	<!--JZMOD ANY-->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
@@ -34010,6 +34018,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="CustomIcon" value="cntFetchQuestSatchel"/>
     <property name="DescriptionKey" value="jz_StorageSackDesc" />
+	<property name="TakeDelay" value="15"/>
 	<property name="IsTerrainDecoration" value="true" />
     <property name="Weight" value="20" />
 	<property name="LootList" value="playerStorage" />

@@ -12549,7 +12549,6 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="15"/>
 	<property name="DescriptionKey" value="jz_medicalFirstAidBandageDesc"/><!-- JZMOD -->
 	<property name="Stacknumber" value="5"/>
-	<property name="UnlockedBy" value="perkPhysician,medicalFirstAidBandageSchematic"/>
 	<property class="Action0">
 		<requirement name="CVarCompare" cvar="$NeedsMedicalBandage" operation="Equals" value="1"/>
 	</property>
@@ -12610,8 +12609,6 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="200"/>
 	<property name="Stacknumber" value="5"/>
 	<property name="DescriptionKey" value="jz_medicalFirstAidKitDesc"/><!-- JZMOD -->
-	<property name="UnlockedBy" value="perkPhysician,medicalFirstAidKitSchematic"/>
-
 	<property class="Action0">
 		<!-- <requirement name="StatCompare" stat="health" operation="lte" value="50"/> -->
 		<property name="Sound_start" value="player_firstAidKit"/>
@@ -13519,6 +13516,8 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="foodCanMiso"/>
 	<property name="DisplayType" value="TSFoWaStHeVeDy"/><!-- JZMOD -->
 	<property name="EconomicValue" value="20"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="2"/>
 	<!--<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
@@ -13538,7 +13537,9 @@ perkNightStalkerSilentNight
 
 <item name="foodCanPears">
 	<property name="Extends" value="foodCanMiso"/>
-	<property name="DisplayType" value="TSFoWaStHeFrDy"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeFrDy"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="10"/><!-- JZMOD -->
 	<!--<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
@@ -14924,7 +14925,8 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="TSFoWaStDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceCrop"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="2"/>
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -14970,7 +14972,8 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="TSFoWaStHeVeDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceCrop"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -15046,7 +15049,8 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="TSFoWaStHeVeDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceCrop"/>
+	<property name="Material" value="Mveggie"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -15142,7 +15146,8 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="31"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceCrop"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="2"/>
 	<property name="Stacknumber" value="125"/> <!-- STK food -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -15189,7 +15194,8 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="31"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceCrop"/>
+	<property name="Material" value="Mfruit"/>
+	<property name="Weight" value="5"/>
 	<property name="Stacknumber" value="125"/> <!-- STK food -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -27353,13 +27359,15 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
     <property name="EconomicValue" value="500"/>
 	<property name="Meshfile" value="Items/Health/gauze" />
-	<property name="HoldType" value="16" />
+	<property name="HoldType" value="64"/>
+	<property name="Meshfile" value="#Other/Items?Health/bandage.fbx"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Stacknumber" value="50" />
 	<property name="DescriptionKey" value="jz_MedicalSutureKitDesc" />
 	<property name="Group" value="Science,Medical" />
 	<property name="SellableToTrader" value="false"/>
  	<property class="Action0">
-		<property name="Sound_start" value="UseActions/player_bandage" />
+		<property name="Sound_start" value="player_bandage"/>
 		<property name="Create_item" value="jz_ToolSewingNeedle" />
 		<requirement name="CVarCompare" cvar="$NeedsSuture" operation="Equals" value="1"/>
 	</property>
@@ -27374,6 +27382,9 @@ perkNightStalkerSilentNight
 
 <item name="jz_MedicalCleansingWash">
 	<property name="Extends" value="jz_MasterFood" />
+	<property name="HoldType" value="64"/>
+	<property name="Meshfile" value="#Other/Items?Health/bandage.fbx"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
     <property name="EconomicValue" value="1000"/>
 	<property name="DescriptionKey" value="jz_MedicalCleansingWashDesc" />
 	<property name="Stacknumber" value="5" />
@@ -27381,7 +27392,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="5" />
 	<property name="Group" value="Science,Medical,CFChemicals" />
 	<property class="Action0">
-        <property name="Sound_start" value="UseActions/player_bandage" />
+        <property name="Sound_start" value="player_bandage"/>
 		<property name="Create_item" value="drinkJarEmpty" />
 		<requirement name="CVarCompare" cvar="$NeedsCleansing" operation="Equals" value="1"/>
 	</property>
