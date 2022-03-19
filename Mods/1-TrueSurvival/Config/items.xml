@@ -8694,7 +8694,7 @@ needed?
 <item name="ammoGasCanBundle">
 	<property name="Extends" value="resourceRockSmallBundle"/>
 	<property name="CustomIcon" value="ammoGasCan"/>
-	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+	<property name="UnlockedBy" value="jz_Chemist"/>
 	<property class="Action0">
 		<property name="Create_item" value="ammoGasCan"/>
 		<property name="Create_item_count" value="10000"/>
@@ -8705,7 +8705,7 @@ needed?
 <item name="resourceGunPowderBundle">
 	<property name="Extends" value="resourceRockSmallBundle"/>
 	<property name="CustomIcon" value="resourceGunPowder"/>
-	<property name="UnlockedBy" value="perkDemolitionsExpert"/>
+	<property name="UnlockedBy" value="jz_Chemist"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceGunPowder"/>
 		<property name="Create_item_count" value="1000"/>
@@ -20953,7 +20953,7 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="junk"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="UnlockedBy" value="perkGreaseMonkey"/>
+	<property name="UnlockedBy" value="jz_SchematicCarBattery"/>
 	<property name="Material" value="MresourceScrapLeadLarge"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="160"/>
@@ -32180,10 +32180,11 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleePlankSpiked">
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,weapon,meleeWeapon,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZ2X4Spiked.unity3d?2X4SpikedPrefab" />
     <property name="DescriptionKey" value="jz_MeleePlankSpikedDesc"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
@@ -32214,10 +32215,11 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleeTableLegSpiked"> 
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,weapon,meleeWeapon,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZTableLegMeleeSpike.unity3d?TableLegMeleeSpikePrefab" />
     <property name="DescriptionKey" value="jz_MeleeTableLegSpikedDesc"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkPummelPete,perkFlurryOfBlows"/>
@@ -32248,7 +32250,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleeTableLeg"> 
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,weapon,meleeWeapon,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZTableLegMelee.unity3d?TableLegMeleePrefab" />
     <property name="DescriptionKey" value="jz_MeleeTableLegDesc"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
@@ -32282,9 +32284,11 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleeRebar"> 
 	<property name="Extends" value="jz_MeleePlank"/> 
-	<property name="Tags" value="blunt,club,melee,grunting,light,weapon,meleeWeapon,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZRebar2Melee.unity3d?Rebar2MeleePrefab" />
     <property name="DescriptionKey" value="jz_MeleeRebarDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
@@ -32316,9 +32320,11 @@ perkNightStalkerSilentNight
 
 <item name="jz_MeleePipe"> 
 	<property name="Extends" value="jz_MeleePlank"/>
-	<property name="Tags" value="blunt,club,melee,grunting,light,weapon,meleeWeapon,jz_BluntSkillTag"/>
+	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZLgPipeMelee.unity3d?LgPipeMeleePrefab" />
     <property name="DescriptionKey" value="jz_MeleePipeDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
 		<passive_effect name="BlockDamage" operation="base_set" value="11.6"/>
@@ -32949,7 +32955,7 @@ perkNightStalkerSilentNight
 	</property>  
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifySkillSDX, SCore" tag="jz_BookInfiltrator" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifySkillSDX, SCore" tag="perkInfiltrator" operation="add" value="1"/>
 	</effect_group>
 </item>
 

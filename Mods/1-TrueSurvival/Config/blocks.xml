@@ -12658,6 +12658,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Class" value="Loot"/>
+	<property name="Tags" value="Mine"/>
 	<property name="LootList" value="refrigerator"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
@@ -36866,7 +36867,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!--JZMOD EGG PLANT-->
 <block name="jz_PlantedEggPlant1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
-    <property name="CustomIcon" value="eggplantSeeds"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="UnlockedBy" value="jz_SchematicEggPlantSeed"/>
 	<property name="Shape" value="ModelEntity"/>

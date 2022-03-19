@@ -263,7 +263,13 @@
 			<passive_effect name="ExpDeficitMaxPercentage" operation="base_set" value="0"/>
 	</effect_group>
 	<!-- ********************************************************* JZMOD ADDED ************************************************** -->
-	
+	<effect_group name="JZMOD Crafting Quality">
+		<passive_effect name="CraftingTier" operation="base_add" value="1" tags="jz_CraftingQualityTwo"/>
+		<passive_effect name="CraftingTier" operation="base_add" value="2" tags="jz_CraftingQualityThree"/>
+		<passive_effect name="CraftingTier" operation="base_add" value="3" tags="jz_CraftingQualityFour"/>
+		<passive_effect name="CraftingTier" operation="base_add" value="4" tags="jz_CraftingQualityFive"/>
+		<passive_effect name="CraftingTier" operation="base_add" value="5" tags="jz_CraftingQualitySix"/>
+	</effect_group>
 	<effect_group name="JZMOD Butchering Skill">
 		<passive_effect name="HarvestCount" operation="base_set" value="@$SpawnQuestSoldier" tags="QHSoldier"/>
 	<!--JZMOD HUNTING SKILLS-->

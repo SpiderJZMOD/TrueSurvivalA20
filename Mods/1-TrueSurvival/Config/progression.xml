@@ -1247,6 +1247,8 @@
 				<requirement name="ProgressionLevel" progression_name="SP_CeilingLightSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ElectricWirerelaySchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_ElectricWirerelaySchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CarBatterySchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_CarBatterySchematic" operation="LT" value="1"/></triggered_effect>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceElectricParts"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ElectricianTag"/>
@@ -1363,6 +1365,7 @@
 	<perk name="jz_Chemist" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Chemist" desc_key="jz_ChemistDesc" icon="ui_game_symbol_chemistry">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_Chemist" operation="GTE" value="1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoGasCanBundle,resourceGunPowderBundle"/>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MegaCrushSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_MegaCrushSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_BlackStrapCoffeeSchematic" level="-1">
@@ -1373,6 +1376,10 @@
 				<requirement name="ProgressionLevel" progression_name="SP_PurificationTabletsSchematic" operation="LT" value="1"/></triggered_effect>
             <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GlueSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_GlueSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_OilSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_OilSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GasCanSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_GasCanSchematic" operation="LT" value="1"/></triggered_effect>
 				
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_MedicalStimulant,resourceAcid"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ChemistTag"/>
@@ -4098,7 +4105,7 @@
 			<passive_effect name="TrapDoorTriggerDelay" operation="base_add" level="1,2,3" value=".5,1,2"/>
 			<passive_effect name="LandMineTriggerDelay" operation="base_add" level="1,2,3" value=".5,1,2"/>
 			<passive_effect name="TrapIncomingDamage" operation="perc_add" level="1,2,3" value="-.2,-.35,-.5"/>
-			<passive_effect name="BlockPickup" operation="base_set" level="5" value="1" tags="Mine" />
+			<passive_effect name="BlockPickup" operation="base_set" level="3" value="1" tags="Mine" />
 
 			<effect_description level="1" desc_key="perkInfiltratorRank1Desc" long_desc_key="perkInfiltratorRank1LongDesc"/>
 			<effect_description level="2" desc_key="perkInfiltratorRank2Desc" long_desc_key="perkInfiltratorRank2LongDesc"/>
