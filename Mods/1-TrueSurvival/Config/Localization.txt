@@ -7,10 +7,40 @@ Key,English
 jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
-jz_BuffGashDesc,"You have a large [f21b10]Gash[-]. You will need to use a [35bd00]Suture Kit[-] to stitch it closed or a [35bd00]Hot Pipe[-] to cauterize it closed. If not treated it could get worse.\n\n-8% Mobility\n-1HP per 20sec"
-jz_BuffGashStitchedUpDesc,"Should leave a nice scar but its going to need at lest a [35bd00]Bandage[-] if you don't want it to get worse.\n-4% Mobility\n-2 Wellness if not treated"
-jz_BuffGashBandagedDesc,"Your Gash is bandaged up and healing. It will need to be changed when it gets dirty\n-2% Mobility"
-jz_BuffGashDirtyBandagedDesc,"Your bandage has gotten dirty and needs changed with at lest another [35bd00]Bandage[-] soon or it could get worse\n-3% Mobility\n-1 Wellness if not treated"
+
+jz_BuffZombieBiteBleedingDesc,"You have suffered a [f21b10]Zombie Bite[-] and are bleeding badly. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffDirtyZombieBiteCauterizeDesc,"Now that you have treated the bleed you will need to carturize  [f21b10]Zombie Bite[-] with a [35bd00]Red Hot Pipe[-] to close the wound. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffDirtyZombieBiteBurnDesc,"The [f21b10]Zombie Bite[-] is carturized but now the burn must be treated with a [35bd00]Medical Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffZombieBiteTendedDesc,"The [f21b10]Zombie Bite[-] is bandaged and healing. After some time you will need to cleanse and re bandage the wound."
+jz_BuffZombieBiteDirtyNeedsCleansingDesc,"Your bandage has gotten dirty and needs to be changed. First you will need to use a [35bd00]Cleansing Wash[-] to clean the wound. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffZombieBiteDirtyNeedsBandageDesc,"Now that your [f21b10]Zombie Bite[-] wound is clean you will need to treat it with a [35bd00]Medical Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffZombieBiteTendedBDesc,"The [f21b10]Zombie Bite[-] is bandaged and healing. After some time you will need to re-bandage it to allow it to continue healing."
+jz_BuffZombieBiteDirtyNeedsBandageBDesc,"Your bandage has gotten dirty and needs to be changed. You will need to use a [35bd00]Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffZombieBiteTendedCDesc,"The [f21b10]Zombie Bite[-] is bandaged. Try not to hurt it so it will finish healing."
+jz_BuffInfection01GetBetterDesc,"You have a treated [f21b10]Z-Virus[-] infection. Continue medication until infection is cleared up."
+jz_BuffInfection01UntreatedDesc,"You have the [f21b10]Z-Virus[-] infection.\nIt will get worse until treated with [35bd00]AntiVirals[-].\nGetting bite by zombies will make the infection worse. If the infection reaches 100% you will die and not be able to respawn."
+jz_BuffInfection02GetBetterDesc,"You have a treated serious [f21b10]Z-Virus[-]. Continue medication and keep an eye on the wound.\nGetting bite by zombies will make the infection worse.\n\nStamina Regeneration -12.5%"
+jz_BuffInfection02UntreatedDesc,"You have a serious [f21b10]Z-Virus[-] infection. If left untreated it could lead to full infection which can cause permanent player death. Take [35bd00]AntiVirals[-] as soon as possible.\nGetting bite by zombies will make the infection worse. If the infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -25%"
+jz_BuffInfection03GetBetterDesc,"You have a treated life threatening [f21b10]Z-Virus[-] infection. Continue Medication and avoid bites from the infected. If the infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -17%"
+jz_BuffInfection03UntreatedDesc,"You have a life threatening [f21b10]Z-Virus[-] infection. Take [35bd00]AntiVirals[-] immediately.\n\nStamina Regeneration -35%\nAll Attributes -1"
+jz_BuffInfectionCureDisplayDesc,"You have taken [35bd00]AntiViral[-] medicine which will reduce the amount of [f21b10]Z-Virus[-] infection that you may be suffering from. You can stack [35bd00]AntiViral[-] medicines to increase duration."
+jz_BuffMedicalInfectionCureDisplayName,"Antibiotic Medicine"
+jz_BuffMedicalInfectionCureDisplayDesc,"You have taken [35bd00]Antibiotics[-] medicine which will reduce [f21b10]Medical Infection[-] that you may be suffering. You can stack [35bd00]Antibiotics[-] medicines to increase duration."
+jz_BuffMedicalInfection01UntreatedDesc,"You have a mild [f21b10]Medical Infection[-].\nIt will get worse until treated by [35bd00]Antibiotics[-].\nTend to your wounds timely or they could increase your infection. If the infection reaches 100% you will die and not be able to respawn."
+jz_BuffMedicalInfection01UntreatedName,"Mild Medical Infection"
+jz_BuffMedicalInfection01GetBetterDesc,"You have a treated mild [f21b10]Medical Infection[-]. Continue medication until infection is cleared up.\nTend to your wounds timely or they could increase your infection."
+jz_BuffMedicalInfection02UntreatedName,"Medical Infection"
+jz_BuffMedicalInfection02UntreatedDesc,"You have a serious [f21b10]Medical Infection[-]. If left untreated it could lead to full infection which can cause permanent player death. Take [35bd00]Antibiotics[-] as soon as possible.\nTend to your wounds timely or they could increase your infection. If the infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -25%"
+jz_BuffMedicalInfection02GetBetterName,"Treated Medical Infection"
+jz_BuffMedicalInfection02GetBetterDesc,"You have a treated serious [f21b10]Medical Infection[-]. Continue medication and tend to your wounds timely or they could increase your infection.\n\nStamina Regeneration -12.5%"
+jz_BuffMedicalInfection03UntreatedName,"Severe Medical Infection"
+jz_BuffMedicalInfection03UntreatedDesc,"You have a life threatening severe [f21b10]Medical Infection[-]. Take [35bd00]Antibiotics[-] immediately. If the infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -35%
+jz_BuffMedicalInfection03GetBetterName,"Treated Severe Medical Infection"
+jz_BuffMedicalInfection03GetBetterDesc,"You have a treated life threatening severe [f21b10]Medical Infection[-]. Continue medication and tend to your wounds timely or they could increase your infection.\n\nStamina Regeneration -17%"
+jz_BuffMedicalInfection04Tooltip,"You have died from an infection"
+
+
+
 jz_BuffPuncturedDesc,"You have a deep [f21b10]Puncture Wound[-]. Your going to need a [35bd00]Sanitize Bandage[-] to clean and pack the hole\n-10% Mobility\n-1HP per 20sec\n-1 Wellness"
 jz_BuffThrobbingPainDesc,"OOww! That hurts take some [35bd00]Painkillers[-] to relieve the pain\n\n-1 Stamina every 5 sec\n+10 Core Temp"
 jz_BuffGangreneWoundDesc,"Your wound has become [f21b10]Gangrene[-]. The only option you have is to cut off the dead tissue, this will leave you permanently scared. Use a bladed weapon to cute away the [f21b10]Gangrene[-] tissue. You will then have to treat and care for the remaining wound\n\n-4 Stamina every 1 sec\n-1 Health every 10 sec\n-12% Mobility\n-1 Wellness every 1 min\n30% more Health Loss\nUntil Treated"
@@ -41,13 +71,6 @@ jz_buffNewbieCoatDesc,"All your status effects last through death. This coat tem
 AmputationTrackerDesc,"Player Amputations {cvar($amputationCounter:00)}\n\n- +{cvar($amputationCounter:00)}% Longer to Pick Locks\n- +{cvar($amputationCounter:00)}% Longer Crafting Time\n-  -{cvar($amputationCounter:00)}% Slower Mobility"
 StimulantDesc,"You are under the effect of Stimulants. The more Stimulants you take the stronger the effect gets, with a max effect of 6 active Stimulants\n\nActive Stimulant Dosage - {cvar($stimulantCounter:0)}\n- Increased Thirst\n- Stops Fatigue drain\n- +{cvar($stimulantSpeedDisplay:00)}% Mobility\n- +{cvar($stimulantDosageDisplay:00)}% Scavenging Speed\n- +{cvar($stimulantDosageDisplay:00)}% Harvesting Amount\n- +{cvar($stimulantCounter:0)} Degrees\n- -{cvar($stimulantDownSideDisplay:0)}% Weapon Handling"
 StimulantWithdrawalDesc,"Looks like those Stimulants have a down side and your going through withdrawal. You can wait for it to pass or take some more stimulants\n\nWithdrawal Severity - Lv.{cvar($withdrawalStrength:0)}\n- Increased Fatigue drain\n- -{cvar($withdrawalSpeedDisplay:00)}% Mobility\n- -{cvar($withdrawalScavengingDisplay:00)}% Scavenging Speed\n- -{cvar($withdrawalShiver:00)} Degrees\n- -{cvar($withdrawalSpeedDisplay:0)}% Weapon Handling"
-jz_BuffInfection01GetBetterDesc,"You have a treated Z-Virus infection. Continue medication until infection is cleared up.\nGetting bite by zombies will make an infection worse."
-jz_BuffInfection01UntreatedDesc,"You have the Z-Virus infection.\nIt will get worse until treated by antibiotics.\nGetting bite by zombies will make the infection worse. If the Infection reaches 100% you will die and not be able to respawn."
-jz_BuffInfection02GetBetterDesc,"You have a treated serious infection. Continue medication and keep an eye on the wound.\nGetting hit by zombies or animals will make an infection worse.\n\nStamina Regeneration -12.5%"
-jz_BuffInfection02UntreatedDesc,"You have a serious Z-Virus infection. If left untreated it could lead to full infection which can cause permanent player death. Take antibiotics as soon as possible.\nGetting bite by zombies will make the infection worse.\n\nStamina Regeneration -25%"
-jz_BuffInfection03GetBetterDesc,"You have a treated life threatening Z-Virus infection. Continue Medication and avoid bites from the infected. If the Infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -17%"
-jz_BuffInfection03UntreatedDesc,"You have a life threatening Z-Virus infection. Take antibiotics immediately.\n\nStamina Regeneration -35%\nAll Attributes -1"
-jz_BuffInfectionCureDisplayDesc,"You have taken antibiotic medicine which will reduce the Z-Virus infection that you may be suffering. You can stack antibiotic medicines to increase duration."
 jz_BuffFatiguedDesc,"Your getting fatigued. Rest on a bed or furniture to raise your Fatigue Level back to full. Resting on Beds will also heal you.\n\n- +10% Health Loss\n- -5% Mobility Speed"
 jz_buffEncumberedInvDesc,"Moving becomes harder when you are carrying too many items in your inventory. Carry less or wear clothes with more pockets or add more pockets to your clothes.\n\nThe number is the number of items that are encumbering you."
 jz_BuffHealthyDietDesc,"Because your eating a very balanced diet you gain these benefits\n\n- Naturally healing when full\n- Able to gain Wellness from food\n- Able to gain Health from food\n- +1 Stamina Per 3 seconds\n- +10% Movement Speed"
@@ -188,14 +211,6 @@ jz_BuffBurnWoundDesc,"You have received a [f21b10]Burn Wound[-]. Use [35bd00]Pla
 
 
 
-
-
-
-
-
-
-
-
 BLOCK_________________________XML,BLOCK_________________________XML
 jz_SimpleScaffoldingBlock,"Scaffolding Block"
 jz_SimpleScaffoldingBlockDesc,"Simple scaffolding that can be picked back up when placed"
@@ -216,97 +231,6 @@ jz_QISatRadioStationDesc,"A crudely crafted device capable of sending and receiv
 jz_QIHospitalLabStation,"Tissue Testing Station"
 jz_QIHospitalLabStationDesc,"All the equipment needed to analyze tissue samples."
 jz_QIMilitarySecurityStation,"Security Card Scanner"
-jz_FlagstoneFrameBlock,Flagstone Frame Block
-jz_FlagstoneFrameBlockV,Flagstone Frame Block
-jz_FlagstoneFrameRamp,Flagstone Frame Ramp
-jz_FlagstoneFrameArch,Flagstone Frame Arch
-jz_FlagstoneFrameSlitHalf,Flagstone Frame Slit Half
-jz_FlagstoneFrameCNRFull,Flagstone Frame CNR Full
-jz_FlagstoneFrameCNRInside,Flagstone Frame CNR Inside
-jz_FlagstoneFrameCNRRampFiller,Flagstone Frame CNR Ramp Filler
-jz_FlagstoneFrameGableInvertedHalf,Flagstone Frame Gable Inverted Half
-jz_FlagstoneFrameGableInvertedQuarter,Flagstone Frame Gable Inverted Qtr
-jz_FlagstoneFrameGableInvertedSteep,Flagstone Frame Gable Inverted Steep
-jz_FlagstoneFrameGableQuarter,Flagstone Frame Gable Qtr
-jz_FlagstoneFrameHalf,Flagstone Frame Half
-jz_FlagstoneFrameQuarterCNR,Flagstone Frame Qtr CNR
-jz_FlagstoneFrameQuarterCNR3Way,Flagstone Frame Qtr CNR 3 Way
-jz_FlagstoneFrameQuarterSCtr,Flagstone Frame Qtr SCtr
-jz_FlagstoneFrameQuarterTeeSCtr,Flagstone Frame Qtr Tee SCtr
-jz_FlagstoneFrameStairs25CornerCNR,Flagstone Frame Stairs 25 Corner CNR
-jz_FlagstoneFrameWedge,Flagstone Frame Wedge
-jz_FlagstoneFrameWedgeCNRInsideBottom,Flagstone Frame Wedge CNR Inside Bottom
-jz_FlagstoneFrameWedgeCNRInsideSteepBase,Flagstone Frame Wedge CNR Inside Steep Base
-jz_FlagstoneFrameWedgeCNRInsideSteepTop,Flagstone Frame Wedge CNR Inside Steep Top
-jz_FlagstoneFrameWedgeCNRInsideTop,Flagstone Frame Wedge CNR Inside Top
-jz_FlagstoneFrameWedgeCNRSteepBase,Flagstone Frame Wedge CNR Steep Base
-jz_FlagstoneFrameWedgeCNRSteepTop,Flagstone Frame Wedge CNR Steep Top
-jz_FlagstoneFrameWedgeIncline,Flagstone Frame Wedge Incline
-jz_FlagstoneFrameWedgeStairs,Flagstone Frame Wedge Stairs
-jz_FlagstoneFrameWedgeTip,Flagstone Frame Wedge Tip
-jz_FlagstoneFrameWedgeTipCNRFullBottom,Flagstone Frame Wedge Tip CNR Full Bottom
-jz_FlagstoneFrameWedgeTipCNRFullTop,Flagstone Frame Wedge Tip CNR Full Top
-jz_FlagstoneFrameWedgeTipStairs,Flagstone Frame Wedge Tip Stairs
-jz_FlagstoneFramePillar100,Flagstone Frame Pillar100
-jz_BrickFrameBlock,Brick Frame Block
-jz_BrickFrameBlockV,Brick Frame Block
-jz_BrickFrameRamp,Brick Frame Ramp
-jz_BrickFrameArch,Brick Frame Arch
-jz_BrickFrameCNRFull,Brick Frame CNR Full
-jz_BrickFrameCNRInside,Brick Frame CNR Inside
-jz_BrickFrameCNRRampFiller,Brick Frame CNR Ramp Filler
-jz_BrickFrameGableInvertedHalf,Brick Frame Gable Inverted Half
-jz_BrickFrameGableInvertedQuarter,Brick Frame Gable Inverted Qtr
-jz_BrickFrameGableInvertedSteep,Brick Frame Gable Inverted Steep
-jz_BrickFrameGableQuarter,Brick Frame Gable Qtr
-jz_BrickFrameQuarterCNR,Brick Frame Qtr CNR
-jz_BrickFrameQuarterCNR3Way,Brick Frame Qtr CNR 3Way
-jz_BrickFrameQuarterSCtr,Brick Frame Qtr SCtr
-jz_BrickFrameQuarterTeeSCtr,Brick Frame Qtr Tee SCtr
-jz_BrickFrameStairs25CornerCNR,Brick Frame Stairs 25Corner CNR
-jz_BrickFrameWedgeCNRInsideBottom,Brick Frame Wedge CNR Inside Bottom
-jz_BrickFrameWedgeCNRInsideSteepBase,Brick Frame Wedge CNR Inside Steep Base
-jz_BrickFrameWedgeCNRInsideSteepTop,Brick Frame Wedge CNR Inside Steep Top
-jz_BrickFrameWedgeCNRInsideTop,Brick Frame Wedge CNR Inside Top
-jz_BrickFrameWedgeCNRSteepBase,Brick Frame Wedge CNR Steep Base
-jz_BrickFrameWedgeCNRSteepTop,Brick Frame Wedge CNR Steep Top
-jz_BrickFrameWedgeIncline,Brick Frame Wedge Incline
-jz_BrickFrameWedgeStairs,Brick Frame Wedge Stairs
-jz_BrickFrameWedgeTipCNRFullBottom,Brick Frame Wedge Tip CNR Full Bottom
-jz_BrickFrameWedgeTipCNRFullTop,Brick Frame Wedge Tip CNR Full Top
-jz_BrickFrameWedgeTipStairs,Brick Frame Wedge Tip Stairs
-jz_BrickFrameVariantHelper,Brick Frame Variants
-jz_SteelFrameBlock,Steel Frame Block
-jz_SteelFrameBlockV,Steel Frame Block
-jz_SteelFrameRamp,Steel Frame Ramp
-jz_SteelFrameArch,Steel Frame Arch
-jz_SteelFrameCNRFull,Steel Frame CNR Full
-jz_SteelFrameCNRInside,Steel Frame CNR Inside
-jz_SteelFrameCNRRampFiller,Steel Frame CNR Ramp Filler
-jz_SteelFrameGableInvertedHalf,Steel Frame Gable Inverted Half
-jz_SteelFrameGableInvertedQuarter,Steel Frame Gable Inverted Qtr
-jz_SteelFrameGableInvertedSteep,Steel Frame Gable Inverted Steep
-jz_SteelFrameGableQuarter,Steel Frame Gable Qtr
-jz_SteelFrameHalf,Steel Frame Half
-jz_SteelFramePillar100Cap,Steel Frame Pillar 100 Cap
-jz_SteelFrameQuarterCNR,Steel Frame Qtr CNR
-jz_SteelFrameQuarterCNR3Way,Steel Frame Qtr CNR 3Way
-jz_SteelFrameQuarterSCtr,Steel Frame Qtr SCtr
-jz_SteelFrameStairs25CornerCNR,Steel Frame Stairs 25Corner CNR
-jz_SteelFrameWedge,Steel Frame Wedge
-jz_SteelFrameWedgeCNRInsideBottom,Steel Frame Wedge CNR Inside Bottom
-jz_SteelFrameWedgeCNRInsideSteepBase,Steel Frame Wedge CNR Inside Steep Base
-jz_SteelFrameWedgeCNRInsideSteepTop,Steel Frame Wedge CNR Inside Steep Top
-jz_SteelFrameWedgeCNRInsideTop,Steel Frame Wedge CNR Inside Top
-jz_SteelFrameWedgeCNRSteepBase,Steel Frame Wedge CNR Steep Base
-jz_SteelFrameWedgeCNRSteepTop,Steel Frame Wedge CNR Steep Top
-jz_SteelFrameWedgeIncline,Steel Frame Wedge Incline
-jz_SteelFrameWedgeStairs,Steel Frame Wedge Stairs
-jz_SteelFrameWedgeTip,Steel Frame Wedge Tip
-jz_SteelFrameWedgeTipCNRFullBottom,Steel Frame Wedge Tip CNR Full Bottom
-jz_SteelFrameWedgeTipCNRFullTop,Steel Frame Wedge Tip CNR Full Top
-jz_SteelFrameWedgeTipStairs,Steel Frame Wedge Tip Stairs
-jz_SteelFrameVariantHelper,Steel Frame Variants
 jz_DryingRack,Drying Rack
 dryingRackDesc,"A simple workstation used for drying Skins, Firewood and creating Seeds from crops."
 jz_StoneMill,Stone Mill
@@ -321,8 +245,6 @@ jz_FermentationBarrel,Fermentation Barrel
 jz_FermentationBarrelDesc,"A simple workstation used to ferment beer and mead."
 jz_MethaneProducer,Methane Producer
 jz_MethaneProducerDesc,"A homemade system for capturing methane from rotting material. Can refill old propane tanks to use as bombs."
-jz_ArmorTable,Armor Table
-armorTableDesc,"A workstation for crafting all types of clothing and armor.\n\nCrafted on the Workbench"
 jz_MethaneTankBomb,Methane Bomb
 jz_MethaneTankBombDesc,"A old propane tank filled with methane. Place on the ground and shoot to cause a large explosion that does no damage to blocks."
 plantedCropsGroupDesc,Plant these seeds on soil or a Farm Plot to grow crops to harvest. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water
@@ -333,20 +255,8 @@ jz_TrapWoodenSpikeStarter,Spike Trap Starter
 setUpASpikeTrapDesc,"Place and upgrade with Sticks using a Stoneaxe to build a Spike Trap. Repair with Sticks."
 jz_StorageSack,"Storage Sack"
 jz_StorageSackDesc,"A basic storage container with no lock"
-jz_LogLarge,Large Log
-jz_LogSmall,Small Log
-jz_RebarFrameGroupDesc,"Upgrade these Frames with Cement Mix using a Concrete Sledge"
-jz_ScrapFrameGroupDesc,"Upgrade these Frames with Iron Sheet Metal using a Wrench"
-jz_WoodFrameGroupDesc,"Upgrade these Frames with Planks using a Claw Hammer"
-jz_FlagstoneFrameBlock,Flagstone Frame
-FlagstoneFrameGroupDesc,"Upgrade these Frames with Cobblestone using a Mason Hammer"
-BrickFrameGroupDesc,"Upgrade these Frames with Bricks using a Mason Hammer"
-SteelBlockGroupDesc,"Upgrade these Frames with Steel Sheet Metal using a Welding Torch"
-flagstoneBlockVariantHelper,"Flagstone Frame Variants"
-jz_BrickFrameBlock,Brick Frame
-jz_BrickFrameVariantHelper,"Brick Frame Variants"
-jz_SteelFrameBlock,Steel Frame
-jz_SteelFrameVariantHelper,"Steel Frame Variants"
+
+
 jz_GoreBlockHumanBones,"Decaying Body"
 jz_GoreBlockHumanBones2,"Decaying Body"
 jz_GoreBlockHumanBones3,"Decaying Body"
@@ -662,6 +572,13 @@ jz_WorkstationRifleWorkbenchDesc,"Used to craft Rifles"
 
 
 ITEM_________________________XML,ITEM_________________________XML
+
+
+jz_FreshTimber,"Fresh Timber"
+jz_FreshTimberDesc"Freshly cut timber. Good for crafting improvised tools and weapons. Can also be crafted into Planks and scraped into Sticks"
+
+jz_MedicalAntiViral,"AntiViral"
+jz_MedicalAntiViralDesc,"Experimental antiviral medication. A possible treatment for the [f21b10]Z-Virus[-]"
 jz_MedicalSalineSolution,"Saline Solution"
 jz_MedicalSalineSolutionDesc,"Sterile water good for crafting [35bd00]Cleansing Wash[-]"
 jz_Salt,"Ounces of Salt"
@@ -1048,7 +965,7 @@ apparelCigarDesc,"Look intimidating and get a better deal from traders.\nAlso ac
 jz_QIBugOutBag,"Bug Out Bag"
 jz_QIBugOutBagDesc,"A pre packed bag for when shit hits the fan and you have to flee in a hurry.\n\n\n[fff700]Quest item, do not lose![-]"
 foodHoney,"A Serving of Honey"
-jz_foodHoneyDesc,"Honey is one of mother nature's miracles. It gives you some energy, tastes great, and can be used to craft [35bd00]First Aid Bandage[-]."
+jz_foodHoneyDesc,"Honey is one of mother nature's miracles. It gives you some energy, tastes great, and can be used to craft [35bd00]First Aid Bandage[-] or used to treat [f21b10]Medical Infection[-]."
 jz_schematicGeneralGroupDesc,"Reading the schematic will teach you how to craft this item."
 jz_SplashOfWater,Splash of Water
 jz_SplashOfWaterDesc,"Splash some water on your head to cool off for a while"jz_ProfessionFireFighterBook,The Fire Fighting Profession
@@ -1401,9 +1318,9 @@ jz_FoodServingVeggie,Veggie Serving
 jz_FoodBioMass,Bio Mass
 bioMassDesc,"Rotting food and scraps that can be used in farming"
 jz_MedicalSutureKitDesc,"A clean needle and organic thread can be used to stitch up [f21b10]Lacerations[-]"
-jz_MedicalSutureKit,Suture Kit
+jz_MedicalSutureKit,"Suture Kit"
 jz_meleeClubBaseballBatDesc,"This club was used in gladiatorial games of the past that were held in huge arenas."
-jz_gunBowPrimitiveDesc"Good for hunting and killing zombies. Uses arrows for ammunition.\nHold reload to use alternate ammo."
+jz_gunBowPrimitiveDesc,"Good for hunting and killing zombies. Uses arrows for ammunition.\nHold reload to use alternate ammo."
 jz_QIDeadWalkieTalkieDesc,"A commercial Walkie Talkie, doesn't have very much range and this one is dead.\n\n\n[fff700]Quest item, do not lose![-]"
 jz_QIDeadWalkieTalkie,"Walkie Talkie"
 jz_QIGoodWalkieTalkieDesc,"A commercial Walkie Talkie, doesn't have very much range but at lest it has some juice.\n\n\n[fff700]Quest item, do not lose![-]"

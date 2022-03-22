@@ -12658,7 +12658,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Class" value="Loot"/>
-	<property name="Tags" value="Mine"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property name="LootList" value="refrigerator"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
@@ -12683,10 +12683,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceElectricParts" count="1,8" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="0,3" prob="0.2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,20" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="192"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="1" prob="1" tool_category="ToolCrowbar"/>       
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12713,6 +12715,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntRetroFridgeVer1Closed" param1="Class,LootList"/>
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelOpenPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/>   
+	<drop event="Destroy" name="cntFridgeStainlessSteelVer2Open" count="1" prob="1" tool_category="ToolCrowbar"/>       
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12720,6 +12725,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntRetroFridgeVer1Closed"/>
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelClosedPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/>   
+	<drop event="Destroy" name="cntFridgeStainlessSteelVer2Open" count="1" prob="1" tool_category="ToolCrowbar"/>   
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16488,6 +16496,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="bed02">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
 	<property name="Class" value="SleepingBag"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property name="Material" value="Mfurniture"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Furniture/kingSizedBedPrefab"/>
@@ -16509,11 +16518,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceWood" count="8" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="6" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="10,15"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,15" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="2600"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedLrgRecover"/><!-- JZMOD -->
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="bed02" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16521,6 +16532,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="bedGroupDesc"/>
 	<property name="Class" value="SleepingBag"/>
 	<property name="Material" value="Mmetal_weak"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Furniture/bedMadePrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
@@ -16538,11 +16550,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceCloth" count="5" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceCloth" count="5"/>
+	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedMedRecover"/><!-- JZMOD -->
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="bed02" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16591,6 +16605,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="mattressFlatThin">
 	<property name="Material" value="Mfurniture"/>
 	<property name="Shape" value="ModelEntity"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property name="Model" value="Entities/Furniture/mattressFlatPrefab"/>
 	<property name="Texture" value="282"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -16601,6 +16616,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedMedRecover"/><!-- JZMOD -->
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="mattressFlatThin" count="1" prob="1" tool_category="ToolCrowbar"/>   
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16616,6 +16633,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
 	<property name="Model" value="Entities/Furniture/gurneyPrefab" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property name="ModelOffset" value="0,.5,.5"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="DisplayType" value="blockMulti"/>
@@ -16631,13 +16649,15 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="2,4" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,25"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5,25" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_commercial"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedSmRecover"/><!-- JZMOD -->
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="gurneyBed" count="1" prob="1" tool_category="ToolCrowbar"/>   
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16647,6 +16667,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="FallDamage" value=".6"/>
@@ -16663,6 +16684,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceScrapPolymers" count="3,6" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedSmRecover"/><!-- JZMOD -->
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="hospitalBed" count="1" prob="1" tool_category="ToolCrowbar"/>   
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -33591,6 +33614,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
@@ -33640,6 +33664,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
@@ -37870,9 +37895,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Tags" value="wood"/>
 	<property name="Material" value="Mwood_weak"/>
-	<property name="CustomIcon" value="FrameShapes"/>
+	<property name="CustomIcon" value="woodFrameMaster"/>
 	<property name="MaxDamage" value="50"/>
 	<property name="DescriptionKey" value="jz_SimpleScaffoldingBlockDesc"/>
+	<property name="Group" value="Basics,Building"/>
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="FuelValue" value="100"/>

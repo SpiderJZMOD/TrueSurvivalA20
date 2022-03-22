@@ -3644,37 +3644,37 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_ScrapAdhesive" count="6"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="learnable,jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="4"/>
 	<ingredient name="jz_FiberRope" count="2"/>
 	<ingredient name="jz_Stick" count="5"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolCarvingKnife" craft_time="30" craft_exp_gain="10" tags="jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolCarvingKnife" craft_time="30" craft_exp_gain="10" tags="learnable,jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="5"/>
 	<ingredient name="jz_FiberRope" count="2"/>
 	<ingredient name="jz_Stick" count="8"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" raft_tool="jz_ToolHandSaw" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" raft_tool="jz_ToolHandSaw" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="6"/>
 	<ingredient name="jz_FiberRope" count="2"/>
 	<ingredient name="jz_Stick" count="10"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolHandDrill" craft_time="60" craft_exp_gain="20" tags="jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolHandDrill" craft_time="60" craft_exp_gain="20" tags="learnable,jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="7"/>
 	<ingredient name="jz_FiberRope" count="2"/>
 	<ingredient name="jz_FreshTimber" count="1"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolWoodChisel" craft_time="75" craft_exp_gain="25" tags="jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolWoodChisel" craft_time="75" craft_exp_gain="25" tags="learnable,jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="8"/>
 	<ingredient name="jz_FiberRope" count="3"/>
 	<ingredient name="jz_FreshTimber" count="1"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolDrawBlade" craft_time="90" craft_exp_gain="30" tags="jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolDrawBlade" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="10"/>
 	<ingredient name="jz_FiberRope" count="3"/>
 	<ingredient name="jz_FreshTimber" count="2"/>
