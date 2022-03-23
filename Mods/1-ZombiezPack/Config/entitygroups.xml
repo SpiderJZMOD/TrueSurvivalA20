@@ -8,6 +8,7 @@
                 <entity name="SwatCaptainZombie" prob=".3" />
 				<entity name="BlisteredParasite" prob=".3" />
                 <entity name="HookArmParasite" prob=".3" />
+				<entity name="TrollParasite" prob=".3" />
 	</append>
 	
 	

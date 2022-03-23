@@ -13018,6 +13018,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="250"/>
 	<property name="UnlockedBy" value="perkPhysician"/>
 	<property name="Group" value="Science,Medical"/>
+	<property name="DescriptionKey" value="jz_drugAntibioticsesc"/><!-- JZMOD -->
 	<effect_group tiered="false" name="Drug Tier 3">
 		<display_value name="dCarryCapacity" value="50"/>
 		<display_value name="dRunSpeed" value=".1"/>
@@ -26344,7 +26345,6 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="Msteel" />
 	<property name="Weight" value="10" />
 	<property name="Group" value="Ammo/Weapons" />
-    <property name="CustomIcon" value="Ak47Parts" />
 	<property name="ItemTypeIcon" value="gunsmithing"/>
     <property name="EconomicValue" value="1000"/>
     <property name="SellableToTrader" value="false"/>
@@ -27515,7 +27515,7 @@ perkNightStalkerSilentNight
     <property name="DescriptionKey" value="ServingDesc" />
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
-    <property name="SpoiledItem" value="foodMoldyBread" />
+    <property name="SpoiledItem" value="jz_MoldyBread" />
     <property name="TickPerLoss" value="150" />
     <property name="SpoilageMax" value="1000" />
     <property name="SpoilagePerTick" value="1" />
@@ -28462,7 +28462,6 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mgrain" />
 	<property name="Weight" value="3" />
 	<property name="Stacknumber" value="5000" />
-	<property name="CustomIcon" value="ui_game_symbol_chips" />
 	<property name="DisplayType" value="TSFoWaStHeGrDy"/>
     <property name="EconomicValue" value="200"/>
 	<property name="Spoilable" value="true" />
@@ -28819,6 +28818,7 @@ perkNightStalkerSilentNight
 <item name="jz_MoldyBread">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
+	<property name="DescriptionKey" value="jz_MoldyBreadDesc" />
 	<property name="DisplayType" value="TSFoWaStHeWeDy"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -29096,7 +29096,6 @@ perkNightStalkerSilentNight
 	<property name="Material" value="MresourceClayLump" />
 	<property name="HoldType" value="45" />
 	<property name="Stacknumber" value="1" />
-    <property name="CustomIcon" value="ui_game_symbol_jz_MoldDart" />
 	<property name="DescriptionKey" value="jz_MoldDDesc" />
     <property name="Group" value="Science" />
     <property name="UnlockedBy" value="dartTrapSchematic"/>
@@ -29270,6 +29269,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ScrapSteel">
 	<property name="Extends" value="jz_MasterItem" />
+	<property name="DescriptionKey" value="jz_ScrapSteelDesc" />
 	<property name="Material" value="Msteel" />
 	<property name="Weight" value="1" />
 	<property name="MeltTimePerUnit" value="0.5" />
@@ -29315,7 +29315,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_ScrapAdhesive">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="scrapAdhesiveDesc" />
+	<property name="DescriptionKey" value="jz_ScrapAdhesiveDesc" />
 	<property name="Material" value="Madhesive" />
 	<property name="Weight" value="1" />
 </item>
@@ -30663,7 +30663,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicSteelSheetMetal">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="steelCTRPlate"/>
+	<property name="CustomIcon" value="garageDoorIndustrial"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
     <property name="Unlocks" value="jz_SteelSheetMetal"/>
 	<property class="Action0">
@@ -30693,7 +30693,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicConcreteSledge">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ConcreteSledge"/>
+	<property name="CustomIcon" value="jz_ConcreteSledge"/>
     <property name="Unlocks" value="jz_ConcreteSledge"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -30723,7 +30723,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicPurificationTablets">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ui_game_symbol_purificationTablets"/>
+	<property name="CustomIcon" value="jz_PurificationTablets"/>
     <property name="Unlocks" value="jz_PurificationTablets"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -30768,7 +30768,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicIronSheetMetal">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="rScrapIronCTRPlate"/>
+	<property name="CustomIcon" value="corrugatedMetalSheet"/>
     <property name="Unlocks" value="jz_IronSheetMetal"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -30873,7 +30873,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicPlank">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ui_game_symbol_plank"/>
+	<property name="CustomIcon" value="resourceWood"/>
     <property name="Unlocks" value="resourceWood"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -30903,7 +30903,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicGunOil">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ui_game_symbol_gunOil"/>
+	<property name="CustomIcon" value="jz_GunOil"/>
     <property name="Unlocks" value="jz_GunOil"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -31144,7 +31144,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicWelder">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ui_game_symbol_welder"/>
+	<property name="CustomIcon" value="jz_WelderTool"/>
 	<property name="Unlocks" value="jz_WelderTool"/>
     <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -31541,7 +31541,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="1"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="apparelRunningShoesHP"/>
+	<property name="CustomIcon" value="apparelRunningShoesRegular"/>
 	<property name="Unlocks" value="apparelRunningShoesHP"/>
     <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -31621,7 +31621,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="1"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="Insecticide"/>
+	<property name="CustomIcon" value="jz_Insecticide"/>
 	<property name="Unlocks" value="jz_Insecticide"/>
     <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -31733,7 +31733,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
     <property name="Weight" value="5"/>
-	<property name="CustomIcon" value="ui_game_symbol_blastFurnace"/>
+	<property name="CustomIcon" value="jz_SteelForge"/>
 	<property name="Unlocks" value="jz_SteelForge"/>
     <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -32593,6 +32593,7 @@ perkNightStalkerSilentNight
 <item name="jz_QIGoodWalkieTalkie">
 	<property name="Extends" value="jz_MasterItem"/>
 	<property name="Stacknumber" value="1" />
+	<property name="CustomIcon" value="Walkie"/>
 	<property name="DescriptionKey" value="jz_QIGoodWalkieTalkieDesc"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>

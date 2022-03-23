@@ -33597,6 +33597,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CustomIcon" value="Working" />
 	<property class="Workstation">
 		<property name="Modules" value="tools,output,input" />
 	</property>
@@ -33730,6 +33731,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
+	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -33773,6 +33775,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -33827,6 +33830,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -33869,6 +33873,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -33930,6 +33935,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -33969,6 +33975,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37859,7 +37866,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_SimpleCobblestoneShapesBlock">
 	<property name="Extends" value="cobblestoneMaster"/>
-	<property name="CustomIcon" value="cobblestoneShapes"/>
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="jz_SimpleCobblestoneShapesBlockDesc"/>
@@ -37876,7 +37882,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_SimpleConcreteShapesBlock">
 	<property name="Extends" value="concreteNoUpgradeMaster"/>
-	<property name="CustomIcon" value="concreteShapes"/>
+	<property name="CustomIcon" value="concreteMaster"/>
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="jz_SimpleConcreteShapesBlockDesc"/>
