@@ -1749,7 +1749,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="jz_RubberDogToy" count="1" prob="0.01" />
 	<drop event="Destroy" name="jz_PaperToiletPaper" count="1" prob="0.01" />
 	<drop event="Destroy" name="jz_PaperAirPlane" count="1" prob="0.01" />
-	<drop event="Destroy" name="jz_PaperToiletPaper" count="1" prob="0.01" />
 	<drop event="Destroy" name="apparelRunningShoesRegular" count="1" prob="0.01" />
 </block>
 
@@ -12117,6 +12116,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WallOvenCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -12349,6 +12355,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="156"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_OldStoveCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12364,6 +12377,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/LootContainers?stoveElectricModern_01Prefab.prefab"/>
 	<property name="CreativeMode" value="Dev"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_ModernStoveCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12372,6 +12392,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/LootContainers?stoveElectricModern_02Prefab.prefab"/>
 	<property name="CreativeMode" value="Dev"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_ModernStoveCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12406,6 +12433,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_GasGrillCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12448,6 +12482,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="DescriptionKey" value="cntGasGrillRandomLootHelperDesc"/>
 	<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_CharcoalGrillCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -13515,6 +13556,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="42"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_ToilteCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -13527,6 +13575,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntToilet03">
 	<property name="Extends" value="cntToilet01"/>
 	<property name="Model" value="#Entities/LootContainers?toiletCommercial03Prefab.prefab"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_ComercialToiletCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -24709,6 +24764,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 	<property name="SortOrder1" value="70a0"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+	<!-- JZMOD -->
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_BurningBarrelCampfire"/>
+		<property name="Item" value="jz_CampfireKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -33510,20 +33572,408 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="resourceScrapIron" count="3,20" tag="ToolWrench" />
 </block>
 
+<block name="jz_BurningBarrelCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Lighting/barrel03_burning_playerPrefab"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="156"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="CustomIcon" value="burningBarrelPlayer"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,1,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_GasGrillCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?GasGrill_EmptyPrefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="cntGasGrillClosed"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,1,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_CharcoalGrillCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?Grill_Simple_EmptyPrefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0.8,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_WallOvenCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Texture" value="346,345,341,345,345,345"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="cntWallOven"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0.8,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_OldStoveCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?stoveElectricRetro_01Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0.8,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_ModernStoveCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?stoveElectricModern_01Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0.8,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_ToilteCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?toiletCommercial01Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="cntToilet01"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
+<block name="jz_ComercialToiletCampfire">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?toiletCommercial03Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="cntToilet03"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ParticleName" value="campfire"/>
+	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="OpenSound" value="campfire_open"/>
+	<property name="CloseSound" value="campfire_close"/>
+	<property name="CraftSound" value="campfire_cook_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="resourceScrapIron" count="3"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="TakeDelay" value="15"/>
+</block>
+
 <block name="jz_WorkstationImprovisedWorkbench">
 	<property name="Extends" value="woodLogPillar100"/>
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<!--<property name="Shape" value="New"/>
-	<property name="Path" value="solid"/>
-	<property name="Model" value="Pole1m"/>
-	<property name="SortOrder2" value="0735"/>
-	<property name="Texture" value="21,21,116,116,116,116"/>
-	<property name="UseGlobalUV" value="Local"/>
-    <property name="Place" value="TowardsPlacerInverted"/>
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>-->
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>

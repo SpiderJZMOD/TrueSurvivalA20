@@ -5393,7 +5393,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection03GetBetter"/>
 		</effect_group>
 	</buff>
-	<buff name="buffInfection01GetBetter" name_key="jz_buffInfection01GetBetterName" description_key="jz_BuffInfection01GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better">
+	<buff name="buffInfection01GetBetter" name_key="Infection Getting Better" description_key="jz_BuffInfection01GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -22944,7 +22944,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 		
-	<buff name="jz_BuffZombieBiteTended" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedDesc" icon="ui_game_symbol_brokenbone" >
+	<buff name="jz_BuffZombieBiteTended" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" >
 		<stack_type value="ignore"/>
 		 <display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group> 
@@ -22965,7 +22965,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD ZOMBIE BITE NEEDS CLEASING ICONS-->
-	<buff name="jz_BuffZombieBiteDirtyBandageIconA" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="ui_game_symbol_brokenbone" tooltip_key="My Bite Wound Needs Cleaning" icon_color="255,255,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconA" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="BandagedBite" tooltip_key="My Bite Wound Needs Cleaning" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -22977,7 +22977,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteDirtyBandageIconB" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="ui_game_symbol_brokenbone" icon_color="255,170,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconB" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="BandagedBite" icon_color="255,170,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -22989,7 +22989,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteDirtyBandageIconC" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="ui_game_symbol_brokenbone" icon_color="255,85,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconC" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="BandagedBite" icon_color="255,85,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23001,7 +23001,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteDirtyBandageIconD" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="ui_game_symbol_brokenbone" icon_color="255,0,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconD" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsCleansingDesc" icon="BandagedBite" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23013,7 +23013,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD ZOMBIE BITE NEEDS BANDAGING ICONS -->
-	<buff name="jz_BuffZombieBiteDirtyBandageIconAA" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="ui_game_symbol_brokenbone" tooltip_key="Bandage Needs Changing" icon_color="255,255,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconAA" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="BandagedBite" tooltip_key="Bandage Needs Changing" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23029,7 +23029,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteDirtyBandageIconBB" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="ui_game_symbol_brokenbone" icon_color="255,170,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconBB" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="BandagedBite" icon_color="255,170,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23045,7 +23045,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteDirtyBandageIconCC" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="ui_game_symbol_brokenbone" icon_color="255,85,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconCC" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="BandagedBite" icon_color="255,85,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23061,7 +23061,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteDirtyBandageIconDD" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="ui_game_symbol_brokenbone" icon_color="255,0,0">
+	<buff name="jz_BuffZombieBiteDirtyBandageIconDD" name_key="Zombie Bite Needs Bandage" description_key="jz_BuffZombieBiteDirtyNeedsBandageDesc" icon="BandagedBite" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23209,7 +23209,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTendedB" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedBDesc" icon="ui_game_symbol_brokenbone" >
+	<buff name="jz_BuffZombieBiteTendedB" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedBDesc" icon="BandagedBite" >
 		<stack_type value="ignore"/>
 		 <display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -23231,7 +23231,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 	
 	<!-- JZMOD ZOMBIE BITE NEEDS CLEASING ICONS-->
-	<buff name="jz_BuffZombieBiteLastDirtyBandageIconA" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="ui_game_symbol_brokenbone" tooltip_key="Bite Wound Needs Cleaning" icon_color="255,255,0">
+	<buff name="jz_BuffZombieBiteLastDirtyBandageIconA" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="BandagedBite" tooltip_key="Bite Wound Needs Cleaning" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23243,7 +23243,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteLastDirtyBandageIconB" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="ui_game_symbol_brokenbone" icon_color="255,170,0">
+	<buff name="jz_BuffZombieBiteLastDirtyBandageIconB" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="BandagedBite" icon_color="255,170,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23255,7 +23255,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteLastDirtyBandageIconC" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="ui_game_symbol_brokenbone" icon_color="255,85,0">
+	<buff name="jz_BuffZombieBiteLastDirtyBandageIconC" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="BandagedBite" icon_color="255,85,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23267,7 +23267,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteLastDirtyBandageIconD" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="ui_game_symbol_brokenbone" icon_color="255,0,0">
+	<buff name="jz_BuffZombieBiteLastDirtyBandageIconD" name_key="Zombie Bite Dirty" description_key="jz_BuffZombieBiteDirtyNeedsBandageBDesc" icon="BandagedBite" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -23352,7 +23352,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTendedC" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedCDesc" icon="ui_game_symbol_brokenbone" >
+	<buff name="jz_BuffZombieBiteTendedC" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedCDesc" icon="BandagedBite" >
 		<stack_type value="ignore"/>
 		 <display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   

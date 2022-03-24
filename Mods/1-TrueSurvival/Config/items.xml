@@ -20724,7 +20724,6 @@ perkNightStalkerSilentNight
 	</property>
 	<property name="EconomicValue" value="10"/>
 	<property name="Group" value="Resources"/>
-	<property name="CustomIcon" value="Hubcap"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -32105,6 +32104,7 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="2"/>
     <property name="DescriptionKey" value="jz_MeleePlankDesc"/>
 	<property name="Material" value="Mwood"/>
+	<property name="Weight" value="5"/>
 	<property name="RepairTools" value="jz_CantRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -32289,6 +32289,7 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="#@modfolder:Resources/JZRebar2Melee.unity3d?Rebar2MeleePrefab" />
     <property name="DescriptionKey" value="jz_MeleeRebarDesc"/>
 	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="5"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
@@ -32325,6 +32326,7 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="#@modfolder:Resources/JZLgPipeMelee.unity3d?LgPipeMeleePrefab" />
     <property name="DescriptionKey" value="jz_MeleePipeDesc"/>
 	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="5"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
@@ -32360,6 +32362,7 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZWateringCan.unity3d?WateringCanPrefab" />
 	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="10"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy"/>
@@ -32399,6 +32402,50 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModSlots" operation="base_set" value="0" />
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item name="jz_CampfireKit">
+	<property name="HoldType" value="31"/>
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mwood"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="DescriptionKey" value="jz_CampfireKitDesc" />
+	<property name="CustomIcon" value="jz_FireWood"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="ShowQuality" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".5"/>
+		<property name="Repair_amount" value="1"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+        <property name="Upgrade_action_sound" value="bucketplace_water"/>
+		<property name="Sound_start" value="repair_block"/>
+        <property name="Allowed_upgrade_items" value="jz_CampfireKit"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<property class="Action1"> 
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".5"/>
+		<property name="Repair_amount" value="1"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+        <property name="Upgrade_action_sound" value="bucketplace_water"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="jz_CampfireKit"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="jz_CampfireKit">
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
+	<property name="Group" value="Tools/Traps,Food/Cooking"/>
 </item>
 
 <item name="jz_OldMilkJug">

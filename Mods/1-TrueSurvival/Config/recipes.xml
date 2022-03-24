@@ -115,6 +115,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <!-- Player Crafted ******************************************************************************************************************************************************* -->
 <!-- A20_SHAPE_MENU_VARIANT_HELPER_BLOCKS -->
 
+<recipe name="jz_CampfireKit" count="1" craft_time="30" craft_exp_gain="5" tags="jz_ImprovisedCraftingTag" >
+	<ingredient name="jz_PlasticLighter" count="1"/>
+	<ingredient name="jz_FireWood" count="1"/>
+</recipe>
+
 <recipe name="jz_SimpleScaffoldingBlock" count="1" >
 	<ingredient name="jz_Stick" count="10"/>
 	<ingredient name="jz_FiberRope" count="3"/>
