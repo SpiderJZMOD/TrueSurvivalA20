@@ -4590,7 +4590,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 </entity_class>
 
 <entity_class name="npcTraderJoel" extends="npcTraderTemplate">
-	<property name="Tags" value="entity,npc,human,trader"/>
+	<property name="Tags" value="entity,npc,human,trader,male"/>
 	<property name="Mesh" value="#Entities/Traders?Prefabs/TraderJoel.prefab"/>
 	<property name="NPCID" value="traitorjoel"/>
 	<property name="DanceType" value="1" />
@@ -5432,7 +5432,7 @@ Kinda sorta works but is buggy and we don't have time for that.
     <drop event="Destroy" name="jz_VenomSack" count="1" />    
 </entity_class>
 
-<entity_class name="BlisteredParasite" extends="zombieRegularTemplate">
+<entity_class name="JZZombieBlistered" extends="zombieRegularTemplate">
 	<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
 	<property name="Faction" value="undead"/>				
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
@@ -5451,7 +5451,7 @@ Kinda sorta works but is buggy and we don't have time for that.
     <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
 </entity_class>
 
- <entity_class name="HookArmParasite" extends="zombieRegularTemplate">
+ <entity_class name="JZZombieHookArm" extends="zombieRegularTemplate">
 	<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
 	<property name="Faction" value="undead"/>				
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
@@ -5470,7 +5470,7 @@ Kinda sorta works but is buggy and we don't have time for that.
     <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
 </entity_class>    
 
-<entity_class name="TrollParasite" extends="zombieRegularTemplate">
+<entity_class name="JZZombieTroll" extends="zombieRegularTemplate">
 	<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
 	<property name="Faction" value="undead"/>				
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
@@ -5487,7 +5487,108 @@ Kinda sorta works but is buggy and we don't have time for that.
     <property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
     <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
     <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
-</entity_class>    
+</entity_class>  
+
+<entity_class name="JZZombieChicken" extends="animalTemplateHostile">
+	<property name="Tags" value="entity,animal,hostile,zombie"/><!-- JZMOD -->
+	<property name="Prefab" value="/Entities/Animals/CHICKEN/chickenPrefab"/>
+	<property name="PhysicsBody" value="chicken"/>
+	<property name="Mass" value="15"/>
+	<property name="Weight" value="10"/>
+	<property name="SoundHurt" value="Animals/Chicken/chickenpain"/>
+	<property name="SoundDeath" value="Animals/Chicken/chickendeath"/>
+	<property name="SwimOffset" value="2"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="HasDeathAnim" value="false"/>
+	<property name="CanBigHead" value="false" />
+	<property name="SoundRandomTime" value="45.0"/>
+	<property name="SoundAlertTime" value="25.0"/>
+	<property name="SoundRandom" value="Enemies/Zombie_Dogs/zombiedogroam"/>
+	<property name="SoundAlert" value="Enemies/Zombie_Dogs/zombiedogalert"/>
+	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense"/>
+	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
+	<property name="AIFeralSense" value="1.6"/>
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="Territorial"/>
+	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Look"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-7" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityNPC,0,0"/>
+	<property name="AITarget-5" value=""/>
+	<!-- Stealth -->
+	<property name="SleeperSmellSenseThreshold" value="5,30"/> 
+	<property name="SleeperSmellWakeThreshold" value="10,40"/>
+	<property name="SmellAlertThreshold" value="5"/> 
+	<!-- Gameplay  -->
+	<property name="HandItem" value="jz_HandRabbitAttack" />
+	<property name="MoveSpeedPanic" value="1.8"/>
+	<property name="ExperienceGain" value="130"/>
+	<property name="DeadBodyHitPoints" value="175"/>
+	<!-- JZMOD Harvest For Beginner -->
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="2"/> 
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="5,20"/>
+	</effect_group>
+</entity_class>  
+
+<entity_class name="JZZombieRabbit" extends="animalTemplateHostile">
+	<property name="Tags" value="entity,animal,rabbit,hostile,zombie"/>
+	<property name="Prefab" value="/Entities/Animals/Rabbit/RABBIT"/>
+	<property name="PhysicsBody" value="rabbit"/>
+	<property name="Mass" value="12"/>
+	<property name="Weight" value="10"/>
+	<property name="SoundRandomTime" value="45.0"/>
+	<property name="SoundAlertTime" value="25.0"/>
+	<property name="SoundRandom" value="Enemies/Zombie_Dogs/zombiedogroam"/>
+	<property name="SoundAlert" value="Enemies/Zombie_Dogs/zombiedogalert"/>
+	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense"/>
+	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
+	<property name="SoundHurt" value="Animals/rabbitpain"/>
+	<property name="SoundDeath" value="Animals/rabbitdeath"/>
+	<property name="SwimOffset" value="2"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="CanBigHead" value="false" />
+	<property name="AIFeralSense" value="1.6"/>
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="Territorial"/>
+	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Look"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-7" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityNPC,0,0"/>
+	<property name="AITarget-5" value=""/>
+	<!-- Gameplay  -->
+	<property name="HandItem" value="jz_HandRabbitAttack" />
+	<property name="ExperienceGain" value="130"/>
+	<property name="DeadBodyHitPoints" value="175"/>
+	<!-- JZMOD Harvest For Beginner -->
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="2"/> 
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+	</effect_group>
+</entity_class>
+
 </set>
 </configs> 
 

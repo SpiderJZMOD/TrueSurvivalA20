@@ -35294,6 +35294,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZDecorTireMarks1.unity3d?DecorTireMarks1Prefab" />
 	<property name="FilterTags" value="fdecor,fother"/>
+	<!--<property name="ModelOffset" value="0,.7,0"/> -->
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<drop event="Destroy" count="0"/>
 </block>

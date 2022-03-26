@@ -8,23 +8,18 @@ jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
 
-jz_BuffWarningStageScurvyDesc
-jz_BuffIllnessScurvyDesc
-jz_BuffWarningStageDiarrheaDesc
-jz_BuffIllnessDiarrheaDesc
-jz_BuffWarningStageAnemiaDesc
-jz_BuffIllnessAnemiaDesc
-jz_BuffWarningStageGoutDesc
-jz_BuffIllnessGoutDesc
-jz_BuffWarningStageConstipationDesc
-jz_BuffIllnessConstipationDesc
-jz_BuffWarningStageWeakDesc
-jz_BuffStageWeakDesc
-
-
-
-
-
+jz_BuffWarningStageScurvyDesc,"Your diet is lacking in foods that contain Essential Vitamins and it’s starting to affect your health badly. You are showing the warning signs of Scurvy. Eat more foods that contain Essential Vitamins to heal from this.\n\nEffects:\n5% Slower Stamina Recovery\n5% more Encumbrance Effect"
+jz_BuffIllnessScurvyDesc,"Your diet is severely lacking in Essential Vitamins and it’s making you ill. You are suffering from  Scurvy. Eat more foods that contain Essential Vitamins to heal from this.\n\nEffects:\n20% Slower Stamina Recovery\n20% more Encumbrance Effect"
+jz_BuffWarningStageDiarrheaDesc,"Your over consumption of foods containing Essential Vitamins is starting to affect your health badly. You are showing the warning signs of Diarrhea. Eat less foods that contain Essential Vitamins to heal from this.\n\nEffects:\n5% Faster Hydration Loss\nLow Chance to loudly Vomit and or stop and relieve yourself"
+jz_BuffIllnessDiarrheaDesc,"Your over consumption of foods containing Essential Vitamins is making you ill. You are suffering from Diarrhea. Eat less foods that contain Essential Vitamins to heal from this.\n\nEffects:\n20% Faster Hydration Loss\nHigh Chance to loudly Vomit and or stop and relieve yourself"
+jz_BuffWarningStageAnemiaDesc,"Your diet is lacking in foods that contain Protein and it’s starting to affect your health badly. You are showing the warning signs of Anemia. Eat more foods that contain Protein to heal from this.\n\nEffects:\n5% Fatigue Blockage\n-4 Hypothermal Resist"
+jz_BuffIllnessAnemiaDesc,"Your diet is severely lacking in Protein and it’s making you ill. You are suffering from Anemia. Eat more foods that contain Protein to heal from this.\n\nEffects:\n20% Fatigue Blockage\n-15 Hypothermal Resist"
+jz_BuffWarningStageGoutDesc,"Your over consumption of foods containing Protein is starting to affect your health badly. You are showing the warning signs of Gout. Eat less foods that contain Protein to heal from this.\n\nEffects:\n3% Slower Mobility\nLow Chance to loudly scream in pain and or limp"
+jz_BuffIllnessGoutDesc,"Your over consumption of foods containing Protein is making you ill. You are suffering from Gout. Eat less foods that contain Protein to heal from this.\n\nEffects:\n10% Slower Mobility\nHigh Chance to loudly scream in pain and or limp"
+jz_BuffWarningStageConstipationDesc,"Your over consumption of foods containing Fiber is starting to affect your health badly. You are showing the warning signs of Constipation. Eat less foods that contain Fiber to heal from this.\n\nEffects:\n-2 Carrying Capacity\nLow Chance to loudly scream in pain" 
+jz_BuffIllnessConstipationDesc,"Your over consumption of foods containing Fiber is making you ill. You are suffering from Constipation. Eat less foods that contain Fiber to heal from this.\n\nEffects:\n-8 Carrying Capacity\nHigh Chance to loudly scream in pain" 
+jz_BuffWarningStageWeakDesc,"Your diet is lacking in foods that contain Fiber and it’s starting to affect your health badly. You are starting to feel a little Weak. Eat more foods that contain Fiber to heal from this.\n\nEffects:\n5% More Stamina Loss\nTo Weak to use Two Handed Weapons"
+jz_BuffStageWeakDesc,"Your diet is severely lacking in Fiber and it’s making you ill. You are suffering from Weakness. Eat more foods that contain Fiber to heal from this.\n\nEffects:\n20% More Stamina Loss\nTo Weak to use Two Handed Weapons\nTo Weak to use Power Attacks"
 jz_BuffZombieBiteBleedingDesc,"You have suffered a [f21b10]Zombie Bite[-] and are bleeding badly. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffDirtyZombieBiteCauterizeDesc,"Now that you have treated the bleed you will need to carturize  [f21b10]Zombie Bite[-] with a [35bd00]Red Hot Pipe[-] to close the wound. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffDirtyZombieBiteBurnDesc,"The [f21b10]Zombie Bite[-] is carturized but now the burn must be treated with a [35bd00]Medical Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
@@ -34,7 +29,6 @@ jz_BuffZombieBiteDirtyNeedsBandageDesc,"Now that your [f21b10]Zombie Bite[-] wou
 jz_BuffZombieBiteTendedBDesc,"The [f21b10]Zombie Bite[-] is bandaged and healing. After some time you will need to re-bandage it to allow it to continue healing."
 jz_BuffZombieBiteDirtyNeedsBandageBDesc,"Your bandage has gotten dirty and needs to be changed. You will need to use a [35bd00]Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffZombieBiteTendedCDesc,"The [f21b10]Zombie Bite[-] is bandaged. Try not to hurt it so it will finish healing."
-
 jz_BuffInfection01GetBetterDesc,"You have a treated [f21b10]Z-Virus[-] infection. Continue medication until infection is cleared up."
 jz_BuffInfection01UntreatedDesc,"You have the [f21b10]Z-Virus[-] infection.\nIt will get worse until treated with [35bd00]AntiVirals[-].\nGetting bite by zombies will make the infection worse. If the infection reaches 100% you will die and not be able to respawn."
 jz_BuffInfection02GetBetterDesc,"You have a treated serious [f21b10]Z-Virus[-]. Continue medication and keep an eye on the wound.\nGetting bite by zombies will make the infection worse.\n\nStamina Regeneration -12.5%"

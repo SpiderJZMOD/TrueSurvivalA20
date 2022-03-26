@@ -331,6 +331,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -352,6 +353,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
@@ -408,11 +410,13 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Sound_start" value="axe_swinglight"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
 	<property class="Action1">
 		<property name="Sound_start" value="axe_swingheavy"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -492,6 +496,7 @@ Mesh files no longer used:
 		<property name="GrazeEnd" value=".4"/>
 		<property name="SwingDegrees" value="70"/>
 		<property name="SwingAngle" value="130"/>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<effect_group name="meleeToolPickT1IronPickaxe">
@@ -546,6 +551,7 @@ Mesh files no longer used:
 		<property name="SwingDegrees" value="65"/>
 		<property name="SwingAngle" value="180"/>
 		<property name="UseGrazingHits" value="true"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -556,6 +562,7 @@ Mesh files no longer used:
 		<property name="GrazeEnd" value=".48"/>
 		<property name="SwingDegrees" value="110"/>
 		<property name="SwingAngle" value="90"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -616,6 +623,7 @@ Mesh files no longer used:
 		<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -625,6 +633,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -670,10 +679,12 @@ Mesh files no longer used:
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="UnlockedBy" value="jz_SchematicIronShovel"/><!-- JZMOD -->
 	 <property class="Action0"> 
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
    </property>
 	<property class="Action1">  
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
     </property> 
@@ -725,11 +736,13 @@ Mesh files no longer used:
 	<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
 	<property name="UnlockedBy" value="jz_SchematicSteelShovel"/><!-- JZMOD -->
 	<property class="Action0"> 
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
        <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
 	<property class="Action1"> 
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->	
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
     </property> 
 	<effect_group name="meleeToolShovelT2SteelShovel">
@@ -804,6 +817,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.head" value="5"/> -->
 		<property name="SupportHarvesting" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -892,6 +906,7 @@ Mesh files no longer used:
 		<!-- <property name="DamageBonus.head" value="3"/> -->
 		<property name="SupportHarvesting" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -1227,6 +1242,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="meleeWpnBladeT0BoneKnife">
@@ -1338,6 +1354,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="meleeWpnBladeT1HuntingKnife">
@@ -1549,6 +1566,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 	<effect_group name="meleeWpnBladeT3Machete">
 		<passive_effect name="EntityDamage" operation="base_set" value="19.8" tags="perkDeepCuts"/> <!-- meleeWpnBladeT3Machete -->
@@ -1652,6 +1670,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="woodgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="meleeWpnClubT0WoodenClub">
@@ -1726,6 +1745,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -1749,6 +1769,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -1898,6 +1919,8 @@ Mesh files no longer used:
 	<property class="GrazeSounds">
 		<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 	</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<property class="Action1">
@@ -1919,7 +1942,9 @@ Mesh files no longer used:
 	<property class="GrazeSounds">
 		<property name="Override0" value="organic" param1="woodgrazeorganic"/>
 	</property>
-			</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+	</property>
 
 	<effect_group name="meleeWpnClubT3SteelClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="26.2" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub -->
@@ -2015,6 +2040,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="meleeWpnBatonT0PipeBaton">
@@ -2104,6 +2130,7 @@ Mesh files no longer used:
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 	<effect_group name="meleeWpnBatonT2StunBaton">
 		<passive_effect name="EntityDamage" operation="base_set" value="10.8" tags="perkElectrocutioner"/> <!-- meleeWpnBatonT2StunBaton -->
@@ -2516,6 +2543,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2536,6 +2564,7 @@ needed?
 		<property class="HitSounds">
 			<property name="Override0" value="organic" param1="metalstaborganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2583,12 +2612,14 @@ needed?
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="UnlockedBy" value="meleeWpnSpearT1IronSpearSchematic"/><!-- JZMOD -->
 	<property class="Action0">
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
     </property>
 	<property class="Action1">
 		<requirement name="StatCompareCurrent" stat="Stamina" operation="GTE" value="22.8"/>
 		<property name="Gravity" value="-6"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2642,11 +2673,13 @@ needed?
 	<property name="RepairTools" value="resourceForgedSteel"/><!-- JZMOD -->
 
 	<property class="Action0">
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
     </property>
 	<property class="Action1">
 		<requirement name="StatCompareCurrent" stat="Stamina" operation="GTE" value="22.8"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2725,6 +2758,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2747,6 +2781,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2819,6 +2854,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2840,6 +2876,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2911,6 +2948,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -2932,6 +2970,7 @@ needed?
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/><!-- JZMOD -->
 	</property>
@@ -3754,7 +3793,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="-.062,.062,.16"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4042,7 +4081,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4131,7 +4170,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4220,7 +4259,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4309,7 +4348,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4490,7 +4529,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4583,7 +4622,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4680,7 +4719,7 @@ needed?
 		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4782,7 +4821,7 @@ needed?
 		<property name="Particles_muzzle_fire" value="gunfire_sniper"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_sniper_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4884,7 +4923,7 @@ needed?
 		<property name="Particles_muzzle_fire" value="gunfire_AK47"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_AK47_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -4972,7 +5011,7 @@ needed?
 		<property name="Particles_muzzle_fire" value="gunfire_AK47"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_AK47_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5066,7 +5105,7 @@ needed?
 		<property name="Particles_muzzle_fire" value="gunfire_assault_rifle"/>
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_assault_rifle_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5164,7 +5203,7 @@ needed?
 		<property name="Particles_muzzle_fire_fpv" value="gunfire_m60_fpv"/>
 		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5266,7 +5305,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5366,7 +5405,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5470,7 +5509,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5577,7 +5616,7 @@ needed?
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
 		<property name="Max_strain_time" value=".43"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5673,7 +5712,7 @@ needed?
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="crossbow_reload"/>
 		<property name="AutoReload" value="false"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5770,7 +5809,7 @@ needed?
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="Sound_reload" value="crossbow2_reload"/>
 		<property name="AutoReload" value="false"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -5875,7 +5914,7 @@ needed?
 		<property name="SupportHarvesting" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -6005,7 +6044,7 @@ needed?
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSprained"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmBroken"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/><!-- JZMOD -->
@@ -14781,12 +14820,6 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
-    <property name="ShowQuality" value="false"/><!-- JZMOD -->
-    <property name="SpoiledItem" value="foodRottingFlesh" /><!-- JZMOD -->
-    <property name="TickPerLoss" value="150" /><!-- JZMOD -->
-    <property name="SpoilageMax" value="1000" /><!-- JZMOD -->
-    <property name="SpoilagePerTick" value="1" /><!-- JZMOD -->
-    <property name="QualityTierColor" value="2" /><!-- JZMOD -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -26404,6 +26437,7 @@ perkNightStalkerSilentNight
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="jz_SteakKnife">
@@ -26497,6 +26531,7 @@ perkNightStalkerSilentNight
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 	<effect_group name="meleeWpnBladeT1HuntingKnife">
 		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
@@ -26596,6 +26631,7 @@ perkNightStalkerSilentNight
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="jz_ChefKnife">
@@ -26659,7 +26695,7 @@ perkNightStalkerSilentNight
 		<property name="SwingDegrees" value="50"/>
 		<property name="UseGrazingHits" value="true"/>
 		<property name="SwingAngle" value="0"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/>
 	</property>
 	<property class="Action1">
@@ -26675,7 +26711,8 @@ perkNightStalkerSilentNight
 		<property name="SwingDegrees" value="50"/>
 		<property name="UseGrazingHits" value="true"/>
 		<property name="SwingAngle" value="135"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 		<requirement name="CVarCompare" cvar="$NoTwoHandItems" operation="Equals" value="0"/>
 	</property>
 	<effect_group name="meleeToolAxeT1IronFireaxe">
@@ -26767,6 +26804,7 @@ perkNightStalkerSilentNight
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
     <effect_group name="jz_FryingPan" tiered="false">
 		<passive_effect name="MaxRange" operation="base_set" value="2.2"/>
@@ -26845,6 +26883,7 @@ perkNightStalkerSilentNight
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="woodgrazeorganic"/>
 		</property>
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
 	</property>
 
 	<effect_group name="meleeWpnClubT0WoodenClub">
@@ -26908,7 +26947,8 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Disassemble" value="1" param1="1"/>
         <property name="ToolCategory.ToolCrowbar" value="1" param1="1"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmSprained"/>
         <requirement name="NotHasBuff" buff="buffArmBroken"/>
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/>
@@ -26921,7 +26961,8 @@ perkNightStalkerSilentNight
 		<property name="ToolCategory.Disassemble" value="1" param1="1"/>
         <property name="ToolCategory.ToolCrowbar" value="1" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
-		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/>
+		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
+		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
         <requirement name="NotHasBuff" buff="buffArmSprained"/>
         <requirement name="NotHasBuff" buff="buffArmBroken"/>
 		<requirement name="NotHasBuff" buff="buffArmSplinted"/>
@@ -27390,7 +27431,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="5" />
 	<property name="FuelValue" value="1" />
 	<property name="Weight" value="5" />
-	<property name="Group" value="Science,Medical,CFChemicals" />
+	<property name="Group" value="Science,Medical" />
 	<property class="Action0">
         <property name="Sound_start" value="player_bandage"/>
 		<property name="Create_item" value="drinkJarEmpty" />
@@ -27429,6 +27470,7 @@ perkNightStalkerSilentNight
 <item name="jz_MedicalRedHotPipe">
 	<property name="Extends" value="jz_MedicalRedHotSteelPipe" />
 	<property name="Material" value="Mmetal" />
+	<property name="Group" value="Science,Medical" />
 	<property class="Action0">
 		<property name="Create_item" value="resourceMetalPipe" />
 		<requirement name="CVarCompare" cvar="$NeedsCauterizing" operation="Equals" value="1"/>
@@ -27485,7 +27527,7 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="16" />
     <property name="EconomicValue" value="100"/>
 	<property name="Stacknumber" value="50" />
-	<property name="Group" value="Science" />
+	<property name="Group" value="Science,CFChemicals" />
 	<property name="DescriptionKey" value="purificationDesc" />
 </item>
 <!--JZMOD FOOD ITEMS-->
@@ -32563,7 +32605,7 @@ perkNightStalkerSilentNight
 		<property class="GrazeSounds">
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>
-        <property name="ToolCategory.TissueExtractorTag" value="1" param1="1"/>\
+        <property name="ToolCategory.TissueExtractorTag" value="1" param1="1"/>
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/>
         <requirement name="NotHasBuff" buff="buffArmSprained"/>
         <requirement name="NotHasBuff" buff="buffArmBroken"/>
@@ -33573,6 +33615,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_MedicalSalineSolution">
 	<property name="Extends" value="jz_MasterItem" />
+	<property name="Group" value="Science,CFChemicals"/>
 	<property name="DescriptionKey" value="jz_MedicalSalineSolutionDesc" />
 </item>
 
@@ -33918,6 +33961,28 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_SaltDesc" />
 	<property name="Group" value="Medical,Basics,CFFood/Cooking,CFChemicals"/>
+</item>
+
+<item name="jz_HandRabbitAttack">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="2"/>
+		<property name="DamageBlock" value="1"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="organic"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.2" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="terrGravel"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.3" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="cloth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="glass"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="jzSteel"/>
+	</effect_group>
 </item>
 </set>
 

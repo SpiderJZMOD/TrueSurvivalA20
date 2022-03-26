@@ -6,9 +6,9 @@
                 <entity name="ExperimentZ" prob=".3" />
                 <entity name="SwatZombie" prob=".3" />
                 <entity name="SwatCaptainZombie" prob=".3" />
-				<entity name="BlisteredParasite" prob=".3" />
-                <entity name="HookArmParasite" prob=".3" />
-				<entity name="TrollParasite" prob=".3" />
+				<entity name="JZZombieBlistered" prob=".3" />
+                <entity name="JZZombieHookArm" prob=".3" />
+				<entity name="JZZombieTroll" prob=".3" />
 	</append>
 	
 	

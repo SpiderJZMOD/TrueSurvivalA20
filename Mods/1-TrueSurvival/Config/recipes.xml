@@ -412,7 +412,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_OldMilkJug" count="1" craft_time="3" craft_exp_gain="0">
-	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
 </recipe> 
 
 <recipe name="farmPlotBlockVariantHelper" count="1" craft_time="30" craft_exp_gain="0">
