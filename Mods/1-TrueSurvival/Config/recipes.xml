@@ -3006,6 +3006,22 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="128" />
 </recipe>
 <!-- Drying Rack Crafted ******************************************************************************************************************************************************* -->
+<recipe name="jz_FoodDriedFruit" count="1" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="jz_FoodServingFruit" count="8" />
+</recipe>
+
+<recipe name="jz_FoodDriedFruit" count="10" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="jz_FoodServingFruit" count="80" />
+</recipe>
+
+<recipe name="jz_FoodDriedMeat" count="1" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="foodRawMeat" count="4"/>
+</recipe>
+
+<recipe name="jz_FoodDriedMeat" count="10" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="foodRawMeat" count="40"/>
+</recipe>
+
 <recipe name="resourceLeather" count="1" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0"  >
 	<ingredient name="jz_CuredLeather" count="1"/>
 </recipe>

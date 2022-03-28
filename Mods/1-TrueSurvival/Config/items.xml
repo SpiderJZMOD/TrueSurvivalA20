@@ -9674,7 +9674,7 @@ add knockdown resist to armor
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="DescriptionKey" value="armorClothGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorClothGroupDesc"/>
 	<property name="Group" value="Clothing,Armor,TCArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="75"/>
@@ -9862,7 +9862,7 @@ add knockdown resist to armor
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedNeck,jz_BuffBrokenJaw,jz_BuffPunctureNeck"/><!-- JZMOD -->
-		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags=",,jz_BuffLacerationNeck,jz_BuffFireBurnNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffGashNeck"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
@@ -10013,12 +10013,12 @@ add knockdown resist to armor
 	<property name="CustomIcon" value="armorMilitaryHelmet"/>
 	<property name="DisplayType" value="armorLight"/>
 	<property name="Material" value="MarmorMilitarySet"/> <property name="Weight" value="4"/>
-	<property name="RepairTools" value="resourceMilitaryFiber"/><!-- JZMOD -->
+	<property name="RepairTools" value="armorMilitarySetParts"/><!-- JZMOD -->
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="DescriptionKey" value="armorMilitaryGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorMilitaryGroupDesc"/>
 	<property name="Group" value="Armor,TCArmor"/>
 	<property name="RepairExpMultiplier" value="12.8"/>
 	<property name="EconomicValue" value="500"/>
@@ -10216,7 +10216,7 @@ add knockdown resist to armor
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="DescriptionKey" value="armorScrapDesc"/>
+	<property name="DescriptionKey" value="jz_armorScrapDesc"/>
 	<property name="Group" value="Clothing,Armor,TCArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="250"/>
@@ -10394,7 +10394,7 @@ add knockdown resist to armor
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="DescriptionKey" value="armorHeavyGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorHeavyGroupDesc"/>
 	<property name="Group" value="Armor,TCArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="500"/>
@@ -10578,7 +10578,7 @@ add knockdown resist to armor
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="DescriptionKey" value="armorSteelGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorSteelGroupDesc"/>
 	<property name="Group" value="Armor,TCArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1000"/>
@@ -10773,6 +10773,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="EquipSlot" value="Head"/>
 	<property name="ShowQuality" value="true"/>
+	<property name="DescriptionKey" value="jz_armorFireFighterGroupDesc"/>
 	<property name="Group" value="Armor,TCArmor"/>
 	<effect_group name="leather w scrap AR">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -10821,6 +10822,7 @@ add knockdown resist to armor
 	<property name="UnlockedBy" value="perkFiremansAlmanacEquipment"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="Armor,TCArmor"/>
+	<property name="DescriptionKey" value="jz_armorFireFighterGroupDesc"/>
 	<effect_group name="iron armor">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -10863,7 +10865,7 @@ add knockdown resist to armor
 	<property name="DisplayType" value="armorHeavy"/>
 	<property name="Waterproof" value=".15"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="RepairTools" value="jz_ScavengedParts"/><!-- JZMOD -->
+	<property name="RepairTools" value="resourceForgedIron"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Weight" value="120"/>
@@ -10871,7 +10873,7 @@ add knockdown resist to armor
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="DescriptionKey" value="armorHeavyGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorSwatGroupDesc"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="Armor,TCArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
@@ -10921,7 +10923,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="Armor,TCArmor"/>
-	<property name="DescriptionKey" value="armorFootballHelmetDesc"/>
+	<property name="DescriptionKey" value="jz_armorFootballGroupDesc"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<effect_group name="leather w scrap AR">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -12499,7 +12501,6 @@ perkNightStalkerSilentNight
 
 <item name="medicalAloeCream">
 	<property name="Tags" value="medical"/>
-	<property name="DisplayType" value="medical"/>
 	<property name="HoldType" value="64"/>
 	<property name="Meshfile" value="#Other/Items?Health/bandage.fbx"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -12665,7 +12666,9 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false">
 		<!-- used on self -->
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffFirstAidKit"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/><display_value name="dStopsBleeding" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/>
+		<display_value name="dStopsBleeding" value="1"/>
+		<display_value name="dStopsLaceration" value="1"/>
 	</effect_group>
 	<effect_group tiered="false">
 		<!-- medical XP gains -->
@@ -12853,6 +12856,7 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false" name="JZMOD NUTRITION SYSTEM">
 		<display_value name="dDiseaseResist" value="1"/>
 		<display_value name="dDuration" value="3600"/>
+		<display_value name="dStopsWeakness" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".2"/><display_value name="TSFruit" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".2"/><display_value name="TSVeggie" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
@@ -12888,6 +12892,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="add" value="183"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="set" value="543">
 			<requirement name="CVarCompare" cvar="$buffDrugPainkillersDuration" operation="GT" value="543"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugPainkillers"/>
 	</effect_group>
 </item>
@@ -12914,9 +12919,10 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_painkillers"/>
 	</property>
 	<effect_group tiered="false">
-		<display_value name="dCureInfection" value=".1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
+		<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/>
+			<display_value name="dCureInfection" value=".1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
 	</effect_group>
 </item>
 
@@ -12940,9 +12946,10 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_painkillers"/>
 	</property>
 	<effect_group tiered="false">
-		<display_value name="dCureInfection" value=".25"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="25"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
+		<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/>
+			<display_value name="dCureInfection" value=".25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
 	</effect_group>
 </item>
 
@@ -13057,7 +13064,6 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="250"/>
 	<property name="UnlockedBy" value="perkPhysician"/>
 	<property name="Group" value="Science,Medical"/>
-	<property name="DescriptionKey" value="jz_drugAntibioticsesc"/><!-- JZMOD -->
 	<effect_group tiered="false" name="Drug Tier 3">
 		<display_value name="dCarryCapacity" value="50"/>
 		<display_value name="dRunSpeed" value=".1"/>
@@ -13331,10 +13337,12 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="8"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
 		<display_value name="dCureInfection" value=".05"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
+	</effect_group>
+	<effect_group tiered="false" name="JZMOD">
+		<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="5"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
 	</effect_group>
 </item>
 
@@ -13369,7 +13377,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13386,7 +13394,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13403,7 +13411,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13421,7 +13429,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13439,7 +13447,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13456,7 +13464,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13474,7 +13482,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".05"/><display_value name="TSProtein" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="10"/><display_value name="TSStaminaLoss" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13492,14 +13500,14 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
 
 <item name="foodCanPasta">
 	<property name="Extends" value="foodCanBeef"/>
-	<property name="DisplayType" value="TSFoWaStHeGrDy"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeDy"/><!-- JZMOD -->
 	<!--<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
@@ -13510,7 +13518,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".15"/><display_value name="TSVeggie" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13527,7 +13535,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13535,7 +13543,6 @@ perkNightStalkerSilentNight
 <item name="foodCanMiso">
 	<property name="Extends" value="foodCanBeef"/>
 	<property name="DisplayType" value="TSFoWaStHeDy"/><!-- JZMOD -->
-	<property name="DisplayType" value="foodWaterRaw"/>
 	<!--<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
@@ -13547,7 +13554,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13570,7 +13577,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".1"/><display_value name="TSVeggie" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13592,7 +13599,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".1"/><display_value name="TSFruit" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13612,7 +13619,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13632,7 +13639,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="10"/><display_value name="TSStaminaLoss" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13680,7 +13687,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".1"/><display_value name="TSVeggie" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13689,7 +13696,7 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<!-- <property name="DisplayType" value="food"/> -->
-	<property name="DisplayType" value="TSFoWaStHeGrVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -13727,7 +13734,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/><display_value name="$waterAmountAdd" value="-5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13810,7 +13817,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13853,7 +13860,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13899,7 +13906,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="1."/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -13946,7 +13953,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/><display_value name="TSVeggie" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
@@ -13996,7 +14003,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".4"/><display_value name="TSProtein" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".1"/><display_value name="TSVeggie" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14038,7 +14045,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/><display_value name="TSVeggie" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="80">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="80"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14087,7 +14094,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/><display_value name="TSVeggie" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="32">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="32"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14098,7 +14105,7 @@ perkNightStalkerSilentNight
 <item name="foodFishTacos">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHePrGr"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHePr"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14135,7 +14142,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="92"/><display_value name="TSStaminaLoss" value="-92"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="40">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="40"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14145,7 +14152,7 @@ perkNightStalkerSilentNight
 
 <item name="foodChiliDog">
 	<property name="Extends" value="foodCornOnTheCob"/>
-	<property name="DisplayType" value="TSFoWaStHePrGr"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHePr"/><!-- JZMOD -->
 	<property name="EconomicValue" value="106"/>
 	<property name="UnlockedBy" value="foodChiliDogSchematic"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
@@ -14167,7 +14174,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="106"/><display_value name="TSStaminaLoss" value="-106"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="30">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14218,7 +14225,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".1"/><display_value name="TSVeggie" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14226,7 +14233,7 @@ perkNightStalkerSilentNight
 <item name="foodBlueberryPie">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHeWeFrGr"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWeFr"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14261,7 +14268,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="90"/><display_value name="TSStaminaLoss" value="-90"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".1"/><display_value name="TSFruit" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="22"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14272,7 +14279,7 @@ perkNightStalkerSilentNight
 <item name="foodPumpkinPie">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHeWeFrGr"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWeFr"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14307,7 +14314,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="100"/><display_value name="TSStaminaLoss" value="-100"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".1"/><display_value name="TSFruit" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14361,7 +14368,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="84"/><display_value name="TSStaminaLoss" value="-84"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".05"/><display_value name="TSFruit" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="21">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="21"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14372,7 +14379,7 @@ perkNightStalkerSilentNight
 <item name="foodPumpkinBread">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHeWeFrGr"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWeFr"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14408,7 +14415,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="24"/><display_value name="TSStaminaLoss" value="-24"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".05"/><display_value name="TSFruit" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14457,7 +14464,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".1"/><display_value name="TSVeggie" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="56">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="56"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14507,7 +14514,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".15"/><display_value name="TSProtein" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".2"/><display_value name="TSVeggie" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="52">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="52"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14556,7 +14563,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".15"/><display_value name="TSVeggie" value=".15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="61">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="61"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14567,7 +14574,7 @@ perkNightStalkerSilentNight
 <item name="foodTunaFishGravyToast">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHePrGrVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHePrVe"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14606,7 +14613,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".05"/><display_value name="TSProtein" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".1"/><display_value name="TSVeggie" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="45">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="45"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14652,7 +14659,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14696,7 +14703,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="72"/><display_value name="TSStaminaLoss" value="-72"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".3"/><display_value name="TSProtein" value=".3"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="18">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="18"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14743,7 +14750,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".2"/><display_value name="TSVeggie" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -14906,7 +14913,7 @@ perkNightStalkerSilentNight
 <item name="foodCornMeal">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHeGrDy"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -15038,7 +15045,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="4"/><display_value name="TSStaminaLoss" value="-4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".02"/><display_value name="TSVeggie" value=".02"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
         
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="20"/><display_value name="dDysenteryRisk" value=".2"/> 
@@ -15163,7 +15170,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="4"/><display_value name="TSStaminaLoss" value="-4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".02"/><display_value name="TSProtein" value=".02"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
         
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="20"/><display_value name="dDysenteryRisk" value=".2"/> 
@@ -15260,7 +15267,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="6"/><display_value name="TSStaminaLoss" value="-6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".03"/><display_value name="TSFruit" value=".03"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
         
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="20"/><display_value name="dDysenteryRisk" value=".2"/> 
@@ -27390,9 +27397,10 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_painkillers"/>
 	</property>
 	<effect_group tiered="false">
-		<display_value name="dCureInfection" value=".25"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="25"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
+		<requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<display_value name="dCureInfection" value=".25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
 	</effect_group>
 </item>
 
@@ -27813,7 +27821,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="-40"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="-1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".08"/><display_value name="TSProtein" value=".08"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
@@ -27849,7 +27857,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="-40"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".08"/><display_value name="TSProtein" value=".08"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
@@ -27884,7 +27892,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="60"/><display_value name="TSStaminaLoss" value="-60"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -27916,7 +27924,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="6"/><display_value name="TSStaminaLoss" value="-6"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".02"/><display_value name="TSVeggie" value=".02"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
@@ -27952,7 +27960,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="16"/><display_value name="TSStaminaLoss" value="-16"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".05"/><display_value name="TSVeggie" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
@@ -27969,7 +27977,7 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="carrotCakeDesc" />
     <property name="EconomicValue" value="600"/>
 	<property name="UnlockedBy" value="jz_SchematicCarrotCake"/>
-	<property name="DisplayType" value="TSFoWaStHeWeGrVe"/>
+	<property name="DisplayType" value="TSFoWaStHeWeVe"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
     <property name="SpoiledItem" value="jz_MoldyVeggies" />
@@ -27985,7 +27993,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="15"/><display_value name="$waterAmountAdd" value="-15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="10"/><display_value name="TSStaminaLoss" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -27997,7 +28005,7 @@ perkNightStalkerSilentNight
 <item name="jz_FoodShamSandwich">
 	<property name="Extends" value="jz_MasterFood" />
     <property name="DescriptionKey" value="jz_SandwichDesc" />
-	<property name="DisplayType" value="TSFoWaStHePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHePr"/>
     <property name="EconomicValue" value="800"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28014,7 +28022,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="15"/><display_value name="$waterAmountAdd" value="-15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="44"/><display_value name="TSStaminaLoss" value="-44"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>				
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>				
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".6"/><display_value name="TSProtein" value=".6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28024,7 +28032,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="BreadDesc" />
 	<property name="UnlockedBy" value="jz_SchematicBread"/>
-	<property name="DisplayType" value="TSFoWaStHeGr"/>
+	<property name="DisplayType" value="TSFoWaStHeDy"/>
     <property name="EconomicValue" value="200"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28041,7 +28049,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="10"/><display_value name="TSStaminaLoss" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -28051,7 +28059,7 @@ perkNightStalkerSilentNight
     <property name="Material" value="Mgrain"/>
     <property name="EconomicValue" value="200"/>
 	<property name="Weight" value="3"/>
-    <property name="DisplayType" value="TSFoWaStHeGrDy"/>
+    <property name="DisplayType" value="TSFoWaStHeDy"/>
 	<property name="Group" value="food/Cooking" />
 	<property name="DescriptionKey" value="flourDesc" />
     <property name="Spoilable" value="true" />
@@ -28101,7 +28109,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="6"/><display_value name="TSStaminaLoss" value="-6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".02"/><display_value name="TSProtein" value=".02"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
             
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="30"/><display_value name="dDysenteryRisk" value=".3"/> 
@@ -28117,7 +28125,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="UnlockedBy" value="jz_SchematicBrainShnitzel"/>
 	<property name="DescriptionKey" value="brainShnitzelDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="2200"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28134,7 +28142,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="60"/><display_value name="TSStaminaLoss" value="-60"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28166,7 +28174,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="6"/><display_value name="TSStaminaLoss" value="-6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".05"/><display_value name="TSProtein" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
@@ -28198,7 +28206,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="24"/><display_value name="TSStaminaLoss" value="-24"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".25"/><display_value name="TSFruit" value=".25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28224,7 +28232,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="24"/><display_value name="TSStaminaLoss" value="-24"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".25"/><display_value name="TSVeggie" value=".25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28234,7 +28242,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="CustomIcon" value="jz_Sandwhich" />
     <property name="DescriptionKey" value="jz_SandwichDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="600"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28251,7 +28259,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="20"/><display_value name="$waterAmountAdd" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="-40"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28264,7 +28272,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="CustomIcon" value="jz_Sandwhich" />
     <property name="DescriptionKey" value="jz_SandwichDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="600"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28281,7 +28289,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="15"/><display_value name="$waterAmountAdd" value="-15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="42"/><display_value name="TSStaminaLoss" value="-42"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28294,7 +28302,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="CustomIcon" value="jz_Sandwhich" />
     <property name="DescriptionKey" value="jz_SandwichDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="600"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28310,8 +28318,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="22"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="44"/><display_value name="TSStaminaLoss" value="-44"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="17">
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="17"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28343,7 +28351,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="8"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="4"/><display_value name="TSStaminaLoss" value="-4"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".05"/><display_value name="TSFruit" value=".05"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
@@ -28376,7 +28384,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="32"/><display_value name="TSStaminaLoss" value="-32"/>	
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28407,7 +28415,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="32"/><display_value name="TSStaminaLoss" value="-32"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28469,7 +28477,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mgrain" />
 	<property name="Weight" value="6" />
 	<property name="Stacknumber" value="5000" />
-	<property name="DisplayType" value="TSFoWaStHeGrDy"/>
+	<property name="DisplayType" value="TSFoWaStHeDy"/>
     <property name="EconomicValue" value="200"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28486,7 +28494,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="20"/><display_value name="$waterAmountAdd" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="14"/><display_value name="TSStaminaLoss" value="-14"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="5"/><display_value name="dDysenteryRisk" value=".05"/> 
@@ -28503,7 +28511,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mgrain" />
 	<property name="Weight" value="3" />
 	<property name="Stacknumber" value="5000" />
-	<property name="DisplayType" value="TSFoWaStHeGrDy"/>
+	<property name="DisplayType" value="TSFoWaStHeDy"/>
     <property name="EconomicValue" value="200"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28520,7 +28528,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="20"/><display_value name="$waterAmountAdd" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="12"/><display_value name="TSStaminaLoss" value="-12"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="5"/><display_value name="dDysenteryRisk" value=".05"/> 
@@ -28553,7 +28561,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="12"/><display_value name="TSStaminaLoss" value="-12"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value="1"/> 
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
@@ -28580,7 +28588,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="50"/><display_value name="$waterAmountAdd" value="-50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="3"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
@@ -28599,7 +28607,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="3" />
     <property name="EconomicValue" value="200"/>
 	<property name="Stacknumber" value="5000" />		
-	<property name="DisplayType" value="TSFoWaStHeGrDy"/>
+	<property name="DisplayType" value="TSFoWaStHeDy"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -28608,7 +28616,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="20"/><display_value name="$waterAmountAdd" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="10"/><display_value name="TSStaminaLoss" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
         
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="5"/><display_value name="dDysenteryRisk" value=".05"/> 
@@ -28626,7 +28634,7 @@ perkNightStalkerSilentNight
     <property name="EconomicValue" value="800"/>
 	<property name="SellableToTrader" value="false"/>
     <property name="DescriptionKey" value="MREDesc" />
-	<property name="DisplayType" value="TSFoWaStHePrFrVeGr"/>
+	<property name="DisplayType" value="TSFoWaStHePrFrVe"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -28635,10 +28643,10 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="3"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="80"/><display_value name="TSStaminaLoss" value="-80"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".2"/><display_value name="TSProteinFruitVeggieGrain" value=".2"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".2"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="12"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".2"/><display_value name="TSFruit" value=".2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".2"/><display_value name="TSVeggie" value=".2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -28650,7 +28658,7 @@ perkNightStalkerSilentNight
     <property name="EconomicValue" value="1600"/>
 	<property name="SellableToTrader" value="false"/>
     <property name="DescriptionKey" value="MREDesc" />
-	<property name="DisplayType" value="TSFoWaStHePrFrVeGr"/>
+	<property name="DisplayType" value="TSFoWaStHePrFrVe"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -28659,10 +28667,10 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="100"/><display_value name="TSStaminaLoss" value="-100"/>		
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".4"/><display_value name="TSProteinFruitVeggieGrain" value=".4"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".4"/>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".4"/><display_value name="TSFruit" value=".4"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/><display_value name="TSVeggie" value=".4"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".4"/><display_value name="TSProtein" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -28674,7 +28682,7 @@ perkNightStalkerSilentNight
     <property name="EconomicValue" value="2400"/>
 	<property name="SellableToTrader" value="false"/>
     <property name="DescriptionKey" value="MREDesc" />
-	<property name="DisplayType" value="TSFoWaStHePrFrVeGr"/>
+	<property name="DisplayType" value="TSFoWaStHePrFrVe"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -28683,10 +28691,10 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="120"/><display_value name="TSStaminaLoss" value="-120"/>		
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="30">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".6"/><display_value name="TSProteinFruitVeggieGrain" value=".6"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".6"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".6"/>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".6"/><display_value name="TSFruit" value=".6"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".6"/><display_value name="TSVeggie" value=".6"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".6"/><display_value name="TSProtein" value=".6"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -28694,7 +28702,7 @@ perkNightStalkerSilentNight
 <item name="jz_FoodFruitCake">
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="fruitCakeDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWeFrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWeFr"/>
     <property name="EconomicValue" value="1000"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28711,7 +28719,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="20"/><display_value name="$waterAmountAdd" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="-40"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="7"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28742,7 +28750,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="14"/><display_value name="TSStaminaLoss" value="-14"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>	
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>	<display_value name="foodHealthAmount" value="2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28751,7 +28759,7 @@ perkNightStalkerSilentNight
 <item name="jz_FoodSalmonSandwich">
 	<property name="Extends" value="jz_MasterFood" />
     <property name="DescriptionKey" value="jz_SandwichDesc" />
-	<property name="DisplayType" value="TSFoWaStHePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHePr"/>
     <property name="EconomicValue" value="300"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28767,8 +28775,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="22"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="44"/><display_value name="TSStaminaLoss" value="-44"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>	
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="9">
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>	<display_value name="foodHealthAmount" value="9"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28777,7 +28785,7 @@ perkNightStalkerSilentNight
 <item name="jz_FoodTunaSandwich">
 	<property name="Extends" value="jz_MasterFood" />
     <property name="DescriptionKey" value="jz_SandwichDesc" />
-	<property name="DisplayType" value="TSFoWaStHePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHePr"/>
     <property name="EconomicValue" value="300"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28794,7 +28802,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="24"/><display_value name="TSStaminaLoss" value="-24"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>	
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>	<display_value name="foodHealthAmount" value="4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28804,7 +28812,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="UnlockedBy" value="jz_SchematicMeatPies"/>
     <property name="DescriptionKey" value="jz_MeatPiesDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="1200"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28821,7 +28829,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="subtract" value="20"/><display_value name="$waterAmountAdd" value="-20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="32"/><display_value name="TSStaminaLoss" value="-32"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>		
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>		<display_value name="foodHealthAmount" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
             <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
@@ -28833,7 +28841,7 @@ perkNightStalkerSilentNight
 <item name="jz_FoodFriedGrubs">
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="jz_FoodFriedGrubsDesc" />
-	<property name="DisplayType" value="TSFoWaStHeWePrGr"/>
+	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="0"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28848,11 +28856,49 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false">
 	<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
 		
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="40"/><display_value name="TSStaminaLoss" value="-40"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8">
-			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect>
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="8"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="jz_FoodDriedMeat">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="DescriptionKey" value="jz_FoodDriedMeatDesc" />
+	<property name="DisplayType" value="TSFoWaStHePr"/>
+    <property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/><display_value name="$waterAmountAdd" value="-5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".1"/><display_value name="TSProtein" value=".1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="jz_FoodDriedFruit">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="DescriptionKey" value="jz_FoodDriedFruitDesc" />
+	<property name="DisplayType" value="TSFoWaStHeFr"/>
+    <property name="EconomicValue" value="0"/>
+    <property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="12"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="24"/><display_value name="TSStaminaLoss" value="-24"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4">
+			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="4"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".25"/><display_value name="TSFruit" value=".25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
 
@@ -30266,7 +30312,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Mlead_scrap" />
 	<property name="Weight" value="1" />
 </item>
-<item name="jz_LeadNeckless">
+<item name="jz_LeadTireWeight">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_LeadJunkDesc" />
 	<property name="Material" value="Mlead_scrap" />
@@ -30277,12 +30323,6 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="jz_LeadJunkDesc" />
 	<property name="Material" value="Mlead_scrap" />
 	<property name="Weight" value="1" />
-</item>
-<item name="jz_LeadPictureFrame">
-	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_LeadJunkDesc" />
-	<property name="Material" value="Mlead_scrap" />
-	<property name="Weight" value="2" />
 </item>
 <item name="jz_LeadStatue">
 	<property name="Extends" value="jz_MasterItem" />
@@ -30884,7 +30924,7 @@ perkNightStalkerSilentNight
 <item name="jz_SchematicWeaponRepairKit">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="CustomIcon" value="ui_game_symbol_repairKit"/>
+	<property name="CustomIcon" value="jz_WeaponRepairKit"/>
     <property name="Unlocks" value="jz_WeaponRepairKit"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
 	<property class="Action0">
@@ -32367,8 +32407,8 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZLgPipeMelee.unity3d?LgPipeMeleePrefab" />
     <property name="DescriptionKey" value="jz_MeleePipeDesc"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Weight" value="5"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Weight" value="10"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<effect_group name="meleeWpnClubT0WoodenClub">
 		<passive_effect name="EntityDamage" operation="base_set" value="13.8"/> <!-- meleeWpnClubT0WoodenClub -->
@@ -32698,7 +32738,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="24" />
 	<property name="DescriptionKey" value="jz_CBatterieDesc"/>
     <property name="Material" value="Mlead_scrap"/>
-    <property name="Weight" value="1" />
+    <property name="Weight" value="3" />
 </item>
 
 <item name="jz_QISateliteRadio">

@@ -5489,6 +5489,25 @@ Kinda sorta works but is buggy and we don't have time for that.
     <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
 </entity_class>  
 
+<entity_class name="JZZombieFat" extends="zombieRegularTemplate">
+	<property name="Tags" value="entity,male,zombie,walker,mixamo,normal"/>
+	<property name="Faction" value="undead"/>				
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="Mesh" value="#@modfolder:Resources/JZZombieFat.unity3d?FatZombiePrefab"/> 
+	<property name="RootMotion" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="PhysicsBody" value="ASCharacterStandard"/>
+	<property name="HasDeathAnim" value="true"/>			
+	<property name="Mass" value="150"/>
+    <property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
+    <property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
+    <property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
+    <property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain"/>
+    <property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
+    <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
+    <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
+</entity_class>
+
 <entity_class name="JZZombieChicken" extends="animalTemplateHostile">
 	<property name="Tags" value="entity,animal,hostile,zombie"/><!-- JZMOD -->
 	<property name="Prefab" value="/Entities/Animals/CHICKEN/chickenPrefab"/>

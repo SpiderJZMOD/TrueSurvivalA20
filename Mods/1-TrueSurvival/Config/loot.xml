@@ -2192,9 +2192,8 @@ If there is no hit the default quality is used.
 	<item name="jz_LeadToySoldier" />
 	<item name="jz_LeadDoll" />
 	<item name="jz_LeadBracelet" />
-	<item name="jz_LeadNeckless" />
+	<item name="jz_LeadTireWeight" />
 	<item name="jz_LeadRing" />
-	<item name="jz_LeadPictureFrame" />
 	<item name="jz_LeadStatue" />
 	<item name="jz_LeadPaperWeight" />
 	<item name="jz_LeadDumbBell" />
@@ -2314,7 +2313,7 @@ If there is no hit the default quality is used.
 	<item name="jz_CircuitIPod" />
 	<item name="jz_CircuitIPad" />
 	<item name="jz_LeadBracelet" />
-	<item name="jz_LeadNeckless" />
+	<item name="jz_LeadTireWeight" />
 	<item name="jz_LeadRing" />
 	<item name="jz_LeadPaperWeight" />
 	<item name="jz_BrassAshtray" />
@@ -2480,9 +2479,8 @@ If there is no hit the default quality is used.
 	<item name="jz_BrassLamp" />
 	<item name="resourceTrophy1" />
 	<item name="jz_LeadBracelet" />
-	<item name="jz_LeadNeckless" />
+	<item name="jz_LeadTireWeight" />
 	<item name="jz_LeadRing" />
-	<item name="jz_LeadPictureFrame" />
 	<item name="jz_LeadStatue" />
 	<item name="jz_LeadPaperWeight" />
 	<item name="resourceTrophy2" />
@@ -2526,9 +2524,8 @@ If there is no hit the default quality is used.
 	<item name="jz_BrassStatue" />
 	<item name="jz_BrassPictureFrame" />
 	<item name="jz_LeadBracelet" />
-	<item name="jz_LeadNeckless" />
+	<item name="jz_LeadTireWeight" />
 	<item name="jz_LeadRing" />
-	<item name="jz_LeadPictureFrame" />
 	<item name="jz_LeadStatue" />
 	<item name="jz_LeadPaperWeight" />
 	<item name="jz_CircuitCellPhone" />
@@ -2563,7 +2560,7 @@ If there is no hit the default quality is used.
 	<item name="jz_LeadToySoldier" />
 	<item name="jz_LeadDoll" />
 	<item name="jz_LeadBracelet" />
-	<item name="jz_LeadNeckless" />
+	<item name="jz_LeadTireWeight" />
 	<item name="jz_LeadRing" />
 	<item name="jz_CircuitDoll" />
 	<item name="jz_CircuitCellPhone" />
@@ -6862,7 +6859,6 @@ If there is no hit the default quality is used.
 	<item name="jz_GlassPictureFrame" />
 	<item name="jz_BrassAshtray" />
 	<item name="jz_BrassPictureFrame" />
-	<item name="jz_LeadPictureFrame" />
 	<item name="jz_LeadPaperWeight" />
 	<item name="jz_CircuitCellPhone" />
 	<item name="jz_CircuitIPad" />

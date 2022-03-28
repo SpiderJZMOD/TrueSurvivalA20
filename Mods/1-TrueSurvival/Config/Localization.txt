@@ -904,7 +904,29 @@ jz_SchematicWheatSeed,"Wheat Seed Crafting Guide"
 jz_SchematicOrangeSeed,"Orange Seed Crafting Guide"
 jz_resourceClayLumpDesc,"Clay Soil or Loam is a key resource for forging and farming and can be harvested from the top soil of nearly every biome. It is also used in creating Molds for use in forges."
 jz_meleeWpnClubT0WoodenClubDesc,"A makeshift club good for breaking knees and skulls.\n\nScrap to Sticks"
-jz_armorLeatherGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\n\nRepair with a Leather.\nScrap to Leather"
+jz_armorLeatherGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Leather.  Scrap for Leather\n\nBody Part Protections:\n15% Gash   -   10% Lasceration\n10% Burn   -    5% Breaks"
+
+jz_armorClothGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n5% Gash   -   5% Lasceration\n0% Burn   -   0% Breaks"
+
+jz_armorMiningGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Scrap Polymers\n\nBody Part Protections:\n25% Gash   -   25% Lasceration\n00% Burn   -   20% Breaks"
+
+
+jz_armorFootballGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n00% Burn   -   25% Breaks"
+
+
+jz_armorMilitaryGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Military Armor Parts.\nScrap for Military Armor Parts\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   00% Breaks"
+
+jz_armorScrapDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nRepair with Iron.  Scrap for Iron\n\nBody Part Protections:\n30% Gash   -   20% Lasceration\n20% Burn   -   10% Breaks"
+
+jz_armorHeavyGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n30% Burn   -   25% Breaks"
+
+jz_armorFireFighterGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Iron\n\nBody Part Protections:\n35% Gash   -   50% Lasceration\n90% Burn   -   00% Breaks"
+
+
+jz_armorSwatGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   10% Breaks"
+
+jz_armorSteelGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with a Steel Armor Parts.\nScrap for Steel Armor Parts\n\nBody Part Protections:\n55% Gash   -   40% Lasceration\n40% Burn   -   35% Breaks"
+
 jz_SpoiledDrink,"Spoiled Drink"
 jz_SpoiledDrinkDesc,"A crafted drink that has spoiled. Click Open to separate the Dirty Water from the Jar."
 jz_SchematicFertilizer,"Fertilizer Crafting Guide"
@@ -1347,14 +1369,14 @@ fruitSaladDesc,"A health salad made up of fresh vegetables."
 jz_FoodFruitSalad,Fruit Salad
 jz_DrinkMeadDesc,"A alcoholic beverage made from fermenting honey"
 jz_DrinkMead,Mead
-jz_medicalBandageDesc,"A simple bandage that can be used to stop [f21b10]Bleeding[-] and treat many injuries\nUse the secondary action to treat another player."
-jz_medicalFirstAidBandageDesc,"A bandages coated in [00d537]Plant Salve[-] that can be used to stop [f21b10]Bleeding[-] and treat injuries and burns\nUse the secondary action to treat another player."
-jz_medicalFirstAidKitDesc,"A First Aid Kit uses all the contained medical items at once.\nUse the secondary action to unpack the kit and retrive the medical items"
+jz_medicalBandageDesc,"A simple bandage that can be used to stop [f21b10]Bleeding[-] and treat many injuries\n\nUse the secondary action to treat another player."
+jz_medicalFirstAidBandageDesc,"A bandages coated in [00d537]Plant Salve[-] that can be used to stop [f21b10]Bleeding[-] and treat injuries and burns\n\nUse the secondary action to treat another player."
+jz_medicalFirstAidKitDesc,"A First Aid Kit uses all the contained medical items at once.\n\nUse the secondary action to unpack the kit and retrive the medical items"
 jz_MedicalCleansingWash,"Cleasing Wash"
 jz_MedicalCleansingWashDesc,"Sterile Saline Solution and a clean rag. Used to clean wounds and prevent a [f21b10]Medical Infection[-]"
 redHotDesc,"A burning red hot pipe that can be used to cauterize a [f21b10]Bite[-] or [f21b10]Puncher Wound[-]. Its really gone hurt though"
-jz_medicalSplintDesc,"Heals broken bones but does not protect against further injury.\nUse the secondary action to heal another player."
-jz_medicalPlasterCastDesc,"Heals a broken bone more quickly than a splint but does not protect against further injury.\nUse the secondary action to treat another player."
+jz_medicalSplintDesc,"Heals broken bones but does not protect against further injury.\n\nUse the secondary action to heal another player."
+jz_medicalPlasterCastDesc,"Heals a broken bone more quickly than a splint but does not protect against further injury.\n\nUse the secondary action to treat another player."
 jz_MedicalRedHotPipeDesc,"A burning red hot pipe that can be used to cauterize a [f21b10]Zombie Bites[-]. Its really gone hurt though"
 jz_MedicalRedHotSteelPipe,Red Hot Pipe
 jz_MedicalRedHotPipe,Red Hot Pipe
@@ -1509,9 +1531,8 @@ jz_LeadCandleStick,"Junk Candle Stick"
 jz_LeadDumbBell,"Junk Weight"
 jz_LeadPaperWeight,"Junk Paper Weight"
 jz_LeadStatue,"Junk Statue"
-jz_LeadPictureFrame,"Junk Picture Frame"
 jz_LeadRing,"Junk Ring"
-jz_LeadNeckless,"Junk Neckless"
+jz_LeadTireWeight,"Junk Tire Weight"
 jz_LeadBracelet,"Junk Bracelet"
 jz_LeadDoll,"Junk Doll"
 jz_LeadToySoldier,"Junk Toy"
@@ -1921,6 +1942,7 @@ jzquest_WorkbenchUpgradesShotgun,"Shotgun Upgrading"
 jzquest_WorkbenchUpgradesMachineGun,"Machine Gun Upgrading"
 jzquest_WorkbenchUpgradesRlife,"Rifle Upgrading"
 UI_Display_________________________________XML,UI_Display_________________________________XML
+jz_statCureInfection,"Medical Infection"
 jz_statStaminaMaxBlockage,"Fatigue Level"
 TSProteinGrainVeggieDisp,"Protein, Carbohydrates & Fiber"
 TSProteinFruitVeggieDisp,"Protein, Vitamins & Fiber"
