@@ -414,6 +414,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
+				<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.03"/>
+				<decoration type="block" blockname="plantedPotato3Harvest" prob="0.03"/> 
 				<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008" rotatemax="7"/>
 				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07" rotatemax="7"/>
 				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.07" rotatemax="7"/>
@@ -421,9 +423,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock02" prob=".01"/>
 				<decoration type="block" blockname="rock04" prob=".01"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".5"/>
-				<decoration type="block" blockname="treeShortGrass" prob=".85"/>
-				<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.02"/>
-				<decoration type="block" blockname="plantedPotato3Harvest" prob="0.02"/>                                                            
+				<decoration type="block" blockname="treeShortGrass" prob=".85"/>                                                           
 			</decorations>
 		</subbiome>
 
@@ -557,6 +557,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
 			<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>
 			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.001"/>
+			<decoration type="block" blockname="plantedPotato3Harvest" prob="0.001"/> 
 			<decoration type="block" blockname="rock01" prob=".001"/>
 			<decoration type="block" blockname="rock02" prob=".001"/>
 			<decoration type="block" blockname="rock04" prob=".001"/>
@@ -1617,15 +1619,11 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="15" face="0" prob="0.001"/>
 		<blockontop blockname="cntStreetRandomLootHelper" prob="0.001" rotatemax="7"/>
 		<blockontop blockname="carsRandomHelper" prob="0.01" rotatemax="3"/>
-		<blockontop blockname="decoCarTireSmallFlat" rotatemax="3" prob="0.001"/>
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007"/>
+		<blockontop blockname="jz_RoadTrashHelper" prob="0.005"/>	
 		<blockontop blockname="goreBlockAnimal" prob="0.0004"/>
 		<blockontop blockname="jz_SmallRockRandomHelper" prob="0.001"/>
 		<blockontop blockname="jz_CommercialVehicleRandomHelper" prob="0.003" rotatemax="3"/>
 		<blockontop blockname="jz_MilitaryVehicleRandomHelper" prob="0.0001" rotatemax="3"/>
-		<blockontop blockname="jz_TruckElectricBox" prob="0.0004"/>
-		<blockontop blockname="jz_TruckTrash" prob="0.0004"/>
-		<blockontop blockname="jz_MetalTrash" prob="0.0004"/>
 		<blockontop blockname="jz_GoreDecorRandomHelper" prob="0.0015" rotatemax="3"/>
 		<blockontop blockname="jz_TireMarkRandomHelper" prob="0.003" rotatemax="3"/>
 		<blockontop blockname="treeBrownGrassDiagonal" prob=".09"/>				       
@@ -1649,21 +1647,14 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="15" face="0" prob="0.005"/>
 		<blockontop blockname="cntStreetRandomLootHelper" prob="0.001" rotatemax="7"/>
 		<blockontop blockname="carsRandomHelper" prob="0.009" rotatemax="3"/>
-		<blockontop blockname="decoCarTireSmallFlat" rotatemax="3" prob="0.001"/>
-		<blockontop blockname="rock01" prob="0.0007"/>
-		<blockontop blockname="rock02" prob="0.0007"/>
-		<blockontop blockname="rock04" prob="0.0007"/>
-		<blockontop blockname="jz_SmallRockRandomHelper" prob="0.001"/>                                     
+		<blockontop blockname="jz_SmallRockRandomHelper" prob="0.001"/>     
+		<blockontop blockname="jz_RoadTrashHelper" prob="0.005"/>		
 		<blockontop blockname="goreBlockAnimal" prob="0.0004"/>
         <blockontop blockname="jz_CommercialVehicleRandomHelper" prob="0.001" rotatemax="3"/>
 		<blockontop blockname="jz_MilitaryVehicleRandomHelper" prob="0.0001" rotatemax="3"/>
-		<blockontop blockname="jz_TruckElectricBox" prob="0.0004"/>
-		<blockontop blockname="jz_TruckTrash" prob="0.0004"/>
-		<blockontop blockname="jz_MetalTrash" prob="0.0004"/>
 		<blockontop blockname="jz_GoreDecorRandomHelper" prob="0.001" rotatemax="3"/>
 		<blockontop blockname="jz_TireMarkRandomHelper" prob="0.003" rotatemax="3"/>
 		<blockontop blockname="treeBrownGrassDiagonal" prob=".09"/>		      
-		<!--blockontop blockname="terrOrePotassiumNitrate" prob="0.02" offset="-1"/-->
 	</poi>
 	<poi name="Road Gravel" poimapcolor="#3" blockname="terrGravel">
 		<decal texture="0" face="0" prob="0.005"/>
@@ -1686,12 +1677,9 @@ If you do not declare them, the decorations of the main biome are used.
 		<blockontop blockname="cntStreetRandomLootHelper" prob="0.001" rotatemax="7"/>
 		<blockontop blockname="carsRandomHelper" prob="0.008" rotatemax="3"/>
         <blockontop blockname="jz_SmallRockRandomHelper" prob="0.001"/>
-			
+		<blockontop blockname="jz_RoadTrashHelper" prob="0.005"/>
 		<blockontop blockname="jz_CommercialVehicleRandomHelper" prob="0.0001" rotatemax="3"/>
 		<blockontop blockname="jz_MilitaryVehicleRandomHelper" prob="0.0001" rotatemax="3"/>
-		<blockontop blockname="jz_TruckElectricBox" prob="0.0004"/>
-		<blockontop blockname="jz_TruckTrash" prob="0.0004"/>
-		<blockontop blockname="jz_MetalTrash" prob="0.0004"/>
 		<blockontop blockname="jz_GoreDecorRandomHelper" prob="0.003" rotatemax="3"/>
 		<blockontop blockname="treeBrownGrassDiagonal" prob=".09"/> 
 		<!--blockontop blockname="terrOrePotassiumNitrate" prob="0.02" offset="-1"/-->

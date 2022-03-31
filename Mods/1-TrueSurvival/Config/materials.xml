@@ -1485,6 +1485,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="MfoodRawMeat">
 	<property name="damage_category" value="organic"/>
 	<property name="surface_category" value="organic"/>
+	<property name="forge_category" value="foodRawMeat"/>
 	<property name="Experience" value="2"/>
 </material>
 

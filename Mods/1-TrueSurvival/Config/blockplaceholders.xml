@@ -1688,21 +1688,18 @@
 	</placeholder>
 
 	<placeholder name="jz_SmallRockRandomHelper">
-		<block name="rock01" prob="6.6" />
-		<block name="rock02" prob="6.6" />
-		<block name="rock03" prob="6.6" />
-		<block name="rock04" prob="6.6" />
-		<block name="rock05" prob="6.6" />
-		<block name="rock06" prob="6.6" />
-		<block name="rock07" prob="6.6" />
-		<block name="rock08" prob="6.6" />
-		<block name="rock09" prob="6.6" />
-		<block name="rock10" prob="6.6" />
-		<block name="rock11" prob="6.6" />
-		<block name="rock12" prob="6.6" />
-		<block name="cinderBlocks01" prob="6.6" />
-		<block name="cinderBlocks02" prob="6.6" />
-		<block name="cinderBlocks03" prob="6.6" />
+		<block name="rock01" prob="8.3" />
+		<block name="rock02" prob="8.3" />
+		<block name="rock03" prob="8.3" />
+		<block name="rock04" prob="8.3" />
+		<block name="rock05" prob="8.3" />
+		<block name="rock06" prob="8.3" />
+		<block name="rock07" prob="8.3" />
+		<block name="rock08" prob="8.3" />
+		<block name="rock09" prob="8.3" />
+		<block name="rock10" prob="8.3" />
+		<block name="rock11" prob="8.3" />
+		<block name="rock12" prob="8.3" />
 	</placeholder>
 
 	<placeholder name="jz_PlantedCarrotLv1Random">
@@ -2050,12 +2047,54 @@
 		<block name="jz_PlantedBeansFertilized1Dry" prob=".70"/>
 		<block name="jz_PlantedBeansFertilized2" prob=".20"/>
 	</placeholder>
-		<placeholder name="jz_PlantedBeansFertilizedLv2Random">
+	<placeholder name="jz_PlantedBeansFertilizedLv2Random">
 		<block name="jz_PlantedBeansFertilized2Infested" prob=".10"/>
 		<block name="jz_PlantedBeansFertilized2Dry" prob=".70"/>
 		<block name="jz_PlantedBeans3FertilizedHarvestPlayer" prob=".20"/>
 	</placeholder>  
- 														 
+	<placeholder name="jz_RoadTrashHelper">
+		<block name="palletEmpty" prob="2.94" />
+		<block name="cntShoppingCartEmpty" prob="2.94" />
+		<block name="decoCarBackBumperUpright" prob="2.94" />
+		<block name="decoCarBackBumperFlipped" prob="2.94" />
+		<block name="decoCarFrontBumperFlat" prob="2.94" />
+		<block name="decoCarFrontBumperFlipped" prob="2.94" />
+		<block name="decoCarFrontDoorFlat" prob="2.94" />
+		<block name="decoCarFrontDoorFlipped" prob="2.94" />
+		<block name="decoCarBackDoorFlat" prob="2.94" />
+		<block name="decoCarBackDoorFlipped" prob="2.94" />
+		<block name="decoCarRadiatorFlat" prob="2.94" />
+		<block name="decoCarRadiatorFlipped" prob="2.94" />
+		<block name="decoCarSeatFlipped" prob="2.94" />
+		<block name="decoCarFenderFlat" prob="2.94" />
+		<block name="decoCarFenderFlipped" prob="2.94" />
+		<block name="decoCarHoodFlat" prob="2.94" />
+		<block name="decoCarHoodFlipped" prob="2.94" />
+		<block name="decoCarMotorFlipped" prob="2.94" />
+		<block name="decoCarTrunkLidFlat" prob="2.94" />
+		<block name="decoCarTrunkLidFlipped" prob="2.94" />
+		<block name="decoCarPartsRamp" prob="2.94" />
+		<block name="rockResourceBroke1" prob="2.94"/>
+		<block name="rockResourceBroke2" prob="2.94"/>
+		<block name="rockResource02Broke1" prob="2.94"/>
+		<block name="rockResource02Broke2" prob="2.94"/>
+		<block name="driftwood" prob="2.94"/>
+		<block name="driftwood2" prob="2.94"/>
+		<block name="cinderBlocks01" prob="2.94" />
+		<block name="cinderBlocks02" prob="2.94" />
+		<block name="cinderBlocks03" prob="2.94" />
+		<block name="decoCarTireSmallFlat" prob="2.94"/>
+		<block name="jz_TruckElectricBox" prob="2.94"/>
+		<block name="jz_TruckTrash" prob="2.94"/>
+		<block name="jz_MetalTrash" prob="2.94"/>
+	</placeholder> 			
+
+
+
+
+
+
+			
 	<!-- You CAN now use an air block and create random non-blocks.
 		The downside is that there will be no error message if a NAMED block is not found (misspelled),
 		In that case an air block is spawned instead.

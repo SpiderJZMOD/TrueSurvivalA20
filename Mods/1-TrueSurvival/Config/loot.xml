@@ -4455,6 +4455,7 @@ If there is no hit the default quality is used.
 	<item name="jz_FarmingWateringCan" />
 	<item name="jz_Insecticide" count="1,12" />
 	<item name="meleeToolPaintTool"  />
+	<item name="jz_Crowbar" />
 </lootgroup>
 
 <!-- *** T2_Tool_Loot -->

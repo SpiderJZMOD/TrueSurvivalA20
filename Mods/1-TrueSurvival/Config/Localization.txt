@@ -596,16 +596,18 @@ jz_WorkstationRifleWorkbenchDesc,"Used to craft Rifles"
 
 
 ITEM_________________________XML,ITEM_________________________XML
-
-
-
-
-
-
-
-
-
-
+jz_FoodDriedMeat,"Dried Meat"
+jz_FoodDriedMeatDesc,"Sun dried Meat, you lose alot in the process but it will last a long time"
+jz_FoodDriedFruit,"Dried Fruit"
+jz_FoodDriedFruitDesc,"Sun dried Fruit, you lose alot in the process but it will last a long time"
+jz_FoodRawRabbit,"Raw Rabbit"
+jz_FoodRawRabbitDesc,"A whole skinned rabbit. Rabbit season indeed"
+jz_FoodRoastedRabbit,"Roasted Rabbit"
+jz_FoodRoastedRabbitDesc,"Spit roasted rabbit, it smells delicious"
+jz_FoodRawChicken,"Raw Chicken"
+jz_FoodRawChickenDesc,"A whole chicken freshly plucked."
+jz_FoodChickenDinner,"Chicken Dinner"
+jz_FoodChickenDinnerDesc,"Winner, winner a delicious chicken dinner" 
 jz_CampfireKit,"Campfire Kit"
 jz_CampfireKitDesc,"Can be used to craft improvised cooking stations in Toilets, Grills, Ovens and Stoves.\n\nHold the Campfire Kit in your hand and use it on the desired object to upgrade it to an Improvised Cooking Station."
 ServingDesc,"A raw serving of food that can be used to prepare Nutritious snacks and meals."
@@ -905,28 +907,15 @@ jz_SchematicOrangeSeed,"Orange Seed Crafting Guide"
 jz_resourceClayLumpDesc,"Clay Soil or Loam is a key resource for forging and farming and can be harvested from the top soil of nearly every biome. It is also used in creating Molds for use in forges."
 jz_meleeWpnClubT0WoodenClubDesc,"A makeshift club good for breaking knees and skulls.\n\nScrap to Sticks"
 jz_armorLeatherGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Leather.  Scrap for Leather\n\nBody Part Protections:\n15% Gash   -   10% Lasceration\n10% Burn   -    5% Breaks"
-
 jz_armorClothGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n5% Gash   -   5% Lasceration\n0% Burn   -   0% Breaks"
-
 jz_armorMiningGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Scrap Polymers\n\nBody Part Protections:\n25% Gash   -   25% Lasceration\n00% Burn   -   20% Breaks"
-
-
 jz_armorFootballGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n00% Burn   -   25% Breaks"
-
-
 jz_armorMilitaryGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Military Armor Parts.\nScrap for Military Armor Parts\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   00% Breaks"
-
 jz_armorScrapDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nRepair with Iron.  Scrap for Iron\n\nBody Part Protections:\n30% Gash   -   20% Lasceration\n20% Burn   -   10% Breaks"
-
 jz_armorHeavyGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n30% Burn   -   25% Breaks"
-
 jz_armorFireFighterGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Iron\n\nBody Part Protections:\n35% Gash   -   50% Lasceration\n90% Burn   -   00% Breaks"
-
-
 jz_armorSwatGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   10% Breaks"
-
 jz_armorSteelGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with a Steel Armor Parts.\nScrap for Steel Armor Parts\n\nBody Part Protections:\n55% Gash   -   40% Lasceration\n40% Burn   -   35% Breaks"
-
 jz_SpoiledDrink,"Spoiled Drink"
 jz_SpoiledDrinkDesc,"A crafted drink that has spoiled. Click Open to separate the Dirty Water from the Jar."
 jz_SchematicFertilizer,"Fertilizer Crafting Guide"
@@ -1489,7 +1478,6 @@ jz_SchematicInsecticide,Ounce of Insecticide
 jz_SchematicFarmingWateringCan,Watering Can
 foodRottingFleshDesc,"Very high chance of food poisoning.\n\n Can be scrapped for Compost." 
 foodMoldyBreadDesc,"Very high chance of food poisoning.\n\n Can be scrapped for Compost." 
-foodCropMushroomsDesc,"Small edible Mushrooms. Can be used for cooking and when at lest 5 collected scrapped for Protein Servings"
 CottonPlantDesc,"Used to craft cloth and other items. Woven with a Small Loom on the Armor Table"
 jz_AdhesiveJunkDesc,"This can be scrapped for Adhesives that can be used for crafting" 
 jz_AdhesiveGorillaGlue,"Gorilla Glue"

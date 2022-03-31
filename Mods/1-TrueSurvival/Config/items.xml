@@ -9530,12 +9530,16 @@ add knockdown resist to armor
 
 <item name="vehicleBicycleChassis">
 	<property name="Extends" value="vehicleWheels"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="30"/>
 	<property name="EconomicValue" value="750"/>
 	<property name="UnlockedBy" value="vehicleBicycleChassisSchematic"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleBicycleHandlebars">
 	<property name="Extends" value="vehicleWheels"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="750"/>
 	<property name="UnlockedBy" value="vehicleBicycleHandlebarsSchematic"/><!-- JZMOD -->
 </item>
@@ -13831,7 +13835,6 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="24"/>
-	<property name="UnlockedBy" value="foodGrilledMeatSchematic"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -13874,7 +13877,6 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="52"/>
-	<property name="UnlockedBy" value="foodBoiledMeatSchematic"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14193,7 +14195,6 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="16"/>
 	<property name="EconomicBundleSize" value="2"/>
-	<property name="UnlockedBy" value="foodBakedPotatoSchematic"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14765,6 +14766,7 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="125"/> <!-- STK food -->
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="EconomicValue" value="20"/>
@@ -14826,7 +14828,6 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
-	<property name="Spoilable" value="true" /><!-- JZMOD -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -15743,7 +15744,6 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
 	<property name="EconomicValue" value="96"/>
-	<property name="UnlockedBy" value="drinkJarCoffeeSchematic"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -27803,8 +27803,8 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="Items/Food/meat_venison" />
     <property name="EconomicValue" value="800"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Material" value="Mprotein" />
-	<property name="Weight" value="20" />
+	<property name="Material" value="MfoodRawMeat"/>
+	<property name="Weight" value="5"/>
 	<property name="DisplayType" value="TSFoWaStHeWePrDy"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -27837,7 +27837,8 @@ perkNightStalkerSilentNight
 <item name="jz_FoodBearFlank">
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="bearMeatDesc" />
-	<property name="Material" value="Mprotein" />
+	<property name="Material" value="MfoodRawMeat"/>
+	<property name="Weight" value="5"/>
     <property name="EconomicValue" value="800"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Weight" value="20" />
@@ -28154,8 +28155,8 @@ perkNightStalkerSilentNight
 <item name="jz_FoodPorkBelly">
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="porkDesc" />
-	<property name="Material" value="Mprotein" />
-	<property name="Weight" value="20" />
+	<property name="Material" value="MfoodRawMeat"/>
+	<property name="Weight" value="3"/>
     <property name="EconomicValue" value="200"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="DisplayType" value="TSFoWaStHeWePrDy"/>
@@ -28810,7 +28811,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_FoodMeatPie">
 	<property name="Extends" value="jz_MasterFood" />
-	<property name="UnlockedBy" value="jz_SchematicMeatPies"/>
+	<property name="UnlockedBy" value="jz_SchematicMeatPie"/>
     <property name="DescriptionKey" value="jz_MeatPiesDesc" />
 	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="1200"/>
@@ -28899,6 +28900,130 @@ perkNightStalkerSilentNight
 			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".25"/><display_value name="TSFruit" value=".25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="jz_FoodRawRabbit">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="HoldType" value="31"/>
+	<property name="DisplayType" value="TSFoWaStHeWePrDy"/>
+	<property name="DescriptionKey" value="jz_FoodRawRabbitDesc" />
+	<property name="Material" value="MfoodRawMeat"/>
+	<property name="Weight" value="15"/>
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="2" />
+	<property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false" name="JZMOD Nutrition">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="60"/><display_value name="TSStaminaLoss" value="-60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-1"/><display_value name="foodHealthAmount" value="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".75"/><display_value name="TSProtein" value=".75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="60"/><display_value name="dDysenteryRisk" value=".60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_FoodRawChicken">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="DisplayType" value="TSFoWaStHeWePrDy"/>
+	<property name="Material" value="MfoodRawMeat"/>
+	<property name="Weight" value="20"/>
+	<property name="DescriptionKey" value="jz_FoodRawChickenDesc" />
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="2" />
+	<property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false" name="JZMOD Nutrition">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="80"/><display_value name="TSStaminaLoss" value="-80"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-1"/><display_value name="foodHealthAmount" value="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="1"/><display_value name="TSProtein" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="60"/><display_value name="dDysenteryRisk" value=".60"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_FoodChickenDinner">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="DisplayType" value="TSFoWaStHeWePrVe"/>
+	<property name="Material" value="Morganic"/>
+	<property name="UnlockedBy" value="foodMeatStewSchematic"/>
+	<property name="DescriptionKey" value="jz_FoodChickenDinnerDesc" />
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="2" />
+	<property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false" name="JZMOD Nutrition">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="110"/><display_value name="TSStaminaLoss" value="-110"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="1"/><display_value name="TSProtein" value=".1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/><display_value name="TSVeggie" value=".4"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35">
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="35"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
+			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_FoodRoastedRabbit">
+	<property name="Extends" value="jz_MasterFood" />
+	<property name="DisplayType" value="TSFoWaStHePr"/>
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+	<property name="DescriptionKey" value="jz_FoodRoastedRabbitDesc" />
+    <property name="SpoiledItem" value="foodRottingFlesh" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="1000" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="2" />
+	<property class="Action0">
+		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
+	</property>
+	<effect_group tiered="false" name="JZMOD Nutrition">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="80"/><display_value name="TSStaminaLoss" value="-80"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".75"/><display_value name="TSProtein" value=".75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="50">
+            <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="50"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1">
+			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
 

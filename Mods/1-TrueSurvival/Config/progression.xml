@@ -4621,7 +4621,14 @@
 				<requirement name="ProgressionLevel" progression_name="jz_SmallGameHunterSkill" operation="Equals" value="3"/>
 			</triggered_effect>
         </effect_group>
-        <effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="jz_SmallGameHunterSkill" operation="Equals" value="3"/>
+            <requirement name="EntityTagCompare" target="other" tags="perkAT01"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="SmallGameHunter"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="SmallGameButcher"/> 
+		</effect_group>
+	    <effect_group>
             <requirement name="ProgressionLevel" progression_name="jz_SmallGameHunterSkill" operation="LT" value="3"/>
             <requirement name="!HoldingItemHasTags" tags="NonXPTool"/>
             <requirement name="EntityTagCompare" target="other" tags="perkAT01"/>

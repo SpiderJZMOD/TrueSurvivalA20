@@ -856,6 +856,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <!-- Campfire Crafted ******************************************************************************************************************************************************* -->
+<recipe name="jz_FoodChickenDinner" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_Salt" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="4"/>
+	<ingredient name="jz_FoodRawChicken" count="1"/>
+	<ingredient name="jz_FoodServingVeggie" count="2"/>
+</recipe>
+
+<recipe name="jz_FoodRoastedRabbit" count="1" craft_area="campfire" craft_tool="jz_Stick"  craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodRawRabbit" count="1" />
+	<ingredient name="jz_Salt" count="1" />
+</recipe>
+
 <recipe name="jz_FoodFriedGrubs" count="1" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="4" craft_exp_gain="20">
 	<ingredient name="jz_FoodGrubs" count="10"/>
 	<ingredient name="resourceAnimalFat" count="2"/>
@@ -876,8 +888,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_Salt" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="120" craft_exp_gain="5" tags="jz_ChemistTag">
-	<ingredient name="resourceCropGoldenrodPlant" count="10"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="16"/>
+	<ingredient name="resourceCropGoldenrodPlant" count="5"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>
 </recipe>
 
 <recipe name="drinkJarCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="20" >
@@ -3008,18 +3020,22 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <!-- Drying Rack Crafted ******************************************************************************************************************************************************* -->
 <recipe name="jz_FoodDriedFruit" count="1" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
 	<ingredient name="jz_FoodServingFruit" count="8" />
+	<ingredient name="jz_Salt" count="1" />
 </recipe>
 
 <recipe name="jz_FoodDriedFruit" count="10" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
 	<ingredient name="jz_FoodServingFruit" count="80" />
+	<ingredient name="jz_Salt" count="10" />
 </recipe>
 
 <recipe name="jz_FoodDriedMeat" count="1" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
 	<ingredient name="foodRawMeat" count="4"/>
+	<ingredient name="jz_Salt" count="1" />
 </recipe>
 
 <recipe name="jz_FoodDriedMeat" count="10" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
 	<ingredient name="foodRawMeat" count="40"/>
+	<ingredient name="jz_Salt" count="10" />
 </recipe>
 
 <recipe name="resourceLeather" count="1" craft_area="jz_DryingRack" craft_time="180" craft_exp_gain="0"  >

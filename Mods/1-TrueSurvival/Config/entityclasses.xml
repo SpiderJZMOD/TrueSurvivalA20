@@ -2919,9 +2919,9 @@
 
 	<!-- JZMOD Harvest For Beginner -->
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Destroy" name="foodRawMeat" count="4" />
-	<drop event="Destroy" name="jz_BrainMatter" count="1" />
-    <drop event="Destroy" name="resourceBone"  count="1" />
+	<drop event="Destroy" name="foodRawMeat" count="4" tag="allHarvest"/>
+	<drop event="Destroy" name="jz_BrainMatter" count="1" tag="allHarvest"/>
+    <drop event="Destroy" name="resourceBone"  count="1" tag="allHarvest"/>
 	
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -2932,11 +2932,9 @@
 	<drop event="Harvest" name="jz_BrainMatter" tag="SmallGameButcher" count="1" />
 	<drop event="Harvest" name="resourceBone" tag="SmallGameButcher" count="1"  />
     <!--JZMOD Hunter-->
-    <drop event="Harvest" name="foodRawMeat" tag="SmallGameHunter" count="4"/>
-    <drop event="Harvest" name="jz_AnimalHide" tag="SmallGameHunter" count="2"/>
-    <drop event="Harvest" name="jz_BrainMatter" tag="SmallGameHunter" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="SmallGameHunter" count="1" />
-
+    <drop event="Harvest" name="jz_AnimalHide" tag="SmallGameHunter" count="1"/>
+	<drop event="Harvest" name="jz_FoodRawRabbit" tag="SmallGameHunter" count="1"/>
+	
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="10"/>
 	</effect_group>
@@ -2969,8 +2967,8 @@
 		
 	<!-- JZMOD Harvest For Beginner -->
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Destroy" name="foodRawMeat" count="2" />
-	<drop event="Destroy" name="resourceFeather" count="5" />
+	<drop event="Destroy" name="foodRawMeat" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceFeather" count="5" tag="allHarvest"/>
 	
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -2979,14 +2977,11 @@
     <drop event="Harvest" name="foodRawMeat" tag="SmallGameButcher" count="3" />
 	<drop event="Harvest" name="resourceFeather" tag="SmallGameButcher" count="8" />
     <!--JZMOD Hunter-->
-    <drop event="Harvest" name="foodRawMeat" tag="SmallGameHunter" count="3"/>
-    <drop event="Harvest" name="resourceFeather" tag="SmallGameHunter" count="8"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
-		
+    <drop event="Harvest" name="resourceFeather" tag="SmallGameHunter" count="21"/>
+	<drop event="Harvest" name="jz_FoodRawChicken" tag="SmallGameHunter" count="1"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="5,20"/><!-- JZMOD -->
 	</effect_group>
-
 	<property name="NavObject" value="animaltracking_chicken" />
 </entity_class>
 
@@ -3806,7 +3801,7 @@
 	<drop event="Harvest" name="jz_Sinew" tag="SmallGameButcher" count="2" />
 	<drop event="Harvest" name="jz_Hoof" tag="SmallGameButcher" count="2" />
    	<drop event="Harvest" name="jz_BrainMatter" tag="SmallGameButcher" count="2" />
-	<drop event="Harvest" name="jz_FoodPorkBelly" tag="SmallGameButcher" count="2" />
+	<drop event="Harvest" name="jz_FoodPorkBelly" tag="SmallGameButcher" count="4" />
     <drop event="Harvest" name="resourceBone" tag="SmallGameButcher" count="5"  />
     <!--JZMOD Hunter-->
     <drop event="Harvest" name="foodRawMeat" tag="SmallGameHunter" count="10"/>
@@ -3815,7 +3810,7 @@
     <drop event="Harvest" name="jz_BrainMatter" tag="SmallGameHunter" count="1"/>
 	<drop event="Harvest" name="jz_Sinew" tag="SmallGameHunter" count="2" />
     <drop event="Harvest" name="resourceBone" tag="SmallGameHunter" count="5" />
-    <drop event="Harvest" name="jz_FoodPorkBelly" tag="SmallGameHunter" count="2" />
+    <drop event="Harvest" name="jz_FoodPorkBelly" tag="SmallGameHunter" count="6" />
     <drop event="Harvest" name="jz_Hoof" tag="SmallGameHunter" count="2" />
    
 	<effect_group name="Base Effects">
@@ -5550,11 +5545,12 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="DeadBodyHitPoints" value="175"/>
 	<!-- JZMOD Harvest For Beginner -->
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="2"/> 
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieVulture -->
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="25"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
-	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="jz_AnimalHide" count="1" tag="WasteTreasuresCompleteHarvest"/><!-- JZMOD -->
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="5,20"/>
