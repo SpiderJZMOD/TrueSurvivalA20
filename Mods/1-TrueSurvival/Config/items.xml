@@ -12924,7 +12924,7 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_painkillers"/>
 	</property>
 	<effect_group tiered="false">
-		<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/>
+		<requirement name="HasBuff" buff="jz_BuffMedicalInfectionMain"/>
 			<display_value name="dCureInfection" value=".1"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="10"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
@@ -12951,7 +12951,7 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_painkillers"/>
 	</property>
 	<effect_group tiered="false">
-		<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/>
+		<requirement name="HasBuff" buff="jz_BuffMedicalInfectionMain"/>
 			<display_value name="dCureInfection" value=".25"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="25"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
@@ -13345,7 +13345,7 @@ perkNightStalkerSilentNight
 		<display_value name="dCureInfection" value=".05"/>
 	</effect_group>
 	<effect_group tiered="false" name="JZMOD">
-		<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/>
+		<requirement name="HasBuff" buff="jz_BuffMedicalInfectionMain"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$MedicalInfectionAddCurePerc" operation="add" value="5"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffMedicalInfectionAddCure"/>
 	</effect_group>
@@ -27398,7 +27398,7 @@ perkNightStalkerSilentNight
 		<property name="Sound_start" value="player_painkillers"/>
 	</property>
 	<effect_group tiered="false">
-		<requirement name="!HasBuff" buff="buffInfectionMain"/>
+		<requirement name="HasBuff" buff="buffInfectionMain"/>
 			<display_value name="dCureInfection" value=".25"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="25"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
