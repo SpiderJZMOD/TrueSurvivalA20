@@ -2513,6 +2513,7 @@ needed?
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="EconomicValue" value="175"/>
+	<property name="DescriptionKey" value="jz_meleeWpnSpearT0StoneSpearDesc"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="IsSticky" value="true"/>
@@ -13511,7 +13512,7 @@ perkNightStalkerSilentNight
 
 <item name="foodCanPasta">
 	<property name="Extends" value="foodCanBeef"/>
-	<property name="DisplayType" value="TSFoWaStHeDy"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeVeDy"/><!-- JZMOD -->
 	<!--<effect_group tiered="false" name="Food Tier 0">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
@@ -13906,7 +13907,7 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="20"/><display_value name="TSStaminaLoss" value="-20"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="1."/><display_value name="TSProtein" value=".1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="0.1"/><display_value name="TSProtein" value=".1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15">
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
@@ -34148,6 +34149,22 @@ perkNightStalkerSilentNight
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="jzSteel"/>
 	</effect_group>
+</item>
+
+<item name="jz_Rosemary">
+	<property name="Extends" value="jz_MasterItem" />
+	<property name="Material" value="Mplants"/>
+	<property name="Weight" value="3"/>
+	<property name="DescriptionKey" value="jz_RosemaryDesc" />
+	<property name="Group" value="Medical,CFChemicals"/>
+</item>
+
+<item name="jz_Yarrow">
+	<property name="Extends" value="jz_MasterItem" />
+	<property name="Material" value="Mplants"/>
+	<property name="Weight" value="3"/>
+	<property name="DescriptionKey" value="jz_YarrowDesc" />
+	<property name="Group" value="Medical,CFChemicals"/>
 </item>
 </set>
 

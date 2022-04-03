@@ -478,8 +478,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="medicalAloeCream" count="1" craft_time="10" craft_exp_gain="10" tags="learnable,jz_DoctorTag">
-	<ingredient name="resourceCropGoldenrodPlant" count="1" />
-	<ingredient name="forestFlower" count="1" />
+	<ingredient name="resourceCropGoldenrodPlant" count="2" />
+	<ingredient name="jz_Yarrow" count="5" />
 </recipe>
 
 <recipe name="medicalBandage" count="1" craft_exp_gain="5" craft_time="10" tags="jz_DoctorTag">
@@ -876,6 +876,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="drugHerbalAntibiotics" count="1" craft_area="campfire" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="20" tags="learnable">
 	<ingredient name="foodCropMushrooms" count="3"/>
+	<ingredient name="jz_Rosemary" count="5"/>
+	<ingredient name="jz_Yarrow" count="2"/>
 	<ingredient name="resourceCropChrysanthemumPlant" count="3"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="3"/>
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>	
@@ -888,7 +890,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_Salt" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="120" craft_exp_gain="5" tags="jz_ChemistTag">
-	<ingredient name="resourceCropGoldenrodPlant" count="5"/>
+	<ingredient name="jz_Rosemary" count="3"/>
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>
 </recipe>
 
@@ -2807,6 +2809,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="drugAntibiotics" count="1" craft_area="chemistryStation" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChemistTag">
 	<ingredient name="jz_MoldyBread" count="1"/>
+	<ingredient name="jz_Rosemary" count="5"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="1"/>
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>
 </recipe>
@@ -2968,13 +2971,15 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_MedicalStimulant" count="3" craft_area="jz_MortarAndPestle" craft_time="30" tags="learnable">
-	<ingredient name="forestFlower" count="1" />
-	<ingredient name="resourceCropGoldenrodPlant" count="1" />
+	<ingredient name="jz_Yarrow" count="2" />
+	<ingredient name="jz_Rosemary" count="2" />
+	<ingredient name="resourceCropGoldenrodPlant" count="2" />
+	<ingredient name="resourceCropChrysanthemumPlant" count="2" />
 </recipe>
 
 <recipe name="medicalAloeCream" count="1" craft_area="jz_MortarAndPestle"  craft_time="10" tags="learnable">
 	<ingredient name="resourceCropGoldenrodPlant" count="1" />
-	<ingredient name="forestFlower" count="1" />
+	<ingredient name="jz_Yarrow" count="4" />
 </recipe>
 
 <recipe name="jz_PurificationTablets" count="1" craft_area="jz_MortarAndPestle" tags="learnable">

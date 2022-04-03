@@ -5971,9 +5971,6 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
         <update_rate value="360"/>
         <duration value="3600"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fatigueTicker" operation="subtract" value="1"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffDysenteryCatchFood,buffDysenteryCatchDrink"/>
 		</effect_group>
@@ -9574,7 +9571,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 <!-- JZMOD FOOD SYSTEM -->
 	<buff name="jz_BuffVitaminFader" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
-		<update_rate value="720"/>
+		<update_rate value="600"/>
 		<duration value="0"/>
 		<effect_group name="Protein, Fruit, Veggie Vitamin Fader ">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="-0.1">

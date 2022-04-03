@@ -1675,17 +1675,24 @@
 	</placeholder>
 	
 	<placeholder name="jz_GoreDecorRandomHelper">
-		<block name="jz_GoreBlockHumanBones" prob="10" />
-		<block name="jz_GoreBlockHumanBones2" prob="10" />
-		<block name="jz_GoreBlockHumanBones3" prob="10" />
-		<block name="jz_GoreBlockHumanBones4" prob="10" />
-		<block name="jz_GoreBlockHumanBones5" prob="10" />
-		<block name="jz_GoreBlockHumanBones6" prob="10" />
-		<block name="jz_GoreBlockHumanBones7" prob="10" />
-		<block name="jz_GoreBlockHumanBones8" prob="10" />
-		<block name="jz_GoreBlockHumanBones9" prob="10" />
-		<block name="jz_GoreBlockHumanBonesA" prob="10" />							  
+		<block name="jz_GoreBlockHumanBones" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones2" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones3" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones4" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones5" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones6" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones7" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones8" prob="11.11" />
+		<block name="jz_GoreBlockHumanBones9" prob="11.11" />					  
 	</placeholder>
+	
+	<placeholder name="treeTallGrassDiagonal">
+		<block name="jz_TallGrassDiagonalA" prob="30" />
+		<block name="jz_GrassWhiteFlower" prob="11" />
+		<block name="jz_TallGrassDiagonalB" prob="29" />
+		<block name="forestFlower" prob="1" />
+		<block name="jz_TallGrassDiagonalC" prob="29" />	  
+	</placeholder> 
 
 	<placeholder name="jz_SmallRockRandomHelper">
 		<block name="rock01" prob="8.3" />

@@ -7487,13 +7487,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <!-- forest biome -->
-<!-- NOT_A_SHAPE -->
+<!-- NOT_A_SHAPE
 <block name="treeTallGrassDiagonal">
 	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Tallgrass"/>
-	<property name="Texture" value="39,40,364,365,39,364"/>
-</block>
+	<property name="Texture" value="39,364,365"/>
+</block> -->
 
 <!-- forest biome -->
 <!-- NOT_A_SHAPE -->
@@ -7542,6 +7542,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
 	<property name="Class" value="Tallgrass"/>
 	<property name="Texture" value="567"/>
+	<property name="CustomIcon" value="jz_Rosemary"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="0" />
+	<drop event="Destroy" name="jz_Rosemary" count="1" />
+	<drop event="Harvest" name="jz_Rosemary" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="jz_Rosemary" count="1" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -38474,27 +38479,49 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#@modfolder:Resources/JZGoreBonePile9.unity3d?GoreBonePile9Prefab" />
 </block>
 
-<block name="jz_GoreBlockHumanBonesA">
-	<property name="Extends" value="jz_GoreBlockHumanBones"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZGoreBonePile10.unity3d?GoreBonePile10Prefab" />
-</block>
-
 <block name="jz_GoreBlockHumanBones10">
 	<property name="Extends" value="jz_GoreBlockHumanBones"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZGoreBonePile10.unity3d?GoreBonePile10Prefab" />
 </block>
 
-<block name="jz_GoreBlockHumanBonesVariantHelper">
-	<property name="Extends" value="jz_GoreBlockHumanBones"/>
-	<property name="CustomIcon" value="pouredConcreteBlock"/>
+<block name="jz_GrassWhiteFlower">
+	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Tallgrass"/>
+	<property name="Texture" value="40"/>
+	<property name="CustomIcon" value="jz_Yarrow"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="0" />
+	<drop event="Destroy" name="jz_Yarrow" count="1" />
+	<drop event="Harvest" name="jz_Yarrow" count="1" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_Yarrow" count="1" tag="jz_FarmerHarvest"/>
+</block>
+
+<block name="jz_TallGrassDiagonalA">
+	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Tallgrass"/>
+	<property name="Texture" value="39"/>
+</block>
+
+<block name="jz_TallGrassDiagonalB">
+	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Tallgrass"/>
+	<property name="Texture" value="364"/>
+</block>
+
+<block name="jz_TallGrassDiagonalC">
+	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Tallgrass"/>
+	<property name="Texture" value="365"/>
+</block>
+
+<block name="treeTallGrassDiagonal">
+	<property name="Extends" value="cntWastelandRandomLootHelper"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
-	<property name="ItemTypeIcon" value="all_blocks"/>
-	<property name="SelectAlternates" value="true" />
-	<property name="PlaceAltBlockValue" value="jz_GoreBlockHumanBonesA,jz_GoreBlockHumanBones2,jz_GoreBlockHumanBones3,jz_GoreBlockHumanBones4,jz_GoreBlockHumanBones5,jz_GoreBlockHumanBones6,jz_GoreBlockHumanBones7,jz_GoreBlockHumanBones8,jz_GoreBlockHumanBones9,jz_GoreBlockHumanBones10"/> 
-</block> 
+</block>
 
 <!-- SPHEREII CORE CONTROLER -->
 <block name="ConfigFeatureBlock">

@@ -557,8 +557,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
 			<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>
 			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" rotatemax="7"/>
-			<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.001"/>
-			<decoration type="block" blockname="plantedPotato3Harvest" prob="0.001"/> 
+			<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.0005"/>
+			<decoration type="block" blockname="plantedPotato3Harvest" prob="0.0005"/> 
 			<decoration type="block" blockname="rock01" prob=".001"/>
 			<decoration type="block" blockname="rock02" prob=".001"/>
 			<decoration type="block" blockname="rock04" prob=".001"/>

@@ -51,8 +51,6 @@ jz_BuffMedicalInfection03GetBetterName,"Treated Severe Medical Infection"
 jz_BuffMedicalInfection03GetBetterDesc,"You have a treated life threatening severe [f21b10]Medical Infection[-]. Continue medication and tend to your wounds timely or they could increase your infection.\n\nStamina Regeneration -17%"
 jz_BuffMedicalInfection04Tooltip,"You have died from an infection"
 
-
-
 jz_BuffPuncturedDesc,"You have a deep [f21b10]Puncture Wound[-]. Your going to need a [35bd00]Sanitize Bandage[-] to clean and pack the hole\n-10% Mobility\n-1HP per 20sec\n-1 Wellness"
 jz_BuffThrobbingPainDesc,"OOww! That hurts take some [35bd00]Painkillers[-] to relieve the pain\n\n-1 Stamina every 5 sec\n+10 Core Temp"
 jz_BuffGangreneWoundDesc,"Your wound has become [f21b10]Gangrene[-]. The only option you have is to cut off the dead tissue, this will leave you permanently scared. Use a bladed weapon to cute away the [f21b10]Gangrene[-] tissue. You will then have to treat and care for the remaining wound\n\n-4 Stamina every 1 sec\n-1 Health every 10 sec\n-12% Mobility\n-1 Wellness every 1 min\n30% more Health Loss\nUntil Treated"
@@ -591,11 +589,17 @@ jz_WorkstationMachineGunWorkbenchDesc,"Machine Guns"
 jz_WorkstationRifleWorkbench,"Rifle Workbench"
 jz_WorkstationRifleWorkbenchDesc,"Used to craft Rifles"
 
-
+jz_GrassWhiteFlower,"Yarrow Plant"
+forestFlower,"Rosemary Plant"
 
 
 
 ITEM_________________________XML,ITEM_________________________XML
+jz_meleeWpnSpearT0StoneSpearDesc,"Spears have more range than other weapons and can also be thrown.\nScrap to Small Stone."
+jz_Rosemary,"Rosemary"
+jz_RosemaryDesc,"A fragrant plant used for cooking, perfumes, and for its potential health benefits. Can be scraped for Plant Fibers."
+jz_Yarrow,"Yarrow"
+jz_YarrowDesc,"A flowering plant used in home remides. Can be scraped for Plant Fibers."
 jz_FoodDriedMeat,"Dried Meat"
 jz_FoodDriedMeatDesc,"Sun dried Meat, you lose alot in the process but it will last a long time"
 jz_FoodDriedFruit,"Dried Fruit"
@@ -1931,6 +1935,7 @@ jzquest_WorkbenchUpgradesMachineGun,"Machine Gun Upgrading"
 jzquest_WorkbenchUpgradesRlife,"Rifle Upgrading"
 UI_Display_________________________________XML,UI_Display_________________________________XML
 jz_statCureInfection,"Medical Infection"
+jz_statCureZVirusInfection,"Z- Virus Infection"
 jz_statStaminaMaxBlockage,"Fatigue Level"
 TSProteinGrainVeggieDisp,"Protein, Carbohydrates & Fiber"
 TSProteinFruitVeggieDisp,"Protein, Vitamins & Fiber"

@@ -1034,6 +1034,10 @@ All the perk tags:
             <display_entry name="TSStaminaLoss" title_key="Stamina"/>
             <display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
         </item_display_info>
+		
+		<item_display_info display_type="cureZVirusInfection" display_group="groupConsumables">
+			<display_entry name="dCureInfection" title_key="jz_statCureZVirusInfection" display_type="Percent"/>
+		</item_display_info>
 	</item_display>
 
 	<character_stat_display>
