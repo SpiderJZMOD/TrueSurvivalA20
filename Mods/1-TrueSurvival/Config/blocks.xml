@@ -7486,14 +7486,24 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Texture" value="201,306,371,201,306,371"/>
 </block>
 
-<!-- forest biome -->
-<!-- NOT_A_SHAPE
+<!-- forest biome 
+<block name="treeTallGrassDiagonal">
+	<property name="CustomIcon" value="cntWastelandRandomLootHelper"/>
+	<property name="DescriptionKey" value="randomLootSpawnerDesc"/>
+	<property name="Material" value="Mstone"/>
+	<property name="Texture" value="277"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor,SC_loot"/>
+	<property name="Mesh" value="opaque2"/>
+</block>-->
+<!-- NOT_A_SHAPE-->
 <block name="treeTallGrassDiagonal">
 	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Tallgrass"/>
-	<property name="Texture" value="39,364,365"/>
-</block> -->
+	<property name="Texture" value="39,364,365,39,364"/>
+</block>
 
 <!-- forest biome -->
 <!-- NOT_A_SHAPE -->
@@ -38495,32 +38505,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="jz_Yarrow" count="1" />
 	<drop event="Harvest" name="jz_Yarrow" count="1" tag="jz_GardenerHarvest"/>
 	<drop event="Harvest" name="jz_Yarrow" count="1" tag="jz_FarmerHarvest"/>
-</block>
-
-<block name="jz_TallGrassDiagonalA">
-	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="Class" value="Tallgrass"/>
-	<property name="Texture" value="39"/>
-</block>
-
-<block name="jz_TallGrassDiagonalB">
-	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="Class" value="Tallgrass"/>
-	<property name="Texture" value="364"/>
-</block>
-
-<block name="jz_TallGrassDiagonalC">
-	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="Class" value="Tallgrass"/>
-	<property name="Texture" value="365"/>
-</block>
-
-<block name="treeTallGrassDiagonal">
-	<property name="Extends" value="cntWastelandRandomLootHelper"/>
-	<property name="CreativeMode" value="Dev"/>
 </block>
 
 <!-- SPHEREII CORE CONTROLER -->

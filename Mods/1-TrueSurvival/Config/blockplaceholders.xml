@@ -1686,14 +1686,6 @@
 		<block name="jz_GoreBlockHumanBones9" prob="11.11" />					  
 	</placeholder>
 	
-	<placeholder name="treeTallGrassDiagonal">
-		<block name="jz_TallGrassDiagonalA" prob="30" />
-		<block name="jz_GrassWhiteFlower" prob="11" />
-		<block name="jz_TallGrassDiagonalB" prob="29" />
-		<block name="forestFlower" prob="1" />
-		<block name="jz_TallGrassDiagonalC" prob="29" />	  
-	</placeholder> 
-
 	<placeholder name="jz_SmallRockRandomHelper">
 		<block name="rock01" prob="8.3" />
 		<block name="rock02" prob="8.3" />

@@ -397,6 +397,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock04" prob=".005"/>
 				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.02" rotatemax="7"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".05"/>
+				<decoration type="block" blockname="jz_GrassWhiteFlower" prob=".03"/>
+				<decoration type="block" blockname="forestFlower" prob=".02"/>
 				<decoration type="block" blockname="treeShortGrass" prob=".95"/>
 			</decorations>
 		</subbiome>
@@ -423,6 +425,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock02" prob=".01"/>
 				<decoration type="block" blockname="rock04" prob=".01"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".5"/>
+				<decoration type="block" blockname="jz_GrassWhiteFlower" prob=".03"/>
+				<decoration type="block" blockname="forestFlower" prob=".02"/>
 				<decoration type="block" blockname="treeShortGrass" prob=".85"/>                                                           
 			</decorations>
 		</subbiome>
@@ -463,6 +467,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
 				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35"/>
+				<decoration type="block" blockname="jz_GrassWhiteFlower" prob=".03"/>
+				<decoration type="block" blockname="forestFlower" prob=".02"/>
 				<decoration type="block" blockname="treeShortGrass" prob=".6"/>
 			</decorations>
 		</subbiome>
@@ -502,6 +508,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
 				<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".28"/>
+				<decoration type="block" blockname="jz_GrassWhiteFlower" prob=".03"/>
+				<decoration type="block" blockname="forestFlower" prob=".02"/>
 				<decoration type="block" blockname="treeShortGrass" prob=".5"/>
 			</decorations>
 		</subbiome>
@@ -535,6 +543,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
 				<decoration type="block" blockname="treeStump" prob=".0004" rotatemax="7"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".1"/>
+				<decoration type="block" blockname="jz_GrassWhiteFlower" prob=".03"/>
+				<decoration type="block" blockname="forestFlower" prob=".02"/>
 				<decoration type="block" blockname="treeShortGrass" prob=".5"/>
 			</decorations>
 		</subbiome>
@@ -592,6 +602,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeMountainPine48m" prob="0.0015" rotatemax="7"/>
 			<decoration type="block" blockname="treeStump" prob=".0006" rotatemax="7"/>
 			<decoration type="block" blockname="treeTallGrassDiagonal" prob=".4"/>
+			<decoration type="block" blockname="jz_GrassWhiteFlower" prob=".03"/>
+			<decoration type="block" blockname="forestFlower" prob=".02"/>
 			<decoration type="block" blockname="treeShortGrass" prob=".8"/>
 		</decorations>
 		<terrain class="Mountains"/>
