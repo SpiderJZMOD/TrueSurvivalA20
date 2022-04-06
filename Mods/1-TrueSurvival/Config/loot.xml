@@ -9765,7 +9765,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- cooler loot -->
-<lootcontainer id="45" name="cooler" count="1" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="45" name="cooler" count="1" size="6,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
 	<item group="groupCooler"/>
 </lootcontainer>
 
@@ -9775,7 +9775,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- frozen or refrigerated food, spoiled food (Helper) -->
-<lootcontainer id="47" name="refrigerator" count="1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="47" name="refrigerator" count="1" size="6,6" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate">
 	<item group="groupRefrigerator"/>
 </lootcontainer>
 

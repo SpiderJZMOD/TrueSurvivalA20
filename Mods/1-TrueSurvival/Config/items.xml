@@ -1280,7 +1280,7 @@ Mesh files no longer used:
 		<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="10.9" tags="secondary"/> <!-- using perc_add here increases StaminaOT for no obvious reason -->
 		
-		<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffBurnLeftFoot"/>  JZMOD TESTING -->
+		<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffFireBurnTrigger"/>  JZMOD TESTING -->
 		<!--<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffLacerationTrigger"/>  JZMOD TESTING -->
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 	</effect_group>

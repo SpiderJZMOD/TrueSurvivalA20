@@ -518,6 +518,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_MedicalSutureKit" count="1" craft_time="5" craft_exp_gain="15" tags="jz_DoctorTag">
 	<ingredient name="jz_CuredSinew" count="1" />
 	<ingredient name="jz_ToolSewingNeedle" count="1" />
+	<ingredient name="medicalBandage" count="1" />
 </recipe>
 
 <recipe name="terrDestroyedStone" count="1" craft_time="1" craft_exp_gain="0">
@@ -865,7 +866,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="jz_FoodRoastedRabbit" count="1" craft_area="campfire" craft_tool="jz_Stick"  craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChefTag">
 	<ingredient name="jz_FoodRawRabbit" count="1" />
-	<ingredient name="jz_Salt" count="1" />
+	<ingredient name="jz_Rosemary" count="3" />
 </recipe>
 
 <recipe name="jz_FoodFriedGrubs" count="1" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="4" craft_exp_gain="20">
@@ -1242,6 +1243,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="jz_MedicalAntiVenom" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="50" >
 	<ingredient name="jz_MedicalSalineSolution" count="1"/>
+	<ingredient name="jz_Yarrow" count="5"/>
     <ingredient name="jz_VenomSack" count="1"/>
 </recipe>
 
