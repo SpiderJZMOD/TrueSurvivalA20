@@ -12772,7 +12772,7 @@ perkNightStalkerSilentNight
 		<property name="Delay" value="1.0"/> <!-- obsolete? -->
 		<property name="Use_time" value="..."/>
 		<property name="Sound_start" value="player_bandage"/>
-		<requirement name="CVarCompare" target="other" cvar="$NeedsCast" operation="Equals" value="1"/>
+		<requirement name="CVarCompare" cvar="$NeedsCast" operation="Equals" value="1"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="UseOther"/>

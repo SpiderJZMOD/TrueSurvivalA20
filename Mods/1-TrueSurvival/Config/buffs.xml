@@ -1091,6 +1091,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="HasBuff" buff="jz_BuffBrokenLeftLeg"/>
 				<requirement name="HasBuff" buff="jz_BuffBrokenRightAnkle"/>
 				<requirement name="HasBuff" buff="jz_BuffBrokenLeftAnkle"/>
+				<requirement name="HasBuff" buff="jz_BuffBrokenNeck"/>
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSplint" operation="set" value="1"/>
 		</effect_group>
@@ -1106,6 +1107,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="HasBuff" buff="jz_BuffRightWristSplinted"/>
 				<requirement name="HasBuff" buff="jz_BuffLeftArmSplinted"/>
 				<requirement name="HasBuff" buff="jz_BuffRightArmSplinted"/>
+				<requirement name="HasBuff" buff="jz_BuffNeckSplinted"/>
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsCast" operation="set" value="1"/>
 		</effect_group>
@@ -1116,19 +1118,36 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsCauterizing" operation="set" value="1"/>
 		</effect_group>
 		<effect_group name="Needs Suture">
-			<requirements compare_type="or">
-				<requirement name="HasBuff" buff="jz_BuffLacerationLeftFoot"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationRightFoot"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationLeftLeg"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationRightLeg"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationLeftHand"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationRightHand"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationLeftArm"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationRightArm"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationStomach"/>
-				<requirement name="HasBuff" buff="jz_BuffLacerationNeck"/>
-			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationLeftFoot"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftFootBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationRightFoot"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationRightFootBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationLeftLeg"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftLegBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationRightLeg"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationRightLegBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationLeftHand"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftHandBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationRightHand"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationRightHandBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationLeftArm"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftArmBleed"/></triggered_effect>	
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationRightArm"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationRightArmBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationStomach"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationStomachBleed"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeedsSuture" operation="set" value="1">
+				<requirement name="HasBuff" buff="jz_BuffLacerationNeck"/>	
+				<requirement name="!HasBuff" buff="jz_BuffLacerationNeckBleed"/></triggered_effect>	
 		</effect_group>
 		<effect_group name="Needs Health Kit">
 			<requirements compare_type="or">
@@ -2458,7 +2477,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="$cumResistChanceCH" operation="LT" value="0"/>
 			</triggered_effect>
 
-			<passive_effect name="BuffResistance" operation="base_subtract" value="@$cumResistChanceCH" tags="jz_BuffGash,buffFatiguedTrigger,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashNeck,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck"/>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="@$cumResistChanceCH" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashNeck,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck"/>
 		<!-- remember to update  buffDrugHealthBar  with the 50% resist -->
 		</effect_group>
 
@@ -11283,6 +11302,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 		
 	<!-- JZMOD LACERATIONS TRIGGER-->
+	<buff name="jz_BuffTriggerLaceration" name_key="trigger" icon="ui_game_symbol_quest">
+		<duration value=".1"/>
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationTrigger"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="jz_BuffLacerationTrigger" name_key="buff Laceration Trigger" icon="ui_game_symbol_quest" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
@@ -14374,6 +14401,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="1.5"/>
         <effect_group name="Laceration Left Foot Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationLeftFootBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationLeftFoot"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFoot"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFootTended"/>
@@ -14385,6 +14413,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>      	
 		<effect_group name="Laceration Right Foot Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationRightFootBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationRightFoot"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFoot"/>
@@ -14397,6 +14426,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>   
 		<effect_group name="Laceration Left Leg Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationLeftLegBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationLeftLeg"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLeg"/>
@@ -14409,6 +14439,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>   
 		<effect_group name="Laceration Right Leg Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationRightLegBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationRightLeg"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLeg"/>
@@ -14421,6 +14452,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>   
 		<effect_group name="Laceration Left Hand Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationLeftHandBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationLeftHand"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHand"/>
@@ -14433,6 +14465,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>   
 		<effect_group name="Laceration Right Hand Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationRightHandBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationRightHand"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHand"/>
@@ -14445,6 +14478,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>   
 		<effect_group name="Laceration Left Arm Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationLeftArmBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationLeftArm"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArm"/>
@@ -14457,6 +14491,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>   
 		<effect_group name="Laceration Right Arm Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationRightArmBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationRightArm"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArm"/>
@@ -14469,6 +14504,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group>
 		<effect_group name="Laceration Stomach Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationStomachBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationStomach"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomach"/>
@@ -14481,6 +14517,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSewingKit"/>
         </effect_group> 
 		<effect_group name="Laceration Neck Cut">
+			<requirement name="!HasBuff" buff="jz_BuffLacerationNeckBleed"/>
 			<requirement name="HasBuff" buff="jz_BuffLacerationNeck"/>
 			<requirement name="CVarCompare" cvar=".SewingKitTriage" operation="LT" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeck"/>
@@ -14593,6 +14630,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 	
 	<!-- JZMOD LOWER BODY SPRAIN TRIGGER-->
+	<buff name="jz_BuffTriggerLowerBodySprained" name_key="trigger" icon="ui_game_symbol_quest">
+		<duration value=".1"/>
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLowerBodySprainedTrigger"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="jz_BuffLowerBodySprainedTrigger" name_key="buff Lower Body Sprain Trigger" icon="ui_game_symbol_quest" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
@@ -14703,7 +14748,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$NeedsSplint" operation="LT" value="1"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLowerBodySprainedTrigger"/>
+				<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLowerBodySprainedTrigger"/>
 		</effect_group>
 	</buff>
 	<!-- JZMOD LEFT ANKLE TRIGGER-->
@@ -16070,6 +16116,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD UPPER BODY SPRAIN TRIGGER-->
+	<buff name="jz_BuffTriggerUpperBodySprained" name_key="trigger" icon="ui_game_symbol_quest">
+		<duration value=".1"/>
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedNeckTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArmTrigger"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffUpperBodySprainedTrigger"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="jz_BuffUpperBodySprainedTrigger" name_key="buff Upper Body Break Trigger" icon="ui_game_symbol_quest" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
@@ -17833,6 +17887,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 
 	<!-- JZMOD GASH TRIGGER-->
+	<buff name="jz_BuffTriggerGash" name_key="trigger" icon="ui_game_symbol_quest">
+		<duration value=".1"/>
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLegFoot,jz_BuffGashRightLeg,jz_BuffGashStomach,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashNeck"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGashTrigger"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="jz_BuffGashTrigger" name_key="Gash " icon="ui_game_symbol_quest" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
@@ -20313,7 +20375,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashLeftArmDrying" name_key="Gash Left Arm Drying" remove_on_death="false" description_key="LeftArmGash" icon="ui_game_symbol_brokenbone" >
+	<buff name="jz_BuffGashLeftArmDrying" name_key="Gash Left Arm Drying" remove_on_death="false" description_key="LeftArmGash" icon="LeftArmGash" >
 		<stack_type value="ignore"/>
 		 <display_value value=".GashLeftArmDryingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -22315,6 +22377,12 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".MedicalBandageTriage" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalBandage"/>
 		</effect_group>
+		<effect_group name="Bandage Effect">
+			<requirement name="CVarCompare" cvar=".MedicalBandageTriage" operation="LT" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".MedicalBandageTriage" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalBandage"/>
+		</effect_group>
 		<effect_group name="Clean Up">
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$NeedsMedicalBandage" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="$NeedsMedicalBandage" operation="set" value="0"/>
@@ -23765,6 +23833,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD BURN TRIGGER-->
+	<buff name="jz_BuffTriggerBurn" name_key="trigger" icon="ui_game_symbol_quest">
+		<duration value=".1"/>
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffFireBurnTrigger"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="jz_BuffFireBurnTrigger" name_key="Burn Trigger" icon="ui_game_symbol_quest" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value=".5"/>
