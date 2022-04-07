@@ -9626,14 +9626,19 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 <!-- JZMOD FOOD SYSTEM -->
 	<buff name="jz_BuffVitaminFader" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
-		<update_rate value="600"/>
+		<update_rate value="720"/>
 		<duration value="0"/>
 		<effect_group name="Protein, Fruit, Veggie Vitamin Fader ">
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value="-0.1">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$VitaminFaderAmount" operation="set" value="0.1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$VitaminPlayerLevel" operation="set" value="@$LastPlayerLevel"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$VitaminPlayerLevel" operation="multiply" value="0.001"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$VitaminFaderAmount" operation="add" value="@$VitaminPlayerLevel"/>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="subtract" value="@$VitaminFaderAmount">
 				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="0.1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value="-0.1">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="subtract" value="@$VitaminFaderAmount">
 				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="0.1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value="-0.1">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="subtract" value="@$VitaminFaderAmount">
 				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="0.1"/></triggered_effect>
 		</effect_group>
 		<effect_group name="Fader Remover">
