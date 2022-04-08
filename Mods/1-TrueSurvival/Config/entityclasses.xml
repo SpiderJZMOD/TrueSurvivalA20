@@ -66,7 +66,7 @@
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/> <!-- deprecated. It's an entity now "Backpack" -->
 	<property name="ItemsOnEnterGame.GameModeSurvival" value="jz_CharacterChoiceComputer"/><!-- JZMOD -->
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="jz_CharacterChoiceComputer"/><!-- JZMOD -->
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="jz_CharacterChoiceComputer,jz_PlayerMPCooler"/><!-- JZMOD -->
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="jz_CharacterChoiceComputer"/><!-- JZMOD -->
 	<property name="ExperienceGain" value="130"/>
 	<property name="LegsExplosionDamageMultiplier" value=".41"/> <!-- Player gets 20% damage reduction (where from?) and this takes it to 33% total -->
 	<property name="ArmsExplosionDamageMultiplier" value=".41"/>

@@ -1,3 +1,6 @@
+True Survival contains parts of Sphereii Core and NPC MOD. All rules associated with those parts still apply 
+
+Installation:
 Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
 
 
