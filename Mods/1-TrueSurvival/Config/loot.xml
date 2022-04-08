@@ -10263,8 +10263,9 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- wineBarrel -->
-<lootcontainer id="143" name="wineBarrel" count="1,2" size="8,9" sound_open="UseActions/open_cooler" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
-	<item name="jz_DrinkDirtyOuncesOfWater" count="4,64"/>
+<lootcontainer id="143" name="wineBarrel" count="1" size="8,9" sound_open="UseActions/open_cooler" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+	<item name="jz_DrinkDirtyOuncesOfWater" count="1,300" prob="40"/>
+	<item name="jz_DrinkCleanOuncesOfWater" count="1,300" prob="60"/>
 </lootcontainer>
 
 <!--Service Trucks -->

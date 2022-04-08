@@ -3708,7 +3708,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_Stick" count="8"/>
 </recipe>
 
-<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" raft_tool="jz_ToolHandSaw" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
+<recipe name="meleeWpnSpearT0StoneSpear" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_tool="jz_ToolHandSaw" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="6"/>
 	<ingredient name="jz_FiberRope" count="2"/>
 	<ingredient name="jz_Stick" count="10"/>
@@ -5483,7 +5483,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_FiberRope" count="7" />
 	<ingredient name="jz_ScrapAdhesive" count="10" />
 </recipe>
-<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="jz_CraftingQualityOne,LightArmorCrafting">
+<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="learnable,jz_CraftingQualityOne,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="15"/>
 	<ingredient name="jz_FiberRope" count="5" />
 	<ingredient name="resourceCropCottonPlant" count="10" />
@@ -5491,7 +5491,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MeltedRubber" count="2" />
 </recipe>
 
-<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="jz_CraftingQualityTwo,LightArmorCrafting">
+<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="learnable,jz_CraftingQualityTwo,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="16"/>
 	<ingredient name="jz_FiberRope" count="5" />
 	<ingredient name="resourceCropCottonPlant" count="11" />
@@ -5499,7 +5499,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MeltedRubber" count="2" />
 </recipe>
 
-<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="jz_CraftingQualityThree,LightArmorCrafting">
+<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="learnable,jz_CraftingQualityThree,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="17"/>
 	<ingredient name="jz_FiberRope" count="6" />
 	<ingredient name="resourceCropCottonPlant" count="12" />
@@ -5507,7 +5507,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MeltedRubber" count="3" />
 </recipe>
 
-<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="jz_CraftingQualityFour,LightArmorCrafting">
+<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="learnable,jz_CraftingQualityFour,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="18"/>
 	<ingredient name="jz_FiberRope" count="7" />
 	<ingredient name="resourceCropCottonPlant" count="13" />
@@ -5515,7 +5515,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MeltedRubber" count="3" />
 </recipe>
 
-<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="jz_CraftingQualityFive,LightArmorCrafting">
+<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="learnable,jz_CraftingQualityFive,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="19"/>
 	<ingredient name="jz_FiberRope" count="8" />
 	<ingredient name="resourceCropCottonPlant" count="14" />
@@ -5523,7 +5523,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MeltedRubber" count="4" />
 </recipe>
 
-<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="jz_CraftingQualitySix,LightArmorCrafting">
+<recipe name="armorLeatherBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="learnable,jz_CraftingQualitySix,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="20"/>
 	<ingredient name="jz_FiberRope" count="8" />
 	<ingredient name="resourceCropCottonPlant" count="15" />
@@ -5531,126 +5531,126 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MeltedRubber" count="4" />
 </recipe>
 
-<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="jz_CraftingQualityOne,LightArmorCrafting">
+<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="learnable,jz_CraftingQualityOne,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="40"/>
 	<ingredient name="resourceCropCottonPlant" count="9" />
 	<ingredient name="jz_FiberRope" count="8" />
 	<ingredient name="resourceCloth" count="4" />
 </recipe>
 
-<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="jz_CraftingQualityTwo,LightArmorCrafting">
+<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="learnable,jz_CraftingQualityTwo,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="42"/>
 	<ingredient name="resourceCropCottonPlant" count="10" />
 	<ingredient name="jz_FiberRope" count="9" />
 	<ingredient name="resourceCloth" count="5" />
 </recipe>
 
-<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="jz_CraftingQualityThree,LightArmorCrafting">
+<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="learnable,jz_CraftingQualityThree,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="44"/>
 	<ingredient name="resourceCropCottonPlant" count="11" />
 	<ingredient name="jz_FiberRope" count="10" />
 	<ingredient name="resourceCloth" count="5" />
 </recipe>
 
-<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="jz_CraftingQualityFour,LightArmorCrafting">
+<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="learnable,jz_CraftingQualityFour,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="46"/>
 	<ingredient name="resourceCropCottonPlant" count="13" />
 	<ingredient name="jz_FiberRope" count="11" />
 	<ingredient name="resourceCloth" count="6" />
 </recipe>
 
-<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="jz_CraftingQualityFive,LightArmorCrafting">
+<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="learnable,jz_CraftingQualityFive,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="48"/>
 	<ingredient name="resourceCropCottonPlant" count="14" />
 	<ingredient name="jz_FiberRope" count="12" />
 	<ingredient name="resourceCloth" count="7" />
 </recipe>
 
-<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="jz_CraftingQualitySix,LightArmorCrafting">
+<recipe name="armorLeatherChest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="learnable,jz_CraftingQualitySix,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="50"/>
 	<ingredient name="resourceCropCottonPlant" count="15" />
 	<ingredient name="jz_FiberRope" count="13" />
 	<ingredient name="resourceCloth" count="8" />
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="jz_CraftingQualityOne,LightArmorCrafting">
+<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="learnable,jz_CraftingQualityOne,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="2"/>
 	<ingredient name="resourceCropCottonPlant" count="2" />
 	<ingredient name="jz_FiberRope" count="3" />
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="jz_CraftingQualityTwo,LightArmorCrafting">
+<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="learnable,jz_CraftingQualityTwo,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="11"/>
 	<ingredient name="jz_ScrapAdhesive" count="2"/>
 	<ingredient name="resourceCropCottonPlant" count="3" />
 	<ingredient name="jz_FiberRope" count="3" />
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="jz_CraftingQualityThree,LightArmorCrafting">
+<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="learnable,jz_CraftingQualityThree,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="jz_ScrapAdhesive" count="2"/>
 	<ingredient name="resourceCropCottonPlant" count="4" />
 	<ingredient name="jz_FiberRope" count="4" />
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="jz_CraftingQualityFour,LightArmorCrafting">
+<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="learnable,jz_CraftingQualityFour,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="13"/>
 	<ingredient name="jz_ScrapAdhesive" count="4"/>
 	<ingredient name="resourceCropCottonPlant" count="5" />
 	<ingredient name="jz_FiberRope" count="4" />
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="jz_CraftingQualityFive,LightArmorCrafting">
+<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="learnable,jz_CraftingQualityFive,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="14"/>
 	<ingredient name="jz_ScrapAdhesive" count="4"/>
 	<ingredient name="resourceCropCottonPlant" count="5" />
 	<ingredient name="jz_FiberRope" count="6" />
 </recipe>
 
-<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="jz_CraftingQualitySix,LightArmorCrafting">
+<recipe name="armorLeatherGloves" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="learnable,jz_CraftingQualitySix,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="15"/>
 	<ingredient name="jz_ScrapAdhesive" count="4"/>
 	<ingredient name="resourceCropCottonPlant" count="6" />
 	<ingredient name="jz_FiberRope" count="6" />
 </recipe>
 
-<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="jz_CraftingQualityOne,LightArmorCrafting">
+<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="10" tags="learnable,jz_CraftingQualityOne,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="9"/>
 	<ingredient name="jz_FiberRope" count="3" />
 	<ingredient name="jz_ScrapAdhesive" count="2" />
 	<ingredient name="resourceCropCottonPlant" count="5" />
 </recipe>
 
-<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="jz_CraftingQualityTwo,LightArmorCrafting">
+<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="20" tags="learnable,jz_CraftingQualityTwo,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="10"/>
 	<ingredient name="jz_FiberRope" count="3" />
 	<ingredient name="jz_ScrapAdhesive" count="2" />
 	<ingredient name="resourceCropCottonPlant" count="6" />
 </recipe>
 
-<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="jz_CraftingQualityThree,LightArmorCrafting">
+<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="30" tags="learnable,jz_CraftingQualityThree,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="11"/>
 	<ingredient name="jz_FiberRope" count="4" />
 	<ingredient name="jz_ScrapAdhesive" count="2" />
 	<ingredient name="resourceCropCottonPlant" count="7" />
 </recipe>
 
-<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="jz_CraftingQualityFour,LightArmorCrafting">
+<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="40" tags="learnable,jz_CraftingQualityFour,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="jz_FiberRope" count="5" />
 	<ingredient name="jz_ScrapAdhesive" count="4" />
 	<ingredient name="resourceCropCottonPlant" count="8" />
 </recipe>
 
-<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="jz_CraftingQualityFive,LightArmorCrafting">
+<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="50" tags="learnable,jz_CraftingQualityFive,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="13"/>
 	<ingredient name="jz_FiberRope" count="5" />
 	<ingredient name="jz_ScrapAdhesive" count="4" />
 	<ingredient name="resourceCropCottonPlant" count="9" />
 </recipe>
 
-<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="jz_CraftingQualitySix,LightArmorCrafting">
+<recipe name="armorLeatherHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="90" craft_exp_gain="60" tags="learnable,jz_CraftingQualitySix,LightArmorCrafting">
 	<ingredient name="resourceLeather" count="14"/>
 	<ingredient name="jz_FiberRope" count="6" />
 	<ingredient name="jz_ScrapAdhesive" count="4" />

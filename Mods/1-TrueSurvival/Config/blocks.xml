@@ -12816,7 +12816,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapPolymers" value="8"/>
 	</property>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="cntCoolerClosed" count="1" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="cntCoolerClosed" count="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="300"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
@@ -15981,6 +15981,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Decor/wineBarrelPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterDontBlock" value="true"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="wineBarrel"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
@@ -30322,7 +30324,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBarrelAcidSingle00">
 	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
 	<property name="Model" value="Entities/Industrial/barrelAcidPrefab"/>
-	<property name="LootList" value="gasBarrel"/>
+	<property name="LootList" value="cntBarrelAcidSingle00"/>
 	<property name="Explosion.ParticleIndex" value="14"/>
 	<drop event="Harvest" name="resourceAcid" prob=".25" count="1" tag="WasteTreasuresAcidHarvest" tool_category="Disassemble"/>
 </block>
@@ -30391,7 +30393,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBarrelGenericSingle00">
 	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
 	<property name="Model" value="Entities/Industrial/barrelGenericPrefab"/>
-	<property name="LootList" value="gasBarrel"/>
+	<property name="LootList" value="cntBarrelGenericSingle00"/>
 	<property name="Explosion.ParticleIndex" value="17"/>
 </block>
 
@@ -30420,7 +30422,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBarrelOilSingle00">
 	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
 	<property name="Model" value="Entities/Industrial/barrelOilPrefab"/>
-	<property name="LootList" value="gasBarrel"/>
+	<property name="LootList" value="cntBarrelOilSingle00"/>
 	<property name="Explosion.ParticleIndex" value="14"/>
 </block>
 
@@ -30449,7 +30451,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBarrelRadiatedSingle00">
 	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
 	<property name="Model" value="Entities/Industrial/barrelRadiatedPrefab"/>
-	<property name="LootList" value="gasBarrel"/>
+	<property name="LootList" value="cntBarrelOilSingle00"/>
 	<property name="Explosion.ParticleIndex" value="14"/>
 </block>
 
@@ -30476,7 +30478,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="cntBarrelWhiteSingle00">
 	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
 	<property name="Model" value="Entities/Industrial/barrelWhitePrefab"/>
-	<property name="LootList" value="gasBarrel"/>
+	<property name="LootList" value="cntBarrelWhiteSingle00"/>
 	<property name="Explosion.ParticleIndex" value="14"/>
 </block>
 
@@ -30507,7 +30509,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="Loot"/>
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<property name="Material" value="MFuelBarrelPolymer"/>
-	<property name="LootList" value="wineBarrel"/>
+	<property name="LootList" value="cntBarrelPlasticSingle00"/>
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
@@ -38505,6 +38507,22 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="jz_Yarrow" count="1" />
 	<drop event="Harvest" name="jz_Yarrow" count="1" tag="jz_GardenerHarvest"/>
 	<drop event="Harvest" name="jz_Yarrow" count="1" tag="jz_FarmerHarvest"/>
+</block>
+
+<block name="jz_PlayerMPCooler">
+	<property name="Extends" value="cntCoolerOpen"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#Entities/LootContainers?coolerContainerPlasticFullPrefab.prefab"/>
+	<property name="CustomIcon" value="cntCoolerClosed"/>
+	<property name="CustomIconTint" value="183C65"/>
+	<property name="TintColor" value="183C65"/>
+	<property name="DescriptionKey" value="jz_PlayerMPCoolerDesc"/>
+	<property name="Tags" value="door"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="PreserveBonus" value="8" />
+	<property name="LootList" value="playerStorage"/>
+	<drop event="Destroy" name="cntCoolerClosed" count="0"/>
+	<drop event="Destroy" name="jz_PlayerMPCooler" count="1"/>
 </block>
 
 <!-- SPHEREII CORE CONTROLER -->

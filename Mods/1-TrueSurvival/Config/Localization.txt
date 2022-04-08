@@ -645,10 +645,11 @@ jz_WorkstationRifleWorkbenchDesc,"Used to craft Rifles"
 
 jz_GrassWhiteFlower,"Yarrow Plant"
 forestFlower,"Rosemary Plant"
-
-
+jz_PlayerMPCooler,"Player Food Storage"
+jz_PlayerMPCoolerDesc,"Combined with a Landclaim Block this is a secure food storage container to slow your food spoiling when you go offline. Can be destroyed to retrive."
 
 ITEM_________________________XML,ITEM_________________________XML
+
 jz_meleeWpnSpearT0StoneSpearDesc,"Spears have more range than other weapons and can also be thrown.\nScrap to Small Stone."
 jz_Rosemary,"Rosemary"
 jz_RosemaryDesc,"A fragrant plant used for cooking, perfumes, and for its potential health benefits. Can be scraped for Plant Fibers."
@@ -1577,6 +1578,7 @@ jz_LeadCandleStick,"Junk Candle Stick"
 jz_LeadDumbBell,"Junk Weight"
 jz_LeadPaperWeight,"Junk Paper Weight"
 jz_LeadStatue,"Junk Statue"
+resourceTrophy2,"Junk Trophy"
 jz_LeadRing,"Junk Ring"
 jz_LeadTireWeight,"Junk Tire Weight"
 jz_LeadBracelet,"Junk Bracelet"
@@ -1584,7 +1586,8 @@ jz_LeadDoll,"Junk Doll"
 jz_LeadToySoldier,"Junk Toy"
 jz_BrassLamp,"Junk Lanp"
 jz_BrassDumbBell,"Junk Weight"
-jz_BrassPlatter,"Junk Platter
+jz_BrassPlatter,"Junk Platter"
+resourceTrophy1,"Junk Trophy"
 jz_BrassPictureFrame,"Junk Picture Frame"
 jz_BrassStatue,"Junk Statue"
 jz_BrassRing,"Junk Ring"
@@ -1653,6 +1656,7 @@ jz_SteelUtensils,"Junk Utensils"
 jz_SteelAshtray,"Junk Ashtray"
 jz_IronDumdBell,"Junk Weight"
 jz_IronClothesIron,"Junk Iron"
+resourceTrophy3,"Junk Trophy"
 jz_IronToys,"Junk Toys"
 jz_IronCandleSticks,"Junk Candle Stick"
 jz_IronPotsNPans,"Junk Pan"
@@ -1682,28 +1686,10 @@ jz_WoodBowl,"Junk Bowl"
 jz_WoodUtensils,"Junk Utensils"
 jz_WoodPlate,"Junk Plate"
 jz_WoodUtensils,"Junk Utensils"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+jz_SchematicPipePistol,"Pipe Pistol Crafting Guide"
+jz_SchematicPipeShotgun,"Pipe Shotgun Crafting Guide"
+jz_SchematicPipeMachineGun,"Pipe Machine Gun Crafting Guide"
+jz_SchematicPipeRifle,"Pipe Rifle Crafting Guide"
 
 
 
@@ -2082,7 +2068,29 @@ TrueSurvivalNutritionTip_title,"True Survival: Nutrition"
 TrueSurvivalNutritionTip,"Staying healthy is key to survival. All food has some form of nutritional value, to find the value of any given consumable look in the Stat Tab of the item.\nThere are 4 nutrition groups;\nProtein - Protein Servings, Raw Meat\nFiber - Vegetable Servings, Raw Vegetables\nCarbohydrates - Breads, anything with grains\nEssential Vitamins - Fruit Servings, Raw Fruits\n\nAs long as your lowest nutritional value is:\n<1.00 - The longer any nutrition stat is below 1.0 the worse you diet will get. Starting at Bad Diet then Vitamin Deficiency and last Malnourished, during these stages you will slowly start dieing from lack of nutrition. To fix this check your Core Character Stats and see what nutrition stats are below 1.0 and consume things to improve them.\n>1.00 - Balanced Diet - will allow you to gain health from consumables\n>2.00 - Good Diet - will allow you to gain health and Wellness from consumables and gain 1 Stamina every 3 seconds\n>3.00 - Healthy Diet - will allow you to gain health and Wellness from consumables, gain 2 Stamina every 3 seconds, a 20% speed increase and grant Natural Healing when full."
 TrueSurvivalFoodServingsTip_title,"True Survival: Food Servings"
 TrueSurvivalFoodServingsTip,"All raw food items can be scrapped into food servings.\nDepending on the food type it may take more than 1 item in the stack to scrap it.\nSome canned foods may be scrapped to their respective food servings."
+ENTITYCLASS_______________________________XML,ENTITYCLASS_______________________________XML
 
+jz_ZombieMoeExplode,"Moe"
+jz_ZombieMoeFeralExplode,"Feral Moe"
+jz_ZombieMoeRadiatedExplode,"Radiated Moe"
+jz_ZombieFatHawaiianExplode,"Tourist"
+jz_ZombieFatHawaiianFeralExplode,"Feral Tourist"
+jz_ZombieFatHawaiianRadiatedExplode,"Radiated Tourist"
+jz_ZombieFatHawaiianSpitExplode,"Tourist"
+jz_ZombieFatHawaiianFeralSpitExplode,"Feral Tourist"
+jz_ZombieFatHawaiianRadiatedSpitExplode,"Radiated Tourist"
+jz_ZombieFemaleFatExplode,"Big Momma"
+jz_ZombieFemaleFatFeralExplode,"Feral Big Momma"
+jz_ZombieFemaleFatRadiatedExplode,"Radiated Big Momma"
+jz_ZombieFemaleFatSpitExplode,"Big Momma"
+jz_ZombieFemaleFatFeralSpitExplode,"Feral Big Momma"
+jz_ZombieFemaleFatRadiatedSpitExplode,"Radiated Big Momma"
+
+JZZombieBlistered,"Blistered Corpse"
+JZZombieHookArm,"Hook Zombie"
+JZZombieTroll
+JZZombieChicken,"Zombie Chicken"
+JZZombieRabbit,"Zombie Rabbit"
 
 [35bd00]Green[-]
 [f21b10]Red[-]

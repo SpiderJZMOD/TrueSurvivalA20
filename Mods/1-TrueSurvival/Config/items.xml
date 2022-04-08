@@ -13688,7 +13688,7 @@ perkNightStalkerSilentNight
 	</effect_group> JZMOD -->
 	<effect_group tiered="false" name="JZMOD Nutrition">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/><display_value name="$waterAmountAdd" value="-5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-15"/><display_value name="$waterAmountAdd" value="-5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="10"/><display_value name="TSStaminaLoss" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".02"/><display_value name="TSVeggie" value=".02"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
@@ -13736,7 +13736,7 @@ perkNightStalkerSilentNight
 	</effect_group> JZMOD -->
 	<effect_group tiered="false" name="JZMOD Nutrition">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="9"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="18"/><display_value name="TSStaminaLoss" value="-18"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="5"/>
@@ -13818,7 +13818,7 @@ perkNightStalkerSilentNight
 	</effect_group>JZMOD -->
 	<effect_group tiered="false" name="JZMOD Nutrition">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="14"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-15"/><display_value name="$waterAmountAdd" value="-15"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-15"/><display_value name="$waterAmountAdd" value="-15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="28"/><display_value name="TSStaminaLoss" value="-28"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".06"/><display_value name="TSProtein" value=".06"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
@@ -13861,7 +13861,7 @@ perkNightStalkerSilentNight
 	</effect_group> 	JZMOD -->
 	<effect_group tiered="false" name="JZMOD Nutrition">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="30"/><display_value name="TSStaminaLoss" value="-30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".06"/><display_value name="TSProtein" value=".06"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8">
@@ -14003,6 +14003,7 @@ perkNightStalkerSilentNight
 	</effect_group>JZMOD -->
 	<effect_group tiered="false" name="JZMOD Nutrition">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="72"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Stamina" operation="subtract" value="144"/><display_value name="TSStaminaLoss" value="-144"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".24"/><display_value name="TSProtein" value=".24"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".04"/><display_value name="TSVeggie" value=".04"/>
@@ -14017,7 +14018,7 @@ perkNightStalkerSilentNight
 
 <item name="foodShamChowder">
 	<property name="Extends" value="foodCanSham"/>
-	<property name="DisplayType" value="TSFoWaStHePrVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWePrVe"/><!-- JZMOD -->
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property name="EconomicValue" value="126"/>
 	<property name="UnlockedBy" value="foodShamChowderSchematic"/>
@@ -14060,7 +14061,7 @@ perkNightStalkerSilentNight
 <item name="foodHoboStew">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHePrVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWePrVe"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14185,7 +14186,6 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="TSFoWaStHeVe"/> <!-- JZMOD -->
-	<property name="DisplayType" value="foodWaterNegative"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14325,7 +14325,7 @@ perkNightStalkerSilentNight
 <item name="foodPumpkinCheesecake">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodPumpkinCheesecake"/>
+	<property name="DisplayType" value="TSFoWaStHeWeFr"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14476,7 +14476,7 @@ perkNightStalkerSilentNight
 <item name="foodShepardsPie">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHePrVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWePrVe"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14527,7 +14527,7 @@ perkNightStalkerSilentNight
 <item name="foodSpaghetti">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHePrVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWePrVe"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
@@ -14716,7 +14716,7 @@ perkNightStalkerSilentNight
 <item name="foodVegetableStew">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHeVe"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWePrVe"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -14966,7 +14966,7 @@ perkNightStalkerSilentNight
 <item name="foodCropBlueberries">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStDy"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWeFr"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mfruit"/>
@@ -15138,7 +15138,7 @@ perkNightStalkerSilentNight
 <item name="foodCropMushrooms">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStDy"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeWePrDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceCrop"/>
@@ -20899,6 +20899,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Resources"/>
+	<property name="DescriptionKey" value="jz_IronJunkDesc"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -27734,7 +27735,7 @@ perkNightStalkerSilentNight
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 		<requirement name="!IsStatAtMax" stat="water"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".05"/><display_value name="TSFruit" value=".05"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".23"/><display_value name="TSFruit" value=".23"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 	<effect_group tiered="false">
@@ -27768,7 +27769,7 @@ perkNightStalkerSilentNight
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 		<requirement name="!IsStatAtMax" stat="water"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".05"/><display_value name="TSVeggie" value=".05"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".23"/><display_value name="TSVeggie" value=".23"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 	<effect_group tiered="false">
@@ -28093,7 +28094,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="2" />
 	<property name="DescriptionKey" value="grubsDesc" />
     <property name="EconomicValue" value="0"/>
-	<property name="DisplayType" value="TSFoWaStHeDy"/>
+	<property name="DisplayType" value="TSFoWaStHePrDy"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
     <property name="SpoiledItem" value="foodRottingFlesh" />

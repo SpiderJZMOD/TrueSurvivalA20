@@ -66,7 +66,7 @@
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/> <!-- deprecated. It's an entity now "Backpack" -->
 	<property name="ItemsOnEnterGame.GameModeSurvival" value="jz_CharacterChoiceComputer"/><!-- JZMOD -->
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="jz_CharacterChoiceComputer"/><!-- JZMOD -->
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="jz_CharacterChoiceComputer"/><!-- JZMOD -->
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="jz_CharacterChoiceComputer,jz_PlayerMPCooler"/><!-- JZMOD -->
 	<property name="ExperienceGain" value="130"/>
 	<property name="LegsExplosionDamageMultiplier" value=".41"/> <!-- Player gets 20% damage reduction (where from?) and this takes it to 33% total -->
 	<property name="ArmsExplosionDamageMultiplier" value=".41"/>
@@ -2147,7 +2147,7 @@
 	<property name="Explosion.EntityDamage" value="150"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
 </entity_class>
-
+	
 <entity_class name="zombieFatCopFeral" extends="zombieFatCop">
 	<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZCopFeral.prefab"/>
@@ -5391,6 +5391,148 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<!--	<property name="AIPackages" value="Zombie Dumb"/>  -->
 </entity_class>
 <!-- NPC MOD CODE END -->	
+<!-- JZMOD ADDED -->
+<entity_class name="jz_ZombieMoeExplode" extends="zombieMoe">
+	<property name="Tags" value="entity,zombie,walker"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieMoeFeralExplode" extends="zombieMoeFeral">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>      
+</entity_class>
+
+<entity_class name="jz_ZombieMoeRadiatedExplode" extends="zombieMoeRadiated">
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFatHawaiianExplode" extends="zombieFatHawaiian">
+	<property name="Tags" value="entity,zombie,walker"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFatHawaiianFeralExplode" extends="zombieFatHawaiianFeral">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFatHawaiianRadiatedExplode" extends="zombieFatHawaiianRadiated">
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFatHawaiianSpitExplode" extends="zombieFatCop">
+	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>                             
+</entity_class>
+
+<entity_class name="jz_ZombieFatHawaiianFeralSpitExplode" extends="zombieFatCopFeral">
+	<property name="Tags" value="entity,zombie,walker,zombieCop,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianFeral.prefab"/>           
+</entity_class>
+
+<entity_class name="jz_ZombieFatHawaiianRadiatedSpitExplode" extends="zombieFatCopRadiated">
+	<property name="Tags" value="entity,zombie,walker,zombieCop,feral,radiated"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianRadiated.prefab"/>      
+</entity_class>
+
+<entity_class name="jz_ZombieFemaleFatExplode" extends="zombieFemaleFat">
+	<property name="Tags" value="entity,zombie,walker"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFemaleFatFeralExplode" extends="zombieFemaleFatFeral">
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFemaleFatRadiatedExplode" extends="zombieFemaleFatRadiated">
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Class" value="EntityZombieCop"/>     
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>    
+</entity_class>
+
+<entity_class name="jz_ZombieFemaleFatSpitExplode" extends="zombieFatCop">
+	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMama.prefab"/>               
+</entity_class>
+
+<entity_class name="jz_ZombieFemaleFatFeralSpitExplode" extends="zombieFatCopFeral">
+	<property name="Tags" value="entity,zombie,walker,zombieCop,feral"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaFeral.prefab"/>              
+</entity_class>
+
+<entity_class name="jz_ZombieFemaleFatRadiatedSpitExplode" extends="zombieFatCopRadiated">
+	<property name="Tags" value="entity,zombie,walker,zombieCop,feral,radiated"/>
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaRadiated.prefab"/>       
+</entity_class>
+
 <entity_class name="ParasiteInsect" extends="animalTemplateHostileFlying" >
 	<property name="Tags" value="entity,animal,hostile,template"/>
 	<property name="Mesh" value="#@modfolder:Resources/TSCritters1.unity3d?InsectDark" /> <!-- Flying Bug with stinger-->
@@ -5575,18 +5717,21 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="HasRagdoll" value="false"/>
 	<property name="CanBigHead" value="false" />
 	<property name="AIFeralSense" value="1.6"/>
-	<property name="AITask-1" value="BreakBlock"/>
-	<property name="AITask-2" value="Territorial"/>
-	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
-	<property name="AITask-4" value="ApproachSpot"/>
-	<property name="AITask-5" value="Look"/>
-	<property name="AITask-6" value="Wander"/>
-	<property name="AITask-7" value=""/>
+	
+	<property name="AITask-1" value="Leap" data="legs=4"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityPlayer,20,EntityNPC,20"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityNPC,EntityPlayer"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
 	<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20,EntityNPC,0,0"/>
 	<property name="AITarget-5" value=""/>
+	
 	<!-- Gameplay  -->
 	<property name="HandItem" value="jz_HandRabbitAttack" />
 	<property name="ExperienceGain" value="130"/>

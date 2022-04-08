@@ -1511,7 +1511,7 @@
 		<objective type="BlockPlace" id="jz_WorkstationLightArmorWorkbench" value="1" phase="2" />
 		
 		<reward type="Exp" value="250"/>
-		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL3" />
+		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL2" />
     </quest>
 	
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL2">
