@@ -3,7 +3,10 @@ True Survival contains parts of Sphereii Core and NPC MOD. All rules associated 
 Installation:
 Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
 
-
+Server Info:
+IP =   14.1.30.218
+Port = 28716
+PW =   spiders1
 
 Game Settings For True Survival-
 Difficulty Setting- Adventurer
