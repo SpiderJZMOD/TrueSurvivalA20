@@ -5409,36 +5409,42 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="18"/>
 	<ingredient name="jz_FiberRope" count="8" />
+	<ingredient name="jz_ScrapAdhesive" count="2" />
 	<ingredient name="resourceCropCottonPlant" count="15" />
 </recipe>
 
 <recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingNeedle" craft_time="30" craft_exp_gain="10" tags="jz_CraftingQualityTwo,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="19"/>
 	<ingredient name="jz_FiberRope" count="9" />
+	<ingredient name="jz_ScrapAdhesive" count="3" />
 	<ingredient name="resourceCropCottonPlant" count="17" />
 </recipe>
 
 <recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolLeatherNeedle" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="20"/>
 	<ingredient name="jz_FiberRope" count="10" />
+	<ingredient name="jz_ScrapAdhesive" count="4" />
 	<ingredient name="resourceCropCottonPlant" count="19" />
 </recipe>
 
 <recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSmallLoom" craft_time="60" craft_exp_gain="20" tags="jz_CraftingQualityTFour,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="21"/>
 	<ingredient name="jz_FiberRope" count="11" />
+	<ingredient name="jz_ScrapAdhesive" count="5" />
 	<ingredient name="resourceCropCottonPlant" count="21" />
 </recipe>
 
 <recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolSewingMachine" craft_time="75" craft_exp_gain="25" tags="jz_CraftingQualityFive,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="22"/>
 	<ingredient name="jz_FiberRope" count="12" />
+	<ingredient name="jz_ScrapAdhesive" count="6" />
 	<ingredient name="resourceCropCottonPlant" count="23" />
 </recipe>
 
 <recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_tool="jz_ToolTailorMannequin" craft_time="60" craft_exp_gain="30" tags="jz_CraftingQualitySix,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="23"/>
 	<ingredient name="jz_FiberRope" count="13" />
+	<ingredient name="jz_ScrapAdhesive" count="7" />
 	<ingredient name="resourceCropCottonPlant" count="25" />
 </recipe>
 

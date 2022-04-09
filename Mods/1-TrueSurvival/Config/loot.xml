@@ -6017,6 +6017,8 @@ If there is no hit the default quality is used.
 	<item name="drinkCanEmpty" loot_prob_template="med"/>
 	<item group="rottenFood" loot_prob_template="medLow"/>
 	<item name="resourceBone" loot_prob_template="medLow"/>
+	<item name="jz_MeleePlank" loot_prob_template="veryLow"/>
+	<item name="jz_MeleeTableLeg" loot_prob_template="veryLow"/>
 	<item name="jz_MeleePipe" loot_prob_template="veryLow"/>
 	<item name="jz_MeleeRebar" loot_prob_template="veryLow"/>
 </lootgroup>
