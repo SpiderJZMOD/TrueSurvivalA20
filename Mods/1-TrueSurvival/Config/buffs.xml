@@ -5080,11 +5080,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 		
 		<effect_group name="Fatigue and Nutrition">
-			 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="subtract" value=".5">
+			 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="subtract" value=".3">
                 <requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="subtract" value=".5">		
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="subtract" value=".3">		
                 <requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="1"/></triggered_effect>
-		    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="subtract" value=".5">	
+		    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="subtract" value=".3">	
                 <requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="1"/></triggered_effect>
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value="1"/>	
           	<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fatigueInterval" operation="add" value="1"/>
