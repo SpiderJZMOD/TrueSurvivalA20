@@ -387,6 +387,15 @@
 		<entity name="zombieWightFeral" prob="0.01"/>
 	</entitygroup>
 
+	<entitygroup name="JZBearsNChickens">
+		<entity name="animalZombieBear"/>
+		<entity name="JZZombieChicken"/>
+	</entitygroup>
+	
+	<entitygroup name="JZRabbits">
+		<entity name="JZZombieRabbit"/>
+	</entitygroup>
+	
 	<entitygroup name="AnimalsSmall">
 		<entity name="animalRabbit"/>
 		<entity name="animalChicken"/>

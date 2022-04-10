@@ -20528,9 +20528,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
-	<drop event="Harvest" name="resourceWood" count="8,14" tag="oreWoodHarvest"/>
-	<!-- <drop event="Destroy" name="treePlantedMaple1m" count="x"/> -->
-	<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob="0.03"/>
+	<drop event="Harvest" name="jz_Stick" count="8,14" tag="oreWoodHarvest"/>
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 </block>
 

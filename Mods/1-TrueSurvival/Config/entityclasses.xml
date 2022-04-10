@@ -5717,7 +5717,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="HasRagdoll" value="false"/>
 	<property name="CanBigHead" value="false" />
 	<property name="AIFeralSense" value="1.6"/>
-	
+		
 	<property name="AITask-1" value="Leap" data="legs=4"/>
 	<property name="AITask-2" value="BreakBlock"/>
 	<property name="AITask-3" value="Territorial"/>
@@ -5733,6 +5733,8 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="AITarget-5" value=""/>
 	
 	<!-- Gameplay  -->
+	<property name="JumpDelay" value=".1"/>
+	<property name="JumpMaxDistance" value="6, 10"/>
 	<property name="HandItem" value="jz_HandRabbitAttack" />
 	<property name="ExperienceGain" value="130"/>
 	<property name="DeadBodyHitPoints" value="175"/>

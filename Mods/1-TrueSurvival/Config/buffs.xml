@@ -3068,8 +3068,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$legHurtCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -3097,8 +3097,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLegGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$legHurtCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 
 		<effect_group>
@@ -3115,7 +3115,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="20"/> <!-- 15 @ 300s -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.04"/>
 		</effect_group>
 	</buff>
@@ -3197,7 +3197,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="288"/> <!-- 25 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.5"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.5"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.12"/>
 		</effect_group>
 	</buff>
@@ -3260,7 +3260,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="360"/> <!-- 20 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.06"/>
 		</effect_group>
 	</buff>
@@ -3323,7 +3323,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LegHurtHealthBlockage" operation="divide" value="480"/> <!-- 15 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LegHurtHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.1"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.1"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.09"/>
 		</effect_group>
 	</buff>
@@ -3383,8 +3383,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$armHurtCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="subtract" value="@$critHitNaturalHealingRate"/>
 		</effect_group>
@@ -3412,8 +3412,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$armHurtCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 
 		<effect_group>
@@ -7519,7 +7519,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 
 		<effect_group>
-			<passive_effect name="Mobility" operation="base_add" value="-.25"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.25"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.06"/>
 			<passive_effect name="VehicleVelocityMaxPer" operation="perc_set" value="0.33"/>
 			<passive_effect name="VehicleVelocityMaxTurboPer" operation="perc_set" value="0.33"/>
@@ -9959,7 +9959,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>	
 	</buff>
 	
-	<buff name="jz_BuffBalancedDiet" remove_on_death="false" name_key="Balanced Diet" tooltip_key="Feeling Great!" description_key="Because your eating a balanced diet you gain these benefits\n-Able to gain Wellness from food\n-Able to gain Health from food" icon="ui_game_symbol_goodNutrition2" >
+	<buff name="jz_BuffBalancedDiet" remove_on_death="false" name_key="Balanced Diet" tooltip_key="Feeling Great!" description_key="jz_BuffBalancedDietDesc" icon="ui_game_symbol_goodNutrition2" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -9978,7 +9978,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>	
 	</buff>
 	
-	<buff name="jz_BuffGoodDiet" remove_on_death="false" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="Because your eating a more balanced diet you gain these benefits\n-Able to gain Health from food" icon="ui_game_symbol_goodNutrition1" >
+	<buff name="jz_BuffGoodDiet" remove_on_death="false" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="jz_BuffGoodDietDesc" icon="ui_game_symbol_goodNutrition1" >
 		<stack_type value="ignore"/>
 		<update_rate value="1"/>
 		<duration value="0"/>
@@ -14793,8 +14793,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftAnkleCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftAnkleCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$LeftAnkleCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftAnkleCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$LeftAnkleCounter" operation="LT" value="1205"/></triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="1"/>
             <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="-1"/>
@@ -14823,8 +14823,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLowerBodyGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftAnkleCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$LeftAnkleCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftAnkleCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$LeftAnkleCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$LeftAnkleCounter" operation="LTE" value="0"/>
@@ -14839,7 +14839,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftAnkleHealthBlockage" operation="divide" value="86"/> <!-- 7 @ 300s -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftAnkleHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.02"/>
 		</effect_group>
 	</buff>
@@ -14901,7 +14901,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LeftAnkleHealthBlockage" operation="divide" value="800"/> <!-- 9 @ 120m -->
 			
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftAnkleHealthBlockage"/>
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.05"/>
 		</effect_group>
 	</buff>
@@ -14960,7 +14960,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftAnkleHealthBlockage" operation="divide" value="900"/> <!-- 8 @ 120m -->
 			
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftAnkleHealthBlockage"/>
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.03"/>
 		</effect_group>
 	</buff>
@@ -15020,7 +15020,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftAnkleHealthBlockage" operation="divide" value="1028"/> <!-- 7 @ 120m -->
 			
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftAnkleHealthBlockage"/>
-			<passive_effect name="Mobility" operation="base_add" value="-.05"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.04"/>
 		</effect_group>
 	</buff>
@@ -15060,8 +15060,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightAnkleCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightAnkleCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$RightAnkleCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightAnkleCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$RightAnkleCounter" operation="LT" value="1205"/></triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="1"/>
             <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="-1"/>
@@ -15090,8 +15090,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLowerBodyGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightAnkleCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$RightAnkleCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightAnkleCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$RightAnkleCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$RightAnkleCounter" operation="LTE" value="0"/>
@@ -15106,7 +15106,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightAnkleHealthBlockage" operation="divide" value="86"/> <!-- 7 @ 300s -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightAnkleHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.02"/>
 	
 		</effect_group>
@@ -15169,7 +15169,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RightAnkleHealthBlockage" operation="divide" value="800"/> <!-- 9 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightAnkleHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.05"/>
 		</effect_group>
 	</buff>
@@ -15229,7 +15229,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightAnkleHealthBlockage" operation="divide" value="900"/> <!-- 8 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightAnkleHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.03"/>
 		</effect_group>
 	</buff>
@@ -15290,7 +15290,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightAnkleHealthBlockage" operation="divide" value="1028"/> <!-- 7 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightAnkleHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.05"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.04"/>
 		</effect_group>
 	</buff>
@@ -15330,8 +15330,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftLegCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftLegCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$LeftLegCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftLegCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$LeftLegCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="1"/>
             <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="-1"/>
@@ -15360,8 +15360,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLowerBodyGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftLegCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$LeftLegCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftLegCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$LeftLegCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$LeftLegCounter" operation="LTE" value="0"/>
@@ -15376,7 +15376,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftLegHealthBlockage" operation="divide" value="86"/> <!-- 7 @ 300s -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.02"/>
 	
 		</effect_group>
@@ -15439,7 +15439,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LeftLegHealthBlockage" operation="divide" value="800"/> <!-- 9 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.05"/>
 		</effect_group>
 	</buff>
@@ -15499,7 +15499,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftLegHealthBlockage" operation="divide" value="900"/> <!-- 8 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.03"/>
 		</effect_group>
 	</buff>
@@ -15560,7 +15560,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftLegHealthBlockage" operation="divide" value="1028"/> <!-- 7 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.LeftLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.05"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.04"/>
 		</effect_group>
 	</buff>
@@ -15600,8 +15600,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightLegCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightLegCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$RightLegCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightLegCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$RightLegCounter" operation="LT" value="1205"/></triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="1"/>
             <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="-1"/>
@@ -15630,8 +15630,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLowerBodyGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightLegCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$RightLegCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightLegCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$RightLegCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$RightLegCounter" operation="LTE" value="0"/>
@@ -15646,7 +15646,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightLegHealthBlockage" operation="divide" value="86"/> <!-- 7 @ 300s -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.02"/>
 	
 		</effect_group>
@@ -15709,7 +15709,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RightLegHealthBlockage" operation="divide" value="800"/> <!-- 9 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.05"/>
 		</effect_group>
 	</buff>
@@ -15769,7 +15769,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightLegHealthBlockage" operation="divide" value="900"/> <!-- 8 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.03"/>
 		</effect_group>
 	</buff>
@@ -15830,7 +15830,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightLegHealthBlockage" operation="divide" value="1028"/> <!-- 7 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RightLegHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.05"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.04"/>
 		</effect_group>
 	</buff>
@@ -15870,8 +15870,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RibsCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RibsCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$RibsCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RibsCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$RibsCounter" operation="LT" value="1205"/></triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="1"/>
             <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LowerBodyHurtCount" operation="add" value="-1"/>
@@ -15900,8 +15900,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLowerBodyGetsWorse">
 					<requirement name="EntityHasMovementTag" tags="running"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RibsCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$RibsCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RibsCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$RibsCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$RibsCounter" operation="LTE" value="0"/>
@@ -15916,7 +15916,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RibsHealthBlockage" operation="divide" value="86"/> <!-- 7 @ 300s -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RibsHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.02"/>
 	
 		</effect_group>
@@ -15979,7 +15979,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RibsHealthBlockage" operation="divide" value="800"/> <!-- 9 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RibsHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.15"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.05"/>
 		</effect_group>
 	</buff>
@@ -16039,7 +16039,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RibsHealthBlockage" operation="divide" value="900"/> <!-- 8 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RibsHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.07"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.07"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.03"/>
 		</effect_group>
 	</buff>
@@ -16100,7 +16100,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RibsHealthBlockage" operation="divide" value="1028"/> <!-- 7 @ 120m -->
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.RibsHealthBlockage"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="-.05"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
 			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.04"/>
 		</effect_group>
 	</buff>
@@ -16112,7 +16112,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LowerBodySlowEffect" operation="set" value="@$LowerBodyHurtCount"/>
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LowerBodySlowEffect" operation="multiply" value="-0.05"/>
 
-			<passive_effect name="Mobility" operation="base_add" value="@.LowerBodySlowEffect"/>
+			<passive_effect name="Mobility" operation="perc_add" value="@.LowerBodySlowEffect"/>
 			
 			<passive_effect name="BuffBlink" operation="base_add" value="2" tags="jz_BuffSprainedLeftAnkle,jz_BuffBrokenLeftAnkle,jz_BuffLeftAnkleSplinted,jz_BuffLeftAnkleCast,jz_BuffSprainedRightAnkle,jz_BuffBrokenRightAnkle,jz_BuffRightAnkleSplinted,jz_BuffRightAnkleCast,jz_BuffSprainedLeftLeg,jz_BuffBrokenLeftLeg,jz_BuffLeftLegSplinted,jz_BuffLeftLegCast,jz_BuffSprainedRightLeg,jz_BuffBrokenRightLeg,jz_BuffRightLegSplinted,jz_BuffRightLegCast,jz_BuffSprainedRibsTrigger,jz_BuffBrokenRibs,jz_BuffRibsSplinted,jz_BuffRibsCast"/>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm">
@@ -16179,8 +16179,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -16217,8 +16217,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="LTE" value="0"/>
@@ -16477,8 +16477,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$RightWristCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$RightWristCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -16515,8 +16515,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$RightWristCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$RightWristCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$RightWristCounter" operation="LTE" value="0"/>
@@ -16775,8 +16775,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -16813,8 +16813,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="LTE" value="0"/>
@@ -17073,8 +17073,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$RightArmCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$RightArmCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -17111,8 +17111,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$RightArmCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$RightArmCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$RightArmCounter" operation="LTE" value="0"/>
@@ -17371,8 +17371,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#painsm"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="605"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="605">
-				<requirement name="CVarCompare" cvar="$NeckCounter" operation="LT" value="605"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="1205">
+				<requirement name="CVarCompare" cvar="$NeckCounter" operation="LT" value="1205"/></triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="subtract" value="@$critHitNaturalHealingRate">
 				<requirement name="!EntityHasMovementTag" tags="running"/></triggered_effect>
@@ -17410,8 +17410,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="melee"/>
 					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="605">
-					<requirement name="CVarCompare" cvar="$NeckCounter" operation="GT" value="605"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="1205">
+					<requirement name="CVarCompare" cvar="$NeckCounter" operation="GT" value="1205"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="$NeckCounter" operation="LTE" value="0"/>

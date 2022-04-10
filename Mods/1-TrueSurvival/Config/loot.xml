@@ -4330,7 +4330,7 @@ If there is no hit the default quality is used.
 	<item name="jz_WelderTool"/>
 	<item name="meleeToolSalvageT1Wrench"/>
 	<item name="toolAndDieSet"/>
-	<item name="jz_ToolHandSaw"/>  
+	<item name="jz_ToolCircularSaw"/>  
 </lootgroup> 
                                                 
 <lootgroup name="forgeMolds" >
@@ -4423,7 +4423,7 @@ If there is no hit the default quality is used.
 	<item name="jz_MortarAndPestle" loot_prob_template="TSEarlyOnly"/>	
 	<item name="toolAnvil" loot_prob_template="TSEarlyOnly"/>	
 	<item name="meleeToolSalvageT1Wrench" loot_prob_template="TSEarlyOnly"/>	
-	<item name="jz_ToolHandSaw" loot_prob_template="TSEarlyOnly"/>	 
+	<item name="jz_ToolCircularSaw" loot_prob_template="TSEarlyOnly"/>	 
 	<item name="meleeToolRepairT1ClawHammer" loot_prob_template="TSEarlyOnly"/>	
 	<item name="toolBeaker" loot_prob_template="ProbT0"/>	
 	<item name="jz_LabEquipment" loot_prob_template="ProbT0"/>	
@@ -5868,7 +5868,6 @@ If there is no hit the default quality is used.
 	<item group="groupResourceGunPowderSmall"/>
 	<item group="groupResourceBulletCasingSmall"/>
 	<item group="groupResourceBulletTipSmall"/>
-	<!-- <item group="groupResourcePaperSmall"/> -->
 	<item group="groupResourceBuckshotSmall"/>
 	<item group="groupResourceArrowHeadIronSmall"/>
 	<item group="groupResourceArrowHeadSteelAPSmall"/>
@@ -5878,7 +5877,6 @@ If there is no hit the default quality is used.
 	<item group="groupResourceGunPowderMedium"/>
 	<item group="groupResourceBulletCasingMedium"/>
 	<item group="groupResourceBulletTipMedium"/>
-	<!-- <item group="groupResourcePaperMedium"/> -->
 	<item group="groupResourceBuckshotMedium"/>
 	<item group="groupResourceArrowHeadIronMedium"/>
 	<item group="groupResourceArrowHeadSteelAPMedium"/>
@@ -5888,7 +5886,6 @@ If there is no hit the default quality is used.
 	<item group="groupResourceGunPowderLarge"/>
 	<item group="groupResourceBulletCasingLarge"/>
 	<item group="groupResourceBulletTipLarge"/>
-	<!-- <item group="groupResourcePaperLarge"/> -->
 	<item group="groupResourceBuckshotLarge"/>
 	<!-- <item group="groupResourceArrowHeadIronLarge"/> -->
 	<!-- <item group="groupResourceArrowHeadSteelAPLarge"/> -->
@@ -6230,12 +6227,12 @@ If there is no hit the default quality is used.
 	<item name="drugVitamins"/>
 	<item name="jz_MedicalCleansingWash" />
 	<item name="jz_MedicalSutureKit" />
-	<item name="jz_MedicalAntiViral" loot_prob_template="veryLow"/>
+	<item name="jz_MedicalAntiViral" count="1,3" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupMedicalRare" count="1">
-	<item name="drugAntibiotics" loot_prob_template="veryLow"/>
-	<item name="jz_MedicalAntiViral" loot_prob_template="veryLow"/>
+	<item name="drugAntibiotics" loot_prob_template="Low"/>
+	<item name="jz_MedicalAntiViral" count="1,3" loot_prob_template="Low"/>
 	<item name="jz_MedicalCleansingWash" />
 	<item name="jz_MedicalSutureKit" />
 	<item name="medicalFirstAidKit"/>
@@ -7196,10 +7193,21 @@ If there is no hit the default quality is used.
 	<item group="groupDrone" loot_prob_template="ProbT3"/>
 </lootgroup>
 
+<lootgroup name="groupMoPowerShelvesJunk">
+	<item name="jz_PlasticToothbrush" />
+	<item name="jz_PlasticCDs" />
+	<item name="jz_PlasticToy" />
+	<item name="jz_IronStatue" />
+	<item name="jz_PaperReceipt" />
+	<item name="jz_PaperPlayingCards" />
+	<item name="jz_PaperStickyPad" />
+	<item name="jz_PaperOldPapers" />
+	<item name="jz_PaperMagazine" />
+	<item name="jz_PaperBook" />
+</lootgroup>
+
 <lootgroup name="groupMoPowerShelves">
-	<item name="resourceScrapPolymers" count="2,4" loot_prob_template="med"/>
-	<item name="resourceScrapIron" count="2,10" loot_prob_template="med"/>
-	<item name="resourcePaper" count="2,4" loot_prob_template="med"/>
+	<item group="groupMoPowerShelvesJunk" count="2,4" loot_prob_template="med"/>	
 	<item name="resourceHeadlight" count="1" loot_prob_template="med"/>
 	<item name="resourceElectricParts" count="1,2" loot_prob_template="medLow"/>
 	<item name="resourceMechanicalParts" count="1,2" loot_prob_template="medLow"/>
@@ -7312,7 +7320,7 @@ If there is no hit the default quality is used.
 
 <!-- *** Crackabook_Shelves -->
 <lootgroup name="groupCrackabookShelves01">
-	<item name="resourcePaper" count="1,5" loot_prob_template="high"/>
+	<item group="junkBookShelf" count="1,3" loot_prob_template="high"/>
 	<item group="booksAllScaled" loot_prob_template="medLow"/>
 </lootgroup>
 
@@ -8250,7 +8258,7 @@ If there is no hit the default quality is used.
 	<item name="drugPainkillers" count="1"/>
 	<item name="medicalFirstAidKit" count="1,2"/>
 	<item name="drugAntibiotics" count="1,2"/>
-	<item name="jz_MedicalAntiViral" count="1,2"/>
+	<item name="jz_MedicalAntiViral" count="1,3"/>
 	<item name="jz_MedicalCleansingWash" count="1,2"/>
 	<item name="jz_MedicalSutureKit" count="1,2"/>
 	<item name="toolBeaker" prob="0.4"/>
@@ -9530,7 +9538,7 @@ If there is no hit the default quality is used.
 <!-- END_TWITCH_MODE -->
 
 <lootgroup name="lumberjacks" >
-	<item name="jz_ToolHandSaw" prob="12.5" />
+	<item name="jz_ToolCircularSaw" prob="12.5" />
 	<item name="jz_OldAxe" prob="12.5" />
     <item name="jz_DrinkMead" prob="12.5" />
     <item name="jz_Crowbar" prob="12.5" />
