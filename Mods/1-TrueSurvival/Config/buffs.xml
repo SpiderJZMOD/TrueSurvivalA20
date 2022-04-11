@@ -10626,14 +10626,6 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
        </effect_group>
     </buff>
 	
-	 <!--JZMOD EXPLOSIVE SKILL XP TRIGGER-->
-    <buff name="jz_BuffExplosiveThrown" hidden="true" remove_on_death="false">
-        <stack_type value="duration"/>
-		<duration value="5"/>  
-        <effect_group>
-                <triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" cvar="$jz_ExposivesXP" operation="add" value="1"/>
-		</effect_group>
-	</buff>  
 	<!-- JZMOD Fast Roads -->
     <buff name="jz_BuffFastRoadTrigger" hidden="true" remove_on_death="false">
         <stack_type value="duration"/>
@@ -10657,7 +10649,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffDeadIsDeadResetNoCheating"  /> 
 				
 				<triggered_effect trigger="onSelfBuffStart" action="ResetPlayerSkills, TrueSurvival" target="self" value="0"/>
-				<triggered_effect trigger="onSelfRespawn" action="ClearMapSDX, TrueSurvival" />	<!--ClearMap, Mods-->				
+				<triggered_effect trigger="onSelfRespawn" action="ClearMap, TrueSurvival" />	<!--ClearMap, Mods-->				
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LastPlayerLevel" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="set" value="1"/> 
                
@@ -10668,90 +10660,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionCureCounter" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="infectionCounter" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$amputationCounter" operation="set" value="0"/>
-                 
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffHungry03Wellness"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThirsty03Wellness"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffAmputationWound"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffAmputationHealthLoss"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffAmputationWellness"/>   
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourG"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageFourF"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourF"/>           
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageFourE"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourE"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageFourD"/>           
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourD"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageFourC"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourC"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageFourB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageFourA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingFourA"/>                      
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSmallWound"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSmallWoundHealthLoss"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSmallWoundWellness"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingOneB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageOneA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingOneA"/>           
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffWound"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffWoundHealthLoss"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffWoundWellness"/>           
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingTwoD"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageTwoC"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingTwoC"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageTwoB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingTwoB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageTwoA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingTwoA"/>     
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSevereWound"/> 
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSevereWoundHealthLoss"/> 
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSevereWoundWellness"/>                
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingThreeF"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageThreeE"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingThreeE"/>           
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageThreeD"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingThreeD"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageThreeC"/>           
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingThreeC"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageThreeB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingThreeB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyBandageThreeA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingThreeA"/>      
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThirsty03Wellness"/> 
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffNewbieCoat" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnWound" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffTendingBurnWound" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBadLeg" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBadLegLimpA" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBadLegLimpB" />   
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffAmputate" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffNubbins" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBruised" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredStitchedUp" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredBandageSani" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredDirtyBandangeA" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredBandageMedic" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredDirtyBandangeB" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredBandage" />
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGoredDirtyBandangeC" />         
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffNubbins" />
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryBleeding"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGash"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashBandaged"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStitchedUp"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashDirtyBandaged"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffPunctureBandagedSani"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffPunctureBandageMedic"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffPunctureBandage"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffPunctured"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyPunctureBandagedA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyPunctureBandagedB"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffDirtyPunctureBandagedC"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffAnimalBiteDirtyBandangeA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBite"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteCauterized"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteAloed"/>                
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteBandage"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandangeA"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandangeB"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThrobbingPainScreen"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThrobbingPainScreenRestart"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThrobbingPain"/>
@@ -10766,18 +10679,280 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection03Untreated"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection03GetBetter"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection04"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmBroken"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmSplinted"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmCast"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffArmSprained"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegSprained"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegBroken"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegSplinted"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffLegCast"/>
-                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMasochistActivate"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffEndGameCampaign"/>
-                                            
-                <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffNewbieCoat"  />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSnakeBite"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSnakeBiteLvTwo"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSnakeBiteLvThree"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffStimulant"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$stimulantCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$stimulantDosage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$stimulantXPAndWater" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$stimulantSpeed" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$stimulantDownSide" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffStimulantWithdrawal"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$withdrawalStrength" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$withdrawalScavenging" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$withdrawalSpeed" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$withdrawalShiver" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationLeftFootTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationRightFootTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationLeftLegTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationRightLegTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationLeftHandTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationRightHandTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationLeftArmTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationRightArmTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationStomachTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LacerationNeckTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFoot"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootTendedB"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRighttFoot"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLeg"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRighttLeg"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHand"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHandBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHandTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHandDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftHandTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHand"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHandBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHandTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHandDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightHandTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLefArm"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRighttArm"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomach"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomachBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomachTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomachDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationStomachTendedB"/> 				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeck"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeckBleed"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeckTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeckDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationNeckTendedB"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftAnkleCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftAnkleTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LeftAnkleHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightAnkleCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightAnkleTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RightAnkleHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftLegCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftLegTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LeftLegHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightLegCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightLegTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RightLegHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RibsCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RibsTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RibsHealthBlockage" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedLeftAnkle"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenLeftAnkle"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftAnkleSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftAnkleCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedRightAnkle"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenRightAnkle"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightAnkleSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightAnkleCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedLeftLeg"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenLeftLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftLegSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftLegCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedRightLeg"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenRightLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightLegSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightLegCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedRibs"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenRibs"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRibsSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRibsCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftWristTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LeftWristHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightWristTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RightWristHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LeftArmTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".LeftArmHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$RightArmTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".RightArmHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NeckTotalHealingRate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".NeckHealthBlockage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedLeftWrist"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenLeftWrist"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftWristSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftWristCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedRightWrist"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenRightWrist"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightWristSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightWristCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedLeftArm"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenLeftArm"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftArmSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLeftArmCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedRightArm"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenRightArm"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightArmSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffRightArmCast"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffSprainedNeck"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffBrokenNeck"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffNeckSplinted"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffNeckCast"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftFootTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightFootTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftLegTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightLegTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftHandTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightHandTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashLeftArmTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashRightArmTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashStomachTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GashNeckTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftFoot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftFootBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftFootDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftFootNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftFootTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightFoot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightFootBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightFootDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightFootNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightFootTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftLegBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftLegDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftLegNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftLegTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightLegBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightLegDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightLegNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightLegTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftHandBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftHandDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftHandNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftHandTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightHandBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightHandDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightHandNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightHandTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftArm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftArmBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftArmDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftArmNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashLeftArmTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStomach"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStomachBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStomachDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStomachNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashStomachTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashNeck"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashNeckBleed"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashNeckDrying"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashNeckNeedsBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashNeckTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MedicalInfectionCureCounter" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="MedicalInfectionCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfectionMain"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfectionCureDisplay"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection01Untreated"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection01GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection02Untreated"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection02GetBetter"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection03Untreated"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection03GetBetter"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection04"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZombieBiteTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBite"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandage"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTendedB"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageB"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTendedC"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnLeftFootTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnRightFootTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnLeftLegTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnRightLegTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnLeftHandTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnRightHandTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnLeftArmTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnRightArmTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnStomachTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BurnNeckTendedQ" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftFoot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftFootBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftFootNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftFootHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightFoot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightFootBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightFootNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightFootHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftLegBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftLegNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftLegHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightLegBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightLegNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightLegHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightHandBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightHandNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightHandHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftArm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftArmBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftArmNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftArmHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightArm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightArmBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightArmNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightArmHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnStomach"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnStomachBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnStomachNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnStomachHealing"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeck"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckBandaged"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckNeedsBandage"/>  
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckHealing"/>	
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffNewbieCoat"  />
         </effect_group>
 	</buff>
     
@@ -11520,7 +11695,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationLeftFootDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftFoot"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -11825,7 +12000,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationRightFootDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationRightFoot"/></triggered_effect>
 				
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -11960,7 +12135,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LacerationRightFootTendingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LacerationRightFootTendingDuration" operation="set" value="0"/>  
 	
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.0"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.03"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.02" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
 		</effect_group>
 	</buff>
@@ -12129,7 +12304,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationLeftLegDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftLeg"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -12434,7 +12609,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationRightLegDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationRightLeg"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -12739,7 +12914,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationLeftHandDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftHand"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
 		</effect_group>
 	</buff>
@@ -13044,7 +13219,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationRightHandDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationRightHand"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -13349,7 +13524,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationLeftArmDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationLeftArm"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -13654,7 +13829,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationRightArmDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationRightArm"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -13958,7 +14133,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationStomachDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationStomach"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
@@ -14263,7 +14438,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffLacerationNeckDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffLacerationNeck"/></triggered_effect>
 			
-			<passive_effect name="Mobility" operation="perc_subtract" value="0.4"/>
+			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.03" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
 		</effect_group>
 	</buff>
