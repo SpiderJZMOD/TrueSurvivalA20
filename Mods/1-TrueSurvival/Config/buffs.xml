@@ -1866,7 +1866,47 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		</effect_group>
 	</buff>
 
-	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_talk" icon_color="0,255,0" icon_blink="false" hidden="false">
+	<buff name="jz_BuffCharismaticNatureOne" name_key="Charismatic Nature Level 1" description_key="jz_BuffCharismaticNatureOneDesc" icon="ui_game_symbol_talk" icon_color="0,255,0">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureTwo"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureThree"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureFour"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffCharismaticNatureTwo" name_key="Charismatic Nature Level 2" description_key="jz_BuffCharismaticNatureTwoDesc" icon="ui_game_symbol_talk" icon_color="0,255,0">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureOne"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureThree"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureFour"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffCharismaticNatureThree" name_key="Charismatic Nature Level 3" description_key="jz_BuffCharismaticNatureThreeDesc" icon="ui_game_symbol_talk" icon_color="0,255,0">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureOne"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureTwo"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureFour"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffCharismaticNatureFour" name_key="Charismatic Nature Level 4" description_key="jz_BuffCharismaticNatureFourDesc" icon="ui_game_symbol_talk" icon_color="0,255,0">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureTwo"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureOne"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffCharismaticNatureThree"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_talk" icon_color="0,255,0" icon_blink="false" hidden="true">
 		<stack_type value="replace"/>
 		<duration value="300"/>
 
@@ -1874,19 +1914,27 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="1"/>
 				<passive_effect name="HealthMax" operation="base_add" value="20"/>
 				<passive_effect name="StaminaMax" operation="base_add" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffCharismaticNatureOne">
+					<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="Equals" value="1"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="2"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value=".2" tags="melee"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffCharismaticNatureTwo">
+					<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="Equals" value="2"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="3"/>
 				<passive_effect name="HealthLoss" operation="perc_add" value="-.1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffCharismaticNatureThree">
+					<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="Equals" value="3"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="4"/>
-				<passive_effect name="AttributeLevel" operation="base_add" value="1"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".05"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffCharismaticNatureFour">
+					<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="Equals" value="4"/></triggered_effect>
 		</effect_group>
 
 		<effect_group>
@@ -1894,6 +1942,14 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffCharismaticNatureOne"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffCharismaticNatureTwo"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffCharismaticNatureThree"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffCharismaticNatureFour"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffCharismaticNatureOne"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffCharismaticNatureTwo"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffCharismaticNatureThree"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffCharismaticNatureFour"/>
 		</effect_group>
 	</buff>
 
@@ -23034,7 +23090,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection03GetBetter"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffMedicalInfection01GetBetter" name_key="jz_jz_BuffMedicalInfection01GetBetterName" description_key="jz_BuffMedicalInfection01GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better">
+	<buff name="jz_BuffMedicalInfection01GetBetter" name_key="jz_BuffMedicalInfection01GetBetterName" description_key="jz_BuffMedicalInfection01GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>

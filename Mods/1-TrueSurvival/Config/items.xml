@@ -27411,7 +27411,6 @@ perkNightStalkerSilentNight
 <item name="jz_MedicalSutureKit">
 	<property name="Extends" value="jz_MasterFood" />
     <property name="EconomicValue" value="500"/>
-	<property name="Meshfile" value="Items/Health/gauze" />
 	<property name="HoldType" value="64"/>
 	<property name="Meshfile" value="#Other/Items?Health/bandage.fbx"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>

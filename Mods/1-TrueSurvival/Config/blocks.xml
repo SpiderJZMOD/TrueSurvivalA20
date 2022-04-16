@@ -15202,7 +15202,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="officeChair01">
 	<property name="Material" value="Mleather"/>
 	<property name="Stacknumber" value="10"/>
-	<property name="Weight" value="40"/>
+	<property name="Weight" value="10"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="Entities/Furniture/officeChairPrefab"/>
@@ -15987,6 +15987,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="CreativeMode" value="Dev"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="wineBarrel" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15998,6 +16001,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="2,2,1"/>
 	<property name="ModelOffset" value=".5,.5,0"/>
 	<property name="CreativeMode" value="Dev"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="wineBarrel" count="0" prob="1" tool_category="ToolCrowbar"/>
+	<drop event="Destroy" name="wineBarrelSet" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16005,6 +16011,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="wineBarrel"/>
 	<property name="Model" value="Entities/Decor/BarrelPrefab"/>
 	<property name="CreativeMode" value="Dev"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="wineBarrel" count="0" prob="1" tool_category="ToolCrowbar"/>
+	<drop event="Destroy" name="wineBarrelPlain" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -16400,6 +16409,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedSmRecover" />   <!-- JZMOD -->
 </block>
@@ -16549,6 +16559,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedSmRecover" />   <!-- JZMOD -->
 </block>
@@ -16592,6 +16603,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceScrapIron" count="10,15" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="2600"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedLrgRecover"/><!-- JZMOD -->
 	<!--JZMOD CROWBAR-->
@@ -16624,6 +16636,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedMedRecover"/><!-- JZMOD -->
 	<!--JZMOD CROWBAR-->
@@ -16686,6 +16699,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_building,SC_decor"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedMedRecover"/><!-- JZMOD -->
 	<!--JZMOD CROWBAR-->
 	<drop event="Destroy" name="mattressFlatThin" count="1" prob="1" tool_category="ToolCrowbar"/>   
@@ -16723,6 +16737,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceScrapIron" count="5,25" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_commercial"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
@@ -20528,6 +20543,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
+	<drop event="Destroy" count="0"/>
 	<drop event="Harvest" name="jz_Stick" count="8,14" tag="oreWoodHarvest"/>
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 </block>
@@ -34532,7 +34548,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- JZMOD OTHER -->
 <block name="jz_StorageSack">
 	<property name="Extends" value="cntStorageGenericInsecure" param1="RepairItems,Destroy,Harvest"/>
-	<property name="Material" value="Mcloth" />
+	<property name="Material" value="Mtrash" />
 	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="ModelEntity"/>
@@ -38054,6 +38070,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedSmRecover" />
 </block>

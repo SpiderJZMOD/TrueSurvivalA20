@@ -6,7 +6,7 @@ Drop the Mods Folder into your 7 Days To Die main directory and start the game w
 Server Info:
 IP =   14.1.30.218
 Port = 28716
-PW =   spider3
+PW =   spiderTwo
 
 Game Settings For True Survival-
 Difficulty Setting- Adventurer

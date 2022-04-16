@@ -7,7 +7,10 @@ Key,English
 jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
-
+jz_BuffCharismaticNatureOneDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina" 
+jz_BuffCharismaticNatureTwoDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina\n+20% Damage"
+jz_BuffCharismaticNatureThreeDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina\n+20% Damage\n-10% Health Loss"
+jz_BuffCharismaticNatureFourDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina\n+20% Damage\n-10% Health Loss\n+5% Mobility"
 jz_BuffWarningStageScurvyDesc,"Your diet is lacking in foods that contain Essential Vitamins and it’s starting to affect your health badly. You are showing the warning signs of Scurvy. Eat more foods that contain Essential Vitamins to heal from this.\n\nEffects:\n5% Slower Stamina Recovery\n5% more Encumbrance Effect"
 jz_BuffIllnessScurvyDesc,"Your diet is severely lacking in Essential Vitamins and it’s making you ill. You are suffering from  Scurvy. Eat more foods that contain Essential Vitamins to heal from this.\n\nEffects:\n20% Slower Stamina Recovery\n20% more Encumbrance Effect"
 jz_BuffWarningStageDiarrheaDesc,"Your over consumption of foods containing Essential Vitamins is starting to affect your health badly. You are showing the warning signs of Diarrhea. Eat less foods that contain Essential Vitamins to heal from this.\n\nEffects:\n5% Faster Hydration Loss\nLow Chance to loudly Vomit and or stop and relieve yourself"
@@ -40,6 +43,7 @@ jz_BuffMedicalInfectionCureDisplayName,"Antibiotic Medicine"
 jz_BuffMedicalInfectionCureDisplayDesc,"You have taken [35bd00]Antibiotics[-] medicine which will reduce [f21b10]Medical Infection[-] that you may be suffering. You can stack [35bd00]Antibiotics[-] medicines to increase duration."
 jz_BuffMedicalInfection01UntreatedDesc,"You have a mild [f21b10]Medical Infection[-].\nIt will get worse until treated by [35bd00]Antibiotics[-].\nTend to your wounds timely or they could increase your infection. If the infection reaches 100% you will die and not be able to respawn."
 jz_BuffMedicalInfection01UntreatedName,"Mild Medical Infection"
+jz_BuffMedicalInfection01GetBetterName,"Treated Medical Infection"
 jz_BuffMedicalInfection01GetBetterDesc,"You have a treated mild [f21b10]Medical Infection[-]. Continue medication until infection is cleared up.\nTend to your wounds timely or they could increase your infection."
 jz_BuffMedicalInfection02UntreatedName,"Medical Infection"
 jz_BuffMedicalInfection02UntreatedDesc,"You have a serious [f21b10]Medical Infection[-]. If left untreated it could lead to full infection which can cause permanent player death. Take [35bd00]Antibiotics[-] as soon as possible.\nTend to your wounds timely or they could increase your infection. If the infection reaches 100% you will die and not be able to respawn.\n\nStamina Regeneration -25%"
@@ -825,6 +829,8 @@ jz_ToolRifleBushingWrench,"Rifle Bushing Wrench"
 jz_ToolRifleBushingWrenchDesc,"Used to craft level 5 quality items on the Rifle Workbench"
 jz_ToolRifleBarrelBorer,"Rifle Barrel Borer"
 jz_ToolRifleBarrelBorerDesc,"Used to craft level 6 quality items on the Rifle Workbench"
+jz_ToolElectricianScrewdriver,"Electrician Screwdriver"
+jz_ToolElectricianScrewdriverDesc,"Used to craft level 2 quality items on the Electronic Workbench"
 jz_ToolWireStripers,"Wire Stripers"
 jz_ToolWireStripersDesc,"Used to craft level 3 quality items on the Electronic Workbench"
 jz_ToolMagnifyingGlass,"Magnifying Glass"
@@ -1092,7 +1098,8 @@ foodHoney,"A Serving of Honey"
 jz_foodHoneyDesc,"Honey is one of mother nature's miracles. It gives you some energy, tastes great, and can be used to craft [35bd00]First Aid Bandage[-] or used to treat [f21b10]Medical Infection[-]."
 jz_schematicGeneralGroupDesc,"Reading the schematic will teach you how to craft this item."
 jz_SplashOfWater,Splash of Water
-jz_SplashOfWaterDesc,"Splash some water on your head to cool off for a while"jz_ProfessionFireFighterBook,The Fire Fighting Profession
+jz_SplashOfWaterDesc,"Splash some water on your head to cool off for a while"
+jz_ProfessionFireFighterBook,"The Fire Fighting Profession"
 jz_FiremanProfessionDesc,"All the knowledge needed to become a Fire Fighter.\n20% Block Dmg w/Fireaxes\n+5% Max Stamina\nRecipes-[35bd00]Plant Salve[-], [35bd00]First Aid Bandage[-], Molotov Cocktail, Firemans Axe Mod"
 jz_ProfessionPoliceOfficerBook,The Police Profession
 jz_CopProfessionDesc,"All the knowledge needed to become a Police Officer.\n10% Faster Reload & better Aim w/Pistol & Magnums\nRecipes- Pistol, Gun Oil, Stun Baton, Weapon Repair Kit"

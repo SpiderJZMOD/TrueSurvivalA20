@@ -110,8 +110,8 @@
 			<property name="MoveSpeedAggro" value=".5, 1.35"/>
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="ExperienceGain" value="750"/>
-			<property name="LootDropProb" value=".03"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<!--<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>  JZMOD REMOVED -->
                         <property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
 	                <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
 	                <property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
@@ -119,8 +119,8 @@
 	                <property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
 	                <property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/> 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="400"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="HealthMax" operation="base_set" value="300,900"/><!-- JZMOD ADDED -->
+				<passive_effect name="HealthMax" operation="perc_add" value="-.2,.15"/><!-- JZMOD ADDED -->
 			</effect_group>
 		</entity_class>	
 
@@ -133,8 +133,8 @@
 			<property name="MoveSpeedAggro" value=".5, 1.35"/>
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="ExperienceGain" value="750"/>
-			<property name="LootDropProb" value=".03"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<!--<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>JZMOD REMOVED -->
                         <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	                <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 	                <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -142,8 +142,8 @@
 	                <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
 	                <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="300"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="HealthMax" operation="base_set" value="250,1200"/><!-- JZMOD ADDED -->
+				<passive_effect name="HealthMax" operation="perc_add" value="-.2,.15"/><!-- JZMOD ADDED -->
 			</effect_group>
 		</entity_class>	
 
@@ -156,8 +156,8 @@
 			<property name="MoveSpeedAggro" value=".5, 1.35"/>
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="ExperienceGain" value="750"/>
-			<property name="LootDropProb" value=".03"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<!--<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>JZMOD REMOVED -->
                         <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	                <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
 	                <property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
@@ -165,8 +165,8 @@
 	                <property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
 	                <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="300"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="HealthMax" operation="base_set" value="300,1100"/><!-- JZMOD ADDED -->
+				<passive_effect name="HealthMax" operation="perc_add" value="-.2,.15"/><!-- JZMOD ADDED -->
 			</effect_group>
 		</entity_class>	
 
@@ -179,8 +179,8 @@
 			<property name="MoveSpeedAggro" value=".5, 1.35"/>
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="ExperienceGain" value="750"/>
-			<property name="LootDropProb" value=".03"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<!--<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>JZMOD REMOVED -->
                         <property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 	                <property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
 	                <property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
@@ -189,8 +189,8 @@
 	                <property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
 	                <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>  
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="400"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="HealthMax" operation="base_set" value="400,1200"/><!-- JZMOD ADDED -->
+				<passive_effect name="HealthMax" operation="perc_add" value="-.2,.15"/><!-- JZMOD ADDED -->
 			</effect_group>
 		</entity_class>	
 
@@ -203,8 +203,8 @@
 			<property name="MoveSpeedAggro" value=".5, 1.35"/>
 			<property name="HandItem" value="meleeHandZombieFeral2"/>
 			<property name="ExperienceGain" value="750"/>
-			<property name="LootDropProb" value=".03"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<!--<property name="LootDropProb" value=".03"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>JZMOD REMOVED -->
                         <property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 	                <property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
 	                <property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack"/>
@@ -213,8 +213,8 @@
 	                <property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
 	                <property name="SoundFootstepModifier" value="zombielumberjackfootstep"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="500"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+				<passive_effect name="HealthMax" operation="base_set" value="300,1200"/><!-- JZMOD ADDED -->
+				<passive_effect name="HealthMax" operation="perc_add" value="-.2,.15"/><!-- JZMOD ADDED -->
 			</effect_group>
 		</entity_class>	
 
