@@ -10970,7 +10970,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalInfection04"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZombieBiteTendedQ" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBite"/>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTended"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandage"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTendedB"/>  
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageB"/>
@@ -13450,7 +13450,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffLacerationLeftHandTendedB" name_key="Laceration Left Hand Bandage" remove_on_death="false" description_key="jz_BuffLacerationLeftHandTendedDesc" icon="LeftHandLacerationBandaged" >
+	<buff name="jz_BuffLacerationLeftHandTendedB" name_key="Laceration Left Hand Bandage" remove_on_death="false" description_key="jz_BuffLacerationLeftHandTendedDesc" icon="LeftHandBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".LacerationLeftHandTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -22871,7 +22871,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<requirement name="CVarCompare" cvar=".MedicalBandageTriage" operation="LT" value="1"/>
 			<requirement name="CVarCompare" cvar="$ZBiteBurnNeedsTreatment" operation="Equals" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBite"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTended"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedA"/>	
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZBiteBurnNeedsTreatment" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".MedicalBandageTriage" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffMedicalBandage"/>
@@ -24018,8 +24018,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconA"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconA">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24029,8 +24038,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconB"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconB">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24040,8 +24058,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconC"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconC">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24051,8 +24078,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconD"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconD">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24061,10 +24097,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconAA"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24073,10 +24117,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconBB"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24085,10 +24137,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconCC"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24097,10 +24157,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconDD"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIcond"/>
-			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="4"/></triggered_effect>
+		
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24109,11 +24177,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconAAA"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24122,11 +24197,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconBBB"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
 			
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24135,11 +24217,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconCCC"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDDD"/>
 		</effect_group>
 	</buff>
 	
@@ -24148,11 +24237,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteIconDDD"/>
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>	
+			
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCC"/>	
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteIconDD">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteTendedQ" operation="NotEquals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconAAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconBBB"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteIconCCC"/>	
 		</effect_group>
 	</buff>
 
@@ -24172,7 +24268,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="add" value="180"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="add" value="1"/>
 			<!-- Restarting -->
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTended"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTendedA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandage"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteTendedB"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageB"/>
@@ -24276,31 +24372,31 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTendedA" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite">
+	<buff name="jz_BuffZombieBiteTendedAA" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite">
 		<stack_type value="ignore"/>
 		<display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTendedB" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" icon_color="255,255,0">
+	<buff name="jz_BuffZombieBiteTendedAB" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTendedC" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" icon_color="255,0,0">
+	<buff name="jz_BuffZombieBiteTendedAC" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTendedD" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" icon_color="85,107,47">
+	<buff name="jz_BuffZombieBiteTendedAD" name_key="Zombie Bite Bandaged" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffZombieBiteTended" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" hidden="true">
+	<buff name="jz_BuffZombieBiteTendedA" name_key="Zombie Bite Bandaged" remove_on_death="false" description_key="jz_BuffZombieBiteTendedDesc" icon="BandagedBite" hidden="true">
 		<stack_type value="ignore"/>
 		 <display_value value=".ZombieBiteTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group> 
@@ -24311,22 +24407,27 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ZombieBiteTendingDurationDisplay" operation="set" value="@$ZombieBiteTendingDuration"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ZombieBiteTendingDuration" operation="subtract" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieBiteTendingDurationDisplay" operation="set" value="@$ZombieBiteTendingDuration"/>
-            <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteTended">
+            <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffZombieBiteTendedA">
                 <requirement name="CVarCompare" cvar="$ZombieBiteTendingDuration" operation="LTE" value="0"/>	</triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ZombieBiteTendingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ZombieBiteTendingDuration" operation="set" value="0"/>  
 			<!-- Icons -->
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedA">	
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedAA">	
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="LTE" value="900"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedB">
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedAB">
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="900"/>
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="LTE" value="1800"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedC">	
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedAC">	
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="1800"/>
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="LTE" value="2700"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedD">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="2700"/></triggered_effect>
-				
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedAD">	
+				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="2700"/></triggered_effect>			
+			<!-- Clean Up -->
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedAA"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedAB"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedAC"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedAD"/>
+			
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffZombieBiteDirtyBandage">
 				<requirement name="!HasBuff" buff="jz_BuffZombieBite"/></triggered_effect>
 		</effect_group>
@@ -24452,7 +24553,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<!-- Timer -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="set" value="2700">
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="2700"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="add" value="1"/>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="add" value="1"/>	
+			<!-- Medical Infection Trigger -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffMedicalInfectionTrigger">
+				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="Equals" value="3610"/></triggered_effect>			
 			<!--Cleanse Icons -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffZombieBiteDirtyBandageIconA">	
 				<requirement name="CVarCompare" cvar="$ZBiteNeedsCleansing" operation="Equals" value="1"/>
@@ -24553,8 +24657,13 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="1800"/>
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="LTE" value="2700"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedBD">	
-				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="2700"/></triggered_effect>
-				
+				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="2700"/></triggered_effect>	
+			<!-- Clean Up -->
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedBA"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedBB"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedBC"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedBD"/>
+			
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffZombieBiteDirtyBandageB">
 				<requirement name="!HasBuff" buff="jz_BuffZombieBite"/></triggered_effect>
 		</effect_group>
@@ -24616,7 +24725,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<!-- Timer -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="set" value="2700">
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="GT" value="2700"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="add" value="1"/>		
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ZombieBiteCounter" operation="add" value="1"/>	
+			<!-- Medical Infection Trigger -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffMedicalInfectionTrigger">
+				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="Equals" value="3610"/></triggered_effect>			
 			<!--Cleanse Icons -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffZombieBiteLastDirtyBandageIconA">	
 				<requirement name="CVarCompare" cvar="$ZombieBiteCounter" operation="LTE" value="900"/></triggered_effect>
