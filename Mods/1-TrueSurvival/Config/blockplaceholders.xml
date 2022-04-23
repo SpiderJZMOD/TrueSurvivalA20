@@ -136,41 +136,77 @@
 	</placeholder>
 
 	<placeholder name="carsRandomHelper">
-		<block name="cntCar03SedanDamage0v01" prob=".4"/>
-		<block name="cntCar03SedanDamage0v02" prob=".4"/>
-		<block name="cntCar03SedanDamage0v03" prob=".4"/>
-		<block name="cntCar03SedanDamage0v04" prob=".4"/>
-		<block name="cntCar03SedanDamage0v05" prob=".4"/>
-		<block name="cntCar03SedanDamage0v06" prob=".4"/>
-		<block name="cntCar03SedanDamage0v07" prob=".4"/>
-	
-		<block name="jz_VehiclesCaprise" prob="1"/>
-		<block name="jz_VehiclesHotRod" prob="1"/>
-		<block name="jz_VehiclesLingo" prob="1"/>
-		<block name="jz_VehiclesLovo" prob="1"/>
-		<block name="jz_VehiclesPassied" prob="1"/>
-		<block name="jz_VehiclesPickup" prob="1"/>
-		<block name="jz_VehiclesRedVan" prob="1"/>
-		<block name="jz_VehiclesWhiteCar" prob="1"/> 
-		<block name="cntCar03SedanDamage1v01" prob=".2"/>
-		<block name="cntCar03SedanDamage1v02" prob=".2"/>
-		<block name="cntCar03SedanDamage1v03" prob=".2"/>
-		<block name="cntCar03SedanDamage1v04" prob=".2"/>
-		<block name="cntCar03SedanDamage1v05" prob=".2"/>
-		<block name="cntCar03SedanDamage1v06" prob=".2"/>
-		<block name="cntCar03SedanDamage1v07" prob=".2"/>
-
-		<block name="cntCar03SedanDamage2v01" prob="1"/>
-		<block name="cntCar03SedanDamage2v02" prob="1"/>
-		<block name="cntCar03SedanDamage2v03" prob="1"/>
-		<block name="cntCar03SedanDamage2v04" prob="1"/>
-		<block name="cntCar03SedanDamage2v05" prob="1"/>
-		<block name="cntCar03SedanDamage2v06" prob="1"/>
-		<block name="cntCar03SedanDamage2v07" prob="1"/>
-		
-		<block name="jz_VehiclesRustyVan" prob="3"/>
-		<block name="jz_VehiclesWreckedGreenCar" prob="3"/>
-		<block name="jz_VehiclesWreckedPassied" prob="3"/>																																																					   
+		<block name="cntCar03SedanDamage0v01" prob="1.4"/>
+		<block name="cntCar03SedanDamage0v02" prob="1.4"/>
+		<block name="cntCar03SedanDamage0v03" prob="1.4"/>
+		<block name="cntCar03SedanDamage0v04" prob="1.4"/>
+		<block name="cntCar03SedanDamage0v05" prob="1.4"/>
+		<block name="cntCar03SedanDamage0v06" prob="1.4"/>
+		<block name="cntCar03SedanDamage0v07" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v01" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v02" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v03" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v04" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v05" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v06" prob="1.4"/>
+		<block name="cntCar03SedanDamage1v07" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v01" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v02" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v03" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v04" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v05" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v06" prob="1.4"/>
+		<block name="cntCar03SedanDamage2v07" prob="1.4"/>
+		<block name="jz_VehiclesRustyVan" prob="1.4"/>
+		<block name="jz_VehiclesCaprise" prob="1.4"/>
+		<block name="jz_VehiclesHotRod" prob="1.4"/>
+		<block name="jz_VehiclesPickup" prob="1.4"/>
+		<block name="jz_VehiclesWreckedCar" prob="1.4"/>
+		<block name="jz_VehiclesWreckedCarRed" prob="1.4"/>
+		<block name="jz_VehiclesWreckedCarBrown" prob="1.4"/>
+		<block name="jz_VehiclesWreckedCarBlue" prob="1.4"/>
+		<block name="jz_VehiclesWreckedCarGreen" prob="1.4"/>
+		<block name="jz_VehiclesWreckedCarBlack" prob="1.4"/>
+		<block name="jz_VehiclesVan" prob="1.4"/>
+		<block name="jz_VehiclesVanRed" prob="1.4"/>
+		<block name="jz_VehiclesVanBrown" prob="1.4"/>	
+		<block name="jz_VehiclesVanBlue" prob="1.4"/>
+		<block name="jz_VehiclesVanGreen" prob="1.4"/>
+		<block name="jz_VehiclesVanBlack" prob="1.4"/>	
+		<block name="jz_VehiclesPassied" prob="1.4"/>
+		<block name="jz_VehiclesWreckedPassied" prob="1.4"/>
+		<block name="jz_VehiclesPassiedRed" prob="1.4"/>
+		<block name="jz_VehiclesWreckedPassiedRed" prob="1.4"/>
+		<block name="jz_VehiclesPassiedBrown" prob="1.4"/>
+		<block name="jz_VehiclesWreckedPassiedBrown" prob="1.4"/>	
+		<block name="jz_VehiclesPassiedBlue" prob="1.4"/>
+		<block name="jz_VehiclesWreckedPassiedBlue" prob="1.4"/>
+		<block name="jz_VehiclesPassiedGreen" prob="1.4"/>	
+		<block name="jz_VehiclesWreckedPassiedGreen" prob="1.4"/>
+		<block name="jz_VehiclesPassiedBlack" prob="1.4"/>
+		<block name="jz_VehiclesWreckedPassiedBlack" prob="1.4"/>	
+		<block name="jz_VehiclesLovo" prob="1.4"/>
+		<block name="jz_VehiclesLovoRed" prob="1.4"/>
+		<block name="jz_VehiclesLovoBrown" prob="1.4"/>	
+		<block name="jz_VehiclesLovoBlue" prob="1.4"/>
+		<block name="jz_VehiclesLovoGreen" prob="1.4"/>
+		<block name="jz_VehiclesLovoBlack" prob="1.4"/>	
+		<block name="jz_VehiclesLingo" prob="1.4"/>
+		<block name="jz_VehiclesLingoRed" prob="1.4"/>
+		<block name="jz_VehiclesLingoBrown" prob="1.4"/>
+		<block name="jz_VehiclesLingoBlue" prob="1.4"/>
+		<block name="jz_VehiclesLingoGreen" prob="1.4"/>
+		<block name="jz_VehiclesLingoBlack" prob="1.4"/>
+		<block name="jz_VehiclesNiceCarRed" prob="1.4"/>
+		<block name="jz_VehiclesNiceCarBrown" prob="1.4"/>
+		<block name="jz_VehiclesNiceCarBlue" prob="1.4"/>
+		<block name="jz_VehiclesNiceCarGreen" prob="1.4"/>
+		<block name="jz_VehiclesNiceCarBlack" prob="1.4"/>
+		<block name="jz_VehiclesNiceCar" prob="1.4"/>
+		<block name="jz_VehiclesBuggy" prob="1.4"/>	
+		<block name="jz_VehiclesTaxi" prob="1.4"/>
+		<block name="jz_VehiclesPolice" prob="1.4"/>
+		<block name="jz_VehiclesTVVan" prob="1.4"/>	
 	</placeholder>
 
 	<placeholder name="carWrecksRandomHelper">
@@ -181,13 +217,22 @@
 		<block name="cntCar03SedanDamage2v05" prob="1"/>
 		<block name="cntCar03SedanDamage2v06" prob="1"/>
 		<block name="cntCar03SedanDamage2v07" prob="1"/>
-		<block name="cntCar03SedanDamage2v08" prob=".3"/>
-		
-		<block name="jz_VehiclesRustyVan" prob="3"/>
-		<block name="jz_VehiclesWreckedGreenCar" prob="3"/>
-		<block name="jz_VehiclesWreckedPassied" prob="3"/>
-		<block name="jz_VehiclesWreckedBigRigCab" prob="3"/>
-		<block name="jz_VehiclesWreckedRigTrailer" prob="3"/>  
+		<block name="cntCar03SedanDamage2v08" prob="1"/>
+		<block name="jz_VehiclesRustyVan" prob="1"/>
+		<block name="jz_VehiclesWreckedPassied" prob="1"/>
+		<block name="jz_VehiclesWreckedBigRigCab" prob="1"/>
+		<block name="jz_VehiclesWreckedRigTrailer" prob="1"/>  		
+		<block name="jz_VehiclesWreckedPassiedRed" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedBrown" prob="1"/>	
+		<block name="jz_VehiclesWreckedPassiedBlue" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedGreen" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedBlack" prob="1"/>	
+		<block name="jz_VehiclesWreckedCar" prob="1.47"/>
+		<block name="jz_VehiclesWreckedCarRed" prob="1"/>
+		<block name="jz_VehiclesWreckedCarBrown" prob="1"/>
+		<block name="jz_VehiclesWreckedCarBlue" prob="1"/>
+		<block name="jz_VehiclesWreckedCarGreen" prob="1"/>
+		<block name="jz_VehiclesWreckedCarBlack" prob="1"/>	
 	</placeholder>
 
 	<placeholder name="cars3WideRandomHelper">
@@ -227,9 +272,67 @@
 		<block name="air" prob="1"/>
 		<block name="jz_VehiclesPickup" prob="1"/>
 		<block name="air" prob="1"/>
-		<block name="jz_VehiclesRedVan" prob="1"/>
+		<block name="jz_VehiclesVanRed" prob="1"/>
 		<block name="air" prob="1"/>
-		<block name="jz_VehiclesWhiteCar" prob="1"/> 
+		<block name="jz_VehiclesNiceCar" prob="1"/> 
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanBrown" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanBlack" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedGreen" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoBrown" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoBlack" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesBuggy" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesTaxi" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPolice" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesTVVan" prob="1"/>
 	</placeholder>
 	
 	<!-- *** 2nd_Stage_Car_VS_Air -->
@@ -260,9 +363,67 @@
 		<block name="air" prob="1"/>
 		<block name="jz_VehiclesPickup" prob="1"/>
 		<block name="air" prob="1"/>
-		<block name="jz_VehiclesRedVan" prob="1"/>
+		<block name="jz_VehiclesVanRed" prob="1"/>
 		<block name="air" prob="1"/>
-		<block name="jz_VehiclesWhiteCar" prob="1"/> 
+		<block name="jz_VehiclesNiceCar" prob="1"/> 
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVan" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanBrown" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesVanBlack" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedGreen" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPassiedBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoBrown" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLovoBlack" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesLingoBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesNiceCarBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesBuggy" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesTaxi" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesPolice" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesTVVan" prob="1"/>
 	</placeholder>
 	
 	<!-- *** Wrecked_Car_VS_Air -->
@@ -283,9 +444,30 @@
 		<block name="air" prob="1"/>
 		<block name="jz_VehiclesRustyVan" prob="1"/>
 		<block name="air" prob="1"/>
-		<block name="jz_VehiclesWreckedGreenCar" prob="1"/>
+		<block name="jz_VehiclesWreckedCar" prob="1"/>
 		<block name="air" prob="1"/>
 		<block name="jz_VehiclesWreckedPassied" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedCarRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedCarBrown" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedCarBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedCarGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedCarBlack" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedRed" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedBrown" prob="1"/>	
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedBlue" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedGreen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="jz_VehiclesWreckedPassiedBlack" prob="1"/>	
+		<block name="air" prob="1"/>
 	</placeholder>
 
 	<!-- *** Short_Bus_50/50_Air -->
@@ -304,33 +486,36 @@
 
 	<!-- *** School_Bus_50/50_Air -->
 	<placeholder name="cntBusSchoolRandomHelper">
-		<block name="air" prob=".1"/>
-		<block name="cntBusSchool" prob=".1"/>
-		<block name="cntAmbulanceTruck01" prob=".1"/>
-		<block name="jz_VehiclesTaxi" prob=".1"/>
-		<block name="jz_VehiclesBigRigWhite" prob=".1"/>
-		<block name="jz_VehiclesFlatBed" prob=".1"/>
-		<block name="jz_VehiclesBigRigRed" prob=".1"/>
-		<block name="jz_VehiclesGarbageTruck" prob=".1"/>
-		<block name="jz_VehiclesTowTruck" prob=".1"/>
-		<block name="jz_VehicleOpen18Wheeler" prob=".1"/>
+		<block name="cntBusSchool" prob="7.14"/>
+		<block name="cntAmbulanceTruck01" prob="7.14"/>
+		<block name="jz_VehiclesTaxi" prob="7.14"/>
+		<block name="jz_VehiclesBigRigWhite" prob="7.14"/>
+		<block name="jz_VehiclesFlatBed" prob="7.14"/>
+		<block name="jz_VehiclesBigRigRed" prob="7.14"/>
+		<block name="jz_VehiclesGarbageTruck" prob="7.14"/>
+		<block name="jz_VehiclesTowTruck" prob="7.14"/>
+		<block name="jz_VehicleOpen18Wheeler" prob="7.14"/>
+		<block name="jz_VehiclesBus" prob="7.14"/>
+		<block name="jz_VehiclesBusBroken" prob="7.14"/>
+		<block name="jz_VehiclesCementTruck" prob="7.14"/>
+		<block name="jz_VehiclesWreckedBigRigCab" prob="7.14"/>
 	</placeholder>
 
 	<!-- *** Shuttle_Bus_50/50_Air -->
 	<placeholder name="cntBusShuttleRandomHelper">
-		<block name="air" prob=".08"/>
-		<block name="cntBusShuttle" prob=".08"/>
-		<block name="cntAmbulanceTruck01" prob=".08"/>
-		<block name="jz_VehiclesTaxi" prob=".08"/>
-		<block name="jz_VehiclesFlatBed" prob=".08"/>
-		<block name="jz_VehiclesGarbageTruck" prob=".08"/>
-		<block name="jz_VehiclesPolice" prob=".08"/>
-		<block name="jz_VehiclesTowTruck" prob=".08"/>
-		<block name="jz_VehiclesTVVan" prob=".08"/>
-		<block name="jz_VehiclesWreckedBigRigCab" prob=".07"/>
-		<block name="jz_VehiclesWreckedRigTrailer" prob=".07"/>
-		<block name="jz_VehiclesWreckedTanker" prob=".07"/>
-		<block name="jz_VehicleOpen18Wheeler" prob=".07"/>
+		<bloblock name="cntBusSchool" prob="7.14"/>
+		<block name="cntAmbulanceTruck01" prob="7.14"/>
+		<block name="jz_VehiclesTaxi" prob="7.14"/>
+		<block name="jz_VehiclesBigRigWhite" prob="7.14"/>
+		<block name="jz_VehiclesFlatBed" prob="7.14"/>
+		<block name="jz_VehiclesBigRigRed" prob="7.14"/>
+		<block name="jz_VehiclesGarbageTruck" prob="7.14"/>
+		<block name="jz_VehiclesTowTruck" prob="7.14"/>
+		<block name="jz_VehicleOpen18Wheeler" prob="7.14"/>
+		<block name="jz_VehiclesBus" prob="7.14"/>
+		<block name="jz_VehiclesBusBroken" prob="7.14"/>
+		<block name="jz_VehiclesCementTruck" prob="7.14"/>
+		<block name="jz_VehiclesWreckedBigRigCab" prob="7.14"/>
 	</placeholder>
 
 	<!-- *** City_Bus_50/50_Air -->
@@ -348,20 +533,30 @@
 		<block name="jz_VehiclesWreckedRigTrailer" prob=".07"/>
 		<block name="jz_VehiclesWreckedTanker" prob=".07"/>
 		<block name="jz_VehicleOpen18Wheeler" prob=".07"/>
+		<block name="jz_VehiclesBigRigRed" prob="7.14"/>
+		<block name="jz_VehiclesForkLift" prob="7.14"/>
+		<block name="jz_VehiclesBusBroken" prob="7.14"/>
+		<block name="jz_VehiclesBigRigWhite" prob="7.14"/>
+		<block name="jz_VehiclesCementTruck" prob="7.14"/>
+		<block name="jz_VehiclesForkLift" prob="7.14"/>
+		<block name="jz_VehiclesBulldozer" prob="7.14"/>
+		<block name="jz_VehiclesTractor" prob="7.14"/>
+		<block name="jz_VehiclesCoolerTrailer" prob="7.14"/>
+		
 	</placeholder>
 
 	<!-- *** Army_Truck_50/50_Open_Closed -->
 	<placeholder name="cntArmyTruckRandomLootHelper">
-		<block name="cntArmyTruckOpen" prob=".1"/>
-		<block name="cntArmyTruckClosed" prob=".1"/>
-		<block name="jz_VehiclesTank" prob=".1"/>
-		<block name="jz_VehiclesTank2" prob=".1"/>
-		<block name="jz_VehiclesWreckedTank" prob=".1"/>
-		<block name="jz_VehiclesAPC" prob=".1"/>
-		<block name="jz_VehiclesApache" prob=".1"/>										 
-		<block name="jz_VehiclesCrashedApache" prob=".1"/>
-		<block name="jz_VehiclesHeli" prob=".1"/>
-		<block name="jz_VehiclesCrashedHeli" prob=".1"/>
+		<block name="cntArmyTruckOpen" prob="10"/>
+		<block name="cntArmyTruckClosed" prob="10"/>
+		<block name="jz_VehiclesTankLocked" prob="10"/>
+		<block name="jz_VehiclesTank2Locked" prob="10"/>
+		<block name="jz_VehiclesWreckedTank" prob="10"/>
+		<block name="jz_VehiclesAPCLocked" prob="10"/>
+		<block name="jz_VehiclesApacheLocked" prob="10"/>										 
+		<block name="jz_VehiclesCrashedApache" prob="10"/>
+		<block name="jz_VehiclesHeliLocked" prob="10"/>
+		<block name="jz_VehiclesCrashedHeli" prob="10"/>
 	</placeholder>
 
 	<!-- *** Ambulance_50/50_Air -->
@@ -1614,14 +1809,11 @@
 	<!-- JZMOD TRUE SURVIVAL ADDED -->
 	
 	<placeholder name="jz_MilitaryVehicleRandomHelper">
-		<block name="jz_VehiclesTank" prob="0.9"/>
-		<block name="jz_VehiclesTank2" prob="0.9"/>
-		<block name="jz_VehiclesWreckedTank" prob="1"/>
-		<block name="jz_VehiclesAPC" prob="0.9"/>
-		<block name="jz_VehiclesApache" prob="0.6"/>											 
-		<block name="jz_VehiclesCrashedApache" prob="0.3"/>
-		<block name="jz_VehiclesHeli" prob="0.6"/>
-		<block name="jz_VehiclesCrashedHeli" prob="0.3"/>
+		<block name="jz_VehiclesTankLocked" prob="0.9"/>
+		<block name="jz_VehiclesTank2Locked" prob="0.9"/>
+		<block name="jz_VehiclesAPCLocked" prob="0.9"/>
+		<block name="jz_VehiclesApacheLocked" prob="0.6"/>											 
+		<block name="jz_VehiclesHeliLocked" prob="0.6"/>
 	</placeholder>
 		
 	<placeholder name="jz_CommercialVehicleRandomHelper">

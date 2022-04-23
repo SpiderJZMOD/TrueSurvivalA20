@@ -2572,16 +2572,7 @@ If there is no hit the default quality is used.
 
 <lootgroup name="junkBookPile" >
 	<item name="jz_PlasticCDs" />
-	<item name="jz_PlasticStatue" />
-	<item name="jz_IronStatue" />
-	<item name="jz_SteelStatue" />
-	<item name="jz_StoneStatue" />
-	<item name="jz_StonePaperWeight" />
 	<item name="jz_PaperReceipt" />
-	<item name="jz_GlassStatue" />
-	<item name="jz_BrassStatue" />
-	<item name="jz_LeadStatue" />
-	<item name="jz_LeadPaperWeight" />
 	<item name="jz_PaperOldPapers" />
 	<item name="jz_PaperMagazine" />
 	<item name="jz_PaperBook" />
@@ -4456,6 +4447,7 @@ If there is no hit the default quality is used.
 	<item name="jz_Insecticide" count="1,12" />
 	<item name="meleeToolPaintTool"  />
 	<item name="jz_Crowbar" />
+	<item name="jz_Screwdriver"/>
 </lootgroup>
 
 <!-- *** T2_Tool_Loot -->
@@ -6796,6 +6788,7 @@ If there is no hit the default quality is used.
 <!-- *** Car_Loot -->
 <lootgroup name="groupCars01">
 	<item group="groupJunkNoBMats" loot_prob_template="high"/>
+	<item group="toolRepairs" loot_prob_template="low"/>
 	<item group="groupAutomotive" loot_prob_template="low"/>
 </lootgroup>
 
@@ -7330,7 +7323,7 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupCrackabookShelves" count="all">
 	<item group="groupCrackabookShelves01" count="1"/>
-	<item group="groupCrackabookShelves02" loot_prob_template="veryLow" force_prob="true"/>
+	<item group="groupCrackabookShelves02" loot_prob_template="Low" force_prob="true"/>
 </lootgroup>
 
 <!-- *** Crackabook_Crate -->

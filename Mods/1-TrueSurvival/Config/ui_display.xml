@@ -582,6 +582,7 @@ All the perk tags:
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dHypothermalResist" title_key="statHypothermalResist" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
 		</item_display_info>
 
 		<item_display_info display_type="foodWaterOnlyRaw" display_group="groupConsumables">

@@ -89,43 +89,38 @@ jz_buffEncumberedInvDesc,"Moving becomes harder when you are carrying too many i
 jz_BuffHealthyDietDesc,"Because your eating a very balanced diet you gain these benefits\n\n- Naturally healing when full\n- Able to gain Wellness from food\n- Able to gain Health from food\n- +1 Stamina Per 3 seconds\n- +10% Movement Speed"
 jz_BuffBalancedDietDesc,"Because your eating a balanced diet you gain these benefits\n-Able to gain Wellness from food\n-Able to gain Health from food"
 jz_BuffGoodDietDesc,"Because your eating a more balanced diet you gain these benefits\n-Able to gain Health from food"
-jz_BuffLacerationLeftFootDesc,"You have recived a deep cut on your left foot. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationLeftFootHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
+
+jz_BuffLacerationPart1BleedDesc,"You have recived a deep cut. Use a [35bd00]Bandage[-] to stop the bleeding. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationLeftFootHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
+
+jz_BuffLacerationPart2SutureDesc,"To close your deep cut you need a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationLeftFootHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
+
 jz_BuffLacerationLeftFootStitchedDesc,"The laceration on your left foot is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationLeftFootDirtyBandageDesc,"The laceration on your left foot needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationLeftFootTendedDesc,"The laceration on your left foot is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationRightFootDesc,"You have recived a deep cut on your right foot. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationRightFootHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationRightFootStitchedDesc,"The laceration on your right foot is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationRightFootDirtyBandageDesc,"The laceration on your right foot needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationRightFootTendedDesc,"The laceration on your right foot is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationLeftLegDesc,"You have recived a deep cut on your left leg. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationLeftLegHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationLeftLegStitchedDesc,"The laceration on your left leg is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationLeftLegDirtyBandageDesc,"The laceration on your left leg needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationLeftLegTendedDesc,"The laceration on your left leg is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationRightLegDesc,"You have recived a deep cut on your right leg. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationRightLegHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationRightLegStitchedDesc,"The laceration on your right leg is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationRightLegDirtyBandageDesc,"The laceration on your right leg needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationRightLegTendedDesc,"The laceration on your right leg is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationLeftArmDesc,"You have recived a deep cut on your left arm. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationLeftArmHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationLeftArmStitchedDesc,"The laceration on your left arm is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationLeftArmDirtyBandageDesc,"The laceration on your left arm needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationLeftArmTendedDesc,"The laceration on your left arm is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationRightArmDesc,"You have recived a deep cut on your right arm. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationRightArmHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationRightArmStitchedDesc,"The laceration on your right arm is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationRightArmDirtyBandageDesc,"The laceration on your right arm needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationRightArmTendedDesc,"The laceration on your right arm is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationLeftHandDesc,"You have recived a deep cut on your left hand. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationLeftHandHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationLeftHandStitchedDesc,"The laceration on your left hand is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationLeftHandDirtyBandageDesc,"The laceration on your left hand needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationLeftHandTendedDesc,"The laceration on your left hand is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationRightHandDesc,"You have recived a deep cut on your right hand. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationRightHandHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationRightHandStitchedDesc,"The laceration on your right hand is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationRightHandDirtyBandageDesc,"The laceration on your right hand needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationRightHandTendedDesc,"The laceration on your right hand is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationStomachDesc,"You have recived a deep cut on your stomach. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationStomachHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationStomachStitchedDesc,"The laceration on your stomach is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationStomachDirtyBandageDesc,"The laceration on your stomach needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationStomachTendedDesc,"The laceration on your stomach is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
-jz_BuffLacerationNeckDesc,"You have recived a deep cut on your neck. Use a [35bd00]Bandage[-] to stop the bleeding and a [35bd00]Suture Kit[-] to close the wound. If its not treated it will lead to a [f21b10]Medical Infection[-].\n\nEffects:\n- 8% Slower Mobility\n-{cvar(.lacerationNeckHealthBlockage:0)}% Health Blockage\n- 5% Less Bleed Resistance"
 jz_BuffLacerationNeckStitchedDesc,"The laceration on your neck is treated for now but it will need a new [35bd00]Bandage[-] soon.\n\nEffects:\n- 4% Slower Mobility\n- 3% Less Bleed Resistance"
 jz_BuffLacerationNeckDirtyBandageDesc,"The laceration on your neck needs a new [35bd00]Bandage[-] to finish healing. If its not treated it will lead to a [f21b10]Medical Infection[-].\n\nEffects:\n- 6% Slower Mobility\n- 4% Less Bleed Resistance"
 jz_BuffLacerationNeckTendedDesc,"The laceration on your neck is treated. Try not to hurt it so it will heal.\n\nEffects:\n- 3% Slower Mobility\n- 2% Less Bleed Resistance"
@@ -292,8 +287,6 @@ jz_WallOvenCampfire,"Wall Oven Campfire"
 jz_OldStoveCampfire,"Old Stove Campfire"
 jz_ModernStoveCampfire,"Modern Stove Campfire"
 jz_ToilteCampfire,"Toilte Campfire"
-
-
 jz_SimpleScaffoldingBlock,"Scaffolding Block"
 jz_SimpleScaffoldingBlockDesc,"Simple scaffolding that can be picked back up when placed"
 jz_SimpleConcreteShapesBlock,"Simple Concrete Shapes" 
@@ -337,8 +330,6 @@ jz_TrapWoodenSpikeStarter,Spike Trap Starter
 setUpASpikeTrapDesc,"Place and upgrade with Sticks using a Stoneaxe to build a Spike Trap. Repair with Sticks."
 jz_StorageSack,"Storage Sack"
 jz_StorageSackDesc,"A basic storage container with no lock"
-
-
 jz_GoreBlockHumanBones,"Decaying Body"
 jz_GoreBlockHumanBones2,"Decaying Body"
 jz_GoreBlockHumanBones3,"Decaying Body"
@@ -360,7 +351,7 @@ jz_VehiclesLovo,Abandoned Vehicle
 jz_VehiclesPassied,Abandoned Vehicle
 jz_VehiclesPickup,Abandoned Vehicle
 jz_VehiclesPolice,Police Car
-jz_VehiclesRedVan,Abandoned Vehicle
+jz_VehiclesVan,Abandoned Vehicle
 jz_VehiclesRustyVan,Abandoned Vehicle
 jz_VehiclesTaxi,Taxi
 jz_VehiclesTowTruck,Tow Truck
@@ -368,7 +359,7 @@ jz_VehiclesTractor,Tractor
 jz_VehiclesTVVan,TV Van
 jz_VehiclesWhiteCar,Abandoned Vehicle
 jz_VehiclesWreckedPassied,Abandoned Vehicle
-jz_VehiclesWreckedGreenCar,Abandoned Vehicle
+jz_VehiclesWreckedCar,Abandoned Vehicle
 jz_VehiclesBigRigWhite,Big Rig
 jz_VehicleOpen18Wheeler,Trailer
 jz_VehiclesCementTruck,Cement Truck
@@ -377,7 +368,51 @@ jz_VehiclesFlatBed,Flat Bed
 jz_VehiclesBigRigRed,Big Rig
 jz_VehiclesWreckedBigRigCab,Big Rig
 jz_VehiclesWreckedRigTrailer,Big Rig
-jz_VehiclesWrecked,Tanker,Tanker
+jz_VehiclesBuggy,Abandoned Vehicle
+jz_VehiclesWreckedCarRed,Abandoned Vehicle
+jz_VehiclesWreckedCarBrown,Abandoned Vehicle
+jz_VehiclesWreckedCarBlue,Abandoned Vehicle
+jz_VehiclesWreckedCarGreen,Abandoned Vehicle
+jz_VehiclesWreckedCarBlack,Abandoned Vehicle
+jz_VehiclesVanRed,Abandoned Vehicle
+jz_VehiclesVanBrown,Abandoned Vehicle
+jz_VehiclesVanBlue,Abandoned Vehicle
+jz_VehiclesVanGreen,Abandoned Vehicle
+jz_VehiclesVanBlack,Abandoned Vehicle
+jz_VehiclesPassiedRed,Abandoned Vehicle
+jz_VehiclesWreckedPassiedRed,Abandoned Vehicle
+jz_VehiclesPassiedBrown,Abandoned Vehicle
+jz_VehiclesWreckedPassiedBrown,Abandoned Vehicle
+jz_VehiclesPassiedBlue,Abandoned Vehicle
+jz_VehiclesWreckedPassiedBlue,Abandoned Vehicle
+jz_VehiclesPassiedGreen,Abandoned Vehicle
+jz_VehiclesWreckedPassiedGreen,Abandoned Vehicle
+jz_VehiclesPassiedBlack,Abandoned Vehicle
+jz_VehiclesWreckedPassiedBlack,Abandoned Vehicle
+jz_VehiclesLovoRed,Abandoned Vehicle
+jz_VehiclesLovoBrown,Abandoned Vehicle
+jz_VehiclesLovoBlue,Abandoned Vehicle
+jz_VehiclesLovoGreen,Abandoned Vehicle
+jz_VehiclesLovoBlack,Abandoned Vehicle
+jz_VehiclesLingoRed,Abandoned Vehicle
+jz_VehiclesLingoBrown,Abandoned Vehicle
+jz_VehiclesLingoBlue,Abandoned Vehicle
+jz_VehiclesLingoGreen,Abandoned Vehicle
+jz_VehiclesLingoBlack,Abandoned Vehicle
+jz_VehiclesNiceCar,Abandoned Vehicle
+jz_VehiclesNiceCarRed,Abandoned Vehicle
+jz_VehiclesNiceCarBrown,Abandoned Vehicle
+jz_VehiclesNiceCarBlue,Abandoned Vehicle
+jz_VehiclesNiceCarGreen,Abandoned Vehicle
+jz_VehiclesNiceCarBlack,Abandoned Vehicle
+jz_VehiclesBus,Abandoned Buss
+jz_VehiclesTankLocked,Locked Tank
+jz_VehiclesWreckedTanker,Abandoned Tanker
+jz_VehiclesTank2Locked,Locked Tank
+jz_VehiclesAPCLocked,Locked APC
+jz_VehiclesApacheLocked,Locked Apache
+jz_VehiclesHeliLocked,Locked Heli
+jz_VehiclesBusBroken,Abandoned Buss
 jz_DecoWaterBottle,Water Bottle
 jz_FoodChips,Chips
 jz_VehiclesTank,Tank
@@ -2066,18 +2101,32 @@ jz_loadingTipTSCrowbar,"A Crowbar can be used to pick up world blocks that playe
 jz_loadingTipTSCrowbar_title,"True Survival: Crowbar"
 jz_loadingTipTSSpoiling,"Foods will spoil over time and turn into a spoiled version. These spoiled items can be scrapped for Biomass that can be used in fertilizer. Prepared drinks will also spoil and revert to water over time. Placing spoiling items in a Cooler will slow their spoiling speed. Placing them in a refrigerator will slow down the spoiling even more." 
 jz_loadingTipTSSpoiling_title,"True Survival: Spoilage"
-jz_loadingTipTSCooking,"Raw food items can be scrapped into Servings. Depending on the food type it may take more than 1 item in the stack to scrap it. There are 3 types of Serving  Fruit, Veggie and Protein. These items can be used to cook many filling nutritious meals."
+jz_loadingTipTSCooking,"Raw food items can be scrapped into Servings. Depending on the food type it may take more than 1 item in the stack to scrap it. There are 3 types of Serving  Fruit, Veggie and Meat. These items can be used to cook many filling nutritious meals."
 jz_loadingTipTSCooking_title,"True Survival: Food Servings"
-
-
+jz_loadingTipTSCampfire,"Campfire Kits are easy to make and let you upgrade Grills, Stoves, Ovens and Toilets into campfire workstations. All you need is a Lighter and some FireWood."
+jz_loadingTipTSCampfire_title,"True Survival: Campfire Kits"
+jz_loadingTipTSFirstAidKit,"First Aid Kits are great for saving inventory space and quick medical care. They contain many medical items that can be retrieved by unpacking it or you can use it on yourself using up all the contained items at once."
+jz_loadingTipTSFirstAidKit_title,"True Survival: First Aid Kits"
 
 JOURNAL_______________________________TIPS,JOURNAL_______________________________TIPS
-TrueSurvivalNutritionTip_title,"True Survival: Nutrition"
-TrueSurvivalNutritionTip,"Staying healthy is key to survival. All food has some form of nutritional value, to find the value of any given consumable look in the Stat Tab of the item.\nThere are 4 nutrition groups;\nProtein - Protein Servings, Raw Meat\nFiber - Vegetable Servings, Raw Vegetables\nCarbohydrates - Breads, anything with grains\nEssential Vitamins - Fruit Servings, Raw Fruits\n\nAs long as your lowest nutritional value is:\n<1.00 - The longer any nutrition stat is below 1.0 the worse you diet will get. Starting at Bad Diet then Vitamin Deficiency and last Malnourished, during these stages you will slowly start dieing from lack of nutrition. To fix this check your Core Character Stats and see what nutrition stats are below 1.0 and consume things to improve them.\n>1.00 - Balanced Diet - will allow you to gain health from consumables\n>2.00 - Good Diet - will allow you to gain health and Wellness from consumables and gain 1 Stamina every 3 seconds\n>3.00 - Healthy Diet - will allow you to gain health and Wellness from consumables, gain 2 Stamina every 3 seconds, a 20% speed increase and grant Natural Healing when full."
-TrueSurvivalFoodServingsTip_title,"True Survival: Food Servings"
-TrueSurvivalFoodServingsTip,"All raw food items can be scrapped into food servings.\nDepending on the food type it may take more than 1 item in the stack to scrap it.\nSome canned foods may be scrapped to their respective food servings."
-ENTITYCLASS_______________________________XML,ENTITYCLASS_______________________________XML
+TrueSurvivalNutritionJournal_title,"True Survival Nutrition"
+TrueSurvivalNutritionJournal,"Most foods have added nutrition stats. They include Protein from Meat,  Fiber from Vegetables and Essential Vitamins from Fruit. These stats can be found on the foods stat info screen. Your lowest nutrition stat will determine your Diet so you will need to balance your nutrition consumption to stay healthy. To view your current nutrition stats open your character info screen and they will be located at the bottom. If any of your nutrition stats get too low or too high you will suffer unique illnesses depending on the stat and the level. To cure these illnesses either refrain from eating the instigating nutrition if caused by a high level or consume more if caused by a low level."
+TrueSurvivalDamageJournal_title,"True Survival Damage"
+TrueSurvivalDamageJournal,"Damage works a little differently in True Survival. You will hurt yourself if you hit things with your bare hands so use tools and weapons. The material that your tools and weapons are made out of will determine how well they damage other materials. Damage progression is as follows - Wood<Stone<Iron<Steel - Lower materials will do little to no damage to higher materials. Traps and fire damage Zombies as normal but you can only damage Zombies with hits to the head."
+TrueSurvivalHuntingJournal_title,"True Survival Hunting"
+TrueSurvivalHuntingJournal,"You will gain xp by hitting, killing and butchering non zombie animals. You can track your progression in your Skill Menu under Hunting. As you level each hunting skill you will receive more and better parts harvesting the animal. Once you have mastered a hunting skill you will be able to track them if they are nearby when you crouch."
+TrueSurvivalRestAndHealingJournal_title,"True Survival Rest and Healing"
+TrueSurvivalRestAndHealingJournal,"Staying awake and alive is key in True Survival. As you play your Fatigue Level will rise slowly, lowering your max stamina and making you tire more quickly. To lower your Fatigue Level and raise your max stamina you will need to Rest on furniture or Sleep in beds. Be aware that you won't be able to rest or sleep while zombies are close by. The comfortableness of the furniture or bed will affect how fast your stats improve. While medical items will not heal you, sleeping in beds will raise your health slowly. The only other way to heal your health is eating foods or Natural Healing. Sleeping will also speed up healing on many injuries like Sprains and Bandaged Injuries and it will increase crafting speed."
+TrueSurvivalDeadIsDeadJournal_title,"True Survival Dead is Dead"
+TrueSurvivalDeadIsDeadJournal,"In True Survival death is not an escape from the consequences of your failures. All injuries, illnesses and effects except Bleeds will persist through death and every time you die you will lose 10 Wellness bringing you closer to true death. True Death only happens when you either reach 0 Wellness or a Medical or Z-Virus Infection reaches 100%. Only then does your struggle end and your progression will be deleted and you will respawn as a fresh player." 
+TrueSurvivalZVirusJournal_title,"True Survival Z-Virus"
+TrueSurvivalZVirusJournal,"The only way to catch the Z-Virus is to be bitten by an Infected. In order for an Infected to bite you they must first Grab you. Your chance to be grabbed is based on your current  Health, Stamina, Fatigue and Diet. Once grabbed you can delay a bite from an Infected by a melee strike to their head. If bitten you will catch the Z-Virus. Antibiotics will not treat the Z-Virus, it can only be treated with Antiviral pills found in loot. At 100% infected your Wellness will drop to 0 and you will be Dead is Dead."
+TrueSurvivalComprehensiveInjuriesJournal_title,"True Survival Comprehensive Injuries"
+TrueSurvivalComprehensiveInjuriesJournal,"Lacerations, Gashes, Burns, Sprains and Breaks can affect 10 locations on your body and persist through death. When afflicted you will need to treat the injury quickly, failure to do so will lead to a Medical Infection. Read each injuries description for instructions on how to treat it and keep an eye on treated injuries for when they need to be re-treated. If your injury causes a Medical infection you will need to find or craft Antibiotics, Herbal Antibiotics or Honey to treat it. Failing to treat injuries while you have a Medical Infection can cause the infection to speed up. At 100% infected your Wellness will drop to 0 and you will be Dead is Dead."
+TrueSurvivalBuildingConstructionJournal_title,"True Survival Building Construction"
+TrueSurvivalBuildingConstructionJournal,"To master construction you will need to complete four skills. Wood, Cobblestone, Concrete and Iron Building. Until you learn how to create the basic materials for each building type you will have to harvest the resources from world building blocks using the correct tool. The Claw Hammer harvests and uses Planks. The Mason Hammer harvests and uses Cobblestones. The Concrete Sledge harvests and uses Concrete Mix. The Wrench harvests and uses Iron Sheet Metal. The Welder harvests and uses Steel Sheet Metal. The only way to learn Steel Building is to master all four of the other building skills."
 
+ENTITYCLASS_______________________________XML,ENTITYCLASS_______________________________XML
 jz_ZombieMoeExplode,"Moe"
 jz_ZombieMoeFeralExplode,"Feral Moe"
 jz_ZombieMoeRadiatedExplode,"Radiated Moe"

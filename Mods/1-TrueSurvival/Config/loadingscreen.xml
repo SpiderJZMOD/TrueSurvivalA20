@@ -50,7 +50,8 @@
         <tip key="jz_loadingTipTSCrowbar" />
         <tip key="jz_loadingTipTSSpoiling" />
         <tip key="jz_loadingTipTSCooking" />
-      
+		<tip key="jz_loadingTipTSCampfire" />
+		<tip key="jz_loadingTipTSFirstAidKit" />
 	</tips>
     </set>
 </configs> 

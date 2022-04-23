@@ -11,7 +11,7 @@
 	A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level
 	A16: 8300 XP for level 1, total cumulative of 11MXP
 	A17: 11931 XP for level 1, total cumulative of 67MXP
-	A18: 10000 XP for level 1, total cumulative of 11.1MXP at lvl 100, Some 48.5MXP for lvl 300 -->
+	A18: 10000 XP for level 1, total cumulative of 11.1MXP at lvl 100, Some 48.5MXP for lvl 300  -->
 </level>
 
 <attributes min_level="0" max_level="0" base_skill_point_cost="0" >
@@ -4463,7 +4463,7 @@
 		</effect_group>
 	</perk>
 	<!-- Flagstone/Brick Frame Building-->
-	<perk name="jz_StoneBuildingSkill" parent="jz_BuildingSkills" min_level="0" max_level="4" base_skill_point_cost="0" name_key="Stone Building" desc_key="jz_StoneBuildingSkillDesc" icon="ui_game_symbol_brick">
+	<perk name="jz_StoneBuildingSkill" parent="jz_BuildingSkills" min_level="0" max_level="2" base_skill_point_cost="0" name_key="Stone Building" desc_key="jz_StoneBuildingSkillDesc" icon="ui_game_symbol_brick">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="Equals" value="1"/>
 			<requirement name="ProgressionLevel" progression_name="SP_CobblestoneSchematic" operation="LT" value="1"/>
@@ -4509,7 +4509,7 @@
 		</effect_group>
 	</perk>
 	<!-- Iron Frame Building-->
-	<perk name="jz_IronBuildingSkill" parent="jz_BuildingSkills" min_level="0" max_level="3" base_skill_point_cost="0" name_key="Iron Building" desc_key="jz_IronBuildingSkillDesc" icon="ui_game_symbol_forge">
+	<perk name="jz_IronBuildingSkill" parent="jz_BuildingSkills" min_level="0" max_level="2" base_skill_point_cost="0" name_key="Iron Building" desc_key="jz_IronBuildingSkillDesc" icon="ui_game_symbol_forge">
 		<effect_group>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_IronSheetMetalSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="Equals" value="1"/>
@@ -4556,7 +4556,7 @@
 		</effect_group>
 	</perk>
 	<!-- Concrete Frame Building-->
-	<perk name="jz_ConcreteBuildingSkill" parent="jz_BuildingSkills" min_level="0" max_level="3" base_skill_point_cost="0" name_key="Concrete Building" desc_key="jz_ConcreteBuildingSkillDesc" icon="ui_game_symbol_cement">
+	<perk name="jz_ConcreteBuildingSkill" parent="jz_BuildingSkills" min_level="0" max_level="2" base_skill_point_cost="0" name_key="Concrete Building" desc_key="jz_ConcreteBuildingSkillDesc" icon="ui_game_symbol_cement">
 		<effect_group>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ConcreteMixSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="Equals" value="1"/>
