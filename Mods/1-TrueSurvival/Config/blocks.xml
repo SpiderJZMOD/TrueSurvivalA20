@@ -17493,7 +17493,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property class="RepairItems">
-		<property name="resourceForgedIronIron" value="2"/>
+		<property name="resourceForgedIron" value="2"/>
 		<property name="resourceMechanicalParts" value="2"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
@@ -17517,7 +17517,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterDontBlock" value="true"/>
 	<property class="RepairItems">
 		<property name="resourceElectricParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
@@ -17561,7 +17561,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceElectricParts" value="2"/>
 		<property name="resourceMechanicalParts" value="3"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
@@ -17790,7 +17790,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
@@ -17833,7 +17833,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
@@ -18299,14 +18299,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketCornerEmpty1">
-	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyCornerPrefab"/>
 	<property name="SortOrder1" value="fh14"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketCornerEmpty2">
-	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyCorner2Prefab"/>
 	<property name="SortOrder1" value="fh15"/>
 </block>
@@ -18325,14 +18325,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketEmpty1">
-	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmpty2Prefab"/>
 	<property name="SortOrder1" value="fh16"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
 <block name="cntStoreProduceBasketEmpty2">
-	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint"/>
+	<property name="Extends" value="cntStoreProduceBasketCornerRandomLootHelper" param1="CustomIcon,CustomIconTint,DisplayInfo"/>
 	<property name="Model" value="Entities/Commercial/ProduceBasketEmptyPrefab"/>
 	<property name="SortOrder1" value="fh17"/>
 </block>
@@ -21374,7 +21374,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Commercial/handTruckPrefab"/>
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIronIron" value="1"/>
+		<property name="resourceForgedIron" value="1"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
@@ -24319,7 +24319,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="candelabraLight">
-	<property name="Extends" value="decoEntityMetalMaster" param1="Harvest,RepairItems"/>
+	<property name="Extends" value="decoEntityMetalMaster" param1="RepairItems"/>
 	<property name="Material" value="Mbrass"/>
 	<property name="MeltTimePerUnit" value=".4"/>
 	<property name="Weight" value="83"/>
@@ -24331,6 +24331,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceScrapBrass" value="50"/>
 	</property>
+	<dropextendsoff/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapBrass" count="15,25" tag="salvageHarvest"/>
 	<drop event="Destroy" name="candle" count="1,3"/>

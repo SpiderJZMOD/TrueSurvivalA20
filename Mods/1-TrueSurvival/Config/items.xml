@@ -12518,7 +12518,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="medicalBandage">
-	<property name="Tags" value="medical"/>
+	<property name="Tags" value="medical,stopsBleeding"/>
 	<property name="DisplayType" value="medical"/>
 	<property name="HoldType" value="64"/>
 	<property name="Meshfile" value="#Other/Items?Health/bandage.fbx"/>

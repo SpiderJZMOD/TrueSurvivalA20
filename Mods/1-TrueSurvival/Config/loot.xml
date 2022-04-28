@@ -298,7 +298,55 @@
 		<loot level="129" prob="0.02"/>
 		<loot level="130,999999" prob="0"/>
 	</lootprobtemplate>
-
+	
+	<lootprobtemplate name="ProbT1Cap">
+		<loot level="0,41" prob="0"/>
+		<loot level="42" prob="0.04"/>
+		<loot level="43" prob="0.07"/>
+		<loot level="44" prob="0.09"/>
+		<loot level="45" prob="0.11"/>
+		<loot level="46" prob="0.13"/>
+		<loot level="47" prob="0.16"/>
+		<loot level="48" prob="0.18"/>
+		<loot level="49" prob="0.20"/>
+		<loot level="50" prob="0.22"/>
+		<loot level="51" prob="0.24"/>
+		<loot level="52" prob="0.27"/>
+		<loot level="53" prob="0.29"/>
+		<loot level="54" prob="0.31"/>
+		<loot level="55" prob="0.33"/>
+		<loot level="56" prob="0.36"/>
+		<loot level="57" prob="0.38"/>
+		<loot level="58" prob="0.40"/>
+		<loot level="59" prob="0.42"/>
+		<loot level="60" prob="0.44"/>
+		<loot level="61" prob="0.47"/>
+		<loot level="62" prob="0.49"/>
+		<loot level="63" prob="0.51"/>
+		<loot level="64" prob="0.53"/>
+		<loot level="65" prob="0.56"/>
+		<loot level="66" prob="0.58"/>
+		<loot level="67" prob="0.60"/>
+		<loot level="68" prob="0.62"/>
+		<loot level="69" prob="0.64"/>
+		<loot level="70" prob="0.67"/>
+		<loot level="71" prob="0.69"/>
+		<loot level="72" prob="0.71"/>
+		<loot level="73" prob="0.73"/>
+		<loot level="74" prob="0.76"/>
+		<loot level="75" prob="0.78"/>
+		<loot level="76" prob="0.80"/>
+		<loot level="77" prob="0.82"/>
+		<loot level="78" prob="0.84"/>
+		<loot level="79" prob="0.87"/>
+		<loot level="80" prob="0.89"/>
+		<loot level="81" prob="0.91"/>
+		<loot level="82" prob="0.93"/>
+		<loot level="83" prob="0.96"/>
+		<loot level="84" prob="0.98"/>
+		<loot level="85,999999" prob="1"/>
+	</lootprobtemplate>
+	
 	<lootprobtemplate name="ProbT2">
 		<loot level="0,101" prob="0"/>
 		<loot level="102" prob="0.03"/>
@@ -2782,12 +2830,12 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupArmorScaled">
-	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1"/>
+	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1Cap"/>
 	<item group="groupArmorT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
 <lootgroup name="groupArmorScaledTPlus">
-	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1"/>
+	<item name="armorMilitarySetParts" count="2,5" loot_prob_template="ProbT1Cap"/>
 	<item group="groupArmorT2" loot_prob_template="ProbT2Cap"/>
 	<item group="groupArmorT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
@@ -3061,20 +3109,20 @@ If there is no hit the default quality is used.
 <!-- *** Melee_Weapons_Scaled -->
 <lootgroup name="groupWeaponsMeleeScaled">
 	<item group="groupWeaponsT1_Melee" loot_prob_template="ProbT1"/>
-	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1Cap"/>
 	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsMeleeScaledTPlus">
 	<item group="groupWeaponsT1_Melee" loot_prob_template="ProbT1"/>
-	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1Cap"/>
 	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2Cap"/>
 	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsMeleeScaledNoStone">
 	<item group="groupWeaponsT1_Melee" loot_prob_template="ProbT1"/>
-	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_MeleeParts" loot_prob_template="ProbT1Cap"/>
 	<item group="groupWeaponsT2_Melee" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -3140,7 +3188,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupWeaponsRangedScaled">
 	<item group="groupWeaponsT0_Ranged" loot_prob_template="ProbT0"/>
 	<item group="groupWeaponsT1_Ranged" loot_prob_template="ProbT1"/>
-	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1Cap"/>
 	<item group="groupWeaponsT2_Ranged" loot_prob_template="ProbT2"/>
 	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
 </lootgroup>
@@ -3148,7 +3196,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupWeaponsRangedScaledTPlus">
 	<item group="groupWeaponsT0_Ranged" loot_prob_template="ProbT0"/>
 	<item group="groupWeaponsT1_Ranged" loot_prob_template="ProbT1"/>
-	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1Cap"/>
 	<item group="groupWeaponsT2_Ranged" loot_prob_template="ProbT2"/>
 	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
 	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
@@ -3157,7 +3205,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupWeaponsRangedScaledNoStone">
 	<item group="groupWeaponsT0_Ranged" loot_prob_template="ProbT0"/>
 	<item group="groupWeaponsT1_Ranged" loot_prob_template="ProbT1"/>
-	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1"/>
+	<item group="groupWeapons_RangedParts" loot_prob_template="ProbT1Cap"/>
 	<item group="groupWeaponsT2_Ranged" loot_prob_template="ProbT2"/>
 	<item group="groupWeaponsT3_Ranged" loot_prob_template="ProbT3"/>
 </lootgroup>
@@ -3626,7 +3674,7 @@ If there is no hit the default quality is used.
 
 <lootgroup name="perkBooks">
 	<item group="perkBooksT0" loot_prob_template="ProbT0"/>
-	<item group="perkBooksT1" loot_prob_template="ProbT1"/>
+	<item group="perkBooksT1" loot_prob_template="ProbT1Cap"/>
 	<item group="perkBooksT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -3725,7 +3773,7 @@ If there is no hit the default quality is used.
 <!-- *** Schematics_Scaled -->
 <lootgroup name="schematicsModsAndGeneralCommon">
 	<item group="schematicsModsAndGeneralT0"/>
-	<item group="schematicsModsAndGeneralT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsModsAndGeneralT1" loot_prob_template="ProbT1Cap"/>
 	<item group="schematicsModsAndGeneralT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -3802,7 +3850,7 @@ If there is no hit the default quality is used.
 <!-- *** Tool_Schematics_Scaled -->
 <lootgroup name="schematicsToolsCommon">
 	<item group="schematicsToolsT0"/>
-	<item group="schematicsToolsT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsToolsT1" loot_prob_template="ProbT1Cap"/>
 	<item group="schematicsToolsT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -3884,7 +3932,7 @@ If there is no hit the default quality is used.
 <lootgroup name="schematicsWeaponsArmorCommon">
 	<item group="schematicsWeaponsArmorStarter" loot_prob_template="TSEarlyOnly"/>
 	<item group="schematicsWeaponsArmorT0" loot_prob_template="ProbT0"/>
-	<item group="schematicsWeaponsArmorT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsWeaponsArmorT1" loot_prob_template="ProbT1Cap"/>
 	<item group="schematicsWeaponsArmorT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -3941,7 +3989,7 @@ If there is no hit the default quality is used.
 <!-- *** Vehicle_Schematics_Scaled -->
 <lootgroup name="schematicsVehiclesCommon">
 	<item group="schematicsVehiclesT0"/>
-	<item group="schematicsVehiclesT1" loot_prob_template="ProbT1"/>
+	<item group="schematicsVehiclesT1" loot_prob_template="ProbT1Cap"/>
 	<item group="schematicsVehiclesT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -4017,7 +4065,7 @@ If there is no hit the default quality is used.
 <!-- *** Farming_Food_Schematics_Scaled -->
 <lootgroup name="farmingCookingRecipesCommon">
 	<item group="farmingCookingRecipesT0"/>
-	<item group="farmingCookingRecipesT1" loot_prob_template="ProbT1"/>
+	<item group="farmingCookingRecipesT1" loot_prob_template="ProbT1Cap"/>
 	<item group="farmingCookingRecipesT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
@@ -4422,7 +4470,7 @@ If there is no hit the default quality is used.
 	<item name="jz_BulletPress" loot_prob_template="ProbT1"/>
     <item name="toolForgeCrucible" loot_prob_template="ProbT1"/>
     <item name="toolAndDieSet" loot_prob_template="ProbT1"/>
-	<item name="toolBellows" loot_prob_template="ProbT2Cap"/>	
+	<item name="toolBellows" loot_prob_template="ProbT1Cap"/>	
 	<item name="jz_Screwdriver" loot_prob_template="ProbT2Cap"/>	
 	<item name="jz_WelderTool" loot_prob_template="ProbT2Cap"/>	
 </lootgroup>
@@ -4477,8 +4525,8 @@ If there is no hit the default quality is used.
 <!-- *** Tool_Loot_Scaled -->
 <lootgroup name="groupToolsTiered" count="1">
 	<item group="groupToolsT1" loot_prob_template="ProbT0"/>
-	<item group="toolParts" loot_prob_template="ProbT1"/>
-	<item group="groupToolsT2" loot_prob_template="ProbT2"/>
+	<item group="toolParts" loot_prob_template="ProbT1Cap"/>
+	<item group="groupToolsT2" loot_prob_template="ProbT2Cap"/>
 	<item group="groupToolsT3" loot_prob_template="ProbT3"/>
 </lootgroup>
 
@@ -4719,9 +4767,9 @@ If there is no hit the default quality is used.
 
 <!-- *** Vehicle_Mods -->
 <lootgroup name="vehicleMods">
-	<item name="modVehicleOffRoadHeadlights" loot_prob_template="ProbT1"/>
-	<item name="modVehicleFuelSaver" loot_prob_template="ProbT1"/>
-	<item name="modVehicleReserveFuelTank" loot_prob_template="ProbT2"/>
+	<item name="modVehicleOffRoadHeadlights" loot_prob_template="ProbT1Cap"/>
+	<item name="modVehicleFuelSaver" loot_prob_template="ProbT1Cap"/>
+	<item name="modVehicleReserveFuelTank" loot_prob_template="ProbT2Cap"/>
 	<item name="modVehicleExpandedSeat" loot_prob_template="ProbT3"/>
 	<item name="modVehicleSuperCharger" loot_prob_template="ProbT3"/>
 </lootgroup>
@@ -4765,9 +4813,9 @@ If there is no hit the default quality is used.
 <!-- *** Vehicle_Parts_Scaled -->
 <lootgroup name="vehiclePartsTiered">
 	<item group="bicycleParts"  loot_prob_template="ProbT0"/>
-	<item group="minibikeParts"  loot_prob_template="ProbT1"/>
-	<item group="motorcycleParts" loot_prob_template="ProbT2"/>
-	<item group="vehicleMods" loot_prob_template="ProbT1"/>
+	<item group="minibikeParts"  loot_prob_template="ProbT1Cap"/>
+	<item group="motorcycleParts" loot_prob_template="ProbT2Cap"/>
+	<item group="vehicleMods" loot_prob_template="ProbT1Cap"/>
 	<item group="4x4Parts" loot_prob_template="ProbT3"/>
 	<item group="gyroCopterParts" loot_prob_template="ProbT3"/>
 </lootgroup>
@@ -5817,7 +5865,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupAmmoSmall">
 	<item group="group9mmSmall"/>
 	<item group="group762mmSmall"/>
-	<item group="group44MagnumSmall" loot_prob_template="ProbT1"/>
+	<item group="group44MagnumSmall" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellSmall"/>
 	<item group="groupArrowIronSmall" loot_prob_template="med"/>
 	<item group="groupCrossbowBoltIronSmall" loot_prob_template="med"/>
@@ -5826,7 +5874,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupAmmoMedium">
 	<item group="group9mmMedium"/>
 	<item group="group762mmMedium"/>
-	<item group="group44MagnumMedium" loot_prob_template="ProbT1"/>
+	<item group="group44MagnumMedium" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellMedium"/>
 	<item group="groupArrowIronMedium" loot_prob_template="med"/>
 	<item group="groupCrossbowBoltIronMedium" loot_prob_template="med"/>
@@ -5835,21 +5883,21 @@ If there is no hit the default quality is used.
 <lootgroup name="groupAmmoSmallNoArrow">
 	<item group="group9mmSmall"/>
 	<item group="group762mmSmall"/>
-	<item group="group44MagnumSmall" loot_prob_template="ProbT1"/>
+	<item group="group44MagnumSmall" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellSmall"/>
 </lootgroup>
 
 <lootgroup name="groupAmmoMediumNoArrow">
 	<item group="group9mmMedium"/>
 	<item group="group762mmMedium"/>
-	<item group="group44MagnumMedium" loot_prob_template="ProbT1"/>
+	<item group="group44MagnumMedium" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellMedium"/>
 </lootgroup>
 
 <lootgroup name="groupAmmoLarge">
 	<item group="group9mmLarge"/>
 	<item group="group762mmLarge"/>
-	<item group="group44MagnumLarge" loot_prob_template="ProbT1"/>
+	<item group="group44MagnumLarge" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellLarge"/>
 	<!-- <item group="groupArrowIronLarge" loot_prob_template="med"/> -->
 	<!-- <item group="groupCrossbowBoltIronLarge" loot_prob_template="med"/> -->
