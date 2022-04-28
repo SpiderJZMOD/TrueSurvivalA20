@@ -8,7 +8,270 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 | Harmony | Many harmony scripts to make small adjustments to the game. These scripts, for the most part, can be turned on and off via the blocks.xml|
 | Scripts | Many Scripts which include new classes. References to these scripts would be  ```<className>, SCore```  |
 
+
 [ Change Log ]
+Version: 20.4.116.1950
+	
+	[ Blocks ]
+		- Re-added crop trample
+			Add  fcropsDestroy to the FilterTags to enable:
+
+			<!-- To make all crops destroy on touch -->
+			 <append xpath="/blocks/block/property[@name='FilterTags' and contains(@value, 'SC_crops')]/@value">,fcropsDestroy</append>
+
+		- Added Guppycur's sprinkler to Bloom's Family Farming
+		- Added the Farmer NPC back for MyFarmer entity in Bloom's
+
+Version: 20.3.113.106
+
+	Demo and water / crop overview: https://youtu.be/ApcwwfexxWU
+
+	"Bloom's Family Farming" Modlet contains sample XML configuration to:
+		- Turn on water requirement feature
+		- Update all crops to require water
+		- Updated metalPipe's to water pipe class
+		- Added My Farmer NPC ( Uses Nurse model from 1-NPCCore (required))
+		- Added Crop Control Panel
+		-Add Farm UAI
+
+		- Use this Modlet with the latest SCore and latest 1-NPCCore for a complete test environment.
+
+	[ Crop Management ]
+		- Improved the valve system to be a bit more reliable
+		- Fixed BloomTest01 Prefab used for testing: 
+			- Includes water tower, valves, pipes, and farm plots
+	
+	[ UAI ]
+		- Improved Farming Task
+			- Farmer task now harvests and replants crops
+
+Version: 20.3.111.x
+	
+	[ Crop Management ]
+		- Fixes for the UAI Task for planting/ checking
+		- NPCs will be able to:
+			a) Look in their inventory to find seeds
+			b) Plant those seeds
+			c) Once all seeds are gone, they maintain the crops
+				- Checking for bugs ( SCore doesn't have bugs, but the plants may)
+				- Potentially watering the crops, avoiding water waste
+			d) Harvest crops when they are ready, and store crops in their inventory.
+				- Any seeds harvested will be replanted.
+
+Version: 20.3.110.1815
+	[ Blocks ]
+		BlockTakeAndReplace has a new property to allow you to specify which item is allowed. This is a comma delimited list.
+			<property name="HoldingItem" value="meleeToolRepairT1ClawHammer" />
+			<property name="HoldingItem" value="meleeToolRepairT1ClawHammer,meleeStoneTool" />
+
+		Updated BlockUtilities to add particles centered to the block, instead of at the edge.
+
+	[ Crop Management ]
+		- Added new Blocks for support:
+			BlockCropControlPanel - Used to debug and control the pipe system
+			BlockFarmPlotSDX - Used to update the vanilla's FarmPlots
+		-Added new FarmPlotData to hold FarmPlot information
+		-Added PlantData to hold plant data
+		-Added Pipe class to hold piping information
+		-Added FarmPlotManager and WaterPipeManager to handle their tasks.
+			- Removed pipe management from crop
+
+
+	[ Utility AI]
+		- Added IsNearFarm consideration 
+		- Added UAITaskFarming task
+
+	[ Modlet ]
+		Added new Bloom's Family Farming modlet to the SphereII.Mods repo
+		This modlet contains XML to turn on and manage the crop management system with examples
+		Also includes a prefab called BloomTest01
+			- From menu, go into Prefab Tools and load up BloomTest01, then Play test.
+		Added SphereiiFlat world to be used for durability testing.
+
+Version: 20.3.105.1149
+
+	[ Quests ]
+		- FuriousRamsay has been working on fixing the distance restriction bug on quests
+		- New Objectives:   
+			RandomGotoSDX, SCore
+				<objective type="RandomGotoSDX, SCore" value="700-800" phase="1">
+					<property name="completion_distance" value="50"/>
+					<property name="nav_object" value="quest" />
+				</objective>
+
+			RandomPOIGotoSDX, SCore
+				<objective type="RandomPOIGotoSDX, SCore" value="400-800">
+					<property name="phase" value="1"/>
+					<property name="nav_object" value="quest" />
+				</objective>
+
+		- NetPackageQuestGotoPointSDX and NetPackageQuestGotoPointSDX to allow distance checks to work on dedicated servers ( FuriousRamsay )
+
+	[ MinEvents ]
+		MinEventActionChangeFactionSDX2: Same as the MinEventActionChangeFactionSDX, except it resets the entity's attack and revenge target ( FuriousRamsay )
+			<triggered_effect trigger="onSelfBuffStart" action="ChangeFactionSDX2, SCore" target="self" value="undead" /> 
+		
+		MinEventActionResetTargetsSDX: Resets the target's attack and revenge targets.
+			 <triggered_effect trigger="onSelfDamagedOther" action="MinEventActionResetTargetsSDX, SCore"/>
+
+
+	[ NPCs ]
+		- Added FuriousRamsay's fixes for SetDead(), and OnMission collision ( should be able to fly with NPCs now )
+	
+	[ Caves ]
+		- Fixed issue where random blocks would appear underground during the decoration phase.
+		- Modified Cave prefab locations to help avoid isolated prefabs
+		- Fixed an issue where the first level of caves did not have decorations.
+		- Currently, no cave openings are available when cave types are Mountain or DeepMountain.
+
+	[ Crop Management ]	
+		- Initial Implementation of Advanced Crop Management features. This will likely be buggy.
+
+		- There's a lot to unpack here. Buckle up.
+
+		- When enabled, crops will need to be within a 5x5 block radious of water block. 
+			This is configurable with the WaterRange on a per-plant basis. Default is 5.
+			Each plant will record where it's water blocks are. 
+			The CheckInterval is used to determine how often the plant will check its water source.
+				- If the water is gone when checked, the plant will rescan for a new block.
+				- If no new water block is found, it will wilt.
+				- Whenever a plant successfully checks in with water, it will do 1 point of damage to the water.
+					- When a water block's damage exceeds its max damage (100 by default), it will turn into air.
+			Crop data is not persisted to disk. Rather, if data is missing, it simply rechecks and re-discovers.
+
+		- SCore's blocks.xml contains a new entry:
+			<!-- Turns on support for the PlantGrowingSDX, SCore features for more advanced crop -->
+			<property class="CropManagement" >
+				<!-- Turns on logging to help debug -->
+				<property name="Logging" value="false"/>
+
+				<!-- Controls if crops are to be managed -->
+				<property name="CropEnable" value="false"/>
+				
+				<!-- How often the crops should check for water -->
+				<property name="CheckInterval" value="600" />
+
+				<!-- How many pipes to scan -->
+				<property name="MaxPipeLength" value="500" />
+			</property>
+
+			As always, it is not recommended to change the SCore's blocks.xml directly when adjusting, but rather use a modlet:
+				<!-- Turning on Crops-->
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CropManagement']/property[@name='CropEnable']/@value">true</set>
+
+				<!-- Checks how often the Crop Manager will check in with the plants. -->
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CropManagement']/property[@name='CheckInterval']/@value">120</set>
+
+			
+		- Crops that you want to manage under the advanced crop management must use the new classes:
+			BlockPlantGrowingSDX
+
+			It supports the following properties:
+				RequireWater: [ true/false ]
+					Allows invidiaul plants to control whether they need water or not. 
+					- This can be read using extends, but overridden by the individual block
+				WaterRange: [ 5 ]
+					Allows individual plants to control how far away their water can be.
+					- This can be read using extends, but overridden by the individual block
+				PlantGrowing.Wilt: [ treeDeadPineLeaf ]
+					If a plant goes without water for tool long, it will wilt into this block.
+					- Can be air as well.
+				Wilt: [ true / false ]: default false.
+					- If a plant cannot find a water source, it will wilt and destroy itself.
+
+			Example XML to convert all growable crops to use water.
+
+				<!-- Setting up defaults -->
+				<!-- Changing all crops to using the PlantGrowingSDX class -->
+				<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='Class']/@value">PlantGrowingSDX, SCore</set>
+				<append xpath="/blocks/block[@name='cropsGrowingMaster']">
+					<!-- If the crop needs water to survive. Default: false -->
+					<property name="RequireWater" value="true" /> 
+
+					<!-- how far away that block can be from a water source: Default is 5 -->
+					<property name="WaterRange" value="5" />  
+
+					<!-- The block the crop downgrades too if its dead. Default: Air-->
+					<property name="PlantGrowing.Wilt" value="treeDeadPineLeaf"/>
+
+					<!-- if set to true, the plant will die when there is no water near by. -->
+					<property name="Wilt" value="true" />
+				</append>
+
+		- In order to better support crops, and make them more fun, support for water pipes have been added.
+			Two new classes have been written:
+				BlockWaterPipeSDX: This block designates a block as a water carrier. It is not a water source itself, but can allow water to 'move' through. 
+					- One section of the pipe must touch a water source block.
+
+					- In this example, I convert all metalPipe's to be used as water pipes
+						<append xpath="/blocks/block[starts-with(@name, 'metalPipe')]">
+							<property name="Class" value="WaterPipeSDX, SCore" />
+						</append>
+
+				BlockWaterSourceSDX: This block designates a block as a water distributor. It is not a water source itself.
+					- if the BlockWaterSourceSDX is connected to a series of BlockWaterPipeSDX which is connected to a water source block, it will act like a water source block.
+
+					- In this example, I'm using the metalPipeValue as a distributor
+						<set xpath="/blocks/block[@name='metalPipeValve']/property[@name='Class']/@value">WaterSourceSDX, SCore</set>
+
+
+			A water source block is currently defined as:
+				BlockLiquidV2 : Water from a river, lake, or dumped from a bucket
+				terrBedRock: if you connect a pipe to bedrock, it will act as an unlimited water source.
+
+				Any block is the property WaterSource is set on it, and set to true
+					<property name="WaterSource" value="true" />
+
+			
+
+
+
+
+Version: 20.3.101.172
+	- Fixed recursive method that was causing crashes on MarkToUnload()
+	- Modified TileEntityAlwaysActive patch.
+		If any TileEntity has this XML property, it will be Always On.
+			<property name="AlwaysActive" value="true" />
+		This feature can be used on any other TileEntities to distribute a buff similar to the CampFire's warming buff.
+		
+		Note: This excludes Forge and Workstation Tile Entities.
+	- Disabled the IsQuestGiver on the Entities
+
+Version: 20.3.100.1629
+	- Fixed SpawnCube2 issue on dedi where preview was not being cleared.
+	- Fixed GotoPOISDX to prefer exact names, rather than wild card
+
+Version: 20 3.100.1044
+	- Reverted Sebastian Cave changes, and changed default to Legacy
+	- Added working cave entrances
+	- Widened cave system to allow more room, and some chaos.
+	- Fixed cave spawning of zombies.
+		- Spawning may be a bit sparse, due to the many levels of the cave systems and max zombies.
+		Suggestions on fleshing it out more would be to add in SpawnCubes to the blockplaceholders that spawn more zombies.
+	- Fixed double spawns on SpawnCube on dedi
+	- Turned off SmarterEntities by default in blocks.xml, to get rid of the path node warnings.
+		- Max revisit later if functionality has changed due to turning it off.
+	- Turned off Sound when NPC is on a mission.
+
+
+Version: 20.3.93.840
+	- Reduced the height position of the SetPosition() to calm their leader when on a mission.
+	- Overrode ProcessDamageResponse() not to process damage if NPC is on a mission
+	- Overrode IsImmuneToLegdamage, returning true if OnMission.
+	- Fixed possible null ref in IsInertEntity()
+	- Updated MarkToUnload to go to base class when NPC is ordered to Stay or Patrol. 
+		- This is an attempt to fix the disappearing NPCs at the bases.
+
+Version: 20.3.84.x
+
+	- When driving in a vehicle, NPCs will no longer teleport to you after a distance, but does a SetPosition() on a tighter range
+	- NPCMOD-FT-0045 : Added DespawnNPC MinEffect: <triggered_effect trigger="onSelfBuffRemove" action="DespawnNPC, SCore" />
+	- Added new Property for entities, which controls if they run "leader checks" for increase performance. Defaults to True.
+		<property name="Hirable" value="false" />
+	- Added new Property for entities, which controls if they can give or process quests. Defaults to true.
+		<property name="IsQuestGiver" value="false" />
+
+
 Version: 20.2.83.1240
 	
 	- Performance Tweaks:

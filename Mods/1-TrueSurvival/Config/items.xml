@@ -86,7 +86,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="100"/>
 		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="jz_Stick"/><!-- JZMOD -->
+		<property name="Allowed_upgrade_items" value="jz_Stick,jz_ToolCarvingKnife"/><!-- JZMOD -->
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="meleeToolRepairT0StoneAxe">
@@ -960,7 +960,7 @@ Mesh files no longer used:
 <!-- * * * * * * * * * * Wrench / special harvesting, not a repair tool (perkSalvageOperations) * * * * * * * * * * -->
 
 <item name="meleeToolSalvageT1Wrench">
-	<property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,jz_IronBuildingTag"/><!-- JZMOD -->
+	<property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,jz_ConcreteBuildingTool"/><!-- JZMOD -->
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="29"/>
 	<property name="Meshfile" value="#Other/Items?Tools/wrenchPrefab.prefab"/>
@@ -980,7 +980,6 @@ Mesh files no longer used:
 		<property name="ToolCategory.Disassemble" value="1" param1="1"/>
 		<property name="ToolCategory.ToolWrench" value="1" param1="1"/><!-- JZMOD -->
 		<property name="Particle_harvesting" value="true" param1="metal"/>
-
 		<property name="UseGrazingHits" value="true"/>
 		<property name="GrazeStart" value=".25"/>
 		<property name="GrazeEnd" value=".3"/>
@@ -7251,8 +7250,8 @@ needed?
 	<effect_group name="meleeHandAnimalZombieVulture" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-			weights=".11,.05,.07,.29,.36,.11"/>
+			buff="buffFatiguedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.29,.36,.11"/>
 		
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect><!-- JZMOD -->
@@ -7297,8 +7296,8 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="50"/>
 
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-			weights=".11,.07,.05,.29,.36,.11"/>
+			buff="buffFatiguedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.05,.29,.36,.11"/>
 		
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
             <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect><!-- JZMOD -->
@@ -24776,9 +24775,6 @@ perkNightStalkerSilentNight
 	</property>
 </item>
 
-
-
-
 <item name="upgradeResourcesPackAdmin">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -27082,7 +27078,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="jz_MasonHammer"> 
-	<property name="Tags" value="blunt,melee,light,tool,jz_StoneBuildingTag"/>
+	<property name="Tags" value="blunt,melee,light,tool,jz_StoneBuildingTool"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="32"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZMasonHammer.unity3d?MasonHammerPrefab" />
@@ -27155,7 +27151,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="jz_ConcreteSledge"> 
-    <property name="Tags" value="blunt,melee,grunting,heavy,sledge,jz_ConcreteBuildingTag"/>
+    <property name="Tags" value="blunt,melee,grunting,heavy,sledge,jz_ConcreteBuildingTool"/>
     <property name="DisplayType" value="meleeHeavy"/>
 	<property name="HoldType" value="33"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Melee/SledgeHammer/ironSledgehammerPrefab.prefab"/>
@@ -33435,271 +33431,1134 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_ToolCarvingKnifeDesc" />
 	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairAmount" value="100"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".5"/>
+		<property name="Repair_amount" value="1"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+		<property name="Sound_start" value="repair_block"/>
+        <property name="Allowed_upgrade_items" value="jz_ToolCarvingKnife"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<property class="Action1"> 
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".5"/>
+		<property name="Repair_amount" value="1"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="jz_ToolCarvingKnife"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandSaw">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolHandSawDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandSaw"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandSaw"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandDrill">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolHandDrillDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandDrill"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandDrill"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolWoodChisel">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolWoodChiselDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolWoodChisel"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolWoodChisel"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolDrawBlade">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolDrawBladeDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolDrawBlade"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolDrawBlade"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolPipeWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolPipeWrenchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolPipeWrench"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolPipeWrench"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolPipeSaw">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolPipeSawDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolPipeSaw"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolPipeSaw"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolPipeVise">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolPipeViseDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolPipeVise"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolPipeVise"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolAngleGrinder">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolAngleGrinderDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolAngleGrinder"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolAngleGrinder"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolPropaneTorch">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolPropaneTorchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolPropaneTorch"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolPropaneTorch"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolSewingNeedle">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolSewingNeedleDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolSewingNeedle"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolSewingNeedle"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolLeatherNeedle">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolLeatherNeedleDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolLeatherNeedle"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolLeatherNeedle"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolSmallLoom">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolSmallLoomDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolSmallLoom"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolSmallLoom"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolSewingMachine">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolSewingMachineDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolSewingMachine"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolSewingMachine"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolTailorMannequin">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolTailorMannequinDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolTailorMannequin"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolTailorMannequin"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolArmorerAnvil">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolArmorerAnvilDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolArmorerAnvil"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolArmorerAnvil"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolPliers">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolPliersDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolPliers"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolPliers"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMetalSnips">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolMetalSnipsDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMetalSnips"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMetalSnips"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolRivetGun">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolRivetGunDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolRivetGun"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolRivetGun"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolOxyacetyleneTorch">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolOxyacetyleneTorchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolOxyacetyleneTorch"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolOxyacetyleneTorch"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMeasuringTape">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolMeasuringTapeDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMeasuringTape"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMeasuringTape"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolCircularSaw">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolCircularSawDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolCircularSaw"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolCircularSaw"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolSander">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolSanderDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolSander"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolSander"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolDrill">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolDrillDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolDrill"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolDrill"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolLathe">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolLatheDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolLathe"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolLathe"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandgunStand">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunStand" />
 	<property name="DescriptionKey" value="jz_ToolHandgunStandDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunStand"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunStand"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandgunTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_ToolHandgunTorxSetDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunTorxSet"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunTorxSet"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandgunSightTool">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="DescriptionKey" value="jz_ToolHandgunSightToolDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunSightTool"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunSightTool"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandgunBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_ToolHandgunBushingWrenchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunBushingWrench"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunBushingWrench"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolHandgunBarrelBorer">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="DescriptionKey" value="jz_ToolHandgunBarrelBorerDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunBarrelBorer"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolHandgunBarrelBorer"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolShotgunStand">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunStand" />
 	<property name="DescriptionKey" value="jz_ToolShotgunStandDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunStand"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunStand"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolShotgunTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_ToolShotgunTorxSetDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunTorxSet"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunTorxSet"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolShotgunSightTool">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="DescriptionKey" value="jz_ToolShotgunSightToolDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunSightTool"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunSightTool"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolShotgunBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_ToolShotgunBushingWrenchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunBushingWrench"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunBushingWrench"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolShotgunBarrelBorer">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="DescriptionKey" value="jz_ToolShotgunBarrelBorerDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunBarrelBorer"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolShotgunBarrelBorer"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMachineGunStand">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunStand" />
 	<property name="DescriptionKey" value="jz_ToolMachineGunStandDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunStand"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunStand"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMachineGunTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_ToolMachineGunTorxSetDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunTorxSet"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunTorxSet"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMachineGunSightTool">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="DescriptionKey" value="jz_ToolMachineGunSightToolDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunSightTool"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunSightTool"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMachineGunBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_ToolMachineGunBushingWrenchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunBushingWrench"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunBushingWrench"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMachineGunBarrelBorer">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="DescriptionKey" value="jz_ToolMachineGunBarrelBorerDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunBarrelBorer"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMachineGunBarrelBorer"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolRifleStand">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunStand" />
 	<property name="DescriptionKey" value="jz_ToolRifleStandDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleStand"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleStand"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolRifleTorxSet">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="jz_GunTools" />
 	<property name="DescriptionKey" value="jz_ToolRifleTorxSetDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleTorxSet"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleTorxSet"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolRifleSightTool">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunSightTool" />
 	<property name="DescriptionKey" value="jz_ToolRifleSightToolDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleSightTool"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleSightTool"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolRifleBushingWrench">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBushingWrench" />
 	<property name="DescriptionKey" value="jz_ToolRifleBushingWrenchDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleBushingWrench"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleBushingWrench"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolRifleBarrelBorer">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="CustomIcon" value="ToolGunBarrelBorer" />
 	<property name="DescriptionKey" value="jz_ToolRifleBarrelBorerDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleBarrelBorer"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolRifleBarrelBorer"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolElectricianScrewdriver">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolElectricianScrewdriverDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolElectricianScrewdriver"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolElectricianScrewdriver"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolWireStripers">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolWireStripersDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolWireStripers"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolWireStripers"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolMagnifyingGlass">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolMagnifyingGlassDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolMagnifyingGlass"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolMagnifyingGlass"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolSolderingIron">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolSolderingIronDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolSolderingIron"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolSolderingIron"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ToolVoltTester">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolVoltTesterDesc" />
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_ToolVoltTester"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_ToolVoltTester"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_ProfessionChoice">

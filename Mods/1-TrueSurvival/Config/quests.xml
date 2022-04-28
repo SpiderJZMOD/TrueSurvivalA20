@@ -692,7 +692,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="1"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -734,11 +734,13 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -779,11 +781,13 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="4"/>
+		<property name="difficulty_tier" value="3"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -824,11 +828,13 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="5"/>
+		<property name="difficulty_tier" value="4"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -905,7 +911,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -952,6 +958,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -997,6 +1005,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1037,11 +1047,13 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="5"/>
+		<property name="difficulty_tier" value="4"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1301,7 +1313,7 @@
 			<property name="item" value="jz_WorkstationElectronicWorkbench" />
 			<property name="count" value="1" />
 		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationToolWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationElectronicWorkbench" value="1" phase="2" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesElectronicQL2" />
@@ -1333,7 +1345,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -1380,6 +1392,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1425,6 +1439,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1547,7 +1563,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="1"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -1589,11 +1605,13 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1639,6 +1657,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1762,7 +1782,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="1"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -1804,11 +1824,13 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1854,6 +1876,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -1977,7 +2001,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -2024,6 +2048,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2069,6 +2095,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2192,7 +2220,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -2239,6 +2267,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2284,6 +2314,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2407,7 +2439,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -2454,6 +2486,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2499,6 +2533,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2622,7 +2658,7 @@
 		<property name="repeatable" value="false"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
-		<property name="difficulty_tier" value="3"/>
+		<property name="difficulty_tier" value="2"/>
 		<property name="login_rally_reset" value="true"/>
 
 		<objective type="RandomPOIGoto">
@@ -2669,6 +2705,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 
@@ -2714,6 +2752,8 @@
 
 		<objective type="RandomPOIGoto">
 			<property name="phase" value="1"/>
+			<property name="biome_filter_type" value="SameBiome" />
+			<property name="biome_filter" value="burnt_forest" />
 			<property name="nav_object" value="quest" />
 		</objective>
 

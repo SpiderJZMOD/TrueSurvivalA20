@@ -26056,6 +26056,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterExclude" value="true"/>
 	<property name="DescriptionKey" value="jailBarsDesc"/>
 	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -26128,6 +26129,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/> <!-- harvest amount is 40% of the building cost -->
+	<drop event="Destroy" name="resourceDoorKnob" count="1" prob="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -26268,6 +26270,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="resourceScrapIron" count="40" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -26347,6 +26350,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="resourceScrapIron" count="96" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -26457,6 +26461,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceWood" count="6" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
@@ -26500,6 +26505,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceScrapIron" count="40" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/>
@@ -26539,6 +26545,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceScrapIron" count="96" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="1,2" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="432"/>
@@ -26706,6 +26713,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceScrapBrass" count="2,7" tag="WasteTreasuresDoorHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -26876,6 +26884,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" prob="0.2" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="WasteTreasuresDoorHarvest"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="FilterTags" value="MC_building,SC_doors"/>
@@ -26992,6 +27001,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Destroy" name="resourceSpring" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -33462,11 +33472,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mwood" />
 	<property name="Stacknumber" value="1" />   
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZResearchDesk.unity3d?ResearchDeskPrefab" />
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchResearch.unity3d?ResearchWorkbenchPrefab" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="DisplayType" value="blockMulti" />
-	<property name="MultiBlockDim" value="2,2,1"/>
-    <property name="ModelOffset" value=".5,.5,0" />
+	<property name="MultiBlockDim" value="1,2,2"/>
+    <property name="ModelOffset" value="0,0,0" />
     <property name="Place" value="TowardsPlacerInverted"/>    
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Path" value="solid"/>
@@ -34025,7 +34035,283 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="jz_WorkstationImprovisedWorkbench">
-	<property name="Extends" value="woodLogPillar100"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv1Prefab" />
+   <property name="ModelOffset" value="0,0,0" />
+    <!--<property name="MultiBlockDim" value="2,2,1" />-->
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="WorkstationIcon" value="ImprovisedIcon"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationImprovisedWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolCarvingKnife"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationImprovisedWorkbenchLv2">
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv2Prefab" />
+   <property name="ModelOffset" value="0,0,0" />
+    <!--<property name="MultiBlockDim" value="2,2,1" />-->
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="WorkstationIcon" value="ImprovisedIcon"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationImprovisedWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolHandSaw"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationImprovisedWorkbenchLv3">
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv3Prefab" />
+   <property name="ModelOffset" value="0,0,0" />
+    <!--<property name="MultiBlockDim" value="2,2,1" />-->
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="WorkstationIcon" value="ImprovisedIcon"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationImprovisedWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolHandDrill"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationImprovisedWorkbenchLv4">
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <!--<property name="MultiBlockDim" value="2,2,1" />-->
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="WorkstationIcon" value="ImprovisedIcon"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationImprovisedWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolWoodChisel"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationImprovisedWorkbenchLv5">
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv5Prefab" />
+	<property name="ModelOffset" value="0,0,0" />
+    <!--<property name="MultiBlockDim" value="2,2,1" />-->
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="WorkstationIcon" value="ImprovisedIcon"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationImprovisedWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolDrawBlade"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationImprovisedWorkbenchLv6">
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv6Prefab" />
+	<property name="ModelOffset" value="0,0,0" />
+    <!--<property name="MultiBlockDim" value="2,2,1" />-->
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
@@ -34073,9 +34359,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZPipeGunWorkbench.unity3d?PipeGunWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CustomIcon" value="Working" />
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationPipeGunWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolPipeWrench"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationPipeGunWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZPipeGunWorkbench.unity3d?PipeGunWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CustomIcon" value="Working" />
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationPipeGunWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolPipeSaw"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationPipeGunWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZPipeGunWorkbench.unity3d?PipeGunWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+	<property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CustomIcon" value="Working" />
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationPipeGunWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolPipeVise"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationPipeGunWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZPipeGunWorkbench.unity3d?PipeGunWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CustomIcon" value="Working" />
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationPipeGunWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolAngleGrinder"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationPipeGunWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZPipeGunWorkbench.unity3d?PipeGunWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Basics" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="CustomIcon" value="Working" />
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationPipeGunWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolPropaneTorch"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationPipeGunWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZPipeGunWorkbench.unity3d?PipeGunWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34124,9 +34690,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationLightArmorWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolSewingNeedle"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationLightArmorWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationLightArmorWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolLeatherNeedle"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationLightArmorWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationLightArmorWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolSmallLoom"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationLightArmorWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationLightArmorWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolSewingMachine"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationLightArmorWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationLightArmorWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolTailorMannequin"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationLightArmorWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34174,9 +35020,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHeavyArmorWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolArmorerAnvil"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHeavyArmorWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHeavyArmorWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolPliers"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHeavyArmorWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHeavyArmorWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolMetalSnips"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHeavyArmorWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHeavyArmorWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolRivetGun"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHeavyArmorWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Clothing,Basic" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHeavyArmorWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolOxyacetyleneTorch"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHeavyArmorWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mwood" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ArmorBench"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34223,9 +35349,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationToolWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolMeasuringTape"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationToolWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationToolWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolCircularSaw"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationToolWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationToolWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolSander"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationToolWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationToolWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolDrill"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationToolWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationToolWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolLathe"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationToolWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34273,9 +35679,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps,Science" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv2"/>
+		<property name="Item" value="jz_Screwdriver"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationElectronicWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps,Science" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolWireStripers"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationElectronicWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps,Science" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolSolderingIron"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationElectronicWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps,Science" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolMagnifyingGlass"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationElectronicWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Tools/Traps,Science" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolVoltTester"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationElectronicWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34315,7 +36001,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 </block>
-
 <block name="jz_WorkstationHandgunWorkbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
@@ -34323,9 +36008,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHandgunWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolHandgunStand"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHandgunWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHandgunWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolHandgunTorxSet"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHandgunWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHandgunWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolHandgunSightTool"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHandgunWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHandgunWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolHandgunBushingWrench"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHandgunWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationHandgunWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolHandgunBarrelBorer"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationHandgunWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34373,9 +36338,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZShotgunWorkbench.unity3d?ShotgunWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationShotgunWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolShotgunStand"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationShotgunWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZShotgunWorkbench.unity3d?ShotgunWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationShotgunWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolShotgunTorxSet"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationShotgunWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZShotgunWorkbench.unity3d?ShotgunWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationShotgunWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolShotgunSightTool"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationShotgunWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZShotgunWorkbench.unity3d?ShotgunWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationShotgunWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolShotgunBushingWrench"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationShotgunWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZShotgunWorkbench.unity3d?ShotgunWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationShotgunWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolShotgunBarrelBorer"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationShotgunWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZShotgunWorkbench.unity3d?ShotgunWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34423,9 +36668,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchMachineGun.unity3d?MachineGunWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationMachineGunWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolMachineGunStand"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationMachineGunWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchMachineGun.unity3d?MachineGunWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationMachineGunWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolMachineGunTorxSet"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationMachineGunWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchMachineGun.unity3d?MachineGunWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationMachineGunWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolMachineGunSightTool"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationMachineGunWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchMachineGun.unity3d?MachineGunWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationMachineGunWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolMachineGunBushingWrench"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationMachineGunWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchMachineGun.unity3d?MachineGunWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationMachineGunWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolMachineGunBarrelBorer"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationMachineGunWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchMachineGun.unity3d?MachineGunWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -34473,9 +36998,289 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZArmorTable.unity3d?ArmorTablePrefab" />
-    <property name="ModelOffset" value="1,.5,0" />
-    <property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv1Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationRifleWorkbenchLv2"/>
+		<property name="Item" value="jz_ToolRifleStand"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationRifleWorkbenchLv2">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv2Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationRifleWorkbenchLv3"/>
+		<property name="Item" value="jz_ToolRifleTorxSet"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationRifleWorkbenchLv3">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv3Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationRifleWorkbenchLv4"/>
+		<property name="Item" value="jz_ToolRifleSightTool"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationRifleWorkbenchLv4">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv4Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationRifleWorkbenchLv5"/>
+		<property name="Item" value="jz_ToolRifleBushingWrench"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationRifleWorkbenchLv5">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv5Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CustomIcon" value="Working" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1" />
+	<property name="TakeDelay" value="15"/>
+	<property name="DisplayType" value="blockMulti"/>
+    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+	<property name="CraftActionName" value="Craft"/>
+	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
+	<property name="OpenSound" value="chem_station_open"/>
+	<property name="CloseSound" value="chem_station_close"/>
+	<property name="CraftSound" value="chem_station_mix_click"/>
+	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
+	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Ammo/Weapons,Ranged Weapons" />
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,input" />
+	</property>
+	<property class="RepairItems">
+		<property name="jz_Stick" value="12" />
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_WorkstationRifleWorkbenchLv6"/>
+		<property name="Item" value="jz_ToolRifleBarrelBorer"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
+	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+</block>
+
+<block name="jz_WorkstationRifleWorkbenchLv6">
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Miron_scrap" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Weight" value="0"/>
+	<property name="Path" value="solid"/>
+    <property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv6Prefab" />
+    <property name="ModelOffset" value="0,0,0" />
+    <property name="MultiBlockDim" value="1,2,2" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -38536,6 +41341,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="UnlockedBy" value="jz_SchematicOrangeSeed"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
   	<property name="PlantGrowing.Next" value="jz_PlantedOrange1Dry"/>
     <property name="Group" value="Food/Cooking"/>
     <property name="BigDecorationRadius" value="4"/>
@@ -38553,6 +41360,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/Trees?White_Oak22Prefab.prefab"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 	<property name="ModelOffset" value="0,0,0"/>
 	<property name="MultiBlockDim" value="1,4,1"/>
 	<property name="BigDecorationRadius" value="4"/>
@@ -38574,6 +41382,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Entities/Trees?White_Oak22Prefab.prefab"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
     <property name="ModelOffset" value="0,0,0"/>
     <property name="BigDecorationRadius" value="4"/>
     <property name="MaxDamage" value="1"/>
@@ -38590,6 +41399,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZFarmOrangeTree1.unity3d?FarmOrangeTree1Prefab" />
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 	<property name="MultiBlockDim" value="1,27,1"/>
     <property name="ModelOffset" value="0,0,0"/>
     <property name="MaxDamage" value="1"/>
@@ -38634,6 +41444,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="ModelOffset" value="0,0,0"/>
     <property name="MaxDamage" value="1"/>
     <property name="BigDecorationRadius" value="4"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 	<property name="PlantGrowing.Next" value="jz_PlantedOrange3Dry"/>
     <property name="DowngradeBlock" value="jz_PlantedOrange2"/>
     <drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
@@ -38692,6 +41503,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_PlantedFertilizedOrange1Dry">
     <property name="Extends" value="jz_PlantedOrange1Dry" />
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 	<property name="CreativeMode" value="Dev"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedFertilizedOrange2"/>
@@ -38705,6 +41517,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="jz_PlantedOrange2"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedFertilizedOrange2Dry"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
     <property name="DowngradeBlock" value="jz_PlantedOrangeBare"/>  
     <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
 </block>
@@ -38714,6 +41527,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="CreativeMode" value="Dev"/>  
 	<property name="DowngradeBlock" value="jz_PlantedOrangeBare"/>
     <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
     <property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedFertilizedOrange3"/>
 		<property name="Item" value="jz_DrinkDirtyOuncesOfWater"/>
@@ -38726,6 +41540,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="jz_PlantedOrange3"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedFertilizedOrange3Dry"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
     <property name="DowngradeBlock" value="jz_PlantedFertilizedOrange2"/>
     <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
 </block>

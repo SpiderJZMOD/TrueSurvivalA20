@@ -166,7 +166,7 @@
 		<!-- Cumulative critical hit chance -->
 
 		<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="self" buff="buffCumChanceCH"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashNeck,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg,jz_BuffAcidBurnLeftArm,jz_BuffAcidBurnRightArm,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand,jz_BuffAcidBurnStomach,jz_BuffAcidBurnNeck"/> <!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashNeck,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck"/> <!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="-.1" tags="buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
 
 <!--
@@ -5531,42 +5531,6 @@ Kinda sorta works but is buggy and we don't have time for that.
 <entity_class name="jz_ZombieFemaleFatRadiatedSpitExplode" extends="zombieFatCopRadiated">
 	<property name="Tags" value="entity,zombie,walker,zombieCop,feral,radiated"/>
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaRadiated.prefab"/>       
-</entity_class>
-
-<entity_class name="ParasiteInsect" extends="animalTemplateHostileFlying" >
-	<property name="Tags" value="entity,animal,hostile,template"/>
-	<property name="Mesh" value="#@modfolder:Resources/TSCritters1.unity3d?InsectDark" /> <!-- Flying Bug with stinger-->
-	<property name="HasRagdoll" value="false" />
-	<property name="PhysicsBody" value="vulture" />
-	<property name="HandItem" value="meleeHandAnimalZombieVulture" />
-	<property name="MoveSpeed" value="1"/> 
-	<property name="MoveSpeedAggro" value="2.1, 2.1"/> 
-	<property name="MoveSpeedPanic" value="0.85"/>
-	<property name="PainResistPerHit" value=".01"/>
-	<property name="MaxViewAngle" value="360"/>
-	<property name="Weight" value="100"/>
-	<property name="AttackTimeoutDay" value="2.2"/> 
-	<property name="AttackTimeoutNight" value="1.7"/>
-	<property name="CanClimbLadders" value="false"/>
-	<property name="CanClimbVertical" value="false"/>
-	<property name="AttackIndexes" value="2" />
-    <property name="SoundRandom" value="Animals/Vulture/vultureroam"/>
-	<property name="SoundAlert" value="Animals/Vulture/vulturealert"/>
-	<property name="SoundHurt" value="Animals/Vulture/vulturepain"/>
-	<property name="SoundDeath" value="Animals/Vulture/vulturedeath"/>
-	<property name="SoundAttack" value="Animals/Vulture/vultureattack"/>
-	<property name="SoundSense" value="Animals/Vulture/vulturesense"/>
-	<property name="SoundGiveUp" value="Animals/Vulture/vulturegiveup"/>
-    <property name="LootListOnDeath" value="1"/>
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="goreBlockAnimal" value="1"/> 
-	<property name="TimeStayAfterDeath" value="2"/>
-    <effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="200"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-	</effect_group>		   
-    <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/>
-    <drop event="Destroy" name="jz_VenomSack" count="1" />    
 </entity_class>
 
 <entity_class name="JZZombieBlistered" extends="zombieRegularTemplate">

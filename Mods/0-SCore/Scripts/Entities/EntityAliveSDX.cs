@@ -42,6 +42,9 @@ public class EntityAliveSDX : EntityTrader
     public EntityAlive Owner;
     public bool isTeleporting = false;
 
+    public bool isHirable = true;
+    public bool isQuestGiver = true;
+
     // Read the configuration to see if the hired NPCs should join the player's group.
     public bool AddNPCToCompanion = Configuration.CheckFeatureStatus("AdvancedNPCFeatures", "DisplayCompanions");
 
@@ -150,6 +153,7 @@ public class EntityAliveSDX : EntityTrader
     {
         if (send)
         {
+
             var enemy = GetRevengeTarget();
             if (enemy != null)
             {
@@ -165,6 +169,7 @@ public class EntityAliveSDX : EntityTrader
             // rescale to make it invisible.
             transform.localScale = new Vector3(0, 0, 0);
             emodel.SetVisible(false, false);
+            enabled = false;
             Buffs.AddCustomVar("onMission", 1f);
 
             // Turn off the compass
@@ -181,11 +186,12 @@ public class EntityAliveSDX : EntityTrader
             transform.localScale = scale;
 
             emodel.SetVisible(true, true);
+            enabled = true;
             Buffs.RemoveCustomVar("onMission");
             if (this.NavObject != null)
                 this.NavObject.IsActive = true;
             isIgnoredByAI = false;
-            SetupDebugNameHUD(true);
+            // SetupDebugNameHUD(true);
         }
     }
 
@@ -217,6 +223,12 @@ public class EntityAliveSDX : EntityTrader
     {
         base.CopyPropertiesFromEntityClass();
         var _entityClass = EntityClass.list[entityClass];
+
+        if (_entityClass.Properties.Values.ContainsKey("Hirable"))
+            isHirable = StringParsers.ParseBool(_entityClass.Properties.Values["Hirable"], 0, -1, true);
+
+        if (_entityClass.Properties.Values.ContainsKey("IsQuestGiver"))
+            isQuestGiver = StringParsers.ParseBool(_entityClass.Properties.Values["IsQuestGiver"], 0, -1, true);
 
         flEyeHeight = EntityUtilities.GetFloatValue(entityId, "EyeHeight");
 
@@ -281,6 +293,7 @@ public class EntityAliveSDX : EntityTrader
             var box = StringParsers.ParseVector3(strBoundaryBox);
             var center = StringParsers.ParseVector3(strCenter);
             ConfigureBoundaryBox(box, center);
+
         }
 
     }
@@ -398,6 +411,10 @@ public class EntityAliveSDX : EntityTrader
             return base.OnEntityActivated(_indexInBlockActivationCommands, _tePos, _entityFocusing);
 
         }
+        //if (!isQuestGiver)
+        //{
+        //    return base.OnEntityActivated(_indexInBlockActivationCommands, _tePos, _entityFocusing);
+        //}
         Quest nextCompletedQuest = (_entityFocusing as EntityPlayerLocal).QuestJournal.GetNextCompletedQuest(null, this.entityId);
         // If the quest giver is not defined, don't let them close out the quest. We only want them to close out their own.
 
@@ -546,7 +563,7 @@ public class EntityAliveSDX : EntityTrader
             //  fail safe to protect game saves
         }
 
-      
+
     }
 
 
@@ -627,14 +644,14 @@ public class EntityAliveSDX : EntityTrader
         {
             Buffs.Write(_bw);
             // Disabled due to Potential Performance issues
-          //  Progression.Write(_bw);
+            //  Progression.Write(_bw);
         }
         catch (Exception)
         {
             // fail safe to protect game saves
         }
 
-       
+
     }
 
     public void GiveQuest(string strQuest)
@@ -823,7 +840,17 @@ public class EntityAliveSDX : EntityTrader
                 // if our leader is attached, that means they are attached to a vehicle
                 if (leader.AttachedToEntity != null)
                 {
+                    //   if (!Buffs.HasCustomVar("onMission"))
                     SendOnMission(true);
+                    var distanceToLeader2 = GetDistance(leader);
+                    if (distanceToLeader2 > 10)
+                    {
+                        var _position = leader.GetPosition();
+                        _position.y += 2;
+                        SetPosition(_position);
+                    }
+
+
                 }
                 else
                 {
@@ -873,9 +900,11 @@ public class EntityAliveSDX : EntityTrader
     public override void OnUpdateLive()
     {
         //CheckNoise();
-        LeaderUpdate();
+        if (isHirable)
+            LeaderUpdate();
+
         CheckStuck();
-       // SetupAutoPathingBlocks();
+        // SetupAutoPathingBlocks();
 
         // Wake them up if they are sleeping, since the trigger sleeper makes them go idle again.
         if (!sleepingOrWakingUp && isAlwaysAwake)
@@ -894,8 +923,15 @@ public class EntityAliveSDX : EntityTrader
             emodel.avatarController.SetBool("IsOnGround", onGround || isSwimming);
         }
 
-        base.OnUpdateLive();
+        // To catch a null ref.
+        try
+        {
+            base.OnUpdateLive();
+        }
+        catch (Exception ex)
+        {
 
+        }
         // Allow EntityAliveSDX to get buffs from blocks
         if (!isEntityRemote && !SingletonMonoBehaviour<ConnectionManager>.Instance.IsServer)
             UpdateBlockRadiusEffects();
@@ -904,14 +940,16 @@ public class EntityAliveSDX : EntityTrader
         if (NPCInfo == null)
             return;
 
-        // If the Tile Entity Trader isn't set, set it now. Sometimes this fails, and won't allow interaction.
-        if (_tileEntityTrader == null)
+        // if (isQuestGiver)
         {
-            _tileEntityTrader = new TileEntityTrader(null);
-            _tileEntityTrader.entityId = entityId;
-            _tileEntityTrader.TraderData.TraderID = NPCInfo.TraderID;
+            // If the Tile Entity Trader isn't set, set it now. Sometimes this fails, and won't allow interaction.
+            if (_tileEntityTrader == null)
+            {
+                _tileEntityTrader = new TileEntityTrader(null);
+                _tileEntityTrader.entityId = entityId;
+                _tileEntityTrader.TraderData.TraderID = NPCInfo.TraderID;
+            }
         }
-
         if (!this.isEntityRemote)
         {
             if (this.emodel)
@@ -1002,6 +1040,21 @@ public class EntityAliveSDX : EntityTrader
             NPCInfo.TraderID = 0;
     }
 
+    public override void ProcessDamageResponse(DamageResponse _dmResponse)
+    {
+        if (IsOnMission()) return;
+        base.ProcessDamageResponse(_dmResponse);
+    }
+
+    public override bool IsImmuneToLegDamage
+    {
+        get
+        {
+            if (IsOnMission()) return true;
+            return base.IsImmuneToLegDamage;
+        }
+    }
+
     public override int DamageEntity(DamageSource _damageSource, int _strength, bool _criticalHit, float _impulseScale)
     {
 
@@ -1064,20 +1117,44 @@ public class EntityAliveSDX : EntityTrader
         var leader = EntityUtilities.GetLeaderOrOwner(entityId) as EntityPlayerLocal;
         if (leader)
         {
-            // Remove the cvar.
             leader.Buffs.RemoveCustomVar($"hired_{entityId}");
             EntityUtilities.SetLeaderAndOwner(entityId, 0);
             GameManager.ShowTooltip(leader, $"Oh no! {EntityName} has died. :(");
+
+            if (lootContainer != null)
+            {
+                bool isBackpackEmpty = lootContainer.IsEmpty();
+                if (!isBackpackEmpty)
+                {
+                    var bagPosition = new Vector3i(this.position + base.transform.up);
+
+                    var className = "BackpackNPC";
+                    EntityClass entityClass = EntityClass.GetEntityClass(className.GetHashCode());
+                    if (entityClass == null)
+                        className = "Backpack";
+
+                    var entityBackpack = EntityFactory.CreateEntity(className.GetHashCode(), bagPosition) as EntityItem;
+
+                    EntityCreationData entityCreationData = new EntityCreationData(entityBackpack);
+
+                    entityCreationData.entityName = Localization.Get(this.EntityName);
+                    entityCreationData.id = -1;
+                    entityCreationData.lootContainer = lootContainer;
+
+                    GameManager.Instance.RequestToSpawnEntityServer(entityCreationData);
+
+                    entityBackpack.OnEntityUnload();
+                    this.SetDroppedBackpackPosition(new Vector3i(bagPosition));
+                }
+            }
         }
 
-        // Remove them from the companions of the player.
         var player = leader as EntityPlayer;
         if (leader)
         {
             player.Companions.Remove(this);
             player.Buffs.RemoveCustomVar($"hired_{entityId}");
         }
-
 
         bWillRespawn = false;
         if (this.NavObject != null)
@@ -1086,8 +1163,17 @@ public class EntityAliveSDX : EntityTrader
             this.NavObject = null;
         }
         SetupDebugNameHUD(false);
+
+        this.lootContainer = null;
+        this.lootListAlive = null;
+        this.lootListOnDeath = null;
+        this.isCollided = false;
+        this.nativeCollider = null;
+        this.physicsCapsuleCollider = null;
+
         base.SetDead();
     }
+
     public new void SetAttackTarget(EntityAlive _attackTarget, int _attackTargetTime)
     {
         if (_attackTarget != null)
@@ -1109,6 +1195,12 @@ public class EntityAliveSDX : EntityTrader
 
     public override void OnUpdatePosition(float _partialTicks)
     {
+        if (!isHirable)
+        {
+            base.OnUpdatePosition(_partialTicks);
+            return;
+        }
+
         if (this.position.y <= 0)
         {
             var leader = EntityUtilities.GetLeaderOrOwner(entityId) as EntityAlive;
@@ -1142,6 +1234,7 @@ public class EntityAliveSDX : EntityTrader
 
         if (EntityUtilities.GetCurrentOrder(entityId) == EntityUtilities.Orders.Stay) return;
         if (EntityUtilities.GetCurrentOrder(entityId) == EntityUtilities.Orders.Guard) return;
+
 
         var target2i = new Vector2(target.position.x, target.position.z);
         var mine2i = new Vector2(position.x, position.z);
@@ -1242,23 +1335,42 @@ public class EntityAliveSDX : EntityTrader
 
     }
 
+
+    // Cleaned up this method to try to avoid the disappearing NPCs.
+    //Original logic was meant to protect the trader's from unloading NPCs when they entered a trader area.
     public override void MarkToUnload()
     {
-        // Only prevent despawning if owned.
-        var leader = EntityUtilities.GetLeaderOrOwner(entityId);
-        // make sure they are alive first.
-        if (leader != null && IsAlive())
-        {
-            // Something asked us to despawn. Check if we are in a trader area. If we are, ignore the request.
-            if (_traderArea == null)
-                _traderArea = world.GetTraderAreaAt(new Vector3i(position));
+        //if ( !isHirable)
+        //{
+        //    base.MarkToUnload();
+        //    return;
+        //}
 
-            if (_traderArea != null)
-            {
-                IsDespawned = false;
-                return;
-            }
-        }
+        //// Only prevent despawning if owned.
+        //var leader = EntityUtilities.GetLeaderOrOwner(entityId);
+        //// make sure they are alive first.
+        //if (leader != null && IsAlive())
+        //{
+        //    switch (EntityUtilities.GetCurrentOrder(entityId))
+        //    {
+        //        case EntityUtilities.Orders.Patrol:
+        //        case EntityUtilities.Orders.Stay:
+        //            base.MarkToUnload();
+        //            return;
+        //        default:
+        //            break;
+        //    }
+        // Something asked us to despawn. Check if we are in a trader area. If we are, ignore the request.
+        //if (_traderArea == null)
+        //    _traderArea = world.GetTraderAreaAt(new Vector3i(position));
+
+        //if (_traderArea != null)
+        //{
+
+        //    IsDespawned = false;
+        //    return;
+        //}
+        ////  }
 
         base.MarkToUnload();
     }
@@ -1406,31 +1518,31 @@ public class EntityAliveSDX : EntityTrader
         }
         return;
     }
-    protected override Vector3i dropCorpseBlock()
-    {
-        var bagPosition = new Vector3i(this.position + base.transform.up);
-        if (lootContainer == null) return base.dropCorpseBlock();
+    //protected override Vector3i dropCorpseBlock()
+    //{
+    //    var bagPosition = new Vector3i(this.position + base.transform.up);
+    //    if (lootContainer == null) return base.dropCorpseBlock();
 
-        if (lootContainer.IsEmpty()) return base.dropCorpseBlock();
+    //    if (lootContainer.IsEmpty()) return base.dropCorpseBlock();
 
-        // Check to see if we have our backpack container.
-        var className = "BackpackNPC";
-        EntityClass entityClass = EntityClass.GetEntityClass(className.GetHashCode());
-        if (entityClass == null)
-            className = "Backpack";
+    //    // Check to see if we have our backpack container.
+    //    var className = "BackpackNPC";
+    //    EntityClass entityClass = EntityClass.GetEntityClass(className.GetHashCode());
+    //    if (entityClass == null)
+    //        className = "Backpack";
 
-        var entityBackpack = EntityFactory.CreateEntity(className.GetHashCode(), bagPosition) as EntityItem;
-        EntityCreationData entityCreationData = new EntityCreationData(entityBackpack);
-        entityCreationData.entityName = Localization.Get(this.EntityName);
+    //    var entityBackpack = EntityFactory.CreateEntity(className.GetHashCode(), bagPosition) as EntityItem;
+    //    EntityCreationData entityCreationData = new EntityCreationData(entityBackpack);
+    //    entityCreationData.entityName = Localization.Get(this.EntityName);
 
-        entityCreationData.id = -1;
-        entityCreationData.lootContainer = lootContainer;
-        GameManager.Instance.RequestToSpawnEntityServer(entityCreationData);
-        entityBackpack.OnEntityUnload();
-        this.SetDroppedBackpackPosition(new Vector3i(bagPosition));
-        return bagPosition;
+    //    entityCreationData.id = -1;
+    //    entityCreationData.lootContainer = lootContainer;
+    //    GameManager.Instance.RequestToSpawnEntityServer(entityCreationData);
+    //    entityBackpack.OnEntityUnload();
+    //    this.SetDroppedBackpackPosition(new Vector3i(bagPosition));
+    //    return bagPosition;
 
-    }
+    //}
 
     protected override void playStepSound(string stepSound)
     {
@@ -1465,6 +1577,12 @@ public class EntityAliveSDX : EntityTrader
             }
         }
 
+    }
+
+    public override void PlayOneShot(string clipName, bool sound_in_head = false)
+    {
+        if (IsOnMission()) return;
+        base.PlayOneShot(clipName, sound_in_head);
     }
     //public override void OnReloadStart()
     //{

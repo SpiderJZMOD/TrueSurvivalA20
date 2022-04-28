@@ -4481,8 +4481,8 @@
 
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
 
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="tools,tools,tools" required_tools_only="false">
-				<required_item_stack name="0"/>
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" required_tools="tools,tools,tools" required_tools_only="false"><!-- JZMOD ANY TOOL-->
+				<item_stack controller="RequiredItemStack" name="0"/>
 			</grid>
 		</rect>
 	</window>

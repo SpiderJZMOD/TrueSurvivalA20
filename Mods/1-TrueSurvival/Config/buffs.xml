@@ -10722,7 +10722,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffDeadIsDeadResetNoCheating"  /> 
 				
 				<triggered_effect trigger="onSelfBuffStart" action="ResetPlayerSkills, TrueSurvival" target="self" value="0"/>
-				<triggered_effect trigger="onSelfRespawn" action="ClearMap, TrueSurvival" />	<!--ClearMap, Mods-->				
+				<triggered_effect trigger="onSelfBuffFinish" action="ClearMap, TrueSurvival" />	<!--ClearMap, Mods-->				
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LastPlayerLevel" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$PlayerLevelBonus" operation="set" value="1"/> 
                
@@ -13829,7 +13829,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffLacerationRightHandTendedB" name_key="Laceration Right Hand Bandage" remove_on_death="false" description_key="jz_BuffLacerationRightHandTendedDesc" icon="RightHandLacerationBandaged" >
+	<buff name="jz_BuffLacerationRightHandTendedB" name_key="Laceration Right Hand Bandage" remove_on_death="false" description_key="jz_BuffLacerationRightHandTendedDesc" icon="RightHandBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".LacerationRightHandTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -20712,7 +20712,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashLeftHandTended" name_key="Gash Left Hand Bandage" remove_on_death="false" description_key="jz_BuffGashLeftHandTendedDesc" icon="LeftHandGashBandaged" >
+	<buff name="jz_BuffGashLeftHandTended" name_key="Gash Left Hand Bandage" remove_on_death="false" description_key="jz_BuffGashLeftHandTendedDesc" icon="LeftHandBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".GashLeftHandTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -21083,7 +21083,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashRightHandTended" name_key="Gash Right Hand Bandage" remove_on_death="false" description_key="jz_BuffGashRightHandTendedDesc" icon="RightHandGashBandaged" >
+	<buff name="jz_BuffGashRightHandTended" name_key="Gash Right Hand Bandage" remove_on_death="false" description_key="jz_BuffGashRightHandTendedDesc" icon="RightHandBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".GashRightHandTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   

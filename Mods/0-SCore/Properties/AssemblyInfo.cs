@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("sphereii")]
 [assembly: AssemblyProduct("SCore")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -38,5 +38,6 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 //[assembly: AssemblyVersion("20.0.*")]
 
-[assembly: AssemblyVersion("20.2.83.1240")]
-[assembly: AssemblyFileVersion("20.2.83.1240")]
+
+[assembly: AssemblyVersion("20.4.116.1950")]
+[assembly: AssemblyFileVersion("20.4.116.1950")]
