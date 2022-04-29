@@ -408,7 +408,8 @@
 			</rect>
 
 			<rect depth="1" name="voice" width="80" height="46" pos="552,-6">
-				<sprite depth="1" name="iconVoice" style="icon32px" pos="40,-16" sprite="ui_game_symbol_mic" pivot="center" color="[lightGrey]" />
+				<button depth="1" name="iconChat" style="icon32px, press, hover" pos="20,-16" sprite="ui_game_symbol_shape_text" pivot="center" color="[lightGrey]" sound="[craft_click]" />
+				<button depth="1" name="iconVoice" style="icon32px, press, hover" pos="60,-16" sprite="ui_game_symbol_mic" pivot="center" color="[lightGrey]" sound="[craft_click]" />
 			</rect>
 
 			<rect depth="1" name="km" width="50" height="46" pos="638,-6">
@@ -780,13 +781,14 @@
 			<filledsprite depth="3" name="BarHealthModifiedMax" color="0,0,0,255" width="199" fillcenter="false" type="filled" fill="{healthmodifiedmax}" />
 
 
-			<label depth="6" name="TextContent" pos="6, -6" font_size="26" color="[white]" justify="left" pivot="topleft" text="{name}" height="30" width="124"/>
+			<label depth="6" name="TextContent" pos="30, -6" font_size="26" color="[white]" justify="left" pivot="topleft" text="{name}" height="30" width="100"/>
 			<label depth="6" name="TextContent" pos="232,-6" font_size="26" color="{distancecolor}" pivot="topleft" text="{distance}" height="30" effect="outline"/>
 			
 			<sprite pos="135,-3" depth="8" name="icon2" style="icon30px" sprite="{icon2}" visible="{showicon2}" />
 			<sprite pos="167,-3" depth="8" name="icon1" style="icon30px" sprite="{icon1}" visible="{showicon1}" />
 		
 			<sprite depth="8" name="arrowContent" style="icon22px" pos="216,-18" sprite="ui_game_symbol_map_player_arrow" visible="{showarrow}" pivot="center" color="{arrowcolor}" />
+			<sprite depth="8" name="voiceStatus" style="icon22px" pos="15,-18" sprite="ui_game_symbol_talk" visible="{voicevisible}" pivot="center" color="{# voicemuted ? '200,0,0,255' : (voiceactive ? '255,255,255,255' : '128,128,128,255') }" />
 		</rect>
 	</party_entry>
 
