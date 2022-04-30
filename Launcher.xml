@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+   <ServerGroup Name="True Survival" Logo="" Description="True Survival 20\n\n14.1.30.218\nPort.-28716\nPW-spider1">
+        <Server Name="True Survival 20" Logo="">
+            <Description>True Survival 20.4
+            Single/Coop/Server test build. 
+            
+            Official True Survival Server
+            IP - 14.1.30.218
+            Port. - 28716
+            PW - spider1
+			-----------------------------------
+            Required SP/Coop Game Settings
+            -RWG Maps only
+            -World Size = 8192x8192 (or bigger)
+            -Difficulty = Adventurer 
+            -24Hr Cycle = 60-90min
+            -Day light length = 18
+            -Zombie Day Speed = Walk
+            -Zombie Night Speed = Jog
+            -Zombie Feral Speed = Run
+            -Zombie Bloodmoon Speed = Sprint
+            -XP Multiplier = 100%
+            -Loot Abundance = 100%
+			-Block Damages - 100%
+            -Loot Respawn Timer = Disabled
+			-Drop all on death
+            -Bloodmoon Count = 64 (or as much as your PC can take)
+            </Description>
+            <DownloadMode>Clone</DownloadMode>
+            <Address>14.1.30.218</Address>                    
+            <Port>28716</Port>    
+            <ReleaseNotes>https://community.7daystodie.com/topic/3966-true-survival/</ReleaseNotes>
+            <Downloads>
+                <Download>https://github.com/SpiderJZMOD/TrueSurvivalA20</Download>
+            </Downloads>
+        </Server>
+    </ServerGroup>
+</Servers>
