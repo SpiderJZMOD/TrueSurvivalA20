@@ -902,7 +902,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<!-- JZMOD MEDICAL RESTRICTIONS -->
 		<effect_group name="Needs Bandage">
 			<requirements compare_type="or">
-				<requirement name="HasBuff" buff="jz_BuffZombieBiteBleed"/>
+				<requirement name="CVarCompare" cvar="$ZombieBiteBleeding" operation="Equals" value="1"/>
 				<requirement name="HasBuff" buff="jz_BuffZombieBiteDirtyBandageB"/>
 				<requirement name="HasBuff" buff="jz_BuffLacerationNeckDirtyBandage"/>
 				<requirement name="HasBuff" buff="jz_BuffLacerationStomachDirtyBandage"/>
@@ -14979,7 +14979,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffLacerationStomachTendedB" name_key="Laceration Stomach Bandage" remove_on_death="false" description_key="jz_BuffLacerationStomachTendedDesc" icon="StomachLacerationBandaged" >
+	<buff name="jz_BuffLacerationStomachTendedB" name_key="Laceration Stomach Bandage" remove_on_death="false" description_key="jz_BuffLacerationStomachTendedDesc" icon="StomachBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".LacerationStomachTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -15358,7 +15358,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffLacerationNeckTendedB" name_key="Laceration Neck Bandage" remove_on_death="false" description_key="jz_BuffLacerationNeckTendedDesc" icon="NeckLacerationBandaged" >
+	<buff name="jz_BuffLacerationNeckTendedB" name_key="Laceration Neck Bandage" remove_on_death="false" description_key="jz_BuffLacerationNeckTendedDesc" icon="NeckBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".LacerationNeckTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -22209,7 +22209,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashStomachTended" name_key="Gash Stomach Bandage" remove_on_death="false" description_key="jz_BuffGashStomachTendedDesc" icon="StomachGashBandaged" >
+	<buff name="jz_BuffGashStomachTended" name_key="Gash Stomach Bandage" remove_on_death="false" description_key="jz_BuffGashStomachTendedDesc" icon="StomachBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".GashStomachTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -22580,7 +22580,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashNeckTended" name_key="Gash Neck Bandage" remove_on_death="false" description_key="jz_BuffGashNeckTendedDesc" icon="NeckGashBandaged" >
+	<buff name="jz_BuffGashNeckTended" name_key="Gash Neck Bandage" remove_on_death="false" description_key="jz_BuffGashNeckTendedDesc" icon="NeckBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".GashNeckTendingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -22881,7 +22881,6 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="1.5"/>
 		
 		<effect_group name="Zombie Bite Burn">
-			<requirement name="CVarCompare" cvar=".MedicalBandageTriage" operation="LT" value="1"/>
 			<requirement name="CVarCompare" cvar="$ZBiteBurnNeedsTreatment" operation="Equals" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBite"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffZombieBiteTendedA"/>	
@@ -23340,7 +23339,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="1.5"/>
 		<effect_group name="Zombie Bite Bleeding">
-			<requirement name="HasBuff" buff="jz_BuffZombieBiteBleed"/>
+			<requirement name="CVarCompare" cvar="$ZombieBiteBleeding" operation="Equals" value="1"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteBleed"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZombieBiteBleeding" operation="set" value="0"/>	
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ZBiteReadyForCauterizing" operation="set" value="1"/>
@@ -24498,7 +24497,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconA"/>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconAA"/>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconB"/>
@@ -24514,7 +24513,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconB"/>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconBB"/>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconB"/>
@@ -24530,7 +24529,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconC"/>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconCC"/>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconB"/>
@@ -24546,7 +24545,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconD"/>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="jz_BuffZombieBiteDirtyBandageIconDD"/>
 			
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconA"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffZombieBiteDirtyBandageIconB"/>
@@ -28301,7 +28300,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachIconAA" name_key="Burn Stomach" description_key="jz_BuffFireBurnStomachNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="StomachGash" >
+	<buff name="jz_BuffFireBurnStomachIconAA" name_key="Burn Stomach" description_key="jz_BuffFireBurnStomachNeedsAloeDesc" icon="StomachGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28426,31 +28425,31 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 		
-	<buff name="jz_BuffFireBurnStomachBandagedA" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachGashBandaged">
+	<buff name="jz_BuffFireBurnStomachBandagedA" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachBandaged">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnStomachBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachBandagedB" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnStomachBandagedB" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnStomachBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachBandagedC" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnStomachBandagedC" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnStomachBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachBandagedD" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnStomachBandagedD" name_key="Burn Stomach Bandaged" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnStomachBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachBandaged" name_key="Burn Stomach Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachGashBandaged" hidden="true">
+	<buff name="jz_BuffFireBurnStomachBandaged" name_key="Burn Stomach Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnStomachBandagedDesc" icon="StomachBandaged" hidden="true">
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnStomachBandagedDurationDisplay"/><display_value_format value="time"/>
         <effect_group>
@@ -28490,7 +28489,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconA" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="StomachGashBandaged" >
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconA" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="StomachBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28503,7 +28502,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconB" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" icon="StomachGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconB" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" icon="StomachBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28517,7 +28516,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconC" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" icon="StomachGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconC" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" icon="StomachBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28531,7 +28530,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconD" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" icon="StomachGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconD" name_key="Burn Stomach Needs Cleansed" description_key="jz_BuffFireBurnStomachNeedsCleansedBDesc" icon="StomachBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28545,7 +28544,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconAA" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="StomachGashBandaged" >
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconAA" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="StomachBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28556,7 +28555,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconBB" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" icon="StomachGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconBB" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" icon="StomachBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28568,7 +28567,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconCC" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" icon="StomachGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconCC" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" icon="StomachBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28580,7 +28579,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachNeedsBandageIconDD" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" icon="StomachGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnStomachNeedsBandageIconDD" name_key="Burn Stomach Needs Bandage" description_key="jz_BuffFireBurnStomachNeedsAloeBDesc" icon="StomachBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28591,7 +28590,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnStomachNeedsBandageIconAA"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffFireBurnStomachNeedsBandage" name_key="Burn Stomach Needs Treatment" remove_on_death="false" icon="StomachGashBandaged" icon_color="255,128,0" hidden="true">
+	<buff name="jz_BuffFireBurnStomachNeedsBandage" name_key="Burn Stomach Needs Treatment" remove_on_death="false" icon="StomachBandaged" icon_color="255,128,0" hidden="true">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnStomachNeedsDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -28654,7 +28653,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnStomachHealing" name_key="Burn Stomach Healing" remove_on_death="false" description_key="jz_BuffFireBurnStomachHealingDesc" icon="StomachGashBandaged" >
+	<buff name="jz_BuffFireBurnStomachHealing" name_key="Burn Stomach Healing" remove_on_death="false" description_key="jz_BuffFireBurnStomachHealingDesc" icon="StomachBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnStomachHealingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -28727,7 +28726,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckIconAA" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="NeckGash" >
+	<buff name="jz_BuffFireBurnNeckIconAA" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckBurnCleaned" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28742,7 +28741,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckIconBB" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckGash" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnNeckIconBB" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckBurnCleaned" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28757,7 +28756,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckIconCC" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckGash" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnNeckIconCC" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckBurnCleaned" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28772,7 +28771,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckIconDD" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckGash" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnNeckIconDD" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsAloeDesc" icon="NeckBurnCleaned" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28786,7 +28785,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffFireBurnNeck" name_key="Burn Neck" remove_on_death="false" icon="NeckGash" icon_color="255,128,0" hidden="true">
+	<buff name="jz_BuffFireBurnNeck" name_key="Burn Neck" remove_on_death="false" icon="NeckBurnCleaned" icon_color="255,128,0" hidden="true">
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28852,31 +28851,31 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 		
-	<buff name="jz_BuffFireBurnNeckBandagedA" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckGashBandaged">
+	<buff name="jz_BuffFireBurnNeckBandagedA" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckBandaged">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnNeckBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckBandagedB" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnNeckBandagedB" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnNeckBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckBandagedC" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnNeckBandagedC" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnNeckBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckBandagedD" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnNeckBandagedD" name_key="Burn Neck Bandaged" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnNeckBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckBandaged" name_key="Burn Neck Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckGashBandaged" hidden="true">
+	<buff name="jz_BuffFireBurnNeckBandaged" name_key="Burn Neck Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnNeckBandagedDesc" icon="NeckBandaged" hidden="true">
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnNeckBandagedDurationDisplay"/><display_value_format value="time"/>
         <effect_group>
@@ -28916,7 +28915,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconA" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="NeckGashBandaged" >
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconA" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="NeckBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28929,7 +28928,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconB" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" icon="NeckGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconB" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" icon="NeckBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28943,7 +28942,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconC" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" icon="NeckGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconC" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" icon="NeckBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28957,7 +28956,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconD" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" icon="NeckGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconD" name_key="Burn Neck Needs Cleansed" description_key="jz_BuffFireBurnNeckNeedsCleansedBDesc" icon="NeckBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28971,7 +28970,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconAA" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="NeckGashBandaged" >
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconAA" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="NeckBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28982,7 +28981,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconBB" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" icon="NeckGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconBB" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" icon="NeckBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28994,7 +28993,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconCC" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" icon="NeckGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconCC" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" icon="NeckBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -29006,7 +29005,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckNeedsBandageIconDD" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" icon="NeckGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnNeckNeedsBandageIconDD" name_key="Burn Neck Needs Bandage" description_key="jz_BuffFireBurnNeckNeedsAloeBDesc" icon="NeckBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -29017,7 +29016,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckNeedsBandageIconAA"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffFireBurnNeckNeedsBandage" name_key="Burn Neck Needs Treatment" remove_on_death="false" icon="NeckGashBandaged" icon_color="255,128,0" hidden="true">
+	<buff name="jz_BuffFireBurnNeckNeedsBandage" name_key="Burn Neck Needs Treatment" remove_on_death="false" icon="NeckBandaged" icon_color="255,128,0" hidden="true">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnNeckNeedsDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -29080,7 +29079,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnNeckHealing" name_key="Burn Neck Healing" remove_on_death="false" description_key="jz_BuffFireBurnNeckHealingDesc" icon="NeckGashBandaged" >
+	<buff name="jz_BuffFireBurnNeckHealing" name_key="Burn Neck Healing" remove_on_death="false" description_key="jz_BuffFireBurnNeckHealingDesc" icon="NeckBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnNeckHealingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   

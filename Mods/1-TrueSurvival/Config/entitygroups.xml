@@ -21,6 +21,7 @@
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieFatHawaiian" prob="0.3"/>
+		<entity name="animalZombieVulture" prob="0.3"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesNight">
@@ -90,6 +91,7 @@
 		<entity name="zombieSoldierFeral" prob=".05"/>
 		<entity name="animalZombieDog" prob=".1"/>
 		<entity name="animalWolf" prob=".1"/>
+		<entity name="animalZombieVulture" prob="0.05"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesForestDowntownNight">
@@ -169,6 +171,7 @@
 		<entity name="animalZombieDog" prob=".4"/>
 		<entity name="animalWolf" prob=".4"/>
 		<entity name="animalDireWolf" prob=".05"/>
+		<entity name="animalZombieVulture" prob="0.05"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesWasteland">

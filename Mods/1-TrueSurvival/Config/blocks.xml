@@ -34037,6 +34037,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_WorkstationImprovisedWorkbench">
 	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="ImprovisedWorkbench"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv1Prefab" />
    <property name="ModelOffset" value="0,0,0" />
@@ -34072,7 +34073,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34084,13 +34085,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationImprovisedWorkbenchLv2">
 	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="ImprovisedWorkbench"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv2Prefab" />
    <property name="ModelOffset" value="0,0,0" />
@@ -34126,7 +34125,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34138,13 +34137,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationImprovisedWorkbenchLv3">
 	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="ImprovisedWorkbench"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv3Prefab" />
    <property name="ModelOffset" value="0,0,0" />
@@ -34180,7 +34177,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34192,13 +34189,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationImprovisedWorkbenchLv4">
 	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="ImprovisedWorkbench"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv4Prefab" />
     <property name="ModelOffset" value="0,0,0" />
@@ -34234,7 +34229,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34246,14 +34241,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationImprovisedWorkbenchLv5">
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
+	<property name="CustomIcon" value="ImprovisedWorkbench"/>
 	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv5Prefab" />
 	<property name="ModelOffset" value="0,0,0" />
     <!--<property name="MultiBlockDim" value="2,2,1" />-->
@@ -34288,7 +34281,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34300,14 +34293,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationImprovisedWorkbenchLv6">
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
+	<property name="CustomIcon" value="ImprovisedWorkbench"/>
 	<property name="Model" value="#@modfolder:Resources/JZImprovisedWorkbench.unity3d?ImprovisedWorkbenchLv6Prefab" />
 	<property name="ModelOffset" value="0,0,0" />
     <!--<property name="MultiBlockDim" value="2,2,1" />-->
@@ -34342,19 +34333,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationPipeGunWorkbench">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="PipeGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -34390,9 +34379,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	<property name="CustomIcon" value="Working" />
+	
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34404,13 +34393,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationPipeGunWorkbenchLv2">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="PipeGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -34446,9 +34433,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	<property name="CustomIcon" value="Working" />
+	
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34460,13 +34447,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationPipeGunWorkbenchLv3">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="PipeGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -34502,9 +34487,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	<property name="CustomIcon" value="Working" />
+	
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34516,13 +34501,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationPipeGunWorkbenchLv4">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="PipeGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -34558,9 +34541,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	<property name="CustomIcon" value="Working" />
+	
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34572,13 +34555,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationPipeGunWorkbenchLv5">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="PipeGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -34614,9 +34595,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	<property name="CustomIcon" value="Working" />
+	
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34628,13 +34609,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationPipeGunWorkbenchLv6">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="PipeGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -34670,25 +34649,22 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	<property name="CustomIcon" value="Working" />
+	
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationLightArmorWorkbench">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="LightArmorWorkbench"/>
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv1Prefab" />
@@ -34722,7 +34698,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34734,17 +34710,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationLightArmorWorkbenchLv2">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="LightArmorWorkbench"/>
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv2Prefab" />
@@ -34778,7 +34751,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34790,17 +34763,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationLightArmorWorkbenchLv3">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="LightArmorWorkbench"/>
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv3Prefab" />
@@ -34834,7 +34804,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34846,17 +34816,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationLightArmorWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
+	<property name="CustomIcon" value="LightArmorWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv4Prefab" />
@@ -34890,7 +34857,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34902,17 +34869,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationLightArmorWorkbenchLv5">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
+	<property name="CustomIcon" value="LightArmorWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv5Prefab" />
@@ -34946,7 +34910,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -34958,17 +34922,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationLightArmorWorkbenchLv6">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="LightArmorWorkbench"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv6Prefab" />
@@ -35002,23 +34963,20 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHeavyArmorWorkbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
+	<property name="CustomIcon" value="HeavyArmorWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv1Prefab" />
@@ -35052,7 +35010,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35064,17 +35022,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHeavyArmorWorkbenchLv2">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
+	<property name="CustomIcon" value="HeavyArmorWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv2Prefab" />
@@ -35108,7 +35063,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35120,17 +35075,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHeavyArmorWorkbenchLv3">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
+	<property name="CustomIcon" value="HeavyArmorWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv3Prefab" />
@@ -35164,7 +35116,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35176,17 +35128,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHeavyArmorWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="HeavyArmorWorkbench"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv4Prefab" />
@@ -35220,7 +35169,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35232,17 +35181,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHeavyArmorWorkbenchLv5">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="HeavyArmorWorkbench"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv5Prefab" />
@@ -35276,7 +35222,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35288,17 +35234,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHeavyArmorWorkbenchLv6">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Mwood" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="HeavyArmorWorkbench"/>
 	<property name="Weight" value="0"/>
-	<property name="CustomIcon" value="ArmorBench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv6Prefab" />
@@ -35332,15 +35275,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationToolWorkbench">
@@ -35348,6 +35288,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="AdvancedWorkbench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv1Prefab" />
@@ -35364,7 +35305,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -35382,7 +35322,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35394,13 +35334,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationToolWorkbenchLv2">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="AdvancedWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -35420,7 +35358,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -35438,7 +35375,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35450,14 +35387,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationToolWorkbenchLv3">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="AdvancedWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35476,7 +35411,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -35494,7 +35428,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35506,14 +35440,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationToolWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="AdvancedWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35532,7 +35464,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -35550,7 +35481,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35562,9 +35493,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationToolWorkbenchLv5">
@@ -35572,6 +35500,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="AdvancedWorkbench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZToolWorkbench.unity3d?ToolWorkbenchLv5Prefab" />
@@ -35588,7 +35517,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -35606,7 +35534,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35618,14 +35546,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationToolWorkbenchLv6">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="AdvancedWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35644,7 +35570,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
 	<property name="CraftActionName" value="Craft"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
@@ -35662,20 +35587,18 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationElectronicWorkbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ElectronicWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35688,7 +35611,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -35712,7 +35634,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35724,14 +35646,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationElectronicWorkbenchLv2">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ElectronicWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35744,7 +35664,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -35768,7 +35687,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35780,14 +35699,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationElectronicWorkbenchLv3">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ElectronicWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35800,7 +35717,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -35824,7 +35740,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35836,14 +35752,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationElectronicWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ElectronicWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -35856,7 +35770,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -35880,7 +35793,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35892,9 +35805,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationElectronicWorkbenchLv5">
@@ -35902,6 +35812,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="ElectronicWorkbench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchElectronic.unity3d?ElectronicWorkbenchLv1Prefab" />
@@ -35912,7 +35823,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -35936,7 +35846,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -35948,15 +35858,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationElectronicWorkbenchLv6">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="ElectronicWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -35968,7 +35876,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -35992,19 +35899,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 <block name="jz_WorkstationHandgunWorkbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="HandgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36022,7 +35927,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36041,7 +35945,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36053,15 +35957,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHandgunWorkbenchLv2">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="HandgunWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -36078,7 +35980,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36097,7 +35998,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36109,14 +36010,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHandgunWorkbenchLv3">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="HandgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36134,7 +36033,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36153,7 +36051,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36165,14 +36063,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHandgunWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="HandgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36190,7 +36086,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36209,7 +36104,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36221,14 +36116,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHandgunWorkbenchLv5">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="HandgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36246,7 +36139,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36265,7 +36157,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36277,9 +36169,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationHandgunWorkbenchLv6">
@@ -36287,6 +36176,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="HandgunWorkbench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHandgun.unity3d?HandgunWorkbenchLv6Prefab" />
@@ -36302,7 +36192,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
     <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36321,19 +36210,17 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationShotgunWorkbench">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="ShotgunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -36345,7 +36232,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -36371,7 +36257,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36383,14 +36269,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationShotgunWorkbenchLv2">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ShotgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36401,7 +36285,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -36427,7 +36310,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36439,13 +36322,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationShotgunWorkbenchLv3">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="ShotgunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -36457,7 +36338,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -36483,7 +36363,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36495,14 +36375,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationShotgunWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ShotgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36513,7 +36391,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -36539,7 +36416,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36551,14 +36428,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationShotgunWorkbenchLv5">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ShotgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36569,7 +36444,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -36595,7 +36469,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36607,14 +36481,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationShotgunWorkbenchLv6">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="ShotgunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36625,7 +36497,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -36651,21 +36522,19 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationMachineGunWorkbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="MachineGunWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -36687,7 +36556,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -36701,7 +36569,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36713,13 +36581,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationMachineGunWorkbenchLv2">
 	<property name="Class" value="Workstation" />
+	<property name="CustomIcon" value="MachineGunWorkbench"/>
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
@@ -36743,7 +36609,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -36757,7 +36622,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36769,14 +36634,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationMachineGunWorkbenchLv3">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="MachineGunWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -36799,7 +36662,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -36813,7 +36675,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36825,15 +36687,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationMachineGunWorkbenchLv4">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="MachineGunWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -36855,7 +36715,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -36869,7 +36728,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36881,15 +36740,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationMachineGunWorkbenchLv5">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="MachineGunWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -36911,7 +36768,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -36925,7 +36781,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -36937,15 +36793,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationMachineGunWorkbenchLv6">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="MachineGunWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -36967,7 +36821,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="chem_station_open"/>
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
 	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
@@ -36981,20 +36834,18 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationRifleWorkbench">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="RifleWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -37007,7 +36858,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37031,7 +36881,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -37043,14 +36893,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationRifleWorkbenchLv2">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
+	<property name="CustomIcon" value="RifleWorkbench"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
@@ -37063,7 +36911,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37087,7 +36934,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -37099,15 +36946,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationRifleWorkbenchLv3">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="RifleWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -37119,7 +36964,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37143,7 +36987,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -37155,9 +36999,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationRifleWorkbenchLv4">
@@ -37166,6 +37007,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
+	<property name="CustomIcon" value="RifleWorkbench"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv4Prefab" />
     <property name="ModelOffset" value="0,0,0" />
@@ -37175,7 +37017,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37199,7 +37040,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -37211,15 +37052,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationRifleWorkbenchLv5">
 	<property name="Class" value="Workstation" />
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="RifleWorkbench"/>
 	<property name="Weight" value="0"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
@@ -37230,8 +37069,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
-	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
+	<property name="IsTerrainDecoration" value="true"/>	
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37255,7 +37093,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
@@ -37267,9 +37105,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_WorkstationRifleWorkbenchLv6">
@@ -37277,6 +37112,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Miron_scrap" />
 	<property name="MaxDamage" value="1000"/>
 	<property name="Weight" value="0"/>
+	<property name="CustomIcon" value="RifleWorkbench"/>
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZRifleWorkbench.unity3d?RifleWorkbenchLv6Prefab" />
@@ -37287,7 +37123,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CustomIcon" value="Working" />
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
@@ -37311,15 +37146,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property class="Workstation">
-		<property name="Modules" value="tools,output,input" />
+		<property name="Modules" value="output,input" />
 	</property>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="12" />
 	</property>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="1.0" stick_chance=".75" />
-	<drop event="Harvest" name="jz_Stick" count="8" tag="allHarvest"/>
-	<drop event="Harvest" name="jz_Stick" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_MethaneTankBomb">
@@ -38216,6 +38048,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="ModelOffset" value="0,.1,0"/> 
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
@@ -38610,7 +38443,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZDecorTireMarks1.unity3d?DecorTireMarks1Prefab" />
 	<property name="FilterTags" value="fdecor,fother"/>
-	<!--<property name="ModelOffset" value="0,.7,0"/> -->
+	<property name="ModelOffset" value="0,.1,0"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<drop event="Destroy" count="0"/>
 </block>
@@ -38619,7 +38452,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="jz_MasterTireMarks"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZDecorTireMarks3.unity3d?DecorTireMarks3Prefab" />
-	<property name="ModelOffset" value="0,.1,0"/>
+	
 </block>
 
 <block name="jz_TireMarks3">
@@ -41607,8 +41440,66 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="CanPickup" value="true" />
 </block>
 <!-- JZMOD STARTER BLOCKS -->
+<block name="jz_SimpleIronFrame">
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Texture" value="352"/>
+	<property name="Path" value="solid"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_frame"/>
+	<property name="CustomIcon" value="shapeCubeFrame"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="LightOpacity" value="0"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="corrugatedMetalShapes:cube"/>
+		<property name="Item" value="jz_IronSheetMetal"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>	
+	<property name="Tags" value="jz_IronBuilding"/>
+	 <!--JZMOD ANY-->
+	<drop event="Harvest" name="resourceScrapIron" count="10" prob="1" tag="allHarvest" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<drop event="Destroy" count="0"/>
+	 <!--JZMOD WRENCH-->
+    <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
+   	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
+	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" /> 
+</block>
+
+<block name="jz_SimpleIronRampFrame">
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Texture" value="352"/>
+	<property name="Path" value="solid"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_frame"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="CustomIcon" value="shapeRampFrame"/>
+	<property name="LightOpacity" value="0"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="corrugatedMetalShapes:ramp"/>
+		<property name="Item" value="jz_IronSheetMetal"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>	
+	<property name="Tags" value="jz_IronBuilding"/>
+	 <!--JZMOD ANY-->
+	<drop event="Harvest" name="resourceScrapIron" count="10" prob="1" tag="allHarvest" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<drop event="Destroy" count="0"/>
+	 <!--JZMOD WRENCH-->
+    <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
+   	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
+	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" /> 
+</block>
+
 <block name="jz_SimpleWoodShapesBlock">
 	<property name="Extends" value="woodMaster"/>
+	<property name="Tags" value="jz_WoodBuilding"/>
 	<property name="CustomIcon" value="woodBlock"/>
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
@@ -41618,7 +41509,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="PickupJournalEntry" value="shapeMenuTip"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="woodShapes:cube,woodShapes:ramp"/>
+	<property name="PlaceAltBlockValue" value="frameShapes:cube,frameShapes:ramp"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:cube"/>
 	</property>
@@ -41636,7 +41527,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="PickupJournalEntry" value="shapeMenuTip"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="corrugatedMetalShapes:cube,corrugatedMetalShapes:ramp"/>
+	<property name="PlaceAltBlockValue" value="jz_SimpleIronFrame,jz_SimpleIronRampFrame"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:cube"/>
 	</property>
@@ -41698,7 +41589,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="jz_Stick" value="5"/>
 	</property>
-	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Destroy" name="jz_Stick" count="3"/>
 	<property name="FilterTags" value="MC_building"/>
 	<property name="SortOrder1" value="g0t0"/>

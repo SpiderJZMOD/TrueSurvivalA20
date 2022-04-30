@@ -4369,7 +4369,6 @@ If there is no hit the default quality is used.
 	<item name="jz_WelderTool"/>
 	<item name="meleeToolSalvageT1Wrench"/>
 	<item name="toolAndDieSet"/>
-	<item name="jz_ToolCircularSaw"/>  
 </lootgroup> 
                                                 
 <lootgroup name="forgeMolds" >

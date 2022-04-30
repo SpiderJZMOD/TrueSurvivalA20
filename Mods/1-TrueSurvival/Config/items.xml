@@ -960,7 +960,7 @@ Mesh files no longer used:
 <!-- * * * * * * * * * * Wrench / special harvesting, not a repair tool (perkSalvageOperations) * * * * * * * * * * -->
 
 <item name="meleeToolSalvageT1Wrench">
-	<property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,jz_ConcreteBuildingTool"/><!-- JZMOD -->
+	<property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,jz_IronBuildingTool"/><!-- JZMOD -->
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="29"/>
 	<property name="Meshfile" value="#Other/Items?Tools/wrenchPrefab.prefab"/>
@@ -33774,6 +33774,7 @@ perkNightStalkerSilentNight
 <item name="jz_ToolArmorerAnvil">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_ToolArmorerAnvilDesc" />
+	<property name="CustomIcon" value="toolAnvil"/>
 	<property class="Action0">
 		 <property name="Allowed_upgrade_items" value="jz_ToolArmorerAnvil"/>
 	</property>

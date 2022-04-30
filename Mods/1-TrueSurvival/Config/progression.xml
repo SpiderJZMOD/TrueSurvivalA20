@@ -4432,8 +4432,6 @@
 			<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="LT" value="2"/>		
 				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$jz_WoodBuildingXP" operation="add" value="1">
 					<requirement name="HoldingItemHasTags" tags="jz_WoodBuildingTool"/></triggered_effect>
-				<triggered_effect trigger="onSelfPlaceBlock" action="ModifyCVar" cvar="$jz_WoodBuildingXP" operation="add" value="1">
-					<requirement name="TriggerHasTags" tags="jz_WoodBuilding"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="LT" value="1"/>	
@@ -4478,8 +4476,6 @@
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="2"/>		
 				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$jz_StoneBuildingXP" operation="add" value="1">
 					<requirement name="HoldingItemHasTags" tags="jz_StoneBuildingTool"/></triggered_effect>
-				<triggered_effect trigger="onSelfPlaceBlock" action="ModifyCVar" cvar="$jz_StoneBuildingXP" operation="add" value="1">
-					<requirement name="TriggerHasTags" tags="jz_StoneBuilding"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="1"/>	
@@ -4525,8 +4521,6 @@
 			<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="LT" value="2"/>		
 				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$jz_IronBuildingXP" operation="add" value="1">
 					<requirement name="HoldingItemHasTags" tags="jz_IronBuildingTool"/></triggered_effect>
-				<triggered_effect trigger="onSelfPlaceBlock" action="ModifyCVar" cvar="$jz_IronBuildingXP" operation="add" value="1">
-					<requirement name="TriggerHasTags" tags="jz_IronBuilding"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="LT" value="1"/>	
@@ -4569,8 +4563,6 @@
 			<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="LT" value="2"/>		
 				<triggered_effect trigger="onSelfUpgradedBlock" action="ModifyCVar" cvar="$jz_ConcreteBuildingXP" operation="add" value="1">
 					<requirement name="HoldingItemHasTags" tags="jz_ConcreteBuildingTool"/></triggered_effect>
-				<triggered_effect trigger="onSelfPlaceBlock" action="ModifyCVar" cvar="$jz_ConcreteBuildingXP" operation="add" value="1">
-					<requirement name="TriggerHasTags" tags="jz_ConcreteBuilding"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="LT" value="1"/>	

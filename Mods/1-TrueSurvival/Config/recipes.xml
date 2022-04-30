@@ -421,7 +421,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe> 
 
 <recipe name="farmPlotBlockVariantHelper" count="1" craft_time="30" craft_exp_gain="0">
-	<ingredient name="treePlant02" count="1"/>
+	<ingredient name="treePlant02" count="2"/>
 </recipe> 
 
 <recipe name="farmPlotBlockVariantHelper" count="1" craft_time="30" craft_exp_gain="10">
