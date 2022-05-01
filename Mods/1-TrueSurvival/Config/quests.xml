@@ -681,6 +681,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesImprovisedQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL3" />
     </quest>
 	
@@ -689,7 +690,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationImprovisedWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="1"/>
@@ -722,7 +723,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolHandSaw" value="1" />
-		<reward type="Recipe" id="jz_ToolHandSaw" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesImprovisedQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL4" />
     </quest>
 	
@@ -731,7 +732,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationImprovisedWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -769,7 +770,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolHandDrill" value="1"/>
-		<reward type="Recipe" id="jz_ToolHandDrill" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesImprovisedQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL5" />
 	</quest>
 	
@@ -778,7 +779,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationImprovisedWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -816,7 +817,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolWoodChisel" value="1"/>
-		<reward type="Recipe" id="jz_ToolWoodChisel" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesImprovisedQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL6" />
 	</quest>
 	
@@ -825,7 +826,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationImprovisedWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -863,7 +864,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolDrawBlade" value="1"/>
-		<reward type="Recipe" id="jz_ToolDrawBlade" />
 	</quest>
 
 <!--JZMOD PIPE GUN PROGRESSION -->
@@ -900,6 +900,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesPipeGunQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL3" />
     </quest>
 	
@@ -908,7 +909,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationPipeGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -941,7 +942,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolPipeSaw" value="1" />
-		<reward type="Recipe" id="jz_ToolPipeSaw" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesPipeGunQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL4" />
     </quest>
 	
@@ -950,7 +951,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationPipeGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -988,7 +989,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolHandDrill" value="1"/>
-		<reward type="Recipe" id="jz_ToolHandDrill" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesPipeGunQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL5" />
 	</quest>
 	
@@ -997,7 +998,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationPipeGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -1035,7 +1036,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolWoodChisel" value="1"/>
-		<reward type="Recipe" id="jz_ToolWoodChisel" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesPipeGunQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL6" />
 	</quest>
 	
@@ -1044,7 +1045,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesPipeGun" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationPipeGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -1082,7 +1083,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolDrawBlade" value="1"/>
-		<reward type="Recipe" id="jz_ToolDrawBlade" />
 	</quest>
 	
 	<!--JZMOD TOOL PROGRESSION -->
@@ -1120,6 +1120,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesToolQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesToolQL3" />
     </quest>
 	
@@ -1128,7 +1129,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationToolWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -1161,7 +1162,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolCircularSaw" value="1" />
-		<reward type="Recipe" id="jz_ToolCircularSaw" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesToolQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesToolQL4" />
     </quest>
 	
@@ -1170,7 +1171,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationToolWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -1206,7 +1207,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolSander" value="1"/>
-		<reward type="Recipe" id="jz_ToolSander" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesToolQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesToolQL5" />
 	</quest>
 	
@@ -1215,7 +1216,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationToolWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -1251,7 +1252,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolDrill" value="1"/>
-		<reward type="Recipe" id="jz_ToolDrill" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesToolQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesToolQL6" />
 	</quest>
 	
@@ -1260,7 +1261,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationToolWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -1296,7 +1297,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolLathe" value="1"/>
-		<reward type="Recipe" id="jz_ToolLathe" />
 	</quest>
 	
 	<!--JZMOD ELECTRONIC PROGRESSION -->
@@ -1334,6 +1334,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesElectronicQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesElectronicQL3" />
     </quest>
 	
@@ -1342,7 +1343,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationElectronicWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -1375,7 +1376,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolWireStripers" value="1" />
-		<reward type="Recipe" id="jz_ToolWireStripers" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesElectronicQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesElectronicQL4" />
     </quest>
 	
@@ -1384,7 +1385,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationElectronicWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -1422,7 +1423,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolMagnifyingGlass" value="1"/>
-		<reward type="Recipe" id="jz_ToolMagnifyingGlass" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesElectronicQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesElectronicQL5" />
 	</quest>
 	
@@ -1431,7 +1432,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationElectronicWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -1469,7 +1470,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolSolderingIron" value="1"/>
-		<reward type="Recipe" id="jz_ToolSolderingIron" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesElectronicQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesElectronicQL6" />
 	</quest>
 	
@@ -1478,7 +1479,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationElectronicWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -1514,7 +1515,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolVoltTester" value="1"/>
-		<reward type="Recipe" id="jz_ToolVoltTester" />
 	</quest>
 	
 	<!--JZMOD LIGHT ARMOR PROGRESSION -->
@@ -1552,6 +1552,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesLightArmorQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL3" />
     </quest>
 	
@@ -1560,7 +1561,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationLightArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="1"/>
@@ -1593,7 +1594,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolLeatherNeedle" value="1" />
-		<reward type="Recipe" id="jz_ToolLeatherNeedle" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesLightArmorQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL4" />
     </quest>
 	
@@ -1602,7 +1603,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationLightArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -1640,7 +1641,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolSmallLoom" value="1"/>
-		<reward type="Recipe" id="jz_ToolSmallLoom" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesLightArmorQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL5" />
 	</quest>
 	
@@ -1649,7 +1650,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationLightArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -1687,7 +1688,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolSewingMachine" value="1"/>
-		<reward type="Recipe" id="jz_ToolSewingMachine" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesLightArmorQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL6" />
 	</quest>
 	
@@ -1696,7 +1697,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationLightArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -1732,7 +1733,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolTailorMannequin" value="1"/>
-		<reward type="Recipe" id="jz_ToolTailorMannequin" />
 	</quest>
 	
 	
@@ -1771,6 +1771,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHeavyArmorQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHeavyArmorQL3" />
     </quest>
 	
@@ -1779,7 +1780,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationHeavyArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="1"/>
@@ -1812,7 +1813,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolPliers" value="1" />
-		<reward type="Recipe" id="jz_ToolPliers" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHeavyArmorQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHeavyArmorQL4" />
     </quest>
 	
@@ -1821,7 +1822,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationHeavyArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -1859,7 +1860,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolMetalSnips" value="1"/>
-		<reward type="Recipe" id="jz_ToolMetalSnips" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHeavyArmorQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHeavyArmorQL5" />
 	</quest>
 	
@@ -1868,7 +1869,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationHeavyArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -1906,7 +1907,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolRivetGun" value="1"/>
-		<reward type="Recipe" id="jz_ToolRivetGun" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHeavyArmorQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHeavyArmorQL6" />
 	</quest>
 	
@@ -1915,7 +1916,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationHeavyArmorWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -1951,7 +1952,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolOxyacetyleneTorch" value="1"/>
-		<reward type="Recipe" id="jz_ToolOxyacetyleneTorch" />
 	</quest>
 	
 	
@@ -1990,6 +1990,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHandgunQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHandgunQL3" />
     </quest>
 	
@@ -1998,7 +1999,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationHandgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -2031,7 +2032,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolHandgunTorxSet" value="1" />
-		<reward type="Recipe" id="jz_ToolHandgunTorxSet" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHandgunQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHandgunQL4" />
     </quest>
 	
@@ -2040,7 +2041,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationHandgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -2078,7 +2079,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolHandgunSightTool" value="1"/>
-		<reward type="Recipe" id="jz_ToolHandgunSightTool" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHandgunQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHandgunQL5" />
 	</quest>
 	
@@ -2087,7 +2088,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationHandgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -2125,7 +2126,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolHandgunBushingWrench" value="1"/>
-		<reward type="Recipe" id="jz_ToolHandgunBushingWrench" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesHandgunQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHandgunQL6" />
 	</quest>
 	
@@ -2134,7 +2135,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationHandgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -2170,7 +2171,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolHandgunBarrelBorer" value="1"/>
-		<reward type="Recipe" id="jz_ToolHandgunBarrelBorer" />
 	</quest>
 	
 	
@@ -2209,6 +2209,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesShotgunQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesShotgunQL3" />
     </quest>
 	
@@ -2217,7 +2218,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationShotgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -2250,7 +2251,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolShotgunTorxSet" value="1" />
-		<reward type="Recipe" id="jz_ToolShotgunTorxSet" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesShotgunQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesShotgunQL4" />
     </quest>
 	
@@ -2259,7 +2260,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationShotgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -2297,7 +2298,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolShotgunSightTool" value="1"/>
-		<reward type="Recipe" id="jz_ToolShotgunSightTool" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesShotgunQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesShotgunQL5" />
 	</quest>
 	
@@ -2306,7 +2307,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationShotgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -2344,7 +2345,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolShotgunBushingWrench" value="1"/>
-		<reward type="Recipe" id="jz_ToolShotgunBushingWrench" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesShotgunQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesShotgunQL6" />
 	</quest>
 	
@@ -2353,7 +2354,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationShotgunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -2389,7 +2390,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolShotgunBarrelBorer" value="1"/>
-		<reward type="Recipe" id="jz_ToolShotgunBarrelBorer" />
 	</quest>
 	
 	
@@ -2428,6 +2428,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesMachineGunQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesMachineGunQL3" />
     </quest>
 	
@@ -2436,7 +2437,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationMachineGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -2469,7 +2470,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolMachineGunTorxSet" value="1" />
-		<reward type="Recipe" id="jz_ToolMachineGunTorxSet" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesMachineGunQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesMachineGunQL4" />
     </quest>
 	
@@ -2478,7 +2479,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationMachineGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -2516,7 +2517,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolMachineGunSightTool" value="1"/>
-		<reward type="Recipe" id="jz_ToolMachineGunSightTool" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesMachineGunQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesMachineGunQL5" />
 	</quest>
 	
@@ -2525,7 +2526,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationMachineGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -2563,7 +2564,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolMachineGunBushingWrench" value="1"/>
-		<reward type="Recipe" id="jz_ToolMachineGunBushingWrench" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesMachineGunQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesMachineGunQL6" />
 	</quest>
 	
@@ -2572,7 +2573,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationMachineGunWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -2608,7 +2609,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolMachineGunBarrelBorer" value="1"/>
-		<reward type="Recipe" id="jz_ToolMachineGunBarrelBorer" />
 	</quest>
 	
 	
@@ -2647,6 +2647,7 @@
 		</objective>
 		
 		<reward type="Exp" value="250"/>
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesRlifeQL3Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesRlifeQL3" />
     </quest>
 	
@@ -2655,7 +2656,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRlife" />
 		<property name="description_key" value="jzquest_Lv3Crafting_description" />
 		<property name="icon" value="jz_WorkstationRifleWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="2"/>
@@ -2688,7 +2689,7 @@
 
 		<reward type="Exp" value="500"/>
 		<reward type="Item" id="jz_ToolRifleTorxSet" value="1" />
-		<reward type="Recipe" id="jz_ToolRifleTorxSet" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesRlifeQL4Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesRlifeQL4" />
     </quest>
 	
@@ -2697,7 +2698,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRlife" />
 		<property name="description_key" value="jzquest_Lv4Crafting_description" />
 		<property name="icon" value="jz_WorkstationRifleWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="3"/>
@@ -2735,7 +2736,7 @@
 
 		<reward type="Exp" value="750"/>
 		<reward type="Item" id="jz_ToolRifleSightTool" value="1"/>
-		<reward type="Recipe" id="jz_ToolRifleSightTool" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesRlifeQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesRlifeQL5" />
 	</quest>
 	
@@ -2744,7 +2745,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRlife" />
 		<property name="description_key" value="jzquest_Lv5Crafting_description" />
 		<property name="icon" value="jz_WorkstationRifleWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="4"/>
@@ -2782,7 +2783,7 @@
 
 		<reward type="Exp" value="1000"/>
 		<reward type="Item" id="jz_ToolRifleBushingWrench" value="1"/>
-		<reward type="Recipe" id="jz_ToolRifleBushingWrench" />
+		<reward type="Recipe" id="jz_QIWorkbenchUpgradesRlifeQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesRlifeQL6" />
 	</quest>
 	
@@ -2791,7 +2792,7 @@
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRlife" />
 		<property name="description_key" value="jzquest_Lv6Crafting_description" />
 		<property name="icon" value="jz_WorkstationRifleWorkbench" />
-		<property name="repeatable" value="false"/>
+		<property name="repeatable" value="true"/>
 		<property name="category_key" value="challenge"/>
 		<property name="difficulty" value="medium"/>
 		<property name="difficulty_tier" value="5"/>
@@ -2827,7 +2828,6 @@
 
 		<reward type="Exp" value="1500"/>
 		<reward type="Item" id="jz_ToolRifleBarrelBorer" value="1"/>
-		<reward type="Recipe" id="jz_ToolRifleBarrelBorer" />
 	</quest>
 	
 	<quest id="treasure_taylor">

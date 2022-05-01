@@ -35641,7 +35641,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv2"/>
-		<property name="Item" value="jz_Screwdriver"/>
+		<property name="Item" value="jz_ToolElectricianScrewdriver"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>

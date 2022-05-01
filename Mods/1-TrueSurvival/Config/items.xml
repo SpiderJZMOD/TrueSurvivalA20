@@ -5374,7 +5374,7 @@ needed?
 	<property name="EconomicValue" value="250"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="DegradationBreaksAfter" value="false"/><!-- JZMOD -->
+	<property name="DegradationBreaksAfter" value="true"/><!-- JZMOD -->
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
@@ -35003,6 +35003,330 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="jz_YarrowDesc" />
 	<property name="Group" value="Medical,CFChemicals"/>
 </item>
+
+
+<item name="jz_QIWorkbenchUpgradesImprovisedQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesImprovisedQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesImprovisedQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesImprovisedQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesImprovisedQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesImprovisedQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesImprovisedQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesImprovisedQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesPipeGunQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesPipeGunQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesPipeGunQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesPipeGunQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesPipeGunQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesPipeGunQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesPipeGunQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesPipeGunQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesToolQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesToolQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesToolQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesToolQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesToolQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesToolQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesToolQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesToolQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesElectronicQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesElectronicQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesElectronicQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesElectronicQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesElectronicQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesElectronicQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesElectronicQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesElectronicQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesLightArmorQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesLightArmorQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesLightArmorQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesLightArmorQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesLightArmorQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesLightArmorQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesLightArmorQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesLightArmorQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHeavyArmorQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHeavyArmorQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHeavyArmorQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHeavyArmorQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHeavyArmorQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHeavyArmorQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHeavyArmorQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHeavyArmorQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHandgunQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHandgunQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHandgunQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHandgunQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHandgunQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHandgunQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesHandgunQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesHandgunQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesShotgunQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesShotgunQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesShotgunQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesShotgunQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesShotgunQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesShotgunQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesShotgunQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesShotgunQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesMachineGunQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesMachineGunQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesMachineGunQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesMachineGunQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesMachineGunQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesMachineGunQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesMachineGunQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesMachineGunQL6"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesRlifeQL3Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesRlifeQL3"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesRlifeQL4Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesRlifeQL4"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesRlifeQL5Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesRlifeQL5"/>
+	</property>
+</item>
+
+<item name="jz_QIWorkbenchUpgradesRlifeQL6Redo">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesRlifeQL6"/>
+	</property>
+</item>
+
+
+
 </set>
 
 </configs>  <!-- Item limit: There can be 32k items in the game. IDs are generated internally on loading the game/items. -->
