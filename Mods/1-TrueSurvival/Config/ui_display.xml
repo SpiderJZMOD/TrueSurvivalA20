@@ -1197,6 +1197,11 @@ All the perk tags:
 			<crafting_category name="Quest" icon="ui_game_symbol_thirst" display_name="Quest" />
 		</crafting_category_list>
 		
+		<crafting_category_list display_type="jz_DryingRack">
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="Seeds" />
+			<crafting_category name="Other" icon="ui_game_symbol_thirst" display_name="Other" />
+		</crafting_category_list>
+		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbench">
 			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
 			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />

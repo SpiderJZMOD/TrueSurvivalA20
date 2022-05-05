@@ -3885,6 +3885,7 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnClubT1BaseballBatSchematic"/>
 	<item name="meleeWpnKnucklesT1IronKnucklesSchematic"/>
 	<item name="meleeWpnSpearT1IronSpearSchematic"/>
+	<item name="jz_SchematicMolotovCocktail"/>
 	<item name="thrownAmmoPipeBombSchematic"/>
 </lootgroup>
 
@@ -4023,7 +4024,7 @@ If there is no hit the default quality is used.
 	<item name="jz_SchematicEggPlantSeed" />
 	<item name="jz_SchematicCarrotSeed" />
 	<item name="jz_SchematicFertilizer" />
-    <item name="jz_SchematicInsecticide" />
+    <item name="jz_SchematicFarmPlot" />
 	<item name="foodVegetableStewSchematic"/>
 	<item name="foodMeatStewSchematic"/>
 	<item name="foodPumpkinBreadSchematic"/>
@@ -4442,7 +4443,6 @@ If there is no hit the default quality is used.
 </lootgroup>         
 
 <lootgroup name="chemistrySchematics" count="1">
-    <item name="jz_SchematicInsecticide" />
     <item name="ammoGasCanSchematic" />
 	<item name="resourceOilSchematic" />
     <item name="medicalPlasterCastSchematic" />

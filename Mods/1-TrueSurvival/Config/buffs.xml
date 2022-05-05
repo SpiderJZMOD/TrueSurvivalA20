@@ -718,6 +718,12 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				</triggered_effect>
 		</effect_group>
 		
+		<effect_group name="JZMOD Turn Off Charismatic Nature">
+           	<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="LT" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffCharismaticNatureFader"/>
+        </effect_group>	
+		
 		<effect_group name="JZMOD Vitamin Fader">
             <requirements compare_type="or">
 				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GT" value="0"/>
@@ -1882,7 +1888,15 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			-->
 		</effect_group>
 	</buff>
-
+	
+	<buff name="jz_BuffCharismaticNatureFader" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="360"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffPerkCharismaticNature"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="jz_BuffCharismaticNatureOne" name_key="Charismatic Nature Level 1" description_key="jz_BuffCharismaticNatureOneDesc" icon="ui_game_symbol_talk" icon_color="0,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -1924,8 +1938,8 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 	</buff>
 	
 	<buff name="buffPerkCharismaticNature" name_key="perkCharismaticNatureName" description_key="buffPerkCharismaticNatureDesc" icon="ui_game_symbol_talk" icon_color="0,255,0" icon_blink="false" hidden="true">
-		<stack_type value="replace"/>
-		<duration value="300"/>
+		<stack_type value="ignore"/>
+		<duration value="0"/>
 
 		<effect_group>
 			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="1"/>
@@ -1953,7 +1967,6 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffCharismaticNatureFour">
 					<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="Equals" value="4"/></triggered_effect>
 		</effect_group>
-
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>

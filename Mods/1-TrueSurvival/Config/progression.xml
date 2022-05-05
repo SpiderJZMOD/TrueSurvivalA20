@@ -990,6 +990,7 @@
     <!-- ******************************************************************  Professions  ******************************************************************************** -->
 	<!-- Fire Fighter -->
 	<perk name="jz_FireFighter" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Fire Fighter" desc_key="jz_FireFighterDesc" icon="ui_game_symbol_fire">
+		<!-- +20% block damage with axe / FiremansAlmanac Set / Old Axe -->
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="jz_FireFighterTag"/>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".2"/>
@@ -1000,17 +1001,18 @@
 				<requirement name="ProgressionLevel" progression_name="SP_AloeCreamSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MolotovCocktailSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_MolotovCocktailSchematic" operation="LT" value="1"/></triggered_effect>
-			<passive_effect name="StaminaMax" operation="perc_add" level="1" value=".05"/>
 			
-			<effect_description level="1" desc_key="jz_FireFighterDesc" long_desc_key="jz_FireFighterDesc"/>
+			<effect_description level="1" desc_key="jz_FireFighterLongDesc" long_desc_key="jz_FireFighterLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Police Officer -->
 	<perk name="jz_PoliceOfficer" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Police Officer" desc_key="jz_PoliceOfficerDesc" icon="ui_game_symbol_run_and_gun">
+		<!-- Handgun Specialist / Old Handgun&Bullets -->
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="jz_HangunSkillTag"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".1"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" level="1" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1" value=".1"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_PoliceOfficer" operation="GTE" value="1"/>
@@ -1018,20 +1020,22 @@
 				<requirement name="ProgressionLevel" progression_name="SP_PistolSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GunOilSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_GunOilSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PoliceBatonSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_PoliceBatonSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_StunBatonSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_StunBatonSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WeaponRepairKitSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_WeaponRepairKitSchematic" operation="LT" value="1"/></triggered_effect>
 					
-			<effect_description level="1" desc_key="jz_PoliceOfficerDesc" long_desc_key="jz_PoliceOfficerDesc"/>
+			<effect_description level="1" desc_key="jz_PoliceOfficerLongDesc" long_desc_key="jz_PoliceOfficerLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Park Ranger -->
 	<perk name="jz_ParkRanger" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Park Ranger" desc_key="jz_ParkRangerDesc" icon="ui_game_symbol_tree">
+		<!-- Rifle Specialist / 20% Improvised Crafting Speed / Old Rifle&Bullets -->
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="jz_RifleSkillTag"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".1"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" level="1" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1" value=".1"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_ParkRanger" operation="GTE" value="1"/>
@@ -1045,11 +1049,37 @@
 				<requirement name="ProgressionLevel" progression_name="SP_SpearSteelSchematic" operation="LT" value="1"/></triggered_effect>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_PrimitativeCraftingTag"/>
 			
-			<effect_description level="1" desc_key="jz_ParkRangerDesc" long_desc_key="jz_ParkRangerDesc"/>
+			<effect_description level="1" desc_key="jz_ParkRangerLongDesc" long_desc_key="jz_ParkRangerLongDesc"/>
+		</effect_group>
+	</perk>
+	<!-- Soldier -->
+	<perk name="jz_Soldier" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Soldier" desc_key="jz_SoldierDesc" icon="ui_game_symbol_rifle">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="jz_MachineGunSkillTag"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".1"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" level="1" value=".1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" level="1" value=".1"/>
+		</effect_group>
+      	<effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_Soldier" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PipeMachineGunSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_PipeMachineGunSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AK47Schematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_AK47Schematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PipeBombSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_PipeBombSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CookingPotMineSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_CookingPotMineSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WeaponRepairKitSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_WeaponRepairKitSchematic" operation="LT" value="1"/></triggered_effect>
+				
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodGrubs"/>
+           	<effect_description level="1" desc_key="jz_SoldierLongDesc" long_desc_key="jz_SoldierLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Bouncer -->
 	<perk name="jz_Bouncer" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Bouncer" desc_key="jz_BouncerDesc" icon="ui_game_symbol_boxer">
+		<!-- Brawling Specialist / -10% Stamina for Brawling / Brass Knuckles -->
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="jz_BouncerTag"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" level="1" value="-.1" />
@@ -1065,10 +1095,8 @@
 				<requirement name="ProgressionLevel" progression_name="SP_BeerSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MeadSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_MeadSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GrainAlcoholSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_GrainAlcoholSchematic" operation="LT" value="1"/></triggered_effect>
 			
-			<effect_description level="1" desc_key="jz_BouncerDesc" long_desc_key="jz_BouncerDesc"/>
+			<effect_description level="1" desc_key="jz_BouncerLongDesc" long_desc_key="jz_BouncerLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Chef -->
@@ -1121,82 +1149,97 @@
 				<requirement name="ProgressionLevel" progression_name="SP_FishTacosSchematic" operation="LT" value="1"/></triggered_effect>
 			
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ChefTag"/>
-			<effect_description level="1" desc_key="jz_ChefRank1Desc" long_desc_key="jz_ChefDesc"/>
+			<effect_description level="1" desc_key="jz_ChefLongDesc" long_desc_key="jz_ChefLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Burglar -->
 	<perk name="jz_Burglar" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Burglar" desc_key="jz_BurglarDesc" icon="ui_game_symbol_ninja">
+		<!-- Rifle Specialist / 20% Improvised Crafting Speed / Old Rifle&Bullets -->
 		<effect_group>
-			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" level="1" value="-.1"/>
-				<passive_effect name="CrouchSpeed" operation="perc_add" level="1" value=".1"/>
-		</effect_group>
-		<effect_group>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_LockPickSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="jz_Burglar" operation="GTE" value="1"/>
-				<requirement name="ProgressionLevel" progression_name="SP_LockPickSchematic" operation="LT" value="1"/></triggered_effect>
-			
 			<passive_effect name="ScavengingTime" operation="perc_add" level="1" value="-.2"/>
 			<passive_effect name="TreasureRadius" operation="base_subtract" level="1" value="6"/>
-			<effect_description level="1" desc_key="jz_BurglarDesc" long_desc_key="jz_BurglarDesc"/>
+			<effect_description level="1" desc_key="jz_BurglarLongDesc" long_desc_key="jz_BurglarLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Carpenter -->
 	<perk name="jz_Carpenter" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Carpenter" desc_key="jz_CarpenterDesc" icon="ui_game_symbol_hammer">
+        <effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_Carpenter" operation="Equals" value="1"/>
+            <requirement name="HoldingItemHasTags" tags="jz_WoodBuildingTool"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="17.4" /> <!-- meleeWpnClubT1BaseballBat -->
+				<passive_effect name="DismemberChance" operation="base_add" value="0,.30" level="0,100" tags="head"/>
+                <passive_effect name="DismemberChance" operation="base_add" value="0,.40" level="0,100" tags="arm,leg"/>
+        </effect_group>
 		<effect_group>
             <requirement name="ProgressionLevel" progression_name="jz_Carpenter" operation="GTE" value="1"/>
-                <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PlankSchematic" level="-1">
-					<requirement name="ProgressionLevel" progression_name="SP_PlankSchematic" operation="LT" value="1"/></triggered_effect>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_NailSchematic" level="-1">
-					<requirement name="ProgressionLevel" progression_name="SP_NailSchematic" operation="LT" value="1"/></triggered_effect>
-                 <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WoodenDoorsSchematic" level="-1">
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifySkillSDX, SCore" tag="jz_WoodBuildingSkill" operation="add" value="2">
+					<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="LT" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WoodenDoorsSchematic" level="-1">
 					<requirement name="ProgressionLevel" progression_name="SP_WoodenDoorsSchematic" operation="LT" value="1"/></triggered_effect>
-                  <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WoodenChestSchematic" level="-1">
+                <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WoodenChestSchematic" level="-1">
 					<requirement name="ProgressionLevel" progression_name="SP_WoodenChestSchematic" operation="LT" value="1"/></triggered_effect>
 		
-            <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="woodFrameBlockVariantHelper"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_WorkBenchTag"/>
-			<effect_description level="1" desc_key="jz_CarpenterRank1Desc" long_desc_key="jz_CarpenterDesc"/>
+			<effect_description level="1" desc_key="jz_CarpenterLongDesc" long_desc_key="jz_CarpenterLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Mason -->
 	<perk name="jz_Mason" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Mason" desc_key="jz_MasonDesc" icon="ui_game_symbol_brick">
 		<effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_Mason" operation="Equals" value="1"/>
+            <requirement name="HoldingItemHasTags" tags="jz_StoneBuildingTool"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="17.4" /> <!-- meleeWpnClubT1BaseballBat -->
+				<passive_effect name="DismemberChance" operation="base_add" value="0,.30" level="0,100" tags="head"/>
+                <passive_effect name="DismemberChance" operation="base_add" value="0,.40" level="0,100" tags="arm,leg"/>
+        </effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_Mason" operation="GTE" value="1"/>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ConcreteMixSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_ConcreteMixSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CobblestoneSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_CobblestoneSchematic" operation="LT" value="1"/></triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifySkillSDX, SCore" tag="jz_StoneBuildingSkill" operation="add" value="2">
+					<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="2"/></triggered_effect>
 				
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="flagstoneBlockVariantHelper,brickBlockVariantHelper"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_MasonTag"/>
-			<effect_description level="1" desc_key="jz_MasonDesc" long_desc_key="jz_MasonDesc"/>
+			<effect_description level="1" desc_key="jz_MasonLongDesc" long_desc_key="jz_MasonLongDesc"/>
 		</effect_group>
 	</perk>
-	<!-- Soldier -->
-	<perk name="jz_Soldier" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Soldier" desc_key="jz_SoldierDesc" icon="ui_game_symbol_rifle">
+	<!-- Metal Worker -->
+	<perk name="jz_MetalWorker" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Metal Worker" desc_key="jz_MetalWorkerDesc" icon="ui_game_symbol_wrench">
 		<effect_group>
-			<requirement name="HoldingItemHasTags" tags="jz_MachineGunSkillTag"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".1"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" level="1" value=".1"/>
+			<requirement name="ProgressionLevel" progression_name="jz_MetalWorker" operation="Equals" value="1"/>
+            <requirement name="HoldingItemHasTags" tags="jz_IronBuildingTool"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="17.4" /> <!-- meleeWpnClubT1BaseballBat -->
+				<passive_effect name="DismemberChance" operation="base_add" value="0,.30" level="0,100" tags="head"/>
+                <passive_effect name="DismemberChance" operation="base_add" value="0,.40" level="0,100" tags="arm,leg"/>
+        </effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_MetalWorker" operation="GTE" value="1"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifySkillSDX, SCore" tag="jz_IronBuildingSkill" operation="add" value="2">
+					<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="LT" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_IronDoorsSchematic" level="-1">
+					<requirement name="ProgressionLevel" progression_name="SP_IronDoorsSchematic" operation="LT" value="1"/></triggered_effect>
+                
+			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ForgeTag"/>
+			<effect_description level="1" desc_key="jz_MetalWorkerLongDesc" long_desc_key="jz_MetalWorkerLongDesc"/>
 		</effect_group>
-      	<effect_group>
-			<requirement name="ProgressionLevel" progression_name="jz_Soldier" operation="GTE" value="1"/>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PipeMachineGunSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_PipeMachineGunSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AK47Schematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_AK47Schematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PipeBombSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_PipeBombSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CookingPotMineSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_CookingPotMineSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WeaponRepairKitSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_WeaponRepairKitSchematic" operation="LT" value="1"/></triggered_effect>
-				
-            
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodGrubs"/>
-            <effect_description level="0" desc_key="jz_SoldierDesc" long_desc_key="jz_SoldierDesc"/>
-			<effect_description level="1" desc_key="jz_SoldierDesc" long_desc_key="jz_SoldierDesc"/>
+	</perk>
+	<!-- Concrete Mason -->
+	<perk name="jz_ConcreteMason" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Concrete Mason" desc_key="jz_ConcreteMasonDesc" icon="ui_game_symbol_wrench">
+		<effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_ConcreteMason" operation="Equals" value="1"/>
+            <requirement name="HoldingItemHasTags" tags="jz_ConcreteBuildingTool"/>
+                <passive_effect name="EntityDamage" operation="base_set" value="30.8" /> <!-- meleeWpnSledgeT1IronSledgehammer -->
+				<passive_effect name="BlockDamage" operation="base_set" value="50" />
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="28" tags="primary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value="0,.30" level="0,100" tags="head"/>
+                <passive_effect name="DismemberChance" operation="base_add" value="0,.40" level="0,100" tags="arm,leg"/>
+        </effect_group>
+			<requirement name="ProgressionLevel" progression_name="jz_ConcreteMason" operation="GTE" value="1"/>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifySkillSDX, SCore" tag="jz_ConcreteBuildingSkill" operation="add" value="2">
+					<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="LT" value="2"/></triggered_effect>
+			                
+			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_Mason"/>
+			<effect_description level="1" desc_key="jz_ConcreteMasonLongDesc" long_desc_key="jz_ConcreteMasonLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Fitness Instructor -->
@@ -1207,16 +1250,15 @@
 				<requirement name="ProgressionLevel" progression_name="SP_GoldenRodTeaSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_RedTeaSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_RedTeaSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WellnessJuiceSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_WellnessJuiceSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MegaCrushSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_MegaCrushSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_VitaminsSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_VitaminsSchematic" operation="LT" value="1"/></triggered_effect>
+				
 			<passive_effect name="RunSpeed" operation="perc_add" level="1" value=".1"/>
 			<passive_effect name="WalkSpeed" operation="perc_add" level="1" value=".1"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" level="1" value="0.05" tags="running"/>
-			<effect_description level="1" desc_key="jz_FitnessInstructorDesc" long_desc_key="jz_FitnessInstructorDesc"/>
+			<effect_description level="1" desc_key="jz_FitnessInstructorLongDesc" long_desc_key="jz_FitnessInstructorLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Electrician -->
@@ -1252,29 +1294,16 @@
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceElectricParts"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ElectricianTag"/>
-			<effect_description level="1" desc_key="jz_ElectricianDesc" long_desc_key="jz_ElectricianDesc"/>
-		</effect_group>
-	</perk>
-	<!-- Metal Worker -->
-	<perk name="jz_MetalWorker" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Metal Worker" desc_key="jz_MetalWorkerDesc" icon="ui_game_symbol_wrench">
-		<effect_group>
-			<requirement name="ProgressionLevel" progression_name="jz_MetalWorker" operation="GTE" value="1"/>
-                <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_IronSheetMetalSchematic" level="-1">
-                    <requirement name="ProgressionLevel" progression_name="SP_IronSheetMetalSchematic" operation="LT" value="1"/></triggered_effect>
-                <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_IronDoorsSchematic" level="-1">
-					<requirement name="ProgressionLevel" progression_name="SP_IronDoorsSchematic" operation="LT" value="1"/></triggered_effect>
-                <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_NutAndBoltSchematic" level="-1">
-					<requirement name="ProgressionLevel" progression_name="SP_NutAndBoltSchematic" operation="LT" value="1"/></triggered_effect>
-			
-            <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="scrapIronFrameBlockVariantHelper"/>
-			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ForgeTag"/>
-			<effect_description level="1" desc_key="jz_MetalWorkerDesc" long_desc_key="jz_MetalWorkerDesc"/>
+			<effect_description level="1" desc_key="jz_ElectricianLongDesc" long_desc_key="jz_ElectricianLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Mechanic --> 
 	<perk name="jz_Mechanic" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Mechanic" desc_key="jz_MechanicDesc" icon="ui_game_symbol_service">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_Mechanic" operation="GTE" value="1"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1" level="1" tags="jz_SledgeSkill"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" level="1" tags="jz_SledgeSkill"/>
+				
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_SmallEngineSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_SmallEngineSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_LargeEngineSchematic" level="-1">
@@ -1294,7 +1323,7 @@
 							
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceMechanicalParts"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_MechanicTag"/>
-			<effect_description level="1" desc_key="jz_MechanicDesc" long_desc_key="jz_MechanicDesc"/>
+			<effect_description level="1" desc_key="jz_MechanicLongDesc" long_desc_key="jz_MechanicLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Doctor -->
@@ -1310,7 +1339,7 @@
 							
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drugPainkillers,drugSteroids,jz_MedicalStimulant"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_DoctorTag"/>
-			<effect_description level="1" desc_key="jz_DoctorDesc" long_desc_key="jz_DoctorDesc"/>
+			<effect_description level="1" desc_key="jz_DoctorLongDesc" long_desc_key="jz_DoctorLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Farmer -->
@@ -1319,6 +1348,8 @@
 			<requirement name="ProgressionLevel" progression_name="jz_Farmer" operation="GTE" value="1"/>
             <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_InsecticideSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_InsecticideSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_FarmPlotSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_FarmPlotSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_FarmWateringCanSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_FarmWateringCanSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PotatoSeedSchematic" level="-1">
@@ -1358,14 +1389,13 @@
             
 			<passive_effect name="HarvestCount" operation="base_add" value="1" tags="jz_FarmerHarvest"/>
 			<passive_effect name="CraftingTime" operation="perc_add" value="-0.2" tags="jz_FarmerTag"/>
-			<effect_description level="1" desc_key="jz_FarmerDesc" long_desc_key="jz_FarmerDesc"/>
+			<effect_description level="1" desc_key="jz_FarmerLongDesc" long_desc_key="jz_FarmerLongDesc"/>
 		</effect_group>
 	</perk>
 	<!-- Chemist -->
 	<perk name="jz_Chemist" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Chemist" desc_key="jz_ChemistDesc" icon="ui_game_symbol_chemistry">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_Chemist" operation="GTE" value="1"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoGasCanBundle,resourceGunPowderBundle"/>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MegaCrushSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_MegaCrushSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_BlackStrapCoffeeSchematic" level="-1">
@@ -1381,17 +1411,18 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GasCanSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_GasCanSchematic" operation="LT" value="1"/></triggered_effect>
 				
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_MedicalStimulant,resourceAcid"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_MedicalStimulant,ammoGasCanBundle,resourceGunPowderBundle,jz_Nitroglycerin"/>
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ChemistTag"/>
-			<effect_description level="1" desc_key="jz_ChemistDesc" long_desc_key="jz_ChemistDesc"/>
+			<effect_description level="1" desc_key="jz_ChemistLongDesc" long_desc_key="jz_ChemistLongDesc"/>
 		</effect_group>
 	</perk>
+	
 	<!-- ******************************************************************  Hobbies  ******************************************************************************** -->
 	<perk name="jz_HobbiesHunter" parent="Hobbies" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Hunting" desc_key="jz_HobbiesHunterDesc" icon="ui_game_symbol_animal_tracker">
 		<!--Can track Deer and pigs / Shotgun Specialization-->
         <effect_group>
-			<requirement name="HoldingItemHasTags" tags="jz_ShotgunSkillTag"/>
 			<requirement name="ProgressionLevel" progression_name="jz_HobbiesHunter" operation="Equals" value="1"/>
+			<requirement name="HoldingItemHasTags" tags="jz_ShotgunSkillTag"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".1"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" level="1" value=".1"/>
 				<passive_effect name="WeaponHandling" operation="perc_add" level="1" value=".1"/>
@@ -1524,8 +1555,8 @@
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_HobbiesSports" operation="GTE" value="1"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1" level="1" tags="jz_BluntSkillTag"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0,.1" level="1" tags="jz_BluntSkillTag"/>
-				<passive_effect name="StaminaLoss" operation="perc_add" value="0,-.1" level="1" tags="jz_BluntSkillTag"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" level="1" tags="jz_BluntSkillTag"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.1" level="1" tags="jz_BluntSkillTag"/>
 				<passive_effect name="RunSpeed" operation="perc_add" level="1" value=".1"/>
 				<passive_effect name="WalkSpeed" operation="perc_add" level="1" value=".1"/>
 				
@@ -2399,7 +2430,14 @@
 			<effect_description level="1" desc_key="mineCookingPotDesc" long_desc_key="mineCookingPotDesc"/>
 		</effect_group>
 	</perk>
-          
+      
+	<perk name="SP_MolotovCocktailSchematic" parent="jz_ExplosiveSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Pipe Bomb" desc_key="thrownAmmoMolotovCocktailDesc" icon="thrownAmmoMolotovCocktail">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownAmmoMolotovCocktail"/>
+			<effect_description level="1" desc_key="thrownAmmoMolotovCocktailDesc" long_desc_key="thrownAmmoMolotovCocktailDesc"/>
+		</effect_group>
+	</perk>
+	
 	<perk name="SP_PipeBombSchematic" parent="jz_ExplosiveSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Pipe Bomb" desc_key="thrownAmmoPipeBombDesc" icon="thrownAmmoPipeBomb">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownAmmoPipeBomb"/>
@@ -2439,6 +2477,13 @@
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FarmingWateringCan"/>
 			<effect_description level="1" desc_key="jz_FarmingWateringCanDesc" long_desc_key="jz_FarmingWateringCanDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="SP_FarmPlotSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Watering Can" desc_key="SP_FarmPlotSchematicDesc" icon="farmPlotBlock">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="farmPlotBlockVariantHelper"/>
+			<effect_description level="1" desc_key="SP_FarmPlotSchematicDesc" long_desc_key="SP_FarmPlotSchematicDesc"/>
 		</effect_group>
 	</perk>
     
@@ -4424,9 +4469,9 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_NailSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="1"/>
 				<requirement name="ProgressionLevel" progression_name="SP_NailSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_WoodShapesSchematic" level="-1">
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesWoodSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="2"/>
-				<requirement name="ProgressionLevel" progression_name="SP_WoodShapesSchematic" operation="LT" value="1"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="SP_AllShapesWoodSchematic" operation="LT" value="1"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="LT" value="2"/>		
@@ -4473,8 +4518,8 @@
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="Equals" value="2"/>
-				<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CobblestoneShapesSchematic" level="-1">
-					<requirement name="ProgressionLevel" progression_name="SP_CobblestoneShapesSchematic" operation="LT" value="1"/></triggered_effect>
+				<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesCobblestoneSchematic" level="-1">
+					<requirement name="ProgressionLevel" progression_name="SP_AllShapesCobblestoneSchematic" operation="LT" value="1"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="2"/>		
@@ -4521,9 +4566,9 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_NutAndBoltSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="Equals" value="1"/>
 				<requirement name="ProgressionLevel" progression_name="SP_NutAndBoltSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_IronShapesSchematic" level="-1">
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesIronSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="Equals" value="2"/>
-				<requirement name="ProgressionLevel" progression_name="SP_IronShapesSchematic" operation="LT" value="1"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="SP_AllShapesIronSchematic" operation="LT" value="1"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="LT" value="2"/>		
@@ -4567,9 +4612,9 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ConcreteMixSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="Equals" value="1"/>
 				<requirement name="ProgressionLevel" progression_name="SP_ConcreteMixSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ConcreteShapesSchematic" level="-1">
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesConcreteSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="Equals" value="2"/>
-				<requirement name="ProgressionLevel" progression_name="SP_ConcreteShapesSchematic" operation="LT" value="1"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="SP_AllShapesConcreteSchematic" operation="LT" value="1"/></triggered_effect>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="LT" value="2"/>		
@@ -4613,9 +4658,9 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_SteelSheetMetalSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_SteelBuildingSkill" operation="Equals" value="1"/>
 				<requirement name="ProgressionLevel" progression_name="SP_SteelSheetMetalSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_SteelShapesSchematic" level="-1">
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesSteelSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_SteelBuildingSkill" operation="Equals" value="1"/>
-				<requirement name="ProgressionLevel" progression_name="SP_SteelShapesSchematic" operation="LT" value="1"/></triggered_effect>
+				<requirement name="ProgressionLevel" progression_name="SP_AllShapesSteelSchematic" operation="LT" value="1"/></triggered_effect>
 		
 			<effect_description level="1" desc_key="jz_SteelBuildingSkillRank1Desc" long_desc_key="jz_SteelBuildingSkillRank1LongDesc"/>
 		</effect_group>
@@ -4876,7 +4921,7 @@
 
 	<perk name="perkFiremansAlmanacPrevention" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacPreventionDesc" long_desc_key="perkFiremansAlmanacPreventionLongDesc">
 		<effect_group>
-			<passive_effect name="BuffResistance" operation="base_add" level="1" value="0.25" tags="buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack"/>
+			<passive_effect name="BuffResistance" operation="base_add" level="1" value="0.25" tags="buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffFireBurnLeftArm,jz_BuffFireBurnRightArm,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffFireBurnStomach,jz_BuffFireBurnNeck"/>
 		</effect_group>
 	</perk>
 

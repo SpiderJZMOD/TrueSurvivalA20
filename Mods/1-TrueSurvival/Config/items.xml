@@ -9505,7 +9505,7 @@ add knockdown resist to armor
 
 <item name="vehicleMinibikePlaceable">
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
-	<property name="DescriptionKey" value="vehiclePlaceableGroupDesc"/>
+	<property name="DescriptionKey" value="jz_vehiclePlaceableGroupDesc"/>
 	<property name="HoldType" value="7"/>
 	<property name="HoldingItemHidden" value="true"/>
 	<property name="Meshfile" value="#Entities/Vehicles?minibike_Prefab.prefab"/>
@@ -20167,7 +20167,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="22"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Other"/>
 	<property name="CraftingIngredientTime" value=".2"/>
 	<!-- JZMOD -->
 	<property name="RepairTime" value=".5"/>
@@ -25808,7 +25808,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionFireFighterBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_FiremanProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25820,7 +25820,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionPoliceOfficerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_CopProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25832,7 +25832,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionParkRangerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_ParkRangerProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25844,7 +25844,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionBouncerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_BouncerProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25856,7 +25856,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionChefBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_ChefProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25868,7 +25868,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionBurglarBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_ThiefProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25880,7 +25880,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionCarpenterBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_CarpenterProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25892,7 +25892,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionMasonBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_MasonProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25901,10 +25901,22 @@ perkNightStalkerSilentNight
 	</effect_group>
 </item>
 
+<item name="jz_ProfessionConcreteMasonBook">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="Weight" value="0"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="jz_ConcreteMason" level="-1"/>
+	</effect_group>
+</item>
+
 <item name="jz_ProfessionSoldierBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_SoldierProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25916,7 +25928,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionFitnessInstructorBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_FitnessInstructorProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25928,7 +25940,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionElectricianBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_ElectricianProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25940,7 +25952,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionMetalWorkerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_MetalWorkerProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25952,7 +25964,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionMechanicBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_MechanicProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25964,7 +25976,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionDoctorBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_DoctorProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25976,7 +25988,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionFarmerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_FarmerProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25988,7 +26000,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionChemistBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="jz_ChemistProfessionDesc"/>
+	<property name="DescriptionKey" value="jz_ProfessionBookDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 	</property>
@@ -25999,7 +26011,7 @@ perkNightStalkerSilentNight
 <!-- JZMOD PROFESSION BUNDLES -->
 <item name="jz_ProfessionSoldier">
 	<property name="CustomIcon" value="ammo9mmBulletBall"/><property name="ItemTypeIcon" value="bundle"/>
-	<property name="DescriptionKey" value="jz_ProfessionSoldierKitDesc"/>
+	<property name="DescriptionKey" value="jz_SoldierLongDesc"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
@@ -26013,34 +26025,34 @@ perkNightStalkerSilentNight
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
 		<property name="Create_item" value="ammo762mmBulletBall,jz_OldRifle,jz_ProfessionSoldierBook"/>
-		<property name="Create_item_count" value="19,6,1"/>
+		<property name="Create_item_count" value="20,6,1"/>
 	</property>
 </item>
 
 <item name="jz_ProfessionDoctor">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionDoctorKitDesc"/>
+    <property name="DescriptionKey" value="jz_DoctorLongDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="jz_MedicalSutureKit,jz_MedicalStimulant,drugPainkillers,medicalAloeCream,jz_ProfessionDoctorBook"/>
-		<property name="Create_item_count" value="1,6,6,6,1"/>
+		<property name="Create_item" value="medicalFirstAidKit,jz_MedicalStimulant,drugSteroids,jz_ProfessionDoctorBook"/>
+		<property name="Create_item_count" value="5,5,5,1"/>
 	</property>
 </item>
 
 <item name="jz_ProfessionBouncer">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionBouncerKitDesc"/>
+    <property name="DescriptionKey" value="jz_BouncerLongDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="jz_ProfessionBouncerBook,meleeWpnKnucklesT1IronKnuckles"/>
-		<property name="Create_item_count" value="1,3"/>
+		<property name="Create_item" value="jz_ProfessionBouncerBook,bookBarBrawling1BasicMoves,bookBarBrawling2DropABomb,bookBarBrawling3KillerInstinct,bookBarBrawling4FinishingMoves,bookBarBrawling5AdrenalineHealing,bookBarBrawling6RageMode,bookBarBrawling7BoozedUp,meleeWpnKnucklesT1IronKnuckles"/>
+		<property name="Create_item_count" value="1,1,1,1,1,1,1,1,3"/>
 	</property>
 </item>
 
 <item name="jz_ProfessionChemist">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionChemistKitDesc"/>
+    <property name="DescriptionKey" value="jz_ChemistLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="drugPainkillers,jz_MedicalStimulant,jz_ProfessionChemistBook"/>
 		<property name="Create_item_count" value="6,6,1"/>
@@ -26050,7 +26062,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionCarpenter">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionCarpenterKitDesc"/>
+    <property name="DescriptionKey" value="jz_CarpenterLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="resourceNail,jz_ProfessionCarpenterBook,meleeToolRepairT1ClawHammer"/>
 		<property name="Create_item_count" value="50,1,3"/>
@@ -26060,7 +26072,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionCop">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionCopKitDesc"/>
+    <property name="DescriptionKey" value="jz_PoliceOfficerLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionPoliceOfficerBook,ammo9mmBulletBall,jz_OldRevolver"/>
 		<property name="Create_item_count" value="1,16,6"/>
@@ -26070,7 +26082,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionChef">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionChefKitDesc"/>
+    <property name="DescriptionKey" value="jz_ChefLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionChefBook,jz_OldKnife"/>
 		<property name="Create_item_count" value="1,6"/>
@@ -26080,7 +26092,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionFitnessInstructor">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionFitnessInstructorKitDesc"/>
+    <property name="DescriptionKey" value="jz_FitnessInstructorLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionFitnessInstructorBook,meleeWpnClubT1BaseballBat"/>
 		<property name="Create_item_count" value="1,3"/>
@@ -26090,17 +26102,17 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionFireman">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionFiremanKitDesc"/>
+    <property name="DescriptionKey" value="jz_FireFighterLongDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="jz_ProfessionFireFighterBook,bookFiremansAlmanacAxes,bookFiremansAlmanacEquipment,jz_OldAxe"/>
-		<property name="Create_item_count" value="1,1,1,6"/>
+		<property name="Create_item" value="jz_ProfessionFireFighterBook,bookFiremansAlmanacSpeed,bookFiremansAlmanacAxes,bookFiremansAlmanacEquipment,bookFiremansAlmanacPrevention,bookFiremansAlmanacHarvest,bookFiremansAlmanacHeat,bookFiremansAlmanacMolotov,jz_OldAxe"/>
+		<property name="Create_item_count" value="1,1,1,1,1,1,1,1,6"/>
 	</property>
 </item>
 
 <item name="jz_ProfessionMetalWorker">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionMetalWorkerKitDesc"/>
+    <property name="DescriptionKey" value="jz_MetalWorkerLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionMetalWorkerBook,meleeToolSalvageT1Wrench"/>
 		<property name="Create_item_count" value="1,3"/>
@@ -26110,7 +26122,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionElectrician">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionElectricianKitDesc"/>
+    <property name="DescriptionKey" value="jz_ElectricianLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionElectricianBook,jz_Screwdriver"/>
 		<property name="Create_item_count" value="1,3"/>
@@ -26120,7 +26132,7 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionFarmer">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionFarmerKitDesc"/>
+    <property name="DescriptionKey" value="jz_FarmerLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionFarmerBook"/>
 		<property name="Create_item_count" value="1"/>
@@ -26130,29 +26142,29 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionThief">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionThiefKitDesc"/>
+    <property name="DescriptionKey" value="jz_BurglarLongDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="resourceLockPick,jz_ProfessionBurglarBook,jz_OldKnife"/>
-		<property name="Create_item_count" value="20,1,6"/>
+		<property name="Create_item" value="resourceLockPick,jz_ProfessionBurglarBook,bookGreatHeistAdrenalineFall,bookGreatHeistTimedCharge,bookGreatHeistClaimed,bookGreatHeistGems,bookGreatHeistMotionDetection,bookGreatHeistSafes,bookGreatHeistSprintSneak,jz_OldKnife"/>
+		<property name="Create_item_count" value="20,1,1,1,1,1,1,1,1,6"/>
 	</property>
 </item>
 
 <item name="jz_ProfessionParkRanger">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionParkRangerKitDesc"/>
+    <property name="DescriptionKey" value="jz_ParkRangerLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="ammo762mmBulletBall,jz_ProfessionParkRangerBook,jz_OldRifle"/>
-		<property name="Create_item_count" value="19,1,6"/>
+		<property name="Create_item_count" value="20,1,6"/>
 	</property>
 </item>
 
 <item name="jz_ProfessionMechanic">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionMechanicKitDesc"/>
+    <property name="DescriptionKey" value="jz_MechanicLongDesc"/>
 	<property class="Action0">
-		<property name="Create_item" value="jz_ProfessionMechanicBook,meleeToolSalvageT1Wrench"/>
+		<property name="Create_item" value="jz_ProfessionMechanicBook,meleeToolSalvageT3ImpactDriver"/>
 		<property name="Create_item_count" value="1,3"/>
 	</property>
 </item>
@@ -26160,9 +26172,19 @@ perkNightStalkerSilentNight
 <item name="jz_ProfessionMason">
 	<property name="Extends" value="jz_ProfessionSoldier"/>
 	<property name="CustomIcon" value="cntSuitcase"/>
-    <property name="DescriptionKey" value="jz_ProfessionMasonKitDesc"/>
+    <property name="DescriptionKey" value="jz_MasonLongDesc"/>
 	<property class="Action0">
 		<property name="Create_item" value="jz_ProfessionMasonBook,jz_MasonHammer"/>
+		<property name="Create_item_count" value="1,3"/>
+	</property>
+</item>
+
+<item name="jz_ProfessionConcreteMason">
+	<property name="Extends" value="jz_ProfessionSoldier"/>
+	<property name="CustomIcon" value="cntSuitcase"/>
+    <property name="DescriptionKey" value="jz_ConcreteMasonLongDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="jz_ProfessionConcreteMasonBook,jz_ConcreteSledge"/>
 		<property name="Create_item_count" value="1,3"/>
 	</property>
 </item>
@@ -27211,14 +27233,13 @@ perkNightStalkerSilentNight
 			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 		</property>  
 	</property>
-
 	<effect_group name="ConcreteSledge">
-		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
-		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="5"/> 
-		<passive_effect name="BlockDamage" operation="base_set" value="38.5"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="43.5"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="20.8" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="500" />
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="ModSlots" operation="base_set" value="0" />
@@ -28848,6 +28869,7 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="jz_FoodDriedMeatDesc" />
 	<property name="DisplayType" value="TSFoWaStHePr"/>
     <property name="EconomicValue" value="0"/>
+	<property name="Group" value="Other"/>
 	<property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
 	</property>
@@ -28866,6 +28888,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="jz_FoodDriedFruitDesc" />
 	<property name="DisplayType" value="TSFoWaStHeFr"/>
+	<property name="Group" value="Other"/>
     <property name="EconomicValue" value="0"/>
     <property class="Action0">
 		<requirement name="!HasBuff" buff="jz_BuffStuffed"/>
@@ -30226,57 +30249,57 @@ perkNightStalkerSilentNight
 <item name="jz_RubberGloves">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_RubberGloves" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="1" />
 </item>
 <item name="jz_RubberMat">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_RubberMat" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="1" />
 </item>
 <item name="jz_RubberDuck">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="1" />
 </item>
 <item name="jz_RubberDogToy">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="1" />
 </item>
 <item name="jz_RubberApron">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="2" />
 </item>
 <item name="jz_RubberDoll">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="2" />
 </item>
 <item name="jz_RubberChicken">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="2" />
 </item>
 <item name="jz_RubberBoots">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="3" />
 </item>
 <item name="jz_RubberDumbBell">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="dumbBell" />
-	<property name="DescriptionKey" value="jz_MechanicalJunkDesc" />
+	<property name="DescriptionKey" value="jz_RubberJunkDesc" />
 	<property name="Material" value="Mrubber" />
 	<property name="Weight" value="3" />
 </item>
@@ -32273,6 +32296,38 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="SP_PipePistolSchematic" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="jz_SchematicFarmPlot">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CreativeMode" value="Player"/>
+    <property name="Weight" value="3"/>
+	<property name="CustomIcon" value="farmPlotBlock"/>
+	<property name="Unlocks" value="farmPlotBlockVariantHelper"/>
+    <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
+	<property class="Action0">
+	<requirement name="ProgressionLevel" progression_name="SP_FarmPlotSchematic" operation="LT" value="1"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="SP_FarmPlotSchematic" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="jz_SchematicMolotovCocktail">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CreativeMode" value="Player"/>
+    <property name="Weight" value="3"/>
+	<property name="CustomIcon" value="thrownAmmoMolotovCocktail"/>
+	<property name="Unlocks" value="thrownAmmoMolotovCocktail"/>
+    <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
+	<property class="Action0">
+	<requirement name="ProgressionLevel" progression_name="SP_MolotovCocktailSchematic" operation="LT" value="1"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="SP_MolotovCocktailSchematic" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 	</effect_group>
 </item>
@@ -35324,7 +35379,6 @@ perkNightStalkerSilentNight
 		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesRlifeQL6"/>
 	</property>
 </item>
-
 
 
 </set>

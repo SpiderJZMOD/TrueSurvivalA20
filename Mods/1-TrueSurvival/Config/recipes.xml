@@ -424,7 +424,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="treePlant02" count="2"/>
 </recipe> 
 
-<recipe name="farmPlotBlockVariantHelper" count="1" craft_time="30" craft_exp_gain="10">
+<recipe name="farmPlotBlockVariantHelper" count="1" craft_time="30" craft_exp_gain="10" tags="learnable,jz_FarmerTag">
 	<ingredient name="resourceWood" count="5"/>
 	<ingredient name="foodRottingFlesh" count="5"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="15"/>
@@ -458,7 +458,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="jz_MethaneTankBomb" count="1"/>
 </recipe>
 
-<recipe name="thrownAmmoMolotovCocktail" count="1" craft_time="30" craft_exp_gain="30" >
+<recipe name="thrownAmmoMolotovCocktail" count="1" craft_time="30" craft_exp_gain="30" tags="learnable">
 	<ingredient name="resourceCloth" count="1"/>
 	<ingredient name="ammoGasCan" count="300"/>
 	<ingredient name="drinkJarEmpty" count="1"/>
@@ -645,11 +645,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_DrinkVeggieJuice" count="1" craft_time="20" craft_exp_gain="30">
-	<ingredient name="jz_FoodServingVeggie" count="10" />
+	<ingredient name="jz_FoodServingVeggie" count="15" />
 </recipe>
 
 <recipe name="jz_DrinkFruitJuice" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="jz_FoodServingFruit" count="10" />
+	<ingredient name="jz_FoodServingFruit" count="15" />
 </recipe>
 
 <recipe name="jz_FoodVeggieSalad" count="1" craft_time="7" craft_exp_gain="8" tags="jz_ChefTag">
@@ -1179,11 +1179,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_FoodServingVeggie" count="2" />
 </recipe>
 
-<recipe name="jz_MedicalRedHotSteelPipe" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="0" >
+<recipe name="jz_MedicalRedHotSteelPipe" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="0" tags="jz_DoctorTag">
 	<ingredient name="jz_SteelPipe" count="1" />
 </recipe>
 
-<recipe name="jz_MedicalRedHotPipe" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="0" >
+<recipe name="jz_MedicalRedHotPipe" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="0" tags="jz_DoctorTag">
 	<ingredient name="resourceMetalPipe" count="1" />
 </recipe>
 
@@ -1254,7 +1254,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceClayLump" count="20"/>
 </recipe>
 
-<recipe name="jz_MedicalAntiVenom" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="50" >
+<recipe name="jz_MedicalAntiVenom" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="50" tags="jz_DoctorTag">
 	<ingredient name="jz_MedicalSalineSolution" count="1"/>
 	<ingredient name="jz_Yarrow" count="5"/>
     <ingredient name="jz_VenomSack" count="1"/>
@@ -1616,7 +1616,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapPolymers" count="6"/>
 </recipe>
 
-<recipe name="batterybank" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" craft_time="4" craft_exp_gain="25" tags="learnable,jz_WorkBenchTag,jz_ElectricianTag">
+<recipe name="batterybank" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" craft_time="4" craft_exp_gain="25" tags="jz_WorkBenchTag,jz_ElectricianTag">
 	<ingredient name="resourceForgedIron" count="10"/>
 	<ingredient name="resourceElectricParts" count="11"/>
 	<ingredient name="resourceScrapPolymers" count="6"/>
@@ -2360,7 +2360,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMechanicalParts" count="4"/>
 </recipe>
 
-
 <recipe name="modVehicleFuelSaver" count="1" craft_area="workbench" craft_time="4" craft_exp_gain="5" tags="learnable,jz_WorkBenchTag" >
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="10"/>
@@ -2816,7 +2815,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_QICarrot" count="50"/>
 </recipe>
 
-<recipe name="jz_Insecticide" count="10" craft_area="chemistryStation" craft_tool="toolBeaker" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag" >
+<recipe name="jz_Insecticide" count="10" craft_area="chemistryStation" craft_tool="toolBeaker" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag,jz_FarmerTag" >
 	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
     <ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>
     <ingredient name="resourcePotassiumNitratePowder" count="2"/>
@@ -2849,14 +2848,14 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
-<recipe name="drugAntibiotics" count="1" craft_area="chemistryStation" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChemistTag">
+<recipe name="drugAntibiotics" count="1" craft_area="chemistryStation" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChemistTag,jz_DoctorTag">
 	<ingredient name="jz_MoldyBread" count="1"/>
 	<ingredient name="jz_Rosemary" count="5"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="1"/>
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>
 </recipe>
 
-<recipe name="medicalPlasterCast" count="1" craft_area="chemistryStation" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag">
+<recipe name="medicalPlasterCast" count="1" craft_area="chemistryStation" craft_tool="jz_MortarAndPestle" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag,jz_DoctorTag">
 	<ingredient name="resourceCloth" count="5"/>
 	<ingredient name="foodCornMeal" count="2"/>
 	<ingredient name="jz_FoodFlour" count="2"/>
@@ -2891,6 +2890,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="resourceOil" count="1" craft_area="chemistryStation" craft_tool="jz_LabEquipment" craft_exp_gain="1" tags="learnable,jz_ChemistTag" >
 	<ingredient name="resourceOilShale" count="24" />
+</recipe>
+
+<recipe name="drugSteroids" count="2" craft_area="chemistryStation" craft_tool="jz_LabEquipment" craft_exp_gain="50" tags="learnable,jz_ChemistTag,jz_DoctorTag" >
+	<ingredient name="drugPainkillers" count="1"/>
+    <ingredient name="drugVitamins" count="1"/>
+	<ingredient name="resourceAcid" count="1"/>
 </recipe>
 
 <recipe name="jz_QIFertilizerForest" count="1" craft_area="chemistryStation" craft_tool="jz_LabEquipment" craft_exp_gain="1" tags="learnable,jz_ChemistTag" >
@@ -2989,11 +2994,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="meleeWpnBladeT0BoneKnife" count="3" />
 </recipe>
 <!-- Mortar & Pestle Crafted ******************************************************************************************************************************************************* -->
-<recipe name="medicalAloeCream" count="1" craft_area="jz_MortarAndPestle" craft_exp_gain="10" craft_time="4" tags="learnable">
+<recipe name="medicalAloeCream" count="1" craft_area="jz_MortarAndPestle" craft_exp_gain="10" craft_time="4" tags="learnable,jz_DoctorTag">
 	<ingredient name="resourceCropAloeLeaf" count="4"/>
 </recipe>
 
-<recipe name="medicalPlasterCast" count="1" craft_area="jz_MortarAndPestle" craft_time="10" craft_exp_gain="5" tags="learnable">
+<recipe name="medicalPlasterCast" count="1" craft_area="jz_MortarAndPestle" craft_time="10" craft_exp_gain="5" tags="learnable,jz_DoctorTag">
 	<ingredient name="resourceCloth" count="5"/>
 	<ingredient name="foodCornMeal" count="2"/>
 	<ingredient name="jz_FoodFlour" count="2"/>
@@ -3005,21 +3010,21 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourcePotassiumNitratePowder" count="2"/>
 </recipe>
 
-<recipe name="drugPainkillers" count="1" craft_area="jz_MortarAndPestle" craft_time="10" craft_exp_gain="5" tags="learnable" >
+<recipe name="drugPainkillers" count="1" craft_area="jz_MortarAndPestle" craft_time="10" craft_exp_gain="5" tags="learnable,jz_DoctorTag" >
 	<ingredient name="hangingMoss" count="1" />
 	<ingredient name="resourcePotassiumNitratePowder" count="5" />
 	<ingredient name="foodCropMushrooms" count="1" />
 	<ingredient name="jz_MoldyBread" count="1" />
 </recipe>
 
-<recipe name="jz_MedicalStimulant" count="3" craft_area="jz_MortarAndPestle" craft_time="30" tags="learnable">
+<recipe name="jz_MedicalStimulant" count="3" craft_area="jz_MortarAndPestle" craft_time="30" tags="learnable,jz_DoctorTag,jz_ChemistTag">
 	<ingredient name="jz_Yarrow" count="2" />
 	<ingredient name="jz_Rosemary" count="2" />
 	<ingredient name="resourceCropGoldenrodPlant" count="2" />
 	<ingredient name="resourceCropChrysanthemumPlant" count="2" />
 </recipe>
 
-<recipe name="medicalAloeCream" count="1" craft_area="jz_MortarAndPestle" craft_time="10" tags="learnable">
+<recipe name="medicalAloeCream" count="1" craft_area="jz_MortarAndPestle" craft_time="10" tags="learnable,jz_DoctorTag">
 	<ingredient name="resourceCropGoldenrodPlant" count="1" />
 	<ingredient name="jz_Yarrow" count="4" />
 </recipe>
@@ -3424,6 +3429,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_ProfessionChoice" count="1"/>
 </recipe>
 <recipe name="jz_ProfessionChemist" count="1" craft_area="jz_CharacterChoiceComputer" craft_time="3" craft_exp_gain="0">
+	<ingredient name="jz_ProfessionChoice" count="1"/>
+</recipe>
+<recipe name="jz_ProfessionConcreteMason" count="1" craft_area="jz_CharacterChoiceComputer" craft_time="3" craft_exp_gain="0">
 	<ingredient name="jz_ProfessionChoice" count="1"/>
 </recipe>
 <!-- TRAITS -->
@@ -7649,82 +7657,87 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_MilitaryGunParts" count="2"/>
 </recipe>
 <!-- Research Desk Crafted ******************************************************************************************************************************************************* -->
-<recipe name="jz_ProfessionFireFighterBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionFireman" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionPoliceOfficerBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionCop" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionParkRangerBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionParkRanger" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionBouncerBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionBouncer" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionChefBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionChef" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionBurglarBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionThief" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionCarpenterBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionCarpenter" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionMasonBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionMason" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionSoldierBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionSoldier" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionFitnessInstructorBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionFitnessInstructor" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionElectricianBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionElectrician" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionMetalWorkerBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionMetalWorker" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionMechanicBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionMechanic" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionDoctorBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionDoctor" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionFarmerBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionFarmer" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
 
-<recipe name="jz_ProfessionChemistBook" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+<recipe name="jz_ProfessionChemist" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+	<ingredient name="jz_ProfessionPage" count="20"/>
+    <ingredient name="jz_BlankSkillBook" count="1"/>
+</recipe>
+
+<recipe name="jz_ProfessionConcreteMason" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="jz_ProfessionPage" count="20"/>
     <ingredient name="jz_BlankSkillBook" count="1"/>
 </recipe>
@@ -8437,6 +8450,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_SchematicDoors" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
 	<ingredient name="garageDoorMetal_v1" count="2" />
     <ingredient name="garageDoorHousePlayer" count="2" />
+	<ingredient name="jz_BlankSkillBook" count="1" />
+</recipe>
+
+<recipe name="jz_SchematicFarmPlot" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+	<ingredient name="farmPlotBlockVariantHelper" count="6" />
 	<ingredient name="jz_BlankSkillBook" count="1" />
 </recipe>
 

@@ -7414,6 +7414,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<drop event="Harvest" name="resourceYuccaFibers" count="10" tag="oreWoodHarvest"/>
 	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 	<drop event="Destroy" name="resourceYuccaFibers" count="5"/>
 	<property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
 	<property name="SortOrder1" value="a0e0"/>
@@ -7426,6 +7428,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/Trees?Saguaro_Cactus_16Prefab.prefab"/>
 	<property name="MultiBlockDim" value="1,5,1"/>
 	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7434,6 +7438,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/Trees?Saguaro_Cactus_13Prefab.prefab"/>
 	<property name="MultiBlockDim" value="1,3,1"/>
 	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7445,6 +7451,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
 	<drop event="Destroy" name="foodCropYuccaFruit" count="2"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="foodCropYuccaFruit" count="2" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7455,6 +7463,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="VehicleHitScale" value="999"/>
 	<drop event="Destroy" name="foodCropYuccaFruit" count="2"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="foodCropYuccaFruit" count="2" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -7464,6 +7474,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ModelOffset" value="0,0.4,0"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
 	<drop event="Destroy" name="foodCropYuccaFruit" count="3"/>
+	<drop event="Harvest" name="foodCropYuccaFruit" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
+	<drop event="Harvest" name="foodCropYuccaFruit" count="3" tag="jz_FarmerHarvest"/><!-- JZMOD -->
 </block>
 
 <!-- snow biome -->
