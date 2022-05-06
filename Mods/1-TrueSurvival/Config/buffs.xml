@@ -27586,31 +27586,31 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 		
-	<buff name="jz_BuffFireBurnLeftHandBandagedA" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandGashBandaged">
+	<buff name="jz_BuffFireBurnLeftHandBandagedA" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandBandaged">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnLeftHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandBandagedB" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnLeftHandBandagedB" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnLeftHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandBandagedC" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnLeftHandBandagedC" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnLeftHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandBandagedD" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnLeftHandBandagedD" name_key="Burn Left Hand Bandaged" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnLeftHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandBandaged" name_key="Burn Left Hand Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandGashBandaged" hidden="true">
+	<buff name="jz_BuffFireBurnLeftHandBandaged" name_key="Burn Left Hand Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnLeftHandBandagedDesc" icon="LeftHandBandaged" hidden="true">
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnLeftHandBandagedDurationDisplay"/><display_value_format value="time"/>
         <effect_group>
@@ -27650,7 +27650,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconA" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="LeftHandGashBandaged" >
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconA" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="LeftHandBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27663,7 +27663,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconB" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" icon="LeftHandGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconB" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" icon="LeftHandBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27677,7 +27677,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconC" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" icon="LeftHandGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconC" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" icon="LeftHandBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27691,7 +27691,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconD" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" icon="LeftHandGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconD" name_key="Burn Left Hand Needs Cleansed" description_key="jz_BuffFireBurnLeftHandNeedsCleansedBDesc" icon="LeftHandBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27705,7 +27705,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconAA" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="LeftHandGashBandaged" >
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconAA" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="LeftHandBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27716,7 +27716,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconBB" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" icon="LeftHandGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconBB" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" icon="LeftHandBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27728,7 +27728,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconCC" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" icon="LeftHandGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconCC" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" icon="LeftHandBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27740,7 +27740,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconDD" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" icon="LeftHandGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandageIconDD" name_key="Burn Left Hand Needs Bandage" description_key="jz_BuffFireBurnLeftHandNeedsAloeBDesc" icon="LeftHandBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27751,7 +27751,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandNeedsBandageIconAA"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffFireBurnLeftHandNeedsBandage" name_key="Burn Left Hand Needs Treatment" remove_on_death="false" icon="LeftHandGashBandaged" icon_color="255,128,0" hidden="true">
+	<buff name="jz_BuffFireBurnLeftHandNeedsBandage" name_key="Burn Left Hand Needs Treatment" remove_on_death="false" icon="LeftHandBandaged" icon_color="255,128,0" hidden="true">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnLeftHandNeedsDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -27814,7 +27814,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandHealing" name_key="Burn Left Hand Healing" remove_on_death="false" description_key="jz_BuffFireBurnLeftHandHealingDesc" icon="LeftHandGashBandaged" >
+	<buff name="jz_BuffFireBurnLeftHandHealing" name_key="Burn Left Hand Healing" remove_on_death="false" description_key="jz_BuffFireBurnLeftHandHealingDesc" icon="LeftHandBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnLeftHandHealingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -28012,31 +28012,31 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 		
-	<buff name="jz_BuffFireBurnRightHandBandagedA" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandGashBandaged">
+	<buff name="jz_BuffFireBurnRightHandBandagedA" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandBandaged">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnRightHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandBandagedB" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnRightHandBandagedB" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnRightHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandBandagedC" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnRightHandBandagedC" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnRightHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandBandagedD" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnRightHandBandagedD" name_key="Burn Right Hand Bandaged" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnRightHandBandagedDurationDisplay"/><display_value_format value="time"/>
 		<duration value="0"/>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandBandaged" name_key="Burn Right Hand Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandGashBandaged" hidden="true">
+	<buff name="jz_BuffFireBurnRightHandBandaged" name_key="Burn Right Hand Bandaged" remove_on_death="false" description_key="jz_BuffFireBurnRightHandBandagedDesc" icon="RightHandBandaged" hidden="true">
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnRightHandBandagedDurationDisplay"/><display_value_format value="time"/>
         <effect_group>
@@ -28076,7 +28076,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconA" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="RightHandGashBandaged" >
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconA" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" tooltip_key="Burn Needs Bandaging" icon="RightHandBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28089,7 +28089,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconB" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" icon="RightHandGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconB" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" icon="RightHandBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28103,7 +28103,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconC" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" icon="RightHandGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconC" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" icon="RightHandBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28117,7 +28117,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconD" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" icon="RightHandGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconD" name_key="Burn Right Hand Needs Cleansed" description_key="jz_BuffFireBurnRightHandNeedsCleansedBDesc" icon="RightHandBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28131,7 +28131,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconAA" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="RightHandGashBandaged" >
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconAA" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" tooltip_key="Burn Needs Bandaging" icon="RightHandBandaged" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28142,7 +28142,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconBB" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" icon="RightHandGashBandaged" icon_color="255,255,0">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconBB" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" icon="RightHandBandaged" icon_color="255,255,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28154,7 +28154,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconCC" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" icon="RightHandGashBandaged" icon_color="255,0,0">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconCC" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" icon="RightHandBandaged" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28166,7 +28166,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconDD" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" icon="RightHandGashBandaged" icon_color="85,107,47">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandageIconDD" name_key="Burn Right Hand Needs Bandage" description_key="jz_BuffFireBurnRightHandNeedsAloeBDesc" icon="RightHandBandaged" icon_color="85,107,47">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28177,7 +28177,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnRightHandNeedsBandageIconAA"/>
 		</effect_group>
 	</buff>
-	<buff name="jz_BuffFireBurnRightHandNeedsBandage" name_key="Burn Right Hand Needs Treatment" remove_on_death="false" icon="RightHandGashBandaged" icon_color="255,128,0" hidden="true">
+	<buff name="jz_BuffFireBurnRightHandNeedsBandage" name_key="Burn Right Hand Needs Treatment" remove_on_death="false" icon="RightHandBandaged" icon_color="255,128,0" hidden="true">
 		<stack_type value="ignore"/>
 		<display_value value=".BurnRightHandNeedsDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   
@@ -28240,7 +28240,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandHealing" name_key="Burn Right Hand Healing" remove_on_death="false" description_key="jz_BuffFireBurnRightHandHealingDesc" icon="RightHandGashBandaged" >
+	<buff name="jz_BuffFireBurnRightHandHealing" name_key="Burn Right Hand Healing" remove_on_death="false" description_key="jz_BuffFireBurnRightHandHealingDesc" icon="RightHandBandaged" >
 		<stack_type value="ignore"/>
 		 <display_value value=".BurnRightHandHealingDurationDisplay"/><display_value_format value="time"/>
         <effect_group>   

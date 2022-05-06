@@ -74,7 +74,7 @@
 		<reward type="Item" id="jz_TatteredShirt" value="1" />
 		<reward type="Item" id="jz_TatteredPants" value="1" />
 		<reward type="Item" id="jz_TatteredShoes" value="1" />
-		<reward type="Item" id="jz_PlayerMPCooler" value="1" />
+		<!-- JZMOD Server Testing<reward type="Item" id="jz_PlayerMPCooler" value="1" />-->
 		<reward type="Item" id="keystoneBlock" value="1" />
 		<reward type="Exp" value="100" />
               
