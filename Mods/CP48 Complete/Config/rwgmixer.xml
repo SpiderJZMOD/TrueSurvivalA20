@@ -1,0 +1,925 @@
+<compopack>
+    <append xpath="/rwgmixer/world[@name='small']">
+			<!-- COMPOPACK -->
+<!-- SETTLEMENTS -->
+<!-- ASIATOWN -->
+			<property class="asiantown">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="5"/>
+			<property name="maxtiles" value="5"/>
+		</property>
+<!-- ASIATOWN -->
+<!-- MEDIEVAL VILLAGE -->		
+			<property class="medievalvillage">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="5"/>
+			<property name="maxtiles" value="5"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- ZOMBIELAND -->		
+		    <property class="zombieland">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="5"/>
+			<property name="maxtiles" value="5"/>
+		</property>
+<!-- ZOMBIELAND -->	
+<!-- FABBERSVILLE -->
+      <property class="fabbersville">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="17"/>
+			<property name="maxtiles" value="17"/>
+		</property>	
+<!-- FABBERSVILLE -->
+<!-- MEGA CITY -->
+		<property class="megacity">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="45"/>
+			<property name="maxtiles" value="45"/>
+		</property>	
+<!-- MEGA CITY -->
+<!-- SETTLEMENTS -->
+</append>
+	
+	<append xpath="/rwgmixer/world[@name='medium']">
+		<!-- COMPOPACK -->
+		<!-- SETTLEMENTS -->
+<!-- ASIATOWN -->
+			<property class="asiantown">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="7"/>
+			<property name="maxtiles" value="7"/>
+		</property>
+<!-- ASIATOWN -->
+<!-- MEDIEVAL VILLAGE -->	
+			<property class="medievalvillage">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="7"/>
+			<property name="maxtiles" value="7"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+<!-- ZOMBIELAND -->			
+		    <property class="zombieland">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="7"/>
+			<property name="maxtiles" value="7"/>
+		</property>
+<!-- ZOMBIELAND -->	
+<!-- SETTLEMENTS -->
+<!-- FABBERSVILLE -->
+      <property class="fabbersville">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="17"/>
+			<property name="maxtiles" value="17"/>
+		</property>	
+<!-- FABBERSVILLE -->
+<!-- MEGA CITY -->
+		<property class="megacity">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="60"/>
+			<property name="maxtiles" value="60"/>
+		</property>	
+<!-- MEGA CITY -->	
+		<!-- COMPOPACK -->	
+</append>	
+
+	<append xpath="/rwgmixer/world[@name='large']">
+			<!-- COMPOPACK -->
+		<!-- ASIATOWN -->
+		    <property class="asiantown">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="9"/>
+			<property name="maxtiles" value="9"/>
+		</property>	
+<!-- ASIATOWN -->
+<!-- MEDIEVAL VILLAGE -->	
+			<property class="medievalvillage">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="9"/>
+			<property name="maxtiles" value="9"/>
+		</property>
+<!-- MEDIEVAL VILLAGE -->
+	<!-- ZOMBIELAND -->		
+			<property class="zombieland">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="9"/>
+			<property name="maxtiles" value="9"/>
+		</property> 
+<!-- ZOMBIELAND -->	
+<!-- FABBERSVILLE -->
+      <property class="fabbersville">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="17"/>
+			<property name="maxtiles" value="17"/>
+		</property>	
+<!-- FABBERSVILLE -->
+<!-- MEGA CITY -->
+		<property class="megacity">
+			<property name="few" value="1"/>
+			<property name="default" value="1"/>
+			<property name="many" value="1"/>
+			
+			<property name="mintiles" value="75"/>
+			<property name="maxtiles" value="75"/>
+		</property>	
+<!-- MEGA CITY -->
+		<!-- COMPOPACK -->
+</append>
+
+	<append xpath="/rwgmixer">
+	<!-- COMPOPACK -->
+	<!-- SETTLEMENTS -->
+	<!-- ASIA TOWN -->
+		<township name="asiantown">
+		<property name="spawn_trader" value="true"/>
+	</township>
+
+<district name="asiantown">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="asiantown"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		<property name="poi_required_tags_all" value="asian"/>
+	</district>
+	<!-- ASIA TOWN -->
+	<!-- MEDIEVAL VILLAGE -->
+		<township name="medievalvillage">
+		<property name="spawn_trader" value="true"/>
+	</township>
+	
+	<district name="medievalvillage">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="medievalvillage"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		<property name="poi_required_tags_all" value="medieval"/>
+	</district>
+	
+	<streettile name="rwg_tile_medievalvillage_corner_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_medievalvillage_t_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	
+	<!-- MEDIEVAL VILLAGE -->
+	<!-- ZOMBIELAND -->
+	<township name="zombieland">
+		<property name="spawn_trader" value="False"/>
+	</township>
+
+		<district name="zombieland">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="zombieland"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		<property name="poi_required_tags_all" value="zombie"/>
+	</district>
+	<!-- ZOMBIELAND -->
+	<!-- FABBERSVILLE -->
+	<!-- FABBERSVILLE TOWN -->
+	<township name="fabbersville">
+	</township>
+	
+	<district name="fabbersville">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="fabbersville"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		
+		<property name="poi_required_tags_all" value="fabber"/>
+	</district>	
+	
+	<!-- FABBERSVILLE TOWN -->
+	<!-- FABBERSVILLE RESIDENTIAL -->
+	<district name="fabbersvilleresidential">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="fabbersville"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		
+		<property name="poi_required_tags_all" value="fabberres"/>
+	</district>	
+	<!-- FABBERSVILLE RESIDENTIAL -->
+	<!-- FABBERSVILLE POI/TILE Sets -->	
+<!-- STRAIGHT -->
+	<streettile name="rwg_tile_fabbersvilleresidential_intersection_02">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_fabbersville_cap_shopcenter">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+<!-- STRAIGHT -->
+	<!-- FABBERSVILLE  POI/TILE Sets -->	
+	<!-- FABBERSVILLE  -->
+	
+	<!-- MEGA CITY -->
+		<township name="megacity">
+		<property name="outskirt_district" value="megacityrural"/>
+	</township>	
+	
+	<!-- MEGA COMMERCIAL -->
+	<district name="megacitycommercial">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="megacity"/>
+		<property name="district_preview_color" value="0.25,0.25,1"/>
+		
+		<property name="poi_required_tags_all" value="cpmegacommercial"/>
+	</district>
+	
+	<streettile name="rwg_tile_megacitycommercial_cap_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacitycommercial_cap_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacitycommercial_cap_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacitycommercial_cap_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacitycommercial_cap_06">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacitycommercial_t_01">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	<!-- MEGA COMMERCIAL -->
+	<!-- MEGA DOWNTOWN -->
+	<district name="megacitydowntown">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="megacity"/>
+		<property name="district_preview_color" value="0.5,0.5,0.5"/>
+		
+		<property name="poi_required_tags_all" value="cpmegadowntown"/>
+	</district>
+	<!-- MEGA DOWNTOWN -->
+	<!-- MEGA INDUSTRIAL -->
+    <district name="megacityindustrial">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="megacity"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		<property name="poi_required_tags_all" value="cpindustrial"/>
+	</district>
+		
+	<streettile name="rwg_tile_megacityindustrial_cap_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_intersection_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_straight_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_t_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+
+	<streettile name="rwg_tile_megacityindustrial_cap_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_intersection_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_straight_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_t_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+		
+	<streettile name="rwg_tile_megacityindustrial_cap_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_intersection_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_straight_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_t_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+		
+	<streettile name="rwg_tile_megacityindustrial_cap_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_intersection_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_straight_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_t_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+		
+	<streettile name="rwg_tile_megacityindustrial_cap_06">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_06">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_intersection_06">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_straight_06">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_t_06">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>	
+	
+	<streettile name="rwg_tile_megacityindustrial_cap_07">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_07">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_08">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_09">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityindustrial_corner_10">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	<!-- MEGA INDUSTRIAL -->
+	<!-- MEGA RESIDENTIAL -->
+	<district name="megacityresidential">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="megacity"/>
+		<property name="district_preview_color" value="0.1,0.5,0.1"/>
+		
+		<property name="poi_required_tags_all" value="cpmegaresidential"/>
+	</district>
+	<!-- MEGA RESIDENTIAL -->
+	<!-- MEGA RURAL -->
+	<district name="megacityrural">
+		<property name="district_spawn_weight" value="1"/>
+		<property name="district_required_township" value="megacity"/>
+		<property name="district_preview_color" value="0,0.5,0"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		<property name="poi_required_tags_all" value="cpmegarural"/>
+	</district>
+	
+	<streettile name="rwg_tile_megacityrural_straight_01">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityrural_straight_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityrural_t_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_megacityrural_t_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+	</streettile>
+	<!-- MEGA RURAL -->	
+	
+	<!-- MEGA POI/TILE Sets -->	
+<!-- MEGA COMMERCIAL -->
+	<streettile name="rwg_tile_megacitycommercial_straight_uni_07">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+
+	<streettile name="rwg_tile_megacitycommercial_intersection_condo_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+		<streettile name="rwg_tile_megacitycommercial_intersection_scenter_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>	
+		
+		<streettile name="rwg_tile_megacitycommercial_intersection_ghost">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<!-- !!!COMMERCIAL!!! -->	
+	<!-- !!!DOWNTOWN!!! -->
+	<streettile name="rwg_tile_megacitydowntown_cap_skyscraper_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>		
+
+  	<streettile name="rwg_tile_megacitydowntown_corner_hospital_01">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_megacitydowntown_corner_skyhigh_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>		
+	
+	<streettile name="rwg_tile_megacitydowntown_intersection_villa_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>	
+	
+	<streettile name="rwg_tile_megacitydowntown_straight_afp_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_megacitydowntown_straight_basketball_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_megacitydowntown_straight_casino_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	 <streettile name="rwg_tile_megacitydowntown_straight_govt_06">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+<!-- MEGA DOWNTOWN -->
+<!-- MEGA INDUSTRIAL -->
+		<streettile name="rwg_tile_megacityindustrial_corner_vacant_01">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_megacityindustrial_straight_joes">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+		<streettile name="rwg_tile_megacityindustrial_straight_hockey_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_megacityindustrial_straight_asylum_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- MEGA INDUSTRIAL -->
+	<!-- MEGA RESIDENTIAL -->
+		<streettile name="rwg_tile_megacityresidential_cap_quiet_pines_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+		<streettile name="rwg_tile_megacityresidential_cap_dlord">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- MEGA RESIDENTIAL -->
+	<!-- MEGA POI/TILE Sets -->	
+	<!-- MEGA CITY -->
+	<!-- SETTLEMENTS -->	
+<!-- POI/TILE Sets -->	
+<!-- COMMERCIAL -->
+<!-- INTERSECTION -->
+	<streettile name="rwg_tile_commercial_intersection_condo_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+		<streettile name="rwg_tile_commercial_intersection_scenter_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>		
+
+		<streettile name="rwg_tile_commercial_intersection_ghost">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- INTERSECTION -->
+	<!-- !!!COMMERCIAL!!! -->	
+	<!-- !!!DOWNTOWN!!! -->
+	<!-- CAP -->
+	<streettile name="rwg_tile_downtown_cap_skyscraper_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>		
+
+  	<!-- CAP -->		
+	<!-- CAP -->	
+	<!-- CORNER -->
+	<streettile name="rwg_tile_downtown_corner_hospital_01">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_downtown_corner_skyhigh_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>		
+	<!-- CORNER -->
+	<!-- INTERSECTION -->
+	<streettile name="rwg_tile_downtown_intersection_villa_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- INTERSECTION -->
+	<!-- STRAIGHT -->
+	<streettile name="rwg_tile_downtown_straight_afp_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_downtown_straight_basketball_04">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_downtown_straight_casino_05">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	 <streettile name="rwg_tile_downtown_straight_govt_06">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+
+	<streettile name="rwg_tile_downtown_straight_uni_07">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	<!-- STRAIGHT -->	
+<!-- !!!DOWNTOWN!!! -->
+	<!-- CORNER -->
+		<streettile name="rwg_tile_industrial_corner_vacant_01">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- CORNER -->
+	<!-- STRAIGHT -->		
+	<streettile name="rwg_tile_industrial_straight_joes">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+		<streettile name="rwg_tile_industrial_straight_hockey_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+	<streettile name="rwg_tile_industrial_straight_asylum_03">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- STRAIGHT -->	
+	<!-- !!!INDUSTRIAL!!! -->
+	<!-- !!!RESIDENTIAL!!! -->
+	<!-- CAP -->
+		<streettile name="rwg_tile_residential_cap_quiet_pines_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+		
+		<streettile name="rwg_tile_residential_cap_dlord">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="1000"/>
+		<property name="spawn_custom_size_prefabs" value="true"/>
+		</streettile>
+	<!-- CAP -->
+	<!-- !!!RESIDENTIAL!!! -->
+	<!-- OLDWEST -->
+	<streettile name="rwg_tile_oldwest_cap_xcostum_wildwest_01">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+        </streettile>
+	<!-- OLDWEST -->
+	<!-- COUNTRYTOWN -->
+	<streettile name="rwg_tile_countrytown_cap_shopcenter">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	<!-- COUNTRYTOWN -->	
+	<!-- COUNTRYRESIDENTIAL -->
+	<!-- INTERSECTION -->
+	<streettile name="rwg_tile_countryresidential_intersection_02">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	<!-- INTERSECTION -->
+	<!-- COUNTRYRESIDENTIAL -->
+	<!-- POI/TILE Sets -->	
+	<!-- CP TILES -->	
+	<streettile name="rwg_tile_commercial_cap_01">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_commercial_cap_02">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_commercial_cap_03">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_commercial_cap_04">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_commercial_cap_05">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_commercial_cap_06">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_commercial_t_01">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_rural_straight_zztong_01">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<streettile name="rwg_tile_rural_straight_zztong_02">
+        <property name="maxtiles" value="1"/>
+        <property name="mintiles" value="1"/>
+        <property name="maxdensity" value="1000"/>
+        <property name="spawn_custom_size_prefabs" value="true"/>
+    </streettile>
+	
+	<!-- CP TILES -->		
+	<!-- COMPOPACK -->
+</append>
+</compopack>

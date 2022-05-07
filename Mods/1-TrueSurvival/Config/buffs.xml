@@ -1431,13 +1431,13 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$journalUnlockTimer" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$journalUnlockTimer" operation="set" value="0"/>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="survivalTip">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="jz_survivalTip">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="6"/> </triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="firstAidTip">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="jz_TrueSurvivalWarning">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="7"/> </triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="infectionTip">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="TrueSurvivalWorkbenchUpgradingJournal">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="8"/> </triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="waterTip">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="jz_waterTip">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="9"/> </triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="foodPoisoningTip">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="10"/> </triggered_effect>
@@ -1450,7 +1450,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="13"/> </triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="stealthTip">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="14"/> </triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="criticalHitsTip">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="jz_criticalHitsTip">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="15"/> </triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="TrueSurvivalNutritionJournal">
@@ -1469,9 +1469,11 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="22"/> </triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="TrueSurvivalBuildingConstructionJournal">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="23"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="jz_loadingTipTSCrowbar">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="24"/> </triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffJournalUnlocks">
-				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="25"/> </triggered_effect>
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="26"/> </triggered_effect>
 		</effect_group>
 	</buff>
 
@@ -10532,8 +10534,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="stamina" operation="subtract" value="3"/>
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="subtract" value="2"/>    
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="stamina" operation="subtract" value="3"/>
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSnakeBiteLvThree" />
-			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffGash" />			
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffSnakeBiteLvThree" />	
 		</effect_group>	
 		<effect_group>		
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.15"/>
@@ -10573,6 +10574,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
+			
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt1"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffSnakeLimpPt2"/>	
 		</effect_group>
 	</buff>
 	
@@ -17897,7 +17903,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffLeftArmSplinted" remove_on_death="false" name_key="Splinted Left Arm" description_key="jz_BuffLeftArmSplintedDesc" icon="LeftArmBandage">
+	<buff name="jz_BuffLeftArmSplinted" remove_on_death="false" name_key="Splinted Left Arm" description_key="jz_BuffLeftArmSplintedDesc" icon="LeftArmBandaged">
 		<duration value="0"/>
 		<display_value value=".LeftArmDurationDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -17963,7 +17969,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffLeftArmCast" remove_on_death="false" name_key="Cast Left Arm" description_key="jz_BuffLeftArmCastDesc" icon="LeftArmBandage">
+	<buff name="jz_BuffLeftArmCast" remove_on_death="false" name_key="Cast Left Arm" description_key="jz_BuffLeftArmCastDesc" icon="LeftArmBandaged">
 		<duration value="0"/>
 		<display_value value=".LeftArmDurationDisplay"/><display_value_format value="time"/>
 		<effect_group>

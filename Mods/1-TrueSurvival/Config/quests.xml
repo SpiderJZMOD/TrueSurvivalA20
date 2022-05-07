@@ -63,7 +63,7 @@
 		<property name="difficulty" value="veryeasy"/>
 		<property name="offer_key" value="jzquest_Opening" />
 		<property name="shareable" value="false" />
-		<action type="ShowTip" value="tutorialTipQuest02" />
+		<action type="ShowTip" value="jz_TrueSurvivalWarning" />
 		<action type="TrackQuest" />
 		<objective type="BlockPlace" id="jz_CharacterChoiceComputer" value="1" phase="1" />
 

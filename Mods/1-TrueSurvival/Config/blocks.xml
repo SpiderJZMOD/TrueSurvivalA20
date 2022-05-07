@@ -34074,7 +34074,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
+	<property name="WorkstationJournalTip" value="TrueSurvivalWorkbenchUpgradingJournal"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34126,7 +34126,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34178,7 +34177,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34230,7 +34228,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34282,7 +34279,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34334,7 +34330,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationImprovisedWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ImprovisedWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34381,7 +34376,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34435,7 +34429,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34488,8 +34481,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
+	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />	
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34543,7 +34535,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34597,7 +34588,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34651,7 +34641,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationPipeGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_PipeGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34699,7 +34688,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34752,7 +34740,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34805,7 +34792,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34858,7 +34844,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34911,7 +34896,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -34964,7 +34948,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationLightArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_LightArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35011,7 +34994,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35064,7 +35046,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35117,7 +35098,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35170,7 +35150,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35223,7 +35202,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35276,7 +35254,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHeavyArmorWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HeavyArmorWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35322,8 +35299,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="chem_station_close"/>
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
+	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />	
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35376,7 +35352,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35429,7 +35404,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35482,7 +35456,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35535,7 +35508,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35588,7 +35560,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationToolWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ToolWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35635,7 +35606,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35688,7 +35658,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35741,7 +35710,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35794,7 +35762,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35847,7 +35814,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35900,7 +35866,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationElectronicWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ElectronicWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35946,7 +35911,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -35999,7 +35963,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36052,7 +36015,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36105,7 +36067,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36158,7 +36119,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36211,7 +36171,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationHandgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_HandgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36258,7 +36217,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36311,7 +36269,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36364,7 +36321,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36417,7 +36373,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36470,7 +36425,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36523,7 +36477,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationShotgunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_ShotgunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36570,7 +36523,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36623,7 +36575,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36676,7 +36627,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36729,7 +36679,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36782,7 +36731,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36835,7 +36783,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationMachineGunWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_MachineGunWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36882,7 +36829,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36935,7 +36881,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -36988,7 +36933,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -37041,7 +36985,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -37094,7 +37037,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -37147,7 +37089,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<property name="DescriptionKey" value="jz_WorkstationRifleWorkbenchDesc" />
-	<property name="WorkstationJournalTip" value="jz_RifleWorkbenchTip"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>

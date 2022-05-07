@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="CP48 Complete" /> 
+        <Description value="Adds CP48 Complete to the game." />
+        <Author value="Compopack" />
+        <Version value="A20" />
+    </ModInfo>
+</xml>
