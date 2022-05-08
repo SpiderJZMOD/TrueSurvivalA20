@@ -7,6 +7,9 @@ Key,English
 jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
+
+jz_BuffBadDietDesc,"Your diet is not very healthy and it is starting to effect you. Try eating foods that contains all the vitamin groups.\n\n-1 Stamina per 5 sec"
+jz_BuffVitaminDeficiencyDesc,"Your poor diet means your not getting all the nutrition you need and its slowing you down. Cook and eat meals that contains all the vitamin groups to improve your diet.\n\n-1 Stamina per 4 sec\n-5% Mobility"
 jz_BuffCharismaticNatureOneDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina" 
 jz_BuffCharismaticNatureTwoDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina\n+20% Damage"
 jz_BuffCharismaticNatureThreeDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina\n+20% Damage\n-10% Health Loss"

@@ -27404,7 +27404,7 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> 
-	<property name="DisplayType" value="cureInfection"/>
+	<property name="DisplayType" value="cureZVirusInfection"/>
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property name="DescriptionKey" value="jz_MedicalAntiViralDesc" />
 	<property name="SellableToTrader" value="false"/>
@@ -27416,7 +27416,7 @@ perkNightStalkerSilentNight
 	</property>
 	<effect_group tiered="false">
 		<requirement name="HasBuff" buff="buffInfectionMain"/>
-			<display_value name="dCureInfection" value=".25"/>
+			<display_value name="dCureZvirusInfection" value=".25"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="25"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
 	</effect_group>

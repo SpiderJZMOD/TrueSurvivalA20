@@ -594,7 +594,7 @@ All the perk tags:
 		<item_display_info display_type="cureInfection" display_group="groupConsumables">
 			<display_entry name="dCureInfection" title_key="jz_statCureInfection" display_type="Percent"/>
 		</item_display_info>
-
+		
 		<item_display_info display_type="medical" display_group="groupConsumables">
 			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
 		</item_display_info>
@@ -1037,7 +1037,7 @@ All the perk tags:
         </item_display_info>
 		
 		<item_display_info display_type="cureZVirusInfection" display_group="groupConsumables">
-			<display_entry name="dCureInfection" title_key="jz_statCureZVirusInfection" display_type="Percent"/>
+			<display_entry name="dCureZvirusInfection" title_key="jz_statCureZVirusInfection" display_type="Percent"/>
 		</item_display_info>
 	</item_display>
 

@@ -24716,11 +24716,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <!-- NOT_A_SHAPE -->
-<!--JZMOD REMOVE
+
 <block name="torchWallHolder">
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="StabilitySupport" value="false"/>  build restriction 
+	<property name="StabilitySupport" value="false"/>  
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Lighting/torch_wallPrefab"/>
@@ -24735,7 +24735,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 	<property name="FilterTags" value="MC_building,SC_lighting"/>
 	<property name="SortOrder1" value="70a0"/>
-</block> -->
+</block>
 
 <!-- NOT_A_SHAPE -->
 <block name="candleWallLight">
@@ -40929,7 +40929,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#@modfolder:Resources/JZSatelite.unity3d?SatelitePrefab" />
 	<property name="CreativeMode" value="Dev"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="CustomIcon" value="jz_SateliteRadio"/>
+	<property name="CustomIcon" value="jz_QISateliteRadio"/>
 	<property name="MaxDamage" value="500"/>
 	<property name="CanPickup" value="false" />
 	<property name="DowngradeBlock" value="jz_SateliteQuestItem"/>
@@ -40949,7 +40949,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZSatelite.unity3d?SatelitePrefab" />
 	<property name="CanPickup" value="false" />
-	<property name="CustomIcon" value="jz_SateliteRadio"/>
+	<property name="CustomIcon" value="jz_QISateliteRadio"/>
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<property name="IsTerrainDecoration" value="true" />
