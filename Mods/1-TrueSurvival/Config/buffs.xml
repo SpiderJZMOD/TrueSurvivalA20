@@ -855,13 +855,13 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffLimpNotice"/>
 		</effect_group>
 		
-		  <!-- JZMOD FATIGUED ACTIVATION-->
-        <effect_group name="Fatigued Activation">
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffFatigued">
+		  <!-- JZMOD EXHAUSTED ACTIVATION-->
+        <effect_group name="Echausted Activation">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffExhausted">
 				<requirement name="CVarCompare" cvar="$fatigueTicker" operation="GTE" value="60"/></triggered_effect>	
         </effect_group> 
-        <effect_group name="Fatigued Deactivation">
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFatigued">
+        <effect_group name="Echausted Deactivation">
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffExhausted">
 				<requirement name="CVarCompare" cvar="$fatigueTicker" operation="LTE" value="59"/></triggered_effect>	
         </effect_group> 
         
@@ -4170,7 +4170,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 	</buff>
 
-	<buff name="buffInjuryConcussion" name_key="buffInjuryConcussionName" remove_on_death="false" description_key="buffInjuryConcussionDesc" tooltip_key="buffInjuryConcussionTooltip" icon="ui_game_symbol_concussion" icon_color="255,128,0">
+	<buff name="buffInjuryConcussion" name_key="buffInjuryConcussionName" remove_on_death="false" description_key="jz_buffInjuryConcussionDesc" tooltip_key="buffInjuryConcussionTooltip" icon="ui_game_symbol_concussion" icon_color="255,128,0">
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<display_value value=".concussionDurationDisplay"/><display_value_format value="time"/>
@@ -9724,6 +9724,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="2"/>
 	</buff>   
 	
+	<buff name="jz_BuffExhausted" name_key="Exhausted" description_key="jz_BuffExhaustedDesc" icon="Exhausted" icon_color="255,255,0">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,8" tags="jz_BuffExhausted"/>
+		</effect_group>
+	</buff>
+	
 <!-- JZMOD FOOD SYSTEM -->
 	<buff name="jz_BuffVitaminFader" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
@@ -11050,7 +11058,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
     <!-- JZMOD TRADER BUFFS -->
     <buff name="jz_BuffDeadIsDeadResetNoCheating" hidden="true" remove_on_death="false">
         <stack_type value="ignore"/>
-		<duration value="1800"/>     
+		<duration value="900"/>     
 	</buff>
 	
 	<buff name="jz_BuffTraderJoePing" hidden="true" remove_on_death="true">
@@ -15786,7 +15794,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffSprainedLeftAnkle" remove_on_death="false" name_key="Sprained Left Ankle" description_key="jz_BuffSprainedLeftAnkleDesc" tooltip_key="Ow! My Foot!" icon="LeftAnkleBroken" icon_color="255,128,0">
+	<buff name="jz_BuffSprainedLeftAnkle" remove_on_death="false" name_key="Sprained Left Ankle" description_key="jz_BuffSprainedLeftAnkleDesc" tooltip_key="Ow! My Ankle!" icon="LeftAnkleBroken" icon_color="255,128,0">
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<display_value value=".LeftAnkleDurationDisplay"/><display_value_format value="time"/>
@@ -16053,7 +16061,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffSprainedRightAnkle" remove_on_death="false" name_key="Sprained Right Ankle" description_key="jz_BuffSprainedRightAnkleDesc" tooltip_key="Ow! My Foot!" icon="RightAnkleBroken" icon_color="255,128,0">
+	<buff name="jz_BuffSprainedRightAnkle" remove_on_death="false" name_key="Sprained Right Ankle" description_key="jz_BuffSprainedRightAnkleDesc" tooltip_key="Ow! My Ankle!" icon="RightAnkleBroken" icon_color="255,128,0">
 		<stack_type value="replace"/>
 		<duration value="0"/>
 		<display_value value=".RightAnkleDurationDisplay"/><display_value_format value="time"/>
@@ -18965,7 +18973,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashLeftFootIconAA" name_key="Dirty Gash Left Foot" description_key="jz_BuffDirtyGashLeftFootDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftFootGash" >
+	<buff name="jz_BuffGashLeftFootIconAA" name_key="Dirty Gash Left Foot" description_key="jz_BuffDirtyGashLeftFootDesc" icon="LeftFootGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -19336,7 +19344,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashRightFootIconAA" name_key="Dirty Gash Right Foot" description_key="jz_BuffDirtyGashRightFootDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightFootGash" >
+	<buff name="jz_BuffGashRightFootIconAA" name_key="Dirty Gash Right Foot" description_key="jz_BuffDirtyGashRightFootDesc" icon="RightFootGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -19659,7 +19667,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD LEFT LEG GASH -->
-	<buff name="jz_BuffGashLeftLegIconA" name_key="Gash Left Leg" description_key="jz_BuffGashLeftLegDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftLegGashBleed">
+	<buff name="jz_BuffGashLeftLegIconA" name_key="Gash Left Leg" description_key="jz_BuffGashLeftLegDesc" tooltip_key="AAHHH!! MY LEG!" icon="LeftLegGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -19707,7 +19715,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashLeftLegIconAA" name_key="Dirty Gash Left Leg" description_key="jz_BuffDirtyGashLeftLegDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftLegGash" >
+	<buff name="jz_BuffGashLeftLegIconAA" name_key="Dirty Gash Left Leg" description_key="jz_BuffDirtyGashLeftLegDesc" icon="LeftLegGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -20030,7 +20038,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD RIGHT LEG GASH -->
-	<buff name="jz_BuffGashRightLegIconA" name_key="Gash Right Leg" description_key="jz_BuffGashRightLegDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightLegGashBleed">
+	<buff name="jz_BuffGashRightLegIconA" name_key="Gash Right Leg" description_key="jz_BuffGashRightLegDesc" tooltip_key="AAHHH!! MY LEG!" icon="RightLegGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -20078,7 +20086,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashRightLegIconAA" name_key="Dirty Gash Right Leg" description_key="jz_BuffDirtyGashRightLegDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightLegGash" >
+	<buff name="jz_BuffGashRightLegIconAA" name_key="Dirty Gash Right Leg" description_key="jz_BuffDirtyGashRightLegDesc" icon="RightLegGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -20401,7 +20409,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD LEFT HAND GASH -->
-	<buff name="jz_BuffGashLeftHandIconA" name_key="Gash Left Hand" description_key="jz_BuffGashLeftHandDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftHandGashBleed">
+	<buff name="jz_BuffGashLeftHandIconA" name_key="Gash Left Hand" description_key="jz_BuffGashLeftHandDesc" tooltip_key="AAHHH!! MY HAND!" icon="LeftHandGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -20449,7 +20457,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashLeftHandIconAA" name_key="Dirty Gash Left Hand" description_key="jz_BuffDirtyGashLeftHandDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftHandGash" >
+	<buff name="jz_BuffGashLeftHandIconAA" name_key="Dirty Gash Left Hand" description_key="jz_BuffDirtyGashLeftHandDesc" icon="LeftHandGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -20772,7 +20780,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD RIGHT HAND GASH -->
-	<buff name="jz_BuffGashRightHandIconA" name_key="Gash Right Hand" description_key="jz_BuffGashRightHandDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightHandGashBleed">
+	<buff name="jz_BuffGashRightHandIconA" name_key="Gash Right Hand" description_key="jz_BuffGashRightHandDesc" tooltip_key="AAHHH!! MY HAND!" icon="RightHandGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -20820,7 +20828,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashRightHandIconAA" name_key="Dirty Gash Right Hand" description_key="jz_BuffDirtyGashRightHandDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightHandGash" >
+	<buff name="jz_BuffGashRightHandIconAA" name_key="Dirty Gash Right Hand" description_key="jz_BuffDirtyGashRightHandDesc" icon="RightHandGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -21143,7 +21151,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD LEFT ARM GASH -->
-	<buff name="jz_BuffGashLeftArmIconA" name_key="Gash Left Arm" description_key="jz_BuffGashLeftArmDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftArmGashBleed">
+	<buff name="jz_BuffGashLeftArmIconA" name_key="Gash Left Arm" description_key="jz_BuffGashLeftArmDesc" tooltip_key="AAHHH!! MY ARM!" icon="LeftArmGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -21191,7 +21199,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashLeftArmIconAA" name_key="Dirty Gash Left Arm" description_key="jz_BuffDirtyGashLeftArmDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftArmGash" >
+	<buff name="jz_BuffGashLeftArmIconAA" name_key="Dirty Gash Left Arm" description_key="jz_BuffDirtyGashLeftArmDesc" tooltip_key="AAHHH!! MY ARM!" icon="LeftArmGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -21514,7 +21522,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD RIGHT ARM GASH -->
-	<buff name="jz_BuffGashRightArmIconA" name_key="Gash Right Arm" description_key="jz_BuffGashRightArmDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightArmGashBleed">
+	<buff name="jz_BuffGashRightArmIconA" name_key="Gash Right Arm" description_key="jz_BuffGashRightArmDesc" tooltip_key="AAHHH!! MY ARM!" icon="RightArmGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -21562,7 +21570,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashRightArmIconAA" name_key="Dirty Gash Right Arm" description_key="jz_BuffDirtyGashRightArmDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightArmGash" >
+	<buff name="jz_BuffGashRightArmIconAA" name_key="Dirty Gash Right Arm" description_key="jz_BuffDirtyGashRightArmDesc" icon="RightArmGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -21885,7 +21893,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD STOMACH GASH -->
-	<buff name="jz_BuffGashStomachIconA" name_key="Gash Stomach" description_key="jz_BuffGashStomachDesc" tooltip_key="AAHHH!! MY FOOT!" icon="StomachGashBleed">
+	<buff name="jz_BuffGashStomachIconA" name_key="Gash Stomach" description_key="jz_BuffGashStomachDesc" tooltip_key="AAHHH!! MY STOMACH!" icon="StomachGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -21933,7 +21941,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashStomachIconAA" name_key="Dirty Gash Stomach" description_key="jz_BuffDirtyGashStomachDesc" tooltip_key="AAHHH!! MY FOOT!" icon="StomachGash" >
+	<buff name="jz_BuffGashStomachIconAA" name_key="Dirty Gash Stomach" description_key="jz_BuffDirtyGashStomachDesc" icon="StomachGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -22256,7 +22264,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- JZMOD NECK GASH -->
-	<buff name="jz_BuffGashNeckIconA" name_key="Gash Neck" description_key="jz_BuffGashNeckDesc" tooltip_key="AAHHH!! MY FOOT!" icon="NeckGashBleed">
+	<buff name="jz_BuffGashNeckIconA" name_key="Gash Neck" description_key="jz_BuffGashNeckDesc" tooltip_key="AAHHH!! MY NECK!" icon="NeckGashBleed">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -22304,7 +22312,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffGashNeckIconAA" name_key="Dirty Gash Neck" description_key="jz_BuffDirtyGashNeckDesc" tooltip_key="AAHHH!! MY FOOT!" icon="NeckGash" >
+	<buff name="jz_BuffGashNeckIconAA" name_key="Dirty Gash Neck" description_key="jz_BuffDirtyGashNeckDesc" icon="NeckGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -24915,7 +24923,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftFootIconAA" name_key="Burn Left Foot" description_key="jz_BuffFireBurnLeftFootNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftFootGash" >
+	<buff name="jz_BuffFireBurnLeftFootIconAA" name_key="Burn Left Foot" description_key="jz_BuffFireBurnLeftFootNeedsAloeDesc" icon="LeftFootGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -25341,7 +25349,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightFootIconAA" name_key="Burn Right Foot" description_key="jz_BuffFireBurnRightFootNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightFootGash" >
+	<buff name="jz_BuffFireBurnRightFootIconAA" name_key="Burn Right Foot" description_key="jz_BuffFireBurnRightFootNeedsAloeDesc" icon="RightFootGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -25719,7 +25727,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN LEFT LEG -->
-	<buff name="jz_BuffFireBurnLeftLegIconA" name_key="Burn Left Leg" description_key="jz_BuffFireBurnLeftLegNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftLegBurn" >
+	<buff name="jz_BuffFireBurnLeftLegIconA" name_key="Burn Left Leg" description_key="jz_BuffFireBurnLeftLegNeedsCleansedDesc" tooltip_key="AAHHH!! MY LEG!" icon="LeftLegBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -25767,7 +25775,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftLegIconAA" name_key="Burn Left Leg" description_key="jz_BuffFireBurnLeftLegNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftLegGash" >
+	<buff name="jz_BuffFireBurnLeftLegIconAA" name_key="Burn Left Leg" description_key="jz_BuffFireBurnLeftLegNeedsAloeDesc" icon="LeftLegGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -26145,7 +26153,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN RIGHT LEG -->
-	<buff name="jz_BuffFireBurnRightLegIconA" name_key="Burn Right Leg" description_key="jz_BuffFireBurnRightLegNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightLegBurn" >
+	<buff name="jz_BuffFireBurnRightLegIconA" name_key="Burn Right Leg" description_key="jz_BuffFireBurnRightLegNeedsCleansedDesc" tooltip_key="AAHHH!! MY LEG!" icon="RightLegBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -26193,7 +26201,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightLegIconAA" name_key="Burn Right Leg" description_key="jz_BuffFireBurnRightLegNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightLegGash" >
+	<buff name="jz_BuffFireBurnRightLegIconAA" name_key="Burn Right Leg" description_key="jz_BuffFireBurnRightLegNeedsAloeDesc" icon="RightLegGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -26571,7 +26579,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN LEFT ARM -->
-	<buff name="jz_BuffFireBurnLeftArmIconA" name_key="Burn Left Arm" description_key="jz_BuffFireBurnLeftArmNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftArmBurn" >
+	<buff name="jz_BuffFireBurnLeftArmIconA" name_key="Burn Left Arm" description_key="jz_BuffFireBurnLeftArmNeedsCleansedDesc" tooltip_key="AAHHH!! MY ARM!" icon="LeftArmBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -26619,7 +26627,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftArmIconAA" name_key="Burn Left Arm" description_key="jz_BuffFireBurnLeftArmNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftArmGash" >
+	<buff name="jz_BuffFireBurnLeftArmIconAA" name_key="Burn Left Arm" description_key="jz_BuffFireBurnLeftArmNeedsAloeDesc" icon="LeftArmGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -26997,7 +27005,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN RIGHT ARM -->
-	<buff name="jz_BuffFireBurnRightArmIconA" name_key="Burn Right Arm" description_key="jz_BuffFireBurnRightArmNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightArmBurn" >
+	<buff name="jz_BuffFireBurnRightArmIconA" name_key="Burn Right Arm" description_key="jz_BuffFireBurnRightArmNeedsCleansedDesc" tooltip_key="AAHHH!! MY ARM!" icon="RightArmBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27045,7 +27053,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightArmIconAA" name_key="Burn Right Arm" description_key="jz_BuffFireBurnRightArmNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightArmGash" >
+	<buff name="jz_BuffFireBurnRightArmIconAA" name_key="Burn Right Arm" description_key="jz_BuffFireBurnRightArmNeedsAloeDesc" icon="RightArmGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27423,7 +27431,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN LEFT HAND -->
-	<buff name="jz_BuffFireBurnLeftHandIconA" name_key="Burn Left Hand" description_key="jz_BuffFireBurnLeftHandNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftHandBurn" >
+	<buff name="jz_BuffFireBurnLeftHandIconA" name_key="Burn Left Hand" description_key="jz_BuffFireBurnLeftHandNeedsCleansedDesc" tooltip_key="AAHHH!! MY HAND!" icon="LeftHandBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27471,7 +27479,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnLeftHandIconAA" name_key="Burn Left Hand" description_key="jz_BuffFireBurnLeftHandNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="LeftHandGash" >
+	<buff name="jz_BuffFireBurnLeftHandIconAA" name_key="Burn Left Hand" description_key="jz_BuffFireBurnLeftHandNeedsAloeDesc" icon="LeftHandGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27849,7 +27857,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN RIGHT HAND -->
-	<buff name="jz_BuffFireBurnRightHandIconA" name_key="Burn Right Hand" description_key="jz_BuffFireBurnRightHandNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightHandBurn" >
+	<buff name="jz_BuffFireBurnRightHandIconA" name_key="Burn Right Hand" description_key="jz_BuffFireBurnRightHandNeedsCleansedDesc" tooltip_key="AAHHH!! MY HAND!" icon="RightHandBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -27897,7 +27905,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffFireBurnRightHandIconAA" name_key="Burn Right Hand" description_key="jz_BuffFireBurnRightHandNeedsAloeDesc" tooltip_key="AAHHH!! MY FOOT!" icon="RightHandGash" >
+	<buff name="jz_BuffFireBurnRightHandIconAA" name_key="Burn Right Hand" description_key="jz_BuffFireBurnRightHandNeedsAloeDesc" icon="RightHandGash" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28275,7 +28283,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN STOMACH -->
-	<buff name="jz_BuffFireBurnStomachIconA" name_key="Burn Stomach" description_key="jz_BuffFireBurnStomachNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="StomachBurn" >
+	<buff name="jz_BuffFireBurnStomachIconA" name_key="Burn Stomach" description_key="jz_BuffFireBurnStomachNeedsCleansedDesc" tooltip_key="AAHHH!! MY STOMACH!" icon="StomachBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
@@ -28701,7 +28709,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	<!-- BURN NECK -->
-	<buff name="jz_BuffFireBurnNeckIconA" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsCleansedDesc" tooltip_key="AAHHH!! MY FOOT!" icon="NeckBurn" >
+	<buff name="jz_BuffFireBurnNeckIconA" name_key="Burn Neck" description_key="jz_BuffFireBurnNeckNeedsCleansedDesc" tooltip_key="AAHHH!! MY NECK!" icon="NeckBurn" >
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>

@@ -3089,6 +3089,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_CuredLeather" count="1"/>
 </recipe>
 
+<recipe name="resourceLeather" count="1" craft_area="jz_DryingRack" craft_time="600" craft_exp_gain="0"  >
+	<ingredient name="jz_AnimalHide" count="1"/>
+	<ingredient name="jz_Salt" count="3"/>
+</recipe>
+
 <recipe name="plantedAloe1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropAloeLeaf" count="1"/>
 </recipe>

@@ -9694,6 +9694,7 @@ add knockdown resist to armor
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedNeck,jz_BuffLacerationNeck,jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.01" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -9750,6 +9751,7 @@ add knockdown resist to armor
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffLacerationStomach,jz_BuffGashStomach"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.01" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -9773,6 +9775,7 @@ add knockdown resist to armor
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffGashLeftHand,jz_BuffGashRightHand"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.01" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -9796,6 +9799,7 @@ add knockdown resist to armor
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffGashLeftLeg,jz_BuffGashRightLeg"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.01" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -9819,6 +9823,7 @@ add knockdown resist to armor
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="5.1,7.3" tier="1,6" tags="heat,electrical"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.01" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="75,150" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<display_value name="dStaminaChangeOT" value="0"/>
@@ -9865,6 +9870,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedNeck,jz_BuffBrokenJaw,jz_BuffPunctureNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -9898,6 +9904,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedRibsTrigger,jz_BuffPunctureStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffLacerationStomach,jz_BuffFireBurnStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffGashStomach"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -9929,6 +9936,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffGashLeftHand,jz_BuffGashRightHand"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -9960,6 +9968,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffGashLeftLeg,jz_BuffGashRightLeg"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -9991,7 +10000,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.05" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->
-		
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="jz_BuffZombieBite"/><!-- JZMOD -->		
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10043,6 +10052,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedNeckTrigger,jz_BuffGashNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck,jz_BuffAcidBurnNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10075,6 +10085,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedRibsTrigger,jz_BuffGashStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationStomach,jz_BuffFireBurnStomach,jz_BuffAcidBurnStomach"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10106,6 +10117,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffGashLeftHand,jz_BuffGashRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand,jz_BuffAcidBurnLeftHand,jz_BuffAcidBurnRightHand"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10137,6 +10149,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffGashLeftLeg,jz_BuffGashRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg,jz_BuffAcidBurnLeftLeg,jz_BuffAcidBurnRightLeg"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10168,6 +10181,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10200,6 +10214,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot,jz_BuffAcidBurnLeftFoot,jz_BuffAcidBurnRightFoot"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.06" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400,360" tier="1,5,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10239,6 +10254,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffPunctureNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.20" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.08" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10278,6 +10294,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffPunctureStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.20" tags="jz_BuffLacerationStomach,jz_BuffFireBurnStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffGashStomach"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.08" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10308,6 +10325,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.20" tags="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffGashLeftHand,jz_BuffGashRightHand"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.08" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10338,6 +10356,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.20" tags="jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffGashLeftLeg,jz_BuffGashRightLeg"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.08" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10368,6 +10387,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.15" tags="jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.20" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->	
+		<passive_effect name="BuffResistance" operation="base_add" value="0.08" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10420,6 +10440,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedNeckTrigger,jz_BuffPunctureNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10459,6 +10480,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedRibsTrigger,jz_BuffPunctureStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationStomach,jz_BuffFireBurnStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashStomach"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10490,6 +10512,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffFireBurnLeftHand,jz_BuffFireBurnRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashLeftHand,jz_BuffGashRightHand"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10521,6 +10544,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashLeftLeg,jz_BuffGashRightLeg"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10552,6 +10576,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10603,6 +10628,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="jz_BuffSprainedNeckTrigger,jz_BuffPunctureNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.40" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.55" tags="jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10642,6 +10668,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="jz_BuffSprainedRibsTrigger,jz_BuffPunctureStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.40" tags="jz_BuffLacerationStomach,jz_BuffFireBurnStomach"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.55" tags="jz_BuffGashStomach"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10674,6 +10701,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.40" tags="jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffFireBurnRightHand"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.55" tags="jz_BuffGashLeftHand,jz_BuffGashRightHand"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10706,6 +10734,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.40" tags="jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffFireBurnLeftLeg,jz_BuffFireBurnRightLeg"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.55" tags="jz_BuffGashLeftLeg,jz_BuffGashRightLeg"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
@@ -10738,6 +10767,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.35" tags="jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.40" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffFireBurnLeftFoot,jz_BuffFireBurnRightFoot"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.55" tags="jz_BuffGashLeftFoot,jz_BuffGashRightFoot"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10774,7 +10804,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="EquipSlot" value="Head"/>
 	<property name="ShowQuality" value="true"/>
-	<property name="DescriptionKey" value="jz_armorFireFighterGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorMiningGroupDesc"/>
 	<property name="Group" value="Armor,TCArmor"/>
 	<effect_group name="leather w scrap AR">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -10785,6 +10815,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.20" tags="jz_BuffSprainedNeckTrigger"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffLacerationNeck,jz_BuffGashNeck,jz_BuffPunctureNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10838,6 +10869,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.70" tags="jz_BuffAcidBurnNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.90" tags="jz_BuffFireBurnNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.12" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10890,6 +10922,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffGashNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffPunctureNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.50" tags="jz_BuffLacerationNeck,jz_BuffFireBurnNeck,jz_BuffAcidBurnNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.10" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
@@ -10937,6 +10970,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedNeckTrigger"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="110,225" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -10972,6 +11006,7 @@ add knockdown resist to armor
 		<passive_effect name="BuffResistance" operation="base_add" value="0.25" tags="jz_BuffSprainedNeck,jz_BuffBrokenJaw"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.30" tags="jz_BuffLacerationNeck"/><!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="0.45" tags="jz_BuffGashNeck"/><!-- JZMOD -->
+		<passive_effect name="BuffResistance" operation="base_add" value="0.16" tags="jz_BuffZombieBite"/><!-- JZMOD -->
 		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
 		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
@@ -27480,6 +27515,13 @@ perkNightStalkerSilentNight
 	<property name="CustomIconTint" value="ea0408" />
 	<property name="DescriptionKey" value="jz_MedicalRedHotPipeDesc" />
 	<property name="Group" value="Science,Medical" />
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+    <property name="SpoiledItem" value="jz_SteelPipe" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="100" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="1" />
 	<property class="Action0">
 		<property name="Sound_start" value="UseActions/player_bandage" />
 		<property name="Create_item" value="jz_SteelPipe" />
@@ -27496,6 +27538,13 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MedicalRedHotSteelPipe" />
 	<property name="Material" value="Mmetal" />
 	<property name="Group" value="Science,Medical" />
+	<property name="Spoilable" value="true" />
+    <property name="ShowQuality" value="false"/>
+    <property name="SpoiledItem" value="resourceMetalPipe" />
+    <property name="TickPerLoss" value="150" />
+    <property name="SpoilageMax" value="100" />
+    <property name="SpoilagePerTick" value="1" />
+    <property name="QualityTierColor" value="1" />
 	<property class="Action0">
 		<property name="Create_item" value="resourceMetalPipe" />
 		<requirement name="CVarCompare" cvar="$NeedsCauterizing" operation="Equals" value="1"/>

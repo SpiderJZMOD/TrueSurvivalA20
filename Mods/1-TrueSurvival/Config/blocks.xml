@@ -13894,6 +13894,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="resourceScrapIron" count="5"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="FilterTags" value="MC_building,SC_loot"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="wineBarrel" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -15232,7 +15235,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceLeather" count="1,2"/>
+	<drop event="Destroy" name="resourceLeather" count="1"/>
 	<drop event="Destroy" name="resourceScrapIron" count="5,15"/>
 	<property name="EconomicValue" value="65"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_industrial,SC_commercial,SC_residential"/>
@@ -15751,7 +15754,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="oldCash" count="1,3" prob="0.05" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
-	<drop event="Destroy" name="resourceLeather" count="2" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceLeather" count="1" tag="allHarvest"/>
 	<property name="EconomicValue" value="18"/>
 	<property name="FilterTags" value="MC_building,SC_decor,SC_commercial,SC_residential"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
@@ -15813,7 +15816,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="3,1,1"/>
 	<property name="ImposterExchange" value="imposterRamp" param1="43"/>
 	<drop event="Harvest" name="resourceWood" count="6" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceLeather" count="1,3" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="allHarvest"/>
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -19202,7 +19205,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="decoEntityClothMaster"/>
 	<property name="Model" value="Entities/Commercial/shoeSandalPairPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<drop event="Destroy" name="resourceLeather" count="1,2"/>
+	<drop event="Destroy" name="resourceLeather" count="1"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_residential"/>
 </block>
 
@@ -21607,6 +21610,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="palletEmpty">
 	<property name="Extends" value="woodWeakNoUpgradeMaster" param1="Group"/>
+	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Industrial/palletPrefab"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
@@ -21796,7 +21800,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest"/>
-	<drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="3" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
@@ -25697,6 +25701,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceForgedIron" value="12"/>
 		<property name="resourceMechanicalParts" value="2"/>
 		<property name="resourceElectricParts" value="2"/>
+		<property name="jz_WeaponRepairKit" value="1"/>
 	</property>
 	<!--
 	<property class="UpgradeBlock">
@@ -30640,7 +30645,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#Entities/Vehicles?Car/car_radiator_uprightPrefab.prefab"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
-	<drop event="Destroy" name="resourceRadiator" count="1"/>
 	<property name="FilterTags" value="MC_building,SC_automotive"/>
 </block>
 
@@ -33517,23 +33521,32 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TakeDelay" value="15"/>
 </block>
 
+
 <block name="jz_SteelForge">
 	<property name="Class" value="Forge" />
+	<property name="UnlockedBy" value="jz_SchematicSteelForge"/>
 	<property name="Material" value="Mstone" />
+	<property name="MaxDamage" value="800"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="Weight" value="0"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/JZBlastForge.unity3d?BlastForgePrefab" />
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/JZWorkbenchSteelForge.unity3d?SteelForgePrefab" />
     <property name="ModelOffset" value=".5,0,.5" />
     <property name="DisplayType" value="blockMulti" />
-	<property name="MultiBlockDim" value="2,2,2"/>
+	<!--<property name="MultiBlockDim" value="2,2,2"/>-->
 	<property name="Place" value="TowardsPlacerInverted" />
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ParticleName" value="campfire" />
-	<property name="ParticleOffset" value="0.2,1,0.2" />
+	<property name="ParticleOffset" value=".5,1,1" />
+	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
-	<property name="HeatMapStrength" value="2" />
-	<property name="HeatMapTime" value="1200" />
-	<property name="HeatMapFrequency" value="25" />
-	<property name="BuffsWhenWalkedOn" value="burningSmall" />
-	<property name="ActiveRadiusEffects" value="+heatSource(3)" />
+	<property name="HeatMapStrength" value="6"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment" />
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)" />
 	<property class="RepairItems">
 		<property name="electronicParts" value="10" />
 	</property>
@@ -33545,14 +33558,13 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
      <property name="WorkstationIcon" value="steelforge"/>
 	<property name="CraftActionName" value="Forge"/>
 	<property name="CraftIcon" value="steelforge"/>
-	<property name="OpenSound" value="chem_station_open"/>
-	<property name="CloseSound" value="chem_station_close"/>
-	<property name="CraftSound" value="chem_station_mix_click"/>
-	<property name="CraftCompleteSound" value="campfire_complete_item"/>
+	<property name="OpenSound" value="forge_open"/>
+	<property name="CloseSound" value="forge_close"/>
+	<property name="CraftSound" value="forge_smelt_click"/>
+	<property name="CraftCompleteSound" value="forge_item_complete"/>
 	<property name="DescriptionKey" value="blastFurnaceDesc" />
-	<property name="Group" value="Building" />
+	<property name="Group" value="Building,advBuilding" />
 	<property name="TakeDelay" value="15"/>
-	<!--JZMOD ANY-->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0" />
 </block>
@@ -34670,7 +34682,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv1Prefab" />
     <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35727,7 +35739,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv4"/>
-		<property name="Item" value="jz_ToolSolderingIron"/>
+		<property name="Item" value="jz_ToolMagnifyingGlass"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
@@ -35779,7 +35791,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_WorkstationElectronicWorkbenchLv5"/>
-		<property name="Item" value="jz_ToolMagnifyingGlass"/>
+		<property name="Item" value="jz_ToolSolderingIron"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>

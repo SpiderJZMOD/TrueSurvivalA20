@@ -124,7 +124,7 @@
 		
         <reward type="Recipe" id="jz_QIDeadWalkieTalkie" />
 		<reward type="Recipe" id="jz_QIGoodWalkieTalkie" />
-       	<reward type="Quest" id="jzquest_StoryLinePt3" />
+       	<!--<reward type="Quest" id="jzquest_StoryLinePt3" />-->
 	</quest>
 	<quest id="jzquest_StoryLinePt3">
 		<property name="name_key" value="jzquest_StoryLinePt3" />
@@ -988,7 +988,7 @@
 		</objective>
 
 		<reward type="Exp" value="750"/>
-		<reward type="Item" id="jz_ToolHandDrill" value="1"/>
+		<reward type="Item" id="jz_ToolPipeVise" value="1"/>
 		<reward type="Recipe" id="jz_QIWorkbenchUpgradesPipeGunQL5Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL5" />
 	</quest>
@@ -1035,7 +1035,7 @@
 		</objective>
 
 		<reward type="Exp" value="1000"/>
-		<reward type="Item" id="jz_ToolWoodChisel" value="1"/>
+		<reward type="Item" id="jz_ToolAngleGrinder" value="1"/>
 		<reward type="Recipe" id="jz_QIWorkbenchUpgradesPipeGunQL6Redo" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL6" />
 	</quest>
@@ -1082,7 +1082,7 @@
 		</objective>
 
 		<reward type="Exp" value="1500"/>
-		<reward type="Item" id="jz_ToolDrawBlade" value="1"/>
+		<reward type="Item" id="jz_ToolPropaneTorch" value="1"/>
 	</quest>
 	
 	<!--JZMOD TOOL PROGRESSION -->

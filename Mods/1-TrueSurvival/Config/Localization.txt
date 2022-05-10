@@ -7,7 +7,7 @@ Key,English
 jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
-
+jz_BuffExhaustedDesc,"Your high Fatigue level is sapping your energy, rest on furniture or sleep on a bed to lower your Fatigue" 
 jz_BuffBadDietDesc,"Your diet is not very healthy and it is starting to effect you. Try eating foods that contains all the vitamin groups.\n\n-1 Stamina per 5 sec"
 jz_BuffVitaminDeficiencyDesc,"Your poor diet means your not getting all the nutrition you need and its slowing you down. Cook and eat meals that contains all the vitamin groups to improve your diet.\n\n-1 Stamina per 4 sec\n-5% Mobility"
 jz_BuffCharismaticNatureOneDesc,"You are being inspired!\nEffects:\n+20 Max Health\n+20 Max Stamina" 
@@ -251,7 +251,7 @@ jz_BuffFireBurnRightHandNeedsCleansedBDesc,"Your burn wound needs to be cleaned.
 jz_BuffFireBurnRightHandNeedsAloeBDesc,"You burn wound is clean and needs a [35bd00]First Aid Bandage[-] to continue healing.  If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n.07 Health Loss Per Second\n.08 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
 jz_BuffFireBurnRightHandHealingDesc,"Your burn wound is bandaged. Try not to hurt it so it will heal\n\nEffects:\n.1 Health Loss Per Second\n.3 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
 jz_BuffFireBurnLeftArmNeedsCleansedDesc,"You burnt your left arm. You will need to use a [35bd00]Cleansing Wash[-] to clean it. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n.1 Health Loss Per Second\n.1 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
-jz_BuffFireBurnLeftNeedsAloeDesc,"You burn wound is clean and needs a [35bd00]First Aid Bandage[-] to continue healing.  If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n.1 Health Loss Per Second\n.1 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
+jz_BuffFireBurnLeftArmNeedsAloeDesc,"You burn wound is clean and needs a [35bd00]First Aid Bandage[-] to continue healing.  If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n.1 Health Loss Per Second\n.1 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
 jz_BuffFireBurnLeftArmBandagedDesc,"The burn on your left arm is bandaged and healing, after a while it will need cleansed and bandaged again\n\nEffects:\n.02 Health Loss Per Second\n.05 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
 jz_BuffFireBurnLeftArmNeedsCleansedBDesc,"Your burn wound needs to be cleaned. Use a [35bd00]Cleansing Wash[-] to clean it. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n.07 Health Loss Per Second\n.08 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
 jz_BuffFireBurnLeftArmNeedsAloeBDesc,"You burn wound is clean and needs a [35bd00]First Aid Bandage[-] to continue healing.  If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n.07 Health Loss Per Second\n.08 Water Loss Per Second\n-4 Hypothermal Resist\n4 Hyperthermal Resist"
@@ -1099,16 +1099,16 @@ jz_SchematicWheatSeed,"Wheat Seed Crafting Guide"
 jz_SchematicOrangeSeed,"Orange Seed Crafting Guide"
 jz_resourceClayLumpDesc,"Clay Soil or Loam is a key resource for forging and farming and can be harvested from the top soil of nearly every biome. It is also used in creating Molds for use in forges."
 jz_meleeWpnClubT0WoodenClubDesc,"A makeshift club good for breaking knees and skulls.\n\nScrap to Sticks"
-jz_armorLeatherGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Leather.  Scrap for Leather\n\nBody Part Protections:\n15% Gash   -   10% Lasceration\n10% Burn   -    5% Breaks"
-jz_armorClothGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n5% Gash   -   5% Lasceration\n0% Burn   -   0% Breaks"
-jz_armorMiningGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Scrap Polymers\n\nBody Part Protections:\n25% Gash   -   25% Lasceration\n00% Burn   -   20% Breaks"
-jz_armorFootballGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n00% Burn   -   25% Breaks"
-jz_armorMilitaryGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Military Armor Parts.\nScrap for Military Armor Parts\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   00% Breaks"
-jz_armorScrapDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nRepair with Iron.  Scrap for Iron\n\nBody Part Protections:\n30% Gash   -   20% Lasceration\n20% Burn   -   10% Breaks"
-jz_armorHeavyGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n30% Burn   -   25% Breaks"
-jz_armorFireFighterGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Iron\n\nBody Part Protections:\n35% Gash   -   50% Lasceration\n90% Burn   -   00% Breaks"
-jz_armorSwatGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   10% Breaks"
-jz_armorSteelGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with a Steel Armor Parts.\nScrap for Steel Armor Parts\n\nBody Part Protections:\n55% Gash   -   40% Lasceration\n40% Burn   -   35% Breaks"
+jz_armorLeatherGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Leather.  Scrap for Leather\n\nBody Part Protections:\n15% Gash   -   10% Lasceration\n10% Burn   -    5% Breaks\n4% Zombie Bites"
+jz_armorClothGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n5% Gash   -   5% Lasceration\n0% Burn   -   0% Breaks\n1% Zombie Bites"
+jz_armorMiningGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Scrap Polymers\n\nBody Part Protections:\n25% Gash   -   25% Lasceration\n00% Burn   -   20% Breaks\n12% Zombie Bites"
+jz_armorFootballGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with cloth.   Scrap for cloth\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n00% Burn   -   25% Breaks\n16% Zombie Bites"
+jz_armorMilitaryGroupDesc,"Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\nRepair with a Military Armor Parts.\nScrap for Military Armor Parts\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   00% Breaks\n06% Zombie Bites"
+jz_armorScrapDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nRepair with Iron.  Scrap for Iron\n\nBody Part Protections:\n30% Gash   -   20% Lasceration\n20% Burn   -   10% Breaks\n8% Zombie Bites"
+jz_armorHeavyGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n45% Gash   -   30% Lasceration\n30% Burn   -   25% Breaks\n12% Zombie Bites"
+jz_armorFireFighterGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Scavenged Parts. Scrap for Iron\n\nBody Part Protections:\n35% Gash   -   50% Lasceration\n90% Burn   -   00% Breaks\n12% Zombie Bites"
+jz_armorSwatGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with Forged Iron. Scrap for Iron\n\nBody Part Protections:\n25% Gash   -   50% Lasceration\n50% Burn   -   10% Breaks\n10% Zombie Bites"
+jz_armorSteelGroupDesc,"Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\nRepair with a Steel Armor Parts.\nScrap for Steel Armor Parts\n\nBody Part Protections:\n55% Gash   -   40% Lasceration\n40% Burn   -   35% Breaks\n16% Zombie Bites"
 jz_SpoiledDrink,"Spoiled Drink"
 jz_SpoiledDrinkDesc,"A crafted drink that has spoiled. Click Open to separate the Dirty Water from the Jar."
 jz_SchematicFertilizer,"Fertilizer Crafting Guide"
@@ -1611,7 +1611,7 @@ jz_SchematicIronSheetMetal,Iron Sheet Metal Crafting Guide
 jz_SchematicWirerelay,Wire Relay Crafting Guide
 jz_SchematicMegaCrush,Mega Crush Crafting Guide
 jz_SchematicVitamins,Vitamins Crafting Guide
-jz_SchematicWeaponRepairKit,Firearm Repair Kit Crafting Guide
+jz_SchematicWeaponRepairKit,Turret Repair Kit Crafting Guide
 jz_SchematicCobblestone,Cobblestone Crafting Guide
 jz_SchematicPlank,Plank Crafting Guide
 jz_SchematicLockPick,Lock Pick Crafting Guide
