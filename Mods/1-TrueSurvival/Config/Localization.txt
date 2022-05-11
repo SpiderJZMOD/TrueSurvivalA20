@@ -7,6 +7,8 @@ Key,English
 jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
+
+
 jz_BuffExhaustedDesc,"Your high Fatigue level is sapping your energy, rest on furniture or sleep on a bed to lower your Fatigue" 
 jz_BuffBadDietDesc,"Your diet is not very healthy and it is starting to effect you. Try eating foods that contains all the vitamin groups.\n\n-1 Stamina per 5 sec"
 jz_BuffVitaminDeficiencyDesc,"Your poor diet means your not getting all the nutrition you need and its slowing you down. Cook and eat meals that contains all the vitamin groups to improve your diet.\n\n-1 Stamina per 4 sec\n-5% Mobility"
@@ -741,6 +743,9 @@ jz_PlayerMPCoolerDesc,"Combined with a Landclaim Block this is a secure food sto
 
 
 ITEM_________________________XML,ITEM_________________________XML
+
+jz_foodCropYuccaFruitDesc,"Yucca fruit is edible and 3 can be scraped into a Fruit Serving, they can used to craft Fruit Juice to drink to gain hydration and Essential Vitamins. It is harvested from cacti and yucca plants."
+
 jz_vehiclePlaceableGroupDesc,"This vehicle can be placed into the world like a block using the secondary action.\n\nRequires a workbench to craft.\nRequires Scavenged Parts to repair."
 jz_QIWorkbenchUpgradesImprovisedQL3Redo,"Improvised Upgrade Lv3"
 jz_QIWorkbenchUpgradesImprovisedQL4Redo,"Improvised Upgrade Lv4"
@@ -1878,7 +1883,7 @@ jz_HobbieSewingLongDesc,"You Will Learn :\nDenim Pants - Overalls - Skirts - Tan
 jz_HobbieFitnessDesc,"Some people play games in their free time some watch TV but you like to sweat. All that work is finaly paying off"
 jz_HobbieFitnessLongDesc,"Effects :\n20% Faster Stamina Regain\n10% More Stamina"
 jz_HobbieElectronicsDesc,"Since you were little you have always felt the need to take things apart and see how they work. Years of tinkering has taught you a few things."
-jz_HobbieElectronicsLongDesc,"You Will Learn :\nBatter Bank - Speaker - Electric Fencepost - Spot Light - Ceiling Light"
+jz_HobbieElectronicsLongDesc,"You Will Learn :\nBattery Bank - Speaker - Electric Fencepost - Spot Light - Ceiling Light"
 jz_HobbieMedicalDesc,"Weather its a stranger or a squirrel when someones hurt you feel the need to help. All that helping others has made you pretty good at tending wounds"
 jz_HobbieMedicalLongDesc,"Effects :\nWounds you treat heal 10% faster"
 jz_HobbieSportsDesc,"From Tee Ball to the Travel Team you have lived and breathed sports your entire life. All that work has made you a specialist with a bat and fast as hell"
@@ -1977,6 +1982,10 @@ jz_perkHeavyArmorRank2LongDesc,"You can take a hit! Reduce heavy armor movement 
 jz_perkHeavyArmorRank3LongDesc,"Now we're talking about some serious protection. Reduce heavy armor movement and stamina penalty by 17%. Improve durability by 150%."
 jz_perkHeavyArmorRank4LongDesc,"You are now a walking tank. Reduce heavy armor movement and stamina penalty by 25%. Improve durability by 200%."
 
+jz_SmallGameHunterSkillDesc,"Hunt, kill and butcher Chickens, Rabbits and Boars to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_SmallGameXP:000)}                  Next Level-{cvar($jz_SmallGameNextLvTotal:000)}[-]"
+jz_LargeGameHunterSkillDesc,"Hunt, kill and butcher Stags and Does to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_LargeGameXP:000)}                  Next Level-{cvar($jz_LargeGameNextLvTotal:000)}[-]"
+jz_SmallPredGameHunterSkillDesc,"Hunt, kill and butcher Snake, Wolfs, Coyote, Mountain Lion and Dogs to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_SmallPredGameXP:000)}                  Next Level-{cvar($jz_SmallPredGameNextLvTotal:000)}[-]"
+jz_LargePredGameHunterSkillDesc,"Hunt, kill and butcher Bears, Dire Wolfs and Large Boars to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_LargePredGameXP:000)}                  Next Level-{cvar($jz_LargePredGameNextLvTotal:000)}[-]"
 
 Quest_________________________XML,Quest_________________________XML
 tutorialTipQuest01_title,"True Survival"

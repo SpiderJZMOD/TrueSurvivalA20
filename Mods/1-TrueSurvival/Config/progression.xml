@@ -4667,7 +4667,7 @@
 	</perk>
 
 	<!--Small Game Hunting Skill-->
-	<perk name="jz_SmallGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Small Game Hunter" desc_key="Hunt, kill and butcher Chickens, Rabbits and Boars to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_SmallGameXP:000)}                  Next Level-{cvar($jz_SmallGameNextLvTotal:000)}[-]" icon="ui_game_symbol_tracking_rabbit">
+	<perk name="jz_SmallGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Small Game Hunter" desc_key="jz_SmallGameHunterSkillDesc" icon="ui_game_symbol_tracking_rabbit">
 		<effect_group>
 			<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffAnimalTracker">
 				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquiredSmallGame"/>
@@ -4710,7 +4710,7 @@
 	</perk>
     
     <!--Large Game Hunting Skill-->
-	<perk name="jz_LargeGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Large Game Hunter" desc_key="Hunt, kill and butcher Stags and Does to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_LargeGameXP:000)}                  Next Level-{cvar($jz_LargeGameNextLvTotal:000)}[-]" icon="ui_game_symbol_tracking_deer">
+	<perk name="jz_LargeGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Large Game Hunter" desc_key="jz_LargeGameHunterSkillDesc" icon="ui_game_symbol_tracking_deer">
 		<effect_group>
 			<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffAnimalTracker">
 				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquiredLargeGame"/>
@@ -4746,7 +4746,7 @@
 	</perk>
     
     <!--Small Predator Hunting Skill-->
-	<perk name="jz_SmallPredGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Small Predator Hunter" desc_key="Hunt, kill and butcher Snake, Wolfs, Coyote, Mountain Lion and Dogs to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_SmallPredGameXP:000)}                  Next Level-{cvar($jz_SmallPredGameNextLvTotal:000)}[-]" icon="ui_game_symbol_tracking_snake">
+	<perk name="jz_SmallPredGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Small Predator Hunter" desc_key="jz_SmallPredGameHunterSkillDesc" icon="ui_game_symbol_tracking_snake">
 		<effect_group>
 			<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffAnimalTracker">
 				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquiredSmallPredGame"/>
@@ -4782,7 +4782,7 @@
 	</perk>
     
     <!--Large Predator Hunting Skill-->
-	<perk name="jz_LargePredGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Large Predator Hunter" desc_key="Hunt, kill and butcher Bears, Dire Wolfs and Large Boars to improve at butchering them and learn how to Track them\n            [00eb3c]Current XP-{cvar($jz_LargePredGameXP:000)}                  Next Level-{cvar($jz_LargePredGameNextLvTotal:000)}[-]" icon="ui_game_symbol_tracking_bear">
+	<perk name="jz_LargePredGameHunterSkill" parent="jz_HuntingSkills" min_level="0" max_level="3" base_skill_point_cost="0" cost_multiplier_per_level="0" name_key="Large Predator Hunter" desc_key="jz_LargePredGameHunterSkillDesc" icon="ui_game_symbol_tracking_bear">
 		<effect_group>
 			<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffAnimalTracker">
 				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquiredLargePredGame"/>

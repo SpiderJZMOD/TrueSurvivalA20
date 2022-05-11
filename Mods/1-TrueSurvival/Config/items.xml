@@ -15220,6 +15220,7 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="food"/>
 	<property name="DisplayType" value="TSFoWaStHeFrDy"/><!-- JZMOD -->
 	<property name="HoldType" value="31"/>
+	<property name="DescriptionKey" value="jz_foodCropYuccaFruitDesc"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mfruit"/>
@@ -35424,8 +35425,23 @@ perkNightStalkerSilentNight
 		<property name="QuestGiven" value="jzquest_WorkbenchUpgradesRlifeQL6"/>
 	</property>
 </item>
+<!-- JZMOD TESTING SECTION
 
+<item name="jz_BookTest"> 
+	<property name="Extends" value="bookFiremansAlmanacHeat"/>
+	<property name="DescriptionKey" value="jz_BookCharismaticNatureDesc"/>
+	<property name="Unlocks" value="perkCharismaticNature"/>
+	<property name="Group" value="Books,BooksOnly"/>
+	<property class="Action0">
+		<requirement name="ProgressionLevel" progression_name="jz_SmallGameHunterSkill" operation="LT" value="5"/>
+	</property>  
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifySkillSDX, SCore" tag="jz_SmallGameHunterSkill" operation="add" value="1"/>
+	</effect_group>
+</item>
 
+-->
 </set>
 
 </configs>  <!-- Item limit: There can be 32k items in the game. IDs are generated internally on loading the game/items. -->

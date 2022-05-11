@@ -2044,6 +2044,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<display_value_format value="time"/>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$HunterHunting" operation="set" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTracker"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20"/>
 
@@ -2051,7 +2052,8 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 			</triggered_effect>
-
+			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$HunterHunting" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0"/>
 		</effect_group>
@@ -2075,7 +2077,12 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar=".AnimalTrackerLoseTimer" operation="LTE" value="0"/>
 				<requirement name="CVarCompare" cvar=".AnimalTrackerTerminate" operation="Equals" value="1"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip">
+					<requirement name="CVarCompare" cvar="$HunterHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmPredHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgPredHunting" operation="Equals" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTrackerAcquiredHunter"/>
 		</effect_group>
 	</buff>
@@ -2087,6 +2094,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<display_value_format value="time"/>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SmGameHunting" operation="set" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTracker"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20"/>
 
@@ -2095,6 +2103,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 			</triggered_effect>
 
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$SmGameHunting" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0"/>
 		</effect_group>
@@ -2118,7 +2127,12 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar=".AnimalTrackerLoseTimer" operation="LTE" value="0"/>
 				<requirement name="CVarCompare" cvar=".AnimalTrackerTerminate" operation="Equals" value="1"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip">
+					<requirement name="CVarCompare" cvar="$HunterHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmPredHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgPredHunting" operation="Equals" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTrackerAcquiredSmallGame"/>
 		</effect_group>
 	</buff>
@@ -2130,6 +2144,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<display_value_format value="time"/>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LgGameHunting" operation="set" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTracker"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20"/>
 
@@ -2137,7 +2152,8 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 			</triggered_effect>
-
+			
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LgGameHunting" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0"/>
 		</effect_group>
@@ -2161,7 +2177,12 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar=".AnimalTrackerLoseTimer" operation="LTE" value="0"/>
 				<requirement name="CVarCompare" cvar=".AnimalTrackerTerminate" operation="Equals" value="1"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip">
+					<requirement name="CVarCompare" cvar="$HunterHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmPredHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgPredHunting" operation="Equals" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTrackerAcquiredLargeGame"/>
 		</effect_group>
 	</buff>
@@ -2173,6 +2194,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<display_value_format value="time"/>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$SmPredHunting" operation="set" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTracker"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20"/>
 
@@ -2181,6 +2203,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 			</triggered_effect>
 
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$SmPredHunting" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0"/>
 		</effect_group>
@@ -2204,7 +2227,12 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar=".AnimalTrackerLoseTimer" operation="LTE" value="0"/>
 				<requirement name="CVarCompare" cvar=".AnimalTrackerTerminate" operation="Equals" value="1"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip">
+					<requirement name="CVarCompare" cvar="$HunterHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmPredHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgPredHunting" operation="Equals" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTrackerAcquiredSmallPredGame"/>
 		</effect_group>
 	</buff>
@@ -2215,6 +2243,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<display_value_format value="time"/>
 
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$LgPredHunting" operation="set" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTracker"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="20"/>
 
@@ -2223,6 +2252,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 			</triggered_effect>
 
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$LgPredHunting" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerLoseTimer" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".AnimalTrackerTerminate" operation="set" value="0"/>
 		</effect_group>
@@ -2246,7 +2276,12 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar=".AnimalTrackerLoseTimer" operation="LTE" value="0"/>
 				<requirement name="CVarCompare" cvar=".AnimalTrackerTerminate" operation="Equals" value="1"/>
 			</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkAnimalTrackerLostTooltip">
+					<requirement name="CVarCompare" cvar="$HunterHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgGameHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$SmPredHunting" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$LgPredHunting" operation="Equals" value="0"/></triggered_effect>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAnimalTrackerAcquiredLargePredGame"/>
 		</effect_group>
 	</buff>

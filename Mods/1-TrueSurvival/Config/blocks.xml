@@ -13896,7 +13896,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 	<property name="Tags" value="jz_CrowBarTag"/>
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="wineBarrel" count="1" prob="1" tool_category="ToolCrowbar"/>  
+	<drop event="Destroy" name="cntTrash_can01" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
