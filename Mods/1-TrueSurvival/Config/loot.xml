@@ -2334,25 +2334,25 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="junkPersonal" >
-	<item name="resourceCandyTin" prob="1.85" />
-	<item name="drugPainkillers" prob="1.85" />
-	<item name="jz_FoodCanUnlabeled" prob="1.85" />
-	<item name="resourceGunPowder" count="1,3" prob="1.85" />
-	<item name="resourceFishingWeight" count="1,3" prob="1.85" />
-	<item name="jz_AdhesiveSuperGlue" count="1" prob="1.85" />
-	<item name="resourceNail" count="1,6" prob="1.85" />
-	<item name="jz_OldRevolver" prob="1.95" />
-	<item name="jz_NutAndBolt" count="1,6" prob="1.85" />
-	<item name="resourceBulletCasing" count="1,10" prob="1.85" />
-	<item name="resourceFeather" count="1,3" prob="1.85" />
-	<item group="rottenFood"  prob="1.85" />
-	<item group="tatteredClothes" prob="1.85" />
-    <item group="groupScrapPaper" prob="1.85" />
-	<item name="jz_ToolSewingNeedle" prob="1.85" />
-	<item name="jz_InkPen" prob="1.85" />
+	<item name="resourceCandyTin" />
+	<item name="drugPainkillers" />
+	<item name="jz_FoodCanUnlabeled"/>
+	<item name="resourceGunPowder" count="1,3"/>
+	<item name="resourceFishingWeight" count="1,3"/>
+	<item name="jz_AdhesiveSuperGlue" count="1"/>
+	<item name="resourceNail" count="1,6" />
+	<item name="jz_OldRevolver"  />
+	<item name="jz_NutAndBolt" count="1,6" />
+	<item name="resourceBulletCasing" count="1,10" />
+	<item name="resourceFeather" count="1,3" />
+	<item group="rottenFood"  />
+	<item group="tatteredClothes" />
+    <item group="groupScrapPaper" />
+	<item name="jz_IronNeedle" />
+	<item name="jz_InkPen" />
 	<item name="jz_CBatterie" />
-	<item name="apparelCigarette" count="1,3" prob="1.85" />
-	<item name="apparelCigar"  prob="1.85" />
+	<item name="apparelCigarette" count="1,3"/>
+	<item name="apparelCigar" />
 	<item name="jz_ClothSock" />
 	<item name="jz_ClothDoll" />
 	<item name="jz_ClothRags" />
@@ -3754,8 +3754,10 @@ If there is no hit the default quality is used.
 <!-- *** T2_Schematics -->
 <lootgroup name="schematicsModsAndGeneralT2">
 	<!--<item name="drugAntibioticsSchematic"/>-->
+	<item name="jz_SchematicVitamins"/>
 	<item name="medicalPlasterCastSchematic"/>
 	<item name="modArmorAdvancedMuffledConnectorsSchematic"/>
+	<item name="jz_SchematicChainmailMod"/>
 	<item name="modArmorCustomizedFittingsSchematic"/>
 	<item name="modArmorImpactBracingSchematic"/>
 	<item name="modArmorPlatingReinforcedSchematic"/>
@@ -3814,8 +3816,6 @@ If there is no hit the default quality is used.
     <item name="jz_SchematicIronShaping" />
 	<item name="jz_SchematicDrawBridge" />
     <item name="garageDoorHousePlayer" />
-
-	<item name="meleeToolSalvageT2RatchetSchematic"/>
 	<item name="meleeWpnSledgeT3SteelSledgehammerSchematic"/>
 	<item name="toolBellowsSchematic"/>
 	<item name="toolAnvilSchematic"/>
@@ -3839,12 +3839,9 @@ If there is no hit the default quality is used.
     <item name="jz_SchematicSteelForge"  />
     <item name="jz_SchematicSteelShaping" />
 	<item name="jz_SchematicGlue" />
-		
 	<item name="toolForgeCrucibleSchematic"/>
 	<item name="meleeToolPickT3AugerSchematic"/>
 	<item name="meleeToolAxeT3ChainsawSchematic"/>
-	<item name="meleeToolSalvageT3ImpactDriverSchematic"/>
-	<item name="meleeToolRepairT3NailgunSchematic"/>
 </lootgroup>
 
 <!-- *** Tool_Schematics_Scaled -->
@@ -4445,6 +4442,7 @@ If there is no hit the default quality is used.
 <lootgroup name="chemistrySchematics" count="1">
     <item name="ammoGasCanSchematic" />
 	<item name="resourceOilSchematic" />
+	<item name="jz_SchematicVitamins"/>
     <item name="medicalPlasterCastSchematic" />
     <item name="jz_SchematicGunPowder" />
     <item name="chemistryStationSchematic" />
@@ -7855,8 +7853,6 @@ If there is no hit the default quality is used.
 	<item name="meleeToolSteelSetSchematic" count="1" loot_prob_template="low"/>
 	<item name="meleeToolPickT3AugerSchematic" count="1" loot_prob_template="veryLow"/>
 	<item name="meleeToolAxeT3ChainsawSchematic" count="1" loot_prob_template="veryLow"/>
-	<item name="meleeToolSalvageT3ImpactDriverSchematic" count="1" loot_prob_template="veryLow"/>
-	<item name="meleeToolRepairT3NailgunSchematic" count="1" loot_prob_template="veryLow"/>
 	<item name="toolForgeCrucibleSchematic" count="1" loot_prob_template="veryLow"/>
 	<item name="gunBotT2JunkTurretSchematic" count="1" loot_prob_template="veryLow"/>
 </lootgroup>
@@ -10818,10 +10814,11 @@ If there is no hit the default quality is used.
 </lootcontainer>
 <!-- Medical Vehicles   NOT USED -->
 <lootcontainer id="322" name="MedicalVehicles"  count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
-	<item group="vehiclePartsTiered" prob="45" />
-	<item group="groupMedicineCabinet" prob="10" />
+	<item group="vehiclePartsTiered" prob="50" />
+	<item group="groupMedicineCabinet" prob="48" />
     <item group="WorkingVehiclePlaceable" prob="1" />
-	<item name="medicalPlasterCastSchematic" prob="4" />
+	<item name="jz_SchematicVitamins" prob=".5" />
+	<item name="medicalPlasterCastSchematic" prob=".5" />
 </lootcontainer>
 <!-- Military Vehicles-->
 <lootcontainer id="323" name="MilitaryVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">

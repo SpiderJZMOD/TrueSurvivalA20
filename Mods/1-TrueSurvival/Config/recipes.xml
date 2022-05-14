@@ -420,6 +420,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapPolymers" count="3"/>
 </recipe> 
 
+<recipe name="jz_SimpleLogBlock" count="1" craft_time="3" craft_exp_gain="0" tags="jz_ImprovisedCraftingTag">
+	<ingredient name="jz_FreshTimber" count="2"/>
+	<ingredient name="resourceClayLump" count="1"/>
+</recipe> 
+
 <recipe name="farmPlotBlockVariantHelper" count="1" craft_time="30" craft_exp_gain="0">
 	<ingredient name="treePlant02" count="2"/>
 </recipe> 
@@ -522,7 +527,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="jz_MedicalSutureKit" count="1" craft_time="5" craft_exp_gain="15" tags="jz_DoctorTag">
 	<ingredient name="jz_CuredSinew" count="1" />
-	<ingredient name="jz_ToolSewingNeedle" count="1" />
+	<ingredient name="jz_IronNeedle" count="1" />
 	<ingredient name="medicalBandage" count="1" />
 </recipe>
 
@@ -703,13 +708,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_GallonOfDirtyRiverWater" count="1"/>
     <ingredient name="resourceCloth" count="1"/>
 </recipe>
-
+<!--
 <recipe name="jz_TissueExtractorSpear" count="1" craft_time="5" craft_exp_gain="0" tags="learnable" >
 	<ingredient name="meleeWpnSpearT0StoneSpear" count="1"/>
     <ingredient name="jz_QITissueExtractor" count="1"/>
     <ingredient name="jz_ScrapAdhesive" count="2"/>
 </recipe>
-
+-->
 <recipe name="meleeToolRepairT0StoneAxe" count="1" craft_time="30" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceRockSmall" count="4"/>
 	<ingredient name="jz_FiberRope" count="2"/>
@@ -729,11 +734,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_FreshTimber" count="1"/>
 	<ingredient name="jz_FiberRope" count="2"/>
 </recipe> 
-
+<!--
 <recipe name="jz_QIReadCDCFiles" count="1" craft_time="1" craft_exp_gain="0" >
 	<ingredient name="jz_QICDCFiles" count="1"/>
 </recipe>
-
+-->
 <recipe name="jz_WorkstationImprovisedWorkbench" count="1" craft_time="20" craft_exp_gain="20" >
 	<ingredient name="jz_FreshTimber" count="1"/>
 	<ingredient name="resourceRockSmall" count="5"/>
@@ -807,7 +812,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_ToolSewingNeedle" count="1" craft_time="20" craft_exp_gain="30" >
-	<ingredient name="resourceScrapIron" count="1"/>
+	<ingredient name="jz_IronNeedle" count="1"/>
 	<ingredient name="jz_SharpeningStone" count="1"/>
 </recipe>
 
@@ -1221,7 +1226,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceClayLump" count="20"/>
 </recipe>
 
-<recipe name="jz_MoldSledgeHead" count="1" craft_area="campfire" craft_tool="meleeWpnSledgeT0StoneSledgehammer" craft_time="30" craft_exp_gain="0" tags="learnable">
+<recipe name="jz_MoldSledgeHead" count="1" craft_area="campfire" craft_tool="meleeWpnSledgeT1IronSledgehammer" craft_time="30" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceClayLump" count="20"/>
 </recipe>
 
@@ -1260,6 +1265,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <!-- Workbench Crafted ******************************************************************************************************************************************************* -->
+<!--
 <recipe name="jz_QIBossSpawner" count="1" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" craft_time="5" craft_exp_gain="5" tags="learnable,jz_WorkBenchTag" >
 	<ingredient name="speaker" count="1"/>
 	<ingredient name="jz_ScrapWire" count="5"/>
@@ -1268,6 +1274,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="jz_NutAndBolt" count="10"/>
 	<ingredient name="resourceForgedIron" count="6"/>
 </recipe>
+-->
 
 <recipe name="armorFirefightersHelmet" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceForgedIron" count="15"/>
@@ -2747,7 +2754,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceMechanicalParts" count="2" />
 	<ingredient name="jz_NutAndBolt" count="2" />
 </recipe>
-
+<!--
 <recipe name="jz_QISatRadioStation" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" craft_time="30" craft_exp_gain="500" tags="learnable,jz_WorkBenchTag,jz_ElectricianTag" >
 	<ingredient name="jz_QIGoodWalkieTalkie" count="1"/>
 	<ingredient name="jz_QISateliteRadio" count="1"/>
@@ -2755,7 +2762,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="resourceElectronicParts" count="5"/>
     <ingredient name="jz_ScrapWire" count="5"/>
 </recipe>
-
+-->
 <recipe name="solarbank" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" craft_time="30" craft_exp_gain="50" tags="learnable,jz_WorkBenchTag">
     <ingredient name="resourceForgedIron" count="10"/>
 	<ingredient name="resourceElectricParts" count="10"/>
@@ -2802,6 +2809,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
 <!-- Chemistry Station Crafted ******************************************************************************************************************************************************* -->
+<!--
 <recipe name="jz_QIZAntiVirus" count="1" craft_area="chemistryStation" craft_tool="jz_LabEquipment" tags="learnable,jz_ChemistTag">
 	<ingredient name="jz_QILeek" count="50"/>
 	<ingredient name="jz_QICucmber" count="50"/>
@@ -2809,7 +2817,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="jz_QISnowberry" count="50"/>
 	<ingredient name="jz_QICarrot" count="50"/>
 </recipe>
-
+-->
 <recipe name="jz_Insecticide" count="10" craft_area="chemistryStation" craft_tool="toolBeaker" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChemistTag,jz_FarmerTag" >
 	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
     <ingredient name="jz_DrinkCleanOuncesOfWater" count="5"/>
@@ -2892,7 +2900,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="drugVitamins" count="1"/>
 	<ingredient name="resourceAcid" count="1"/>
 </recipe>
-
+<!--
 <recipe name="jz_QIFertilizerForest" count="1" craft_area="chemistryStation" craft_tool="jz_LabEquipment" craft_exp_gain="1" tags="learnable,jz_ChemistTag" >
 	<ingredient name="jz_QIBMSporesForest" count="1" />
     <ingredient name="jz_FoodBioMass" count="1"/>
@@ -2940,6 +2948,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="jz_QICucmber" count="50"/>
 	<ingredient name="jz_QILeek" count="50"/>
 </recipe>
+-->
 <!-- Cement Mixer Crafted ******************************************************************************************************************************************************* -->
 <recipe name="resourceConcreteMix" count="1" craft_area="cementMixer" tags="learnable,jz_MasonTag" >
 	<ingredient name="resourceCrushedSand" count="1"/>
@@ -3158,7 +3167,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_PlantedCarrot1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="jz_FoodCarrot" count="1"/>
 </recipe>
-
+<!--
 <recipe name="jz_QISeedCarrot" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="jz_QICarrot" count="1"/>
 </recipe>
@@ -3178,7 +3187,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_QISeedLeek" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="jz_QILeek" count="1"/>
 </recipe>
-
+-->
 <recipe name="jz_FireWood" count="3" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0">
 	<ingredient name="resourceWood" count="5" />
 	<ingredient name="resourceAnimalFat" count="1" />
@@ -3189,6 +3198,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceAnimalFat" count="1" />
 </recipe>
 <!-- Forge Crafted ******************************************************************************************************************************************************* -->
+<recipe name="jz_ModArmorChainmail" count="1" material_based="true" craft_area="forge" craft_tool="toolAnvil" craft_time="30" craft_exp_gain="25" tags="learnable,jz_ForgeTag" >
+	<ingredient name="unit_iron" count="100"/>
+	<ingredient name="unit_clay" count="25"/>
+</recipe>
+
 <recipe name="ammoDartIron" count="1" material_based="true" craft_area="forge" craft_tool="jz_MoldDart" craft_time="1" craft_exp_gain="0" tags="learnable,jz_ForgeTag" >
 	<ingredient name="unit_iron" count="3"/>
 	<ingredient name="unit_clay" count="1"/>
@@ -3969,7 +3983,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_BasicGunParts" count="2"/>	
 </recipe>
 
-<recipe name="gunBowT1WoodenBow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLV6" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
+<recipe name="gunBowT1WoodenBow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
 	<ingredient name="gunBowT1WoodenBowParts" count="8"/>
 	<ingredient name="resourceWood" count="24"/>
 	<ingredient name="resourceLeather" count="4"/>
@@ -4023,114 +4037,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceLeather" count="5"/>
 	<ingredient name="jz_ScrapAdhesive" count="10"/>
 	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="learnable,jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="3"/>
-	<ingredient name="resourceForgedIron" count="10"/>
-	<ingredient name="jz_ScrapAdhesive" count="4"/>
-	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="resourceWood" count="14"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="learnable,jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="4"/>
-	<ingredient name="resourceForgedIron" count="12"/>
-	<ingredient name="jz_ScrapAdhesive" count="4"/>
-	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="resourceWood" count="16"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="5"/>
-	<ingredient name="resourceForgedIron" count="14"/>
-	<ingredient name="jz_ScrapAdhesive" count="6"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceWood" count="18"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="learnable,jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="6"/>
-	<ingredient name="resourceForgedIron" count="16"/>
-	<ingredient name="jz_ScrapAdhesive" count="6"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceWood" count="20"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="learnable,jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="7"/>
-	<ingredient name="resourceForgedIron" count="18"/>
-	<ingredient name="jz_ScrapAdhesive" count="8"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceWood" count="22"/>
-	<ingredient name="jz_BasicGunParts" count="2"/>
-</recipe>
-
-<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="8"/>
-	<ingredient name="resourceForgedIron" count="20"/>
-	<ingredient name="jz_ScrapAdhesive" count="8"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceWood" count="24"/>
-	<ingredient name="jz_BasicGunParts" count="2"/>
-</recipe>
-
-<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="learnable,jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="5"/>
-	<ingredient name="resourceForgedSteel" count="12"/>
-	<ingredient name="jz_ScrapAdhesive" count="4"/>
-	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="resourceScrapPolymers" count="14"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="learnable,jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="6"/>
-	<ingredient name="resourceForgedSteel" count="14"/>
-	<ingredient name="jz_ScrapAdhesive" count="4"/>
-	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="resourceScrapPolymers" count="16"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="7"/>
-	<ingredient name="resourceForgedSteel" count="16"/>
-	<ingredient name="jz_ScrapAdhesive" count="6"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="18"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="learnable,jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="8"/>
-	<ingredient name="resourceForgedSteel" count="18"/>
-	<ingredient name="jz_ScrapAdhesive" count="6"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="20"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="learnable,jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="9"/>
-	<ingredient name="resourceForgedSteel" count="20"/>
-	<ingredient name="jz_ScrapAdhesive" count="8"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="22"/>
-	<ingredient name="jz_BasicGunParts" count="1"/>
-</recipe>
-
-<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
-	<ingredient name="jz_GunPartsCrossbow" count="10"/>
-	<ingredient name="resourceForgedSteel" count="22"/>
-	<ingredient name="jz_ScrapAdhesive" count="8"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="24"/>
-	<ingredient name="jz_BasicGunParts" count="2"/>
 </recipe>
 
 <recipe name="meleeWpnKnucklesT0LeatherKnuckles" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
@@ -4391,6 +4297,116 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="7"/>
 </recipe>
 <!-- Tool Workbench Crafted ******************************************************************************************************************************************************* -->
+
+<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationToolWorkbench" craft_time="15" craft_exp_gain="5" tags="learnable,jz_CraftingQualityOne,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="3"/>
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="jz_ScrapAdhesive" count="4"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceWood" count="14"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="learnable,jz_CraftingQualityTwo,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="4"/>
+	<ingredient name="resourceForgedIron" count="12"/>
+	<ingredient name="jz_ScrapAdhesive" count="4"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceWood" count="16"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="5"/>
+	<ingredient name="resourceForgedIron" count="14"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceWood" count="18"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="learnable,jz_CraftingQualityFour,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="6"/>
+	<ingredient name="resourceForgedIron" count="16"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceWood" count="20"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="learnable,jz_CraftingQualityFive,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="7"/>
+	<ingredient name="resourceForgedIron" count="18"/>
+	<ingredient name="jz_ScrapAdhesive" count="8"/>
+	<ingredient name="resourceLeather" count="4"/>
+	<ingredient name="resourceWood" count="22"/>
+	<ingredient name="jz_BasicGunParts" count="2"/>
+</recipe>
+
+<recipe name="gunBowT1IronCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="8"/>
+	<ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="jz_ScrapAdhesive" count="8"/>
+	<ingredient name="resourceLeather" count="4"/>
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="jz_BasicGunParts" count="2"/>
+</recipe>
+
+<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationToolWorkbench" craft_time="15" craft_exp_gain="5" tags="learnable,jz_CraftingQualityOne,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="5"/>
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="jz_ScrapAdhesive" count="4"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="14"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="learnable,jz_CraftingQualityTwo,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="6"/>
+	<ingredient name="resourceForgedSteel" count="14"/>
+	<ingredient name="jz_ScrapAdhesive" count="4"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="16"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="learnable,jz_CraftingQualityThree,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="7"/>
+	<ingredient name="resourceForgedSteel" count="16"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="18"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="learnable,jz_CraftingQualityFour,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="8"/>
+	<ingredient name="resourceForgedSteel" count="18"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="learnable,jz_CraftingQualityFive,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="9"/>
+	<ingredient name="resourceForgedSteel" count="20"/>
+	<ingredient name="jz_ScrapAdhesive" count="8"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="22"/>
+	<ingredient name="jz_BasicGunParts" count="1"/>
+</recipe>
+
+<recipe name="gunBowT3CompoundCrossbow" count="1" craft_area="jz_WorkstationToolWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="learnable,jz_CraftingQualitySix,jz_ToolCraftingTag">
+	<ingredient name="jz_GunPartsCrossbow" count="10"/>
+	<ingredient name="resourceForgedSteel" count="22"/>
+	<ingredient name="jz_ScrapAdhesive" count="8"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="24"/>
+	<ingredient name="jz_BasicGunParts" count="2"/>
+</recipe>
+
+
 <recipe name="meleeWpnClubT1BaseballBat" count="1" craft_area="jz_WorkstationToolWorkbench" craft_time="15" craft_exp_gain="20" tags="learnable,jz_CraftingQualityOne,jz_ToolCraftingTag">
 	<ingredient name="resourceWood" count="8"/>
 	<ingredient name="resourceLeather" count="1"/>
@@ -4780,7 +4796,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedSteel" count="12"/>
 </recipe>
 
-<recipe name="meleeToolPickT3Auger" count="1" craft_area="jz_WorkstationToolWorkbenchLV6" craft_time="90" craft_exp_gain="120" tags="learnable,jz_CraftingQualitySix,jz_ToolCraftingTag">
+<recipe name="meleeToolPickT3Auger" count="1" craft_area="jz_WorkstationToolWorkbenchLv6" craft_time="90" craft_exp_gain="120" tags="learnable,jz_CraftingQualitySix,jz_ToolCraftingTag">
 	<ingredient name="meleeToolAxeT3ChainsawParts" count="10"/>
 	<ingredient name="vehicleBicycleHandlebars" count="1"/>
 	<ingredient name="smallEngine" count="1"/>
@@ -4822,7 +4838,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceLeather" count="3"/>
 </recipe>
 
-<recipe name="meleeToolShovelT1IronShovel" count="1" craft_area="jz_WorkstationToolWorkbenchLV6" craft_time="90" craft_exp_gain="120" tags="learnable,jz_CraftingQualitySix,jz_ToolCraftingTag">
+<recipe name="meleeToolShovelT1IronShovel" count="1" craft_area="jz_WorkstationToolWorkbenchLv6" craft_time="90" craft_exp_gain="120" tags="learnable,jz_CraftingQualitySix,jz_ToolCraftingTag">
 	<ingredient name="jz_IronShovelHead" count="1"/>
 	<ingredient name="resourceWood" count="3"/>
 	<ingredient name="resourceNail" count="2"/>
@@ -5377,7 +5393,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCropCottonPlant" count="17" />
 </recipe>
 
-<recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLV3" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,LightArmorCrafting">
+<recipe name="armorClothJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,LightArmorCrafting">
 	<ingredient name="resourceCloth" count="20"/>
 	<ingredient name="jz_FiberRope" count="10" />
 	<ingredient name="jz_ScrapAdhesive" count="4" />
@@ -5662,7 +5678,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCloth" count="10" />
 </recipe>
 
-<recipe name="awningShapes:VariantHelper" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="5" craft_exp_gain="5" tags="learnable,LightArmorCrafting">
+<recipe name="awningShapes:VariantHelper" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="5" craft_exp_gain="5" tags="LightArmorCrafting">
 	<ingredient name="resourceCloth" count="10"/>
 </recipe>
 
@@ -8458,6 +8474,18 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_BlankSkillBook" count="1" />
 </recipe>
 
+<recipe name="jz_SchematicSteelShaping" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+	<ingredient name="resourceForgedSteel" count="30" />
+	<ingredient name="jz_SteelPipe" count="30" />
+	<ingredient name="jz_BlankSkillBook" count="1" />
+</recipe>
+
+<recipe name="jz_SchematicIronShaping" count="1" craft_area="jz_ResearchDesk" craft_time="300" craft_exp_gain="100" >
+	<ingredient name="resourceForgedIron" count="30" />
+    <ingredient name="resourceMetalPipe" count="30" />
+	<ingredient name="jz_BlankSkillBook" count="1" />
+</recipe>
+
 <recipe name="jz_QIWorkbenchUpgradesImprovisedQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
@@ -8617,8 +8645,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_QIWorkbenchUpgradesRlifeQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
-
-
 
 <!-- QISatRadio Crafted ******************************************************************************************************************************************************* -->
 <recipe name="jz_QI887Frequency" count="1" craft_area="jz_QISatRadioStation" craft_time="1" craft_exp_gain="0" tags="learnable" >

@@ -190,7 +190,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="400"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood"/><!-- JZMOD -->
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceScrapIron"/><!-- JZMOD -->
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="meleeToolRepairT1ClawHammer">
@@ -794,7 +794,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1500"/>
-	<property name="UnlockedBy" value="meleeToolAxeT3ChainsawSchematic"/>
+	<property name="UnlockedBy" value="meleeToolAxeT3ChainsawSchematic,jz_Mechanic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -884,7 +884,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="1500"/>
-	<property name="UnlockedBy" value="meleeToolPickT3AugerSchematic"/>
+	<property name="UnlockedBy" value="meleeToolPickT3AugerSchematic,jz_Mechanic"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -960,7 +960,7 @@ Mesh files no longer used:
 <!-- * * * * * * * * * * Wrench / special harvesting, not a repair tool (perkSalvageOperations) * * * * * * * * * * -->
 
 <item name="meleeToolSalvageT1Wrench">
-	<property name="Tags" value="blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,jz_IronBuildingTool"/><!-- JZMOD -->
+	<property name="Tags" value="blunt,melee,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,jz_IronBuildingTool"/><!-- JZMOD -->
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="29"/>
 	<property name="Meshfile" value="#Other/Items?Tools/wrenchPrefab.prefab"/>
@@ -993,7 +993,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="400"/><!-- JZMOD -->
 		<property name="Upgrade_hit_offset" value="-2"/><!-- JZMOD -->
 		<property name="Sound_start" value="repair_block"/>   <!-- JZMOD -->                                    
-		<property name="Allowed_upgrade_items" value="jz_IronSheetMetal"/><!-- JZMOD -->
+		<property name="Allowed_upgrade_items" value="jz_IronSheetMetal,scrapHatch_v1,ironDoor1_v1,cellarDoorDoubleIron,shuttersIronBlockVariantHelper"/><!-- JZMOD -->
 		<property name="UsePowerAttackAnimation" value="false"/><!-- JZMOD -->
 
 		<property name="UseGrazingHits" value="true"/>
@@ -1040,7 +1040,7 @@ Mesh files no longer used:
 </item>
 
 <item name="meleeToolSalvageT2Ratchet">
-	<property name="Tags" value="blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic"/>
+	<property name="Tags" value="blunt,melee,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="72"/>
 	<property name="Meshfile" value="#Other/Items?Tools/ratchetPrefab.prefab"/>
@@ -2090,7 +2090,7 @@ Mesh files no longer used:
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
-	<property name="UnlockedBy" value="meleeWpnBatonT2StunBatonSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="meleeWpnBatonT2StunBatonSchematic,jz_PoliceOfficer,jz_Electrician"/><!-- JZMOD -->
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -2508,7 +2508,7 @@ needed?
 	<property name="StickyMaterial" value="#Other/Items?Weapons/Melee/Spear/Materials/spear_sticky.mat"/>
 	<property name="RepairTools" value="jz_CantRepair"/><!-- JZMOD -->
 	<property name="DegradationBreaksAfter" value="true"/><!-- JZMOD -->
-	<property name="UnlockedBy" value="jz_SchematicStoneSpear"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicStoneSpear,jz_ParkRanger"/><!-- JZMOD -->
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="EconomicValue" value="175"/>
@@ -2610,7 +2610,7 @@ needed?
 	<property name="RepairTools" value="resourceForgedIron"/><!-- JZMOD -->
 	<property name="EconomicValue" value="350"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
-	<property name="UnlockedBy" value="meleeWpnSpearT1IronSpearSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="meleeWpnSpearT1IronSpearSchematic,jz_ParkRanger"/><!-- JZMOD -->
 	<property class="Action0">
 		<requirement name="NotHasBuff" buff="jz_BuffWarningStageWeak"/><!-- JZMOD -->
 		<requirement name="NotHasBuff" buff="jz_BuffIllnessWeak"/><!-- JZMOD -->
@@ -2668,7 +2668,7 @@ needed?
 	<property name="Material" value="MmeleeWpnSpearParts"/><property name="Weight" value="6"/>
 	<property name="StickyMaterial" value="#Other/Items?Weapons/Melee/Spear/Materials/spearIron_sticky.mat"/>
 	<property name="EconomicValue" value="700"/>
-	<property name="UnlockedBy" value="perkSpearHunter3SteelSpears"/>
+	<property name="UnlockedBy" value="perkSpearHunter3SteelSpears,jz_ParkRanger"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="RepairTools" value="resourceForgedSteel"/><!-- JZMOD -->
 
@@ -3114,7 +3114,7 @@ needed?
 	<property name="Canhold" value="true"/>
 	<property name="Group" value="Knuckles"/>
 	<property name="EconomicValue" value="350"/>
-	<property name="UnlockedBy" value="meleeWpnKnucklesT1IronKnucklesSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="meleeWpnKnucklesT1IronKnucklesSchematic,jz_Bouncer"/><!-- JZMOD -->
 	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
@@ -3205,7 +3205,7 @@ needed?
 	<property name="Material" value="MmeleeWpnKnucklesParts"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedRight_Prefab.prefab"/>
 	<property name="HoldType" value="79"/>
-	<property name="UnlockedBy" value="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
+	<property name="UnlockedBy" value="meleeWpnKnucklesT3SteelKnucklesSchematic,jz_Bouncer"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
     <property name="RepairTools" value="meleeWpnKnucklesT3SteelKnucklesParts"/><!-- JZMOD -->
 	
@@ -3683,7 +3683,7 @@ needed?
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value=".45"/>
 	<property name="EconomicValue" value="500"/>
-	<property name="UnlockedBy" value="gunHandgunT1PistolSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="gunHandgunT1PistolSchematic,jz_PoliceOfficer"/><!-- JZMOD -->
     <property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -4907,7 +4907,7 @@ needed?
 	<property name="EconomicValue" value="100"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
-	<property name="UnlockedBy" value="jz_SchematicPipeMachineGun"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicPipeMachineGun,jz_Soldier"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	
 	<property class="Action0">
@@ -4994,7 +4994,7 @@ needed?
 
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="EconomicValue" value="500"/>
-	<property name="UnlockedBy" value="gunMGT1AK47Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="gunMGT1AK47Schematic,jz_Soldier"/><!-- JZMOD -->
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
 
@@ -7982,7 +7982,7 @@ needed?
 	<property name="EconomicValue" value="10"/> <!-- oil barrel 500 -->
 	<property name="EconomicBundleSize" value="100"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals,Ammo"/>
-	<property name="UnlockedBy" value="ammoGasCanSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="ammoGasCanSchematic,jz_Chemist"/><!-- JZMOD -->
 	<property name="CraftingIngredientTime" value=".05"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
@@ -8772,7 +8772,7 @@ needed?
 	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
 	<property name="FuseTime" value="4"/> <!-- End: Needed for  time in sec, max 6 -->
 	<property name="StickPercent" value=".4"/>
-	<property name="UnlockedBy" value="thrownAmmoPipeBombSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="thrownAmmoPipeBombSchematic,jz_Soldier"/><!-- JZMOD -->
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="ActivationTransformToHide" value="Sparks"/>
 	<property class="Action0">
@@ -9213,10 +9213,10 @@ add knockdown resist to armor
 	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Molotov/molotov_thrownPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Weapons/Ranged/Molotov/molotov_dropPrefab.prefab"/>
 	<property name="HandMeshfile" value="#Other/Items?Weapons/Ranged/Molotov/molotovPrefab.prefab"/>
-  <property name="ActivationTransformToHide" value="LightMover;Flames;Smoke;ClothFlames;ClothFlamesLight"/>
-  <property name="DropScale" value="2.1"/>
-  <property name="FusePrimeOnActivate" value="true"/>
-  <property name="Material" value="Morganic"/>
+	<property name="ActivationTransformToHide" value="LightMover;Flames;Smoke;ClothFlames;ClothFlamesLight"/>
+	<property name="DropScale" value="2.1"/>
+	<property name="FusePrimeOnActivate" value="true"/>
+	<property name="Material" value="Morganic"/>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="20"/>
@@ -9239,6 +9239,7 @@ add knockdown resist to armor
 	<property name="StickPercent" value=".5"/>
 	<property name="EconomicValue" value="41"/>
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="jz_SchematicMolotovCocktail,jz_FireFighter"/><!-- JZMOD -->
 	<property class="Action0">
 		<property name="Class" value="ThrowAway"/>
 		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
@@ -9491,13 +9492,13 @@ add knockdown resist to armor
 <item name="vehicleMinibikeChassis">
 	<property name="Extends" value="vehicleWheels"/>
 	<property name="EconomicValue" value="1800"/>
-	<property name="UnlockedBy" value="vehicleMinibikeChassisSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicMiniBike,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleMinibikeHandlebars">
 	<property name="Extends" value="vehicleWheels"/>
 	<property name="EconomicValue" value="1800"/>
-	<property name="UnlockedBy" value="vehicleMinibikeHandlebarsSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicMiniBike,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleMinibikePlaceable">
@@ -9513,7 +9514,7 @@ add knockdown resist to armor
 	<property name="EconomicValue" value="6000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Science"/>
-	<property name="UnlockedBy" value="jz_SchematicMiniBike"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicMiniBike,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 	<property class="Action1">
 		<property name="Class" value="SpawnVehicle"/>
 		<property name="Vehicle" value="vehicleMinibike"/>
@@ -9530,7 +9531,7 @@ add knockdown resist to armor
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="30"/>
 	<property name="EconomicValue" value="750"/>
-	<property name="UnlockedBy" value="vehicleBicycleChassisSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicBicycle,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleBicycleHandlebars">
@@ -9538,14 +9539,14 @@ add knockdown resist to armor
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="750"/>
-	<property name="UnlockedBy" value="vehicleBicycleHandlebarsSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicBicycle,vehicleBicycleHandlebarsSchematic,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleBicyclePlaceable">
 	<property name="Extends" value="vehicleMinibikePlaceable"/>
 	<property name="Tags" value="vehicle,canHaveCosmetic"/>
 	<property name="DescriptionKey" value="vehiclePlaceableBicycleDesc"/>
-    <property name="UnlockedBy" value="jz_SchematicBicycle"/><!-- JZMOD -->
+    <property name="UnlockedBy" value="jz_SchematicBicycle,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Entities/Vehicles?bicycle_Prefab.prefab"/>
 	<property name="EconomicValue" value="2500"/>
 	<property class="Action1">
@@ -9561,13 +9562,13 @@ add knockdown resist to armor
 <item name="vehicleMotorcycleChassis">
 	<property name="Extends" value="vehicleWheels"/>
 	<property name="EconomicValue" value="3000"/>
-	<property name="UnlockedBy" value="vehicleMotorcycleChassisSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicMotorcycle,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleMotorcycleHandlebars">
 	<property name="Extends" value="vehicleWheels"/>
 	<property name="EconomicValue" value="3000"/>
-	<property name="UnlockedBy" value="vehicleMotorcycleHandlebarsSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicMotorcycle,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleMotorcyclePlaceable">
@@ -9575,7 +9576,7 @@ add knockdown resist to armor
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
 	<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 	<property name="EconomicValue" value="10000"/>
-	<property name="UnlockedBy" value="jz_SchematicMotorcycle"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicMotorcycle,jz_Mechanic,jz_HobbiesVehicles"/><!-- JZMOD -->
 	<property class="Action1">
 		<property name="Vehicle" value="vehicleMotorcycle"/>
 		<property name="VehicleSize" value="1.3, 1.9, 3"/>
@@ -9590,13 +9591,13 @@ add knockdown resist to armor
 <item name="vehicle4x4TruckChassis">
 	<property name="Extends" value="vehicleWheels"/>
 	<property name="EconomicValue" value="9000"/>
-	<property name="UnlockedBy" value="vehicle4x4TruckChassisSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_Schematic4x4Truck,jz_Mechanic"/><!-- JZMOD -->
 </item>
 
 <item name="vehicle4x4TruckAccessories">
 	<property name="Extends" value="vehicleBicycleHandlebars"/>
 	<property name="EconomicValue" value="9000"/>
-	<property name="UnlockedBy" value="vehicle4x4TruckAccessoriesSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_Schematic4x4Truck,jz_Mechanic"/><!-- JZMOD -->
 </item>
 
 <item name="vehicle4x4TruckPlaceable">
@@ -9604,7 +9605,7 @@ add knockdown resist to armor
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
 	<property name="Meshfile" value="#Entities/Vehicles?jeep_Prefab.prefab"/>
 	<property name="EconomicValue" value="30000"/>
-	<property name="UnlockedBy" value="jz_Schematic4x4Truck"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_Schematic4x4Truck,jz_Mechanic"/><!-- JZMOD -->
 	<property class="Action1">
 		<property name="Vehicle" value="vehicle4x4Truck"/>
 		<property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -9619,13 +9620,13 @@ add knockdown resist to armor
 <item name="vehicleGyroCopterChassis">
 	<property name="Extends" value="vehicleWheels"/>
 	<property name="EconomicValue" value="15000"/>
-	<property name="UnlockedBy" value="vehicleGyroCopterChassisSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicGyroCopter,jz_Mechanic"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleGyroCopterAccessories">
 	<property name="Extends" value="vehicleBicycleHandlebars"/>
 	<property name="EconomicValue" value="15000"/>
-	<property name="UnlockedBy" value="vehicleGyroCopterAccessoriesSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicGyroCopter,jz_Mechanic"/><!-- JZMOD -->
 </item>
 
 <item name="vehicleGyrocopterPlaceable">
@@ -9633,7 +9634,7 @@ add knockdown resist to armor
 	<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>
 	<property name="Meshfile" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
 	<property name="EconomicValue" value="50000"/>
-	<property name="UnlockedBy" value="jz_SchematicGyroCopter"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicGyroCopter,jz_Mechanic"/><!-- JZMOD -->
 	<property class="Action1">
 		<property name="Vehicle" value="vehicleGyrocopter"/>
 		<property name="VehicleSize" value="2.5, 2.5, 5.5"/>
@@ -11784,7 +11785,7 @@ perkNightStalkerSilentNight
 <item name="apparelDenimPants"> <!-- item name directly referenced in the code -->
 	<property name="Tags" value="lowerbody,legs,clothing,pocketMod,canHaveCosmetic"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="UnlockedBy" value="perkNeedleAndThreadLegwear"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadLegwear,jz_HobbiesSewing"/>
 	<property name="Stacknumber" value="1"/>
 	<!-- <property name="Encumbrance" value=".001"/> -->
 	<property name="Material" value="Mcloth"/>
@@ -11818,7 +11819,7 @@ perkNightStalkerSilentNight
 
 <item name="apparelDenimShortsPants">
 	<property name="Extends" value="apparelDenimPants" />
-	<property name="UnlockedBy" value="perkNeedleAndThreadLegwear"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear,jz_HobbiesSewing"/>
 	<property class="UMA">
 		<property name="Mesh" value="base_legs"/>
 		<property name="Overlay0" value="legs"/>
@@ -11860,6 +11861,7 @@ perkNightStalkerSilentNight
 
 <item name="apparelOveralls">
 	<property name="Extends" value="apparelDenimPants"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadLegwear,jz_HobbiesSewing"/>
 	<!-- <property name="Encumbrance" value=".001"/> -->
 	<property class="UMA">
 		<property name="Mesh" value="clothes_overalls"/>
@@ -11877,6 +11879,7 @@ perkNightStalkerSilentNight
 
 <item name="apparelSkirt">
 	<property name="Extends" value="apparelDenimPants"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadLegwear,jz_HobbiesSewing"/>
 	<property name="DisplayType" value="clothing"/>
 	<property class="UMA">
 		<property name="Mesh" value="skirt"/>
@@ -12144,7 +12147,7 @@ perkNightStalkerSilentNight
 <item name="apparelTShirtPlain">
 	<property name="Tags" value="upperbody,chest,clothing,pocketMod,canHaveCosmetic"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear,jz_HobbiesSewing"/>
 	<property name="Stacknumber" value="1"/>
 	<!-- <property name="Encumbrance" value=".001"/> -->
 	<property name="Material" value="Mcloth"/>
@@ -12195,7 +12198,7 @@ perkNightStalkerSilentNight
 <item name="apparelTankTop"> <!-- sleevelessClothShirtMaster -->
 	<property name="Tags" value="upperbody,chest,clothing,pocketMod,canHaveCosmetic"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear,jz_HobbiesSewing"/>
 	<property name="Stacknumber" value="1"/>
 	<!-- <property name="Encumbrance" value=".001"/> -->
 	<property name="Material" value="Mcloth"/>
@@ -12295,7 +12298,7 @@ perkNightStalkerSilentNight
 <item name="apparelCoatLeatherDuster"> <!-- item name directly referenced in the code -->
 	<property name="Tags" value="upperbody,lowerbody,chest,clothing,pocketMod,canHaveCosmetic"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="UnlockedBy" value="perkNeedleAndThreadDusters"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadDusters,jz_HobbiesSewing"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Waterproof" value=".55"/>
 	<property name="Material" value="Mleather"/>
@@ -12330,7 +12333,7 @@ perkNightStalkerSilentNight
 <item name="apparelCoatPufferCoat">
 	<property name="Tags" value="upperbody,chest,clothing,pocketMod,canHaveCosmetic"/>
 	<property name="DisplayType" value="clothing"/>
-	<property name="UnlockedBy" value="perkNeedleAndThreadPufferCoats"/>
+	<property name="UnlockedBy" value="perkNeedleAndThreadPufferCoats,jz_HobbiesSewing"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Waterproof" value=".45"/>
 	<property name="Material" value="Mcloth"/>
@@ -12547,6 +12550,7 @@ perkNightStalkerSilentNight
 	<property name="CustomIcon" value="jz_creamherbal"/>
 	<property name="Stacknumber" value="15"/> <!-- STK medical -->
 	<property name="Group" value="Science,CFChemicals,Medical"/>
+	<property name="UnlockedBy" value="jz_SchematicAloeCream,jz_FireFighter,jz_Doctor"/><!-- JZMOD -->
 </item>
 
 <item name="medicalBandage">
@@ -12797,7 +12801,7 @@ perkNightStalkerSilentNight
 
 <item name="medicalPlasterCast">
 	<property name="Extends" value="medicalSplint"/>
-	<property name="UnlockedBy" value="medicalPlasterCastSchematic"/>
+	<property name="UnlockedBy" value="medicalPlasterCastSchematic,jz_Doctor"/><!-- JZMOD -->
 	<property name="DescriptionKey" value="jz_medicalPlasterCastDesc"/><!-- JZMOD -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -12883,6 +12887,7 @@ perkNightStalkerSilentNight
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property name="DescriptionKey" value="jz_drugVitaminsDesc"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_FitnessInstructor"/><!-- JZMOD -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -12914,6 +12919,7 @@ perkNightStalkerSilentNight
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="DescriptionKey" value="jz_drugPainkillersDesc"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_Doctor"/><!-- JZMOD -->
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -12943,7 +12949,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="EconomicValue" value="120"/>
 	<property name="Stacknumber" value="10"/> <!-- STK loot -->
-	<property name="UnlockedBy" value="drugHerbalAntibioticsSchematic"/>
+	<property name="UnlockedBy" value="drugHerbalAntibioticsSchematic,jz_ParkRanger"/>
 	<property name="DisplayType" value="cureInfection"/>
 	<property name="TintColor" value="120,255,120"/>
 	<property name="Group" value="Science,CFChemicals,Medical"/>
@@ -12971,7 +12977,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="EconomicValue" value="240"/>
 	<property name="Stacknumber" value="10"/> <!-- STK loot -->
-	<property name="UnlockedBy" value="drugAntibioticsSchematic"/>
+	<property name="UnlockedBy" value="drugAntibioticsSchematic,jz_Doctor"/>
 	<property name="DisplayType" value="cureInfection"/>
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
@@ -13099,7 +13105,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="drugPainkillers"/>
 	<property name="DisplayType" value="drugSteroids"/>
 	<property name="EconomicValue" value="250"/>
-	<property name="UnlockedBy" value="perkPhysician"/>
+	<property name="UnlockedBy" value="jz_Doctor"/>
 	<property name="Group" value="Science,Medical"/>
 	<effect_group tiered="false" name="Drug Tier 3">
 		<display_value name="dCarryCapacity" value="50"/>
@@ -13739,7 +13745,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="16"/>
-	<property name="UnlockedBy" value="foodCornBreadSchematic"/>
+	<property name="UnlockedBy" value="foodCornBreadSchematic,jz_Chef,jz_HobbiesCooking"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /> <!-- JZMOD -->
     <property name="ShowQuality" value="false"/> <!-- JZMOD -->
@@ -13956,7 +13962,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="134"/>
-	<property name="UnlockedBy" value="foodMeatStewSchematic"/>
+	<property name="UnlockedBy" value="foodMeatStewSchematic,jz_Chef,jz_HobbiesCooking"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14009,7 +14015,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
-	<property name="UnlockedBy" value="foodSteakAndPotatoSchematic"/>
+	<property name="UnlockedBy" value="foodSteakAndPotatoSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14099,7 +14105,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="134"/>
-	<property name="UnlockedBy" value="foodHoboStewSchematic"/>
+	<property name="UnlockedBy" value="foodHoboStewSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14151,7 +14157,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
-	<property name="UnlockedBy" value="foodFishTacosSchematic"/>
+	<property name="UnlockedBy" value="foodFishTacosSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14189,7 +14195,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="foodCornOnTheCob"/>
 	<property name="DisplayType" value="TSFoWaStHePr"/><!-- JZMOD -->
 	<property name="EconomicValue" value="106"/>
-	<property name="UnlockedBy" value="foodChiliDogSchematic"/>
+	<property name="UnlockedBy" value="foodChiliDogSchematic,jz_Chef,jz_HobbiesCooking"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14269,7 +14275,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
-	<property name="UnlockedBy" value="foodBlueberryPieSchematic"/>
+	<property name="UnlockedBy" value="foodBlueberryPieSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14316,7 +14322,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
-	<property name="UnlockedBy" value="foodPumpkinPieSchematic"/>
+	<property name="UnlockedBy" value="foodPumpkinPieSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14418,7 +14424,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
-	<property name="UnlockedBy" value="foodPumpkinBreadSchematic"/>
+	<property name="UnlockedBy" value="foodPumpkinBreadSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14465,7 +14471,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
-	<property name="UnlockedBy" value="foodGumboStewSchematic"/>
+	<property name="UnlockedBy" value="foodGumboStewSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14567,7 +14573,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="250"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
-	<property name="UnlockedBy" value="foodSpaghettiSchematic"/>
+	<property name="UnlockedBy" value="foodSpaghettiSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14618,7 +14624,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<!-- 14 is large round hold -->
-	<property name="UnlockedBy" value="foodTunaFishGravyToastSchematic"/>
+	<property name="UnlockedBy" value="foodTunaFishGravyToastSchematic,jz_Chef"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14709,7 +14715,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="72"/>
-	<property name="UnlockedBy" value="foodBaconAndEggsSchematic"/>
+	<property name="UnlockedBy" value="foodBaconAndEggsSchematic,jz_Chef,jz_HobbiesCooking"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14754,7 +14760,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="10"/> <!-- STK food -->
 	<property name="EconomicValue" value="102"/>
-	<property name="UnlockedBy" value="foodVegetableStewSchematic"/>
+	<property name="UnlockedBy" value="foodVegetableStewSchematic,jz_Chef,jz_HobbiesCooking"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -14998,7 +15004,7 @@ perkNightStalkerSilentNight
 <item name="foodCropBlueberries">
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="TSFoWaStHeWeFr"/><!-- JZMOD -->
+	<property name="DisplayType" value="TSFoWaStHeFrDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mfruit"/>
@@ -15613,7 +15619,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
-	<property name="UnlockedBy" value="drinkJarGoldenRodTeaSchematic"/>
+	<property name="UnlockedBy" value="drinkJarGoldenRodTeaSchematic,jz_FitnessInstructor"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -15657,7 +15663,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
 	<property name="EconomicValue" value="48"/>
-	<property name="UnlockedBy" value="drinkJarRedTeaSchematic"/>
+	<property name="UnlockedBy" value="drinkJarRedTeaSchematic,jz_FitnessInstructor"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
@@ -15750,6 +15756,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="drinkJarRedTea"/>
 	<property name="DisplayType" value="waterMegaCrush"/>
 	<property name="EconomicValue" value="240"/>
+	<property name="UnlockedBy" value="jz_SchematicMegaCrush,jz_FitnessInstructor,jz_Chemist"/>
 	<property class="Action0">
 	</property>
 
@@ -15817,7 +15824,7 @@ perkNightStalkerSilentNight
 <item name="drinkJarBlackStrapCoffee">
 	<property name="Extends" value="drinkJarCoffee"/>
 	<property name="EconomicValue" value="200"/>
-	<property name="UnlockedBy" value="perkArtOfMiningBlackStrap"/>
+	<property name="UnlockedBy" value="perkArtOfMiningBlackStrap,jz_Chemist"/>
 
 	<effect_group tiered="false" name="Drink Tier Found">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
@@ -19995,6 +20002,7 @@ perkNightStalkerSilentNight
 	<property name="LootExpValue" value="1"/>
 	<property name="CraftingIngredientTime" value=".2"/>
 	<property name="DescriptionKey" value="plankDesc"/>
+	<property name="UnlockedBy" value="jz_SchematicPlank,jz_Carpenter,jz_WoodBuildingSkill"/><!-- JZMOD -->
 </item>
 
 <item name="resourceCrushedSand">
@@ -20403,9 +20411,9 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="100"/>
-	<property name="Group" value="Resources,Basics"/>
+	<property name="Group" value="Resources,Building"/>
 	<property name="CraftingIngredientTime" value=".25"/>
-	<property name="UnlockedBy" value="jz_SchematicCobblestone"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicCobblestone,jz_Mason,jz_StoneBuildingSkill"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -20418,7 +20426,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
-	 <property name="UnlockedBy" value="jz_SchematicConcreteMix"/><!-- JZMOD -->
+	 <property name="UnlockedBy" value="jz_SchematicConcreteMix,jz_ConcreteMason,jz_ConcreteBuildingSkill"/><!-- JZMOD -->
 	 <property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -20432,7 +20440,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="125"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
-	 <property name="UnlockedBy" value="jz_SchematicConcreteMix"/><!-- JZMOD -->
+	 <property name="UnlockedBy" value="jz_SchematicConcreteMix,jz_ConcreteMason,jz_ConcreteBuildingSkill"/><!-- JZMOD -->
 	 <property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -20478,7 +20486,7 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceFertilizer"/>
-    <property name="UnlockedBy" value="jz_SchematicFertilizer"/>
+    <property name="UnlockedBy" value="jz_SchematicFertilizer,jz_Farmer"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="FuelValue" value="0"/>
 	<property name="Weight" value="0"/>
@@ -20518,6 +20526,7 @@ perkNightStalkerSilentNight
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_Electrician"/><!-- JZMOD -->
 </item>
 
 <item name="resourceElectronicParts"> <!-- deprecated item. No longer used. -->
@@ -20550,6 +20559,7 @@ perkNightStalkerSilentNight
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_Mechanic"/><!-- JZMOD -->
 </item>
 
 <item name="resourceFeather">
@@ -20630,7 +20640,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
-	<property name="UnlockedBy" value="jz_SchematicGunPowder"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicGunPowder,jz_Chemist"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -20658,6 +20668,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
+	<property name="DescriptionKey" value="jz_resourceBulletCasingDesc"/><!-- JZMOD -->
 </item>
 
 <item name="resourceBulletTip">
@@ -20670,6 +20681,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
+	<property name="DescriptionKey" value="jz_resourceBulletTipDesc"/><!-- JZMOD -->
 </item>
 
 <item name="resourceNail">
@@ -20744,7 +20756,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="resourceOil">
-	<property name="UnlockedBy" value="resourceOilSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="resourceOilSchematic,jz_Chemist"/><!-- JZMOD -->
 	<property name="HoldType" value="45"/>
 	<property name="Tags" value="junk"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
@@ -21004,6 +21016,7 @@ perkNightStalkerSilentNight
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MsmallEngine"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="UnlockedBy" value="jz_SchematicSmallEngine,jz_Mechanic,jz_HobbiesVehicles"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="200"/>
 	<property name="EconomicValue" value="1000"/>
@@ -21030,7 +21043,7 @@ perkNightStalkerSilentNight
 	<property name="Tags" value="junk"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="UnlockedBy" value="jz_SchematicCarBattery"/>
+	<property name="UnlockedBy" value="jz_SchematicCarBattery,jz_Electrician"/>
 	<property name="Material" value="MresourceScrapLeadLarge"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="160"/>
@@ -21122,7 +21135,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="20"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
-	<property name="UnlockedBy" value="jz_SchematicGlue"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicGlue,jz_Chemist"/><!-- JZMOD -->
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 </item>
 
@@ -26892,7 +26905,7 @@ perkNightStalkerSilentNight
 <item name="jz_PoliceBaton">
 	<property name="Tags" value="blunt,club,melee,grunting,light,weapon,meleeWeapon,jz_BluntSkillTag"/>
 	<property name="DisplayType" value="melee"/>
- 	<property name="Group" value="Ammo/Weapons,Basics"/>
+ 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZBaton.unity3d?BatonPrefab" />
 	<property name="HoldType" value="2"/>
 	<property name="Material" value="Mmetal"/>
@@ -27053,7 +27066,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="jz_Screwdriver">
-	<property name="Tags" value="blunt,melee,grunting,light,tool,canHaveCosmetic"/>
+	<property name="Tags" value="blunt,melee,light,tool,canHaveCosmetic"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="HoldType" value="36"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZScrewdriver.unity3d?ScrewdriverPrefab" />
@@ -27205,7 +27218,7 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="jz_ConcreteSledge"> 
-    <property name="Tags" value="blunt,melee,grunting,heavy,sledge,jz_ConcreteBuildingTool"/>
+    <property name="Tags" value="blunt,melee,heavy,sledge,jz_ConcreteBuildingTool"/>
     <property name="DisplayType" value="meleeHeavy"/>
 	<property name="HoldType" value="33"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Melee/SledgeHammer/ironSledgehammerPrefab.prefab"/>
@@ -27332,7 +27345,7 @@ perkNightStalkerSilentNight
 		<property name="Repair_amount" value="400"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="jz_SteelSheetMetal"/>
+		<property name="Allowed_upgrade_items" value="jz_SteelSheetMetal,vaultDoor01,vaultHatch_v1,cellarDoorDoubleSteel,shuttersSteelBlockVariantHelper"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	
@@ -27470,7 +27483,7 @@ perkNightStalkerSilentNight
 	<property name="SellableToTrader" value="false"/>
  	<property class="Action0">
 		<property name="Sound_start" value="player_bandage"/>
-		<property name="Create_item" value="jz_ToolSewingNeedle" />
+		<property name="Create_item" value="jz_IronNeedle" />
 		<requirement name="CVarCompare" cvar="$NeedsSuture" operation="Equals" value="1"/>
 	</property>
 	<effect_group tiered="false" name="JZMOD WOUND SYSTEM">
@@ -27586,6 +27599,7 @@ perkNightStalkerSilentNight
     <property name="EconomicValue" value="300"/>
 	<property name="DescriptionKey" value="stimulantDesc" />
 	<property name="Group" value="Science,CFChemicals,Medical"/>
+	<property name="UnlockedBy" value="jz_Doctor,jz_Chemist"/>
 	<property name="Stacknumber" value="50" />
 	<property class="Action0">
 		<property name="Sound_start" value="UseActions/player_painkillers" />
@@ -27604,6 +27618,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="50" />
 	<property name="Group" value="Science,CFChemicals" />
 	<property name="DescriptionKey" value="purificationDesc" />
+	<property name="UnlockedBy" value="jz_Chemist"/>
 </item>
 <!--JZMOD FOOD ITEMS-->
 <item name="jz_FoodServingFruit">
@@ -27940,7 +27955,7 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="meatStewDesc" />
     <property name="EconomicValue" value="1800"/>
 	<property name="DisplayType" value="TSFoWaStHeWePrVe"/>
-    <property name="UnlockedBy" value="jz_SchematicBearStew"/>
+    <property name="UnlockedBy" value="jz_SchematicBearStew,jz_Chef"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
     <property name="SpoiledItem" value="foodRottingFlesh" />
@@ -28042,7 +28057,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="carrotCakeDesc" />
     <property name="EconomicValue" value="600"/>
-	<property name="UnlockedBy" value="jz_SchematicCarrotCake"/>
+	<property name="UnlockedBy" value="jz_SchematicCarrotCake,jz_Chef,jz_HobbiesCooking"/>
 	<property name="DisplayType" value="TSFoWaStHeWeVe"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28097,7 +28112,7 @@ perkNightStalkerSilentNight
 <item name="jz_FoodBread">
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="DescriptionKey" value="BreadDesc" />
-	<property name="UnlockedBy" value="jz_SchematicBread"/>
+	<property name="UnlockedBy" value="jz_SchematicBread,jz_Chef,jz_HobbiesCooking"/>
 	<property name="DisplayType" value="TSFoWaStHeDy"/>
     <property name="EconomicValue" value="200"/>
 	<property name="Spoilable" value="true" />
@@ -28158,6 +28173,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="2" />
 	<property name="DescriptionKey" value="grubsDesc" />
     <property name="EconomicValue" value="0"/>
+	<property name="UnlockedBy" value="jz_Soldier"/>
 	<property name="DisplayType" value="TSFoWaStHePrDy"/>
 	<property name="Spoilable" value="true" />
     <property name="ShowQuality" value="false"/>
@@ -28189,7 +28205,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_FoodBrainShnitzel">
 	<property name="Extends" value="jz_MasterFood" />
-	<property name="UnlockedBy" value="jz_SchematicBrainShnitzel"/>
+	<property name="UnlockedBy" value="jz_SchematicBrainShnitzel,jz_Chef"/>
 	<property name="DescriptionKey" value="brainShnitzelDesc" />
 	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="2200"/>
@@ -28419,7 +28435,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_FoodGlazedMeat">
 	<property name="Extends" value="jz_MasterFood" />
-	<property name="UnlockedBy" value="jz_SchematicGlazedMeat"/>
+	<property name="UnlockedBy" value="jz_SchematicGlazedMeat,jz_Chef"/>
      <property name="DescriptionKey" value="jz_GlazedMeatDesc" />
 	<property name="DisplayType" value="TSFoWaStHeWePrFr"/>
     <property name="EconomicValue" value="1200"/>
@@ -28447,7 +28463,7 @@ perkNightStalkerSilentNight
 	
 <item name="jz_FoodKabob">
 	<property name="Extends" value="jz_MasterFood" />
-	<property name="UnlockedBy" value="jz_SchematicKabob"/>
+	<property name="UnlockedBy" value="jz_SchematicKabob,jz_Chef,jz_HobbiesCooking"/>
     <property name="DescriptionKey" value="jz_KabobDesc" />
 	<property name="DisplayType" value="TSFoWaStHeWePrVe"/>
     <property name="EconomicValue" value="1200"/>
@@ -28859,7 +28875,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_FoodMeatPie">
 	<property name="Extends" value="jz_MasterFood" />
-	<property name="UnlockedBy" value="jz_SchematicMeatPie"/>
+	<property name="UnlockedBy" value="jz_SchematicMeatPie,jz_Chef"/>
     <property name="DescriptionKey" value="jz_MeatPiesDesc" />
 	<property name="DisplayType" value="TSFoWaStHeWePr"/>
     <property name="EconomicValue" value="1200"/>
@@ -29190,7 +29206,7 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="200" />
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
-    <property name="UnlockedBy" value="jz_SchematicSmallEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicSmallEngine,jz_Mechanic,jz_HobbiesVehicles"/>
 </item>
 
 <item name="jz_PartLargeEngineBlock">
@@ -29200,7 +29216,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
     <property name="DescriptionKey" value="jz_PartLargeEngineBlockDesc" />
-    <property name="UnlockedBy" value="jz_SchematicLargeEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicLargeEngine,jz_Mechanic"/>
 </item>
 
 <item name="jz_PartSmallExhaust">
@@ -29210,7 +29226,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
     <property name="DescriptionKey" value="jz_PartSmallExhaustDesc" />
-    <property name="UnlockedBy" value="jz_SchematicSmallEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicSmallEngine,jz_Mechanic,jz_HobbiesVehicles"/>
 </item>
 
 <item name="jz_PartLargeExhaust">
@@ -29220,7 +29236,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
     <property name="DescriptionKey" value="jz_PartLargeExhaustDesc" />
-    <property name="UnlockedBy" value="jz_SchematicLargeEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicLargeEngine,jz_Mechanic"/>
 </item>
 
 <item name="jz_Alternator">
@@ -29314,7 +29330,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1" />
     <property name="Group" value="Science" />
     <property name="DescriptionKey" value="jz_MoldDDesc" />
-	<property name="UnlockedBy" value="meleeWpnKnucklesT1IronKnucklesSchematic"/>
+	<property name="UnlockedBy" value="meleeWpnKnucklesT1IronKnucklesSchematic,jz_Bouncer"/>
 </item>
     
 <item name="jz_MoldAxeHead">
@@ -29333,7 +29349,7 @@ perkNightStalkerSilentNight
     <property name="CustomIcon" value="LgEnginemold" />
     <property name="Group" value="Science" />
     <property name="DescriptionKey" value="jz_MoldDDesc" />
-    <property name="UnlockedBy" value="jz_SchematicSmallEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicSmallEngine,jz_Mechanic,jz_HobbiesVehicles"/>
 </item>
 
 <item name="jz_MoldLargeEngineBlock">
@@ -29343,7 +29359,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1" />
     <property name="CustomIcon" value="LgEnginemold" />
     <property name="Group" value="Science" />
-    <property name="UnlockedBy" value="jz_SchematicLargeEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicLargeEngine,jz_Mechanic"/>
 </item>
 
 <item name="jz_MoldDart">
@@ -29406,7 +29422,7 @@ perkNightStalkerSilentNight
 	<property name="Material" value="Msteel"/>
     <property name="Weight" value="300"/>
 	<property name="DescriptionKey" value="jz_LargeEngineDesc"/>
-    <property name="UnlockedBy" value="jz_SchematicLargeEngine"/>
+    <property name="UnlockedBy" value="jz_SchematicLargeEngine,jz_Mechanic"/>
 </item>
 
 <item name="jz_VenomSack">
@@ -29621,7 +29637,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="128" />
 	<property name="DescriptionKey" value="jz_InsecticideDesc"/>
     <property name="Group" value="Resources,Chemicals,CFChemicals"/>
-    <property name="UnlockedBy" value="jz_SchematicInsecticide"/>
+    <property name="UnlockedBy" value="jz_Farmer,jz_HobbiesGardening"/>
 </item>
 
 <item name="jz_CantRepair">
@@ -29637,13 +29653,13 @@ perkNightStalkerSilentNight
 	<property name="RepairTime" value="10" />
 	<property name="RepairAmount" value="1000" />
 	<property name="DescriptionKey" value="weaponRepairKitDesc" />
-    <property name="UnlockedBy" value="jz_SchematicWeaponRepairKit"/>
+    <property name="UnlockedBy" value="jz_SchematicWeaponRepairKit,jz_PoliceOfficer,jz_Soldier"/>
 </item>
 
 <item name="jz_GunOil">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="gunOilDesc" />
-    <property name="UnlockedBy" value="jz_SchematicGunOil"/>
+    <property name="UnlockedBy" value="jz_PoliceOfficer"/>
 </item>
 
 <item name="jz_MeltedRubber">
@@ -29681,7 +29697,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="Material" value="Mmetal" />
 	<property name="Weight" value="1" />
-    <property name="UnlockedBy" value="jz_SchematicNutAndBolt"/>
+    <property name="UnlockedBy" value="jz_SchematicNutAndBolt,jz_MetalWorker,jz_IronBuildingSkill"/>
 	<property name="DescriptionKey" value="nutAndBoltDesc" />
 </item>
 
@@ -29730,6 +29746,7 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="Items/Food/honeyPrefab" />
 	<property name="CraftingSkillGroup" value="chemistryCraft" />
     <property name="DescriptionKey" value="jz_NitroglycerinDesc" />
+	<property name="UnlockedBy" value="jz_Chemist"/>
 </item>
 
 <item name="jz_SharpeningStone">
@@ -29973,6 +29990,13 @@ perkNightStalkerSilentNight
 	<property name="Weight" value="3" />
 </item>
 <!-- Iron Junk -->
+<item name="jz_IronNeedle">
+	<property name="Extends" value="jz_MasterItem" />
+	<property name="CustomIcon" value="jz_ToolSewingNeedle" />
+	<property name="DescriptionKey" value="jz_IronJunkDesc" />
+	<property name="Material" value="Miron" />
+	<property name="Weight" value="1" />
+</item>
 <item name="jz_IronHanger">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_IronHanger" />
@@ -32377,11 +32401,45 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 	</effect_group>
 </item>
+
+<item name="jz_SchematicRollUpDoor">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CreativeMode" value="Player"/>
+    <property name="Weight" value="3"/>
+	<property name="CustomIcon" value="thrownAmmoMolotovCocktail"/>
+	<property name="Unlocks" value="thrownAmmoMolotovCocktail"/>
+    <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
+	<property class="Action0">
+	<requirement name="ProgressionLevel" progression_name="SP_RollUpDoorsSchematic" operation="LT" value="1"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="SP_RollUpDoorsSchematic" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="jz_SchematicChainmailMod">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CreativeMode" value="Player"/>
+    <property name="Weight" value="3"/>
+	<property name="CustomIcon" value="jz_ModArmorChainmail"/>
+	<property name="Unlocks" value="jz_ModArmorChainmail"/>
+    <property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
+	<property class="Action0">
+	<requirement name="ProgressionLevel" progression_name="SP_RollUpDoorsSchematic" operation="LT" value="1"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="SP_RollUpDoorsSchematic" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+
 <!-- JZMOD MELEE WEAPONS -->
 <item name="jz_MeleePlank"> 
 	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="DisplayType" value="melee"/>
-	<property name="Group" value="Ammo/Weapons,Basics,Melee Weapons"/>
+	<property name="Group" value="Ammo/Weapons"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZ2X4.unity3d?2X4Prefab" />
 	<property name="HoldType" value="2"/>
     <property name="DescriptionKey" value="jz_MeleePlankDesc"/>
@@ -32652,7 +32710,7 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="jz_FarmingWateringCanDesc" />
 	<property name="SellableToTrader" value="false"/>
 	<property name="ShowQuality" value="false"/>
-    <property name="UnlockedBy" value="jz_SchematicFarmingWateringCan"/>
+    <property name="UnlockedBy" value="jz_SchematicFarmingWateringCan,jz_Farmer"/>
 	<property class="Action0">
 		<property name="Class" value="Repair"/>
 		<property name="Delay" value=".5"/>
@@ -32828,7 +32886,7 @@ perkNightStalkerSilentNight
     <property name="DescriptionKey" value="jz_TissueExtractorSpearDesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="ShowQuality" value="false"/>
-	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Hitmask_override" value="Melee"/>

@@ -5514,7 +5514,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 	-->
 
-	<buff name="buffInfectionGetsWorse" name_key="buff Infection Gets Worse" remove_on_death="false" icon="ui_game_symbol_brokenbone" icon_color="255,128,0" hidden="true">
+	<buff name="buffInfectionGetsWorse" name_key="buff Z-Virus Gets Worse" remove_on_death="false" icon="ui_game_symbol_brokenbone" icon_color="255,128,0" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value="1.1"/>
 		<effect_group>
@@ -5522,7 +5522,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffInfectionAddCure" name_key="buff Infection Add Cure" remove_on_death="false" hidden="true" icon="ui_game_symbol_pills">
+	<buff name="buffInfectionAddCure" name_key="buff Z-Virus Infection Add Cure" remove_on_death="false" hidden="true" icon="ui_game_symbol_pills">
 		<stack_type value="ignore"/>
 		<duration value=".1"/>
 		<effect_group>
@@ -5539,7 +5539,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffInfectionCureDisplay" name_key="buffInfectionCureDisplayName" description_key="jz_BuffInfectionCureDisplayDesc" remove_on_death="false" showonhud="false" icon="ui_game_symbol_pills">
+	<buff name="buffInfectionCureDisplay" name_key="jz_buffInfectionCureDisplayName" description_key="jz_BuffInfectionCureDisplayDesc" remove_on_death="false" showonhud="false" icon="ui_game_symbol_pills">
 		<duration value="0"/>
 		<update_rate value="1.7"/>
 		<display_value value=".infectionCureDisplayPerc"/><display_value_key value="{0:0.0}%"/>
@@ -5556,7 +5556,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffInfection01Untreated" name_key="buffInfection01UntreatedName" description_key="jz_BuffInfection01UntreatedDesc" remove_on_death="false" tooltip_key="buffInfection01UntreatedTooltip" icon="ui_game_symbol_infection">
+	<buff name="buffInfection01Untreated" name_key="jz_buffInfection01UntreatedName" description_key="jz_BuffInfection01UntreatedDesc" remove_on_death="false" tooltip_key="buffInfection01UntreatedTooltip" icon="ui_game_symbol_infection">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -5571,7 +5571,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInfection03GetBetter"/>
 		</effect_group>
 	</buff>
-	<buff name="buffInfection01GetBetter" name_key="Infection Getting Better" description_key="jz_BuffInfection01GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better">
+	<buff name="buffInfection01GetBetter" name_key="Z-Virus Infection Getting Better" description_key="jz_BuffInfection01GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -5585,7 +5585,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffInfection02Untreated" name_key="buffInfection02UntreatedName" description_key="jz_BuffInfection02UntreatedDesc" remove_on_death="false" icon="ui_game_symbol_infection" icon_color="255,128,0">
+	<buff name="buffInfection02Untreated" name_key="jz_buffInfection02UntreatedName" description_key="jz_BuffInfection02UntreatedDesc" remove_on_death="false" icon="ui_game_symbol_infection" icon_color="255,128,0">
 		<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -5604,7 +5604,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.25"/>
 		</effect_group>
 	</buff>
-	<buff name="buffInfection02GetBetter" name_key="buffInfection02GetBetterName" description_key="jz_BuffInfection02GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better" icon_color="255,128,0">
+	<buff name="buffInfection02GetBetter" name_key="jz_buffInfection02GetBetterName" description_key="jz_BuffInfection02GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better" icon_color="255,128,0">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -5622,7 +5622,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffInfection03Untreated" name_key="buffInfection03UntreatedName" description_key="jz_BuffInfection03UntreatedDesc" remove_on_death="false" icon="ui_game_symbol_infection" icon_color="255,0,0">
+	<buff name="buffInfection03Untreated" name_key="jz_buffInfection03UntreatedName" description_key="jz_BuffInfection03UntreatedDesc" remove_on_death="false" icon="ui_game_symbol_infection" icon_color="255,0,0">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -5644,7 +5644,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.35"/>
 		</effect_group>
 	</buff>
-	<buff name="buffInfection03GetBetter" name_key="buffInfection03GetBetterName" description_key="jz_BuffInfection03GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better" icon_color="255,0,0">
+	<buff name="buffInfection03GetBetter" name_key="jz_buffInfection03GetBetterName" description_key="jz_BuffInfection03GetBetterDesc" remove_on_death="false" icon="ui_game_symbol_infection_better" icon_color="255,0,0">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -5723,7 +5723,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffStatusHungry03" name_key="buffStatusHungry03Name" description_key="buffStatusHungry03Desc" tooltip_key="buffStatusHungry03Tooltip" icon="ui_game_symbol_hunger" icon_color="255,0,0" icon_blink="true">
+	<buff name="buffStatusHungry03" name_key="buffStatusHungry03Name" description_key="jz_buffStatusHungry03Desc" tooltip_key="buffStatusHungry03Tooltip" icon="ui_game_symbol_hunger" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Starvation"/>
 		<damage_source value="Internal"/>
 		<stack_type value="ignore"/>
@@ -5811,7 +5811,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffStatusThirsty03" name_key="buffStatusThirsty03Name" description_key="buffStatusThirsty03Desc" tooltip_key="buffStatusThirsty03Tooltip" icon="ui_game_symbol_water" icon_color="255,0,0" icon_blink="true">
+	<buff name="buffStatusThirsty03" name_key="buffStatusThirsty03Name" description_key="jz_buffStatusThirsty03Desc" tooltip_key="buffStatusThirsty03Tooltip" icon="ui_game_symbol_water" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Dehydration"/>
 		<damage_source value="Internal"/>
 		<stack_type value="ignore"/>

@@ -1316,6 +1316,8 @@
 				<requirement name="ProgressionLevel" progression_name="SP_4x4TruckSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GyroCopterSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_GyroCopterSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MotorcycleSchematic" level="-1">
+					<requirement name="ProgressionLevel" progression_name="SP_MotorcycleSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AugerSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_AugerSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ChainsawSchematic" level="-1">
@@ -2122,6 +2124,13 @@
 			<effect_description level="1" desc_key="SP_DoorsSchematicDesc" long_desc_key="SP_DoorsSchematicDesc"/>
 		</effect_group>
 	</perk>
+	
+	<perk name="SP_RollUpDoorsSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Roll Up Doors" desc_key="SP_RollUpDoorsSchematicDesc" icon="rollUpDoor5x4White">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="garageDoorMetal_v1,garageDoorHousePlayer"/>
+			<effect_description level="1" desc_key="SP_RollUpDoorsSchematicDesc" long_desc_key="SP_RollUpDoorsSchematicDesc"/>
+		</effect_group>
+	</perk>
     
     <perk name="SP_WoodenChestSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Storage Box" desc_key="cntStorageGenericSignedDesc" icon="cntShippingCrateHero">
 		<effect_group>
@@ -2844,10 +2853,10 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_BlueberryPieSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Blueberry Pie" desc_key="SP_BaconAndEggsSchematicDesc" icon="foodBlueberryPie">
+	<perk name="SP_BlueberryPieSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Blueberry Pie" desc_key="SP_BlueberryPieSchematicDesc" icon="foodBlueberryPie">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodBlueberryPie"/>
-			<effect_description level="1" desc_key="SP_BaconAndEggsSchematicDesc" long_desc_key="SP_BaconAndEggsSchematicDesc"/>
+			<effect_description level="1" desc_key="SP_BlueberryPieSchematicDesc" long_desc_key="SP_BlueberryPieSchematicDesc"/>
 		</effect_group>
 	</perk>
 		
@@ -3194,6 +3203,13 @@
 		</effect_group>
 	</perk>
 		
+	<perk name="SP_ArmorChainmailSchematic" parent="jz_ModSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Chainmail" desc_key="SP_ArmorChainmailSchematicDesc" icon="jz_ModArmorChainmail">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ModArmorChainmail"/>
+			<effect_description level="1" desc_key="SP_ArmorChainmailSchematicDesc" long_desc_key="SP_ArmorChainmailSchematicDesc"/>
+		</effect_group>
+	</perk>
+	
 	<perk name="SP_ArmorMuffledConnectorsSchematic" parent="jz_ModSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Armor Muffled Connectors" desc_key="SP_ArmorMuffledConnectorsSchematicDesc" icon="modArmorMuffledConnectors">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorMuffledConnectors"/>
@@ -4469,6 +4485,9 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_NailSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="1"/>
 				<requirement name="ProgressionLevel" progression_name="SP_NailSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesFrameSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="SP_AllShapesFrameSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_AllShapesWoodSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="2"/>
 				<requirement name="ProgressionLevel" progression_name="SP_AllShapesWoodSchematic" operation="LT" value="1"/></triggered_effect>

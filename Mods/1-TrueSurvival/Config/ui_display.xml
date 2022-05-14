@@ -289,6 +289,13 @@ All the perk tags:
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseReduction" display_type="Percent" display_leading_plus="true"/>
 		</item_display_info>
 
+		<item_display_info display_type="jz_modChainmail" display_group="modAttire">
+			<display_entry name="TSBiteResist" title_key="Zombie Bite Resistance" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResist" display_leading_plus="true"/>
+			<display_entry name="dNoiseMultiplier" title_key="Noisier" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
+		</item_display_info>
+		
 		<item_display_info display_type="modTempResist" display_group="modAttire">
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist" display_leading_plus="true"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist" display_leading_plus="true"/>
@@ -1193,79 +1200,79 @@ All the perk tags:
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_ResearchDesk">
-			<crafting_category name="SchematicsOnly" icon="ui_game_symbol_fork" display_name="Research" />
-			<crafting_category name="Quest" icon="ui_game_symbol_thirst" display_name="Quest" />
+			<crafting_category name="SchematicsOnly" icon="ui_game_symbol_assemble" display_name="Research" />
+			<crafting_category name="Quest" icon="ui_game_symbol_assemble" display_name="Quest" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_DryingRack">
-			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="Seeds" />
-			<crafting_category name="Other" icon="ui_game_symbol_thirst" display_name="Other" />
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_assemble" display_name="Seeds" />
+			<crafting_category name="Other" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbench">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_map_house" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_resource" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_knife" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_knife" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_knife" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_knife" display_name="Archery" />
+			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
+			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv2">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_map_house" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_resource" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_knife" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_knife" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_knife" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_knife" display_name="Archery" />
+			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
+			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv3">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_map_house" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_resource" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_knife" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_knife" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_knife" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_knife" display_name="Archery" />
+			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
+			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv4">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_map_house" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_resource" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_knife" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_knife" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_knife" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_knife" display_name="Archery" />
+			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
+			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv5">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_map_house" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_resource" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_knife" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_knife" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_knife" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_knife" display_name="Archery" />
+			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
+			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv6">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_map_house" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_resource" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_map_house" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_resource" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_knife" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_knife" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_knife" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_knife" display_name="Archery" />
+			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
+			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
 		</crafting_category_list>
 	</crafting_category_display>
 

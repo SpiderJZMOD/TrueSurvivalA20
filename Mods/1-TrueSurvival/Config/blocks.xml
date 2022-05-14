@@ -818,6 +818,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0001"/>
+	<property name="UnlockedBy" value="jz_WoodBuildingSkill,jz_Carpenter,jz_HobbiesBuilding"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes"/>
 		<property name="Item" value="resourceCobblestones"/>
@@ -896,6 +897,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0008"/>
+	<property name="UnlockedBy" value="jz_StoneBuildingSkill,jz_Mason,jz_HobbiesBuilding"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="concreteShapes"/>
 		<property name="Item" value="resourceConcreteMix"/>
@@ -931,6 +933,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0009"/>
+	<property name="UnlockedBy" value="jz_ConcreteBuildingSkill,jz_ConcreteMason,jz_HobbiesBuilding"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="steelShapes"/>
 		<property name="Item" value="resourceForgedSteel"/>
@@ -958,6 +961,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="PassThroughDamage" value="true"/>
 	<property name="Texture" value="356"/>
 	<property name="UiBackgroundTexture" value="356"/>
+	<property name="UnlockedBy" value="jz_SteelBuildingSkill,jz_HobbiesBuilding"/>
 	<property class="RepairItems">
 		<property name="jz_SteelSheetMetal" value="8"/>
 	</property>
@@ -1013,6 +1017,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="12"/>
 	<property name="FilterTags" value="MC_Shapes"/>
 	<property name="SortOrder1" value="0013"/>
+	<property name="UnlockedBy" value="jz_IronBuildingSkill,jz_MetalWorker,jz_HobbiesBuilding"/>
 	<property class="RepairItems">
 		<property name="resourceScrapIron" value="12"/>
 	</property>
@@ -1037,13 +1042,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 </block>
 
 <block name="frameShapes" shapes="All">
-	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="Group" value="Building,advBuilding"/>
 	<property name="Tags" value="wood"/>
 	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
 	<property name="Material" value="Mwood_weak_shapes"/>
 	<property name="Texture" value="65"/>
 	<property name="UiBackgroundTexture" value="65"/>
 	<property name="FuelValue" value="100"/>
+	<property name="UnlockedBy" value="jz_WoodBuildingSkill,jz_Carpenter,jz_HobbiesBuilding"/>
 	<property class="RepairItems">
 		<property name="resourceWood" value="3"/>
 	</property>
@@ -7653,7 +7659,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey,MultiBlockDim,OnlySimpleRotations"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DisplayInfo" value="Name"/>
-	<property name="UnlockedBy" value="plantedMushroom1Schematic"/>
+	<property name="UnlockedBy" value="plantedMushroom1Schematic,jz_Farmer"/>
 	<property name="Material" value="Mmushrooms"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="Shape" value="Ext3dModel"/>
@@ -7740,7 +7746,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedYucca1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedYucca1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedYucca1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
@@ -7813,7 +7819,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCotton1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedCotton1Schematic"/>
+	<property name="UnlockedBy" value="plantedCotton1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Texture" value="392"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCottonLv1Random"/><!-- JZMOD -->
@@ -7883,7 +7889,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCoffee1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedCoffee1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedCoffee1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Texture" value="393"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCoffeeLv1Random"/><!-- JZMOD -->
@@ -7954,7 +7960,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CustomIcon" value="plantedGoldenrod1"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedGoldenrod1Schematic"/>
+	<property name="UnlockedBy" value="plantedGoldenrod1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Texture" value="401"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="plantedGoldenrod2"/>
@@ -8024,7 +8030,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedAloe1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedAloe1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedAloe1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
@@ -8098,7 +8104,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedBlueberry1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedBlueberry1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedBlueberry1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
@@ -8170,7 +8176,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedPotato1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedPotato1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedPotato1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
@@ -8242,7 +8248,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedChrysanthemum1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedChrysanthemum1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedChrysanthemum1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Texture" value="550"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedChrysanthemumLv1Random"/><!-- JZMOD -->
@@ -8312,7 +8318,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCorn1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedCorn1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedCorn1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/> <!-- mostly for the particle effect -->
 	<property name="Shape" value="New"/>
 	<property name="Model" value="corn_sprout_shape"/>
@@ -8511,7 +8517,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedHop1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedHop1Schematic"/>	<!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedHop1Schematic,jz_Farmer"/>	<!-- JZMOD -->
 	<property name="Texture" value="447"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedHopLv1Random"/>	<!-- JZMOD -->
@@ -8630,7 +8636,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedPumpkin1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedPumpkin1Schematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="plantedPumpkin1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
@@ -8727,6 +8733,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterExchange" value="imposterBlock" param1="5"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="UnlockedBy" value="jz_SchematicCobblestone"/><!-- JZMOD -->
 	<property class="RepairItems">
 		<property name="resourceClayLump" value="14"/>
 	</property>
@@ -11948,7 +11955,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="LPHardnessScale" value="8"/>
 	<property name="DowngradeBlock" value="cntStorageChest"/>
-	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="Group" value="Building,advBuilding"/>
 	<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -12035,6 +12042,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
 	<property name="FuelValue" value="300"/>
+	<property name="UnlockedBy" value="jz_SchematicWoodenChest,jz_Carpenter"/><!-- JZMOD -->
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
 	</property>
@@ -12738,7 +12746,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="MultiBlockDim" value="1,2,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="27"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="DescriptionKey" value="refrigeratorGroupDesc"/>
+	<property name="DescriptionKey" value="jz_refrigeratorGroupDesc"/>
 	<property name="PreserveBonus" value="7" />
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="10"/>
@@ -12792,6 +12800,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cntRetroFridgeVer1Closed"/>
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelClosedPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="jz_refrigeratorGroupDesc"/>
 	<!--JZMOD CROWBAR-->
 	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/>   
 	<drop event="Destroy" name="cntFridgeStainlessSteel" count="1" prob="1" tool_category="ToolCrowbar"/>   
@@ -12869,6 +12878,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Model" value="#Entities/LootContainers?coolerContainerPlasticFullPrefab.prefab"/>
 	<property name="CustomIcon" value="cntCoolerClosed"/>
+	<property name="DescriptionKey" value="cntCoolerClosedDesc"/>
 	<property name="CustomIconTint" value="183C65"/>
 	<property name="TintColor" value="183C65"/>
 	<property name="PreserveBonus" value="3" />
@@ -14655,6 +14665,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterExchange" value="imposterBlock" param1="18"/>
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="UnlockedBy" value="jz_SchematicSteelSafe"/><!-- JZMOD -->
 	<property name="LootList" value="gunSafe"/>
 	<property name="DowngradeBlock" value="cntGunSafeInsecure"/>
 		<property name="LockPickItem" value="resourceLockPick"/>
@@ -16414,7 +16425,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPickup" value="true" param1="bedrollBlockVariantHelper"/>
 	<!-- A15 <property name="BuffsWhenWalkedOn" value="sleepingBagTrigger"/> -->
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="Group" value="Basics,Building"/>
 	<property class="RepairItems">
 		<property name="resourceYuccaFibers" value="20"/>
 	</property>
@@ -16539,7 +16550,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="bedroll,bedrollRed,bedrollOrange,bedrollYellow,bedrollGreen,bedrollBlue,bedrollPurple,bedrollPink,bedrollGrey,bedrollWhite,bedrollArmyGreen"/>
-	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="Group" value="Basics,Building"/>
 	<property name="PickupJournalEntry" value="shapeMenuTip"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 </block>
@@ -24588,7 +24599,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="spotlightNailedDownPOI"/>
 	<property name="Class" value="Spotlight"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="UnlockedBy" value="spotlightPlayerSchematic"/>
+	<property name="UnlockedBy" value="spotlightPlayerSchematic,jz_Electrician,jz_HobbiesElectronics"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -24622,7 +24633,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="porchLight01"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="UnlockedBy" value="generatorbankSchematic"/>
+	<property name="UnlockedBy" value="jz_SchematicCeilingLight,jz_Electrician,jz_HobbiesElectronics"/>
 	<property name="CustomIcon" value="ceilingLight01"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="Material" value="Mglass"/>
@@ -24658,7 +24669,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Material" value="Mmetal"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 	<property name="UnlockedBy" value="generatorbankSchematic"/><!-- JZMOD -->
-	<property name="CustomIcon" value="industrialLight01"/>
+	<property name="UnlockedBy" value="jz_SchematicCeilingLight,jz_Electrician,jz_HobbiesElectronics"/>
 	<property name="Model" value="Entities/Lighting/player_industrialLight01Prefab"/>
 	<property name="HandleFace" value="South"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
@@ -24670,7 +24681,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="ceilingLight01_player"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-	<property name="UnlockedBy" value="generatorbankSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicCeilingLight,jz_Electrician,jz_HobbiesElectronics"/><!-- JZMOD -->
 	<property name="CustomIcon" value="industrialLight02"/>
 	<property name="Model" value="Entities/Lighting/industrial_light_02_PlayerPrefab Variant"/>
 	<property name="HandleFace" value="Top"/>
@@ -24990,7 +25001,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Generator"/>
 	<property name="DisplayType" value="blockElectricalHardened"/>
-	<property name="UnlockedBy" value="generatorbankSchematic"/>
+	<property name="UnlockedBy" value="generatorbankSchematic,jz_Electrician"/>
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -25149,7 +25160,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="DescriptionKey" value="powerSourceDesc"/>
-	<property name="UnlockedBy" value="batterybankSchematic"/>
+	<property name="UnlockedBy" value="batterybankSchematic,jz_Electrician,jz_HobbiesElectronics"/>
 	<property name="MaxPower" value="400"/>
 	<property name="InputPerTick" value="5"/>
 	<property name="ChargePerInput" value="1"/>
@@ -25220,7 +25231,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="electricwirerelay">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Powered"/>
-	<property name="UnlockedBy" value="generatorbankSchematic"/>
+	<property name="UnlockedBy" value="electrictimerrelaySchematic,jz_Electrician"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -25249,7 +25260,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="switch">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Switch"/>
-	<property name="UnlockedBy" value="switchSchematic"/>
+	<property name="UnlockedBy" value="switchSchematic,jz_Electrician"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -25278,7 +25289,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="PressurePlate"/>
 	<property name="DisplayType" value="blockElectricalHardened"/>
-	<property name="UnlockedBy" value="pressureplateSchematic"/>
+	<property name="UnlockedBy" value="pressureplateSchematic,jz_Electrician"/>
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
@@ -25371,7 +25382,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="motionsensor">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="MotionSensor"/>
-	<property name="UnlockedBy" value="motionsensorSchematic"/>
+	<property name="UnlockedBy" value="motionsensorSchematic,jz_Electrician"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -25429,7 +25440,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="electrictimerrelay">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="TimerRelay"/>
-	<property name="UnlockedBy" value="electrictimerrelaySchematic"/>
+	<property name="UnlockedBy" value="electrictimerrelaySchematic,jz_Electrician"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -25461,7 +25472,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="speaker">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Speaker"/>
-	<property name="UnlockedBy" value="speakerSchematic"/>
+	<property name="UnlockedBy" value="speakerSchematic,jz_Electrician,jz_HobbiesElectronics"/>
 	<property name="PlaySound" value="alarm1"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -25515,7 +25526,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="electricfencepost">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="ElectricWire"/>
-	<property name="UnlockedBy" value="electricfencepostSchematic"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="electricfencepostSchematic,jz_Electrician,jz_HobbiesElectronics"/><!-- JZMOD -->
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -26156,7 +26167,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_doors"/>
 	<property name="SortOrder1" value="7060"/>
 	<property name="SortOrder2" value="0100"/>
-	<property name="UnlockedBy" value="jz_SchematicWoodenDoors"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicWoodenDoors,jz_Carpenter"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -26297,7 +26308,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_doors"/>
 	<property name="SortOrder1" value="7060"/>
 	<property name="SortOrder2" value="0300"/>
-	 <property name="UnlockedBy" value="jz_SchematicIronDoors"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicIronDoors,jz_MetalWorker"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -26485,6 +26496,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_building,SC_doors"/>
+	<property name="UnlockedBy" value="jz_SchematicWoodenDoors,jz_Carpenter"/><!-- JZMOD -->
 </block>
 
 <block name="cellarDoorDoubleIron">
@@ -26529,6 +26541,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="60"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_building,SC_doors"/>
+	<property name="UnlockedBy" value="jz_SchematicIronDoors,jz_MetalWorker"/><!-- JZMOD -->
 </block>
 
 <block name="cellarDoorDoubleSteel">
@@ -26569,6 +26582,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="432"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_building,SC_doors"/>
+	<property name="UnlockedBy" value="jz_SchematicSteelDoors"/><!-- JZMOD -->
 </block>
 
 <block name="shuttersWood01">
@@ -27756,7 +27770,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CloseSound" value="close_hatch_wood"/>
 	<property name="FuelValue" value="200"/>
 	<property class="RepairItems">
-		<property name="resourceWood" value="3"/>
+		<property name="resourceWood" value="4"/>
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodHatch1_v2"/>
@@ -27774,7 +27788,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_doors"/>
 	<property name="SortOrder1" value="7060"/>
 	<property name="SortOrder2" value="0500"/>
-	<property name="UnlockedBy" value="jz_SchematicWoodenDoors"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicWoodenDoors,jz_Carpenter"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -27842,12 +27856,12 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="open_hatch_scrap"/>
 	<property name="CloseSound" value="close_hatch_scrap"/>
 	<property class="RepairItems">
-		<property name="resourceScrapIron" value="40"/>
+		<property name="jz_IronSheetMetal" value="4"/>
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapHatch_v2"/>
-		<property name="Item" value="resourceScrapIron"/>
-		<property name="ItemCount" value="40"/>
+		<property name="Item" value="jz_IronSheetMetal"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="5"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
@@ -27859,7 +27873,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_doors"/>
 	<property name="SortOrder1" value="7060"/>
 	<property name="SortOrder2" value="0520"/>
-	<property name="UnlockedBy" value="jz_SchematicIronDoors"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicIronDoors,jz_MetalWorker"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -30265,7 +30279,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#Other/Items?Weapons/Explosive/trapMineCookingPot_01Prefab.prefab"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="UnlockedBy" value="jz_SchematicCookingPotMine"/><!-- JZMOD -->
+	<property name="UnlockedBy" value="jz_SchematicCookingPotMine,jz_Soldier"/><!-- JZMOD -->
 	<property name="Stacknumber" value="25"/> <!-- STK explosives -->
 	<property name="Explosion.RadiusBlocks" value="2"/>
 	<property name="Explosion.RadiusEntities" value="3"/>
@@ -31014,6 +31028,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="farmPlotBlockPlayer,farmPlotBlockPlayerCornerRound,farmPlotBlockPlayerRaised"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicFarmPlot,jz_Farmer"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -31025,6 +31040,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="shuttersWood01,shuttersWood02"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicWoodenDoors,jz_Carpenter"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -31036,6 +31052,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="shuttersIron01,shuttersIron02"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicIronDoors,jz_MetalWorker"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -31047,6 +31064,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="shuttersSteel01,shuttersSteel02"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicSteelDoors"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -31091,6 +31109,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="rollUpDoor3x3Brown,rollUpDoor3x3Red,rollUpDoor3x3Orange,rollUpDoor3x3Yellow,rollUpDoor3x3Green,rollUpDoor3x3Blue,rollUpDoor3x3Purple,rollUpDoor3x3Grey,rollUpDoor3x3White,rollUpDoor3x3Black,rollUpDoor3x3Pink"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicRollUpDoor"/><!-- JZMOD -->
 </block>
 <!-- NOT_A_SHAPE -->
 
@@ -31102,6 +31121,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="rollUpDoor5x4Brown,rollUpDoor5x4Red,rollUpDoor5x4Orange,rollUpDoor5x4Yellow,rollUpDoor5x4Green,rollUpDoor5x4Blue,rollUpDoor5x4Purple,rollUpDoor5x4Grey,rollUpDoor5x4White,rollUpDoor5x4Black,rollUpDoor5x4Pink"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicRollUpDoor"/><!-- JZMOD -->
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -31113,6 +31133,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SelectAlternates" value="true"/>
 	<property name="PlaceAltBlockValue" value="rollUpDoor7x4Brown,rollUpDoor7x4Red,rollUpDoor7x4Orange,rollUpDoor7x4Yellow,rollUpDoor7x4Green,rollUpDoor7x4Blue,rollUpDoor7x4Purple,rollUpDoor7x4Grey,rollUpDoor7x4White,rollUpDoor7x4Black,rollUpDoor7x4Pink"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="UnlockedBy" value="jz_SchematicRollUpDoor"/><!-- JZMOD -->
 </block>
 
 <!-- *** LEVEL_DESIGN_VARIANT_HELPER_BLOCKS -->
@@ -33400,7 +33421,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OpenSound" value="open_workbench"/>
 	<property name="CloseSound" value="close_workbench"/>
 	<property class="RepairItems"> <property name="resourceRockSmall" value="8"/> </property>
-	<property name="Group" value="Basics"/>
 	<property name="DescriptionKey" value="jz_CharacterChoiceComputerDesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="0"/>
@@ -33594,7 +33614,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<drop event="Destroy" count="0" />
-	<property name="Group" value="Basics" />
+	<property name="Group" value="Food/Cooking,Science" />
     <property name="ItemTypeIcon" value="chemistryStationIcon"/>
 	<property name="TakeDelay" value="15"/>
 </block>
@@ -33624,7 +33644,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CraftSound" value="chem_station_mix_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
 	<drop event="Destroy" count="0" />
-	<property name="Group" value="Basics" />
+	<property name="Group" value="Building" />
 	<property name="TakeDelay" value="15"/>
 </block>
 
@@ -33702,7 +33722,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<property name="Group" value="Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -33752,7 +33772,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -33802,7 +33821,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -33849,7 +33867,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -33899,7 +33916,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -33949,7 +33965,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -33999,7 +34014,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -34049,7 +34063,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapIron" value="5"/>
 	</property>
 	<drop event="Destroy" name="resourceScrapIron" count="3"/>
-	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="DescriptionKey" value="ImprovisedCampfireDesc"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -34090,7 +34103,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
+	<property name="Group" value="Basics,Ammo/Weapons" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34141,7 +34154,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34192,7 +34204,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34243,7 +34254,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34294,7 +34304,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34345,7 +34354,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34391,7 +34399,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
+	<property name="Group" value="Ammo/Weapons" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34444,7 +34452,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34497,7 +34504,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34550,7 +34556,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34603,7 +34608,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -34656,7 +34660,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="0"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property name="Group" value="Basics" />
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
 	<property name="SortOrder1" value="70i0"/>
 	<property name="HeatMapStrength" value="2"/>
@@ -40127,7 +40130,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedCarrot1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="jz_SchematicCarrotSeed"/>
+	<property name="UnlockedBy" value="jz_SchematicCarrotSeed,jz_Farmer,jz_HobbiesGardening"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCarrotLv1Random"/>
@@ -40299,7 +40302,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedWheat1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="jz_SchematicWheatSeed"/>
+	<property name="UnlockedBy" value="jz_SchematicWheatSeed,jz_Farmer"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZFarmWheat1.unity3d?FarmWheat1Prefab" />
 	<property name="PlantGrowing.Next" value="jz_PlantedWheatLv1Random"/>
@@ -40466,7 +40469,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedEggPlant1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="jz_SchematicEggPlantSeed"/>
+	<property name="UnlockedBy" value="jz_SchematicEggPlantSeed,jz_Farmer,jz_HobbiesGardening"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedEggPlantLv1Random"/>
@@ -41122,7 +41125,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FuelValue" value="5"/>
 	<property name="CanPickup" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="Group" value="Basics,Building"/>
 	<drop event="Harvest" name="resourceYuccaFibers" count="5" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceYuccaFibers" count="1,3"/>
 	<drop event="Fall" name="resourceYuccaFibers" count="5" prob="1" stick_chance="0"/>
@@ -41137,7 +41140,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedOrange1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="jz_SchematicOrangeSeed"/>
+	<property name="DescriptionKey" value="plantedTreeGroupDesc"/>
+	<property name="UnlockedBy" value="jz_SchematicOrangeSeed,jz_Farmer"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="MultiBlockDim" value="3,4,3"/>
@@ -41145,6 +41149,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
   	<property name="PlantGrowing.Next" value="jz_PlantedOrange1Dry"/>
     <property name="Group" value="Food/Cooking"/>
     <property name="BigDecorationRadius" value="4"/>
+	<property name="PlantGrowing.FertileLevel" value="16"/>
     <property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedFertilizedOrange1"/>
 		<property name="Item" value="resourceFertilizer"/>
@@ -41529,6 +41534,29 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="steelShapes:cube"/>
 	</property>
+</block>
+
+<block name="jz_SimpleLogBlock">
+	<property name="Material" value="Mwood_regular"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Texture" value="43"/>
+	<property name="Path" value="solid"/>
+	<property name="DescriptionKey" value="jz_SimpleLogBlockDesc"/>
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="Group" value="Basics,Building"/>
+	<property class="RepairItems">
+		<property name="jz_FreshTimber" value="2"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodShapes:cube"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>	
+	 <!--JZMOD ANY-->
+	<drop event="Harvest" name="jz_Stick" count="12" prob="1" tag="allHarvest" />
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob=".75" stick_chance="1" />
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block name="jz_SimpleScaffoldingBlock">

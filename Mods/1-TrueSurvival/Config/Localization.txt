@@ -7,8 +7,14 @@ Key,English
 jz_QZSoldierRadiated,"Security Soldier"
 
 BUFF_________________________XML,BUFF_________________________XML
-
-
+jz_buffStatusThirsty03Desc,"You are dying of dehydration! Find something to drink!\nHealth and stamina are recovering slower.\nEffects:\n-1 Wellness every 5 min\nYour maximum stamina is lowered by {cvar($buffStatusThirstyBlockage:0.0)}."
+jz_buffStatusHungry03Desc,"You are dying of starvation. You need to find something to eat.\nEffects:\n-1 Wellness every 5 min\nYour maximum stamina is lowered by {cvar($buffStatusHungryBlockage:0.0)}."
+jz_buffInfectionCureDisplayName,"Antiviral Medicine"
+jz_buffInfection01UntreatedName,"Early Z-Virus Infection"
+jz_buffInfection02UntreatedName,"Advanced Z-Virus Infection"
+jz_buffInfection03UntreatedName,"Severe Z-Virus Infection"
+jz_buffInfection02GetBetterName,"Treated Z-Virus Infection"
+jz_buffInfection03GetBetterName,"Treated Severe Z-VirusInfection"
 jz_BuffExhaustedDesc,"Your high Fatigue level is sapping your energy, rest on furniture or sleep on a bed to lower your Fatigue" 
 jz_BuffBadDietDesc,"Your diet is not very healthy and it is starting to effect you. Try eating foods that contains all the vitamin groups.\n\n-1 Stamina per 5 sec"
 jz_BuffVitaminDeficiencyDesc,"Your poor diet means your not getting all the nutrition you need and its slowing you down. Cook and eat meals that contains all the vitamin groups to improve your diet.\n\n-1 Stamina per 4 sec\n-5% Mobility"
@@ -30,10 +36,10 @@ jz_BuffWarningStageWeakDesc,"Your diet is lacking in foods that contain Fiber an
 jz_BuffStageWeakDesc,"Your diet is severely lacking in Fiber and it’s making you ill. You are suffering from Weakness. Eat more foods that contain Fiber to heal from this.\n\nEffects:\n20% More Stamina Loss\nTo Weak to use Two Handed Weapons\nTo Weak to use Power Attacks"
 jz_BuffZombieBiteBleedingDesc,"You have suffered a [f21b10]Zombie Bite[-] and are bleeding badly. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffDirtyZombieBiteCauterizeDesc,"Now that you have treated the bleed you will need to carturize  [f21b10]Zombie Bite[-] with a [35bd00]Red Hot Pipe[-] to close the wound. If not treated it will lead to a [f21b10]Medical Infection[-]"
-jz_BuffDirtyZombieBiteBurnDesc,"The [f21b10]Zombie Bite[-] is carturized but now the burn must be treated with a [35bd00]Medical Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffDirtyZombieBiteBurnDesc,"The [f21b10]Zombie Bite[-] is carturized but now the burn must be treated with a [35bd00]First Aid Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffZombieBiteTendedDesc,"The [f21b10]Zombie Bite[-] is bandaged and healing. After some time you will need to cleanse and re bandage the wound."
 jz_BuffZombieBiteDirtyNeedsCleansingDesc,"Your bandage has gotten dirty and needs to be changed. First you will need to use a [35bd00]Cleansing Wash[-] to clean the wound. If not treated it will lead to a [f21b10]Medical Infection[-]"
-jz_BuffZombieBiteDirtyNeedsBandageDesc,"Now that your [f21b10]Zombie Bite[-] wound is clean you will need to treat it with a [35bd00]Medical Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
+jz_BuffZombieBiteDirtyNeedsBandageDesc,"Now that your [f21b10]Zombie Bite[-] wound is clean you will need to treat it with a [35bd00]First Aid Bandage[-]. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffZombieBiteTendedBDesc,"The [f21b10]Zombie Bite[-] is bandaged and healing. After some time you will need to re-bandage it to allow it to continue healing."
 jz_BuffZombieBiteDirtyNeedsBandageBDesc,"Your bandage has gotten dirty and needs to be changed. You will need to use a [35bd00]Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]"
 jz_BuffZombieBiteTendedCDesc,"The [f21b10]Zombie Bite[-] is bandaged. Try not to hurt it so it will finish healing."
@@ -167,52 +173,52 @@ jz_BuffBrokenNeckDesc,"You have broken your neck. Use a [35bd00]Splint[-] or [35
 jz_BuffNeckSplintedDesc,"Your neck is splinted and healing. Try not to hurt it while its healing\n\nEffects:\n4% Less Weapon Handling\n5% Slower Reloading\n4% Less Attacks Per Minute\n{cvar(.NeckHealthBlockage:0)} Health Blockage"
 jz_BuffNeckCastDesc,"Your neck is in a cast and healing. Try not to hurt it while its healing\n\nEffects:\n4% Less Weapon Handling\n5% Slower Reloading\n4% Less Attacks Per Minute\n{cvar(.NeckHealthBlockage:0)} Health Blockage"
 jz_BuffGashLeftFootDesc,"You recived a large gash on your left foot. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashLeftFootDesc,"The gash on your left foot is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashLeftFootDesc,"The gash on your left foot is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashLeftFootDryingDesc,"The gash on your left foot is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashLeftFootNeedsBandageDesc,"The gash on your left foot is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashLeftFootTendedDesc,"The gash on your left foot is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashRightFootDesc,"You recived a large gash on your right foot. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashRightFootDesc,"The gash on your right foot is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashRightFootDesc,"The gash on your right foot is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashRightFootDryingDesc,"The gash on your right foot is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashRightFootNeedsBandageDesc,"The gash on your right foot is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashRightFootTendedDesc,"The gash on your right foot is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashLeftLegDesc,"You recived a large gash on your left leg. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashLeftLegDesc,"The gash on your left leg is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashLeftLegDesc,"The gash on your left leg is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashLeftLegDryingDesc,"The gash on your left leg is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashLeftLegNeedsBandageDesc,"The gash on your left leg is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashLeftLegTendedDesc,"The gash on your left leg is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashRightLegDesc,"You recived a large gash on your right leg. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashRightLegDesc,"The gash on your right leg is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashRightLegDesc,"The gash on your right leg is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashRightLegDryingDesc,"The gash on your right leg is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashRightLegNeedsBandageDesc,"The gash on your right leg is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashRightLegTendedDesc,"The gash on your right leg is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashLeftArmDesc,"You recived a large gash on your left arm. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashLeftArmDesc,"The gash on your left arm is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashLeftArmDesc,"The gash on your left arm is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashLeftArmDryingDesc,"The gash on your left arm is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashLeftArmNeedsBandageDesc,"The gash on your left arm is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashLeftArmTendedDesc,"The gash on your left arm is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashRightArmDesc,"You recived a large gash on your right arm. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashRightArmDesc,"The gash on your right arm is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashRightArmDesc,"The gash on your right arm is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashRightArmDryingDesc,"The gash on your right arm is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashRightArmNeedsBandageDesc,"The gash on your right arm is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashRightArmTendedDesc,"The gash on your right arm is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashLeftHandDesc,"You recived a large gash on your left hand. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashLeftHandDesc,"The gash on your left hand is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashLeftHandDesc,"The gash on your left hand is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashLeftHandDryingDesc,"The gash on your left hand is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashLeftHandNeedsBandageDesc,"The gash on your left hand is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashLeftHandTendedDesc,"The gash on your left hand is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashRightHandDesc,"You recived a large gash on your right hand. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashRightHandDesc,"The gash on your right hand is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashRightHandDesc,"The gash on your right hand is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashRightHandDryingDesc,"The gash on your right hand is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashRightHandNeedsBandageDesc,"The gash on your right hand is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashRightHandTendedDesc,"The gash on your right hand is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashNeckDesc,"You recived a large gash on your neck. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashNeckDesc,"The gash on your neck is dirty and needs to be cleansed. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashNeckDesc,"The gash on your neck is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashNeckDryingDesc,"The gash on your neck is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashNeckNeedsBandageDesc,"The gash on your neck is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashNeckTendedDesc,"The gash on your neck is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
 jz_BuffGashStomachDesc,"You recived a large gash on your stomach. Use a [35bd00]Bandage[-] to stop the bleeding. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
-jz_BuffDirtyGashStomachDesc,"The gash on your stomach is dirty and needs to be cleansed. If not treated it will lead to an [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
+jz_BuffDirtyGashStomachDesc,"The gash on your stomach is dirty and needs to be cleansed using a [35bd00]Cleansing Wash[-]. If not treated it will lead to an [f21b10]Medical Infection[-]\n\nEffects:\n-.05 Stamina Per Second\n3% Slower Mobility\n5% Slower Crafting"
 jz_BuffGashStomachDryingDesc,"The gash on your stomach is clean and drying off. Once its dry it will need bandaging\n\nEffects:\n-.02 Stamina Per Second\n2% Slower Mobility\n3% Slower Crafting"
 jz_BuffGashStomachNeedsBandageDesc,"The gash on your stomach is dry and needs a [35bd00]First Aid Bandage[-] to continue healing. If not treated it will lead to a [f21b10]Medical Infection[-]\n\nEffects:\n-.04 Stamina Per Second\n3% Slower Mobility\n4% Slower Crafting"
 jz_BuffGashStomachTendedDesc,"The gash on your stomach is bandaged and healing. Try not to get hurt so it will heal.\n\nEffects:\n-.01 Stamina Per Second\n1% Slower Mobility\n2% Slower Crafting"
@@ -279,6 +285,10 @@ jz_BuffFireBurnNeckHealingDesc,"Your burn wound is bandaged. Try not to hurt it 
 
 
 BLOCK_________________________XML,BLOCK_________________________XML
+
+corrugatedMetalShapes:VariantHelper,"Iron Shapes"
+jz_SimpleLogBlock,"Log Cabin Block"
+jz_SimpleLogBlockDesc,"Fresh Timber sealed with clay. Not the strongest block but its a start"
 jz_SimpleIronFrame,"Simple Iron Cube Frame"
 jz_SimpleIronRampFrame,"Simple Iron Ramp Frame"
 ImprovisedCampfireDesc,"A improvised Campfire for cooking and keeping warm"
@@ -301,7 +311,7 @@ jz_SimpleIronShapesBlockDesc,"Basic Iron block shapes"
 jz_SimpleWoodShapesBlock,"Simple Wood Shapes"
 jz_SimpleWoodShapesBlockDesc,"Basic Wood block shapes"
 jz_refrigeratorGroupDesc,"A modern refrigerator, its seen better days but will still do a good job of stopping perishable goods from spoiling when used for storage."
-jz_cntCoolerClosedDesc,"A well insulated Cooler that can be used to store and slow the spoiling of perishable goods."
+cntCoolerClosedDesc,"A well insulated Cooler that can be used to store and slow the spoiling of perishable goods."
 jz_trapSpikesIronDmg0Dec,"Iron Pipes sharpened and bolted together.\n\nRepair with Iron Pipes using a Wrench"
 jz_ZombieLoot,"Zombie Corpse"
 jz_QISatRadioStation,"Satellite Radio"
@@ -325,8 +335,8 @@ jz_MethaneProducer,Methane Producer
 jz_MethaneProducerDesc,"A homemade system for capturing methane from rotting material. Can refill old propane tanks to use as bombs."
 jz_MethaneTankBomb,Methane Bomb
 jz_MethaneTankBombDesc,"A old propane tank filled with methane. Place on the ground and shoot to cause a large explosion that does no damage to blocks."
-plantedCropsGroupDesc,Plant these seeds on soil or a Farm Plot to grow crops to harvest. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water
-jz_RifleSkillTag,Unlooted Corpse
+plantedCropsGroupDesc,"Plant these seeds on soil or a Farm Plot to grow crops to harvest. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water"
+plantedTreeGroupDesc,"Plant these seeds on soil to grow trees to harvest. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water"
 jz_CharacterChoiceComputer,Starting Options
 jz_CharacterChoiceComputerDesc,"Immediately place on the ground and use to chose your players starting stats and knowledge"
 jz_TrapWoodenSpikeStarter,Spike Trap Starter
@@ -744,8 +754,11 @@ jz_PlayerMPCoolerDesc,"Combined with a Landclaim Block this is a secure food sto
 
 ITEM_________________________XML,ITEM_________________________XML
 
-jz_foodCropYuccaFruitDesc,"Yucca fruit is edible and 3 can be scraped into a Fruit Serving, they can used to craft Fruit Juice to drink to gain hydration and Essential Vitamins. It is harvested from cacti and yucca plants."
 
+jz_resourceBulletCasingDesc,"Bullet casings can be crafted at the forge and are used to craft firearm ammunition\n\nUnlock by learning any bullet recipe"
+jz_resourceBulletTipDesc,"Bullet tips can be crafted at the forge and are used to craft firearm ammunition\n\nUnlock by learning any bullet recipe"
+
+jz_foodCropYuccaFruitDesc,"Yucca fruit is edible and 3 can be scraped into a Fruit Serving, they can used to craft Fruit Juice to drink to gain hydration and Essential Vitamins. It is harvested from cacti and yucca plants."
 jz_vehiclePlaceableGroupDesc,"This vehicle can be placed into the world like a block using the secondary action.\n\nRequires a workbench to craft.\nRequires Scavenged Parts to repair."
 jz_QIWorkbenchUpgradesImprovisedQL3Redo,"Improvised Upgrade Lv3"
 jz_QIWorkbenchUpgradesImprovisedQL4Redo,"Improvised Upgrade Lv4"
@@ -1143,6 +1156,7 @@ jz_drinkJarEmptyDesc,"An empty glass jar can be used to make refreshing drinks o
 jz_resourceDuctTapeDesc,"Duct tape is useful for making many things & according to Madmole MacDyver a must have resource for making the cooler stuff.\n\nThe secretes to its reproduction have been lost to the dead and it can only be found scavenging\nScrap to Adhesives"
 jz_ScrapSteel,"Scrap Steel"
 jz_ScrapSteelDesc,"Assorted scraps of steel. Smelt in a Steel Forge to craft into new objects"
+smallEngine,"Small Engine"
 jz_smallEngineDesc,"A working engine for a small vehicle or generator.\n\nRepair with Scavenged Parts"
 jz_EmptyPropaneTank,"Propane Tank(Empty)"
 jz_EmptyPropaneTankDesc,"A old empty propane tank that can be refilled for other uses in the Methane Producer"
@@ -1425,8 +1439,8 @@ meltedRubberDesc,"Rubber thats been melted down to be more pliable for crafting.
 jz_MeltedRubber,Melted Rubber
 gunOilDesc,"Specialty Oil needed to clean and maintain firearms" 
 jz_GunOil,Gun Oil
-weaponRepairKitDesc,"Everything needed to clean and repair a firearm."
-jz_WeaponRepairKit,Weapon Repair Kit
+weaponRepairKitDesc,"Everything needed to clean and repair a Turret."
+jz_WeaponRepairKit,"Turret Repair Kit"
 inkPenDesc,"A working ink pen needed to research a unknown crafting recipe."
 jz_InkPen,Ink Pen
 ScavengedPartsDesc,"Scavenged parts and supplies that can be used to repair vehicles."
@@ -1447,7 +1461,7 @@ jz_BrainMatterDesc,"Chunky hunks of fresh brain matter. Ewwwwww!"
 jz_BrainMatter,Brain Matter
 jz_AnimalHideDesc,"Animal Hide freshly skinned from a dead animal. Must be processed before it decays."
 jz_AnimalHide,Animal Hide
-stickDesc,"Scrap of wood. Can be used to collect grass"
+stickDesc,"Scrap of wood. Can be used in hand to collect grass and can be used as a tool in the Campfire"
 jz_Stick,Stick
 jz_BulletPressDesc,"A machine that allows the manual assembling of ammunition."
 jz_BulletPress,Bullet Press
@@ -1532,7 +1546,7 @@ jz_DrinkMead,Mead
 jz_medicalBandageDesc,"A simple bandage that can be used to stop [f21b10]Bleeding[-] and treat many injuries\n\nUse the secondary action to treat another player."
 jz_medicalFirstAidBandageDesc,"A bandages coated in [00d537]Plant Salve[-] that can be used to stop [f21b10]Bleeding[-] and treat injuries and burns\n\nUse the secondary action to treat another player."
 jz_medicalFirstAidKitDesc,"A First Aid Kit uses all the contained medical items at once.\n\nUse the secondary action to unpack the kit and retrive the medical items"
-jz_MedicalCleansingWash,"Cleasing Wash"
+jz_MedicalCleansingWash,"Cleansing Wash"
 jz_MedicalCleansingWashDesc,"Sterile Saline Solution and a clean rag. Used to clean wounds and prevent a [f21b10]Medical Infection[-]"
 redHotDesc,"A burning red hot pipe that can be used to cauterize a [f21b10]Bite[-] or [f21b10]Puncher Wound[-]. Its really gone hurt though"
 jz_medicalSplintDesc,"Heals broken bones but does not protect against further injury.\n\nUse the secondary action to heal another player."
@@ -1778,6 +1792,7 @@ jz_IronAerosolCan,"Junk Spray Can"
 jz_IronStatue,"Junk Statue"
 jz_IronAshtray,"Junk Ashtray"
 jz_IronUtensils,"Junk Utensils"
+jz_IronNeedle,"Needle"
 jz_IronHanger,"Junk Hangers"
 jz_PlasticStatue,"Junk Statue"
 jz_PlasticToy,"Junk Toy"
@@ -1838,7 +1853,7 @@ jz_ExposivesSkillDesc,"Gain experience by damaging enemies using Explosives to i
 jz_FireFighterDesc,"As a volunteer FireFighter you learned how to fight fires and to use an axe like a pro."
 jz_FireFighterLongDesc,"Starts With: Old Axe\n20% Block Dmg w/Fireaxes\nFull Set of Firemans Almanacs Books\nRecipes- Plant Salve, Molotov Cocktail"
 jz_PoliceOfficerDesc,"As a Police Officer you got plenty of time on the range and became an specialist with a Handgun"
-jz_PoliceOfficerLongDesc,"Starts With: Old Pistol & 9mm(20)\n10% Faster Reload, better Aim & Handling w/Handguns\nUnique Recipes - Gun Oil\nRecipes- Pistol, Stun Baton, Weapon Repair Kit"
+jz_PoliceOfficerLongDesc,"Starts With: Old Pistol & 9mm(20)\n10% Faster Reload, better Aim & Handling w/Handguns\nUnique Recipes - Gun Oil\nRecipes- Pistol, Stun Baton, Turret Repair Kit"
 jz_ParkRangerDesc,"As a Park Ranger you became an specialist with a rifle and learned how useful many of the plants and trees could be."
 jz_ParkRangerLongDesc,"Starts With: Old Rifle & 762mm(20)\n10% Faster Reload, better Aim & Handling w/Rifles\n20% Faster Primitive Crafting\nRecipes- Herbal Antibiotics, All Spears"
 jz_BouncerDesc,"As a Bouncer you became an specialist with your hands and pretty good at making beer."
@@ -1854,7 +1869,7 @@ jz_MasonLongDesc,"Starts With: Mason Hammer\nThe ability to use the Mason Hammer
 jz_ConcreteMasonDesc,"Your time as a Concrete Mason has allowed you to master Concrete Building."
 jz_ConcreteMasonLongDesc,"Starts With: Concrete Sledge\nThe ability to use the  Concrete Sledge as a weapon\n20% Faster Crafting on the Cement Mixer\nMastered Concrete Building Skill"
 jz_SoldierDesc,"As a Soldier you went through hell so this all just seems like another day. Machine Gun Specialist."
-jz_SoldierLongDesc,"Starts With: Old Rifle & 762mm(20)\n10% Faster Reload, better Aim & Handling w/Machine Guns\n100% Resistance to Food Poisoning from Grubs\nUnique Recipes - Grubs\nRecipes - Weapon Repair Kit, Pipe Machine Gun, AK47, Pipe Bomb, Cooking Pot Mine"
+jz_SoldierLongDesc,"Starts With: Old Rifle & 762mm(20)\n10% Faster Reload, better Aim & Handling w/Machine Guns\n100% Resistance to Food Poisoning from Grubs\nUnique Recipes - Grubs\nRecipes - Turret Repair Kit, Pipe Machine Gun, AK47, Pipe Bomb, Cooking Pot Mine"
 jz_FitnessInstructorDesc,"As a Fitness Instructor you always had time for cardio"
 jz_FitnessInstructorLongDesc,"Starts With: Baseball Bat\n10% Faster Running & Walking\n5% Less Stamina used while running\nRecipes- Golden Rod Tea, Red Tea, Mega Crush, Vitamins"
 jz_ElectricianDesc,"Your time as a Electrician has allowed you to master working with electronics"
@@ -1991,6 +2006,61 @@ Quest_________________________XML,Quest_________________________XML
 tutorialTipQuest01_title,"True Survival"
 tutorialTipQuest01,"To begin, place your 'Start Here' starting item on the ground to choose your characters stats and abilities for this play through. You will start with 3 Knowledge Points that can be used to select your Profession, Hobby and Trait. Any combination can be chosen but these options do not stack. Additional Professions can be acquired by collecting Profession Pages found in loot." 
 jzquest_Starting,Getting Started
+
+
+jzquest_TutorialPt1,"Tutorial Part 1"
+jzquest_TutorialPt1Sub,"Use a stick to gather fibers"
+jzquest_TutorialPt1Desc,"Punching things with your bare hands will hurt you. Find and use a Stick to gather Plant Fibers. Use the Plant Fibers to craft a Resting Spot that you can stand on to Heal both your Health and your Fatigue(max Stamina). Resting Spots are not used for respawning and do not effect your bed"
+jz_TrueSurvivalTutorialTip1,"Find a Stick and use it in your hand to collect Plant Fibers."
+jz_TrueSurvivalTutorialTip1_title,"Use Sticks To Gather"
+jz_TrueSurvivalTutorialTip1B,"Use the Stick in your hand to collect Plant Fibers."
+jz_TrueSurvivalTutorialTip1B_title,"Use the Stick" 
+
+jzquest_TutorialPt2,"Tutorial Part 2"
+jzquest_TutorialPt2Sub,"Sleeping In Beds Heals You"
+jzquest_TutorialPt2Desc,"Use the Plant Fibers to craft a Resting Spot. Resting Spots and Beds can be stood on to Heal both your Health and your Fatigue(max Stamina). Resting Spots are not used for respawning and do not replace your placed bed"
+jz_TrueSurvivalTutorialTip2,"Beds will raise you Health and lower your\nFatigue(raise Max Stamina)"
+jz_TrueSurvivalTutorialTip2_title,"Sleeping Heals"
+
+
+jzquest_TutorialPt3,"Tutorial Part 3"
+jzquest_TutorialPt3Sub,"Craft Drinks"
+jzquest_TutorialPt3Desc,"Water is by the ounce. Craft a Clean Drink of Water for better hydration"
+jz_TrueSurvivalTutorialTip3,"Water is by the ounce. Craft a Clean Drink of Water for better hydration"
+jz_TrueSurvivalTutorialTip3_title,"Craft a Drink of Water"
+
+jzquest_TutorialPt4,"Tutorial Part 4"
+jzquest_TutorialPt4Sub,"Scraping Raw Foods"
+jzquest_TutorialPt4Desc,"Some raw foods like Vegetables, Fruits and Grains(Flour/Corn Meal) can be scraped into Servings and used in crafting recipes. Find some wild potatos and carrots to scrap to make a salad"
+jz_TrueSurvivalTutorialTip4,"Some raw foods like Vegetables, Fruits and Grains(Flour/Corn Meal) can be scraped into Servings and used in crafting recipes. Find some wild potatos and carrots to scrap to make a salad"
+jz_TrueSurvivalTutorialTip4_title,"Scraping Raw Foods"
+
+jzquest_TutorialPt5,"Tutorial Part 5"
+jzquest_TutorialPt5Sub,"Scaffolding"
+jzquest_TutorialPt5Desc,"Scaffolding are easy blocks to make that can be picked back up. Good for helping you get to hard to reach placesbut remember there is no Nerd Poling in True Survival"
+
+jzquest_TutorialPt6,"Tutorial Part 6"
+jzquest_TutorialPt6Sub,"Building with no Tool"
+jzquest_TutorialPt6Desc,"Log Cabin Blocks are the only building blocks that can be crafted without tools and using basic supplies. For stronger blocks you will need to find a Building Tool and supplies."
+
+jzquest_TutorialPt7,"Tutorial Part 7"
+jzquest_TutorialPt7Sub,"Collecting Water"
+jzquest_TutorialPt7Desc,"Glass Jars are only used for crafted drinks. To collect water from a body of water craft a Old Milk Jug and use that in your hand to collect water. It will need to be filtered and boiled before its safe to drink"
+jz_TrueSurvivalTutorialTip7,"Use Old Milke Jugs to collect water"
+jz_TrueSurvivalTutorialTip7_title,"Collecting Water"
+
+jzquest_TutorialPt8,"Tutorial Part 8"
+jzquest_TutorialPt8Sub,"Preserving Food"
+jzquest_TutorialPt8Desc,"Most foods will spoil. To slow down the spoil timer place food in a Cooler or Refrigerator. Refrigerators can be picked up with a Crowbar"
+jz_TrueSurvivalTutorialTip8,"Destroy a Cooler to use it as food storage"
+jz_TrueSurvivalTutorialTip8_title,"Preserving Food"
+
+jzquest_TutorialPt9,"Tutorial Part 9"
+jzquest_TutorialPt9Sub,"Improve your Diet"
+jzquest_TutorialPt9Desc,"Most foods have added nutrition stats. They include Protein from Meat, Fiber from Vegetables and Essential Vitamins from Fruit. These stats can be found on the foods stat info screen. Your lowest nutrition stat will determine your Diet so you will need to balance your nutrition consumption to stay healthy. To view your current nutrition stats open your character info screen and they will be located at the bottom. If any of your nutrition stats get too low or too high you will suffer unique illnesses depending on the stat and the level."
+jz_TrueSurvivalTutorialTip9,"Raise all your Nutrition Stats to at lest 11.0 for the best Diet benefits."
+jz_TrueSurvivalTutorialTip9_title,"Nutrition"
+
 jzquest_StoryLinePt1,"1 Storyline Quest Pt1: The Get Away!"
 jzquest_StoryLinePt1Sub,"Set Up Camp"
 jzquest_StoryLinePt1Desc,"You barley made it out of there alive. Another camp torn to shreds by a unstoppable Horde. So many killed...so many screams... No time to dwell on it now, you were able to grab a Bug Out Bag but its not safe to go through it here, not if you want to live. Find or make a safe place to set up camp and go through your bag." 
@@ -2096,6 +2166,10 @@ jz_statCureInfection,"Medical Infection"
 jz_statCureZVirusInfection,"Z- Virus Infection"
 jz_statStaminaMaxBlockage,"Fatigue Level"
 TSProteinFruitVeggieDisp,"Protein, Vitamins & Fiber"
+Item_Modifiers_________________________________XML,Item_Modifiers_________________________________XML
+jz_ModArmorChainmail,"Chainmail Armor Mod"
+jz_ModArmorChainmailDesc,"Chainmail under armor that can be added to any armor to reduce the chance of getting a Zombie Bite"
+
 LOADINGSCREEN_________________________________XML,LOADINGSCREEN_________________________________XML
 jz_loadingTipBaseUpgrading,"Building blocks can be upgraded to stronger versions using material and it's corresponding tool.\nThe most common upgrade materials are: Planks, Cobblestone Rocks, Concrete Mix and Iron and Steel Sheet Metal."
 jz_loadingTipBaseUpgrading_title,"True Survival: Base Upgrading Supplies"
@@ -2201,10 +2275,8 @@ TrueSurvivalBuildingConstructionJournal_title,"True Survival: Building Construct
 TrueSurvivalBuildingConstructionJournal,"To master construction you will need to complete four skills. Wood, Cobblestone, Concrete and Iron Building. Until you learn how to create the basic materials for each building type you will have to harvest the resources from world building blocks using the correct tool. The Claw Hammer harvests and uses Planks. The Mason Hammer harvests and uses Cobblestones. The Concrete Sledge harvests and uses Concrete Mix. The Wrench harvests and uses Iron Sheet Metal. The Welder harvests and uses Steel Sheet Metal. The only way to learn Steel Building is to master all four of the other building skills."
 TrueSurvivalWorkbenchUpgradingJournal,"Workbenches that can craft quality tools and weapons each have a chain quest to help you craft or find the tools needed to upgrade each workbench. Once you have the needed tool hold it in your hand and use it as a tool on the workbench to upgrade it. This will make the upgraded workbench craft better quality items. If you fail a poi quest in the quest chain you can craft a Research Desk and on that craft a item to restart the failed quest."
 TrueSurvivalWorkbenchUpgradingJournal_title,"True Survival: Workbench Upgrades"
-
-jz_TrueSurvivalWarning,"[f21b10]!!!!Warning!!!![-] This Mod should only be played by 7 Days to Die professionals. Do Not play this Mod like you play Vanilla or you will not make it far. Go slow, be patient and weigh the risk you take seriously.  There will be pain, there will be deaths, there will be restarts and if you can persevere through your failures you will learn what it truly means to be a TRUE SURVIVOR! Good Luck and Die Well!\n\nSpider"
+jz_TrueSurvivalWarning,"[f21b10]!!!!Warning!!!![-] This Mod should only be played by 7 Days to Die professionals. Do Not play this Mod like you play Vanilla or you will not make it far. Go slow, be patient and weigh the risk you take seriously.  There will be pain, there will be deaths, there will be restarts and if you can persevere through your failures you will learn what it truly means to be a TRUE SURVIVOR!\nGood Luck and Die Well!\n\nSpider"
 jz_TrueSurvivalWarning_title,"True Survival: Warning"
-
 jz_criticalHitsTip,"You start with a critical hit resistance of 100%. You can see your current value on the character page on the 2nd 'stats' tab in the upper left.\n\nWearing armor increases resistance, being wounded can decrease it.\n\nGetting hit by enemies decreases your resistance incrementally. When it falls below 100% you can suffer critical hits like lacerations, gashes, sprains or breaks.\n\nThe more armor you wear the more often you can get hit in a short time without risking critical hits."
 jz_criticalHitsTip_title,"True Survival: Critical Hits"
 jz_waterTip,"Water determines how fast your health and stamina bars recover. While holding an empty Old Milk Jug you can fill it with water at a water source using the secondary action. By drinking unpurified water you run the risk of contracting dysentery. Your water level can be found in the character stats menu.\n\nWater will affect regen speed when it is below 50% and 25%.\n\nWater is by the ounce and stacks to 128 ounces, craft a drink of water to rehydrate. Water can be found in 3 forms Clean, Dirty and River Water.\n\nTo clean Dirty Water boil it, to clean River Water filter and boil it."

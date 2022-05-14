@@ -70,7 +70,7 @@
 		<reward type="Item" id="jz_ProfessionChoice" value="1" />
 		<reward type="Item" id="jz_HobbyChoice" value="1" />
 		<reward type="Item" id="jz_TraitChoice" value="3" />
-		<reward type="Item" id="jz_DrinkCleanOuncesOfWater" value="16" />
+		<reward type="Item" id="jz_DrinkCleanOuncesOfWater" value="24" />
 		<reward type="Item" id="jz_TatteredShirt" value="1" />
 		<reward type="Item" id="jz_TatteredPants" value="1" />
 		<reward type="Item" id="jz_TatteredShoes" value="1" />
@@ -78,8 +78,8 @@
 		<reward type="Item" id="keystoneBlock" value="1" />
 		<reward type="Exp" value="100" />
               
-        <reward type="Quest" id="jzquest_StoryLinePt1" />
-		    
+		<reward type="Quest" id="jzquest_TutorialPt1" />
+       				    
         <reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL2" />
         <reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGun" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmor" />
@@ -93,6 +93,179 @@
 	</quest>
 
 <!--  ****************************************************************************TRUE SURVIVAL********************************************** -->
+	<!-- JZMOD TUTORIAL -->
+	<quest id="jzquest_TutorialPt1">
+		<property name="name_key" value="jzquest_TutorialPt1" />
+		<property name="subtitle_key" value="jzquest_TutorialPt1Sub" />
+		<property name="description_key" value="jzquest_TutorialPt1Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip1" />
+		
+		<objective type="FetchKeep" id="jz_Stick" value="1" phase="1">
+			<modifier type="TrackBlocks">
+				<property name="block_index_name" value="quest_wood"/>
+				<property name="nav_object" value="quest_resource"/>
+				<property name="track_distance" value="20"/>
+			</modifier>
+		</objective>
+		<reward type="Quest" id="jzquest_TutorialPt1B" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt1B">
+		<property name="name_key" value="jzquest_TutorialPt1" />
+		<property name="subtitle_key" value="jzquest_TutorialPt1Sub" />
+		<property name="description_key" value="jzquest_TutorialPt1Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip1B" />
+		<objective type="FetchKeep" id="resourceYuccaFibers" value="10" phase="2"/>
+		<reward type="Quest" id="jzquest_TutorialPt2" />
+	</quest> 
+	
+	<quest id="jzquest_TutorialPt2">
+		<property name="name_key" value="jzquest_TutorialPt2" />
+		<property name="subtitle_key" value="jzquest_TutorialPt2Sub" />
+		<property name="description_key" value="jzquest_TutorialPt2Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip2" />
+		<objective type="Craft">
+			<property name="phase" value="1" />
+			<property name="item" value="jz_RestingSpot" />
+			<property name="count" value="1" />
+		</objective>
+		<objective type="BlockPlace" id="jz_RestingSpot" value="1" phase="2" />
+		<reward type="Quest" id="jzquest_TutorialPt3" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt3">
+		<property name="name_key" value="jzquest_TutorialPt3" />
+		<property name="subtitle_key" value="jzquest_TutorialPt3Sub" />
+		<property name="description_key" value="jzquest_TutorialPt3Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip3" />
+		
+		<objective type="Craft">
+			<property name="phase" value="1" />
+			<property name="item" value="jz_DrinkCleanDrinkOfWater" />
+			<property name="count" value="1" />
+		</objective>
+		
+		<reward type="Quest" id="jzquest_TutorialPt4" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt4">
+		<property name="name_key" value="jzquest_TutorialPt4" />
+		<property name="subtitle_key" value="jzquest_TutorialPt4Sub" />
+		<property name="description_key" value="jzquest_TutorialPt4Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip4" />
+		
+		<objective type="Craft">
+			<property name="phase" value="1" />
+			<property name="item" value="jz_FoodVeggieSalad" />
+			<property name="count" value="1" />
+		</objective>
+		
+		<reward type="Quest" id="jzquest_TutorialPt5" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt5">
+		<property name="name_key" value="jzquest_TutorialPt5" />
+		<property name="subtitle_key" value="jzquest_TutorialPt5Sub" />
+		<property name="description_key" value="jzquest_TutorialPt5Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		
+		<objective type="Craft">
+			<property name="phase" value="1" />
+			<property name="item" value="jz_SimpleScaffoldingBlock" />
+			<property name="count" value="1" />
+		</objective>
+		
+		<reward type="Quest" id="jzquest_TutorialPt6" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt6">
+		<property name="name_key" value="jzquest_TutorialPt6" />
+		<property name="subtitle_key" value="jzquest_TutorialPt6Sub" />
+		<property name="description_key" value="jzquest_TutorialPt6Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		
+		<objective type="Craft">
+			<property name="phase" value="1" />
+			<property name="item" value="jz_SimpleLogBlock" />
+			<property name="count" value="1" />
+		</objective>
+		<reward type="Quest" id="jzquest_TutorialPt7" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt7">
+		<property name="name_key" value="jzquest_TutorialPt7" />
+		<property name="subtitle_key" value="jzquest_TutorialPt7Sub" />
+		<property name="description_key" value="jzquest_TutorialPt7Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip7" />
+		
+		<objective type="Craft">
+			<property name="phase" value="1" />
+			<property name="item" value="jz_OldMilkJug" />
+			<property name="count" value="1" />
+		</objective>
+		<reward type="Quest" id="jzquest_TutorialPt8" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt8">
+		<property name="name_key" value="jzquest_TutorialPt8" />
+		<property name="subtitle_key" value="jzquest_TutorialPt8Sub" />
+		<property name="description_key" value="jzquest_TutorialPt8Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip8" />
+		<objective type="BlockPlace" id="cntCoolerClosed" value="1" phase="1" />
+		<reward type="Quest" id="jzquest_TutorialPt9" />
+	</quest>
+	
+	<quest id="jzquest_TutorialPt9">
+		<property name="name_key" value="jzquest_TutorialPt9" />
+		<property name="subtitle_key" value="jzquest_TutorialPt9Sub" />
+		<property name="description_key" value="jzquest_TutorialPt9Desc" />
+		<property name="icon" value="NoIcon" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="ShowTip" value="jz_TrueSurvivalTutorialTip9" />
+		
+		<objective type="BuffSDX, SCore">
+            <property name="phase" value="1" />
+            <property name="buff" value="jz_BuffHealthyDiet" />
+        </objective>
+		<reward type="Quest" id="jzquest_StoryLinePt1" />
+	</quest>
+		
 	<!-- JZMOD STORY LINE -->
 	<quest id="jzquest_StoryLinePt1">
 		<property name="name_key" value="jzquest_StoryLinePt1" />
@@ -140,8 +313,7 @@
 			<property name="item" value="jz_QIGoodWalkieTalkie" />
 			<property name="count" value="1" />
 		</objective>
-		
-        
+		        
 		<reward type="Quest" id="jzquest_StoryLinePt4" />
 	</quest>
 	<quest id="jzquest_StoryLinePt4">
@@ -155,7 +327,6 @@
 		
         <objective type="FetchKeep" id="jz_QISateliteRadio" value="1" phase="1"/>
 		
-        
         <reward type="Recipe" id="jz_QISatRadioStation" />
         <reward type="Recipe" id="jz_QI887Frequency" />
         <reward type="Quest" id="jzquest_StoryLinePt5" />
@@ -351,7 +522,6 @@
             <property name="count" value="1" />
 		</objective>
        	
-        
         <reward type="Quest" id="jzquest_StoryLinePt15" />
 	</quest>
     <quest id="jzquest_StoryLinePt15">
@@ -369,8 +539,7 @@
         <objective type="ZombieKill" id="jz_QZSoldierRadiated" value="1" phase="2"/>
         <action type="GiveBuffSDX, SCore" value="jz_BuffTurnOffSpawnSoldier" phase="3" />
         <objective type="FetchKeep" id="jz_QIMilitarySecurityCard" value="1" phase="3"/>
-        
-       	
+               	
         <reward type="Recipe" id="jz_QIMilitarySecurityCardA" />    
         <reward type="Quest" id="jzquest_StoryLinePt16" />
 	</quest>
@@ -406,7 +575,6 @@
             <property name="count" value="1" />
 		</objective>
        	
-        
         <reward type="Recipe" id="jz_QI1079Frequency" />
         <reward type="Quest" id="jzquest_StoryLinePt17" />
 	</quest>
@@ -424,8 +592,7 @@
             <property name="item" value="jz_QI1079Frequency" />
             <property name="count" value="1" />
 		</objective>
-          
-          
+                   
         <reward type="Quest" id="jzquest_StoryLinePt18" />        
 	</quest>
     <quest id="jzquest_StoryLinePt18">
@@ -445,8 +612,7 @@
         <action type="SpawnEnemy" id="zombieSoldier" value="5" phase="2"/>
         <objective type="ZombieKill" id="zombieSoldier" value="1" phase="2"/>
           
-             
-        <reward type="Quest" id="jzquest_StoryLinePt19" />            
+              <reward type="Quest" id="jzquest_StoryLinePt19" />            
 	</quest>
     <quest id="jzquest_StoryLinePt19">
 		<property name="name_key" value="jzquest_StoryLinePt19" />
@@ -875,12 +1041,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationPipeGunWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationPipeGunWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationPipeGunWorkbench" value="1" phase="1" />
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesPipeGunQL2" />
     </quest>
@@ -1094,12 +1255,8 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationToolWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationToolWorkbench" value="1" phase="2" />
+		
+		<objective type="BlockPlace" id="jz_WorkstationToolWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesToolQL2" />
@@ -1308,12 +1465,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationElectronicWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationElectronicWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationElectronicWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesElectronicQL2" />
@@ -1526,12 +1678,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationLightArmorWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationLightArmorWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationLightArmorWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesLightArmorQL2" />
@@ -1745,12 +1892,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationHeavyArmorWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationHeavyArmorWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationHeavyArmorWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHeavyArmorQL2" />
@@ -1964,12 +2106,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationHandgunWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationHandgunWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationHandgunWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesHandgunQL2" />
@@ -2183,12 +2320,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationShotgunWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationShotgunWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationShotgunWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesShotgunQL2" />
@@ -2402,12 +2534,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationMachineGunWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationMachineGunWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationMachineGunWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesMachineGunQL2" />
@@ -2621,12 +2748,7 @@
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false" />
-		<objective type="Craft">
-			<property name="phase" value="1" />
-			<property name="item" value="jz_WorkstationRifleWorkbench" />
-			<property name="count" value="1" />
-		</objective>
-		<objective type="BlockPlace" id="jz_WorkstationRifleWorkbench" value="1" phase="2" />
+		<objective type="BlockPlace" id="jz_WorkstationRifleWorkbench" value="1" phase="1" />
 		
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesRlifeQL2" />
