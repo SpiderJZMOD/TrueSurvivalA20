@@ -1,3 +1,33 @@
 ********************************************True Survival Change Log*******************************************
 5/14/2022 A20.4 Build# 1.00
- 
+-Added ChangeLog text file for history of updates
+-Added True Survival build number in ChangLog and onto the Logo
+-Fixed and updated all locked recipes to show all unlocking methods
+-Fixed the crafting menu categories on all crafting items so they show up in the proper places
+-Changed Orange Trees to only be plantable on soil not Farm Plots
+-Added new Log Cabin block that can be built early game with no tools or specialized materials
+-Fixed Z-Virus infection buffs to state the proper name
+-Removed the ability to sale mods at the Traders
+-Added new Chainmail Armor Mod that does +4% Zombie bite resistance, +2% Noisier, -1% Mobility, +1 Armor Rating. You can have up to 5 installed.
+-Added Schematic for Chainmainl and put in loot, Added recipe on Forge
+-Fixed Doors upgrading
+-Fixed grunting when using the Wrench
+-Changed item found in loot to be Needle, it can be used for Suture Kits and crafted into a Sewing Needle
+-Added missing Schematic and Perk for Roll Up Doors, Found in loot.
+-Fixed some descriptions using Medical Bandage name instead of First Aid Bandage
+-Fixed Coolers description
+-Fixed Turret Repair Kit name
+-Removed Ratchet, Nail Gun and Impact Driver Schematics from loot, items found in loot only
+-Added Vitamin recipe to loot
+-Added missing Motorcycle recipe to Mechanic Profession
+-Added missing All Frame Shapes to Wood Building lv2
+-Added new Tutorial to the beginning of the game to help get new players up to speed better
+-Changed the workbench upgrading quest to require only placing the workbench note craft it to help un clutter the recipe list from the start
+-Fixed Iron Sledge needed to make Iron Sledge Head Mold
+-Removed all unused campaign items from crafting recipes to declutter
+-Moved Crossbows to the Advanced Workbench
+-Fixed error stopping items from being crafted on workbenches
+-Added Research Desk recipe for reverse engineering Iron and Steel Bars and Pipes 
+-Blueberries to show Dysentery Stat
+-Updated buff descriptions to tell you if you are losing Wellness
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
