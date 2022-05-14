@@ -9,7 +9,7 @@
 -Fixed Z-Virus infection buffs to state the proper name
 -Removed the ability to sale mods at the Traders
 -Added new Chainmail Armor Mod that does +4% Zombie bite resistance, +2% Noisier, -1% Mobility, +1 Armor Rating. You can have up to 5 installed.
--Added Schematic for Chainmainl and put in loot, Added recipe on Forge
+-Added Schematic for Chainmail and put in loot, Added recipe on Forge
 -Fixed Doors upgrading
 -Fixed grunting when using the Wrench
 -Changed item found in loot to be Needle, it can be used for Suture Kits and crafted into a Sewing Needle
