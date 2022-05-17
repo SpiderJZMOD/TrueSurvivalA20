@@ -1,12 +1,12 @@
 True Survival contains parts of Sphereii Core, NPC MOD and MAgolis POI Combo Pack. All rules associated with those mods still apply 
 
 Installation:
-Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
+For A20.5 Build. Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
 
 Server Info:
 IP =   14.1.30.218
 Port = 28716
-PW =   spider5
+PW =   spider2
 
 Game Settings For True Survival-
 Difficulty Setting- Adventurer

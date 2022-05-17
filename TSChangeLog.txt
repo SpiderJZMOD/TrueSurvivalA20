@@ -31,3 +31,18 @@
 -Blueberries to show Dysentery Stat
 -Updated buff descriptions to tell you if you are losing Wellness
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+5/16/2022 A20.5 Build# 1.01
+-Added slowing effect to walking on gore
+-Fixed Healthy Diet Tutorial quest not completing correctly
+-Fixed Workbench upgrading tools descriptions to explain how to use them
+-Fixed all reported spelling errors
+-Added missing Meat Pies, Glazed Meat, Pumpkin Cheese Cake, Sham Chowder, Can Sham recipes to the Chef profession
+-Fixed Farm Plot perk name
+-Removed old A19 Good and Healthy Meal recipe perks
+-Added all building tools crafting to the Advanced Workbench
+-Fixed lv4 Cloth Chest crafting
+-Removed Jar Water in recipes for Ounces
+-Activated the lockable inventory slots in the player backpack and vehicles 
+-Updated to 20.5
+-True Survival Discrod Server - https://discord.gg/nEVTcMMf5x
+///////////////////////////////////////////////////////////////////////////////////////////////////
