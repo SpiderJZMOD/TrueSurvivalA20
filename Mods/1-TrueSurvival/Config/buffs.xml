@@ -9770,7 +9770,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 <!-- JZMOD FOOD SYSTEM -->
 	<buff name="jz_BuffVitaminFader" hidden="true" remove_on_death="false">
 		<stack_type value="ignore"/>
-		<update_rate value="720"/>
+		<update_rate value="720"/><!-- 720 -->
 		<duration value="0"/>
 		<effect_group name="Protein, Fruit, Veggie Vitamin Fader ">
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$VitaminFaderAmount" operation="set" value="0.1"/>
@@ -10085,6 +10085,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffHealthyDietTag" />
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="stamina" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="stamina" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" />
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffHealthyDiet">
 				<requirement name="CVarCompare" cvar="$jzCvarNutrition" operation="NotEquals" value="6"/></triggered_effect>
@@ -29170,7 +29171,31 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
+	<!--GORE SLOW -->
+	<buff name="jz_BuffSlowedByGore" hidden="true" remove_on_death="true"> 
+		<stack_type value="ignore"/>
+		<duration value=".5"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSlowedByGoreIsOn"/>
+		</effect_group>
+	</buff>
 	
+	<buff name="jz_BuffSlowedByGoreIsOn" hidden="true" remove_on_death="true"> 
+		<stack_type value="replace"/>
+		<duration value="2"/>	
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSlowedByGoreWorking"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSlowedByGoreWorking"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="jz_BuffSlowedByGoreWorking" hidden="true" remove_on_death="true" name_key="Gore Slowing" icon="ui_game_symbol_cozyBed" >
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<passive_effect name="Mobility" operation="perc_add" value="-.40"/>
+		</effect_group>
+	</buff>
 	
 	
 	

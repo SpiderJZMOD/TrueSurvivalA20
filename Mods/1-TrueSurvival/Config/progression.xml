@@ -1129,12 +1129,12 @@
 				<requirement name="ProgressionLevel" progression_name="SP_BreadSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_BrainSchnitzelSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_BrainSchnitzelSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GlazedMeatsSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_GlazedMeatsSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GlazedMeatSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_GlazedMeatSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_KabobSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_KabobSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MeatPiesSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_MeatPiesSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_MeatPieSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_MeatPieSchematic" operation="LT" value="1"/></triggered_effect>
             <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GumboStewSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_GumboStewSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ShepardsPieSchematic" level="-1">
@@ -1147,6 +1147,12 @@
 				<requirement name="ProgressionLevel" progression_name="SP_ChiliDogSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_FishTacosSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_FishTacosSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CanShamSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_CanShamSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ShamChowderSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_ShamChowderSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PumpkinCheesecakeSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_PumpkinCheesecakeSchematic" operation="LT" value="1"/></triggered_effect>
 			
 			<passive_effect name="CraftingTime" operation="perc_add" level="1" value="-0.2" tags="jz_ChefTag"/>
 			<effect_description level="1" desc_key="jz_ChefLongDesc" long_desc_key="jz_ChefLongDesc"/>
@@ -2489,7 +2495,7 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_FarmPlotSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Watering Can" desc_key="SP_FarmPlotSchematicDesc" icon="farmPlotBlock">
+	<perk name="SP_FarmPlotSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Farm Plot" desc_key="SP_FarmPlotSchematicDesc" icon="farmPlotBlock">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="farmPlotBlockVariantHelper"/>
 			<effect_description level="1" desc_key="SP_FarmPlotSchematicDesc" long_desc_key="SP_FarmPlotSchematicDesc"/>
@@ -2818,20 +2824,6 @@
 		</effect_group>
 	</perk>
 		
-	<perk name="SP_GoodMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Good Meals" desc_key="SP_GoodMealsSchematicDesc" icon="ui_game_symbol_stirFry">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodGoodMealMediumFG,jz_FoodGoodMealMediumVG,jz_FoodGoodMealMediumVF,jz_FoodGoodMealLargeFG,jz_FoodGoodMealLargeVG,jz_FoodGoodMealLargeVF"/>
-			<effect_description level="1" desc_key="SP_GoodMealsSchematicDesc" long_desc_key="SP_GoodMealsSchematicDesc"/>
-		</effect_group>
-	</perk>
-	
-	<perk name="SP_HealthyMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Healthy Meals" desc_key="SP_HealthyMealsSchematicDesc" icon="ui_game_symbol_stirFry">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodHealthyMealMedium,jz_FoodHealthyMealLarge"/>
-			<effect_description level="1" desc_key="SP_HealthyMealsSchematicDesc" long_desc_key="SP_HealthyMealsSchematicDesc"/>
-		</effect_group>
-	</perk>
-	
 	<perk name="SP_CarrotCakeSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Carrot Cake" desc_key="SP_CarrotCakeSchematicDesc" icon="ui_game_symbol_carrotCake">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodCarrotCake"/>

@@ -864,9 +864,9 @@
 				<rect pos="0, 0" visible="{lootingorvehiclestorage}">
 					<button   depth="3" name="btnMoveAll"          sprite="ui_game_symbol_store_all_down"     tooltip_key="lblStashAll"             pos="80, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 					<button   depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_down" tooltip_key="lblStashFillAndSmart" pos="40, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
-<!--
+
 					<combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />
--->
+					
 <!--
 					<rect pos="0,30">
 						<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="lblStashFillStacks"   pos="6, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
@@ -874,6 +874,8 @@
 					</rect>
 -->
 				</rect>
+				<combobox depth="3" name="cbxLockedSlots" pos="120,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1" />
+					
 			</rect>
 
 			<label depth="2" pos="472,-8" width="100" height="28" text="{currencyamount}" justify="right" />
@@ -1649,9 +1651,9 @@
 				<button   depth="3" name="btnMoveFillStacks"   sprite="ui_game_symbol_drop"          tooltip_key="xuiLootTakeFillStacks"   pos="6, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 				<button   depth="3" name="btnMoveSmart"        sprite="ui_game_symbol_drop"          tooltip_key="xuiLootTakeSmart"        pos="46, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
 				
-				<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
 				</rect>
--->
+-->				<combobox depth="3" name="cbxLockedSlots" pos="70,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" />
+				
 			</rect>
 		</panel>
 		<grid depth="2" name="queue" rows="10" cols="9" pos="3,-49" cell_width="75" cell_height="75" repeat_content="true">
@@ -4396,7 +4398,7 @@
 				<label name="lblReportedPlayer" width="730" height="30" justify="left" pivot="topleft" />
 
 				<label text_key="xuiReportPlayerCategory" width="220" height="30" justify="right" pivot="topleft" on_hover="true" tooltip_key="xuiReportPlayerCategoryTip" />
-				<combobox name="cbxCategory" type="ComboBoxList`1[XUiC_ReportPlayer+ReportCategory]" localization_prefix="xuiCategory" width="730" height="30" />
+				<combobox name="cbxCategory" type="ComboBoxList`1[Platform.IPlayerReporting+PlayerReportCategory]" width="730" height="30" />
 
 				<label text_key="xuiReportPlayerMessage" width="220" height="30" justify="right" pivot="topleft" on_hover="true" />
 				<rect>
