@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-   <ServerGroup Name="True Survival" Logo="" Description="True Survival 20\n\n14.1.30.218\nPort.-28716\nPW-spider2">
+   <ServerGroup Name="True Survival" Logo="" Description="True Survival 20\n\n14.1.30.218\nPort.-28716\nPW-spider1">
         <Server Name="True Survival 20" Logo="">
             <Description>True Survival 20.5
-            Single/Coop/Server test build. 
+            Single/Coop/Server Test build #1.02. 
             
             Official True Survival Server
             IP - 14.1.30.218
             Port. - 28716
-            PW - spider2
+            PW - spider1
 			-----------------------------------
             Required SP/Coop Game Settings
             -RWG Maps only
