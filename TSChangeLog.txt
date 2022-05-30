@@ -46,3 +46,85 @@
 -Updated to 20.5
 -True Survival Discrod Server - https://discord.gg/nEVTcMMf5x
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+5/30/2022 A20.5 Build# 1.02
+-Updated Sphereii’s Score
+-Updated to CP48.1
+-Restart Required 
+-Added 5 new decorative bushes to Forest, Desert and Snow biomes
+-New bushes are just for looks and drop Sticks and possible Fresh Lumber
+-Added Blueberries to grow wild in the snow biome
+-Updated all dead tree/logs textures size and hitboxes
+-Added Coconut Trees to Desert biome
+-Coconut Trees have a chance for Coconuts when chopped down and also fallen Coconuts can be around them on the ground
+-Added Mutated Beans to grow wild in the Wastelands
+-Mutated functionality yet to be determined 
+-Fixed upgrading to Steel Blocks to use proper materials
+-Changed Campfire available crafting recipes, moved more advanced recipes to Oven
+-Added New Oven cooking workstation that will cook everything the Campfire cooks and more advanced foods
+-At Player Level 15 you will get a fetch quest to unlock the recipe to build a Oven Repair Kit
+-Added New Kitchen cooking workstation that will make large beneficial end game meals with variations that have unique buffs and much more
+-Added 2 new endgame non nutritious foods Ice Cream and Coconut Cheesecake
+-Ice Cream will give a 20 min buff that decreases your player temp by 10, +40 Max Stamina
+-Coconut Cheesecake will give a 20 min buff that increases your player temp by 10, +40 Max Health
+-At Player Lv 30 you will get a fetch quest for the Kitchen Crafting Guide
+-The Kitchen will sort and store ingredients used in cooking
+-Kitchen Ingredients -Fruit, Veggies, Grain, Protein, Herbs, Condiments, Sauces, Spicy, Drugs, Water and Cans 
+-Added new cooking Condiments- Ketchup, Mustard, Mayo, Pico de gallo
+-Added new cooking Sauces- BBQ, Marinara, Hollandaise, Fruit Glaze
+-Added new cooking Spicy- Chillies, Texas Pete, Sriracha, Hot Sauce
+-Added new cooking Herb- Garlic
+-Added new one, Two, Three and Four Course Meals crafted on the Kitchen
+-Added a Nutritious, Spicy and Laced variation to each meal
+-Nutritious Meals give more nutrition
+-Spicy Meals give a 20 min buff that increases players temp by 10, increases mobility by 10% and stops Fatigue increase.
+-Laced Meals give a 20 min buff that gives +2 Stamina per second, stops Fatigue increase, cures and protects against Concussions, Stuns and the Fatigued debuff 
+-Added ability for Crowbar to pick up Microwaves, Burning Barrels, Barbed Fence
+-Changed the Improvised Campfire workstations to be able to be picked up when destroyed and replaced
+-Changed all starting building blocks to be frames that must be upgraded except Log Cabin Blocks
+-Removed ability to sale Frames to Traders
+-Removed Eggplant as a plant from the mod
+-Added Tomatoes, Onions, Coconuts and Chillies as new crops
+-Changed Crops to be biome specific.Mushrooms unchanged(any surface no light)
+Forest- Chrysanthemum, Goldenrod, Pumpkin, Corn,Potato, Carrot, Tomato, Onio
+Desert- Chillies, Aloe, Coffee, Yucca, Coconut, 
+Snow- Blueberries 
+Forest and Desert- Wheat, Cotton, Hops, Orange
+-Fixed bug where Good Diet was not falling off until you got Bad Diet
+-Changed Doctor Profession to heal wound 50% faster
+-Changed Medic Hobby to heal wound 25% faster
+-Added Trader Journal Note to the notes the player gets at the start of the game
+-Fixed Pneumonia name, description, icon
+-Think I fixed the repeating quest sound some were experiencing 
+-Fixed Snake Bite descriptions to show all effects
+-Changed Trader quest to need 10 to advance to the next level
+-Changed Trader Rep to only be able to be gained from doing the highest tier quest available from that trader
+-Changed each trader's rep  skill to go to 50. So to get the best stuff from that trader you will need to complete level 5 quests
+-Decreased the thirst increase on burns by 30%
+-Added new feature to gore
+-Changed melee weapons to be saleable to traders
+-Increased block damage from vomit
+-Removed the ability for vomit to give you Zvirus
+-Fixed Vomit to give burn injuries
+-Added Snake Bite resistance to armor
+-Removed vanilla perk buffs on eyewear
+-Fixed Steel Axe Crafting Guide icon
+-Changed icon for vanilla book perks to be something less distinguishable 
+-Added new food item Fruit Jam
+-Added new drink item Coconut Milk has opposite effect of Red Tea
+-Added new item Vinegar 
+-Fixed all reported spelling errors
+-Increased player dropped bag inventory so not to lose any materials if full
+-Removed the ability to buy some action skills
+-Added all new food recipes to Cook profession
+-Added Oven Repair Kit recipe to Electrician profession 
+-Added all new seed to Farmer profession
+-Added Fruit Jam recipe to Cook Hobby 
+-Added Onio, Tomato to Gardener Hobby
+-Added Drone Morale Buster perk
+-Fixed bug that was not awarding the recipes for the first stage of building skills if unlocked by a profession
+-Fixed Lantern books description
+-Moved up receiving the Storyline Quest chain in the Tutorial
+-Fixed players getting the Carving Knife quest before placing Improvised Workstation
+-Fixed repairing forge recipe
+-Added TS added melee weapon crafting to the Improvised Workstation
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
