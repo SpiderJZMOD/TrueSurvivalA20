@@ -4018,7 +4018,6 @@ If there is no hit the default quality is used.
 <!-- *** T1_Farming_Food_Schematics -->
 <lootgroup name="farmingCookingRecipesT1">
 	<item name="jz_SchematicMead" />
-	<item name="jz_SchematicEggPlantSeed" />
 	<item name="jz_SchematicCarrotSeed" />
 	<item name="jz_SchematicFertilizer" />
     <item name="jz_SchematicFarmPlot" />
@@ -4036,11 +4035,15 @@ If there is no hit the default quality is used.
 	<item name="foodFishTacosSchematic"/>
 	<item name="foodHoboStewSchematic"/>
 	<item name="foodShamChowderSchematic"/>	
+	<item name="jz_SchematicOnionSeed"/>
+	<item name="jz_SchematicTomatoSeed"/>		
 </lootgroup>
 
 <!-- *** T2_Farming_Food_Schematics -->
 <lootgroup name="farmingCookingRecipesT2">
 	<item name="jz_SchematicOrangeSeed" />
+	<item name="jz_SchematicChilliSeed" />
+	<item name="jz_SchematicCoconutSeed" />
 	<item name="jz_SchematicCarrotCake" />
 	<item name="jz_SchematicBrainShnitzel" />
 	<item name="jz_SchematicBearStew" />
@@ -4160,6 +4163,8 @@ If there is no hit the default quality is used.
 	<item name="jz_FoodFlour" />
 	<item name="jz_FoodPeanutButter" />
 	<item name="jz_FoodOatMeal" />
+	<item name="jz_FoodVinegar" />
+	<item name="jz_FoodCanJam" />
 </lootgroup>
 
 <!-- *** Candy -->
@@ -4179,24 +4184,27 @@ If there is no hit the default quality is used.
 
 <!-- *** Seeds -->
 <lootgroup name="seeds">
-	<item name="plantedPotato1" count="1,3" />
-	<item name="plantedCoffee1" count="1,3" />
-	<item name="plantedCorn1" count="1,3" />
-	<item name="plantedBlueberry1" count="1,3" />
-	<item name="plantedCotton1" count="1,3" />
-	<item name="plantedGoldenrod1" count="1,3" />
-	<item name="plantedAloe1" count="1,3" />
+	<item name="jz_SeedPotato" count="1,3" />
+	<item name="jz_SeedCoffee" count="1,3" />
+	<item name="jz_SeedCorn" count="1,3" />
+	<item name="jz_SeedBlueberry" count="1,3" />
+	<item name="jz_SeedCotton" count="1,3" />
+	<item name="jz_SeedGoldenrod" count="1,3" />
+	<item name="jz_SeedAloe" count="1,3" />
 	<item name="plantedMushroom1" count="1,3" />
-	<item name="plantedYucca1" count="1,3" />
-	<item name="plantedHop1" count="1,3" />
-	<item name="plantedChrysanthemum1" count="1,3" />
-	<item name="plantedPumpkin1" count="1,3" />
+	<item name="jz_SeedYucca" count="1,3" />
+	<item name="jz_SeedHop" count="1,3" />
+	<item name="jz_SeedChrysanthemum" count="1,3" />
+	<item name="jz_SeedPumpkin" count="1,3" />
     <item name="treePlantedMountainPine1m" count="1,3" />
 	<item name="treePlantedWinterPine1m" count="1,3" />
-    <item name="jz_PlantedWheat1" count="1,3" />
-	<item name="jz_PlantedOrange1" count="1,3" />
-	<item name="jz_PlantedEggPlant1" count="1,3" />
-	<item name="jz_PlantedCarrot1" count="1,3" />
+    <item name="jz_SeedWheat" count="1,3" />
+	<item name="jz_SeedOrange" count="1,3" />
+	<item name="jz_SeedCarrot" count="1,3" />
+	<item name="jz_SeedTomato" count="1,3" />
+	<item name="jz_SeedOnion" count="1,3" />
+	<item name="jz_SeedChilli" count="1,3" />
+	<item name="jz_SeedCoconut" count="1,3" />
 </lootgroup>
 
 <lootgroup name="coldfood"> 
@@ -4225,6 +4233,15 @@ If there is no hit the default quality is used.
     <item name="jz_FoodKabob" />
     <item name="jz_FoodFruitSalad" />
     <item name="jz_FoodVeggieSalad" /> 
+	<item name="jz_SpicyTexasPete" />
+    <item name="jz_SpicySriracha" />
+    <item name="jz_CondimentKetchup" />
+    <item name="jz_CondimentMustard" />
+    <item name="jz_SauceBBQ" />
+    <item name="jz_SauceMarinara" />
+    <item name="jz_FoodIceCream" />
+    <item name="jz_FoodCoconutCheesecake" />
+    <item name="jz_DrinkCoconutMilk" /> 
 </lootgroup>
 
 <lootgroup name="farmCrops">
@@ -4235,14 +4252,18 @@ If there is no hit the default quality is used.
 	<item name="resourceCropCoffeeBeans" /> 
 	<item name="resourceCropGoldenrodPlant" /> 
     <item name="jz_FoodCarrot" />                                                 
-    <item name="jz_FoodEggPlant" />   
     <item name="jz_FoodOrange" />   
     <item name="resourceCropAloeLeaf" />      
     <item name="resourceCropChrysanthemumPlant" />   
     <item name="resourceCropHopsFlower" />   
     <item name="foodCropYuccaFruit" />   
     <item name="foodCropPumpkin" />   
-    <item name="jz_Wheat" />          
+    <item name="jz_Wheat" />        
+	<item name="jz_FoodOnion" />   
+    <item name="jz_FoodCoconut" />   
+    <item name="jz_FoodTomato" />      
+	<item name="jz_SpicyChilli" />  
+	<item name="jz_HerbGarlic" />  		
 </lootgroup>
 
 <!-- *** Drinks -->
@@ -4254,6 +4275,7 @@ If there is no hit the default quality is used.
     <item name="drinkJarCoffee" count="1,2"/>
 	<item name="drinkJarGoldenRodTea" count="1,2"/>
 	<item name="drinkJarRedTea" count="1,2"/>
+	<item name="jz_DrinkCoconutMilk" count="1,2"/>
 	<item name="drinkJarBeer" count="1,2" loot_prob_template="medHigh"/>
 	<item name="drinkCanMegaCrush" loot_prob_template="veryLow"/>
 	<item name="drinkJarPureMineralWater" loot_prob_template="veryLow"/>
@@ -6065,7 +6087,7 @@ If there is no hit the default quality is used.
 	<item name="jz_ElectronicBlender"/>
 	<item name="jz_FryingPan"/>
 </lootgroup>
-
+	
 <!-- *** A20_Food_Ingredients_Groups -->
 <lootgroup name="groupIngredientsCommon">
 	<item name="resourceCropCoffeeBeans" count="1,3"/>
@@ -6074,24 +6096,34 @@ If there is no hit the default quality is used.
 	<item name="foodCropBlueberries" count="3,6"/>
 	<item name="foodCornMeal" count="1,4"/>
 	<item name="jz_FoodCarrot" count="1,4"/>
+	<item name="jz_FoodTomato" count="1,4"/>
+	<item name="jz_CondimentKetchup" count="1,2"/>
+	<item name="jz_CondimentMustard" count="1,2"/>
 </lootgroup>
 
 <lootgroup name="groupIngredientsUncommon">
 	<item name="resourceAnimalFat" count="1,4"/>
-	<item name="jz_FoodEggPlant" />   
-    <item name="jz_FoodOrange" />
+	<item name="jz_FoodOrange" count="1,4"/>
 	<item name="foodCropCorn" count="1,4"/>
 	<item name="foodCropPotato" count="1,4"/>
 	<item name="foodCropMushrooms" count="1,4"/>
 	<item name="foodCropPumpkin" count="1,4"/>
 	<item name="foodCropYuccaFruit" count="1,4"/>
+	<item name="jz_FoodOnion" count="1,4"/>
+	<item name="jz_FoodCoconut" count="1,4"/>
+	<item name="jz_SpicyTexasPete" count="1,2"/>
+	<item name="jz_SpicySriracha" count="1,2"/>
+	<item name="jz_SpicyHotSauce" count="1,2"/>
 </lootgroup>
 
 <lootgroup name="groupIngredientsRare">
-	<item name="foodEgg" count="1,2"/>
+	<item name="foodEgg" count="1,4"/>
 	<item name="foodRawMeat" count="1,4"/>
-	<item name="resourceCropHopsFlower"/>
+	<item name="resourceCropHopsFlower" count="1,4"/>
 	<item name="jz_Wheat" count="1,4"/>      
+	<item name="jz_SpicyChilli" count="1,4"/>  
+	<item name="jz_SauceBBQ" count="1,2"/>
+	<item name="jz_SauceMarinara" count="1,2"/>
 </lootgroup>
 	
 <!-- *** A20_Food_Groups -->
@@ -6127,6 +6159,7 @@ If there is no hit the default quality is used.
 	<item name="foodCornMeal"/>
 	<item name="foodCanCatfood"/>
 	<item name="foodCharredMeat"/>
+	<item name="jz_HerbGarlic"/>
 </lootgroup>
 
 <lootgroup name="groupFoodUncommon">
@@ -6140,6 +6173,7 @@ If there is no hit the default quality is used.
 	<item name="foodCanSalmon"/>
 	<item name="foodCanStock"/>
 	<item name="foodCanTuna"/>
+	<item name="jz_FoodCanJam"/>
 </lootgroup>
 
 <lootgroup name="groupFoodRare">
@@ -9619,7 +9653,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
-<lootcontainer id="2" name="playerBackpack" count="0" size="7,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="2" name="playerBackpack" count="0" size="8,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
 	<item name="cobweb" count="0" prob="0.01"/>
 </lootcontainer>
 

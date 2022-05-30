@@ -480,7 +480,7 @@
 
 	<forge_material>
 		<table depth="1" columns="2">
-			<label depth="2" name="material" style="workstation.reserve.name"/>
+			<label depth="2" width="100" name="material" style="workstation.reserve.name"/>
 			<label depth="2" name="weight" style="workstation.reserve.weight"/>
 		</table>
 	</forge_material>

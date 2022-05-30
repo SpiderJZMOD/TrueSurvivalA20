@@ -978,13 +978,14 @@ All the perk tags:
             <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
         </item_display_info>
              
-        <item_display_info display_type="TSFoWaStHeWePrFrVe" display_group="groupConsumables">
+        <item_display_info display_type="TSFoWaHeWePrFrVe" display_group="groupConsumables">
             <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
             <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
             <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProteinFruitVeggie" title_key="TSProteinFruitVeggieDisp" display_type="Decimal2"/>         
+            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
+            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
+			<display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>      
         </item_display_info>
                 
         <item_display_info display_type="TSFoWaStHePrFrVe" display_group="groupConsumables">
@@ -1176,15 +1177,26 @@ All the perk tags:
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_OldStoveCampfire">
-			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
-			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
-			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="StoveTop" icon="ui_game_symbol_fork" display_name="Stove Top" />
+			<crafting_category name="Oven" icon="ui_game_symbol_fork" display_name="Oven" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="Drinks" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="Chemicals" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_ModernStoveCampfire">
-			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
-			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
-			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="StoveTop" icon="ui_game_symbol_fork" display_name="Stove Top" />
+			<crafting_category name="Oven" icon="ui_game_symbol_fork" display_name="Oven" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="Drinks" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="Chemicals" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_KitchenWorkbench">
+			<crafting_category name="Meals" icon="ui_game_symbol_fork" display_name="Meals" />
+			<crafting_category name="Nutritious" icon="ui_game_symbol_fork" display_name="Nutritious Meals" />
+			<crafting_category name="Spicy" icon="ui_game_symbol_fork" display_name="Spicy Meals" />
+			<crafting_category name="Laced" icon="ui_game_symbol_fork" display_name="Laced Meals" />
+			<crafting_category name="Canning" icon="ui_game_symbol_fork" display_name="Canning" />
+			<crafting_category name="MRE" icon="ui_game_symbol_fork" display_name="MRE's" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_ToilteCampfire">

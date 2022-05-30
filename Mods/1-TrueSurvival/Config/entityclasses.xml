@@ -127,9 +127,7 @@
 		<passive_effect name="WaterChangeOT" operation="base_subtract" value=".0111"/> <!-- water base drain, 40/hour -->
 		<passive_effect name="WaterChangeOT" operation="base_subtract" value="@_vehicleFood" tags="driving"/>
 		<passive_effect name="WaterLossPerStaminaPointGained" operation="base_set" value="0.00453"/> <!-- regening stamina costs you water -->
-
 		<!--<passive_effect name="HealthLossMaxMult" operation="base_set" value="0.15"/>--> <!-- taking damage blacks out part of the HP bar -->
-
 		<passive_effect name="FoodChangeOT" operation="base_subtract" value=".00833"/> <!-- hunger base drain, 30/hour -->
 		<passive_effect name="FoodChangeOT" operation="base_subtract" value="@_vehicleFood" tags="driving"/>
 		<passive_effect name="FoodLossPerStaminaPointGained" operation="base_set" value="0.00408"/> <!-- regening stamina costs food -->
@@ -152,7 +150,6 @@
 			<requirement name="CVarCompare" cvar="_underwater" operation="Equals" value="1"/>
 		</passive_effect>
 		-->
-
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1.35" tags="running">
 			<!-- Stealthy Sprinting:  Use no stamina while sneak sprinting. -->
 			<requirement name="ProgressionLevel" progression_name="perkGreatHeistSprintSneak" operation="Equals" value="1"/>
@@ -160,11 +157,7 @@
 		</passive_effect>
 
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.15" match_all_tags="true" tags="crouching,walking"/>
-
-
-
 		<!-- Cumulative critical hit chance -->
-
 		<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="self" buff="buffCumChanceCH"/>
 		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffInjuryBleedingTwo,buffFatiguedTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingBarbedWire,jz_BuffSprainedLeftAnkleTrigger,jz_BuffSprainedRightAnkleTrigger,jz_BuffSprainedLeftLegTrigger,jz_BuffSprainedRightLegTrigger,jz_BuffSprainedLeftArmTrigger,jz_BuffSprainedRightArm,jz_BuffSprainedLeftWristTrigger,jz_BuffSprainedRightWristTrigger,jz_BuffSprainedRibsTrigger,jz_BuffSprainedNeckTrigger,jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck,jz_BuffGashLeftFoot,jz_BuffGashRightFoot,jz_BuffGashLeftLeg,jz_BuffGashRightLeg,jz_BuffGashLeftArm,jz_BuffGashRightArm,jz_BuffGashLeftHand,jz_BuffGashRightHand,jz_BuffGashStomach,jz_BuffGashNeck,jz_BuffPunctureLeftFoot,jz_BuffPunctureRightFoot,jz_BuffPunctureLeftLeg,jz_BuffPunctureRightLeg,jz_BuffPunctureLeftArm,jz_BuffPunctureRightArm,jz_BuffPunctureLeftHand,jz_BuffPunctureRightHand,jz_BuffPunctureStomach,jz_BuffPunctureNeck"/> <!-- JZMOD -->
 		<passive_effect name="BuffResistance" operation="base_add" value="-.1" tags="buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
@@ -5467,7 +5460,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 
 <entity_class name="jz_ZombieFatHawaiianSpitExplode" extends="zombieFatCop">
 	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>                             
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>
 </entity_class>
 
 <entity_class name="jz_ZombieFatHawaiianFeralSpitExplode" extends="zombieFatCopFeral">

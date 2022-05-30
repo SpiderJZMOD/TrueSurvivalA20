@@ -422,6 +422,15 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
+		<window_group name="workstation_jz_KitchenWorkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+           	<window name="windowFuel" />
+			<window name="windowKitchenInput" />
+			<window name="jz_KitchenOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
 		<window_group name="workstation_jz_DryingRack" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />

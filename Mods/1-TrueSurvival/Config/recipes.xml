@@ -70,6 +70,50 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="jz_ScrapSteel" count="1" craft_area="jz_SteelForge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
 	<ingredient name="unit_steel" count="1" />
 </recipe>
+
+<recipe name="jz_FoodServingVeggie" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_veggie" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingFruit" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_fruit" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingGrain" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_grain" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingProtein" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_protein" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingHerbs" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_herbs" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingCondiments" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_condiments" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingSauces" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_sauces" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingSpicy" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_spicy" count="1" />
+</recipe>
+
+<recipe name="jz_FoodServingDrugs" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_drugs" count="1" />
+</recipe>
+
+<recipe name="jz_DrinkCleanOuncesOfWater" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_water" count="1" />
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" craft_area="jz_KitchenWorkbench" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+	<ingredient name="unit_cans" count="1" />
+</recipe>
 <!-- Parts for items with a crafting quality: T3 melee items have parts. T2 and T3 ranged items have parts. -->
 <recipe name="gunBowT1WoodenBowParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <recipe name="gunHandgunT1PistolParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
@@ -126,22 +170,22 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_SimpleWoodShapesBlock" count="1" >
-	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceWood" count="4"/>
 	<ingredient name="resourceNail" count="3"/>
 </recipe>
 
 <recipe name="jz_SimpleCobblestoneShapesBlock" count="1" >
-	<ingredient name="resourceCobblestones" count="10"/>
-	<ingredient name="jz_Stick" count="3"/>
+	<ingredient name="jz_Stick" count="10"/>
+	<ingredient name="jz_FiberRope" count="3"/>
 </recipe>
 
 <recipe name="jz_SimpleConcreteShapesBlock" count="1" >
-	<ingredient name="resourceConcreteMix" count="10"/>
-	<ingredient name="resourceScrapIron" count="3"/>
+	<ingredient name="jz_Stick" count="10"/>
+	<ingredient name="jz_FiberRope" count="3"/>
 </recipe>
 
 <recipe name="jz_SimpleIronShapesBlock" count="1" >
-	<ingredient name="jz_IronSheetMetal" count="10"/>
+	<ingredient name="jz_IronSheetMetal" count="4"/>
 	<ingredient name="jz_NutAndBolt" count="3"/>
 </recipe>
 
@@ -262,6 +306,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_GunOil" count="1"/>
 </recipe>
 
+<recipe name="drinkYuccaJuiceSmoothie" count="1" craft_time="5" craft_exp_gain="5" tags="learnable">
+	<ingredient name="foodCropYuccaFruit" count="4"/>
+	<ingredient name="foodCropBlueberries" count="4"/>
+	<ingredient name="resourceSnowBall" count="5"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+</recipe>
+
 <recipe name="campfire" count="1" craft_time="30" craft_exp_gain="5" tags="jz_ImprovisedCraftingTag" >
 	<ingredient name="resourceRockSmall" count="16"/>
 	<ingredient name="resourceYuccaFibers" count="4"/>
@@ -278,10 +329,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="forge" count="1" craft_time="60" craft_exp_gain="300">
 	<ingredient name="resourceRockSmall" count="100"/>
 	<ingredient name="resourceClayLump" count="100"/>
-	<ingredient name="resourceWood" count="2"/>
-	<ingredient name="resourceMetalPipe" count="5"/>
-    <ingredient name="resourceLeather" count="20"/>
-    <ingredient name="jz_ScrapAdhesive" count="10"/>
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>
+	<ingredient name="resourceMetalPipe" count="3"/>
     <ingredient name="cntCollapsedForge" count="1"/>
 </recipe>
 
@@ -393,21 +443,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_Tallow" count="1"/>
 	<ingredient name="resourceCloth" count="1"/>
 	<ingredient name="jz_Stick" count="5"/>
-</recipe>
-
-<recipe name="jz_MeleePlank" count="1" craft_time="30" craft_exp_gain="20" > 
-	<ingredient name="resourceWood" count="1"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-</recipe>
-
-<recipe name="jz_MeleePlankSpiked" count="1" craft_time="30" craft_exp_gain="20" > 
-	<ingredient name="jz_MeleePlank" count="1"/>
-	<ingredient name="resourceNail" count="10"/>
-</recipe>
-
-<recipe name="jz_MeleeTableLegSpiked" count="1" craft_time="30" craft_exp_gain="20" > 
-	<ingredient name="jz_MeleeTableLeg" count="1"/>
-	<ingredient name="resourceNail" count="10"/>
 </recipe>
 
 <recipe name="meleeToolTorch" count="1" craft_time="30" craft_exp_gain="20" tags="jz_ImprovisedCraftingTag" >
@@ -905,18 +940,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodBread" count="5" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChefTag">
-	<ingredient name="jz_FoodFlour" count="5"/>
-    <ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
-</recipe>
-
-<recipe name="jz_FoodBread" count="5" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="5" tags="learnable,jz_ChefTag">
-	<ingredient name="jz_FoodServingGrain" count="5"/>
-     <ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
-</recipe>
-
 <recipe name="jz_DrinkDirtyOuncesOfWater" count="16" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10" craft_exp_gain="0" >
 	<ingredient name="resourceSnowBall" count="5"/>
 </recipe>
@@ -934,14 +957,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_GallonOfDirtyRiverWater" count="1"/>
     <ingredient name="resourceCloth" count="1"/>
     <ingredient name="resourceCrushedSand" count="1"/>
-</recipe>
-
-<recipe name="jz_DrinkFruitJuice" count="1" craft_area="campfire" craft_tool="jz_ElectronicBlender" craft_time="10" tags="jz_ChefTag">
-	<ingredient name="jz_FoodServingFruit" count="10" />
-</recipe>
-
-<recipe name="jz_DrinkVeggieJuice" count="1" craft_area="campfire" craft_tool="jz_ElectronicBlender" craft_time="10" tags="jz_ChefTag">
-	<ingredient name="jz_FoodServingVeggie" count="10" />
 </recipe>
 
 <recipe name="jz_CuredSinew" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="20" >
@@ -962,93 +977,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="foodCropPotato" count="1"/>
 </recipe>
 
-<recipe name="jz_FoodCarrotCake" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="80" tags="learnable,jz_ChefTag">
-	<ingredient name="jz_FoodFlour" count="1" />
-	<ingredient name="foodEgg" count="1" />
-	<ingredient name="jz_FoodCarrot" count="1" />
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8" />
-</recipe>
-    
-<recipe name="foodBlueberryPie" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="90" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCropBlueberries" count="5"/>
-	<ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="foodPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="90" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCropPumpkin" count="5"/>
-	<ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="foodPumpkinCheesecake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCropPumpkin" count="2"/>
-	<ingredient name="foodEgg" count="1"/>
-	<ingredient name="foodCornMeal" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="drinkJarBeer" count="1"/>
-</recipe>
-
-<recipe name="foodChiliDog" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanChili" count="1"/>
-	<ingredient name="foodRawMeat" count="6"/>
-	<ingredient name="jz_FoodBread" count="2"/>
-</recipe>
-
-<recipe name="foodFishTacos" count="1" craft_area="campfire" craft_tool="jz_FryingPan" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanSalmon" count="1"/>
-	<ingredient name="jz_FoodServingGrain" count="2"/>
-</recipe>
-
-<recipe name="foodHoboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanDogfood" count="1"/>
-	<ingredient name="foodCanPeas" count="1"/>
-	<ingredient name="foodCanStock" count="1"/>
-</recipe>
-
-<recipe name="foodGumboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanBeef" count="1"/>
-	<ingredient name="foodCanPeas" count="1"/>
-	<ingredient name="foodCanStock" count="1"/>
-	<ingredient name="jz_FoodServingVeggie" count="4"/>
-	<ingredient name="resourceAnimalFat" count="2"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="foodShepardsPie" count="1" craft_area="campfire" craft_tool="jz_FryingPan" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanLamb" count="1"/>
-	<ingredient name="foodCanPeas" count="1"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="foodCropPotato" count="4"/>
-</recipe>
-
-<recipe name="foodSpaghetti" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanBeef" count="1"/>
-	<ingredient name="foodCanPasta" count="1"/>
-	<ingredient name="foodCropMushrooms" count="2"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="foodTunaFishGravyToast" count="1" craft_area="campfire" craft_tool="jz_FryingPan" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanTuna" count="1"/>
-	<ingredient name="jz_FoodServingGrain" count="1"/>
-	<ingredient name="jz_FoodBread" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="foodCanPeas" count="1"/>
-</recipe>
-
-<recipe name="foodPumpkinBread" count="5" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="70" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCropPumpkin" count="5"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
-</recipe>
-
 <recipe name="foodBoiledMeat" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="60" tags="jz_ChefTag">
 	<ingredient name="foodRawMeat" count="2"/>
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
@@ -1056,12 +984,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="foodCharredMeat" count="1" craft_area="campfire" craft_tool="jz_Stick" craft_time="4" craft_exp_gain="50" tags="jz_ChefTag">
 	<ingredient name="foodRawMeat" count="2"/>
-</recipe>
-
-<recipe name="foodCornBread" count="5" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="4" craft_exp_gain="30" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCornMeal" count="5"/>
-	<ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
 </recipe>
 
 <recipe name="foodCornOnTheCob" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="10" tags="jz_ChefTag">
@@ -1075,66 +997,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="foodGrilledMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="20" tags="jz_ChefTag">
 	<ingredient name="foodRawMeat" count="2"/>
-</recipe>
-
-<recipe name="foodHoboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="30" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanDogfood" count="1"/>
-	<ingredient name="foodCropPotato" count="2"/>
-	<ingredient name="foodCropCorn" count="2"/>
-	<ingredient name="jz_FoodCarrot" count="2"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChefTag">
-	<ingredient name="foodRawMeat" count="3"/>
-	<ingredient name="foodCropPotato" count="1"/>
-	<ingredient name="foodCropCorn" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="jz_FoodBearStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="30" tags="learnable,jz_ChefTag">
-	<ingredient name="jz_FoodBearFlank" count="1"/>
-	<ingredient name="jz_FoodServingVeggie" count="2"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="foodVegetableStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCropPotato" count="1"/>
-	<ingredient name="foodCropCorn" count="1"/>
-	<ingredient name="jz_FoodCarrot" count="1"/>
-	<ingredient name="foodCropMushrooms" count="2"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
-</recipe>
-
-<recipe name="jz_FoodBrainShnitzel" count="1" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="4" craft_exp_gain="60" tags="learnable,jz_ChefTag">
-	<ingredient name="jz_BrainMatter" count="10"/>
-	<ingredient name="foodEgg" count="1"/>
-	<ingredient name="jz_FoodFlour" count="1"/>
-	<ingredient name="jz_FoodBread" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="4"/>
-</recipe>
-
-<recipe name="foodShamChowder" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="60" tags="learnable,jz_ChefTag">
-	<ingredient name="foodCanSham" count="1"/>
-	<ingredient name="foodCropPotato" count="1"/>
-	<ingredient name="foodCropCorn" count="1"/>
-	<ingredient name="jz_FoodCarrot" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
-	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
-</recipe>
-
-<recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="4" craft_exp_gain="50" tags="learnable,jz_ChefTag">
-	<ingredient name="jz_FoodVenisonTenderloin" count="1"/>
-	<ingredient name="foodCropPotato" count="2"/>
-	<ingredient name="foodCropMushrooms" count="2"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
 </recipe>
 
 <recipe name="jz_FoodGlazedMeat" count="1" craft_area="campfire" craft_tool="jz_FryingPan" craft_time="4" craft_exp_gain="20" tags="learnable,jz_ChefTag">
@@ -1191,10 +1053,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceClayLump" count="20"/>
 </recipe>
 
-<recipe name="jz_MoldWrench" count="1" craft_area="campfire" craft_tool="meleeToolSalvageT1Wrench" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceClayLump" count="20"/>
-</recipe>
-
 <recipe name="jz_MoldScrewdriverHead" count="1" craft_area="campfire" craft_time="30" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceClayLump" count="20"/>
 </recipe>
@@ -1204,10 +1062,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_MoldShovelHead" count="1" craft_area="campfire" craft_tool="meleeToolShovelT0StoneShovel" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceClayLump" count="20"/>
-</recipe>
-
-<recipe name="jz_MoldBrassKnuckles" count="1" craft_area="campfire" craft_tool="meleeWpnKnucklesT1IronKnuckles" craft_time="30" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceClayLump" count="20"/>
 </recipe>
 
@@ -1236,7 +1090,463 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <recipe name="jz_Tallow" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="4" craft_exp_gain="20" >
 	<ingredient name="resourceAnimalFat" count="3"/>
 </recipe>
+<!-- Stove Crafted ******************************************************************************************************************************************************* -->
 
+<recipe name="jz_FoodBread" count="5" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="5" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodFlour" count="5"/>
+    <ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
+</recipe>
+
+<recipe name="jz_FoodBread" count="5" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="5" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodServingGrain" count="5"/>
+     <ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
+</recipe>
+
+<recipe name="jz_DrinkFruitJuice" count="1" craft_area="stove" craft_tool="jz_ElectronicBlender" craft_time="10" tags="jz_ChefTag">
+	<ingredient name="jz_FoodServingFruit" count="10" />
+	<ingredient name="drinkJarEmpty" count="1"/>
+</recipe>
+
+<recipe name="jz_DrinkVeggieJuice" count="1" craft_area="stove" craft_tool="jz_ElectronicBlender" craft_time="10" tags="jz_ChefTag">
+	<ingredient name="jz_FoodServingVeggie" count="10" />
+	<ingredient name="drinkJarEmpty" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodCarrotCake" count="1" craft_area="stove" craft_tool="toolCookingGrill" craft_time="30" craft_exp_gain="80" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodFlour" count="1" />
+	<ingredient name="foodEgg" count="1" />
+	<ingredient name="jz_FoodCarrot" count="1" />
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8" />
+</recipe>
+    
+<recipe name="foodBlueberryPie" count="1" craft_area="stove" craft_tool="toolCookingGrill" craft_time="30" craft_exp_gain="90" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCropBlueberries" count="5"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="foodPumpkinPie" count="1" craft_area="stove" craft_tool="toolCookingGrill" craft_time="30" craft_exp_gain="90" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCropPumpkin" count="5"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="foodPumpkinCheesecake" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCropPumpkin" count="2"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="drinkJarBeer" count="1"/>
+</recipe>
+
+<recipe name="foodChiliDog" count="2" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanChili" count="1"/>
+	<ingredient name="foodRawMeat" count="6"/>
+	<ingredient name="jz_FoodBread" count="2"/>
+</recipe>
+
+<recipe name="foodFishTacos" count="1" craft_area="stove" craft_tool="jz_FryingPan" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanSalmon" count="1"/>
+	<ingredient name="jz_FoodServingGrain" count="2"/>
+</recipe>
+
+<recipe name="foodGumboStew" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanBeef" count="1"/>
+	<ingredient name="foodCanPeas" count="1"/>
+	<ingredient name="foodCanStock" count="1"/>
+	<ingredient name="jz_FoodServingVeggie" count="4"/>
+	<ingredient name="resourceAnimalFat" count="2"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="foodShepardsPie" count="1" craft_area="stove" craft_tool="jz_FryingPan" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanLamb" count="1"/>
+	<ingredient name="foodCanPeas" count="1"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="foodCropPotato" count="4"/>
+</recipe>
+
+<recipe name="foodSpaghetti" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanBeef" count="1"/>
+	<ingredient name="foodCanPasta" count="1"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="foodTunaFishGravyToast" count="1" craft_area="stove" craft_tool="jz_FryingPan" craft_time="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanTuna" count="1"/>
+	<ingredient name="jz_FoodServingGrain" count="1"/>
+	<ingredient name="jz_FoodBread" count="2"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="foodCanPeas" count="1"/>
+</recipe>
+
+<recipe name="foodPumpkinBread" count="5" craft_area="stove" craft_tool="toolCookingGrill" craft_time="30" craft_exp_gain="70" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCropPumpkin" count="5"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
+</recipe>
+
+<recipe name="foodCornBread" count="5" craft_area="stove" craft_tool="jz_FryingPan" craft_time="30" craft_exp_gain="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCornMeal" count="5"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
+</recipe>
+
+<recipe name="jz_FoodBrainShnitzel" count="1" craft_area="stove" craft_tool="jz_FryingPan" craft_time="30" craft_exp_gain="60" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_BrainMatter" count="10"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="jz_FoodBread" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="4"/>
+</recipe>
+
+<recipe name="foodShamChowder" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="60" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanSham" count="1"/>
+	<ingredient name="foodCropPotato" count="1"/>
+	<ingredient name="foodCropCorn" count="1"/>
+	<ingredient name="jz_FoodCarrot" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="10"/>
+</recipe>
+
+<recipe name="foodSteakAndPotato" count="1" craft_area="stove" craft_tool="toolCookingGrill" craft_time="30" craft_exp_gain="50" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodVenisonTenderloin" count="1"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+<recipe name="foodHoboStew" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="30" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCanDogfood" count="1"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="jz_FoodCarrot" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="foodMeatStew" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="foodRawMeat" count="3"/>
+	<ingredient name="foodCropPotato" count="1"/>
+	<ingredient name="foodCropCorn" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="jz_FoodBearStew" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="30" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodBearFlank" count="1"/>
+	<ingredient name="jz_FoodServingVeggie" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="foodVegetableStew" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="foodCropPotato" count="1"/>
+	<ingredient name="foodCropCorn" count="1"/>
+	<ingredient name="jz_FoodCarrot" count="1"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="jz_FoodFlour" count="1"/>
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
+</recipe>
+
+<recipe name="jz_SpicyHotSauce" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_SpicyChilli" count="1"/>
+	<ingredient name="jz_FoodTomato" count="1"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_CondimentPicoDeGallo" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodTomato" count="1"/>
+	<ingredient name="jz_FoodOnion" count="1"/>
+	<ingredient name="jz_FoodOrange" count="1"/>
+</recipe>
+
+<recipe name="jz_CondimentMayo" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_CondimentKetchup" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodTomato" count="12"/>
+	<ingredient name="jz_FoodVinegar" count="1"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_SauceMarinara" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodTomato" count="12"/>
+	<ingredient name="jz_FoodOnion" count="2"/>
+	<ingredient name="foodCropMushrooms" count="1"/>
+	<ingredient name="jz_HoneyComb" count="1"/>
+	<ingredient name="jz_Rosemary" count="1"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_SauceHollandaise" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_FoodOrange" count="1"/>
+	<ingredient name="jz_SpicyChilli" count="1"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_SauceFruitGlaze" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodCanJam" count="1"/>
+	<ingredient name="jz_HoneyComb" count="2"/>
+	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodIceCream" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodServingFruit" count="5"/>
+	<ingredient name="jz_HoneyComb" count="2"/>
+	<ingredient name="jz_DrinkCoconutMilk" count="1"/>
+	<ingredient name="resourceSnowBall" count="15"/>
+	<ingredient name="jz_Salt" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodCoconutCheesecake" count="1" craft_area="stove" craft_tool="toolCookingPot" craft_time="30" craft_exp_gain="20" tags="learnable,jz_ChefTag">
+	<ingredient name="jz_FoodCoconut" count="10"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="jz_HoneyComb" count="2"/>
+	<ingredient name="jz_DrinkCoconutMilk" count="1"/>
+	<ingredient name="jz_FoodServingGrain" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="drinkJarBeer" count="1"/>
+</recipe>
+
+<!-- Kitchen Crafted ******************************************************************************************************************************************************* -->
+
+<recipe name="jz_FoodOneCourseMeal" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="4"/>
+	<ingredient name="unit_fruit" count="4"/>
+	<ingredient name="unit_grain" count="4"/>
+	<ingredient name="unit_protein" count="4"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodOneCourseMealNutritious" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="4"/>
+	<ingredient name="unit_fruit" count="4"/>
+	<ingredient name="unit_grain" count="4"/>
+	<ingredient name="unit_protein" count="4"/>
+	<ingredient name="unit_herbs" count="2"/>
+	<ingredient name="unit_condiments" count="2"/>
+	<ingredient name="unit_sauces" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodOneCourseMealSpicy" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="4"/>
+	<ingredient name="unit_fruit" count="4"/>
+	<ingredient name="unit_grain" count="4"/>
+	<ingredient name="unit_protein" count="4"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_spicy" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodOneCourseMealLaced" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="125" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="4"/>
+	<ingredient name="unit_fruit" count="4"/>
+	<ingredient name="unit_grain" count="4"/>
+	<ingredient name="unit_protein" count="4"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_drugs" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodTwoCourseMeal" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="6"/>
+	<ingredient name="unit_fruit" count="6"/>
+	<ingredient name="unit_grain" count="6"/>
+	<ingredient name="unit_protein" count="6"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodTwoCourseMealNutritious" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="6"/>
+	<ingredient name="unit_fruit" count="6"/>
+	<ingredient name="unit_grain" count="6"/>
+	<ingredient name="unit_protein" count="6"/>
+	<ingredient name="unit_herbs" count="2"/>
+	<ingredient name="unit_condiments" count="2"/>
+	<ingredient name="unit_sauces" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodTwoCourseMealSpicy" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="6"/>
+	<ingredient name="unit_fruit" count="6"/>
+	<ingredient name="unit_grain" count="6"/>
+	<ingredient name="unit_protein" count="6"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_spicy" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodTwoCourseMealLaced" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="150" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="6"/>
+	<ingredient name="unit_fruit" count="6"/>
+	<ingredient name="unit_grain" count="6"/>
+	<ingredient name="unit_protein" count="6"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_drugs" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodThreeCourseMeal" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodThreeCourseMealNutritious" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="2"/>
+	<ingredient name="unit_condiments" count="2"/>
+	<ingredient name="unit_sauces" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodThreeCourseMealSpicy" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_spicy" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodThreeCourseMealLaced" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="175" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_drugs" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodFourCourseMeal" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodFourCourseMealNutritious" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="2"/>
+	<ingredient name="unit_condiments" count="2"/>
+	<ingredient name="unit_sauces" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodFourCourseMealSpicy" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_spicy" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodFourCourseMealLaced" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="200" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_grain" count="8"/>
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_condiments" count="1"/>
+	<ingredient name="unit_drugs" count="1"/>
+</recipe>
+
+<recipe name="foodCanSham" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="30" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_water" count="4"/>
+	<ingredient name="unit_cans" count="1"/>
+</recipe>
+
+<recipe name="foodCanBeef" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="30" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_protein" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_water" count="4"/>
+	<ingredient name="unit_cans" count="1"/>
+</recipe>
+
+<recipe name="foodCanPeas" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="30" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_water" count="4"/>
+	<ingredient name="unit_cans" count="1"/>
+</recipe>
+
+<recipe name="foodCanPears" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="30" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_water" count="4"/>
+	<ingredient name="unit_cans" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodCanJam" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="30" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_fruit" count="8"/>
+	<ingredient name="unit_herbs" count="1"/>
+	<ingredient name="unit_cans" count="1"/>
+</recipe>
+
+<recipe name="jz_FoodMRESmall" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="180" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="4"/>
+	<ingredient name="unit_fruit" count="4"/>
+	<ingredient name="unit_grain" count="4"/>
+	<ingredient name="unit_protein" count="4"/>
+	<ingredient name="unit_herbs" count="10"/>
+	<ingredient name="unit_sauces" count="2"/>
+	<ingredient name="unit_spicy" count="2"/>
+</recipe>
+
+<recipe name="jz_FoodMREMedium" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="240" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="5"/>
+	<ingredient name="unit_fruit" count="5"/>
+	<ingredient name="unit_grain" count="5"/>
+	<ingredient name="unit_protein" count="5"/>
+	<ingredient name="unit_herbs" count="10"/>
+	<ingredient name="unit_sauces" count="2"/>
+	<ingredient name="unit_spicy" count="2"/>
+</recipe>
+
+<recipe name="jz_FoodMRELarge" count="1" material_based="true" craft_area="jz_KitchenWorkbench" craft_time="300" craft_exp_gain="0" tags="jz_ChefTag">
+	<ingredient name="unit_veggie" count="6"/>
+	<ingredient name="unit_fruit" count="6"/>
+	<ingredient name="unit_grain" count="6"/>
+	<ingredient name="unit_protein" count="6"/>
+	<ingredient name="unit_herbs" count="10"/>
+	<ingredient name="unit_sauces" count="2"/>
+	<ingredient name="unit_spicy" count="2"/>
+</recipe>
 <!-- Workbench Crafted ******************************************************************************************************************************************************* -->
 <!--
 <recipe name="jz_QIBossSpawner" count="1" craft_area="workbench" craft_tool="meleeToolSalvageT1Wrench" craft_time="5" craft_exp_gain="5" tags="learnable,jz_WorkBenchTag" >
@@ -2781,6 +3091,26 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="resourceNail" count="2"/>
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
+
+<recipe name="jz_StoveRepairKit" count="1" craft_area="workbench" craft_tool="jz_Screwdriver" craft_time="30" craft_exp_gain="25" tags="learnable">
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="jz_NutAndBolt" count="20"/>
+	<ingredient name="toolCookingGrill" count="2"/>
+	<ingredient name="jz_IronSheetMetal" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="jz_ScrapAdhesive" count="10"/>
+</recipe>
+
+<recipe name="jz_KitchenWorkbench" count="1" craft_area="workbench" craft_tool="meleeToolSalvageT2Ratchet" craft_time="60" craft_exp_gain="10" tags="learnable">
+	<ingredient name="jz_StoveRepairKit" count="1"/>
+    <ingredient name="jz_Microwave" count="1"/>
+	<ingredient name="toolCookingPot" count="2"/>
+	<ingredient name="meleeWpnBladeT1HuntingKnife" count="2"/>
+	<ingredient name="jz_FryingPan" count="2"/>
+	<ingredient name="cntRetroFridgeVer1Closed" count="1"/>
+	<ingredient name="resourceWood" count="100"/>
+</recipe>
 <!-- Chemistry Station Crafted ******************************************************************************************************************************************************* -->
 <!--
 <recipe name="jz_QIZAntiVirus" count="1" craft_area="chemistryStation" craft_tool="jz_LabEquipment" tags="learnable,jz_ChemistTag">
@@ -3042,6 +3372,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarEmpty" count="15"/>
 </recipe>
 
+<recipe name="jz_FoodVinegar" count="15" craft_area="jz_FermentationBarrel" craft_time="1950" craft_exp_gain="0" tags="learnable">
+	<ingredient name="jz_FoodServingFruit" count="3"/>
+	<ingredient name="jz_FoodOrange" count="1"/>
+	<ingredient name="jz_Rosemary" count="1" />
+	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8" />
+</recipe>
+
 <recipe name="jz_DrinkMead" count="6" craft_area="jz_FermentationBarrel" craft_time="900" craft_exp_gain="0" tags="learnable">
 	<ingredient name="jz_HoneyComb" count="8" />
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="128" />
@@ -3076,69 +3413,81 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_Salt" count="3"/>
 </recipe>
 
-<recipe name="plantedAloe1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedAloe" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropAloeLeaf" count="1"/>
 </recipe>
 
-<recipe name="plantedBlueberry1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedBlueberry" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="foodCropBlueberries" count="1"/>
 </recipe>
 
-<recipe name="plantedChrysanthemum1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedChrysanthemum" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
 </recipe>
 
-<recipe name="plantedCoffee1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedCoffee" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropCoffeeBeans" count="1"/>
 </recipe>
 
-<recipe name="plantedCorn1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedCorn" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="foodCropCorn" count="1"/>
 </recipe>
 
-<recipe name="plantedCotton1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedCotton" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropCottonPlant" count="1"/>
 </recipe>
 
-<recipe name="plantedGoldenrod1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedGoldenrod" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropGoldenrodPlant" count="1"/>
 </recipe>
 
-<recipe name="plantedHop1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedHop" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="resourceCropHopsFlower" count="1"/>
 </recipe>
 
-<recipe name="plantedMushroom1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="plantedMushroom1" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="foodCropMushrooms" count="1"/>
 	<ingredient name="resourceClayLump" count="1"/>
 </recipe>
 
-<recipe name="plantedPotato1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedPotato" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="foodCropPotato" count="1"/>
 </recipe>
 
-<recipe name="plantedYucca1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedYucca" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="foodCropYuccaFruit" count="1"/>
 </recipe>
 
-<recipe name="plantedPumpkin1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedPumpkin" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="foodCropPumpkin" count="1"/>
 </recipe>
 
-<recipe name="jz_PlantedWheat1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedWheat" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="jz_Wheat" count="1"/>
 </recipe>
 
-<recipe name="jz_PlantedOrange1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedOrange" count="1" craft_area="jz_DryingRack" craft_time="300" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="jz_FoodOrange" count="1"/>
 </recipe>
 
-<recipe name="jz_PlantedEggPlant1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
-	<ingredient name="jz_FoodEggPlant" count="1"/>
+<recipe name="jz_SeedOnion" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+	<ingredient name="jz_FoodOnion" count="1"/>
 </recipe>
 
-<recipe name="jz_PlantedCarrot1" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+<recipe name="jz_SeedTomato" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+	<ingredient name="jz_FoodTomato" count="1"/>
+</recipe>
+
+<recipe name="jz_SeedCoconut" count="1" craft_area="jz_DryingRack" craft_time="300" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+	<ingredient name="jz_FoodCoconut" count="1"/>
+</recipe>
+
+<recipe name="jz_SeedCarrot" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
 	<ingredient name="jz_FoodCarrot" count="1"/>
+</recipe>
+
+<recipe name="jz_SeedChilli" count="1" craft_area="jz_DryingRack" craft_time="120" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
+	<ingredient name="jz_SpicyChilli" count="1"/>
 </recipe>
 <!--
 <recipe name="jz_QISeedCarrot" count="1" craft_area="jz_DryingRack" craft_time="60" craft_exp_gain="0" tags="learnable,jz_FarmerTag" >
@@ -3497,6 +3846,96 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_HobbyChoice" count="1"/>
 </recipe>
 <!-- Improvised Workbench Crafted ******************************************************************************************************************************************************* -->
+<recipe name="jz_MeleePlank" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="jz_ScrapAdhesive" count="1"/>
+</recipe>
+
+<recipe name="jz_MeleePlank" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="jz_ScrapAdhesive" count="1"/>
+</recipe>
+
+<recipe name="jz_MeleePlank" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="jz_ScrapAdhesive" count="2"/>
+</recipe>
+
+<recipe name="jz_MeleePlank" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="jz_ScrapAdhesive" count="2"/>
+</recipe>
+
+<recipe name="jz_MeleePlank" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
+	<ingredient name="resourceWood" count="3"/>
+	<ingredient name="jz_ScrapAdhesive" count="3"/>
+</recipe>
+
+<recipe name="jz_MeleePlank" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
+	<ingredient name="resourceWood" count="3"/>
+	<ingredient name="jz_ScrapAdhesive" count="3"/>
+</recipe>
+
+<recipe name="jz_MeleePlankSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleePlank" count="1"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="jz_MeleePlankSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleePlank" count="1"/>
+	<ingredient name="resourceNail" count="9"/>
+</recipe>
+
+<recipe name="jz_MeleePlankSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleePlank" count="1"/>
+	<ingredient name="resourceNail" count="10"/>
+</recipe>
+
+<recipe name="jz_MeleePlankSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleePlank" count="1"/>
+	<ingredient name="resourceNail" count="11"/>
+</recipe>
+
+<recipe name="jz_MeleePlankSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleePlank" count="1"/>
+	<ingredient name="resourceNail" count="12"/>
+</recipe>
+
+<recipe name="jz_MeleePlankSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleePlank" count="1"/>
+	<ingredient name="resourceNail" count="13"/>
+</recipe>
+
+<recipe name="jz_MeleeTableLegSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleeTableLeg" count="1"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="jz_MeleeTableLegSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv2" craft_time="30" craft_exp_gain="10" tags="jz_CraftingQualityTwo,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleeTableLeg" count="1"/>
+	<ingredient name="resourceNail" count="9"/>
+</recipe>
+
+<recipe name="jz_MeleeTableLegSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv3" craft_time="45" craft_exp_gain="15" tags="jz_CraftingQualityThree,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleeTableLeg" count="1"/>
+	<ingredient name="resourceNail" count="10"/>
+</recipe>
+
+<recipe name="jz_MeleeTableLegSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv4" craft_time="60" craft_exp_gain="20" tags="jz_CraftingQualityFour,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleeTableLeg" count="1"/>
+	<ingredient name="resourceNail" count="11"/>
+</recipe>
+
+<recipe name="jz_MeleeTableLegSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv5" craft_time="75" craft_exp_gain="25" tags="jz_CraftingQualityFive,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleeTableLeg" count="1"/>
+	<ingredient name="resourceNail" count="12"/>
+</recipe>
+
+<recipe name="jz_MeleeTableLegSpiked" count="1" craft_area="jz_WorkstationImprovisedWorkbenchLv6" craft_time="90" craft_exp_gain="30" tags="jz_CraftingQualitySix,jz_ImprovisedCraftingTag">
+	<ingredient name="jz_MeleeTableLeg" count="1"/>
+	<ingredient name="resourceNail" count="13"/>
+</recipe>
+
 <recipe name="meleeWpnBladeT0BoneKnife" count="1" craft_area="jz_WorkstationImprovisedWorkbench" craft_time="15" craft_exp_gain="5" tags="jz_CraftingQualityOne,jz_ImprovisedCraftingTag">
 	<ingredient name="resourceBone" count="5"/>
 </recipe>
@@ -8815,6 +9254,14 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesRlifeQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
+	<ingredient name="resourceYuccaFibers" count="1" />
+</recipe>
+
+<recipe name="jz_QIStoveQuestRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
+	<ingredient name="resourceYuccaFibers" count="1" />
+</recipe>
+
+<recipe name="jz_QIKitchenQuestRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
 	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 

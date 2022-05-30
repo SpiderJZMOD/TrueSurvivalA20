@@ -1893,6 +1893,62 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="2"/>
 </material>
 
+<material id="Mherbs">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="herbs" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="Mcondiments">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="condiments" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="Msauces">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="sauces" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="Mspicy">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="spicy" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="Mdrugs">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="drugs" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="McookingWater">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="water" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="Mcans">
+	<property name="surface_category" value="organic" />
+	<property name="forge_category" value="cans" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="Experience" value="2"/>
+</material>
+
 <material id="MbioMass">
 	<property name="surface_category" value="organic" />
 	<property name="forge_category" value="bioMass" />

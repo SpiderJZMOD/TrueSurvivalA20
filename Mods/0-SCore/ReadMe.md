@@ -10,8 +10,182 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
-Version: 20.4.116.1950
+Version:20.5.149.1038
+	[ Portals ]
+		- When a new portal is added, it checks if the source location already exists, and how many times. If there's already 2, the portal is marked as invalid, and is not linked in.
+			- Operates on first set basis. New portals will NOT over-write existing portal locations. They must be removed before they can be re-assigned.
+		- Sunsetting Portal, SCore blocks. It'll now pass through to PoweredPortal, SCore
+			- Note: Portal2, SCore exists in code to replicate the original code, but not intended to be used.
+
+		- The difference between a Powered Portal and non-Powered Portal is the RequiredPower value.
+			<property name="RequiredPower" value="7"/>
+			When the property is not set, it defaults to -1, and the portal does not need power to operate.
+			Set to 0 to disable a portal from getting power through extends.
+
+		MinEffectTeleport and DialogActionTeleport should accept  location="destination=portal2". 
+			- Source is not set up for these methods, unless someone has a use-case.
+
+		- If a PoweredPortal requires power, then the destination must be powered to go there.
+			- If its not powered, teleport does not occur.
+
+		Added new samplePortal01b block. Source is samplePortal01cb, but destination is samplePortal01b
+			- Add buff buffTeleportTest to teleport to this portal
+
+	[ Quests ]
+		- Added SCoreQuestEventManager to manage custom events for future quests
+		- Added ObjectiveEntityAliveSDXKill, modelled off ObjectiveAnimalKill
+			<objective type="EntityAliveSDXKill, SCore" id="npcHarley" value="2" phase="3"/>
+			- Example in quests.xml
+
+		- Merged khzmusik's quest changes
+			Adds an objective that is a drop-in replacement for RandomPOIGoto except you can specify:
+
+			tags a POI must have to be included in the search, in the "include_tags" property
+			tags a POI cannot have to be included in the search, in the "exclude_tags" property
+			A distance from the quest giver, as either a max distance or range (in-game meters)
+			All of the properties from RandomPOIGoto are also supported.
+
+			A sample quest is included.
+
+			For servers, a new Net Package implementation is included.
+
+
+Version: 20.5.147.746
+
+	[ Portals ]
+		- Fixed null reference when using Legacy portal in PortalManager
+		- Added IsPowered check to Teleport method, and to animate method
+		- Added check to confirm destination is powered and available before teleporting.
+
+Version: 20.5.146.1672
+
+	[ Portals ]
+		- Added Powered Portals. May need model work to add the 'electrical connection.'
+			<block name="samplePortal04">
+				<property name="Extends" value="portalMaster"/>
+				<property name="Class" value="PoweredPortal, SCore" />
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="MultiBlockDim" value="3,3,3"/>
+				<property name="Model" value="Entities/Electrical/power_switchPrefab"/>
+				<!--property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/-->
+				<property name="Display" value="true" />
+			</block>
+
+Version: 20.5.145.728
+
+	[ Caves ]
+		- Added sanity check against a negative value for max range - Chasing possible bug with vehicle + cave connection
+
+	[ Portals ]
+		- New configuration option for blocks.xml entry for portals
+
+			If the Display property is false, nothing will show up to the user when they are looking at the portal.
+			<property name="Display" value="true" /> 
+
+			If the Display is set to true, and the player has the buff "buffyours", they will see "Teleport To <Portal Destination>"
+			<property name="DisplayBuff" value="buffyours" />
+
+			If Display is set to true, but the player does not have the buff, they will see "Telport To..."
+
+		- New <property name="Location" value="" /> Changes
+			If the value is simply Portal01, then it will act as a two-way portal to the other Portal with the same name.
+			MinEffect and Dialog teleport triggers use this syntax as well.
+
+			- New syntax:
+				<property name="Location" value="source=Portal01,destination=Portal02" />  I am Portal01, but I send the player to Portal02
+				<property name="Location" value="source=Portal01,destination=NA" />  I am Portal01, but I have no destination. I am a one way portal (people can port to me, but not from me)
+
+		- Fixed an issue with PortalMaps not being cleared from one game to another
+
+Version: 20.5.143.1141
+
+	[ Quests ]
+		Added in GiveBuff as quest award
+			<reward type="GiveBuff, SCore" id="yourbuff" />
+
+	[ Portals ]
+		- Removed OnBlockCollided, and OnWalk on triggers. Players must interact with it now.
+		- Added 2 second delay before teleport begins, starting after cooldown buff is specified.
+			<property name="CooldownBuff" value="buffTeleportCooldown" />
+			<property name="Delay" value="1000" /> <!-- Micro seconds, whole numbers only. Default is 1000ms  -->
+
+		- Added XML configuration for fixed portals
+			<property name="Location" value="Portal01" />
+
+	[ MinEvent ]
+		- Added new MinEvent to teleport the player to a certain location
+			<triggered_effect trigger="onSelfBuffStart" action="Teleport, SCore" location="Portal01" />
+
+	[ Dialog ]
+		- Added new Dialog action to trigger a teleport. It supports the following, most of which is not tested.
+
+			Teleports to a Portal
+			<action type="Teleport, SCore" id="Portal01" />
+ 
+			Teleports to the player's current bedroll
+			<action type="Teleport, SCore" id="Bedroll" />
+  
+			Teleports to the player's landclaim
+			<action type="Teleport, SCore" id="Landclaim" />
+  
+			Teleports to the player's backpack
+			<action type="Teleport, SCore" id="Backpack" />
 	
+	[ Faction Manager ]
+		- Fixed null ref for faction manager's update call
+
+	[ XML ]
+		- Commented out the error with the PortalPrefab
+
+
+Version: 20.4.126.2131
+	[ NPC ]
+		- Allowed override on a per-entity base for 
+				<property name="AllEntitiesUseFactionTargeting" value="true" />
+	[ Portals ]
+		- Preliminary code for setting Portals ready for testing. Portals are fancy signs. Add the same Text to two Portals, and they will be linked.
+			- In the case of multiple named portals, the first one discovered will be used.
+
+			Video Example: https://youtu.be/cvYxVzY_lO4
+
+			2 Portal Blocks have been defined in blocks.xml, using models provided by guppycur
+				guppyPortalMagic
+				guppyFuturePortal
+		
+
+Version: 20.4.119.941
+	[ NPC ]
+		- Added Chunk visible feature for the NPCs.
+			When the chunk is not visible, the NPC's gravity will be turned off.
+			When thec hunk is visible, the NPC's gravity will be turned on.
+			This is a potential fix for NPCs disappearing at bases, with the theory that they are falling out of the world.
+			Thanks to closer_ex
+
+	[ UAI ]
+		- New Utility AI task. 
+			- Look for a PathingCode on the NPC, and start patrolling about between all the codes.
+			- NPC will scan for all PathingCubes nearby for a code that matches its Cvar PathingCode.
+
+			- Optional buff will fire when the NPC reaches its target point.
+				- Task will not end until the buff expires
+				- Once buff expires, NPC will go to its next location.
+				- If you want an NPC to walk to a point, and stand there for 10 seconds, have the buff's duration set to 10.
+
+
+			Basic Example:
+
+			<action name="Patrol" weight="3" entity_filter="IsSelf" >
+				<task class="Patrol, SCore" run="false" buff="IsGathering"/>
+
+				<consideration class="HasPathingCode, SCore" />
+				<consideration class="EnemyNotNear, SCore" distance="15"/>
+			</action>
+
+			Setting pc=5 on a SpawnCube will set nearby NPC to path to cubes with the number 5.
+
+
+Version: 20.4.116.1950
+
 	[ Blocks ]
 		- Re-added crop trample
 			Add  fcropsDestroy to the FilterTags to enable:

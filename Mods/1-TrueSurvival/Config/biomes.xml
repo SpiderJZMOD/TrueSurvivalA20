@@ -206,7 +206,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock07" prob=".001"/>
 				<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
 				<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.001"/>
-				<decoration type="block" blockname="plantedBlueberry3Harvest" prob=".001" rotatemax="3"/>
+				<decoration type="block" blockname="plantedBlueberry3Harvest" prob=".009" rotatemax="3"/>
+				<decoration type="block" blockname="jz_DecorBush4" prob=".01" rotatemax="3"/>
 				<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".1" rotatemax="7"/>
 				<decoration type="block" blockname="treeSnowyGrassDiagonal" prob=".4"/>
 			</decorations>
@@ -331,6 +332,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="rock06" prob=".005"/>
 			<decoration type="block" blockname="rock07" prob=".005"/>
 			<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
+			<decoration type="block" blockname="plantedBlueberry3Harvest" prob=".001" rotatemax="3"/>
+			<decoration type="block" blockname="jz_DecorBush4" prob=".002" rotatemax="3"/>
 			<decoration type="block" blockname="treeWinterEverGreen" prob="0.003" rotatemax="7"/>
 			<decoration type="block" blockname="treeWinterPine13m" prob="0.003" rotatemax="7"/>
 			<decoration type="block" blockname="treeWinterPine19m" prob="0.003" rotatemax="7"/>
@@ -574,14 +577,18 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="rock04" prob=".001"/>
 			<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
 			
-			<decoration type="block" blockname="jz_DeadTreeDecor1" prob="0.004" rotatemax="3"/>
-			<decoration type="block" blockname="jz_DeadTreeDecor2" prob="0.004" rotatemax="3"/>
+			<decoration type="block" blockname="jz_DeadTreeDecor1" prob="0.002" rotatemax="3"/>
+			<decoration type="block" blockname="jz_DeadTreeDecor2" prob="0.002" rotatemax="3"/>
 			<decoration type="block" blockname="jz_DeadTreeDecor3" prob="0.004" rotatemax="3"/>
 			<decoration type="block" blockname="jz_DeadTreeDecor4" prob="0.004" rotatemax="7"/>
 			<decoration type="block" blockname="jz_DeadTreeDecor5" prob="0.004" rotatemax="7"/>
 			<decoration type="block" blockname="jz_DeadTreeDecor6" prob="0.004" rotatemax="7"/>
 			<decoration type="block" blockname="jz_DeadTreeDecor8" prob="0.004" rotatemax="3"/>
 			<decoration type="block" blockname="jz_DeadTreeDecor9" prob="0.004" rotatemax="3"/>
+			
+			<decoration type="block" blockname="jz_DecorBush1" prob="0.008" rotatemax="3"/>
+			<decoration type="block" blockname="jz_DecorBush2" prob="0.008" rotatemax="3"/>
+			<decoration type="block" blockname="jz_DecorBush5" prob="0.008" rotatemax="3"/>
 			
 			
 			<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7"/>
@@ -653,6 +660,13 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
+
+				<decoration type="block" blockname="jz_DecorBush3" prob="0.003" rotatemax="3"/>
+				<decoration type="block" blockname="jz_FallenCoconut" prob="0.02" rotatemax="3"/>
+				<decoration type="block" blockname="jz_DecorCoconutTree1" prob="0.02" rotatemax="3"/>
+				<decoration type="block" blockname="jz_DecorCoconutTree2" prob="0.01" rotatemax="3"/>
+				<decoration type="block" blockname="jz_DecorCoconutTree3" prob="0.01" rotatemax="3"/>
+				<decoration type="block" blockname="jz_DecorCoconutTree4" prob="0.01" rotatemax="3"/>
 
 				<decoration type="block" blockname="treeDesertShrub" prob="0.3" rotatemax="7"/>
 				<decoration type="block" blockname="treeCactus01" prob="0.003" rotatemax="3"/>
@@ -802,6 +816,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
 			<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
 
+			<decoration type="block" blockname="jz_DecorBush3" prob="0.002" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus01" prob="0.004" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus02" prob="0.004" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus03" prob="0.004" rotatemax="3"/>
@@ -1269,6 +1284,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
 			<decoration type="block" blockname="cntWastelandRandomLootHelper" prob="0.00025"/>
 			
+			<decoration type="block" blockname="jz_PlantedBean3Harvest" prob=".001" rotatemax="3"/>
 			<decoration type="block" blockname="jz_MutatedDecorRandomHelper" prob="0.001"/>
 			<blockontop blockname="jz_MilitaryVehicleRandomHelper" prob="0.0005" rotatemax="3"/>
 			<decoration type="block" blockname="jz_CreepyEye" prob="0.0001" rotatemax="3"/>

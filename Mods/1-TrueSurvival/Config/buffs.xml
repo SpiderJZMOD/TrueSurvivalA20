@@ -646,7 +646,18 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<passive_effect name="WaterMax" operation="base_add" value="@$PlayerLevelBonus"/>
 			<passive_effect name="FoodMax" operation="base_add" value="@$PlayerLevelBonus"/>
 		</effect_group>
-
+		<effect_group name="Stove Quest Start">
+			<requirement name="CVarCompare" cvar="$GotStoveQuest" operation="Equals" value="0"/>
+			<requirement name="PlayerLevel" operation="GTE" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_StoveRepairKitPt1" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$GotStoveQuest" operation="set" value="1"/>	
+		</effect_group>
+		<effect_group name="Kitchen Quest Start">
+			<requirement name="CVarCompare" cvar="$GotKitchenQuest" operation="Equals" value="0"/>
+			<requirement name="PlayerLevel" operation="GTE" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="GiveQuestSDX, SCore" target="self" quest="jzquest_KitchenRecipePt1" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$GotKitchenQuest" operation="set" value="1"/>	
+		</effect_group>
 		<!--
 		<effect_group name="Power Attack Grunt">
 			<triggered_effect trigger="onSelfSecondaryActionStart" action="LogMessage" message=" SECONDARY attack, looking at ENTITY">
@@ -717,6 +728,20 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 					<requirement name="HasBuff" buff="buffDrugSteroids"/>
 				</triggered_effect>
 		</effect_group>
+		
+		<effect_group name="JZMOD Players in Desert or Forest">
+			<requirements compare_type="or">
+				<requirement name="InBiome" biome="03"/>
+				<requirement name="InBiome" biome="05"/>
+			</requirements>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffInDesertOrForest"/>
+		</effect_group>	
+		
+		<effect_group name="JZMOD Players not in Desert or Forest">
+			<requirement name="!InBiome" biome="03"/>
+			<requirement name="!InBiome" biome="05"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffInDesertOrForest"/>
+		</effect_group>	
 		
 		<effect_group name="JZMOD Turn Off Charismatic Nature">
            	<requirement name="CVarCompare" cvar="CharismaticNatureLevel" operation="GTE" value="1"/>
@@ -797,6 +822,17 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 					<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GT" value="4"/>
 					<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GT" value="4"/>
 					<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GT" value="4"/></triggered_effect>
+		</effect_group>
+		<effect_group name="JZMOD Nutrition Level 3.5">
+			<requirements compare_type="or">
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="9"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="9"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="9"/>			
+			</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jzCvarNutrition" operation="set" value="3.5">
+					<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GT" value="5"/>
+					<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GT" value="5"/>
+					<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GT" value="5"/></triggered_effect>
 		</effect_group>
 		<effect_group name="JZMOD Nutrition Level 4">
 			<requirements compare_type="or">
@@ -889,11 +925,11 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
                     
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="1800">
                 <requirement name="CVarCompare" cvar="$HealingBonus" operation="Equals" value="1"/></triggered_effect>
-            <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="1620">
+            <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="1350">
                 <requirement name="CVarCompare" cvar="$HealingBonus" operation="Equals" value="2"/></triggered_effect>
-            <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="1440">
+            <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="900">
                 <requirement name="CVarCompare" cvar="$HealingBonus" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="1260">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$TendingTime" operation="set" value="450">
                 <requirement name="CVarCompare" cvar="$HealingBonus" operation="Equals" value="4"/></triggered_effect>
 		</effect_group>
 		
@@ -1471,6 +1507,8 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="23"/> </triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="jz_loadingTipTSCrowbar">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="24"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddJournalEntry" journal="traderTip">
+				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="25"/> </triggered_effect>
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffJournalUnlocks">
 				<requirement name="CVarCompare" cvar="$journalUnlockTimer" operation="Equals" value="26"/> </triggered_effect>
@@ -2636,6 +2674,7 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 			<requirement name="!HasBuff" buff="buffDrugPainkillers"/>
 			<requirement name="!HasBuff" buff="buffInjuryStunned01Cooldown"/>
 			<requirement name="!HasBuff" buff="jz_BuffConcussionDelay"/>
+			<requirement name="!HasBuff" buff="jz_BuffLacedMeal"/>
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryConcussion"/>
 		</effect_group>		
@@ -4029,7 +4068,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0.1"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffOnAnyCrit"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryStunned01"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffInjuryStunned01">
+				<requirement name="!HasBuff" buff="jz_BuffLacedMeal"/></triggered_effect>
 		</effect_group>
 	</buff>
 
@@ -5342,7 +5382,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="buffIllPneumonia01" name_key="buffIllPneumonia01Name" description_key="buffIllPneumonia01Desc" remove_on_death="false" tooltip_key="buffIllPneumonia01Tooltip" icon="ui_game_symbol_" icon_color="255,0,0" icon_blink="true">
+	<buff name="buffIllPneumonia01" name_key="Pneumonia" description_key="buffIllPneumonia01Desc" remove_on_death="false" tooltip_key="buffIllPneumonia01Tooltip" icon="ui_game_symbol_cold" icon_color="255,0,0" icon_blink="true">
 		<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="300"/>
@@ -5987,7 +6027,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$foodOverEatAmount" operation="set" value="100"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$foodOverEatAmount" operation="add" value="@$PlayerLevelBonus"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$foodOverEatAmount" operation="multiply" value=".2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$foodOverEatAmount" operation="multiply" value=".1"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealFood">
 				<requirement name="CVarCompare" cvar="$foodAmountAdd" operation="LT" value=".1"/>
@@ -9364,6 +9404,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
        <effect_group>
             <requirement name="NotHasBuff" buff="jz_BuffFatigueTickerTimeOut"/>
             <requirement name="NotHasBuff" buff="jz_BuffStimulant"/>
+			<requirement name="NotHasBuff" buff="jz_BuffSpicyMeal"/>
+			<requirement name="NotHasBuff" buff="jz_BuffLacedMeal"/>
                 <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$fatigueTicker" operation="add" value="@$fatigueInterval">
                     <requirement name="TimeOfDay" operation="Equals" value="0100"/></triggered_effect>
                 <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffFatigueTickerTimeOut">
@@ -10083,9 +10125,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="0"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffHealthyDietTag" />
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffBalancedDietTag" />
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffGoodDietTag" />
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="HealthyDiet" />
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="stamina" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="stamina" operation="add" value="1"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" />
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffHealthyDiet">
 				<requirement name="CVarCompare" cvar="$jzCvarNutrition" operation="NotEquals" value="6"/></triggered_effect>
@@ -10094,7 +10138,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="Mobility" operation="perc_add" value="0.1"/>
 		</effect_group>		
 	</buff>
-		
+	
+	<buff name="Healthy_Diet" remove_on_death="false" hidden="true" >
+		<stack_type value="ignore"/>
+		<duration value="4"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PumpQuestSDX, SCore" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" />
+		</effect_group>	
+	</buff>
+	
+	
 	<buff name="jz_BuffBalancedDietTag" remove_on_death="false" hidden="true" ><!--name_key="jz_BuffBalancedDietTag" icon="ui_game_symbol_goodNutrition3" >-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -10549,7 +10603,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 	
 	<!-- JZMOD SNAKE BITE -->
-	<buff name="jz_BuffSnakeBite" remove_on_death="false" name_key="Snake Bite" tooltip_key="Ow! That Hurts!" description_key="A snake bit and poisoned you. You will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_snakeBuff" >
+	<buff name="jz_BuffSnakeBite" remove_on_death="false" name_key="Snake Bite" tooltip_key="Ow! That Hurts!" description_key="jz_BuffSnakeBiteDesc" icon="ui_game_symbol_snakeBuff" >
 		<stack_type value="ignore"/>
 		<update_rate value="1"/>
 		<duration value="3600"/><!--3600-->
@@ -10570,7 +10624,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffSnakeBiteLvTwo" remove_on_death="false" name_key="Snake Bite" tooltip_key="That Bite does not look good!" description_key="Your snake bite is getting worse and the venom is spreading. You need to get some Anti–Venom soon. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_snakeBuff" >
+	<buff name="jz_BuffSnakeBiteLvTwo" remove_on_death="false" name_key="Snake Bite" tooltip_key="That Bite does not look good!" description_key="jz_BuffSnakeBiteLvTwoDesc" icon="ui_game_symbol_snakeBuff" >
 		<stack_type value="ignore"/>
 		<update_rate value="1"/>
 		<duration value="3600"/><!--3600-->
@@ -10586,7 +10640,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffSnakeBiteLvThree" remove_on_death="false" name_key="Snake Bite" tooltip_key="You dont look so good!" description_key="The snake venom is coursing through your veins. If you can last the day you might just live. Or you can find or make some Anti-Venom .Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal" icon="ui_game_symbol_snakeBuff" >
+	<buff name="jz_BuffSnakeBiteLvThree" remove_on_death="false" name_key="Snake Bite" tooltip_key="You dont look so good!" description_key="jz_BuffSnakeBiteLvThreeDesc" icon="ui_game_symbol_snakeBuff" >
 		<stack_type value="ignore"/>
 		<update_rate value="1"/>
 		<duration value="3600"/><!--3600-->
@@ -10605,7 +10659,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="1"/>
 		<effect_group>		
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="stamina" operation="subtract" value="25"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="stamina" operation="subtract" value="50"/>
 		</effect_group>
 	</buff>
 	
@@ -10805,6 +10859,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_StartingWellness" operation="set" value="100"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_StartingWellness" operation="subtract" value="@$jz_WellnessLv"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="@$jz_StartingWellness"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GotStoveQuest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$GotKitchenQuest" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$fatigueTicker" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionCureCounter" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="infectionCounter" operation="set" value="0"/>
@@ -10814,6 +10870,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffNewbieCoat" />
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffNubbins" />
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFatiguedTrigger" />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryConcussion" />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffFatigued" />
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInjuryBleeding"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThrobbingPainScreen"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffThrobbingPainScreenRestart"/>
@@ -11091,7 +11149,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
                 <requirement name="StatComparePercCurrentToMax" stat="Stamina" operation="LT" value="1"/></triggered_effect>
         </effect_group>
 	</buff>
-    <!-- JZMOD TRADER BUFFS -->
+    <!-- JZMOD TRADER BUFFS & REPUTATION -->
     <buff name="jz_BuffDeadIsDeadResetNoCheating" hidden="true" remove_on_death="false">
         <stack_type value="ignore"/>
 		<duration value="900"/>     
@@ -11161,6 +11219,181 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<update_rate value="1"/>
 		<duration value="180"/>
 	</buff>
+	
+	<buff name="jz_BuffTierOneTraderQuestComplete" hidden="true" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Trader Jen T1 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
+			<requirement name="CVarCompare" cvar="$TraderJenT1Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJenRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJenT1Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Bob T1 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
+			<requirement name="CVarCompare" cvar="$TraderRobT1Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderBobRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRobT1Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Hugh T1 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
+			<requirement name="CVarCompare" cvar="$TraderHughT1Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderHughRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderHughT1Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Rek T1 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
+			<requirement name="CVarCompare" cvar="$TraderRekT1Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderRektRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRekT1Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Joe T1 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
+			<requirement name="CVarCompare" cvar="$TraderJoeT1Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJoeRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJoeT1Qest" operation="add" value="1"/>
+		</effect_group>		
+	</buff>	
+	
+	<buff name="jz_BuffTierTwoTraderQuestComplete" hidden="true" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Trader Jen T2 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
+			<requirement name="CVarCompare" cvar="$TraderJenT2Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJenRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJenT2Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Bob T2 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
+			<requirement name="CVarCompare" cvar="$TraderRobT2Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderBobRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRobT2Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Hugh T2 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
+			<requirement name="CVarCompare" cvar="$TraderHughT2Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderHughRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderHughT2Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Rek T2 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
+			<requirement name="CVarCompare" cvar="$TraderRekT2Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderRektRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRekT2Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Joe T2 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
+			<requirement name="CVarCompare" cvar="$TraderJoeT2Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJoeRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJoeT2Qest" operation="add" value="1"/>
+		</effect_group>		
+	</buff>	
+	
+	<buff name="jz_BuffTierThreeTraderQuestComplete" hidden="true" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Trader Jen T3 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
+			<requirement name="CVarCompare" cvar="$TraderJenT3Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJenRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJenT3Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Bob T3 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
+			<requirement name="CVarCompare" cvar="$TraderRobT3Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderBobRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRobT3Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Hugh T3 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
+			<requirement name="CVarCompare" cvar="$TraderHughT3Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderHughRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderHughT3Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Rek T3 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
+			<requirement name="CVarCompare" cvar="$TraderRekT3Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderRektRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRekT3Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Joe T3 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
+			<requirement name="CVarCompare" cvar="$TraderJoeT3Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJoeRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJoeT3Qest" operation="add" value="1"/>
+		</effect_group>		
+	</buff>	
+	
+	<buff name="jz_BuffTierFourTraderQuestComplete" hidden="true" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Trader Jen T4 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
+			<requirement name="CVarCompare" cvar="$TraderJenT4Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJenRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJenT4Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Bob T4 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
+			<requirement name="CVarCompare" cvar="$TraderRobT4Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderBobRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRobT4Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Hugh T4 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
+			<requirement name="CVarCompare" cvar="$TraderHughT4Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderHughRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderHughT4Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Rek T4 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
+			<requirement name="CVarCompare" cvar="$TraderRekT4Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderRektRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRekT4Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Joe T4 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
+			<requirement name="CVarCompare" cvar="$TraderJoeT4Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJoeRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJoeT4Qest" operation="add" value="1"/>
+		</effect_group>		
+	</buff>	
+	
+	<buff name="jz_BuffTierFiveTraderQuestComplete" hidden="true" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Trader Jen T5 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
+			<requirement name="CVarCompare" cvar="$TraderJenT5Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJenRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJenT5Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Bob T5 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
+			<requirement name="CVarCompare" cvar="$TraderRobT5Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderBobRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRobT5Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Hugh T5 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
+			<requirement name="CVarCompare" cvar="$TraderHughT5Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderHughRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderHughT5Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Rek T5 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
+			<requirement name="CVarCompare" cvar="$TraderRekT5Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderRektRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderRekT5Qest" operation="add" value="1"/>
+		</effect_group>		
+		<effect_group name="Trader Joe T5 Quest Rep">
+			<requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
+			<requirement name="CVarCompare" cvar="$TraderJoeT5Qest" operation="LT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifySkillSDX, SCore" tag="jz_TraderJoeRep" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$TraderJoeT5Qest" operation="add" value="1"/>
+		</effect_group>		
+	</buff>	
 	
 	 <!-- JZMOD STIMULANT -->
     <buff name="jz_BuffStimulant" remove_on_death="false" name_key="Stimulant" tooltip_key="Oh Ya!" description_key="StimulantDesc" icon="ui_game_symbol_stimulant" >
@@ -14031,16 +14264,6 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<!-- Medical Infection Trigger -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffMedicalInfectionTrigger">
 				<requirement name="CVarCompare" cvar="$lacerationLeftArmCounter" operation="Equals" value="3610"/></triggered_effect>
-			<!-- Clean Up -->
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconA"/>	
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconB"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconC"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconD"/>	
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconAA"/>	
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconBB"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconCC"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconDD"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".lacerationLeftArmHealthBlockage" operation="set" value="0"/>
 			<!-- Bleeding Icons -->	
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffLacerationLeftArmIconA">	
 				<requirement name="CVarCompare" cvar="$lacerationLeftArmIsBleeding" operation="Equals" value="1"/>
@@ -14085,7 +14308,17 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<requirement name="CVarCompare" cvar="$lacerationLeftArmCounter" operation="LTE" value="2880"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".lacerationLeftArmHealthBlockage" operation="set" value="5">
 				<requirement name="CVarCompare" cvar="$lacerationLeftArmCounter" operation="GT" value="2880"/></triggered_effect>
-						
+			<!-- Clean Up -->
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconA"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconB"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconC"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconD"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconAA"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconBB"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconCC"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffLacerationLeftArmIconDD"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".lacerationLeftArmHealthBlockage" operation="set" value="0"/>			
+			
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.08"/>
 			<passive_effect name="HealthMaxBlockage" operation="base_add" value="@.lacerationLeftArmHealthBlockage"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="-.05" tags="buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>	
@@ -25078,7 +25311,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftFootNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -25142,7 +25375,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftFootBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -25306,7 +25539,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftFootNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -25331,7 +25564,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftFootHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -25504,7 +25737,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightFootNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -25568,7 +25801,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightFootBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -25732,7 +25965,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightFootNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -25757,7 +25990,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightFootHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -25930,7 +26163,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftLegNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -25994,7 +26227,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftLegBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -26158,7 +26391,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftLegNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -26183,7 +26416,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftLegHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -26356,7 +26589,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightLegNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -26420,7 +26653,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightLegBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -26584,7 +26817,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightLegNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -26609,7 +26842,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightLegHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -26782,7 +27015,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftArmNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -26846,7 +27079,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftArmBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27010,7 +27243,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftArmNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27035,7 +27268,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftArmHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27208,7 +27441,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightArmNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -27272,7 +27505,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightArmBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27436,7 +27669,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightArmNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27461,7 +27694,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightArmHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27634,7 +27867,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftHandNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -27698,7 +27931,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27862,7 +28095,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -27887,7 +28120,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftHandHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28060,7 +28293,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightHandNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -28124,7 +28357,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightHandBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28288,7 +28521,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnRightHandNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28313,7 +28546,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightHandHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28486,7 +28719,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnStomachNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -28550,7 +28783,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnStomachBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28714,7 +28947,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnStomachNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28739,7 +28972,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnStomachHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -28912,7 +29145,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnNeckNeedsBandage" operation="set" value="0"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".1"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".07"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/><!-- Cold -->
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/><!-- Hot -->
 		</effect_group>
@@ -28976,7 +29209,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnNeckBandagedD"/>
 			<!-- Effects -->			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".02"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".02"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -29140,7 +29373,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffFireBurnNeckNeedsBandageIconAA"/>
 			<!-- Effects -->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".07"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".08"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -29165,7 +29398,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnNeckHealingDuration" operation="set" value="0"/>  
 	
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".01"/>
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".03"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".01"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-4"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="4"/>
 		</effect_group>
@@ -29195,22 +29428,90 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<passive_effect name="Mobility" operation="perc_add" value="-.40"/>
 		</effect_group>
+		<effect_group name="Trip Chance">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".tripChance" operation="set" value="5"/> 
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="2.5">
+				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.tripChance"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
+		
+	<buff name="jz_BuffSuicideBomber" hidden="true" remove_on_death="true">
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+        <effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="set" value="20"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" value=".99" />
+			<passive_effect name="RunSpeed" operation="perc_add" value=".99" />
+        </effect_group>
+	</buff>
+		
+	<buff name="jz_BuffSpicyMeal" name_key="Spicy Meal" remove_on_death="true" description_key="jz_BuffSpicyMealDec" icon="NeckBandaged" >
+		<stack_type value="replace"/>
+		<duration value="1200"/>
+        <effect_group>   
+         	<passive_effect name="Mobility" operation="perc_add" value=".1" />
+			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-10"/>
+		</effect_group>
 	</buff>
 	
+	<buff name="jz_BuffLacedMeal" name_key="Laced Meal" remove_on_death="true" description_key="jz_BuffLacedMealDesc" icon="NeckBandaged" >
+		<stack_type value="replace"/>
+		<duration value="1200"/>
+        <effect_group>   
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Stamina" operation="add" value="2"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="add" value="2"/>
+		</effect_group>
+	</buff>
 	
+	<buff name="jz_BuffCoconutCheesecake" name_key="Coconut Cheesecake" remove_on_death="true" description_key="jz_BuffCoconutCheesecakeDesc" icon="NeckBandaged" >
+		<stack_type value="replace"/>
+		<duration value="1200"/>
+        <effect_group>   
+			<passive_effect name="HealthMax" operation="base_add" value="40"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-10"/>
+		</effect_group>
+	</buff>
 	
+	<buff name="jz_BuffIceCream" name_key="Ice Cream" remove_on_death="true" description_key="jz_BuffIceCreamDesc" icon="NeckBandaged" >
+		<stack_type value="replace"/>
+		<duration value="1200"/>
+        <effect_group>   
+			<passive_effect name="StaminaMax" operation="base_add" value="40"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="-10"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+		</effect_group>
+	</buff>
 	
+	<buff name="jz_BuffInDesertOrForest" name_key="In Forest or Desert" remove_on_death="false" description_key="jz_BuffInDesertOrForestDesc" hidden="true" icon="NeckBandaged" >
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+    </buff>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	<buff name="jz_BuffCoconutMilk" name_key="Coconut Milk" description_key="jz_BuffCoconutMilk" icon="ui_game_symbol_stomach">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffCoconutMilkDisplay"/><display_value_format value="time"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffCoconutMilkDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffCoconutMilkDisplay" operation="set" value="@$buffCoconutMilkDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffCoconutMilkDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffCoconutMilk">
+				<requirement name="CVarCompare" cvar="$buffCoconutMilkDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffCoconutMilkDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffCoconutMilkDuration" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffCoconutMilkEffectDisplay" operation="set" value="-15"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffCoconutMilkEffectDisplay" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value=".15"/>
+			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value=".15"/>
+		</effect_group>
+	</buff>
 </set>     
 </configs>
 

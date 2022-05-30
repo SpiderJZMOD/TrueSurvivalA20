@@ -198,7 +198,7 @@
 	<window name="windowCompass" anchor="CenterTop" pos="-240,-9" width="480" height="43" controller="CompassWindow">
 		<sprite depth="0" sprite="ui_game_header_fill" pos="47,0" width="386" height="43" type="sliced" color="150,150,150,150" />
 		<sprite depth="1" sprite="ui_game_header_fill" pos="50,-3" width="380" height="37" type="sliced" color="50,50,50,220" />
-		<texture name="JZMODLogo" depth="4" pos="-580,-35" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival.png"/>
+		<texture name="JZMODLogo" depth="4" pos="-580,-35" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival102.png"/>
 		<!--<texture depth="8" texture="Textures/UI/ui_game_compass" pos="50, -15" width="380" height="23" color="[iconColor]" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" />** pos="75,-25"-->
 		
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />
@@ -4512,6 +4512,41 @@
 			<grid rows="6" cols="1" pos="3,-3" cell_width="147" cell_height="24" repeat_content="true">
 				<forge_material name="0" />
 			</grid>
+		</rect>
+	</window>
+	
+	<window name="windowKitchenInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="veggie,fruit,grain,protein,herbs,condiments,sauces,spicy,drugs,water,cans" valid_materials_color="[green]" invalid_materials_color="[red]">
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_cookware" />
+			<label style="header.name" text="INPUT" text_key="Stored Food" />
+		</panel>
+		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="0,-46" height="280" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<rect name="content" depth="1" pos="0,-46" height="250">
+			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+				<item_stack name="0" />
+			</grid>
+		</rect>
+		<rect name="content2" depth="0" pos="78, -49" width="147" height="275">
+			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true" />
+			<grid rows="11" cols="1" pos="3,-3" cell_width="147" cell_height="24" repeat_content="true">
+				<forge_material name="0" />
+			</grid>
+		</rect>
+	</window>
+	
+	<window name="jz_KitchenOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel style="header.panel" pos="0,-130">
+			<sprite style="header.icon" sprite="ui_game_symbol_fork"/>
+			<label style="header.name" text="OUTPUT" text_key="Counter" />
+		</panel>
+
+
+		<rect name="content" depth="0" pos="0,-176" height="150" disablefallthrough="true" on_press="true"><!-- pos="0,-46" -->
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+				<grid depth="10" name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
 		</rect>
 	</window>
 	
