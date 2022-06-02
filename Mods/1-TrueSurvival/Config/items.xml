@@ -15004,7 +15004,7 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="TSFoWaStHeFrDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Mprotein"/><!-- JZMOD -->
+	<property name="Material" value="Mfruit"/><!-- JZMOD -->
 	<property name="Weight" value="1"/><!-- JZMOD -->
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
@@ -19487,7 +19487,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedAloe1"/>
-	<property name="Unlocks" value="plantedAloe1"/>
+	<property name="Unlocks" value="jz_SeedAloe"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedAloe1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19507,7 +19507,7 @@ perkNightStalkerSilentNight
 	<property name="EconomicValue" value="400"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedBlueberry1"/>
-	<property name="Unlocks" value="plantedBlueberry1"/>
+	<property name="Unlocks" value="jz_SeedBlueberry"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedBlueberry1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19526,7 +19526,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedChrysanthemum1"/>
-	<property name="Unlocks" value="plantedChrysanthemum1"/>
+	<property name="Unlocks" value="jz_SeedChrysanthemum"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedChrysanthemum1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19545,7 +19545,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedCoffee1"/>
-	<property name="Unlocks" value="plantedCoffee1"/>
+	<property name="Unlocks" value="jz_SeedCoffee"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCoffee1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19564,7 +19564,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedCorn1"/>
-	<property name="Unlocks" value="plantedCorn1"/>
+	<property name="Unlocks" value="jz_SeedCorn"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCorn1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19583,7 +19583,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedCotton1"/>
-	<property name="Unlocks" value="plantedCotton1"/>
+	<property name="Unlocks" value="jz_SeedCotton"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCotton1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19602,7 +19602,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedGoldenrod1"/>
-	<property name="Unlocks" value="plantedGoldenrod1"/>
+	<property name="Unlocks" value="jz_SeedGoldenrod"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGoldenrod1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19632,7 +19632,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedHop1"/>
-	<property name="Unlocks" value="plantedHop1"/>
+	<property name="Unlocks" value="jz_SeedHop"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedHop1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19670,7 +19670,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedPotato1"/>
-	<property name="Unlocks" value="plantedPotato1"/>
+	<property name="Unlocks" value="jz_SeedPotato"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPotato1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19689,7 +19689,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedYucca1"/>
-	<property name="Unlocks" value="plantedYucca1"/>
+	<property name="Unlocks" value="jz_SeedYucca"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedYucca1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -19708,7 +19708,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="plantedPumpkin1"/>
-	<property name="Unlocks" value="plantedPumpkin1"/>
+	<property name="Unlocks" value="jz_SeedPumpkin"/>
 	<!--<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPumpkin1" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -36505,7 +36505,7 @@ perkNightStalkerSilentNight
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="jz_FoodCoconut"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
-    <property name="Unlocks" value="jz_PlantedCoconut1"/>
+    <property name="Unlocks" value="jz_SeedCoconut"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_CoconutSeedSchematic" operation="LT" value="1"/>
 	</property>
@@ -36520,7 +36520,7 @@ perkNightStalkerSilentNight
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="jz_FoodTomato"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
-    <property name="Unlocks" value="jz_PlantedTomato1"/>
+    <property name="Unlocks" value="jz_SeedTomato"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_TomatoSeedSchematic" operation="LT" value="1"/>
 	</property>
@@ -36535,7 +36535,7 @@ perkNightStalkerSilentNight
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="jz_FoodOnion"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
-    <property name="Unlocks" value="jz_PlantedOnion1"/>
+    <property name="Unlocks" value="jz_SeedOnion"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_OnionSeedSchematic" operation="LT" value="1"/>
 	</property>
@@ -36550,7 +36550,7 @@ perkNightStalkerSilentNight
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="jz_SpicyChilli"/>
 	<property name="DescriptionKey" value="jz_ItemSchematicDesc"/>
-    <property name="Unlocks" value="jz_PlantedChilli1"/>
+    <property name="Unlocks" value="jz_SeedChilli"/>
 	<property class="Action0">
 		<requirement name="ProgressionLevel" progression_name="SP_ChilliSeedSchematic" operation="LT" value="1"/>
 	</property>
@@ -36741,9 +36741,25 @@ perkNightStalkerSilentNight
 </item>
 
 <item name="jz_StoveRepairKit">
-	<property name="Extends" value="jz_MasterItem" />
+	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_StoveRepairKitDesc" />
-	<property name="CustomIcon" value="StoveCampfire"/>
+	<property class="Action0">
+		 <property name="Allowed_upgrade_items" value="jz_StoveRepairKit"/>
+	</property>
+	<property class="Action1"> 
+		 <property name="Allowed_upgrade_items" value="jz_StoveRepairKit"/>
+	</property>
+	<effect_group>
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+  		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="3" />
+		<passive_effect name="DegradationMax" operation="base_set" value="1000"  />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
 </item>
 
 <item name="jz_Microwave">
@@ -36757,8 +36773,10 @@ perkNightStalkerSilentNight
 <!-- FOREST -->
 <item name="jz_SeedChrysanthemum">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedChrysanthemum1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="plantedChrysanthemum1Schematic,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedChrysanthemum1"/>
@@ -36768,8 +36786,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedGoldenrod">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedGoldenrod1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="plantedGoldenrod1Schematic,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedGoldenrod1"/>
@@ -36779,8 +36799,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedPumpkin">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedPumpkin1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="plantedPumpkin1Schematic,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedPumpkin1"/>
@@ -36790,8 +36812,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedCorn">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedCorn1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="plantedCorn1Schematic,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedCorn1"/>
@@ -36801,8 +36825,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedPotato">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedPotato1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="plantedPotato1Schematic,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedPotato1"/>
@@ -36814,6 +36840,8 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_PlantedCarrot1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicCarrotSeed,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedCarrot1"/>
@@ -36823,8 +36851,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedTomato">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="jz_PlantedEggPlant1" />
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicTomatoSeed,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedTomato1"/>
@@ -36834,8 +36864,11 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedOnion">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="jz_PlantedEggPlant1" />
+	<property name="CustomIconTint" value="35bd00"/>
 	<property name="DescriptionKey" value="forestCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicOnionSeed,jz_Farmer,jz_HobbiesGardening"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedOnion1"/>
@@ -36848,6 +36881,8 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_PlantedCarrot1" />
 	<property name="DescriptionKey" value="desertCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicChilliSeed,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedChillis1"/>
@@ -36857,8 +36892,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedAloe">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedAloe1" />
 	<property name="DescriptionKey" value="desertCropDesc" />
+	<property name="UnlockedBy" value="plantedAloe1Schematic,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedAloe1"/>
@@ -36868,8 +36905,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedCoffee">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedCoffee1" />
 	<property name="DescriptionKey" value="desertCropDesc" />
+	<property name="UnlockedBy" value="plantedCoffee1Schematic,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedCoffee1"/>
@@ -36879,8 +36918,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedYucca">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedYucca1" />
 	<property name="DescriptionKey" value="desertCropDesc" />
+	<property name="UnlockedBy" value="plantedYucca1Schematic,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedYucca1"/>
@@ -36890,8 +36931,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedCoconut">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="jz_PlantedCoconut1" />
 	<property name="DescriptionKey" value="desertCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicCoconutSeed,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedCoconut1"/>
@@ -36901,8 +36944,10 @@ perkNightStalkerSilentNight
 <!-- SNOW -->
 <item name="jz_SeedBlueberry">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedBlueberry1" />
 	<property name="DescriptionKey" value="sonwCropDesc" />
+	<property name="UnlockedBy" value="plantedBlueberry1Schematic,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedBlueberry1"/>
@@ -36912,8 +36957,10 @@ perkNightStalkerSilentNight
 <!-- FOREST AND DESERT -->
 <item name="jz_SeedWheat">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="jz_PlantedWheat1" />
 	<property name="DescriptionKey" value="forestNdesertCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicWheatSeed,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedWheat1"/>
@@ -36923,8 +36970,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedCotton">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedCotton1" />
 	<property name="DescriptionKey" value="forestNdesertCropDesc" />
+	<property name="UnlockedBy" value="plantedCotton1Schematic,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedCotton1"/>
@@ -36934,8 +36983,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedHop">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="plantedHop1" />
 	<property name="DescriptionKey" value="forestNdesertCropDesc" />
+	<property name="UnlockedBy" value="plantedHop1Schematic,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="plantedHop1"/>
@@ -36945,8 +36996,10 @@ perkNightStalkerSilentNight
 
 <item name="jz_SeedOrange">
 	<property name="Extends" value="jz_MasterItem" />
-	<property name="CustomIcon" value="jz_PlantedCarrot1" />
+	<property name="CustomIcon" value="jz_PlantedOrange1" />
 	<property name="DescriptionKey" value="forestNdesertCropDesc" />
+	<property name="UnlockedBy" value="jz_SchematicOrangeSeed,jz_Farmer"/>
+	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Blockname" value="jz_PlantedOrange1"/>

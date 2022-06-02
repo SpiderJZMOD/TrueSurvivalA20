@@ -2063,7 +2063,67 @@
 		<block name="jz_PlantedLeek2Dry" prob=".70"/>
 		<block name="jz_PlantedLeek3HarvestPlayer" prob=".20"/>
 	</placeholder>
-    <placeholder name="jz_PlantedCarrotFertilizedLv1Random">
+	 <placeholder name="jz_PlantedTomatoLv1Random">
+		<block name="jz_PlantedTomato1Infested" prob=".10"/>
+		<block name="jz_PlantedTomato1Dry" prob=".70"/>
+		<block name="jz_PlantedTomato2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedTomatoLv2Random">
+		<block name="jz_PlantedTomato2Infested" prob=".10"/>
+		<block name="jz_PlantedTomato2Dry" prob=".70"/>
+		<block name="jz_PlantedTomato3HarvestPlayer" prob=".20"/>
+	</placeholder>
+	<placeholder name="jz_PlantedOnionLv1Random">
+		<block name="jz_PlantedOnion1Infested" prob=".10"/>
+		<block name="jz_PlantedOnion1Dry" prob=".70"/>
+		<block name="jz_PlantedOnion2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedOnionLv2Random">
+		<block name="jz_PlantedOnion2Infested" prob=".10"/>
+		<block name="jz_PlantedOnion2Dry" prob=".70"/>
+		<block name="jz_PlantedOnion3HarvestPlayer" prob=".20"/>
+	</placeholder>
+	<placeholder name="jz_PlantedChilliLv1Random">
+		<block name="jz_PlantedChilli1Infested" prob=".10"/>
+		<block name="jz_PlantedChilli1Dry" prob=".70"/>
+		<block name="jz_PlantedChilli2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedChilliLv2Random">
+		<block name="jz_PlantedChilli2Infested" prob=".10"/>
+		<block name="jz_PlantedChilli2Dry" prob=".70"/>
+		<block name="jz_PlantedChilli3HarvestPlayer" prob=".20"/>
+	</placeholder>
+	 <placeholder name="jz_PlantedTomatoFertilizedLv1Random">
+		<block name="jz_PlantedTomatoFertilized1Infested" prob=".10"/>
+		<block name="jz_PlantedTomatoFertilized1Dry" prob=".70"/>
+		<block name="jz_PlantedTomatoFertilized2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedTomatoFertilizedLv2Random">
+		<block name="jz_PlantedTomatoFertilized2Infested" prob=".10"/>
+		<block name="jz_PlantedTomatoFertilized2Dry" prob=".70"/>
+		<block name="jz_PlantedTomato3FertilizedHarvestPlayer" prob=".20"/>
+	</placeholder>
+	<placeholder name="jz_PlantedOnionFertilizedLv1Random">
+		<block name="jz_PlantedOnionFertilized1Infested" prob=".10"/>
+		<block name="jz_PlantedOnionFertilized1Dry" prob=".70"/>
+		<block name="jz_PlantedOnionFertilized2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedOnionFertilizedLv2Random">
+		<block name="jz_PlantedOnionFertilized2Infested" prob=".10"/>
+		<block name="jz_PlantedOnionFertilized2Dry" prob=".70"/>
+		<block name="jz_PlantedOnion3FertilizedHarvestPlayer" prob=".20"/>
+	</placeholder>
+	<placeholder name="jz_PlantedChilliFertilizedLv1Random">
+		<block name="jz_PlantedChilliFertilized1Infested" prob=".10"/>
+		<block name="jz_PlantedChilliFertilized1Dry" prob=".70"/>
+		<block name="jz_PlantedChilliFertilized2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedChilliFertilizedLv2Random">
+		<block name="jz_PlantedChilliFertilized2Infested" prob=".10"/>
+		<block name="jz_PlantedChilliFertilized2Dry" prob=".70"/>
+		<block name="jz_PlantedChilli3FertilizedHarvestPlayer" prob=".20"/>
+	</placeholder>
+	<placeholder name="jz_PlantedCarrotFertilizedLv1Random">
 		<block name="jz_PlantedCarrotFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedCarrotFertilized1Dry" prob=".70"/>
 		<block name="jz_PlantedCarrotFertilized2" prob=".20"/>

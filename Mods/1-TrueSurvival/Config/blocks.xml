@@ -7746,7 +7746,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedYucca1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedYucca1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
@@ -7819,7 +7818,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCotton1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedCotton1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Texture" value="392"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCottonLv1Random"/><!-- JZMOD -->
@@ -7889,7 +7887,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCoffee1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedCoffee1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Texture" value="393"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCoffeeLv1Random"/><!-- JZMOD -->
@@ -7960,7 +7957,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CustomIcon" value="plantedGoldenrod1"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedGoldenrod1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Texture" value="401"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="plantedGoldenrod2"/>
@@ -8030,7 +8026,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedAloe1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedAloe1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
@@ -8104,7 +8099,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedBlueberry1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedBlueberry1Schematic,jz_Farmer"/><!-- JZMOD -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
@@ -8176,7 +8170,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedPotato1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedPotato1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
@@ -8248,7 +8241,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedChrysanthemum1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedChrysanthemum1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Texture" value="550"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedChrysanthemumLv1Random"/><!-- JZMOD -->
@@ -8318,7 +8310,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedCorn1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedCorn1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/> <!-- mostly for the particle effect -->
 	<property name="Shape" value="New"/>
 	<property name="Model" value="corn_sprout_shape"/>
@@ -8517,7 +8508,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedHop1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedHop1Schematic,jz_Farmer"/>	<!-- JZMOD -->
 	<property name="Texture" value="447"/>
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedHopLv1Random"/>	<!-- JZMOD -->
@@ -8636,7 +8626,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="plantedPumpkin1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="plantedPumpkin1Schematic,jz_Farmer,jz_HobbiesGardening"/><!-- JZMOD -->
 	<property name="Material" value="Mcorn"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
@@ -33901,7 +33890,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchOvenRetro.unity3d?OvenRetroWorkbenchPrefab" />
 	<property name="ModelOffset" value="0,0,0" />
-	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Place" value="TowardsPlacer"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -33951,7 +33940,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchOvenModern.unity3d?OvenModernWorkbenchPrefab" />
 	<property name="ModelOffset" value="0,0,0" />
-	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Place" value="TowardsPlacer"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="144"/>
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -38670,6 +38659,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="jz_DeadTreeDecor1"/>
 	<property name="Model" value="#@modfolder:Resources/JZDecorStumps.unity3d?Stump3Prefab" />
 	<property name="BigDecorationRadius" value="3"/>
+	<property name="ModelOffset" value="0,0,0"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 </block>
 
@@ -38679,6 +38669,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="BigDecorationRadius" value="1"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="CanDecorateOnSlopes" value="true"/>
+	<property name="ModelOffset" value="0,0,0"/>
 </block>
 
 <block name="jz_DeadTreeDecor5">
@@ -38686,6 +38677,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#@modfolder:Resources/JZDecorStumps.unity3d?Stump5Prefab" />
 	<property name="BigDecorationRadius" value="1"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ModelOffset" value="0,0,0"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
 	<property name="CanDecorateOnSlopes" value="true"/>
 </block>
@@ -38704,6 +38696,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="jz_DeadTreeDecor1"/>
 	<property name="Model" value="#@modfolder:Resources/JZDecorLogs.unity3d?Log1Prefab" />
 	<property name="MultiBlockDim" value="1,1,7"/>
+	<property name="ModelOffset" value="0,0,0"/>
 </block>
 
 <block name="jz_DeadTreeDecor8">
@@ -38711,12 +38704,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="#@modfolder:Resources/JZDecorLogs.unity3d?Log2Prefab" />
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ModelOffset" value="0,0,0"/>
 </block>
 
 <block name="jz_DeadTreeDecor9">
 	<property name="Extends" value="jz_DeadTreeDecor1"/>
 	<property name="Model" value="#@modfolder:Resources/JZDecorLogs.unity3d?Log3Prefab" />
 	<property name="MultiBlockDim" value="1,1,5"/>
+	<property name="ModelOffset" value="0,0,0"/>
 </block>
 
 <!--JZMOD PLAYER PLANTED CROPS-->
@@ -40212,7 +40207,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedCarrot1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="jz_SchematicCarrotSeed,jz_Farmer,jz_HobbiesGardening"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCarrotLv1Random"/>
@@ -40384,7 +40378,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_PlantedWheat1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="UnlockedBy" value="jz_SchematicWheatSeed,jz_Farmer"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZFarmWheat1.unity3d?FarmWheat1Prefab" />
 	<property name="PlantGrowing.Next" value="jz_PlantedWheatLv1Random"/>
@@ -41223,7 +41216,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="plantedTreeGroupDesc"/>
-	<property name="UnlockedBy" value="jz_SchematicOrangeSeed,jz_Farmer"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="MultiBlockDim" value="3,4,3"/>
@@ -41292,7 +41284,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="BigDecorationRadius" value="4"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedOrange2Dry"/>
     <property name="DowngradeBlock" value="jz_PlantedOrangeBare"/>  
-    <drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="4" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="6" tag="jz_FarmerHarvest"/>	
 </block>
 
 <block name="jz_PlantedOrange2Dry">
@@ -41319,6 +41313,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="4" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="6" tag="jz_FarmerHarvest"/>	
 </block>
 
 <block name="jz_PlantedOrange3">
@@ -41333,7 +41330,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 	<property name="PlantGrowing.Next" value="jz_PlantedOrange3Dry"/>
     <property name="DowngradeBlock" value="jz_PlantedOrange2"/>
-    <drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+   	<drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="4" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="6" tag="jz_FarmerHarvest"/>	
 </block>
 
 <block name="jz_PlantedOrange3Dry">
@@ -41360,6 +41359,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="4" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="6" tag="jz_FarmerHarvest"/>	
 </block>
 
 <block name="jz_PlantedOrange4">
@@ -41378,7 +41380,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="DowngradeBlock" value="jz_PlantedOrange3"/>
     <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
-    <drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>    
+	<drop event="Harvest" name="jz_FoodOrange" count="3" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="4" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodOrange" count="6" tag="jz_FarmerHarvest"/>	
 </block>
 
 <block name="jz_PlantedFertilizedOrange1">
@@ -41503,6 +41507,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIcon" value="shapeCubeFrame"/>
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleCobblestoneShapesBlock"/>
 	<property name="LightOpacity" value="0"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:cube"/>
@@ -41527,6 +41532,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="ramp_frame"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="CustomIcon" value="shapeRampFrame"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleCobblestoneShapesBlock"/>
 	<property name="LightOpacity" value="0"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:ramp"/>
@@ -41550,6 +41556,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Mesh" value="opaque"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="cube_frame"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleConcreteShapesBlock"/>
 	<property name="CustomIcon" value="shapeCubeFrame"/>
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="Collide" value="movement,melee,rocket"/>
@@ -41577,6 +41584,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_frame"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleConcreteShapesBlock"/>
 	<property name="CustomIcon" value="shapeRampFrame"/>
 	<property name="LightOpacity" value="0"/>
 	<property class="UpgradeBlock">
@@ -41602,6 +41610,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="cube_frame"/>
 	<property name="CustomIcon" value="shapeCubeFrame"/>
 	<property name="UseGlobalUV" value="Local"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleIronShapesBlock"/>
 	<property name="Collide" value="movement,melee,rocket"/>
 	<property name="LightOpacity" value="0"/>
 	<property class="UpgradeBlock">
@@ -41630,6 +41639,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_frame"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleIronShapesBlock"/>
 	<property name="CustomIcon" value="shapeRampFrame"/>
 	<property name="LightOpacity" value="0"/>
 	<property class="UpgradeBlock">
@@ -41656,6 +41666,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="jz_SimpleWoodShapesBlockDesc"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleIronShapesBlock"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="Group" value="Basics,Building"/>
 	<property name="PickupJournalEntry" value="shapeMenuTip"/>
@@ -41911,12 +41922,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IndexName" value="quest_wood"/>	
 </block>
 
-
 <block name="jz_PlantedCoconut1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="plantedTreeGroupDesc"/>
-	<property name="UnlockedBy" value="jz_SchematicCoconutSeed,jz_Farmer"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
 	<property name="MultiBlockDim" value="3,4,3"/>
@@ -41931,7 +41940,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="15"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
-	<drop event="Destroy" name="jz_PlantedCoconut1" count="1"/>
 </block>
 
 <block name="jz_PlantedCoconutBare">
@@ -41954,7 +41962,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
     <!--JZMOD ANY-->
 	<drop event="Destroy" name="jz_Stick" count="4,10"/>
-	<drop event="Destroy" name="jz_FreshTimber" count="3,6"/>         
+	<drop event="Destroy" name="jz_FreshTimber" count="4,6"/>         
 </block>
 
 <block name="jz_PlantedCoconut1Dry">
@@ -41972,6 +41980,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="30"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="4,6"/>     
 </block>
 
 <block name="jz_PlantedCoconut2">
@@ -41985,6 +41996,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="MaxDamage" value="1"/>
     <property name="BigDecorationRadius" value="4"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedCoconut2Dry"/>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="6,15"/>     
 </block>
 
 <block name="jz_PlantedCoconut2Dry">
@@ -42009,6 +42023,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="30"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="6,15"/>     
 </block>
 
 <block name="jz_PlantedCoconut3">
@@ -42022,6 +42039,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="BigDecorationRadius" value="4"/>
 	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 	<property name="PlantGrowing.Next" value="jz_PlantedCoconut3Dry"/>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="14,32"/>     
 </block>
 
 <block name="jz_PlantedCoconut3Dry">
@@ -42046,6 +42066,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="30"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+		<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="14,32"/>     
 </block>
 
 <block name="jz_PlantedCoconut4">
@@ -42065,13 +42088,20 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="DowngradeBlock" value="jz_PlantedCoconutBare"/>
     <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
-    <drop event="Harvest" name="jz_FoodCoconut" count="30" tag="wildCropsHarvest"/>    
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="20,36"/>    
+	<drop event="Harvest" name="jz_FoodCoconut" count="25" tag="cropHarvest"/>
+	<drop event="Harvest" name="jz_FoodCoconut" count="26" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodCoconut" count="50" tag="jz_FarmerHarvest"/>	
 </block>
 
 <block name="jz_PlantedFertilizedCoconut1">
-	<property name="Extends" value="jz_PlantedOrange1" />
+	<property name="Extends" value="jz_PlantedCoconut1" />
    	<property name="CreativeMode" value="Dev"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedFertilizedOrange1Dry"/>
+	 <!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="4,6"/>   
 </block>
 
 <block name="jz_PlantedFertilizedCoconut1Dry">
@@ -42084,6 +42114,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	 <!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="4,6"/>   
 </block>
 
 <block name="jz_PlantedFertilizedCoconut2">
@@ -42091,15 +42124,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedFertilizedOrange2Dry"/>
 	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
-    <property name="DowngradeBlock" value="jz_PlantedOrangeBare"/>  
-    <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
+  	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="6,15"/>     
 </block>
 
 <block name="jz_PlantedFertilizedCoconut2Dry">
     <property name="Extends" value="jz_PlantedCoconut2Dry" />
     <property name="CreativeMode" value="Dev"/>  
-	<property name="DowngradeBlock" value="jz_PlantedOrangeBare"/>
-    <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
 	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
     <property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedFertilizedOrange3"/>
@@ -42107,6 +42139,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="6,15"/>     
 </block>
 
 <block name="jz_PlantedFertilizedCoconut3">
@@ -42114,30 +42149,36 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Player"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedFertilizedOrange3Dry"/>
 	<property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
-    <property name="DowngradeBlock" value="jz_PlantedFertilizedOrange2"/>
-    <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="14,32"/>     
 </block>
 
 <block name="jz_PlantedFertilizedCoconut3Dry">
     <property name="Extends" value="jz_PlantedCoconut3Dry" />
     <property name="CreativeMode" value="Dev"/>
-	<property name="DowngradeBlock" value="jz_PlantedFertilizedOrange2"/>
     <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
-    <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>
-	<property class="UpgradeBlock">
+  	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedFertilizedOrange4"/>
 		<property name="Item" value="jz_DrinkDirtyOuncesOfWater"/>
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="14,32"/>     
 </block>
 
 <block name="jz_PlantedFertilizedCoconut4">
     <property name="Extends" value="jz_PlantedCoconut4" />
 	<property name="CreativeMode" value="Player"/>
-  	<property name="DowngradeBlock" value="jz_PlantedFertilizedOrange3"/>
+  	<property name="DowngradeBlock" value="jz_PlantedCoconutBare"/>
     <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
-    <drop event="Harvest" name="jz_FoodOrange" count="6" tag="wildCropsHarvest"/>    
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="20,36"/>    
+	<drop event="Harvest" name="jz_FoodCoconut" count="50" tag="cropHarvest"/>
+	<drop event="Harvest" name="jz_FoodCoconut" count="51" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodCoconut" count="100" tag="jz_FarmerHarvest"/>	
 </block>
 
 <!--JZMOD TOMATO-->
@@ -42696,6 +42737,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
 	<!--JZMOD ANY-->
 	<drop event="Destroy" name="jz_Stick" count="10,23"/>
+	<drop event="Destroy" name="jz_FoodCoconut" count="0,2"/>	
 	<drop event="Destroy" name="jz_FreshTimber" count="4,6" tag="oreWoodHarvest"/> 
 </block>
 
@@ -42714,6 +42756,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
 	<!--JZMOD ANY-->
 	<drop event="Destroy" name="jz_Stick" count="10,23"/>
+	<drop event="Destroy" name="jz_FoodCoconut" count="0,3"/>	
 	<drop event="Destroy" name="jz_FreshTimber" count="6,15" tag="oreWoodHarvest"/> 
 </block>
 
@@ -42732,6 +42775,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
 	<!--JZMOD ANY-->
 	<drop event="Destroy" name="jz_Stick" count="10,23"/>
+	<drop event="Destroy" name="jz_FoodCoconut" count="0,4"/>	
 	<drop event="Destroy" name="jz_FreshTimber" count="14,32" tag="oreWoodHarvest"/> 
 </block>
 
@@ -42750,6 +42794,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
 	<!--JZMOD ANY-->
 	<drop event="Destroy" name="jz_Stick" count="10,23"/>
+	<drop event="Destroy" name="jz_FoodCoconut" count="0,5"/>	
 	<drop event="Destroy" name="jz_FreshTimber" count="20,36" tag="oreWoodHarvest"/> 
 </block>
 

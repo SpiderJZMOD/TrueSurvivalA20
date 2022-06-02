@@ -10143,8 +10143,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="4"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="PumpQuestSDX, SCore" />
-			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" />
+			<triggered_effect trigger="onSelfBuffStart" action="PumpQuestSDX, SCore" target="self"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PumpQuestSDX, SCore" target="self"/>
 		</effect_group>	
 	</buff>
 	
@@ -11220,9 +11220,9 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="180"/>
 	</buff>
 	
-	<buff name="jz_BuffTierOneTraderQuestComplete" hidden="true" remove_on_death="true">
+	<buff name="jz_BuffTierOneTraderQuestComplete" hidden="false" remove_on_death="true" name_key="TierOneTraderQuestComplete" icon="ui_game_symbol_stimulant" >
 		<stack_type value="ignore"/>
-		<duration value="1"/>
+		<duration value="30"/>
 		<effect_group name="Trader Jen T1 Quest Rep">
 			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
 			<requirement name="CVarCompare" cvar="$TraderJenT1Qest" operation="LT" value="10"/>
@@ -21800,6 +21800,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconB"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconC"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconD"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconBB"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconDD"/>
 		</effect_group>
 	</buff>
 	
@@ -21812,6 +21816,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconA"/>	
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconC"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconD"/>
+			<!--<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconBB"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconDD"/>-->
 		</effect_group>
 	</buff>
 	
@@ -21824,6 +21832,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconA"/>	
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconB"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconD"/>
+			<!--<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconBB"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconDD"/>-->
 		</effect_group>
 	</buff>
 	
@@ -21836,6 +21848,10 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconA"/>	
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconB"/>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconC"/>
+			<!--<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconAA"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconBB"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconCC"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffGashRightArmIconDD"/>-->
 		</effect_group>
 	</buff>
 	
@@ -29407,7 +29423,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	<!--GORE SLOW -->
 	<buff name="jz_BuffSlowedByGore" hidden="true" remove_on_death="true"> 
 		<stack_type value="ignore"/>
-		<duration value=".5"/>
+		<duration value=".3"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSlowedByGoreIsOn"/>
 		</effect_group>
@@ -29415,7 +29431,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	
 	<buff name="jz_BuffSlowedByGoreIsOn" hidden="true" remove_on_death="true"> 
 		<stack_type value="replace"/>
-		<duration value="2"/>	
+		<duration value="1"/>	
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffSlowedByGoreWorking"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="jz_BuffSlowedByGoreWorking"/>

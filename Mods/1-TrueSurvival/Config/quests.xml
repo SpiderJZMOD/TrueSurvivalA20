@@ -2992,9 +2992,9 @@
 	</quest>
 	
 	<quest id="jzquest_KitchenRecipePt1">
-		<property name="name_key" value="jzquest_TutorialPt1" />
-		<property name="subtitle_key" value="jzquest_TutorialPt1Sub" />
-		<property name="description_key" value="jzquest_TutorialPt1Desc" />
+		<property name="name_key" value="jzquest_KitchenRecipePt1" />
+		<property name="subtitle_key" value="jzquest_KitchenRecipePt1Sub" />
+		<property name="description_key" value="jzquest_KitchenRecipePt1Desc" />
 		<property name="icon" value="NoIcon" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="veryeasy"/>
@@ -3035,15 +3035,6 @@
 		<reward type="Exp" value="5000"/>
 		<reward type="Recipe" id="jz_KitchenWorkbench" />
 	</quest>
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	<quest id="treasure_taylor">
 		<property name="name_key" value="treasure_taylor"/>
@@ -3254,12 +3245,11 @@
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
 
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" />
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="330"/>
@@ -3320,10 +3310,10 @@
 		</objective>
 			
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="3750"/>
 		<reward type="Item" id="casinoCoin" value="560"/>
@@ -3382,10 +3372,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="5000"/>
 		<reward type="Item" id="casinoCoin" value="800"/>
@@ -3444,10 +3434,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="6250"/>
 		<reward type="Item" id="casinoCoin" value="1020"/>
@@ -3506,10 +3496,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="12500"/>
 		<reward type="Item" id="casinoCoin" value="2040"/>
@@ -3568,9 +3558,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="20000"/>
 		<reward type="Item" id="casinoCoin" value="6000"/>
@@ -3628,10 +3619,10 @@
 		</objective>
 		
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="3000"/>
 		<reward type="Item" id="casinoCoin" value="800"/>
@@ -3690,10 +3681,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="4500"/>
 		<reward type="Item" id="casinoCoin" value="1350"/>
@@ -3749,10 +3740,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="6000"/>
 		<reward type="Item" id="casinoCoin" value="1800"/>
@@ -3808,10 +3799,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="7500"/>
 		<reward type="Item" id="casinoCoin" value="2040"/>
@@ -3867,10 +3858,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="15000"/>
 		<reward type="Item" id="casinoCoin" value="4080"/>
@@ -3926,9 +3917,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="24000"/>
 		<reward type="Item" id="casinoCoin" value="7200"/>
@@ -3997,10 +3989,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4" />
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="5060"/>
 		<reward type="Item" id="casinoCoin" value="1400"/>
@@ -4069,10 +4061,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4" />
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="6750"/>
 		<reward type="Item" id="casinoCoin" value="2000"/>
@@ -4141,10 +4133,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4" />
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="8400"/>
 		<reward type="Item" id="casinoCoin" value="2300"/>
@@ -4208,10 +4200,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="5060"/>
 		<reward type="Item" id="casinoCoin" value="1400"/>
@@ -4275,10 +4267,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="6750"/>
 		<reward type="Item" id="casinoCoin" value="2000"/>
@@ -4342,10 +4334,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFourTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="8400"/>
 		<reward type="Item" id="casinoCoin" value="2300"/>
@@ -4409,10 +4401,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="16900"/>
 		<reward type="Item" id="casinoCoin" value="4600"/>
@@ -4476,9 +4468,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierFiveTraderQuestComplete" phase="5" />
 
 		<reward type="Exp" value="27000"/>
 		<reward type="Item" id="casinoCoin" value="8000"/>
@@ -4555,10 +4548,11 @@
 		</objective>
 		
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierOneTraderQuestComplete" phase="5" />
+		
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="560"/>
 
@@ -4629,16 +4623,11 @@
 
 		<action type="SpawnGSEnemy" id="SleeperGSList" value="5-7" phase="4"/>
 
-		<objective type="ReturnToNPC">
-			<property name="phase" value="4"/>
-			<property name="nav_object" value="return_to_trader" />
-		</objective>
-
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierTwoTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="940"/>
@@ -4715,10 +4704,10 @@
 		</objective>
 
 		<objective type="InteractWithNPC">
-			<property name="phase" value="4"/>
+			<property name="phase" value="5"/>
 			<property name="nav_object" value="return_to_trader" />
 		</objective>
-		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="4" />
+		<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="5" />
 		
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="1320"/>
