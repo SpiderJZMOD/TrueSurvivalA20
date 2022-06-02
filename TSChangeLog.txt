@@ -128,3 +128,15 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Fixed repairing forge recipe
 -Added TS added melee weapon crafting to the Improvised Workstation
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+6/01/2022 A20.5 Build# 1.03
+-Fixed new crops growing stages and names
+-Fixed Seed Recipe Books not showing learned
+-Fixed Orange Tree harvest amounts and Farmer/Gardener amounts 
+-Fixed Coconut Tree harvest amounts and Farmer/Gardener amounts 
+-Fixed Simple Frames to be picked up
+-Fixed Diet Tutorial Quest not completing(for real this time i swear)
+-Decreased the time of the slowing effect of gore 
+-Fixed Blueberry scrap item
+-Fixed Oven Repair Kit fixing Ovens
+-Fixed Trader Rep not increasing  
+-Fixed reported spelling errors
