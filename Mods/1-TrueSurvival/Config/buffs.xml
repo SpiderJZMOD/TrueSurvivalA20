@@ -10244,7 +10244,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>	
 	</buff>
 	
-	<buff name="jz_BuffMalnourished" remove_on_death="false" name_key="Malnourished" tooltip_key="You feel weak" description_key="Your health is failing. You must eat a more balanced diet that contains all the vitamin groups in order to have a more healthy diet.\n\n-1 Stamina per 3 sec\n -10% Mobility" icon="ui_game_symbol_malnourished3" >
+	<buff name="jz_BuffMalnourished" remove_on_death="false" name_key="Malnourished" tooltip_key="You feel weak" description_key="jz_BuffFailingHealthhDesc" icon="ui_game_symbol_malnourished3" >
 		<stack_type value="ignore"/>
 		<update_rate value="3"/>
 		<duration value="0"/>
