@@ -140,3 +140,32 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Fixed Oven Repair Kit fixing Ovens
 -Fixed Trader Rep not increasing  
 -Fixed reported spelling errors
+////////////////////////////////////////////////////////////////////////////////////////////
+6/06/2022 A20.5 Build# 1.04
+-Added chance for Nuts and Bolt to drop from blocks that drop Iron Sheet Metal
+-Added the ability for Ovens, Microwave, Collapsed Generator, Battery Bank and Solar Bank to be picked up using a Crowbar
+-Added Fan Belt drop chance to more vehicles 
+-Changed Barbed Wire Fence to slow more, last longer and hurt less
+-Removed Orange Seed drops from Orange Trees
+-Fixed Simple Wood Frames pickup
+-Fixed Malnourished Description
+-Lengthened the Dead is Dead reset buff to hopefully help with clearing if there are hiccups respawning
+-Fixed Laceration Right Leg, Arm and Foot not clearing on Dead is Dead
+-Increased Trader buff range to help with trader rep
+-Re Hid the Trader Rep Buff
+-Removed tool belt messages for Medical Infections
+-Fixed Vitamins giving Wellness when they should not
+-Changed Wellness gain to not work if you have a Medical Infection
+-Fixed items spoiling to Moldy Sandwich
+-Changed Mushrooms and Grubs to not scrap to meat
+-Removed Screwdriver Mold
+-Fixed Iron and Steel Sheet Metal scrapping
+-Fixed new crop names
+-Fixed Simple Frames names
+-Fixed Machine Gun Action skill leveling quickly after Dead is Dead
+-Fixed Building skills descriptions to show actual needed xp for lv 2
+-Removed Screwdriver Mold and Large Bed recipes
+-Edited Watering Can and Barbed Fence recipe
+-Added Screwdriver crafting to Advanced Workstations
+-Changed Seeds sold at traders to new seeds
+-Updated TS Logo
