@@ -5407,8 +5407,6 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	
-
 	<buff name="buffInfectionMain" name_key="buff Infection Main" remove_on_death="false" hidden="true" icon="ui_game_symbol_infection">
 		<!--<damage_type value="Infection"/>-->
 		<stack_type value="ignore"/>
@@ -10842,7 +10840,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
     <buff name="buffResetPlayerOnRespawn" hidden="true">
 		<damage_type value="disease"/>
 		<stack_type value="ignore"/>
-		<duration value="3"/>
+		<duration value="6"/>
 		<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ResetProgression" reset_books="true"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ResetPlayerQuests, TrueSurvival" target="self"  />              
@@ -10907,7 +10905,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootDirtyBandage"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftFootTendedB"/>  
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRighttFoot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFoot"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootBleed"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightFootDirtyBandage"/>
@@ -10917,7 +10915,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegDirtyBandage"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftLegTendedB"/> 
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRighttLeg"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLeg"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegBleed"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightLegDirtyBandage"/>
@@ -10937,7 +10935,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmDirtyBandage"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationLeftArmTendedB"/> 
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRighttArm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArm"/>
                 <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmBleed"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmTendedA"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffLacerationRightArmDirtyBandage"/>
@@ -11159,7 +11157,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<update_rate value="1"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="jz_BuffAtTraderJoes" target_tags="player"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="jz_BuffAtTraderJoes" target_tags="player"/>
 		</effect_group>
 	</buff>
     
@@ -11172,7 +11170,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<update_rate value="1"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="jz_BuffAtTraderJens" target_tags="player"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="jz_BuffAtTraderJens" target_tags="player"/>
 		</effect_group>
 	</buff>
     
@@ -11185,7 +11183,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<update_rate value="1"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="jz_BuffAtTraderBobs" target_tags="player"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="jz_BuffAtTraderBobs" target_tags="player"/>
 		</effect_group>
 	</buff>
     
@@ -11198,7 +11196,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<update_rate value="1"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="jz_BuffAtTraderRekts" target_tags="player"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="jz_BuffAtTraderRekts" target_tags="player"/>
 		</effect_group>
 	</buff>
     
@@ -11211,7 +11209,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<update_rate value="1"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="10" buff="jz_BuffAtTraderHughs" target_tags="player"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="20" buff="jz_BuffAtTraderHughs" target_tags="player"/>
 		</effect_group>
 	</buff>
     
@@ -11220,9 +11218,9 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value="180"/>
 	</buff>
 	
-	<buff name="jz_BuffTierOneTraderQuestComplete" hidden="false" remove_on_death="true" name_key="TierOneTraderQuestComplete" icon="ui_game_symbol_stimulant" >
+	<buff name="jz_BuffTierOneTraderQuestComplete" hidden="true" remove_on_death="true" name_key="TierOneTraderQuestComplete" icon="ui_game_symbol_stimulant" >
 		<stack_type value="ignore"/>
-		<duration value="30"/>
+		<duration value="1"/>
 		<effect_group name="Trader Jen T1 Quest Rep">
 			<requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
 			<requirement name="CVarCompare" cvar="$TraderJenT1Qest" operation="LT" value="10"/>
@@ -24098,7 +24096,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffMedicalInfection01Untreated" name_key="jz_BuffMedicalInfection01UntreatedName" description_key="jz_BuffMedicalInfection01UntreatedDesc" remove_on_death="false" tooltip_key="jz_BuffMedicalInfection01UntreatedToolTip" icon="ui_game_symbol_infection">
+	<buff name="jz_BuffMedicalInfection01Untreated" name_key="jz_BuffMedicalInfection01UntreatedName" description_key="jz_BuffMedicalInfection01UntreatedDesc" remove_on_death="false" icon="ui_game_symbol_infection">
 	<!--<damage_type value="Disease"/>-->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -24207,7 +24205,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 
-	<buff name="jz_BuffMedicalInfection04" tooltip_key="jz_BuffMedicalInfection04Tooltip" remove_on_death="false" icon="ui_game_symbol_infection" icon_color="255,0,0">
+	<buff name="jz_BuffMedicalInfection04" remove_on_death="false" icon="ui_game_symbol_infection" icon_color="255,0,0">
 		<stack_type value="ignore"/>
 		<duration value=".1"/>
 		<effect_group>

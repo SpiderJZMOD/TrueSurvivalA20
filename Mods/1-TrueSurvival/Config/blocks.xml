@@ -1038,7 +1038,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	 <!--JZMOD WRENCH-->
     <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
    	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
-	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" />                                                    
+	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" />        
+	<drop event="Destroy" name="jz_NutAndBolt" count="0,2" prob="1" tool_category="ToolWrench" />      	
 </block>
 
 <block name="frameShapes" shapes="All">
@@ -1268,7 +1269,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	 <!--JZMOD WRENCH-->
     <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
    	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
-	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" />     
+	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" />   
+	<drop event="Destroy" name="jz_NutAndBolt" count="0,2" prob="1" tool_category="ToolWrench" />  	
 </block>
 
 <!-- TO_BE_REMOVED -->
@@ -1306,7 +1308,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	 <!--JZMOD WRENCH-->
     <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
    	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
-	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" />    
+	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" /> 
+	<drop event="Destroy" name="jz_NutAndBolt" count="0,2" prob="1" tool_category="ToolWrench" />  	
 </block>
 
 <!-- KEEP -->
@@ -1544,6 +1547,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
    	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
 	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" /> 
+	<drop event="Destroy" name="jz_NutAndBolt" count="0,2" prob="1" tool_category="ToolWrench" />  
 </block>
 
 <!-- KEEP -->
@@ -1572,6 +1576,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>	
    	<drop event="Harvest" name="jz_IronSheetMetal" count="3" prob="1" tag="ToolWrench" />
 	<drop event="Destroy" name="jz_IronSheetMetal" count="3,9" prob="1" tool_category="ToolWrench" /> 
+	<drop event="Destroy" name="jz_NutAndBolt" count="0,2" prob="1" tool_category="ToolWrench" />  
 </block>
 
 <!-- KEEP -->
@@ -12386,6 +12391,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntStoveOldVer1Closed" count="1" prob="1" tool_category="ToolCrowbar"/>    
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12408,6 +12416,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntStoveOldVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/> 
+	<drop event="Destroy" name="cntStoveModernVer1Closed" count="1" prob="1" tool_category="ToolCrowbar"/> 
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -12570,7 +12582,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="Tags" value="jz_CrowBarTag"/>
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="cntTrash_can01" count="1" prob="1" tool_category="jz_Microwave"/>  
+	<drop event="Destroy" name="jz_Microwave" count="1" prob="1" tool_category="jz_Microwave"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -21985,6 +21997,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="jz_FanBelt" count="1,2" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -22708,6 +22721,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+	<drop event="Harvest" name="jz_FanBelt" count="0,2" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
@@ -25069,6 +25083,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_electrical,SC_loot"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntCollapsedGeneratorbank" count="1" prob="1" tool_category="ToolCrowbar"/> 
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -25140,6 +25157,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_electrical,SC_loot"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntCollapsedSolarbank" count="1" prob="1" tool_category="ToolCrowbar"/> 
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -25203,6 +25223,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Tags" value="jz_CrowBarTag"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="8"/>
 		<property name="resourceElectricParts" value="6"/>
@@ -25221,6 +25242,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_electrical,SC_loot"/>
+	<!--JZMOD CROWBAR-->
+	<drop event="Destroy" name="cntCollapsedBatterybank" count="1" prob="1" tool_category="ToolCrowbar"/> 
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -29650,7 +29673,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Damage" value="1"/>
 	<property name="DamageType" value="BarbedWire"/>
-	<property name="Damage_received" value="6"/>
+	<property name="Damage_received" value="2"/>
 	<property name="Shape" value="New"/>
 	<property name="Mesh" value="cutout"/>
 	<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
@@ -41230,7 +41253,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
-	<drop event="Destroy" name="jz_PlantedOrange1" count="1"/>
+	<drop event="Destroy" name="jz_PlantedOrange1" count="0"/>
 </block>
 
 <block name="jz_PlantedOrangeBare">
@@ -41496,6 +41519,57 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="CanPickup" value="true" />
 </block>
 <!-- JZMOD STARTER BLOCKS -->
+<block name="jz_SimpleWoodFrame">
+	<property name="Material" value="Mwood_weak"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Texture" value="241"/>
+	<property name="Path" value="solid"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_frame"/>
+	<property name="CustomIcon" value="shapeCubeFrame"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleWoodShapesBlock"/>
+	<property name="LightOpacity" value="0"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodShapes:cube"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>	
+	 <!--JZMOD ANY-->
+	<drop event="Harvest" name="jz_Stick" count="3" prob="1" tag="allHarvest" />
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob=".75" stick_chance="1" />
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="jz_Stick" count="1" prob="1"  /> 
+</block>
+
+<block name="jz_SimpleWoodRampFrame">
+	<property name="Material" value="Mwood_weak"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Texture" value="241"/>
+	<property name="Path" value="solid"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_frame"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="CustomIcon" value="shapeRampFrame"/>
+	<property name="CanPickup" value="true" param1="jz_SimpleWoodShapesBlock"/>
+	<property name="LightOpacity" value="0"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodShapes:ramp"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>	
+	<!--JZMOD ANY-->
+	<drop event="Harvest" name="jz_Stick" count="3" prob="1" tag="allHarvest" />
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob=".75" stick_chance="1" />
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="jz_Stick" count="1" prob="1"  /> 
+</block>
+
 <block name="jz_SimpleCobblestoneFrame">
 	<property name="Material" value="Mwood_weak"/>
 	<property name="PassThroughDamage" value="true"/>
@@ -41540,7 +41614,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>	
-	<property name="Tags" value="jz_IronBuilding"/>
 	<!--JZMOD ANY-->
 	<drop event="Harvest" name="jz_Stick" count="3" prob="1" tag="allHarvest" />
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob=".75" stick_chance="1" />
@@ -41567,7 +41640,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>	
-	<property name="Tags" value="jz_IronBuilding"/>
 	<!--JZMOD ANY-->
 	<drop event="Harvest" name="jz_Stick" count="3" prob="1" tag="allHarvest" />
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob=".75" stick_chance="1" />
@@ -41593,7 +41665,6 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>	
-	<property name="Tags" value="jz_IronBuilding"/>
 	<!--JZMOD ANY-->
 	<drop event="Harvest" name="jz_Stick" count="3" prob="1" tag="allHarvest" />
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob=".75" stick_chance="1" />
@@ -41662,7 +41733,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <block name="jz_SimpleWoodShapesBlock">
 	<property name="Extends" value="woodMaster"/>
 	<property name="Tags" value="jz_WoodBuilding"/>
-	<property name="CustomIcon" value="woodBlock"/>
+	<property name="CustomIcon" value="shapeCubeFrame"/>
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="jz_SimpleWoodShapesBlockDesc"/>
@@ -41672,7 +41743,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="PickupJournalEntry" value="shapeMenuTip"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 	<property name="SelectAlternates" value="true"/>
-	<property name="PlaceAltBlockValue" value="frameShapes:cube,frameShapes:ramp"/>
+	<property name="PlaceAltBlockValue" value="jz_SimpleWoodFrame,jz_SimpleWoodRampFrame"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:cube"/>
 	</property>
@@ -41700,6 +41771,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cobblestoneMaster"/>
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="shapeCubeFrame"/>
 	<property name="DescriptionKey" value="jz_SimpleCobblestoneShapesBlockDesc"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="Group" value="Basics,Building"/>
@@ -41714,7 +41786,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_SimpleConcreteShapesBlock">
 	<property name="Extends" value="concreteNoUpgradeMaster"/>
-	<property name="CustomIcon" value="concreteMaster"/>
+	<property name="CustomIcon" value="shapeCubeFrame"/>
 	<property name="Path" value="solid"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="jz_SimpleConcreteShapesBlockDesc"/>

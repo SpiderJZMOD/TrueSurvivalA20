@@ -623,22 +623,25 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
         <!-- TRADER 6-->
         <trader_item_group name="Seeds" count="1">
-			<item name="plantedPotato1"/>
-			<item name="plantedCoffee1"/>
-			<item name="plantedCorn1"/>
-			<item name="plantedBlueberry1"/>
-			<item name="plantedCotton1"/>
-			<item name="plantedGoldenrod1"/>
-			<item name="plantedAloe1"/>
+			<item name="jz_SeedAloe"/>
+			<item name="jz_SeedBlueberry"/>
+			<item name="jz_SeedChrysanthemum"/>
+			<item name="jz_SeedCoffee"/>
+			<item name="jz_SeedCorn"/>
+			<item name="jz_SeedCotton"/>
+			<item name="jz_SeedGoldenrod"/>
+			<item name="jz_SeedHop"/>
 			<item name="plantedMushroom1"/>
-			<item name="plantedYucca1"/>
-			<item name="plantedHop1"/>
-			<item name="plantedChrysanthemum1"/>
-			<item name="plantedPumpkin1"/>
-            <item name="jz_PlantedWheat1"/>
-            <item name="jz_PlantedOrange1"/>
-            <item name="jz_PlantedEggPlant1"/>
-            <item name="jz_PlantedCarrot1"/>
+			<item name="jz_SeedPotato"/>
+			<item name="jz_SeedYucca"/>
+			<item name="jz_SeedPumpkin"/>
+            <item name="jz_SeedWheat"/>
+            <item name="jz_SeedOrange"/>
+            <item name="jz_SeedOnion"/>
+            <item name="jz_SeedTomato"/>
+			<item name="jz_SeedCoconut"/>
+            <item name="jz_SeedCarrot"/>
+            <item name="jz_SeedChilli"/>
 		</trader_item_group>
         
         <trader_item_group name="FarmSupplies" count="1">
