@@ -74,7 +74,7 @@
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_RifleXP" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_RifleSkillLvAdd" operation="set" value="25"/>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_RifleSkillNextLvTotal" operation="set" value="25"/>
-                <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_MachineXP" operation="set" value="0"/>
+                <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_MachineGunXP" operation="set" value="0"/>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_MachineGunSkillLvAdd" operation="set" value="25"/>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_MachineGunSkillNextLvTotal" operation="set" value="25"/>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_ExposivesXP" operation="set" value="0"/>
@@ -4674,7 +4674,7 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_WoodBuildingNextLvTotal" operation="set" value="100">
 					<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_WoodBuildingNextLvTotal" operation="set" value="200">
+			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_WoodBuildingNextLvTotal" operation="set" value="250">
 					<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="1"/></triggered_effect>
 			<effect_description level="1" desc_key="jz_WoodBuildingSkillRank1Desc" long_desc_key="jz_WoodBuildingSkillRank1LongDesc"/>
 			<effect_description level="2" desc_key="jz_WoodBuildingSkillRank2Desc" long_desc_key="jz_WoodBuildingSkillRank2LongDesc"/>
@@ -4722,7 +4722,7 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_StoneBuildingNextLvTotal" operation="set" value="100">
 					<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_StoneBuildingNextLvTotal" operation="set" value="200">
+			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_StoneBuildingNextLvTotal" operation="set" value="250">
 					<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="Equals" value="1"/></triggered_effect>
 			<effect_description level="1" desc_key="jz_StoneBuildingSkillRank1Desc" long_desc_key="jz_StoneBuildingSkillRank1LongDesc"/>
 			<effect_description level="2" desc_key="jz_StoneBuildingSkillRank2Desc" long_desc_key="jz_StoneBuildingSkillRank2LongDesc"/>
@@ -4771,7 +4771,7 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_IronBuildingNextLvTotal" operation="set" value="100">
 					<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_IronBuildingNextLvTotal" operation="set" value="200">
+			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_IronBuildingNextLvTotal" operation="set" value="250">
 					<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="Equals" value="1"/></triggered_effect>
 			<effect_description level="1" desc_key="jz_IronBuildingSkillRank1Desc" long_desc_key="jz_IronBuildingSkillRank1LongDesc"/>
 			<effect_description level="2" desc_key="jz_IronBuildingSkillRank2Desc" long_desc_key="jz_IronBuildingSkillRank2LongDesc"/>
@@ -4817,7 +4817,7 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_ConcreteBuildingNextLvTotal" operation="set" value="100">
 					<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_ConcreteBuildingNextLvTotal" operation="set" value="200">
+			<triggered_effect trigger="onSelfWalk" action="ModifyCVar" cvar="$jz_ConcreteBuildingNextLvTotal" operation="set" value="250">
 					<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="Equals" value="1"/></triggered_effect>
 			<effect_description level="1" desc_key="jz_ConcreteBuildingSkillRank1Desc" long_desc_key="jz_ConcreteBuildingSkillRank1LongDesc"/>
 			<effect_description level="2" desc_key="jz_ConcreteBuildingSkillRank2Desc" long_desc_key="jz_ConcreteBuildingSkillRank2LongDesc"/>

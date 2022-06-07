@@ -4397,7 +4397,6 @@ If there is no hit the default quality is used.
 	<item name="jz_MoldShovelHead" />
 	<item name="jz_MoldSmallKnifeBlade" />
 	<item name="jz_MoldHammerHead" />
-	<item name="jz_MoldWrench" />
 	<item name="jz_MoldSledgeHead" />
 	<item name="jz_MoldCrowbar" />
 	<item name="jz_MoldBrassKnuckles" />
@@ -4440,7 +4439,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="steelForgeMolds" >
-	<item name="jz_MoldScrewdriverHead" />
+	<item name="resourceScrapIron" count="20,100" />
 </lootgroup>
 
 <lootgroup name="steelForgeLoot" >

@@ -12898,7 +12898,10 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".4"/><display_value name="TSFruit" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".4"/><display_value name="TSVeggie" value=".4"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".4"/><display_value name="TSProtein" value=".4"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1">
+			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugVitamins"/>
 	</effect_group>
 </item>
@@ -13745,7 +13748,7 @@ perkNightStalkerSilentNight
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /> <!-- JZMOD -->
     <property name="ShowQuality" value="false"/> <!-- JZMOD -->
-    <property name="SpoiledItem" value="foodShamSandwich" /> <!-- JZMOD -->
+    <property name="SpoiledItem" value="jz_MoldyBread" /> <!-- JZMOD -->
     <property name="TickPerLoss" value="150" /> <!-- JZMOD -->
     <property name="SpoilageMax" value="1000" /> <!-- JZMOD -->
     <property name="SpoilagePerTick" value="1" /> <!-- JZMOD -->
@@ -13995,7 +13998,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -14045,7 +14049,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="46"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14087,7 +14092,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="40"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14136,7 +14142,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="44"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14304,7 +14311,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="23"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14351,7 +14359,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14406,7 +14415,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="22"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14502,7 +14512,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="80"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="5">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14553,7 +14564,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="82"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="5">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14603,7 +14615,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="52"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14653,7 +14666,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="47"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14792,7 +14806,8 @@ perkNightStalkerSilentNight
             <requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="18"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -14964,7 +14979,7 @@ perkNightStalkerSilentNight
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
 	<property name="Spoilable" value="true" /><!-- JZMOD -->
     <property name="ShowQuality" value="false"/><!-- JZMOD -->
-    <property name="SpoiledItem" value="foodShamSandwich" /><!-- JZMOD -->
+    <property name="SpoiledItem" value="jz_MoldyBread" /><!-- JZMOD -->
     <property name="TickPerLoss" value="150" /><!-- JZMOD -->
     <property name="SpoilageMax" value="1000" /><!-- JZMOD -->
     <property name="SpoilagePerTick" value="1" /><!-- JZMOD -->
@@ -15176,8 +15191,7 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="TSFoWaStHeWePrDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Mprotein"/><!-- JZMOD -->
-	<property name="Weight" value="1"/><!-- JZMOD -->
+	<property name="Material" value="Morganic"/><!-- JZMOD -->
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -28122,7 +28136,8 @@ perkNightStalkerSilentNight
 			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="47"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".48"/><display_value name="TSProtein" value=".48"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".12"/><display_value name="TSVeggie" value=".12"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
@@ -28223,7 +28238,8 @@ perkNightStalkerSilentNight
 			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="13"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="add" value=".06"/><display_value name="TSVeggie" value=".06"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28316,8 +28332,7 @@ perkNightStalkerSilentNight
 
 <item name="jz_FoodGrubs">
 	<property name="Extends" value="jz_MasterFood" />
-	<property name="Material" value="Mprotein" />
-	<property name="Weight" value="2" />
+	<property name="Material" value="Morganic" />
 	<property name="DescriptionKey" value="grubsDesc" />
     <property name="EconomicValue" value="0"/>
 	<property name="UnlockedBy" value="jz_Soldier"/>
@@ -28374,7 +28389,8 @@ perkNightStalkerSilentNight
 			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="22"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="3">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="add" value=".2"/><display_value name="TSProtein" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -28940,7 +28956,8 @@ perkNightStalkerSilentNight
 			<requirement name="HasBuff" buff="jz_BuffGoodDietTag"/></triggered_effect><display_value name="foodHealthAmount" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="1"> 
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="add" value=".2"/><display_value name="TSFruit" value=".2"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
@@ -29210,7 +29227,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="2">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -29450,7 +29468,7 @@ perkNightStalkerSilentNight
     <property name="UnlockedBy" value="meleeToolSalvageT1WrenchSchematic"/>
 </item>
 
-<item name="jz_MoldScrewdriverHead">
+<item name="jz_MoldScrewdriverHead"><!-- JZMOD REMOVE -->
     <property name="Extends" value="jz_MasterItem" />
 	<property name="Material" value="MresourceClayLump" />
 	<property name="DescriptionKey" value="jz_MoldDDesc" />
@@ -34916,7 +34934,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="corrugatedMetalSheet" />
 	<property name="DescriptionKey" value="jz_IronSheetMetalDesc" />
-	<property name="Material" value="Msteel" />
+	<property name="Material" value="Miron" />
 	<property name="Weight" value="2" />
 </item>
 
@@ -34924,7 +34942,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_SteelSheetMetalDesc" />
 	<property name="CustomIcon" value="garageDoorIndustrial"/>
-	<property name="Material" value="Miron" />
+	<property name="Material" value="Msteel" />
 	<property name="Weight" value="2" />
 </item>
 
@@ -35778,7 +35796,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -35812,7 +35831,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -35847,7 +35867,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -35882,7 +35903,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="4">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -35913,7 +35935,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="5">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -35947,7 +35970,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="5">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -35982,7 +36006,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="5">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36017,7 +36042,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="5">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36048,7 +36074,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="6">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36082,7 +36109,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="6">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36117,7 +36145,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="6">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36152,7 +36181,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="6">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36183,7 +36213,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="7">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36217,7 +36248,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="7">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36252,7 +36284,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="7">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -36287,7 +36320,8 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="7">
 			<requirement name="HasBuff" buff="jz_BuffBalancedDietTag"/>
-            <requirement name="!HasBuff" buff="buffInfectionMain"/></triggered_effect>
+            <requirement name="!HasBuff" buff="buffInfectionMain"/>
+			<requirement name="!HasBuff" buff="jz_BuffMedicalInfectionMain"/></triggered_effect>
 	</effect_group>
 </item>
 
