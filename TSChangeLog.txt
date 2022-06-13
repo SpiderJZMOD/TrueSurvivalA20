@@ -169,3 +169,12 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Added Screwdriver crafting to Advanced Workstations
 -Changed Seeds sold at traders to new seeds
 -Updated TS Logo
+////////////////////////////////////////////////////////////////////////////////////////////
+6/13/2022 A20.5 Build# 1.05
+-Added Sticky Sap to pine tree drops
+-Fixed Microwave pickup with Crowbar 
+-Changed Profession, Hoodies and Trait Books to spoil quickly.
+-Fixed Dead Rat scrap amount
+-Changed all apparel and clothing mods recipes to be crafted on the Workbench
+-Changed Awning Shapes recipes to the Workbench
+-Updated TS Logo
