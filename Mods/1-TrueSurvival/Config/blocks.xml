@@ -6664,6 +6664,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 	<property name="SortOrder2" value="0300"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,1"/>
 	<drop event="Destroy" name="jz_Stick" count="10,30"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="18,33" tag="oreWoodHarvest"/> 
 </block>
@@ -6681,6 +6682,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 	<property name="SortOrder2" value="0300"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,2"/>
 	<drop event="Destroy" name="jz_Stick" count="10,40"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="24,38" tag="oreWoodHarvest"/> 
 </block>
@@ -6698,6 +6700,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<property name="SortOrder2" value="0300"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="15,40"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="25,40" tag="oreWoodHarvest"/> 
 </block>
@@ -6715,6 +6718,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
 	<property name="SortOrder2" value="0300"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="20,45"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="28,45" tag="oreWoodHarvest"/> 
 </block>
@@ -6732,6 +6736,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
 	<property name="SortOrder2" value="0300"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="25,50"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="30,50" tag="oreWoodHarvest"/> 
 </block>
@@ -6749,6 +6754,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<property name="SortOrder2" value="0300"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,4"/>
 	<drop event="Destroy" name="jz_Stick" count="25,55"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="33,55" tag="oreWoodHarvest"/> 
 </block>
@@ -6884,6 +6890,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="SortOrder2" value="0355"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,1"/>
 	<drop event="Destroy" name="jz_Stick" count="5,20"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="18,35" tag="oreWoodHarvest"/> 
 </block>
@@ -6903,6 +6910,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
 	<property name="SortOrder2" value="0360"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,2"/>
 	<drop event="Destroy" name="jz_Stick" count="10,40"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="24,38" tag="oreWoodHarvest"/> 
 </block>
@@ -6923,6 +6931,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<property name="SortOrder2" value="0365"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="15,40"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="25,40" tag="oreWoodHarvest"/> 
 </block>
@@ -6942,6 +6951,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<property name="SortOrder2" value="0370"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="25,50"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="30,50" tag="oreWoodHarvest"/> 
 </block>
@@ -6977,6 +6987,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_winter01"/>
 	<property name="SortOrder2" value="0400"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,1"/>
 	<drop event="Destroy" name="jz_Stick" count="5,20"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="16,30" tag="oreWoodHarvest"/>
 </block>
@@ -6994,6 +7005,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_winter02"/>
 	<property name="SortOrder2" value="0400"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,2"/>
 	<drop event="Destroy" name="jz_Stick" count="10,20"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="18,36" tag="oreWoodHarvest"/>
 </block>
@@ -7011,6 +7023,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="ParticleOnDeath" value="treeGib_winter03"/>
 	<property name="SortOrder2" value="0400"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="10,25"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="24,40" tag="oreWoodHarvest"/>
 </block>
@@ -7111,6 +7124,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="SortOrder2" value="0460"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,2"/>
 	<drop event="Destroy" name="jz_Stick" count="5,20"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="16,30" tag="oreWoodHarvest"/>
 </block>
@@ -7131,6 +7145,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="SortOrder2" value="0465"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="10,20"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="18,36" tag="oreWoodHarvest"/>
 </block>
@@ -7149,6 +7164,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
 	<property name="SortOrder2" value="0470"/>
 	<!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_AdhesiveStickySap" count="0,3"/>
 	<drop event="Destroy" name="jz_Stick" count="10,25"/>
 	<drop event="Destroy" name="jz_FreshTimber" count="24,40" tag="oreWoodHarvest"/>
 </block>
@@ -12575,14 +12591,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceMechanicalParts" count="0,1" prob="0.1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="1,5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="0,2" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5" tag="allHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="300"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="Tags" value="jz_CrowBarTag"/>
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="jz_Microwave" count="1" prob="1" tool_category="jz_Microwave"/>  
+	<drop event="Destroy" name="jz_Microwave" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->

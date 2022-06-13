@@ -3099,6 +3099,217 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="cntRetroFridgeVer1Closed" count="1"/>
 	<ingredient name="resourceWood" count="100"/>
 </recipe>
+
+<recipe name="awningShapes:VariantHelper" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="5" tags="LightArmorCrafting">
+	<ingredient name="resourceCloth" count="10"/>
+</recipe>
+
+<recipe name="apparelBandana" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="4"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelSuitPants" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+	
+<recipe name="apparelSuitJacket" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelFlannelShirt" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelSweatshirt" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelPressboyCap" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelBallCap" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelSkullCap" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelDenimPants" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelDenimShortsPants" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelGothPants" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelHoodySweatshirt" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelCoatLeatherPoncho" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelOveralls" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelSkirt" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelWornBoots" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelRunningShoesRegular" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelRunningShoesHP" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelCowboyBoots" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelGothBoots" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+    <ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelSuitDressShoes" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelCoatJacketGeneric" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelCoatJacketLetterZU" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelTankTop" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="20"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelTShirtPlain" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelTShirtZU" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelLongShirt" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="30"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelCowboyHat" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="10"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelCoatLeatherDuster" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="50"/>
+	<ingredient name="resourceSewingKit" count="3"/>
+</recipe>
+
+<recipe name="apparelCoatPufferCoat" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="35"/>
+	<ingredient name="resourceFeather" count="50"/>
+	<ingredient name="resourceCropCottonPlant" count="35"/>
+	<ingredient name="resourceSewingKit" count="3"/>
+</recipe>
+
+<recipe name="apparelArmyPants" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceMilitaryFiber" count="1"/>
+	<ingredient name="resourceSewingKit" count="3"/>
+</recipe>
+
+<recipe name="apparelArmyShirt" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCloth" count="25"/>
+	<ingredient name="resourceMilitaryFiber" count="1"/>
+	<ingredient name="resourceSewingKit" count="3"/>
+</recipe>
+
+<recipe name="apparelGhillieSuitHood" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelGhillieSuitJacket" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="apparelGhillieSuitPants" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="modClothingStoragePocket" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="4"/>
+	<ingredient name="jz_ScrapAdhesive" count="2"/>
+	<ingredient name="resourceCloth" count="15"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<recipe name="modClothingCargoStoragePocket" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceLeather" count="8"/>
+	<ingredient name="jz_ScrapAdhesive" count="4"/>
+	<ingredient name="resourceCloth" count="30"/>
+	<ingredient name="resourceSewingKit" count="2"/>
+</recipe>
+
+<recipe name="resourceCloth" count="1" craft_area="workbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
+	<ingredient name="resourceCropCottonPlant" count="5"/>
+</recipe>
+
 <!-- Chemistry Station Crafted ******************************************************************************************************************************************************* -->
 <!--
 <recipe name="jz_QIZAntiVirus" count="1" craft_area="chemistryStation" craft_tool="jz_LabEquipment" tags="learnable,jz_ChemistTag">
@@ -6308,216 +6519,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCloth" count="10" />
 </recipe>
 
-<recipe name="awningShapes:VariantHelper" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="5" craft_exp_gain="5" tags="LightArmorCrafting">
-	<ingredient name="resourceCloth" count="10"/>
-</recipe>
-
-<recipe name="apparelBandana" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="4"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelSuitPants" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-	
-<recipe name="apparelSuitJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelFlannelShirt" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelSweatshirt" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelPressboyCap" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelBallCap" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelSkullCap" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="10"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelDenimPants" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelDenimShortsPants" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelGothPants" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelHoodySweatshirt" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelCoatLeatherPoncho" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelOveralls" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelSkirt" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelWornBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelRunningShoesRegular" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelRunningShoesHP" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelCowboyBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelGothBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="5"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-    <ingredient name="resourceScrapIron" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelSuitDressShoes" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelCoatJacketGeneric" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelCoatJacketLetterZU" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="5"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelTankTop" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="20"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelTShirtPlain" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelTShirtZU" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelLongShirt" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="30"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelCowboyHat" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelCoatLeatherDuster" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="50"/>
-	<ingredient name="resourceSewingKit" count="3"/>
-</recipe>
-
-<recipe name="apparelCoatPufferCoat" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="35"/>
-	<ingredient name="resourceFeather" count="50"/>
-	<ingredient name="resourceCropCottonPlant" count="35"/>
-	<ingredient name="resourceSewingKit" count="3"/>
-</recipe>
-
-<recipe name="apparelArmyPants" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceMilitaryFiber" count="1"/>
-	<ingredient name="resourceSewingKit" count="3"/>
-</recipe>
-
-<recipe name="apparelArmyShirt" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCloth" count="25"/>
-	<ingredient name="resourceMilitaryFiber" count="1"/>
-	<ingredient name="resourceSewingKit" count="3"/>
-</recipe>
-
-<recipe name="apparelGhillieSuitHood" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceYuccaFibers" count="50"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelGhillieSuitJacket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceYuccaFibers" count="50"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="apparelGhillieSuitPants" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceYuccaFibers" count="50"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="modClothingStoragePocket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-	<ingredient name="resourceCloth" count="15"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
-
-<recipe name="modClothingCargoStoragePocket" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceLeather" count="8"/>
-	<ingredient name="jz_ScrapAdhesive" count="4"/>
-	<ingredient name="resourceCloth" count="30"/>
-	<ingredient name="resourceSewingKit" count="2"/>
-</recipe>
-
-<recipe name="resourceCloth" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv4" craft_time="5" craft_exp_gain="25" tags="learnable,LightArmorCrafting">
-	<ingredient name="resourceCropCottonPlant" count="5"/>
-</recipe>
-
 <recipe name="armorMilitaryBoots" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="20" tags="learnable,jz_CraftingQualityOne,LightArmorCrafting">
 	<ingredient name="armorMilitarySetParts" count="3"/>
 	<ingredient name="resourceMilitaryFiber" count="9"/>
@@ -6759,52 +6760,52 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceSewingKit" count="3"/>
 </recipe>
 <!-- JZMOD TO DO -->
-<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="15" craft_exp_gain="20" tags="learnable,LightArmorCrafting" >
-	<ingredient name="armorMilitarySetParts" count="4"/>
-	<ingredient name="resourceMilitaryFiber" count="30"/>
+<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbench" craft_time="15" craft_exp_gain="20" tags="learnable,jz_CraftingQualityOne,LightArmorCrafting" >
+	<ingredient name="armorMilitarySetParts" count="5"/>
+	<ingredient name="resourceMilitaryFiber" count="26"/>
 	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
+	<ingredient name="jz_ScrapAdhesive" count="5"/>
 	<ingredient name="resourceSewingKit" count="2"/>
 </recipe>
 
 <recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="30" craft_exp_gain="40" tags="learnable,jz_CraftingQualityTwo,LightArmorCrafting" >
-	<ingredient name="armorMilitarySetParts" count="4"/>
-	<ingredient name="resourceMilitaryFiber" count="30"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
+	<ingredient name="armorMilitarySetParts" count="6"/>
+	<ingredient name="resourceMilitaryFiber" count="27"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="jz_ScrapAdhesive" count="6"/>
 	<ingredient name="resourceSewingKit" count="2"/>
 </recipe>
 
-<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="45" craft_exp_gain="60" tags="learnable,jz_CraftingQualityThree,LightArmorCrafting" >
-	<ingredient name="armorMilitarySetParts" count="4"/>
-	<ingredient name="resourceMilitaryFiber" count="30"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-	<ingredient name="resourceSewingKit" count="2"/>
+<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv3" craft_time="45" craft_exp_gain="60" tags="learnable,jz_CraftingQualityThree,LightArmorCrafting" >
+	<ingredient name="armorMilitarySetParts" count="7"/>
+	<ingredient name="resourceMilitaryFiber" count="28"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="jz_ScrapAdhesive" count="7"/>
+	<ingredient name="resourceSewingKit" count="3"/>
 </recipe>
 
-<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="60" craft_exp_gain="80" tags="learnable,jz_CraftingQualityFour,LightArmorCrafting" >
-	<ingredient name="armorMilitarySetParts" count="4"/>
-	<ingredient name="resourceMilitaryFiber" count="30"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-	<ingredient name="resourceSewingKit" count="2"/>
+<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv4" craft_time="60" craft_exp_gain="80" tags="learnable,jz_CraftingQualityFour,LightArmorCrafting" >
+	<ingredient name="armorMilitarySetParts" count="8"/>
+	<ingredient name="resourceMilitaryFiber" count="29"/>
+	<ingredient name="resourceScrapPolymers" count="6"/>
+	<ingredient name="jz_ScrapAdhesive" count="8"/>
+	<ingredient name="resourceSewingKit" count="3"/>
 </recipe>
 
-<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="75" craft_exp_gain="100" tags="learnable,jz_CraftingQualityFive,LightArmorCrafting" >
-	<ingredient name="armorMilitarySetParts" count="4"/>
+<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv5" craft_time="75" craft_exp_gain="100" tags="learnable,jz_CraftingQualityFive,LightArmorCrafting" >
+	<ingredient name="armorMilitarySetParts" count="9"/>
 	<ingredient name="resourceMilitaryFiber" count="30"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-	<ingredient name="resourceSewingKit" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="7"/>
+	<ingredient name="jz_ScrapAdhesive" count="9"/>
+	<ingredient name="resourceSewingKit" count="4"/>
 </recipe>
 
-<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv2" craft_time="90" craft_exp_gain="120" tags="learnable,jz_CraftingQualitySix,LightArmorCrafting" >
-	<ingredient name="armorMilitarySetParts" count="4"/>
-	<ingredient name="resourceMilitaryFiber" count="30"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="jz_ScrapAdhesive" count="2"/>
-	<ingredient name="resourceSewingKit" count="2"/>
+<recipe name="armorMilitaryVest" count="1" craft_area="jz_WorkstationLightArmorWorkbenchLv6" craft_time="90" craft_exp_gain="120" tags="learnable,jz_CraftingQualitySix,LightArmorCrafting" >
+	<ingredient name="armorMilitarySetParts" count="10"/>
+	<ingredient name="resourceMilitaryFiber" count="31"/>
+	<ingredient name="resourceScrapPolymers" count="8"/>
+	<ingredient name="jz_ScrapAdhesive" count="10"/>
+	<ingredient name="resourceSewingKit" count="4"/>
 </recipe>
 <!-- Heavy Armor Workbench Crafted ******************************************************************************************************************************************************* -->
 <recipe name="armorFirefightersHelmet" count="1" craft_area="jz_WorkstationHeavyArmorWorkbench" craft_time="15" craft_exp_gain="20" tags="learnable,jz_CraftingQualityOne,jz_HeavyArmorCrafting">
