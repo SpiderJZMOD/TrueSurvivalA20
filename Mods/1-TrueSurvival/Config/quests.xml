@@ -4720,6 +4720,283 @@
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
 	</quest>
 
+		<!-- custom true survival trader quests -->
+		<!-- custom true survival trader quests -->
+		<!-- custom true survival trader quests -->
+
+		<quest id="tier3_build_safehouse">
+			<property name="name_key" value="quest_tier3_build_safehouse"/>
+			<property name="subtitle_key" value="quest_build_safehouse_subtitle"/>
+			<property name="description_key" value="quest_build_safehouse_description"/>
+			<property name="icon" value="ui_game_symbol_map_house"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="3"/>
+			<property name="offer_key" value="quest_tier3_build_safehouse_offer"/>
+			<property name="statement_key" value="quest_build_safehouse_statement"/>
+			<property name="response_key" value="quest_build_safehouse_response"/>
+			<property name="login_rally_reset" value="true"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_build_safehouse_completion"/>
+
+			<!-- fetch items phase -->
+			<objective type="FetchKeep" id="meleeToolRepairT1ClawHammer" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_SimpleWoodFrame" value="15" phase="1"/>
+			<objective type="FetchKeep" id="secureDoorWooden" value="2" phase="1"/>
+			<objective type="FetchKeep" id="resourceWood" value="158" phase="1"/>
+			<objective type="FetchKeep" id="resourceScrapIron" value="24" phase="1"/>
+			<objective type="FetchKeep" id="jz_RestingSpot" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_StorageSack" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_SurvivorStash" value="1" phase="1"/>
+			<!-- fetch items phase -->
+			<!-- go to poi phase -->
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			<!-- go to poi phase -->
+
+			<!-- kill sleepers phase -->
+			<objective type="ClearSleepers">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+			<!-- kill sleepers phase -->
+			<!-- build phase -->
+			<objective type="BlockPlace" id="jz_SimpleWoodFrame" value="15" phase="4"/>
+			<objective type="BlockPlace" id="secureDoorWooden" value="2" phase="4"/>
+			<objective type="BlockPlace" id="jz_RestingSpot" value="1" phase="4"/>
+			<objective type="BlockPlace" id="jz_StorageSack" value="1" phase="4"/>
+			<objective type="BlockPlace" id="jz_SurvivorStash" value="1" phase="4"/>
+			<objective type="BlockUpgrade" id="jz_SimpleWoodFrame" value="15" phase="4"/>
+			<objective type="BlockUpgrade" id="secureDoorWooden" value="2" phase="4"/>
+			<objective type="BlockUpgrade" id="secureReinforcedDoorWooden" value="2" phase="4"/>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="40"/>
+			</objective>
+			<!-- build phase -->
+			<!-- completion phase -->
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="6"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<!-- completion phase -->
+
+			<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="6" />
+
+			<reward type="Exp" value="8100"/>
+			<reward type="Item" id="casinoCoin" value="2400"/>
+			<reward type="Item" id="jz_SkillPaper" value="10"/>
+
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+		</quest>
+
+		<quest id="tier4_build_safehouse">
+			<property name="name_key" value="quest_tier4_build_safehouse"/>
+			<property name="subtitle_key" value="quest_build_safehouse_subtitle"/>
+			<property name="description_key" value="quest_build_safehouse_description"/>
+			<property name="icon" value="ui_game_symbol_map_house"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="4"/>
+			<property name="offer_key" value="quest_tier4_build_safehouse_offer"/>
+			<property name="statement_key" value="quest_build_safehouse_statement"/>
+			<property name="response_key" value="quest_build_safehouse_response"/>
+			<property name="login_rally_reset" value="true"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_build_safehouse_completion"/>
+
+			<!-- fetch items phase -->
+			<objective type="FetchKeep" id="meleeToolRepairT1ClawHammer" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_MasonHammer" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_SimpleWoodFrame" value="20" phase="1"/>
+			<objective type="FetchKeep" id="secureDoorWooden" value="2" phase="1"/>
+			<objective type="FetchKeep" id="resourceWood" value="208" phase="1"/>
+			<objective type="FetchKeep" id="resourceScrapIron" value="24" phase="1"/>
+			<objective type="FetchKeep" id="resourceCobblestones" value="100" phase="1"/>
+			<objective type="FetchKeep" id="jz_RestingSpot" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_StorageSack" value="1" phase="1"/>
+			<objective type="FetchKeep" id="campfire" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_SurvivorStash" value="1" phase="1"/>
+			<!-- fetch items phase -->
+			<!-- go to poi phase -->
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			<!-- go to poi phase -->
+
+			<!-- kill sleepers phase -->
+			<objective type="ClearSleepers">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+			<!-- kill sleepers phase -->
+			<!-- build phase -->
+			<objective type="BlockPlace" id="jz_SimpleWoodFrame" value="20" phase="4"/>
+			<objective type="BlockPlace" id="secureDoorWooden" value="2" phase="4"/>
+			<objective type="BlockPlace" id="jz_RestingSpot" value="1" phase="4"/>
+			<objective type="BlockPlace" id="jz_StorageSack" value="1" phase="4"/>
+			<objective type="BlockPlace" id="campfire" value="1" phase="4"/>
+			<objective type="BlockPlace" id="jz_SurvivorStash" value="1" phase="4"/>
+			<objective type="BlockUpgrade" id="jz_SimpleWoodFrame" value="20" phase="4"/>
+			<objective type="BlockUpgrade" id="woodShapes:cube" value="10" phase="4"/>
+			<objective type="BlockUpgrade" id="secureDoorWooden" value="2" phase="4"/>
+			<objective type="BlockUpgrade" id="secureReinforcedDoorWooden" value="2" phase="4"/>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="40"/>
+			</objective>
+			<!-- build phase -->
+			<!-- completion phase -->
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="6"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<!-- completion phase -->
+
+			<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="6" />
+
+			<reward type="Exp" value="10800"/>
+			<reward type="Item" id="casinoCoin" value="2760"/>
+			<reward type="Item" id="jz_SkillPaper" value="15"/>
+
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="4"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+		</quest>
+
+		<quest id="tier5_build_safehouse">
+			<property name="name_key" value="quest_tier5_build_safehouse"/>
+			<property name="subtitle_key" value="quest_build_safehouse_subtitle"/>
+			<property name="description_key" value="quest_build_safehouse_description"/>
+			<property name="icon" value="ui_game_symbol_map_house"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="5"/>
+			<property name="offer_key" value="quest_tier5_build_safehouse_offer"/>
+			<property name="statement_key" value="quest_build_safehouse_statement"/>
+			<property name="response_key" value="quest_build_safehouse_response"/>
+			<property name="login_rally_reset" value="true"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_build_safehouse_completion"/>
+
+			<!-- fetch items phase -->
+			<objective type="FetchKeep" id="meleeToolRepairT1ClawHammer" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_MasonHammer" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_SimpleWoodFrame" value="20" phase="1"/>
+			<objective type="FetchKeep" id="secureDoorWooden" value="2" phase="1"/>
+			<objective type="FetchKeep" id="resourceWood" value="208" phase="1"/>
+			<objective type="FetchKeep" id="resourceScrapIron" value="24" phase="1"/>
+			<objective type="FetchKeep" id="resourceCobblestones" value="200" phase="1"/>
+			<objective type="FetchKeep" id="jz_RestingSpot" value="1" phase="1"/>
+			<objective type="FetchKeep" id="cntStorageGeneric" value="1" phase="1"/>
+			<objective type="FetchKeep" id="campfire" value="1" phase="1"/>
+			<objective type="FetchKeep" id="jz_SurvivorStash" value="1" phase="1"/>
+			<!-- fetch items phase -->
+			<!-- go to poi phase -->
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			<!-- go to poi phase -->
+
+			<!-- kill sleepers phase -->
+			<objective type="ClearSleepers">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+			<!-- kill sleepers phase -->
+			<!-- build phase -->
+			<objective type="BlockPlace" id="jz_SimpleWoodFrame" value="20" phase="4"/>
+			<objective type="BlockPlace" id="secureDoorWooden" value="2" phase="4"/>
+			<objective type="BlockPlace" id="jz_RestingSpot" value="1" phase="4"/>
+			<objective type="BlockPlace" id="jz_StorageSack" value="1" phase="4"/>
+			<objective type="BlockPlace" id="campfire" value="1" phase="4"/>
+			<objective type="BlockPlace" id="jz_SurvivorStash" value="1" phase="4"/>
+			<objective type="BlockUpgrade" id="jz_SimpleWoodFrame" value="20" phase="4"/>
+			<objective type="BlockUpgrade" id="woodShapes:cube" value="10" phase="4"/>
+			<objective type="BlockUpgrade" id="secureDoorWooden" value="2" phase="4"/>
+			<objective type="BlockUpgrade" id="secureReinforcedDoorWooden" value="2" phase="4"/>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="40"/>
+			</objective>
+			<!-- build phase -->
+			<!-- completion phase -->
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="6"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<!-- completion phase -->
+
+			<action type="GiveBuffSDX, SCore" value="jz_BuffTierThreeTraderQuestComplete" phase="6" />
+
+			<reward type="Exp" value="20280"/>
+			<reward type="Item" id="casinoCoin" value="5520"/>
+			<reward type="Item" id="jz_SkillPaper" value="20"/>
+
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+		</quest>
+
+		<!-- custom true survival trader quests -->
+		<!-- custom true survival trader quests -->
+		<!-- custom true survival trader quests -->
+
+
 	<quest id="test_sleepers">
 		<property name="name_key" value="test quest"/>
 		<property name="subtitle_key" value="Test Sleepers"/>
@@ -5484,17 +5761,20 @@
 		<quest id="tier3_fetch_clear"/>
 		<quest id="tier3_restore_power" />
 		<quest id="tier3_buried_supplies"/>
+		<quest id="tier3_build_safehouse"/>
 
 			<!-- Tier 4 -->
 		<quest id="tier4_clear"/>
 		<!-- <quest id="tier4_fetch"/> -->
 		<quest id="tier4_restore_power" />
 		<quest id="tier4_fetch_clear"/>
+		<quest id="tier4_build_safehouse"/>
 
 			<!-- Tier 5 -->
 		<quest id="tier5_clear"/>
 		<!-- <quest id="tier5_fetch"/> -->
 		<quest id="tier5_fetch_clear"/>
+		<quest id="tier5_build_safehouse"/>
 
 
 		<!-- Tier 6 -->
