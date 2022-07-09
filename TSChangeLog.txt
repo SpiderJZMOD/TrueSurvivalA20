@@ -178,3 +178,29 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Changed all apparel and clothing mods recipes to be crafted on the Workbench
 -Changed Awning Shapes recipes to the Workbench
 -Updated TS Logo
+////////////////////////////////////////////////////////////////////////////////////////////
+7/08/2022 A20.5 Build# 1.06
+-Fixed Chillies growth stages
+-Fixed vanilla crops growing stage using up fertilizer
+-Fixed Twin Bed pickup with crowbar
+-Fixed Destroyed Solar Banks to allow Solar Cells to have a chance to be harvested using a Screwdriver
+-Added crafting icons for all added workstations
+-Fixed Painkillers, Steroids, Stimulants to break down to Drugs in the Kitchen workstation
+-Fixed Motherload to level to 5 properly 
+-Fixed Burn injuries to show proper stats in description
+-Fixed weapon parts descriptions
+-Fixed weapons to have proper repair item listed in description
+-Fixed Double Barrel Shotgun Parts name
+-Fixed reported spelling errors
+-Added note to Sticks to let the player know(if they bother to read)that sticks can not be used as weapons
+-Added Solar Cell recipe to Electrician Workbenches
+-Added Solar Cell recipe to the Electrician Profession as a unique recipe 
+-Fixed the reward amount offered by Traders
+-Think I fixed Traders not offering quest
+-Added recipe to turn Empty Cans into Scrap Metal
+-Added recipe to turn Rosemary into Plant Fibers
+-Added recipe to get Honeycomb from Serving of Honey
+-Fixed 3 and 4 Course Meals recipes
+-Fixed tools recipes all being on lv1 Advanced Workstation
+-Sorted all the POI’s in the POI Compo Pack. Keeping all POI’s that that are inline with the challenge level and immersion of the True Survival Mod
+-Updated TS Logo
