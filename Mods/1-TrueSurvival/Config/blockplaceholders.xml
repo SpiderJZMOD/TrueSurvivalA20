@@ -2028,7 +2028,7 @@
 		<block name="jz_PlantedChillis1Dry" prob=".70"/>
 		<block name="jz_PlantedChillis2" prob=".20"/>
 	</placeholder>
-		<placeholder name="jz_PlantedChillisLv2Random">
+	<placeholder name="jz_PlantedChillisLv2Random">
 		<block name="jz_PlantedChillis2Infested" prob=".10"/>
 		<block name="jz_PlantedChillis2Dry" prob=".70"/>
 		<block name="jz_PlantedChillis3HarvestPlayer" prob=".20"/>
@@ -2093,7 +2093,17 @@
 		<block name="jz_PlantedChilli2Dry" prob=".70"/>
 		<block name="jz_PlantedChilli3HarvestPlayer" prob=".20"/>
 	</placeholder>
-	 <placeholder name="jz_PlantedTomatoFertilizedLv1Random">
+	<placeholder name="jz_PlantedChillisFertilizedLv1Random">
+		<block name="jz_PlantedChillisFertilized1Infested" prob=".10"/>
+		<block name="jz_PlantedChillisFertilized1Dry" prob=".70"/>
+		<block name="jz_PlantedChillisFertilized2" prob=".20"/>
+	</placeholder>
+		<placeholder name="jz_PlantedChillisFertilizedLv2Random">
+		<block name="jz_PlantedChillisFertilized2Infested" prob=".10"/>
+		<block name="jz_PlantedChillisFertilized2Dry" prob=".70"/>
+		<block name="jz_PlantedChillis3FertilizedHarvestPlayer" prob=".20"/>
+	</placeholder>
+	<placeholder name="jz_PlantedTomatoFertilizedLv1Random">
 		<block name="jz_PlantedTomatoFertilized1Infested" prob=".10"/>
 		<block name="jz_PlantedTomatoFertilized1Dry" prob=".70"/>
 		<block name="jz_PlantedTomatoFertilized2" prob=".20"/>

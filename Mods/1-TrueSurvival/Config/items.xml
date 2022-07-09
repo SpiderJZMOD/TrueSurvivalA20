@@ -12912,7 +12912,8 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="16"/>
 	<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
+	<property name="Material" value="Mdrugs"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="Group" value="Science,CFChemicals,Medical"/>
@@ -13103,6 +13104,8 @@ perkNightStalkerSilentNight
 <item name="drugSteroids">
 	<property name="Extends" value="drugPainkillers"/>
 	<property name="DisplayType" value="drugSteroids"/>
+	<property name="Material" value="Mdrugs"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="250"/>
 	<property name="UnlockedBy" value="jz_Doctor"/>
 	<property name="Group" value="Science,Medical"/>
@@ -27153,7 +27156,8 @@ perkNightStalkerSilentNight
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="ToolCrowbar"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="oreWoodHarvest"/>
-        <passive_effect name="HarvestCount" operation="base_set" value="0" tags="salvageHarvest"/>        
+        <passive_effect name="HarvestCount" operation="base_set" value="0" tags="salvageHarvest"/>  
+		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="ToolScrewdriver"/>  		
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -27690,6 +27694,8 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
 	<property name="HoldType" value="16" />
+	<property name="Material" value="Mdrugs"/>
+	<property name="Weight" value="1"/>
     <property name="EconomicValue" value="300"/>
 	<property name="DescriptionKey" value="stimulantDesc" />
 	<property name="Group" value="Science,CFChemicals,Medical"/>
@@ -33658,7 +33664,7 @@ perkNightStalkerSilentNight
 	<property name="Unlocks" value="perkMotherLode"/>
 	<property name="Group" value="Books,BooksOnly"/>
 	<property class="Action0">
-		<requirement name="ProgressionLevel" progression_name="perkMotherLode" operation="LT" value="3"/>
+		<requirement name="ProgressionLevel" progression_name="perkMotherLode" operation="LT" value="5"/>
 	</property>  
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
