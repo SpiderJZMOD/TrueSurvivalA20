@@ -204,3 +204,17 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Fixed tools recipes all being on lv1 Advanced Workstation
 -Sorted all the POI’s in the POI Compo Pack. Keeping all POI’s that that are inline with the challenge level and immersion of the True Survival Mod
 -Updated TS Logo
+////////////////////////////////////////////////////////////////////////////////////////////
+7/14/2022 A20.5 Build# 1.07
+-Turned Trader POI protection off. You will have to keep them safe
+-Changed Traders not to close
+-Changed the Nutrition system so that each Diet stage last longer
+-Fixed Gash and Burn Bandaged Injuries lasting through Dead is Dead reset
+-Changed Gore to set mobility to 25% when walked on instead of -40%. Removing the possibility of getting stuck on them when slowed by many injuries 
+-Removed duplicate seeds found in Farming Bundles
+-Removed Skillpoint Journal Entry 
+-Moved Methane Producer Schematic to T1 Schematic loot group to make it easier to get
+-Added recipe for Splash of Water using Dirty Water
+-Removed can foods from Vending Machines
+-Added junk food to Vending Machines
+-Updated TS logo
