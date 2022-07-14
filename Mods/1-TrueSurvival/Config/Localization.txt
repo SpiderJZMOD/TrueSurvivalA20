@@ -5,6 +5,8 @@ Key,English
 
 
 jz_QZSoldierRadiated,"Security Soldier"
+skillPointTip,""
+skillPointTip_title,""
 
 ttLevelUp,"You have leveled up! +1Wellness +1Max Hunger +1Max Thirst"
 BUFF_________________________XML,BUFF_________________________XML
@@ -873,20 +875,7 @@ gunBowT1IronCrossbowDesc,"A crossbow is slow to reload but does more damage than
 gunBotT1JunkSledgeDesc,"You may not be good at punching but you have the technology.\nYou can also deploy this on the ground using the Secondary action.\nRepair with a Robotics Part.\nScrap to Robotics Parts."
 gunBotT2JunkTurretDesc,"This contraption can be fired and reloaded like a gun. It uses Robotic Turret Ammo for ammunition.\nYou can also deploy it on the ground using the Secondary action.\nRepair with a Robotics Part.\nScrap to Robotics Parts."
 gunBotT3JunkDroneDesc,"Crafted from robotic parts and scrap, the robotic drone is the ultimate companion in the apocalypse. It can heal you and carry some items."
-
-
-
-
-
-
-
 gunShotgunT1DoubleBarrelParts,"Double Barrel Shotgun Parts"
-
-
-
-
-
-
 jz_SchematicCoconutSeed,"Coconut Seed Crafting Guide"
 jz_SchematicTomatoSeed,"Tomato Seed Crafting Guide"
 jz_SchematicOnionSeed,"Onion Seed Crafting Guide"
@@ -2308,7 +2297,7 @@ jz_TrueSurvivalTutorialTip8_title,"Preserving Food"
 jzquest_TutorialPt9,"Tutorial Part 9"
 jzquest_TutorialPt9Sub,"Improve your Diet"
 jzquest_TutorialPt9Desc,"Most foods have added nutrition stats. They include Protein from Meat, Fiber from Vegetables and Essential Vitamins from Fruit. These stats can be found on the food's stat info screen. Your lowest nutrition stat will determine your Diet so you will need to balance your nutrition consumption to stay healthy. To view your current nutrition stats open your character info screen and they will be located at the bottom. If any of your nutrition stats get too low or too high you will suffer unique illnesses depending on the stat and the level."
-jz_TrueSurvivalTutorialTip9,"Raise all your Nutrition Stats to at lest 11.0 for the best Diet benefits."
+jz_TrueSurvivalTutorialTip9,"Raise all your Nutrition Stats to at lest 13.0 for the best Diet benefits."
 jz_TrueSurvivalTutorialTip9_title,"Nutrition"
 jzquest_StoryLinePt1,"1 Storyline Quest Pt1: The Get Away!"
 jzquest_StoryLinePt1Sub,"Set Up Camp"
@@ -2524,7 +2513,7 @@ TrueSurvivalBuildingConstructionJournal_title,"True Survival: Building Construct
 TrueSurvivalBuildingConstructionJournal,"To master construction you will need to complete four skills. Wood, Cobblestone, Concrete and Iron Building. Until you learn how to create the basic materials for each building type you will have to harvest the resources from world building blocks using the correct tool. The Claw Hammer harvests and uses Planks. The Mason Hammer harvests and uses Cobblestones. The Concrete Sledge harvests and uses Concrete Mix. The Wrench harvests and uses Iron Sheet Metal. The Welder harvests and uses Steel Sheet Metal. The only way to learn Steel Building is to master all four of the other building skills."
 TrueSurvivalWorkbenchUpgradingJournal,"Workbenches that can craft quality tools and weapons each have a chain quest to help you craft or find the tools needed to upgrade each workbench. Once you have the needed tool hold it in your hand and use it as a tool on the workbench to upgrade it. This will make the upgraded workbench craft better quality items. If you fail a poi quest in the quest chain you can craft a Research Desk and on that craft a item to restart the failed quest."
 TrueSurvivalWorkbenchUpgradingJournal_title,"True Survival: Workbench Upgrades"
-jz_TrueSurvivalWarning,"[f21b10]!!!!Warning!!!![-] This Mod should only be played by 7 Days to Die professionals. Do Not play this Mod like you play Vanilla or you will not make it far. Go slow, be patient and weigh the risk you take seriously.  There will be pain, there will be deaths, there will be restarts and if you can persevere through your failures you will learn what it truly means to be a TRUE SURVIVOR!\nGood Luck and Die Well!\n\nSpider"
+jz_TrueSurvivalWarning,"[f21b10]                                         !!!!Warning!!!![-]\n     This Mod should only be played by 7 Days to Die professionals. Do Not play this Mod like you play Vanilla or you will not make it far. Go slow, be patient and weigh the risk you take seriously.  There will be pain, there will be deaths, there will be restarts and if you can persevere through your failures you will learn what it truly means to be a TRUE SURVIVOR!\nGood Luck and Die Well!\n\nSpider"
 jz_TrueSurvivalWarning_title,"True Survival: Warning"
 jz_criticalHitsTip,"You start with a critical hit resistance of 100%. You can see your current value on the character page on the 2nd 'stats' tab in the upper left.\n\nWearing armor increases resistance, being wounded can decrease it.\n\nGetting hit by enemies decreases your resistance incrementally. When it falls below 100% you can suffer critical hits like lacerations, gashes, sprains or breaks.\n\nThe more armor you wear the more often you can get hit in a short time without risking critical hits."
 jz_criticalHitsTip_title,"True Survival: Critical Hits"

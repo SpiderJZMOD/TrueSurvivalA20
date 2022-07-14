@@ -43176,7 +43176,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 			<property class="AdvancedPrefabFeatures" >
 				<property name="Logging" value="false"/>
-				<property name="DisableTraderProtection" value="false" />
+				<property name="DisableTraderProtection" value="true" />
 				<!-- Disables Trader Protection in their prefabs -->
 			</property>
 

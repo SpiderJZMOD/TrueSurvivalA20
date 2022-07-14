@@ -24882,7 +24882,7 @@ perkNightStalkerSilentNight
 		<property name="Create_item_count" value="100,100,100,100,100"/>
 	</property>
 </item>
-
+	
 <item name="questRewardFarmT1Bundle">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Player"/>
@@ -24893,7 +24893,7 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Create_item" value="farmPlotBlockVariantHelper"/>
 		<property name="Create_item_count" value="3"/>
-		<property name="Random_item" value="plantedMushroom1,plantedYucca1,plantedCotton1,plantedGoldenrod1,plantedChrysanthemum1,plantedCoffee1"/>
+		<property name="Random_item" value="plantedMushroom1,jz_SeedYucca,jz_SeedCotton,jz_SeedGoldenrod,jz_SeedChrysanthemum,jz_SeedCoffee"/>
 		<property name="Random_item_count" value="1,1,1"/>
 		<property name="Random_count" value="3"/>
 		<property name="Unique_random_only" value="true"/>
@@ -24910,7 +24910,7 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Create_item" value="farmPlotBlockVariantHelper"/>
 		<property name="Create_item_count" value="3"/>
-		<property name="Random_item" value="plantedPotato1,plantedCorn1,plantedAloe1,plantedBlueberry1"/>
+		<property name="Random_item" value="jz_SeedPotato,jz_SeedCorn,jz_SeedAloe,jz_SeedOnion,jz_SeedCarrot,jz_SeedTomato"/>
 		<property name="Random_item_count" value="1,1,1"/>
 		<property name="Random_count" value="3"/>
 		<property name="Unique_random_only" value="true"/>
@@ -24927,7 +24927,7 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Create_item" value="farmPlotBlockVariantHelper"/>
 		<property name="Create_item_count" value="3"/>
-		<property name="Random_item" value="plantedPumpkin1,plantedHop1,plantedGraceCorn1"/>
+		<property name="Random_item" value="jz_SeedPumpkin,jz_SeedHop,jz_SeedWheat,jz_SeedOrange,jz_SeedBlueberry,jz_SeedChilli,jz_SeedCoconut"/>
 		<property name="Random_item_count" value="1,1,1"/>
 		<property name="Random_count" value="3"/>
 		<property name="Unique_random_only" value="true"/>

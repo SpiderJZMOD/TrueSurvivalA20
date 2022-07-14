@@ -198,7 +198,7 @@
 	<window name="windowCompass" anchor="CenterTop" pos="-240,-9" width="480" height="43" controller="CompassWindow">
 		<sprite depth="0" sprite="ui_game_header_fill" pos="47,0" width="386" height="43" type="sliced" color="150,150,150,150" />
 		<sprite depth="1" sprite="ui_game_header_fill" pos="50,-3" width="380" height="37" type="sliced" color="50,50,50,220" />
-		<texture name="JZMODLogo" depth="4" pos="-580,-35" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival106.png"/>
+		<texture name="JZMODLogo" depth="4" pos="-580,-35" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival107.png"/>
 		<!--<texture depth="8" texture="Textures/UI/ui_game_compass" pos="50, -15" width="380" height="23" color="[iconColor]" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" />** pos="75,-25"-->
 		
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />

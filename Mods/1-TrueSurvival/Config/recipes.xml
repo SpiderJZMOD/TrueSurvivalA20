@@ -725,6 +725,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_DrinkCleanOuncesOfWater" count="8"/>
 </recipe>
 
+<recipe name="jz_SplashOfWater" count="1" craft_time="2" craft_exp_gain="0"  >
+	<ingredient name="jz_DrinkDirtyOuncesOfWater" count="8"/>
+</recipe>
+
 <recipe name="jz_FoodGrubs" count="1" craft_time="3" craft_exp_gain="0" tags="learnable" >
 	<ingredient name="resourceClayLump" count="5"/>
 </recipe>
