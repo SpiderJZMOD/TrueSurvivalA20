@@ -2,7 +2,7 @@
     <append xpath="/rwgmixer/world[@name='small']">
 			<!-- COMPOPACK -->
 <!-- SETTLEMENTS -->
-<!-- ASIATOWN -->
+<!-- ASIATOWN 
 			<property class="asiantown">
 			<property name="few" value="1"/>
 			<property name="default" value="1"/>
@@ -11,8 +11,8 @@
 			<property name="mintiles" value="5"/>
 			<property name="maxtiles" value="5"/>
 		</property>
-<!-- ASIATOWN -->
-<!-- MEDIEVAL VILLAGE -->		
+ ASIATOWN -->
+<!-- MEDIEVAL VILLAGE 	
 			<property class="medievalvillage">
 			<property name="few" value="1"/>
 			<property name="default" value="1"/>
@@ -21,7 +21,7 @@
 			<property name="mintiles" value="5"/>
 			<property name="maxtiles" value="5"/>
 		</property>
-<!-- MEDIEVAL VILLAGE -->
+MEDIEVAL VILLAGE -->
 <!-- ZOMBIELAND -->		
 		    <property class="zombieland">
 			<property name="few" value="1"/>
@@ -58,7 +58,7 @@
 	<append xpath="/rwgmixer/world[@name='medium']">
 		<!-- COMPOPACK -->
 		<!-- SETTLEMENTS -->
-<!-- ASIATOWN -->
+<!-- ASIATOWN 
 			<property class="asiantown">
 			<property name="few" value="1"/>
 			<property name="default" value="1"/>
@@ -67,8 +67,8 @@
 			<property name="mintiles" value="7"/>
 			<property name="maxtiles" value="7"/>
 		</property>
-<!-- ASIATOWN -->
-<!-- MEDIEVAL VILLAGE -->	
+ASIATOWN -->
+<!-- MEDIEVAL VILLAGE 	
 			<property class="medievalvillage">
 			<property name="few" value="1"/>
 			<property name="default" value="1"/>
@@ -77,7 +77,7 @@
 			<property name="mintiles" value="7"/>
 			<property name="maxtiles" value="7"/>
 		</property>
-<!-- MEDIEVAL VILLAGE -->
+ MEDIEVAL VILLAGE -->
 <!-- ZOMBIELAND -->			
 		    <property class="zombieland">
 			<property name="few" value="1"/>
@@ -114,7 +114,7 @@
 
 	<append xpath="/rwgmixer/world[@name='large']">
 			<!-- COMPOPACK -->
-		<!-- ASIATOWN -->
+		<!-- ASIATOWN 
 		    <property class="asiantown">
 			<property name="few" value="1"/>
 			<property name="default" value="1"/>
@@ -123,8 +123,8 @@
 			<property name="mintiles" value="9"/>
 			<property name="maxtiles" value="9"/>
 		</property>	
-<!-- ASIATOWN -->
-<!-- MEDIEVAL VILLAGE -->	
+ ASIATOWN -->
+<!-- MEDIEVAL VILLAGE 
 			<property class="medievalvillage">
 			<property name="few" value="1"/>
 			<property name="default" value="1"/>
@@ -133,7 +133,7 @@
 			<property name="mintiles" value="9"/>
 			<property name="maxtiles" value="9"/>
 		</property>
-<!-- MEDIEVAL VILLAGE -->
+ MEDIEVAL VILLAGE -->
 	<!-- ZOMBIELAND -->		
 			<property class="zombieland">
 			<property name="few" value="1"/>
@@ -170,7 +170,7 @@
 	<append xpath="/rwgmixer">
 	<!-- COMPOPACK -->
 	<!-- SETTLEMENTS -->
-	<!-- ASIA TOWN -->
+	<!-- ASIA TOWN 
 		<township name="asiantown">
 		<property name="spawn_trader" value="true"/>
 	</township>
@@ -181,8 +181,8 @@
 		<property name="district_preview_color" value="0,0.5,0"/>
 		<property name="poi_required_tags_all" value="asian"/>
 	</district>
-	<!-- ASIA TOWN -->
-	<!-- MEDIEVAL VILLAGE -->
+	 ASIA TOWN -->
+	<!-- MEDIEVAL VILLAGE 
 		<township name="medievalvillage">
 		<property name="spawn_trader" value="true"/>
 	</township>
@@ -206,7 +206,7 @@
 		<property name="maxdensity" value="120"/>
 	</streettile>
 	
-	<!-- MEDIEVAL VILLAGE -->
+ MEDIEVAL VILLAGE -->
 	<!-- ZOMBIELAND -->
 	<township name="zombieland">
 		<property name="spawn_trader" value="False"/>

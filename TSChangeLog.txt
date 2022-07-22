@@ -178,3 +178,43 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Changed all apparel and clothing mods recipes to be crafted on the Workbench
 -Changed Awning Shapes recipes to the Workbench
 -Updated TS Logo
+////////////////////////////////////////////////////////////////////////////////////////////
+7/08/2022 A20.5 Build# 1.06
+-Fixed Chillies growth stages
+-Fixed vanilla crops growing stage using up fertilizer
+-Fixed Twin Bed pickup with crowbar
+-Fixed Destroyed Solar Banks to allow Solar Cells to have a chance to be harvested using a Screwdriver
+-Added crafting icons for all added workstations
+-Fixed Painkillers, Steroids, Stimulants to break down to Drugs in the Kitchen workstation
+-Fixed Motherload to level to 5 properly 
+-Fixed Burn injuries to show proper stats in description
+-Fixed weapon parts descriptions
+-Fixed weapons to have proper repair item listed in description
+-Fixed Double Barrel Shotgun Parts name
+-Fixed reported spelling errors
+-Added note to Sticks to let the player know(if they bother to read)that sticks can not be used as weapons
+-Added Solar Cell recipe to Electrician Workbenches
+-Added Solar Cell recipe to the Electrician Profession as a unique recipe 
+-Fixed the reward amount offered by Traders
+-Think I fixed Traders not offering quest
+-Added recipe to turn Empty Cans into Scrap Metal
+-Added recipe to turn Rosemary into Plant Fibers
+-Added recipe to get Honeycomb from Serving of Honey
+-Fixed 3 and 4 Course Meals recipes
+-Fixed tools recipes all being on lv1 Advanced Workstation
+-Sorted all the POI’s in the POI Compo Pack. Keeping all POI’s that that are inline with the challenge level and immersion of the True Survival Mod
+-Updated TS Logo
+////////////////////////////////////////////////////////////////////////////////////////////
+7/14/2022 A20.5 Build# 1.07
+-Turned Trader POI protection off. You will have to keep them safe
+-Changed Traders not to close
+-Changed the Nutrition system so that each Diet stage last longer
+-Fixed Gash and Burn Bandaged Injuries lasting through Dead is Dead reset
+-Changed Gore to set mobility to 25% when walked on instead of -40%. Removing the possibility of getting stuck on them when slowed by many injuries 
+-Removed duplicate seeds found in Farming Bundles
+-Removed Skillpoint Journal Entry 
+-Moved Methane Producer Schematic to T1 Schematic loot group to make it easier to get
+-Added recipe for Splash of Water using Dirty Water
+-Removed can foods from Vending Machines
+-Added junk food to Vending Machines
+-Updated TS logo

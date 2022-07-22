@@ -37,6 +37,14 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="drugRockBusters"/>
 			<item name="drugSkullCrushers"/>
 			<item name="drugSugarButts"/>
+			<item name="jz_FoodChips"/>
+			<item name="jz_FoodCereal"/>
+			<item name="jz_FoodPeanutButter"/>
+			<item name="jz_FoodOatMeal"/>
+			<item name="drinkJarPureMineralWater"/>
+			<item name="drinkJarGrandpasMoonshine"/>
+			<item name="drinkJarGrandpasAwesomeSauce"/>
+			<item name="drinkJarGrandpasLearningElixir"/>
 		</trader_item_group>
 		
 		<trader_item_group name="decorativeCurtains" count="all">
@@ -723,7 +731,7 @@ quality_mod: adjusts the price range of all items with a quality level.
             <item name="jz_DrinkCleanOuncesOfWater" count="4,8"/>
             <item name="drinkCanMegaCrush" count="1,2"/>
             <item name="drinkJarBlackStrapCoffee" />  
-            <item name="jz_MedicalSalineSolution" count="1,2"/>
+            <item name="drinkJarPureMineralWater" count="1,2"/>
 		</trader_item_group>
         
         <trader_item_group name="ToolsT1" count="1">
@@ -1938,7 +1946,7 @@ workstations
 	</trader_info>
 	
 	<!-- Trader Bob, id=6, FOOD, FARMING AND TOOLS SUPPLIES at all levels -->
-	<trader_info id="6" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="6:05" close_time="21:50">		
+	<trader_info id="6" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="0" close_time="0">		
         <trader_items count="all"> <item group="Empty"/> </trader_items>
         <tier_items level="1,100" count="all"> <item group="Farming_Food_ToolsLv1"/> </tier_items>
         <tier_items level="101,200" count="all"> <item group="Farming_Food_ToolsLv2"/> </tier_items>
@@ -1953,7 +1961,7 @@ workstations
 	</trader_info>
     
 	<!-- Trader Jen, id=2, CHEMICALS, MEDICINE, CLOTHING, ARMOR at all levels -->
-	<trader_info id="2" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="6:05" close_time="21:50">
+	<trader_info id="2" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="0" close_time="0">
 		<trader_items count="all"> <item group="Empty"/> </trader_items>
         <tier_items level="1,100" count="all"> <item group="Chemicals_Meds_ArmorLv1"/> </tier_items>
         <tier_items level="101,200" count="all"> <item group="Chemicals_Meds_ArmorLv2"/> </tier_items>
@@ -1968,7 +1976,7 @@ workstations
 	</trader_info>
 
 	<!-- Trader Hugh, id=7, BOOKS, WORKSTATIONS at all levels -->
-	<trader_info id="7" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="6:05" close_time="21:50">
+	<trader_info id="7" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="0" close_time="0">
 		<trader_items count="all"> <item group="Empty"/> </trader_items>
         <tier_items level="1,100" count="all"> <item group="Books_WorkstationsLv1"/> </tier_items>
         <tier_items level="101,200" count="all"> <item group="Books_WorkstationsLv2"/> </tier_items>
@@ -1983,7 +1991,7 @@ workstations
 	</trader_info>
 
 	<!-- Trader Rekt, id=8, CRAFTING, ELECTRIC, MECHANICAL stuff -->
-	<trader_info id="8" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="6:05" close_time="21:50">
+	<trader_info id="8" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20" reset_interval="7" open_time="0" close_time="0">
 		<trader_items count="all"> <item group="Empty"/> </trader_items>
         <tier_items level="1,100" count="all"> <item group="Crafting_Electric_VehiclesLv1"/> </tier_items>
         <tier_items level="101,200" count="all"> <item group="Crafting_Electric_VehiclesLv2"/> </tier_items>
