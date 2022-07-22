@@ -15,18 +15,6 @@ BUFF_________________________XML,BUFF_________________________XML
 
 
 buffIllPneumonia01Desc,"You have caught Pneumonia from being so cold. Get warm immediately.\n\nEffects:\n-10 Wellness\n-1 Protein, Fiber, Essential Vitamine\n-3 Stamina per Sec\n-.01 Health per Sec"
-
-
-
-
-
-
-
-
-
-
-
-
 jz_BuffSnakeBiteDesc,"A snake bit and poisoned you and now your limping. You will need to find or make some [35bd00]Anti-Venom[-] or you will get very ill. [35bd00]Anti-Venom[-] can be crafted on the Campfire with a Venom Gland from a poisonous animal\n\nEffects:\n-1 Wellness\n-2 Stamina per Second\n-5% Mobility\n-5 Cold Resistance"
 jz_BuffSnakeBiteLvTwoDesc,"Your snake bite is getting worse and the venom is spreading. You need to get some [35bd00]Anti-Venom[-] soon. [35bd00]Anti-Venom[-] can be crafted on the Campfire with a Venom Gland from a poisonous animal\n\nEffects:\n-2 Wellness\n-3 Stamina per Second\n-15% Mobility\n-15 Cold Resistance"
 jz_BuffSnakeBiteLvThreeDesc,"The snake venom is coursing through your veins. If you can last the day you might just live. Or you can find or make some [35bd00]Anti-Venom[-].[35bd00]Anti-Venom[-] can be crafted on the Campfire with a Venom Gland from a poisonous animal\n\nEffects:\n-3 Wellness\n-5 Stamina per Second\n-50% Mobility\n-25 Cold Resistance"
@@ -914,10 +902,10 @@ jz_SeedWheat,"Wheat Seed"
 jz_SeedCotton,"Cotton Seed"
 jz_SeedHop,"Hop Seed"
 jz_SeedOrange,"Orange Seed"
-forestCropDesc,"These seeds can only be planted in the forest. Dry crops on the Drying Rack to make more seeds"
-desertCropDesc,"These seeds can only be planted in the desert. Dry crops on the Drying Rack to make more seeds"
-sonwCropDesc,"These seeds can only be planted in the snow. Dry crops on the Drying Rack to make more seeds"
-forestNdesertCropDesc,"These seeds can only be planted in the forest or the desert. Dry crops on the Drying Rack to make more seeds"
+forestCropDesc,"Plant these seeds on soil or in a Farm Plot in the forest to grow them for harvesting. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water. Dry crops on the Drying Rack to make more seeds"
+desertCropDesc,"Plant these seeds on soil or in a Farm Plot in the desert to grow them for harvesting. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water. Dry crops on the Drying Rack to make more seeds"
+sonwCropDesc,"Plant these seeds on soil or in a Farm Plot in the snow to grow them for harvesting. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water. Dry crops on the Drying Rack to make more seeds"
+forestNdesertCropDesc,"Plant these seeds on soil or in a Farm Plot in the forest or the desert to grow them for harvesting. Protect your crops from zombie and animals or they can be trampled and destroyed. Use the Watering Can to add Fertilizer to the planted seed to increase crop yield. The Watering Can can also be used to treat Insect Infestations with Insecticide and to water dry plants with Ounces of Dirty Water. Dry crops on the Drying Rack to make more seeds"
 jz_FoodOneCourseMeal,"One Course Meal"
 jz_FoodOneCourseMealDesc,"A large meal with all the sides and fixns"
 jz_FoodOneCourseMealNutritious,"One Course Meal Nutritious"
@@ -2070,7 +2058,7 @@ jz_ActionSkillDesc,"Improve these skills by using or killing with the given skil
 jz_CraftingSkillsDesc,"Improve these skills by crafting the stated item"
 jz_ProfessionsDesc,"These are the Professions a Survivor could of had before the event. Use your starting Knowledge Point to purchase these or gather enough skill pages from loot to obtain them."
 jz_HobbieDesc,"These are the Hobbies a Survivor could of had before the event."
-jz_TraitsDesc,"Phisical traits a survivor can have"
+jz_TraitsDesc,"Physical traits a survivor can have"
 jz_SchematicsDesc,"You can track all unlockable schematics here"
 jz_MiningSkillDesc,"Gain experience by breaking blocks with Pickaxes and Shovels to improve your use of them\n            [00eb3c] Current XP-{cvar($jz_PickaxeXP:000)}             Next Level-{cvar($jz_PickaxeSkillNextLvTotal:000)}[-]"
 jz_AxeSkillDesc,"Gain experience by breaking blocks with Axes to improve your use of them\n            [00eb3c] Current XP-{cvar($jz_AxeXP:000)}             Next Level-{cvar($jz_AxeSkillNextLvTotal:000)}[-]"

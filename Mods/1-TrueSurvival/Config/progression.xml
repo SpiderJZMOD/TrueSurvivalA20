@@ -1217,13 +1217,13 @@
 	<!-- Mason -->
 	<perk name="jz_Mason" parent="Professions" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Mason" desc_key="jz_MasonDesc" icon="ui_game_symbol_brick">
 		<effect_group>
-		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_Mason" operation="Equals" value="1"/>
             <requirement name="HoldingItemHasTags" tags="jz_StoneBuildingTool"/>
                 <passive_effect name="EntityDamage" operation="base_set" value="17.4" /> <!-- meleeWpnClubT1BaseballBat -->
 				<passive_effect name="DismemberChance" operation="base_add" value="0,.30" level="0,100" tags="head"/>
                 <passive_effect name="DismemberChance" operation="base_add" value="0,.40" level="0,100" tags="arm,leg"/>
         </effect_group>
+		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_Mason" operation="GTE" value="1"/>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifySkillSDX, SCore" tag="jz_StoneBuildingSkill" operation="add" value="2">
 					<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="2"/></triggered_effect>

@@ -653,7 +653,7 @@ Mesh files no longer used:
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-100" tags="metal"/><!-- JZMOD -->
         <passive_effect name="DamageModifier" operation="perc_add" value="-100" tags="jzSteel"/><!-- JZMOD -->       
@@ -710,7 +710,7 @@ Mesh files no longer used:
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> <!-- random APM -->
 		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-100" tags="jzSteel"/><!-- JZMOD -->
@@ -768,7 +768,7 @@ Mesh files no longer used:
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> <!-- random APM -->
 		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="jzSteel"/><!-- JZMOD -->
@@ -1099,9 +1099,11 @@ Mesh files no longer used:
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="ToolScrewdriver"/><!-- JZMOD -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="ToolWrench"/><!-- JZMOD -->
 
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="ToolScrewdriver"/><!-- JZMOD -->
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="ToolWrench"/><!-- JZMOD -->
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -32623,7 +32625,7 @@ perkNightStalkerSilentNight
 <item name="jz_MeleePlank"> 
 	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,jz_BluntSkillTag"/>
 	<property name="DisplayType" value="melee"/>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Group" value="Clubs"/>
 	<property name="Meshfile" value="#@modfolder:Resources/JZ2X4.unity3d?2X4Prefab" />
 	<property name="HoldType" value="2"/>
     <property name="DescriptionKey" value="jz_MeleePlankDesc"/>

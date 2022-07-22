@@ -17475,24 +17475,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$LeftWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="1205">
 					<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="GT" value="1205"/></triggered_effect>
@@ -17542,7 +17536,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftWristDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LeftWristDurationDisplay" operation="set" value="0"/>
 		</effect_group>
-		<effect_group name="activity makes damaged legs worse">
+		<effect_group name="activity makes damaged wrist worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
@@ -17550,18 +17544,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftWristCounter" operation="set" value="7208">
 					<requirement name="CVarCompare" cvar="$LeftWristCounter" operation="GT" value="7208"/></triggered_effect>
@@ -17608,14 +17598,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -17672,7 +17659,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".LeftWristDurationDisplay" operation="divide" value="@$LeftWristTotalHealingRate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".LeftWristDurationDisplay" operation="set" value="0"/>
 		</effect_group>
-		<effect_group name="activity makes damaged legs worse">
+		<effect_group name="activity makes damaged wrist worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftWristCounter" operation="add" value="4">
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
@@ -17680,14 +17667,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -17765,7 +17749,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".RightWristDurationDisplay" operation="divide" value="@$critHitNaturalHealingRate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".RightWristDurationDisplay" operation="set" value="0"/>
 		</effect_group>
-		<effect_group name="activity makes damaged worse">
+		<effect_group name="activity makes damaged wrist worse">
 			<requirement name="!HasBuff" buff="buffDrugSteroids"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightWristCounter" operation="add" value="4">
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
@@ -17773,24 +17757,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$RightWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="1205">
 					<requirement name="CVarCompare" cvar="$RightWristCounter" operation="GT" value="1205"/></triggered_effect>
@@ -17848,18 +17826,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightWristCounter" operation="set" value="7208">
 					<requirement name="CVarCompare" cvar="$RightWristCounter" operation="GT" value="7208"/></triggered_effect>
@@ -17906,14 +17880,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -17978,14 +17949,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightWristCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -18071,24 +18039,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$LeftArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="1205">
 					<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="GT" value="1205"/></triggered_effect>
@@ -18146,18 +18108,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$LeftArmCounter" operation="set" value="7208">
 					<requirement name="CVarCompare" cvar="$LeftArmCounter" operation="GT" value="7208"/></triggered_effect>
@@ -18204,14 +18162,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -18276,14 +18231,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$LeftArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -18369,24 +18321,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$RightArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="1205">
 					<requirement name="CVarCompare" cvar="$RightArmCounter" operation="GT" value="1205"/></triggered_effect>
@@ -18444,18 +18390,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$RightArmCounter" operation="set" value="7208">
 					<requirement name="CVarCompare" cvar="$RightArmCounter" operation="GT" value="7208"/></triggered_effect>
@@ -18502,14 +18444,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -18574,14 +18513,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$RightArmCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -18668,24 +18604,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$NeckCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$NeckCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="1205">
 					<requirement name="CVarCompare" cvar="$NeckCounter" operation="GT" value="1205"/></triggered_effect>
@@ -18743,18 +18673,14 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NeckCounter" operation="set" value="7208">
 					<requirement name="CVarCompare" cvar="$NeckCounter" operation="GT" value="7208"/></triggered_effect>
@@ -18801,14 +18727,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$NeckCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
@@ -18873,14 +18796,11 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 					<requirement name="HoldingItemHasTags" tags="ranged"/></triggered_effect>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$NeckCounter" operation="add" value="4">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffUpperBodyGetsWorse">
-					<requirement name="HoldingItemHasTags" tags="melee"/>
-					<requirement name="!HoldingItemHasTags" tags="repairTool"/></triggered_effect>
+					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
 					
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1">
 					<requirement name="HoldingItemHasTags" tags="melee"/></triggered_effect>
