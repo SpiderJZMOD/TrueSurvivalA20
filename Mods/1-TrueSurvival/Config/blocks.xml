@@ -7711,9 +7711,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="plantedMushroom2">
-	<property name="Extends" value="plantedMushroom1"/>
+	<property name="Extends" value="cropsGrowingMaster" />
 	<property name="CustomIcon" value="plantedMushroom1"/>
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="Model" value="OutdoorDecor/mushroom_growth" param1="main_mesh"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedMushroomLv2Random"/><!-- JZMOD -->
 	<property name="Collide" value="melee"/>
@@ -7786,7 +7786,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="plantedYucca2">
-	<property name="Extends" value="plantedYucca1"/>
+	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CustomIcon" value="plantedYucca1"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="Entities/Plants/plant_yucca_growthPrefab"/>
@@ -8066,7 +8066,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="plantedAloe2">
-	<property name="Extends" value="plantedAloe1"/>
+	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="plantedAloe1"/>
 	<property name="Model" value="Entities/Plants/plant_aloe2_Prefab"/>
@@ -8355,7 +8355,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- growing, stage 2 -->
 <!-- NOT_A_SHAPE -->
 <block name="plantedCorn2">
-	<property name="Extends" value="plantedCorn1"/>
+	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="corn_growth_shape"/>
@@ -8666,7 +8666,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- NOT_A_SHAPE -->
 <block name="plantedPumpkin2">
-	<property name="Extends" value="plantedPumpkin1"/>
+	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CustomIcon" value="plantedPumpkin1"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
@@ -16673,13 +16673,15 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="FuelValue" value="6"/>
 	<!-- <property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/> -->
-	<property name="DowngradeBlock" value="bunkBedFrame"/>
 	<property class="RepairItems">
 		<property name="resourceCloth" value="10"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceCloth" count="5" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceCloth" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceSpring" count="3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 	<property name="SellableToTrader" value="false"/>
@@ -25161,21 +25163,26 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterExchange" value="imposterRamp" param1="18"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Harvest" name="resourceScrapIron" count="120" tag="allHarvest"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="2,3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Tags" value="jz_CrowBarTag,ToolScrewdriver"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_building,SC_electrical,SC_loot"/>
-	<property name="Tags" value="jz_CrowBarTag"/>
+	<!--JZMOD ALL-->
+	<drop event="Harvest" name="resourceScrapIron" count="120" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- JZMOD WRENCH -->
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,3" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+	<!--JZMOD SCREWDRIVER-->
+	<drop event="Harvest" name="solarCell" count="0,6" tag="ToolScrewdriver" />  
+	<drop event="Harvest" name="resourceElectricParts" count="1,5" tag="ToolScrewdriver"/>
+	<drop event="Harvest" name="resourceElectronicParts" count="1,5" tag="ToolScrewdriver"/>
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="cntCollapsedSolarbank" count="1" prob="1" tool_category="ToolCrowbar"/> 
+	<drop event="Destroy" name="cntCollapsedSolarbank" count="1" prob="1" tool_category="ToolCrowbar"/> 	
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -33898,7 +33905,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationIcon" value="Oven"/>
 	<property name="CraftActionName" value="lblContextActionCook"/>
 	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -33948,7 +33955,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationIcon" value="Oven"/>
 	<property name="CraftActionName" value="lblContextActionCook"/>
 	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -33998,7 +34005,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationIcon" value="Oven"/>
 	<property name="CraftActionName" value="lblContextActionCook"/>
 	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -34482,7 +34489,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+    <property name="WorkstationIcon" value="PipeGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34535,7 +34542,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+    <property name="WorkstationIcon" value="PipeGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34587,7 +34594,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+    <property name="WorkstationIcon" value="PipeGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34639,7 +34646,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+    <property name="WorkstationIcon" value="PipeGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34691,7 +34698,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+    <property name="WorkstationIcon" value="PipeGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34743,7 +34750,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_PipeGunWorkbench"/>
+    <property name="WorkstationIcon" value="PipeGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34789,7 +34796,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="WorkstationIcon" value="LightArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34841,7 +34848,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="WorkstationIcon" value="LightArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34893,7 +34900,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="WorkstationIcon" value="LightArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34945,7 +34952,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="WorkstationIcon" value="LightArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -34997,7 +35004,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="WorkstationIcon" value="LightArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35049,7 +35056,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_LightArmorWorkbench"/>
+	<property name="WorkstationIcon" value="LightArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35095,7 +35102,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="WorkstationIcon" value="HeavyArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35147,7 +35154,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="WorkstationIcon" value="HeavyArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35199,7 +35206,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="WorkstationIcon" value="HeavyArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35251,7 +35258,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="WorkstationIcon" value="HeavyArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35303,7 +35310,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="WorkstationIcon" value="HeavyArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35355,7 +35362,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-	<property name="WorkstationIcon" value="jz_HeavyArmorWorkbench"/>
+	<property name="WorkstationIcon" value="HeavyArmor"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35401,7 +35408,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+    <property name="WorkstationIcon" value="Advanced"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35453,7 +35460,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+    <property name="WorkstationIcon" value="Advanced"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35505,7 +35512,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+    <property name="WorkstationIcon" value="Advanced"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35557,7 +35564,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+    <property name="WorkstationIcon" value="Advanced"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35609,7 +35616,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+    <property name="WorkstationIcon" value="Advanced"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35661,7 +35668,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ToolWorkbench"/>
+    <property name="WorkstationIcon" value="Advanced"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35707,7 +35714,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+    <property name="WorkstationIcon" value="Electronic"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35759,7 +35766,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+    <property name="WorkstationIcon" value="Electronic"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35811,7 +35818,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+    <property name="WorkstationIcon" value="Electronic"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35863,7 +35870,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+    <property name="WorkstationIcon" value="Electronic"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35915,7 +35922,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+    <property name="WorkstationIcon" value="Electronic"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -35967,7 +35974,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ElectronicWorkbench"/>
+    <property name="WorkstationIcon" value="Electronic"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36012,7 +36019,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+    <property name="WorkstationIcon" value="Handgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36064,7 +36071,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+    <property name="WorkstationIcon" value="Handgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36116,7 +36123,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+    <property name="WorkstationIcon" value="Handgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36168,7 +36175,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+    <property name="WorkstationIcon" value="Handgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36220,7 +36227,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+    <property name="WorkstationIcon" value="Handgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36272,7 +36279,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_HandgunWorkbench"/>
+    <property name="WorkstationIcon" value="Handgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36318,7 +36325,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+    <property name="WorkstationIcon" value="Shotgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36370,7 +36377,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+    <property name="WorkstationIcon" value="Shotgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36422,7 +36429,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+    <property name="WorkstationIcon" value="Shotgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36474,7 +36481,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+    <property name="WorkstationIcon" value="Shotgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36526,7 +36533,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+    <property name="WorkstationIcon" value="Shotgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36578,7 +36585,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_ShotgunWorkbench"/>
+    <property name="WorkstationIcon" value="Shotgun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36624,7 +36631,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+    <property name="WorkstationIcon" value="MachineGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36676,7 +36683,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+    <property name="WorkstationIcon" value="MachineGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36728,7 +36735,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+    <property name="WorkstationIcon" value="MachineGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36780,7 +36787,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+    <property name="WorkstationIcon" value="MachineGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36832,7 +36839,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+    <property name="WorkstationIcon" value="MachineGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36884,7 +36891,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_MachineGunWorkbench"/>
+    <property name="WorkstationIcon" value="MachineGun"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36930,7 +36937,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+    <property name="WorkstationIcon" value="Rifle"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -36982,7 +36989,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+    <property name="WorkstationIcon" value="Rifle"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -37034,7 +37041,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+    <property name="WorkstationIcon" value="Rifle"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -37086,7 +37093,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+    <property name="WorkstationIcon" value="Rifle"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -37138,7 +37145,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+    <property name="WorkstationIcon" value="Rifle"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -37190,7 +37197,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="TakeDelay" value="15"/>
 	<property name="DisplayType" value="blockMulti"/>
-    <property name="WorkstationIcon" value="jz_RifleWorkbench"/>
+    <property name="WorkstationIcon" value="Rifle"/>
 	<property name="CraftActionName" value="Craft"/>
 	<property name="CraftIcon" value="ui_game_symbol_assemble"/>
 	<property name="OpenSound" value="chem_station_open"/>
@@ -40820,18 +40827,39 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="jz_FoodCarrot" count="1" tag="cropHarvest"/>
     <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
 </block>
-<!--JZMOD CHILLIS -->
+<!--JZMOD CHILLIS-->
 <block name="jz_PlantedChillis1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
-    <property name="CustomIcon" value="plantedCorn1"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="UnlockedBy" value="jz_SchematicChilliSeed"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
-	<property name="PlantGrowing.Next" value="jz_PlantedChillis1Dry"/>
+	<property name="PlantGrowing.Next" value="jz_PlantedChillisLv1Random"/>
 	<property name="Group" value="Food/Cooking"/>
-    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
-	<drop event="Destroy" name="jz_QISeedChillis" count="1"/>
+    <property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillisFertilized1"/>
+		<property name="Item" value="resourceFertilizer"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+</block>
+
+<block name="jz_PlantedChillisLv1Random" >
+	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="jz_PlantedChillis1Infested">
+	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillis1Dry"/>
+		<property name="Item" value="jz_Insecticide"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <block name="jz_PlantedChillis1Dry">
@@ -40839,11 +40867,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
-    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="jz_PlantedChillis2"/>
-		<property name="Item" value="jz_QIFertilizerDesert"/>
-		<property name="ItemCount" value="1"/>
+		<property name="Item" value="jz_DrinkDirtyOuncesOfWater"/>
+		<property name="ItemCount" value="3"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 </block>
@@ -40853,21 +40880,36 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZFarmChillisMid.unity3d?FarmChillisMidPrefab" />
-    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
-	<property name="PlantGrowing.Next" value="jz_PlantedChillis2Dry"/>
+	<property name="PlantGrowing.Next" value="jz_PlantedChillisLv2Random"/>
+</block>
+
+<block name="jz_PlantedChillisLv2Random">
+	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="jz_PlantedChillis2Infested">
+	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/JZFarmChillisMid.unity3d?FarmChillisMidPrefab" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillis2Dry"/>
+		<property name="Item" value="jz_Insecticide"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
 </block>
 
 <block name="jz_PlantedChillis2Dry">
 	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="plantedBlueberry1"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZFarmChillisMid.unity3d?FarmChillisMidPrefab" />
-    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="jz_PlantedChillis3Harvest"/>
-		<property name="Item" value="jz_QIFertilizerDesert"/>
-		<property name="ItemCount" value="1"/>
+		<property name="ToBlock" value="jz_PlantedChillis3HarvestPlayer"/>
+		<property name="Item" value="jz_DrinkDirtyOuncesOfWater"/>
+		<property name="ItemCount" value="3"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 </block>
@@ -40876,10 +40918,82 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZFarmChillisGrown.unity3d?FarmChillisGrownPrefab" />
-    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/>
 	<drop event="Harvest" name="jz_FoodChillis" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="1" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="1" tag="jz_FarmerHarvest"/>
 </block>
 
+<block name="jz_PlantedChillis3HarvestPlayer">
+	<property name="Extends" value="jz_PlantedChillis3Harvest"/>
+    <property name="Tags" value="jz_PlayerCropTag"/>
+	<property name="CreativeMode" value="Dev"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="3" tag="cropHarvest"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="1" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="3" tag="jz_FarmerHarvest"/>
+    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
+</block>
+<!--JZMOD CHILLIS FERTILIZED-->
+<block name="jz_PlantedChillisFertilized1">
+	<property name="Extends" value="jz_PlantedChillis1"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+    <property name="PlantGrowing.GrowthRate" value="42"/><!--42-->
+	<property name="PlantGrowing.Next" value="jz_PlantedChillisFertilizedLv1Random"/>
+</block>
+
+<block name="jz_PlantedChillisFertilizedLv1Random" >
+	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="jz_PlantedChillisFertilized1Infested">
+	<property name="Extends" value="jz_PlantedChillis1Infested" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillisFertilized1Dry"/>
+	</property>
+</block>
+
+<block name="jz_PlantedChillisFertilized1Dry">
+	<property name="Extends" value="jz_PlantedChillis1Dry" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillisFertilized2"/>
+	</property>
+</block>
+
+<block name="jz_PlantedChillisFertilized2">
+	<property name="Extends" value="jz_PlantedChillis2"/>
+    <property name="PlantGrowing.GrowthRate" value="42"/><!--42-->
+	<property name="PlantGrowing.Next" value="jz_PlantedChillisFertilizedLv2Random"/>
+</block>
+
+<block name="jz_PlantedChillisFertilizedLv2Random">
+	<property name="Extends" value="cropsHarvestableMaster" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+
+<block name="jz_PlantedChillisFertilized2Infested">
+	<property name="Extends" value="jz_PlantedChillis2Infested" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillisFertilized2Dry"/>
+	</property>
+</block>
+
+<block name="jz_PlantedChillisFertilized2Dry">
+	<property name="Extends" value="jz_PlantedChillis2Dry" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="jz_PlantedChillis3FertilizedHarvestPlayer"/>
+	</property>
+</block>
+
+<block name="jz_PlantedChillis3FertilizedHarvestPlayer">
+	<property name="Extends" value="jz_PlantedChillis3HarvestPlayer"/>
+    <property name="Tags" value="jz_PlayerCropTag"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="3" tag="cropHarvest"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="1" tag="jz_GardenerHarvest"/>
+	<drop event="Harvest" name="jz_FoodChillis" count="3" tag="jz_FarmerHarvest"/>
+    <property name="FilterTags" value="foutdoor,fcrops,fcropsDestroy"/> 
+</block>
 <!--JZMOD CUCUMBER-->
 <block name="jz_PlantedCucumber1">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
@@ -43062,7 +43176,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 			<property class="AdvancedPrefabFeatures" >
 				<property name="Logging" value="false"/>
-				<property name="DisableTraderProtection" value="false" />
+				<property name="DisableTraderProtection" value="true" />
 				<!-- Disables Trader Protection in their prefabs -->
 			</property>
 

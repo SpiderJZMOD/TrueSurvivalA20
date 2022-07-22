@@ -763,33 +763,33 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GT" value="1"/>
 				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LTE" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffWarningStageDiarrhea">
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="13"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="14"/></triggered_effect>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="15"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="16"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffWarningStageAnemia">
 				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GT" value="1"/>
 				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LTE" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffWarningStageGout">
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="13"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="14"/></triggered_effect>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="15"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="16"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffWarningStageWeak">
 				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GT" value="1"/>
 				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LTE" value="2"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffWarningStageConstipation">
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="13"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="14"/></triggered_effect>
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="15"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="16"/></triggered_effect>
 			<!-- Vitamin Illness Activation -->
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffIllnessScurvy">
 				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LTE" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffIllnessDiarrhea">
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="14"/></triggered_effect>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="16"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffIllnessAnemia">
 				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LTE" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffIllnessGout">
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="14"/></triggered_effect>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="16"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffIllnessWeak">
 				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LTE" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffIllnessConstipation">
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="14"/></triggered_effect>
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="16"/></triggered_effect>
 		</effect_group>
 		
 		<!-- Diet Stages -->
@@ -836,9 +836,9 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		</effect_group>
 		<effect_group name="JZMOD Nutrition Level 4">
 			<requirements compare_type="or">
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="10"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="10"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="10"/>			
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="11"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="11"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="11"/>			
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jzCvarNutrition" operation="set" value="4">
 					<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="9"/>
@@ -847,19 +847,19 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		</effect_group>
 		<effect_group name="JZMOD Nutrition Level 5">
 			<requirements compare_type="or">
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="11"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="11"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="11"/>			
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="13"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="13"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="13"/>			
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jzCvarNutrition" operation="set" value="5">
-					<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="10"/>
-					<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="10"/>
-					<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="10"/></triggered_effect>
+					<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="11"/>
+					<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="11"/>
+					<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="11"/></triggered_effect>
 		</effect_group>
 		<effect_group name="JZMOD Nutrition Level 6">
-			<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="11"/>
-			<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="11"/>
-			<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="11"/>
+			<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="13"/>
+			<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="13"/>
+			<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="13"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$jzCvarNutrition" operation="set" value="6"/>
 		</effect_group>
 		
@@ -1672,9 +1672,9 @@ onSelfDestroyedBlock && onSelfDamagedBlock were not yet
 		<!-- Be careful with that remove_on_death="false". You may have to restart screen effects, particles, etc. on game load. -->
 		<stack_type value="ignore"/>
 		<effect_group name="JZMOD SET STATS/ RESET STATS">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="set" value="11.0"/><!--VeggieVitamin-->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="set" value="11.0"/><!--FruitVitamin-->
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="set" value="11.0"/><!--ProteinVitamin-->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerVeggieVitamin" operation="set" value="13.0"/><!--VeggieVitamin-->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerFruitVitamin" operation="set" value="13.0"/><!--FruitVitamin-->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_PlayerProteinVitamin" operation="set" value="13.0"/><!--ProteinVitamin-->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$jz_WellnessLv" operation="add" value="79">
                 <requirement name="NotHasBuff" buff="jz_BuffDeadIsDeadResetTag"/></triggered_effect><!--Wellness-->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="80">
@@ -9901,8 +9901,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 		<effect_group>	
 			<requirements compare_type="or">
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="14"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="13"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="GTE" value="16"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="15"/>
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWarningStageDiarrhea"/>		
 		</effect_group>	
@@ -9922,7 +9922,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,10" tags="jz_BuffIllnessDiarrhea"/>
 		</effect_group>
 		<effect_group>	
-			<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="14"/>
+			<requirement name="CVarCompare" cvar="$jz_PlayerFruitVitamin" operation="LT" value="16"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffIllnessDiarrhea"/>		
 		</effect_group>	
 	</buff>
@@ -9983,8 +9983,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 		<effect_group>	
 			<requirements compare_type="or">
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="14"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="13"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="GTE" value="16"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="15"/>
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWarningStageGout"/>		
 		</effect_group>	
@@ -10004,7 +10004,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,10" tags="jz_BuffIllnessGout"/>
 		</effect_group>
 		<effect_group>	
-			<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="14"/>
+			<requirement name="CVarCompare" cvar="$jz_PlayerProteinVitamin" operation="LT" value="16"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffIllnessGout"/>		
 		</effect_group>	
 	</buff>
@@ -10056,8 +10056,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 		<effect_group>	
 			<requirements compare_type="or">
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="14"/>
-				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="13"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="GTE" value="16"/>
+				<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="15"/>
 			</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffWarningStageConstipation"/>		
 		</effect_group>	
@@ -10074,7 +10074,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,10" tags="jz_BuffIllnessConstipation"/>
 		</effect_group>
 		<effect_group>	
-			<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="14"/>
+			<requirement name="CVarCompare" cvar="$jz_PlayerVeggieVitamin" operation="LT" value="16"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffIllnessConstipation"/>		
 		</effect_group>	
 	</buff>
@@ -19442,7 +19442,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashLeftFootDrying">
                 <requirement name="CVarCompare" cvar="$GashLeftFootDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashLeftFootNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashLeftFoot"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashLeftFoot"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashLeftFootDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftFootDryingDuration" operation="set" value="0"/>  
@@ -19813,7 +19814,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashRightFootDrying">
                 <requirement name="CVarCompare" cvar="$GashRightFootDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashRightFootNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashRightFoot"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashRightFoot"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashRightFootDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightFootDryingDuration" operation="set" value="0"/>  
@@ -20184,7 +20186,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashLeftLegDrying">
                 <requirement name="CVarCompare" cvar="$GashLeftLegDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashLeftLegNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashLeftLeg"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashLeftLeg"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashLeftLegDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftLegDryingDuration" operation="set" value="0"/>  
@@ -20555,7 +20558,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashRightLegDrying">
                 <requirement name="CVarCompare" cvar="$GashRightLegDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashRightLegNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashRightLeg"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashRightLeg"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashRightLegDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightLegDryingDuration" operation="set" value="0"/>  
@@ -20926,7 +20930,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashLeftHandDrying">
                 <requirement name="CVarCompare" cvar="$GashLeftHandDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashLeftHandNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashLeftHand"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashLeftHand"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashLeftHandDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftHandDryingDuration" operation="set" value="0"/>  
@@ -21297,7 +21302,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashRightHandDrying">
                 <requirement name="CVarCompare" cvar="$GashRightHandDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashRightHandNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashRightHand"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashRightHand"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashRightHandDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightHandDryingDuration" operation="set" value="0"/>  
@@ -21668,7 +21674,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashLeftArmDrying">
                 <requirement name="CVarCompare" cvar="$GashLeftArmDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashLeftArmNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashLeftArm"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashLeftArm"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashLeftArmDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashLeftArmDryingDuration" operation="set" value="0"/>  
@@ -22055,7 +22062,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashRightArmDrying">
                 <requirement name="CVarCompare" cvar="$GashRightArmDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashRightArmNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashRightArm"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashRightArm"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashRightArmDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashRightArmDryingDuration" operation="set" value="0"/>  
@@ -22426,7 +22434,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashStomachDrying">
                 <requirement name="CVarCompare" cvar="$GashStomachDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashStomachNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashStomach"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashStomach"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashStomachDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashStomachDryingDuration" operation="set" value="0"/>  
@@ -22797,7 +22806,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffGashNeckDrying">
                 <requirement name="CVarCompare" cvar="$GashNeckDryingDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffGashNeckNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffGashNeck"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffGashNeck"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".GashNeckDryingDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$GashNeckDryingDuration" operation="set" value="0"/>  
@@ -24755,7 +24765,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedAD"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffZombieBiteDirtyBandage">
-				<requirement name="!HasBuff" buff="jz_BuffZombieBite"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffZombieBite"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 		</effect_group>
 	</buff>
 	<!-- JZMOD ZOMBIE BITE NEEDS CLEASING ICONS-->
@@ -24991,7 +25002,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffZombieBiteTendedBD"/>
 			
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffZombieBiteDirtyBandageB">
-				<requirement name="!HasBuff" buff="jz_BuffZombieBite"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffZombieBite"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 		</effect_group>
 	</buff>
 	
@@ -25379,7 +25391,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnLeftFootBandaged">
                 <requirement name="CVarCompare" cvar="$BurnLeftFootBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnLeftFootNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftFoot"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftFoot"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnLeftFootBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftFootBandagedDuration" operation="set" value="0"/>  
@@ -25805,7 +25818,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnRightFootBandaged">
                 <requirement name="CVarCompare" cvar="$BurnRightFootBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnRightFootNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightFoot"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightFoot"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnRightFootBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightFootBandagedDuration" operation="set" value="0"/>  
@@ -26231,7 +26245,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnLeftLegBandaged">
                 <requirement name="CVarCompare" cvar="$BurnLeftLegBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnLeftLegNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftLeg"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftLeg"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnLeftLegBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftLegBandagedDuration" operation="set" value="0"/>  
@@ -26657,7 +26672,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnRightLegBandaged">
                 <requirement name="CVarCompare" cvar="$BurnRightLegBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnRightLegNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightLeg"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightLeg"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnRightLegBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightLegBandagedDuration" operation="set" value="0"/>  
@@ -27083,7 +27099,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnLeftArmBandaged">
                 <requirement name="CVarCompare" cvar="$BurnLeftArmBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnLeftArmNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftArm"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftArm"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnLeftArmBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftArmBandagedDuration" operation="set" value="0"/>  
@@ -27509,7 +27526,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnRightArmBandaged">
                 <requirement name="CVarCompare" cvar="$BurnRightArmBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnRightArmNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightArm"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightArm"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnRightArmBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightArmBandagedDuration" operation="set" value="0"/>  
@@ -27935,7 +27953,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnLeftHandBandaged">
                 <requirement name="CVarCompare" cvar="$BurnLeftHandBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnLeftHandNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftHand"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnLeftHand"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnLeftHandBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnLeftHandBandagedDuration" operation="set" value="0"/>  
@@ -28361,7 +28380,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnRightHandBandaged">
                 <requirement name="CVarCompare" cvar="$BurnRightHandBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnRightHandNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightHand"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnRightHand"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnRightHandBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnRightHandBandagedDuration" operation="set" value="0"/>  
@@ -28787,7 +28807,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnStomachBandaged">
                 <requirement name="CVarCompare" cvar="$BurnStomachBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnStomachNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnStomach"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnStomach"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnStomachBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnStomachBandagedDuration" operation="set" value="0"/>  
@@ -29213,7 +29234,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		   <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFireBurnNeckBandaged">
                 <requirement name="CVarCompare" cvar="$BurnNeckBandagedDuration" operation="LTE" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="jz_BuffFireBurnNeckNeedsBandage">
-				<requirement name="!HasBuff" buff="jz_BuffFireBurnNeck"/></triggered_effect>
+				<requirement name="!HasBuff" buff="jz_BuffFireBurnNeck"/>
+				<requirement name="!HasBuff" buff="buffResetPlayerOnRespawn"/></triggered_effect>
 			<!-- Clean Up -->	
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".BurnNeckBandagedDurationDisplay" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$BurnNeckBandagedDuration" operation="set" value="0"/>  
@@ -29440,7 +29462,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="Mobility" operation="perc_add" value="-.40"/>
+			<passive_effect name="Mobility" operation="perc_set" value=".25"/>
 		</effect_group>
 		<effect_group name="Trip Chance">
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".tripChance" operation="set" value="5"/> 

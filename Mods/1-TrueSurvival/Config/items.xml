@@ -12912,7 +12912,8 @@ perkNightStalkerSilentNight
 	<property name="HoldType" value="16"/>
 	<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
+	<property name="Material" value="Mdrugs"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="Group" value="Science,CFChemicals,Medical"/>
@@ -13103,6 +13104,8 @@ perkNightStalkerSilentNight
 <item name="drugSteroids">
 	<property name="Extends" value="drugPainkillers"/>
 	<property name="DisplayType" value="drugSteroids"/>
+	<property name="Material" value="Mdrugs"/>
+	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="250"/>
 	<property name="UnlockedBy" value="jz_Doctor"/>
 	<property name="Group" value="Science,Medical"/>
@@ -24879,7 +24882,7 @@ perkNightStalkerSilentNight
 		<property name="Create_item_count" value="100,100,100,100,100"/>
 	</property>
 </item>
-
+	
 <item name="questRewardFarmT1Bundle">
 	<property name="Extends" value="noteTestersDelightAdmin"/>
 	<property name="CreativeMode" value="Player"/>
@@ -24890,7 +24893,7 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Create_item" value="farmPlotBlockVariantHelper"/>
 		<property name="Create_item_count" value="3"/>
-		<property name="Random_item" value="plantedMushroom1,plantedYucca1,plantedCotton1,plantedGoldenrod1,plantedChrysanthemum1,plantedCoffee1"/>
+		<property name="Random_item" value="plantedMushroom1,jz_SeedYucca,jz_SeedCotton,jz_SeedGoldenrod,jz_SeedChrysanthemum,jz_SeedCoffee"/>
 		<property name="Random_item_count" value="1,1,1"/>
 		<property name="Random_count" value="3"/>
 		<property name="Unique_random_only" value="true"/>
@@ -24907,7 +24910,7 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Create_item" value="farmPlotBlockVariantHelper"/>
 		<property name="Create_item_count" value="3"/>
-		<property name="Random_item" value="plantedPotato1,plantedCorn1,plantedAloe1,plantedBlueberry1"/>
+		<property name="Random_item" value="jz_SeedPotato,jz_SeedCorn,jz_SeedAloe,jz_SeedOnion,jz_SeedCarrot,jz_SeedTomato"/>
 		<property name="Random_item_count" value="1,1,1"/>
 		<property name="Random_count" value="3"/>
 		<property name="Unique_random_only" value="true"/>
@@ -24924,7 +24927,7 @@ perkNightStalkerSilentNight
 	<property class="Action0">
 		<property name="Create_item" value="farmPlotBlockVariantHelper"/>
 		<property name="Create_item_count" value="3"/>
-		<property name="Random_item" value="plantedPumpkin1,plantedHop1,plantedGraceCorn1"/>
+		<property name="Random_item" value="jz_SeedPumpkin,jz_SeedHop,jz_SeedWheat,jz_SeedOrange,jz_SeedBlueberry,jz_SeedChilli,jz_SeedCoconut"/>
 		<property name="Random_item_count" value="1,1,1"/>
 		<property name="Random_count" value="3"/>
 		<property name="Unique_random_only" value="true"/>
@@ -27153,7 +27156,8 @@ perkNightStalkerSilentNight
 		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="ToolCrowbar"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="oreWoodHarvest"/>
-        <passive_effect name="HarvestCount" operation="base_set" value="0" tags="salvageHarvest"/>        
+        <passive_effect name="HarvestCount" operation="base_set" value="0" tags="salvageHarvest"/>  
+		<passive_effect name="HarvestCount" operation="base_set" value="0" tags="ToolScrewdriver"/>  		
 	</effect_group>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -27690,6 +27694,8 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterFood" />
 	<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
 	<property name="HoldType" value="16" />
+	<property name="Material" value="Mdrugs"/>
+	<property name="Weight" value="1"/>
     <property name="EconomicValue" value="300"/>
 	<property name="DescriptionKey" value="stimulantDesc" />
 	<property name="Group" value="Science,CFChemicals,Medical"/>
@@ -33658,7 +33664,7 @@ perkNightStalkerSilentNight
 	<property name="Unlocks" value="perkMotherLode"/>
 	<property name="Group" value="Books,BooksOnly"/>
 	<property class="Action0">
-		<requirement name="ProgressionLevel" progression_name="perkMotherLode" operation="LT" value="3"/>
+		<requirement name="ProgressionLevel" progression_name="perkMotherLode" operation="LT" value="5"/>
 	</property>  
 	<effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>

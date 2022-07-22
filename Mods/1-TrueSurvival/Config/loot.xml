@@ -3892,6 +3892,7 @@ If there is no hit the default quality is used.
 	<item name="jz_SchematicAirFilterMine" />
 	<item name="armorIronSetSchematic"/>
 	<item name="armorLeatherSetSchematic"/>
+	<item name="jz_SchematicMethaneProducer"  />
 	<item name="gunBotT2JunkTurretSchematic"/>
 	<item name="gunBowT3CompoundBowSchematic"/>
 	<item name="gunBowT3CompoundCrossbowSchematic"/>
