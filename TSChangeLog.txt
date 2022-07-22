@@ -218,3 +218,17 @@ Forest and Desert- Wheat, Cotton, Hops, Orange
 -Removed can foods from Vending Machines
 -Added junk food to Vending Machines
 -Updated TS logo
+////////////////////////////////////////////////////////////////////////////////////////////
+7/22/2022 A20.5 Build# 1.08
+-Added special harvesting to electrical items using Screwdriver
+-Fixed the first stage of fertilized crops to not use up Fertilizer
+-Fixed Crop Seed description
+-Changed Burnt Zombies gore to fire trap
+-Changed upper body sprains and breaks to hurt when using tools also
+-Decreased chovels damage against wood
+-Fixed added improvised melee weapons crafting categories
+-Fixed reported speling errors:]
+-Fixed bug in Mason Profession
+-Removed Nitroglycerin from traders
+-Removed canned food from vending machines 
+-Updated TS Logo
