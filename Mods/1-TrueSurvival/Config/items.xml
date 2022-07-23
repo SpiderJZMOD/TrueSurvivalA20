@@ -8748,6 +8748,45 @@ needed?
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
 </item>
 
+<item name="safehouseT3UpgradeKit">
+	<property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="safehouseT3UpgradeKitDesc"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Use_time" value="0.5"/>
+		<property name="Sound_start" value="close_garbage"/>
+		<property name="Create_item" value="resourceWood,resourceScrapIron"/>
+		<property name="Create_item_count" value="158,24"/>
+	</property>
+</item>
+
+<item name="safehouseT4UpgradeKit">
+	<property name="Extends" value="safehouseT3UpgradeKit"/>
+	<property name="DescriptionKey" value="safehouseT4UpgradeKitDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="resourceWood,resourceScrapIron,resourceCobblestones"/>
+		<property name="Create_item_count" value="208,24,100"/>
+	</property>
+</item>
+
+<item name="safehouseT5UpgradeKit">
+	<property name="Extends" value="safehouseT3UpgradeKit"/>
+	<property name="DescriptionKey" value="safehouseT5UpgradeKitDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="resourceWood,resourceScrapIron,resourceCobblestones"/>
+		<property name="Create_item_count" value="208,24,200"/>
+	</property>
+</item>
 
 <!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
 

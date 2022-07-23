@@ -37537,6 +37537,22 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="0" prob="1" stick_chance="1" />
 </block>
 
+<block name="jz_SurvivorStash">
+	<property name="Shape" value="ModelEntity"/>
+	<property name="DescriptionKey" value="jz_SurvivorStashDesc"/>
+	<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab"/>
+	<property name="CustomIcon" value="cntShippingCrateHero"/>
+	<property name="MaxDamage" value="400"/>
+	<property name="Texture" value="572"/>
+	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Destroy" name="resourceWood" count="2,9" prob="1" />
+	<drop event="Destroy" name="jz_FoodServingVeggie" count="1,3" prob="0.4"/>
+	<drop event="Destroy" name="jz_FoodServingFruit" count="1,3" prob="0.4"/>
+	<drop event="Destroy" name="jz_FoodServingGrain" count="1,3" prob="0.4"/>
+</block>
+
 <block name="jz_TrapWoodenSpikeStarter">
 	<property name="Material" value="Mwood_weak" />
 	<property name="Shape" value="ModelEntity" />
