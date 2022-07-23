@@ -428,6 +428,23 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="6000"/>
 </recipe>
 
+<recipe name="safehouseT3UpgradeKit" count="1" craft_time="10">
+	<ingredient name="resourceWood" count="158"/>
+	<ingredient name="resourceScrapIron" count="24"/>
+</recipe>
+
+<recipe name="safehouseT4UpgradeKit" count="1" craft_time="10">
+	<ingredient name="resourceWood" count="208"/>
+	<ingredient name="resourceScrapIron" count="24"/>
+	<ingredient name="resourceCobblestones" count="100"/>
+</recipe>
+
+<recipe name="safehouseT5UpgradeKit" count="1" craft_time="10">
+	<ingredient name="resourceWood" count="208"/>
+	<ingredient name="resourceScrapIron" count="24"/>
+	<ingredient name="resourceCobblestones" count="200"/>
+</recipe>
+
 <recipe name="resourceScrapIronBundle" count="1" craft_time="10" tags="learnable">
 	<ingredient name="resourceScrapIron" count="6000"/>
 </recipe>
@@ -624,15 +641,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     <ingredient name="resourceSewingKit" count="1" />
 </recipe>
 
-<!-- jz_SurvivorStash -->
 <recipe name="jz_SurvivorStash" count="1" craft_time="30" craft_exp_gain="5">
 	<ingredient name="resourceWood" count="15" />
 	<ingredient name="jz_FoodServingVeggie" count="3"/>
 	<ingredient name="jz_FoodServingFruit" count="3"/>
     <ingredient name="jz_FoodServingGrain" count="3"/>
-    <ingredient name="jz_FoodServingProtein" count="3"/>
 </recipe>
-<!-- jz_SurvivorStash -->
 
 <recipe name="jz_QIGoodWalkieTalkie" count="1" craft_time="5" craft_exp_gain="50" tags="learnable">
 	<ingredient name="jz_QIDeadWalkieTalkie" count="1" />
