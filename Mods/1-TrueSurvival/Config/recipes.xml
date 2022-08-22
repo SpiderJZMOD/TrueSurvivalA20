@@ -189,9 +189,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_NutAndBolt" count="3"/>
 </recipe>
 
-<recipe name="jz_SimpleIronShapesBlock" count="1" >
-	<ingredient name="jz_IronSheetMetal" count="4"/>
-	<ingredient name="jz_NutAndBolt" count="3"/>
+<recipe name="bucketEmpty" count="1" >
+	<ingredient name="jz_FiberRope" count="4"/>
+	<ingredient name="resourceScrapIron" count="10"/>
 </recipe>
 
 <recipe name="safehouseT3UpgradeKit" count="1" craft_time="10">
@@ -220,6 +220,10 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="resourceScrapIron" count="1" >
 	<ingredient name="drinkCanEmpty" count="1"/>
+</recipe>
+
+<recipe name="resourceYuccaFibers" count="2" >
+	<ingredient name="jz_Rosemary" count="1"/>
 </recipe>
 
 <recipe name="resourceYuccaFibers" count="2" >
