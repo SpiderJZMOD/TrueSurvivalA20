@@ -1971,7 +1971,6 @@
 	</effect_group>
 </entity_class>
 
-
 <entity_class name="zombieFatHawaiian" extends="zombieTemplateMale">
 	<property name="Tags" value="entity,zombie,walker"/>
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>
@@ -4511,7 +4510,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 		<passive_effect name="HealthMax" operation="base_set" value="100"/>
 		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 		<passive_effect name="WaterMax" operation="base_set" value="100"/>
-		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffBurningWeapon,buffShocked"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffBurningWeapon,buffShocked,buffPerkCharismaticNature"/>
 	</effect_group>
 </entity_class>
 
@@ -5462,16 +5461,19 @@ Kinda sorta works but is buggy and we don't have time for that.
 <entity_class name="jz_ZombieFatHawaiianSpitExplode" extends="zombieFatCop">
 	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
 	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiian.prefab"/>
+	<property name="HandItem" value="jz_MeleeHandZombieFatHawaiian" />
 </entity_class>
 
 <entity_class name="jz_ZombieFatHawaiianFeralSpitExplode" extends="zombieFatCopFeral">
 	<property name="Tags" value="entity,zombie,walker,zombieCop,feral"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianFeral.prefab"/>           
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianFeral.prefab"/>
+	<property name="HandItem" value="jz_MeleeHandZombieFatHawaiianFeral" />	
 </entity_class>
 
 <entity_class name="jz_ZombieFatHawaiianRadiatedSpitExplode" extends="zombieFatCopRadiated">
 	<property name="Tags" value="entity,zombie,walker,zombieCop,feral,radiated"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianRadiated.prefab"/>      
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZHawaiianRadiated.prefab"/>  
+	<property name="HandItem" value="jz_MeleeHandZombieFatHawaiianRadiated" />
 </entity_class>
 
 <entity_class name="jz_ZombieFemaleFatExplode" extends="zombieFemaleFat">
@@ -5515,17 +5517,20 @@ Kinda sorta works but is buggy and we don't have time for that.
 
 <entity_class name="jz_ZombieFemaleFatSpitExplode" extends="zombieFatCop">
 	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMama.prefab"/>               
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMama.prefab"/>  
+	<property name="HandItem" value="jz_MeleeHandZombieFatFemale" />
 </entity_class>
 
 <entity_class name="jz_ZombieFemaleFatFeralSpitExplode" extends="zombieFatCopFeral">
 	<property name="Tags" value="entity,zombie,walker,zombieCop,feral"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaFeral.prefab"/>              
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaFeral.prefab"/> 
+	<property name="HandItem" value="jz_MeleeHandZombieFatFemaleFeral" />
 </entity_class>
 
 <entity_class name="jz_ZombieFemaleFatRadiatedSpitExplode" extends="zombieFatCopRadiated">
 	<property name="Tags" value="entity,zombie,walker,zombieCop,feral,radiated"/>
-	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaRadiated.prefab"/>       
+	<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaRadiated.prefab"/>
+	<property name="HandItem" value="jz_MeleeHandZombieFatFemalRadiated" />
 </entity_class>
 
 <entity_class name="JZZombieBlistered" extends="zombieRegularTemplate">

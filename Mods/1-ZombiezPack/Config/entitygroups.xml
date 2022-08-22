@@ -1,30 +1,37 @@
 <configs>
 	
-	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoe']]">	
-				<entity name="jz_ZombieMoeExplode" prob=".3" />
-				<entity name="Parasite" prob=".3" />
+	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoe' and not(@prob='0')]]">
                 <entity name="BloatedParasite" prob=".3" />
                 <entity name="ExperimentZ" prob=".3" />
                 <entity name="SwatZombie" prob=".3" />
                 <entity name="SwatCaptainZombie" prob=".3" />
+                <entity name="Parasite" prob=".3" />
+				<!-- JZMOD -->
 				<entity name="JZZombieBlistered" prob=".3" />
                 <entity name="JZZombieHookArm" prob=".3" />
-				<entity name="JZZombieTroll" prob=".3" />
+				<entity name="JZZombieTroll" prob=".3" />	
+				<entity name="jz_ZombieMoeExplode" prob=".3" />
 	</append>
-	
-	
-	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeFeral']]">	
-				<entity name="jz_ZombieMoeFeralExplode" prob=".15" />
-				<entity name="ParasiteFeral" prob=".15" />
-				<entity name="BloatedParasiteFeral" prob=".15" />
+		
+	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeFeral' and not(@prob='0')]]">
+                <entity name="BloatedParasiteFeral" prob=".15" />
                 <entity name="ExperimentZFeral" prob=".15" />
                 <entity name="SwatZombieFeral" prob=".15" />
                 <entity name="SwatCaptainZombieFeral" prob=".15" />
+                <entity name="ParasiteFeral" prob=".15" />
+				<!-- JZMOD -->
+				<entity name="jz_ZombieMoeFeralExplode" prob=".15" />
 	</append>
 	
-	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeRadiated']]">	
-				<entity name="jz_ZombieMoeRadiatedExplode" prob=".3" />
-	</append>
+	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieMoeRadiated' and not(@prob='0')]]">
+                <entity name="BloatedParasiteRadiated" prob=".15" />
+                <entity name="ExperimentZRadiated" prob=".15" />
+                <entity name="SwatZombieRadiated" prob=".15" />
+                <entity name="SwatCaptainZombieRadiated" prob=".15" />
+                <entity name="ParasiteRadiated" prob=".15" />	
+				<!-- JZMOD -->
+				<entity name="jz_ZombieMoeRadiatedExplode" prob=".15" />
+	</append>	
 	
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieFemaleFat']]">	
 				<entity name="jz_ZombieFemaleFatExplode" prob=".3" />
@@ -55,5 +62,4 @@
 				<entity name="jz_ZombieFatHawaiianRadiatedExplode" prob=".3" />
 				<entity name="jz_ZombieFatHawaiianRadiatedSpitExplode" prob=".3" />
 	</append>	
-	
 </configs>

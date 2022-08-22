@@ -4491,7 +4491,7 @@
     
     <perk name="perkPainTolerance" min_level="0" max_level="5" base_skill_point_cost="0" cost_multiplier_per_level="0" parent="jz_PerkBooks" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" icon="ui_game_symbol_character">
 		<effect_group>
-			<passive_effect name="HealthLoss" operation="perc_subtract" level="1,5" value=".05,.25"/>
+			<passive_effect name="GeneralDamageResist" operation="base_add" level="1,5" value=".05,.25"/>
 			<passive_effect name="BuffResistance" operation="base_add" level="1,5" value="0.20,1" tags="buffInjuryStunned01,buffInjuryStunned02"/>
 
 			<effect_description level="1" desc_key="perkPainToleranceRank1Desc" long_desc_key="perkPainToleranceRank1LongDesc"/>
@@ -4651,14 +4651,14 @@
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="LT" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_WoodBuildingXP" operation="Equals" value="100"/>
+			<requirement name="CVarCompare" cvar="$jz_WoodBuildingXP" operation="GTE" value="100"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_WoodBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Wood Building!"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_WoodBuildingSkill" operation="Equals" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_WoodBuildingXP" operation="Equals" value="250"/>
+			<requirement name="CVarCompare" cvar="$jz_WoodBuildingXP" operation="GTE" value="250"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_WoodBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Wood Building!"/>
@@ -4699,14 +4699,14 @@
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="LT" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_StoneBuildingXP" operation="Equals" value="100"/>
+			<requirement name="CVarCompare" cvar="$jz_StoneBuildingXP" operation="GTE" value="100"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_StoneBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Cobblestone Building!"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_StoneBuildingSkill" operation="Equals" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_StoneBuildingXP" operation="Equals" value="250"/>
+			<requirement name="CVarCompare" cvar="$jz_StoneBuildingXP" operation="GTE" value="250"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_StoneBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Cobblestone Building!"/>
@@ -4748,14 +4748,14 @@
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="LT" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_IronBuildingXP" operation="Equals" value="100"/>
+			<requirement name="CVarCompare" cvar="$jz_IronBuildingXP" operation="GTE" value="100"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_IronBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Iron Building!"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_IronBuildingSkill" operation="Equals" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_IronBuildingXP" operation="Equals" value="250"/>
+			<requirement name="CVarCompare" cvar="$jz_IronBuildingXP" operation="GTE" value="250"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_IronBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Iron Building!"/>
@@ -4794,14 +4794,14 @@
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="LT" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_ConcreteBuildingXP" operation="Equals" value="100"/>
+			<requirement name="CVarCompare" cvar="$jz_ConcreteBuildingXP" operation="GTE" value="100"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_ConcreteBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Concrete Building!"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="jz_ConcreteBuildingSkill" operation="Equals" value="1"/>	
-			<requirement name="CVarCompare" cvar="$jz_ConcreteBuildingXP" operation="Equals" value="250"/>
+			<requirement name="CVarCompare" cvar="$jz_ConcreteBuildingXP" operation="GTE" value="250"/>
 			    <triggered_effect trigger="onSelfWalk" action="ModifySkillSDX, SCore" tag="jz_ConcreteBuildingSkill" operation="add" value="1"/>
                 <triggered_effect trigger="onSelfWalk" action="PlaySound" sound="levelupplayer" play_in_head="true"/>
 				<triggered_effect trigger="onSelfWalk" action="ShowToolbeltMessage" message="You have leveled up Concrete Building!"/>
@@ -5901,17 +5901,17 @@
 			<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsUncontrolledBurst" operation="Equals" value="1"/>
 			<requirement name="ItemHasTags" tags="perkBookAutoWeapons"/>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="add" value="1"/>
 
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="set" value=".01"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="set" value=".01"/>
 
 				<triggered_effect trigger="onSelfDamagedBlock" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayMiss" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0">
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBCount" operation="set" value="0">
 					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
 				</triggered_effect>
 
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="multiply" value="@.AutoWeaponsUBCount"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsUBEffect" operation="multiply" value="@.AutoWeaponsUBCount"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="@.AutoWeaponsUBEffect"/>
 		</effect_group>
 		<effect_group>
@@ -5934,9 +5934,9 @@
 	<perk name="perkAutoWeaponsRecoil" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsRecoilDesc" long_desc_key="perkAutoWeaponsRecoilLongDesc">
 		<effect_group>
 			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
 				<requirement name="RoundsInMagazine" operation="LT" value="1"/>
 			</triggered_effect>
 		</effect_group>
@@ -5946,8 +5946,8 @@
 			<requirement name="ItemHasTags" tags="perkBookAutoWeapons"/>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
 					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
 				</triggered_effect>
 
@@ -5958,10 +5958,10 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>-->
 				 <!-- M60 <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.83"/>-->
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.015"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="multiply" value="@.AutoWeaponsRecoilCount"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.015"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="multiply" value="@.AutoWeaponsRecoilCount"/>
 
-				<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.5">
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.5">
 					<requirement name="CVarCompare" cvar=".AutoWeaponsRecoilEffect" operation="LT" value="-.5"/>
 				</triggered_effect>
 
@@ -6041,7 +6041,7 @@
 		<effect_group>
 			<requirement name="IsIndoors"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".1"/>
-				<passive_effect name="HealthLoss" operation="perc_subtract" level="1" value=".05"/>
+				<passive_effect name="GeneralDamageResist" operation="base_add" level="1" value="0.05"/>
 		</effect_group>
 	</perk>
 	<perk name="perkUrbanCombatComplete" parent="skillUrbanCombat" max_level="1" base_skill_point_cost="0" desc_key="perkUrbanCombatCompleteDesc" long_desc_key="perkUrbanCombatCompleteLongDesc">

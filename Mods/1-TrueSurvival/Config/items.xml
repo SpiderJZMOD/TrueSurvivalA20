@@ -1203,7 +1203,7 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Damage_type" value="Slashing"/>
+		<property name="Damage_type" value="Piercing"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
@@ -1211,7 +1211,7 @@ Mesh files no longer used:
 			<!-- cars explode when destroyed by a tool without harvest settings -->
 		<property name="ToolCategory.Butcher" value="0" param1="4.5"/>
 			<!-- value = old harvest multiplier; param1= corpse damage multiplier; zombie (non-harvest) corpses have very high hit points to not instagib from auto-fire guns -->
-		<property name="UseGrazingHits" value="true"/>
+		<property name="UseGrazingHits" value="false"/>
 		<property name="GrazeStart" value=".25"/>
 		<property name="GrazeEnd" value=".35"/>
 		<property name="SwingDegrees" value="90"/>
@@ -1225,14 +1225,14 @@ Mesh files no longer used:
 	</property>
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Damage_type" value="Slashing"/>
+		<property name="Damage_type" value="Piercing"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="4.5"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 
-		<property name="UseGrazingHits" value="true"/>
+		<property name="UseGrazingHits" value="false"/>
 		<property name="GrazeStart" value=".2"/>
 		<property name="GrazeEnd" value=".3"/>
 		<property name="SwingDegrees" value="80"/>
@@ -1316,13 +1316,13 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Damage_type" value="Slashing"/>
+		<property name="Damage_type" value="Piercing"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="5"/>
 
-		<property name="UseGrazingHits" value="true"/>
+		<property name="UseGrazingHits" value="false"/>
 		<property name="GrazeStart" value=".25"/>
 		<property name="GrazeEnd" value=".35"/>
 		<property name="SwingDegrees" value="90"/>
@@ -1336,14 +1336,14 @@ Mesh files no longer used:
 	</property>
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Damage_type" value="Slashing"/>
+		<property name="Damage_type" value="Piercing"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="5"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 
-		<property name="UseGrazingHits" value="true"/>
+		<property name="UseGrazingHits" value="false"/>
 		<property name="GrazeStart" value=".2"/>
 		<property name="GrazeEnd" value=".3"/>
 		<property name="SwingDegrees" value="80"/>
@@ -1424,13 +1424,13 @@ Mesh files no longer used:
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Damage_type" value="Slashing"/>
+		<property name="Damage_type" value="Piercing"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="5"/>
 
-		<property name="UseGrazingHits" value="true"/>
+		<property name="UseGrazingHits" value="false"/>
 		<property name="GrazeStart" value=".25"/>
 		<property name="GrazeEnd" value=".35"/>
 		<property name="SwingDegrees" value="90"/>
@@ -1444,14 +1444,14 @@ Mesh files no longer used:
 	</property>
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Damage_type" value="Slashing"/>
+		<property name="Damage_type" value="Piercing"/>
 		<property name="Sphere" value=".1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="5"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 
-		<property name="UseGrazingHits" value="true"/>
+		<property name="UseGrazingHits" value="false"/>
 		<property name="GrazeStart" value=".2"/>
 		<property name="GrazeEnd" value=".3"/>
 		<property name="SwingDegrees" value="80"/>
@@ -3487,6 +3487,9 @@ needed?
 			<triggered_effect trigger="onSelfEquipStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" parent_transform="Side">
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
 			</triggered_effect>
+	</effect_group>
+	<effect_group name="Allow target block to catch on fire." tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
 	</effect_group>
 </item>
 
@@ -6517,7 +6520,7 @@ needed?
 		<property name="Delay" value=".3"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Range" value="200"/>
 		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="ammoProjectileZombieVomit"/>
+		<property name="Magazine_items" value="jz_VomitAcidBomb"/>
 		<property name="Sound_warning" value="hulkvomitwarning"/>
 		<property name="Sound_start" value="hulkvomitattack"/>
 		<property name="Sound_repeat" value=""/>
@@ -6590,7 +6593,7 @@ needed?
 		<property name="DamageBlock" value="200"/>
 	</property>
 	<property class="Action1"> <!-- Fire action -->
-		<property name="Magazine_items" value="ammoProjectileZombieVomitFeral"/>
+		<property name="Magazine_items" value="jz_VomitAcidBombFeral"/>
 	</property>
 	<effect_group name="meleeHandZombieCopFeral" tiered="false">
 		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
@@ -6645,7 +6648,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
-		<property name="Magazine_items" value="ammoProjectileZombieVomitRadiated"/>
+		<property name="Magazine_items" value="jz_VomitAcidBombRadiated"/>
 	</property>
 	<effect_group name="meleeHandZombieCopRadiated" tiered="false">
 		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
@@ -8126,6 +8129,9 @@ needed?
 		<display_value name="dEntityDamageFire" value="120"/>
 		<display_value name="dDuration" value="14"/>
 	</effect_group>
+	<effect_group name="Allow target block to catch on fire." tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
+	</effect_group>
 </item>
 
 <item name="ammoArrowExploding">
@@ -8162,6 +8168,9 @@ needed?
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="40" tags="perkArchery"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 		<display_value name="dExRadius" value="4"/>
+	</effect_group>
+	<effect_group name="Allow target block to catch on fire." tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
 	</effect_group>
 </item>
 
@@ -8323,6 +8332,9 @@ needed?
 		<display_value name="dEntityDamageFire" value="120"/>
 		<display_value name="dDuration" value="14"/>
 	</effect_group>
+	<effect_group name="Allow target block to catch on fire." tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
+	</effect_group>
 </item>
 
 <item name="ammoCrossbowBoltExploding">
@@ -8361,6 +8373,9 @@ needed?
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45" tags="perkArchery"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 		<display_value name="dExRadius" value="4"/>
+	</effect_group>
+	<effect_group name="Allow target block to catch on fire." tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
 	</effect_group>
 </item>
 
@@ -9276,10 +9291,13 @@ add knockdown resist to armor
 		<display_value name="dExRadius" value="3"/>
 		<display_value name="dDuration" value="16"/>
 	</effect_group>
+	<effect_group name="Allow target block to catch on fire." tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="AddFireDamage, SCore" />
+	</effect_group>
 </item>
 
 <item name="thrownAmmoFlare">
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="thrownAmmoPipeBomb"/>
 	<property name="Class" value="ItemClassTimeBomb"/>
 	<property name="ItemTypeIcon" value="explosion"/>
@@ -10879,7 +10897,7 @@ add knockdown resist to armor
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
 	</effect_group>
 	<effect_group name="unique effect:">
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.05">
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.05">
 			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacEquipment" operation="Equals" value="1"/>
 		</passive_effect>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="15"/>
@@ -11435,7 +11453,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.025">
 			<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="Equals" value="1"/>
 		</passive_effect>
 	</effect_group>
@@ -11810,7 +11828,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="4"/><display_value name="dCarryCapacity" value="4"/><!-- JZMOD -->
 	</effect_group>
 </item>
@@ -11852,8 +11869,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="6.8,9.2"/>
-		
-				<passive_effect name="CarryCapacity" operation="base_add" value="4"/><display_value name="dCarryCapacity" value="4"/><!-- JZMOD -->
+		<passive_effect name="CarryCapacity" operation="base_add" value="4"/><display_value name="dCarryCapacity" value="4"/><!-- JZMOD -->
 	</effect_group>
 </item>
 
@@ -11870,8 +11886,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
-		
-				<passive_effect name="CarryCapacity" operation="base_add" value="6"/><display_value name="dCarryCapacity" value="6"/><!-- JZMOD -->
+		<passive_effect name="CarryCapacity" operation="base_add" value="6"/><display_value name="dCarryCapacity" value="6"/><!-- JZMOD -->
 	</effect_group>
 </item>
 
@@ -11892,7 +11907,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="1"/><display_value name="dCarryCapacity" value="1"/><!-- JZMOD -->
 	</effect_group>
 </item>
@@ -11921,7 +11935,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="6.8,9.2"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="5"/><display_value name="dCarryCapacity" value="5"/><!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12066,7 +12079,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12085,7 +12097,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="6.5,9.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="6.8,9.2"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="4"/><display_value name="dCarryCapacity" value="4"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12137,7 +12148,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12258,7 +12268,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="3"/><display_value name="dCarryCapacity" value="3"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12269,6 +12278,7 @@ perkNightStalkerSilentNight
 	<property name="Stacknumber" value="1"/>
 	<property name="Waterproof" value=".45"/>
 	<property name="Material" value="Mleather"/>
+	<property name="Weight" value="20"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EconomicValue" value="480"/>
 	<property name="HoldType" value="45"/>
@@ -12301,7 +12311,7 @@ perkNightStalkerSilentNight
 	<property name="Waterproof" value=".55"/>
 	<property name="Material" value="Mleather"/>
 	<property name="DegradationBreaksAfter" value="false"/>
-	<property name="Weight" value="90"/>
+	<property name="Weight" value="70"/>
 	<property name="EconomicValue" value="475"/>
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
@@ -12323,7 +12333,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="13.5,17.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="17.5,22.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="4"/><display_value name="dCarryCapacity" value="4"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12358,7 +12367,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="21.5,26.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="4"/><display_value name="dCarryCapacity" value="4"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12392,7 +12400,6 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
-		
 		<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
 	</effect_group>
 </item>
@@ -12420,7 +12427,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
 		<passive_effect name="RunSpeed" operation="perc_add" value=".1"/><display_value name="dRunSpeed" value=".1"/>
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.025">
 			<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="Equals" value="1"/>
 		</passive_effect>
 	</effect_group>
@@ -12456,11 +12463,9 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="4.8,7.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
-			<requirement name="ProgressionLevel" progression_name="perkEnforcerApparel" operation="Equals" value="1"/>
-			
-			<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
-		</passive_effect>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.025">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerApparel" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
 	</effect_group>
 </item>
 
@@ -12483,11 +12488,9 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
 		<passive_effect name="HypothermalResist" operation="base_add" value="11.7,15.5"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
-		<passive_effect name="HealthLoss" operation="perc_add" value="-.025">
-			<requirement name="ProgressionLevel" progression_name="perkEnforcerApparel" operation="Equals" value="1"/>
-			
-			<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
-		</passive_effect>
+		<passive_effect name="GeneralDamageResist" operation="base_add" value="0.025">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerApparel" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="CarryCapacity" operation="base_add" value="2"/><display_value name="dCarryCapacity" value="2"/> <!-- JZMOD -->
 	</effect_group>
 </item>
 
@@ -15584,7 +15587,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15622,7 +15633,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15666,7 +15685,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15711,7 +15738,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15764,7 +15799,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15790,7 +15833,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15833,7 +15884,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15856,7 +15915,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15893,7 +15960,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15932,7 +16007,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -15967,7 +16050,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -16002,7 +16093,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -16041,10 +16140,10 @@ perkNightStalkerSilentNight
 	<property name="Meshfile" value="#Other/Items?Crafting/Metal/IronBucket.fbx"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mmetal"/>
+	<property name="DescriptionKey" value="jz_bucketEmptyDesc"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="84"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
-	<!-- JZMOD 
 	<property class="Action0">
 		<property name="Class" value="BailLiquid"/>
 		<property name="Delay" value=".35"/>
@@ -16061,25 +16160,45 @@ perkNightStalkerSilentNight
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="terrWaterPOI"/>
 		<property name="Sound_start" value="bucketfill_water"/>
-	</property>-->
+	</property>
 	<property name="Group" value="Tools/Traps"/>
 </item>
 
 <item name="bucketRiverWater">
-	<property name="HoldType" value="34"/>
+	<property name="HoldType" value="18"/>
 	<property name="Meshfile" value="#Other/Items?Crafting/Metal/IronBucketWaterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="jz_bucketRiverWaterDesc"/>
 	<property name="EconomicValue" value="88"/>
-	<property class="Action1"> <!-- UseAction -->
-		<property name="Class" value="PlaceAsBlock"/>
-		<property name="Delay" value=".5"/>
-		<property name="Blockname" value="waterMovingBucket"/>
-		<property name="Change_item_to" value="bucketEmpty"/>
-		<property name="Sound_start" value="bucketplace_water"/>
-	</property>
 	<property name="Group" value="Tools/Traps"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>   
+		<property name="Sound_start" value="bucketbail_water"/>
+		<property name="Change_item_to" value="bucketEmpty"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="bucketbail_water"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+		<property name="Change_item_to" value="bucketEmpty"/>
+	</property>
+	
+	<effect_group name="stick" tiered="false" >
+		<passive_effect name="MaxRange" operation="base_set" value="1"/>
+		<passive_effect name="BlockRange" operation="base_set" value="5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="6" />
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+	</effect_group>
+	<effect_group name="Allow target block extinguish" tiered="false">
+		<triggered_effect trigger="onSelfDamagedBlock" action="RemoveFire, SCore" target="positionAOE" range="4"/> <!-- range is int, 2 blocks in all direction will have fire removed. -->
+	</effect_group>
 </item>
 
 
@@ -22413,9 +22532,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerDamage" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 <item name="bookEnforcerApparel">
@@ -22429,9 +22548,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerApparel" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 <item name="bookEnforcerPunks">
@@ -22445,9 +22564,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerPunks" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 <item name="bookEnforcerIntimidation">
@@ -22461,9 +22580,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerIntimidation" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 <item name="bookEnforcerAPAmmo">
@@ -22477,9 +22596,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerAPAmmo" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 <item name="bookEnforcerHPAmmo">
@@ -22493,9 +22612,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerHPAmmo" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 <item name="bookEnforcerCriminalPursuit">
@@ -22509,9 +22628,9 @@ perkNightStalkerSilentNight
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerCriminalPursuit" level="-1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
-			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="5"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -27879,7 +27998,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -27907,7 +28034,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -27937,7 +28072,15 @@ perkNightStalkerSilentNight
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -27959,7 +28102,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -27993,7 +28144,15 @@ perkNightStalkerSilentNight
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+	</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -28027,7 +28186,15 @@ perkNightStalkerSilentNight
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 	</effect_group>
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+	</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -28049,7 +28216,15 @@ perkNightStalkerSilentNight
 	</effect_group>
 
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -29598,7 +29773,15 @@ perkNightStalkerSilentNight
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffSplashOfWater"/>
 	</effect_group>
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -36435,7 +36618,15 @@ perkNightStalkerSilentNight
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="jz_BuffCoconutMilk"/>
 	</effect_group>
 	<effect_group tiered="false">
-		<requirement name="HasBuff" buff="buffIsOnFire"/>
+		<requirements compare_type="or">
+			<requirement name="HasBuff" buff="jz_BuffSticky"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffStickyRadiated"/>
+			<requirement name="HasBuff" buff="jz_BuffAcid"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidFeral"/>
+			<requirement name="HasBuff" buff="jz_BuffAcidRadiated"/>
+			<requirement name="HasBuff" buff="buffIsOnFire"/>	
+		</requirements>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
@@ -37063,7 +37254,443 @@ perkNightStalkerSilentNight
 	</property>
 </item>
 
+<item name="safehouseT3UpgradeKit">
+	<property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+	<property name="CustomIconTint" value="FFFFFF"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="safehouseT3UpgradeKitDesc"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Use_time" value="0.5"/>
+		<property name="Sound_start" value="close_garbage"/>
+		<property name="Create_item" value="resourceWood,resourceScrapIron"/>
+		<property name="Create_item_count" value="158,24"/>
+	</property>
+</item>
+
+<item name="safehouseT4UpgradeKit">
+	<property name="Extends" value="safehouseT3UpgradeKit"/>
+	<property name="DescriptionKey" value="safehouseT4UpgradeKitDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="resourceWood,resourceScrapIron,resourceCobblestones"/>
+		<property name="Create_item_count" value="208,24,100"/>
+	</property>
+</item>
+
+<item name="safehouseT5UpgradeKit">
+	<property name="Extends" value="safehouseT3UpgradeKit"/>
+	<property name="DescriptionKey" value="safehouseT5UpgradeKitDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="resourceWood,resourceScrapIron,resourceCobblestones"/>
+		<property name="Create_item_count" value="208,24,200"/>
+	</property>
+</item>
+
+<!-- FAT FEMALE HAND -->
+<item name="jz_MeleeHandZombieFatFemale">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="15"/>
+		<property name="DamageBlock" value="20"/>
+	</property>
+	<property class="Action1"> 
+		<property name="Class" value="Vomit"/>
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Delay" value=".3"/> 
+		<property name="Range" value="50"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="jz_VomitSticky"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+	</property>
+	<effect_group name="meleeHandZombieFatFemale" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
+		<passive_effect name="MaxRange" operation="base_set" value="50"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
+            <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_VomitSticky">
+	<property name="Extends" value="ammoProjectileZombieVomit"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="5"/><!--10-->
+		<property name="DamageBlock" value="25"/><!--2000-->
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Explosion.RadiusBlocks" value="1"/><!--2-->
+		<property name="Explosion.RadiusEntities" value="2"/><!--1-->
+		<property name="Explosion.DamageBonus.water" value="0"/><!--0-->
+		<property name="Explosion.DamageBonus.wood" value="0"/><!--0-->
+		<property name="Velocity" value="15"/><!--18-->
+		<property name="FlyTime" value="2"/><!--2-->
+		<property name="LifeTime" value="4"/><!--4-->
+		<property name="CollisionRadius" value="3"/><!--.5-->
+		<property name="Buff" value="jz_BuffSticky"/>
+	</property>
+	<effect_group name="VomitSticky" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".99" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		
+		<!--<passive_effect name="BlockDamage" operation="perc_add" value="0.99" tags="jzLogCabin"/>-->
+		<passive_effect name="BlockDamage" operation="base_set" value="25"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+<item name="jz_MeleeHandZombieFatFemaleFeral">
+	<property name="Extends" value="jz_MeleeHandZombieFatFemale"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="30"/>
+		<property name="DamageBlock" value="40"/>
+	</property>
+	<property class="Action1"> 
+		<property name="Magazine_items" value="jz_VomitStickyFeral"/>
+	</property>
+	<effect_group name="meleeHandZombieFatFemaleFeral" tiered="false">
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
+            <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_VomitStickyFeral">
+	<property name="Extends" value="jz_VomitSticky"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Buff" value="jz_BuffStickyFeral"/>
+	</property>
+	<effect_group name="VomitSticky" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="25"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+<item name="jz_MeleeHandZombieFatFemalRadiated">
+	<property name="Extends" value="jz_MeleeHandZombieFatFemaleFeral"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Magazine_items" value="jz_VomitStickyRadiated"/>
+	</property>
+	<effect_group name="meleeHandZombieCopRadiated" tiered="false">
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
+            <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
+       <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_VomitStickyRadiated">
+	<property name="Extends" value="jz_VomitSticky"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Buff" value="jz_BuffStickyRadiated"/>
+	</property>
+	<effect_group name="VomitSticky" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="25"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+<!-- FAT HAWAIIAN -->
+<item name="jz_MeleeHandZombieFatHawaiian">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="40"/>
+	</property>
+	<property class="Action1"> 
+		<property name="Class" value="Vomit"/>
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Delay" value=".3"/>
+		<property name="Range" value="200"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="jz_VomitAcid"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+	</property>
+	<effect_group name="meleeHandZombieFatHawaiian" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
+            <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_VomitAcid">
+	<property name="Extends" value="ammoProjectileZombieVomit"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="5"/><!--10-->
+		<property name="DamageBlock" value="500"/><!--2000-->
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Explosion.RadiusBlocks" value="4"/><!--2-->
+		<property name="Explosion.RadiusEntities" value="1"/><!--1-->
+		<property name="Explosion.DamageBonus.water" value="0"/><!--0-->
+		<property name="Velocity" value="15"/><!--18-->
+		<property name="FlyTime" value="2"/><!--2-->
+		<property name="LifeTime" value="4"/><!--4-->
+		<property name="CollisionRadius" value=".5"/><!--.5-->
+		<property name="Buff" value="jz_BuffAcid"/>
+	</property>
+	<effect_group name="VomitAcid" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="500"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+<item name="jz_MeleeHandZombieFatHawaiianFeral">
+	<property name="Extends" value="jz_MeleeHandZombieFatHawaiian"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="40"/>
+		<property name="DamageBlock" value="80"/>
+	</property>
+	<property class="Action1">
+		<property name="Magazine_items" value="jz_VomitAcidFeral"/>
+	</property>
+	<effect_group name="meleeHandZombieCopFeral" tiered="false">
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
+            <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_VomitAcidFeral">
+	<property name="Extends" value="jz_VomitAcid"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Buff" value="jz_BuffAcidFeral"/>
+	</property>
+	<effect_group name="VomitAcid" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="650"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+<item name="jz_MeleeHandZombieFatHawaiianRadiated">
+	<property name="Extends" value="jz_MeleeHandZombieFatHawaiianFeral"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Magazine_items" value="jz_VomitAcidRadiated"/>
+	</property>
+	<effect_group name="meleeHandZombieCopRadiated" tiered="false">
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+			buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+			weights=".11,.07,.07,.05,.29,.36,.11"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffInfectionCatch">
+            <requirement name="!HasBuff" target="self" buff="jz_BuffStopBite"/></triggered_effect>
+       <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="jz_BuffGrabTrigger">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/></triggered_effect>
+	</effect_group>
+</item>
+
+<item name="jz_VomitAcidRadiated">
+	<property name="Extends" value="jz_VomitAcid"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Buff" value="jz_BuffAcidRadiated"/>
+	</property>
+	<effect_group name="VomitAcid" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="800"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+<item name="jz_VomitAcidBomb">
+	<property name="Extends" value="ammoProjectileZombieVomit"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="10"/><!--10-->
+		<property name="DamageBlock" value="1000"/><!--2000-->
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Explosion.RadiusBlocks" value="3"/><!--2-->
+		<property name="Explosion.RadiusEntities" value="1"/><!--1-->
+		<property name="Explosion.DamageBonus.water" value="0"/><!--0-->
+		<property name="Velocity" value="18"/><!--18-->
+		<property name="FlyTime" value="2"/><!--2-->
+		<property name="LifeTime" value="4"/><!--4-->
+		<property name="CollisionRadius" value=".5"/><!--.5-->
+		<property name="Buff" value="jz_BuffAcidBomb"/>
+	</property>
+	<effect_group name="VomitAcidBomb" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="jzSteel"/>
+		
+		<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="jz_BuffAcidBomb"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1000"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="10"/>
+	</effect_group>
+</item>
+
+<item name="jz_VomitAcidBombFeral">
+	<property name="Extends" value="jz_VomitAcidBomb"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Buff" value="jz_BuffAcidBombFeral"/>
+	</property>
+	<effect_group name="VomitAcidBomb" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="1500"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="15"/>
+	</effect_group>
+</item>
+
+<item name="jz_VomitAcidBombRadiated">
+	<property name="Extends" value="jz_VomitAcidBomb"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Buff" value="jz_BuffAcidBombRadiated"/>
+	</property>
+	<effect_group name="VomitAcidBomb" tiered="false">
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="jzLogCabin"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="jzSteel"/>
+		
+		<passive_effect name="BlockDamage" operation="base_set" value="2000"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="20"/>
+	</effect_group>
+</item>
 <!-- JZMOD TESTING SECTION
+<item name="jz_TestingT3">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="tier3_build_safehouse"/>
+	</property>
+</item>
+
+<item name="jz_TestingT4">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="tier4_build_safehouse"/>
+	</property>
+</item>
+
+<item name="jz_TestingT5">
+	<property name="Extends" value="treasureQuestMaster"/>
+	<property name="Group" value="Quest"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="tier5_build_safehouse"/>
+	</property>
+</item>
+
 <item name="jz_HandBoomer">
 	<property name="Extends" value="meleeHandZombieCop" />
 	<property name="CreativeMode" value="None" />

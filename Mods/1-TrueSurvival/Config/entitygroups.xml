@@ -1395,11 +1395,11 @@
 	<entitygroup name="ZombieSpecialInfectedGroupGS1">
 		<entity name="zombieSpider" prob="0.95"/><entity name="zombieSpiderFeral" prob="0"/><entity name="zombieSpiderRadiated" prob="0"/>
 		<entity name="zombieMutated" prob="0.45"/><entity name="zombieMutatedFeral" prob="0.1"/><entity name="zombieMutatedRadiated" prob="0"/>
-		<entity name="zombieWightFeral" prob="0.1"/><entity name="zombieWightRadiated" prob="0.1"/></entitygroup>
+		<entity name="zombieWightFeral" prob="0.1"/><entity name="zombieWightRadiated" prob="0"/></entitygroup>
 	<entitygroup name="ZombieSpecialInfectedGroupGS50">
 		<entity name="zombieSpider" prob="0.85"/><entity name="zombieSpiderFeral" prob="0.1"/><entity name="zombieSpiderRadiated" prob="0"/>
 		<entity name="zombieMutated" prob="0.75"/><entity name="zombieMutatedFeral" prob="0.1"/><entity name="zombieMutatedRadiated" prob="0"/>
-		<entity name="zombieWightFeral" prob="0.3"/><entity name="zombieWightRadiated" prob="0"/></entitygroup>
+		<entity name="zombieWightFeral" prob="0.3"/><entity name="zombieWightRadiated" prob="0.1"/></entitygroup>
 	<entitygroup name="ZombieSpecialInfectedGroupGS100">
 		<entity name="zombieSpider" prob="0.7"/><entity name="zombieSpiderFeral" prob="0.2"/><entity name="zombieSpiderRadiated" prob="0.1"/>
 		<entity name="zombieMutated" prob="0.7"/><entity name="zombieMutatedFeral" prob="0.2"/><entity name="zombieMutatedRadiated" prob="0.1"/>

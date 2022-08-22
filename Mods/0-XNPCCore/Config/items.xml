@@ -75,31 +75,31 @@
 			<effect_group name="itemNPCHelp" tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModStopAttackingChange1">
 					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="0" />
-					<requirement name="CVarCompare" cvar="varNPCModStopAttackingChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModStopAttackingChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModStopAttackingChange0">
 					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="1" />
-					<requirement name="CVarCompare" cvar="varNPCModStopAttackingChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModStopAttackingChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="buffNPCModStopAttackingChange1">
 					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="0" />
-					<requirement name="CVarCompare" cvar="varNPCModStopAttackingChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModStopAttackingChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="buffNPCModStopAttackingChange0">
 					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="1" />
-					<requirement name="CVarCompare" cvar="varNPCModStopAttackingChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModStopAttackingChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<!-- Moved commented out section to FuriousRamsayStatusCheck on player -->
-				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModStopAttacking">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModStopAttacking">
 					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
 					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="1" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="selfAOE" range="60" buff="buffNPCModStopAttacking">
 					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
 					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="0" />
-				</triggered_effect>-->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="varNPCModStopAttackingChange" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="varNPCModStopAttackingChange" operation="set" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$varNPCModStopAttackingChange" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$varNPCModStopAttackingChange" operation="set" value="0"/>
 			</effect_group>
 		</item>
 		<item name="itemNPCModMode">
@@ -132,39 +132,39 @@
 			<effect_group name="itemNPCModMode" tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModModeChange1">
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="0" />
-					<requirement name="CVarCompare" cvar="varNPCModModeChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModModeChange2">
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="1" />
-					<requirement name="CVarCompare" cvar="varNPCModModeChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModModeChange0">
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="2" />
-					<requirement name="CVarCompare" cvar="varNPCModModeChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="buffNPCModModeChange1">
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="0" />
-					<requirement name="CVarCompare" cvar="varNPCModModeChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="buffNPCModModeChange2">
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="1" />
-					<requirement name="CVarCompare" cvar="varNPCModModeChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="buffNPCModModeChange0">
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="2" />
-					<requirement name="CVarCompare" cvar="varNPCModModeChange" operation="Equals" value="0" />
+					<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
 				</triggered_effect>
 				<!-- Moved commented out section to FuriousRamsayStatusCheck on player -->
-				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModControlMode">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModControlMode">
 					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="1" />
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="selfAOE" range="60" buff="buffNPCModControlMode">
 					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
 					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="0" />
-				</triggered_effect>-->
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="varNPCModModeChange" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="varNPCModModeChange" operation="set" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$varNPCModModeChange" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$varNPCModModeChange" operation="set" value="0"/>
 			</effect_group>
 		</item>
 
@@ -784,6 +784,7 @@
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 
+				<!--<requirement name="CVarCompare" cvar="_underwater" operation="LTE" value="0"/> -->
 			</property>
 			<effect_group name="gunHandgunT3SMG5">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkGunslinger,9mmGun"/>
@@ -1419,8 +1420,8 @@
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkGunslinger,9mmGun"/>
 			</effect_group> 
 			<effect_group name="MuzzleFlash">
-				<triggered_effect trigger="onSelfRangedBurstShot" action="AttachParticleEffectToEntity" particle="p_gunfire_pistol" local_offset="0,0,0" parent_transform="Gunjoint" />
-				<triggered_effect trigger="onSelfRangedBurstShot" action="AttachParticleEffectToEntity" particle="p_nozzlesmokeuzi" local_offset="0,.1,0" parent_transform="Gunjoint" />
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="AttachParticleEffectToEntity" particle="p_gunfire_pistol" local_offset="0,0,0" parent_transform="Gunjoint" />
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="AttachParticleEffectToEntity" particle="p_nozzlesmokeuzi" local_offset="0,.1,0" parent_transform="Gunjoint" />
 			</effect_group>
 		</item>	
 		
@@ -1504,33 +1505,10 @@
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkGunslinger,9mmGun"/>
 			</effect_group> 
 			<effect_group name="MuzzleFlash">
-				<triggered_effect trigger="onSelfRangedBurstShot" action="AttachParticleEffectToEntity" particle="p_gunfire_pistol" local_offset="0,0,0" parent_transform="Gunjoint" />
-				<triggered_effect trigger="onSelfRangedBurstShot" action="AttachParticleEffectToEntity" particle="p_nozzlesmokeuzi" local_offset="0,.1,0" parent_transform="Gunjoint" />
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="AttachParticleEffectToEntity" particle="p_gunfire_pistol" local_offset="0,0,0" parent_transform="Gunjoint" />
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="AttachParticleEffectToEntity" particle="p_nozzlesmokeuzi" local_offset="0,.1,0" parent_transform="Gunjoint" />
 			</effect_group>
-		</item>			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		</item>
 
 		<item name="gunNPCDPistol">
 			<property name="Extends" value="gunNPCSMG5"/> 
@@ -3198,7 +3176,35 @@
 		</item>
 		
 		<!-- For Testing Strange and wonderful things  -->
-
+		<item name="meleeHandVomit">
+			<property name="Extends" value="meleeNPCEmptyHand"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Vomit"/>
+				<property name="Hitmask_override" value="Arrow"/>
+				<property name="Delay" value=".3"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Range" value="20"/>
+				<property name="Infinite_ammo" value="true"/>
+				<property name="Magazine_items" value="ammoProjectileZombieVomit"/>
+				<property name="Sound_warning" value="hulkvomitwarning"/>
+				<property name="Sound_start" value="hulkvomitattack"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value=""/>
+				<property name="Sound_reload" value=""/>
+			</property>
+			<effect_group name="meleeHandVomit" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="20"/>
+				<passive_effect name="MaxRange" operation="base_set" value="20"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4"/>
+				<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+			</effect_group>
+		</item>
 
 		<item name="Yes">
 			<property name="Extends" value="schematicMaster" />
@@ -3231,4 +3237,32 @@
 			</effect_group>
 		</item>
 	</append>
+	
+	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
+	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
+	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
+	
+	<set xpath="/items/item[@name='itemNPCModMode']/effect_group[@name='itemNPCModMode']">
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModModeChange2">
+			<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="0" />
+			<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="buffNPCModModeChange0">
+			<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="1" />
+			<requirement name="CVarCompare" cvar="$varNPCModModeChange" operation="Equals" value="0" />
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" target="selfAOE" range="60" buff="buffNPCModFullControlMode">
+			<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
+			<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="0" />
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModFullControlMode">
+			<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
+			<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="1" />
+		</triggered_effect>
+				
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$varNPCModModeChange" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$varNPCModModeChange" operation="set" value="0"/>
+	</set>
+	
 </configs>

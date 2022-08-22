@@ -1,0 +1,230 @@
+<configs>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">		
+		<entity name="animalSpider01" prob="10"/>
+		<entity name="animalSpider02" prob="10"/>
+		<entity name="animalSpider03" prob="10"/>
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">		
+		<entity name="animalSpider01" prob="5" />
+		<entity name="animalSpider02" prob="5"/>
+		<entity name="animalSpider03" prob="5"/>
+	</append>
+
+	<!--
+		Entity groups used by spawners for sleeper volumes
+		TODO:
+		200 health / 15 damage - same as (non-dire) wolf
+	-->
+	<insertAfter xpath="/entitygroups/entitygroup[last()]">
+	
+	<!-- Enemy animal entity groups -->
+		<entitygroup name="npcEnemyAnimalsAllGroupGS01">
+			<entity name="animalBear" prob="0.05" />
+			<entity name="animalCoyote" prob="0.05" />
+			<entity name="animalDireWolf" prob="0.05" />
+			<entity name="animalMountainLion" prob="0.05" />
+			<entity name="animalSnake" prob="0.05" />
+			<entity name="animalWolf" prob="0.05" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.9" />
+			<entity name="animalSpider02" prob="0.9" />
+			<entity name="animalSpider03" prob="0.9" />
+		</entitygroup>
+		<entitygroup name="npcEnemyAnimalsAllGroupGS50">
+			<entity name="animalBear" prob="0.05" />
+			<entity name="animalCoyote" prob="0.05" />
+			<entity name="animalDireWolf" prob="0.05" />
+			<entity name="animalMountainLion" prob="0.05" />
+			<entity name="animalSnake" prob="0.05" />
+			<entity name="animalWolf" prob="0.05" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.7" />
+			<entity name="animalSpider02" prob="0.7" />
+			<entity name="animalSpider03" prob="0.7" />
+		</entitygroup>
+		<entitygroup name="npcEnemyAnimalsAllGroupGS100">
+			<entity name="animalBear" prob="0.05" />
+			<entity name="animalCoyote" prob="0.05" />
+			<entity name="animalDireWolf" prob="0.05" />
+			<entity name="animalMountainLion" prob="0.05" />
+			<entity name="animalSnake" prob="0.05" />
+			<entity name="animalWolf" prob="0.05" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.6" />
+			<entity name="animalSpider02" prob="0.6" />
+			<entity name="animalSpider03" prob="0.6" />
+		</entitygroup>
+		<entitygroup name="npcEnemyAnimalsAllGroupGS200">
+			<entity name="animalBear" prob="0.05" />
+			<entity name="animalCoyote" prob="0.05" />
+			<entity name="animalDireWolf" prob="0.05" />
+			<entity name="animalMountainLion" prob="0.05" />
+			<entity name="animalSnake" prob="0.05" />
+			<entity name="animalWolf" prob="0.05" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.4" />
+			<entity name="animalSpider02" prob="0.4" />
+			<entity name="animalSpider03" prob="0.4" />
+		</entitygroup>
+		<entitygroup name="npcEnemyAnimalsAllGroupGS400">
+			<entity name="animalBear" prob="0.05" />
+			<entity name="animalCoyote" prob="0.05" />
+			<entity name="animalDireWolf" prob="0.05" />
+			<entity name="animalMountainLion" prob="0.05" />
+			<entity name="animalSnake" prob="0.05" />
+			<entity name="animalWolf" prob="0.05" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.3" />
+			<entity name="animalSpider02" prob="0.3" />
+			<entity name="animalSpider03" prob="0.3" />
+		</entitygroup>
+		<entitygroup name="npcEnemyAnimalsAllGroupGS800">
+			<entity name="animalBear" prob="0.05" />
+			<entity name="animalCoyote" prob="0.05" />
+			<entity name="animalDireWolf" prob="0.05" />
+			<entity name="animalMountainLion" prob="0.05" />
+			<entity name="animalSnake" prob="0.05" />
+			<entity name="animalWolf" prob="0.05" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.1" />
+			<entity name="animalSpider02" prob="0.1" />
+			<entity name="animalSpider03" prob="0.1" />
+		</entitygroup>
+	
+	<!-- Arachnids entity groups -->
+		<entitygroup name="npcArachnidsAllGroupGS01">
+			<entity name="animalBear" prob="0.001" />
+			<entity name="animalCoyote" prob="0.009" />
+			<entity name="animalDireWolf" prob="0.005" />
+			<entity name="animalMountainLion" prob="0.005" />
+			<entity name="animalSnake" prob="0.01" />
+			<entity name="animalWolf" prob="0.009" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.9" />
+			<entity name="animalSpider02" prob="0.9" />
+			<entity name="animalSpider03" prob="0.9" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsAllGroupGS50">
+			<entity name="animalBear" prob="0.002" />
+			<entity name="animalCoyote" prob="0.008" />
+			<entity name="animalDireWolf" prob="0.005" />
+			<entity name="animalMountainLion" prob="0.005" />
+			<entity name="animalSnake" prob="0.008" />
+			<entity name="animalWolf" prob="0.007" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.7" />
+			<entity name="animalSpider02" prob="0.7" />
+			<entity name="animalSpider03" prob="0.7" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsAllGroupGS100">
+			<entity name="animalBear" prob="0.004" />
+			<entity name="animalCoyote" prob="0.006" />
+			<entity name="animalDireWolf" prob="0.005" />
+			<entity name="animalMountainLion" prob="0.005" />
+			<entity name="animalSnake" prob="0.006" />
+			<entity name="animalWolf" prob="0.006" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.6" />
+			<entity name="animalSpider02" prob="0.6" />
+			<entity name="animalSpider03" prob="0.6" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsAllGroupGS200">
+			<entity name="animalBear" prob="0.006" />
+			<entity name="animalCoyote" prob="0.004" />
+			<entity name="animalDireWolf" prob="0.005" />
+			<entity name="animalMountainLion" prob="0.005" />
+			<entity name="animalSnake" prob="0.004" />
+			<entity name="animalWolf" prob="0.004" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.4" />
+			<entity name="animalSpider02" prob="0.4" />
+			<entity name="animalSpider03" prob="0.4" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsAllGroupGS400">
+			<entity name="animalBear" prob="0.008" />
+			<entity name="animalCoyote" prob="0.002" />
+			<entity name="animalDireWolf" prob="0.005" />
+			<entity name="animalMountainLion" prob="0.005" />
+			<entity name="animalSnake" prob="0.002" />
+			<entity name="animalWolf" prob="0.003" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.3" />
+			<entity name="animalSpider02" prob="0.3" />
+			<entity name="animalSpider03" prob="0.3" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsAllGroupGS800">
+			<entity name="animalBear" prob="0.01" />
+			<entity name="animalCoyote" prob="0.001" />
+			<entity name="animalDireWolf" prob="0.005" />
+			<entity name="animalMountainLion" prob="0.005" />
+			<entity name="animalSnake" prob="0.001" />
+			<entity name="animalWolf" prob="0.001" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.1" />
+			<entity name="animalSpider02" prob="0.1" />
+			<entity name="animalSpider03" prob="0.1" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsBossGroupGS01">
+			<entity name="animalBear" prob="0.003" />
+			<entity name="animalBossGrace" prob="0.001" />
+			<entity name="animalDireWolf" prob="0.01" />
+			<entity name="animalMountainLion" prob="0.01" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.09" />
+			<entity name="animalSpider02" prob="0.09" />
+			<entity name="animalSpider03" prob="0.09" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsBossGroupGS50">
+			<entity name="animalBear" prob="0.004" />
+			<entity name="animalBossGrace" prob="0.002" />
+			<entity name="animalDireWolf" prob="0.008" />
+			<entity name="animalMountainLion" prob="0.008" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.07" />
+			<entity name="animalSpider02" prob="0.07" />
+			<entity name="animalSpider03" prob="0.07" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsBossGroupGS100">
+			<entity name="animalBear" prob="0.005" />
+			<entity name="animalBossGrace" prob="0.004" />
+			<entity name="animalDireWolf" prob="0.006" />
+			<entity name="animalMountainLion" prob="0.006" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.06" />
+			<entity name="animalSpider02" prob="0.06" />
+			<entity name="animalSpider03" prob="0.06" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsBossGroupGS200">
+			<entity name="animalBear" prob="0.005" />
+			<entity name="animalBossGrace" prob="0.006" />
+			<entity name="animalDireWolf" prob="0.004" />
+			<entity name="animalMountainLion" prob="0.004" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.04" />
+			<entity name="animalSpider02" prob="0.04" />
+			<entity name="animalSpider03" prob="0.04" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsBossGroupGS400">
+			<entity name="animalBear" prob="0.006" />
+			<entity name="animalBossGrace" prob="0.008" />
+			<entity name="animalDireWolf" prob="0.002" />
+			<entity name="animalMountainLion" prob="0.002" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.03" />
+			<entity name="animalSpider02" prob="0.03" />
+			<entity name="animalSpider03" prob="0.03" />
+		</entitygroup>
+		<entitygroup name="npcArachnidsBossGroupGS800">
+			<entity name="animalBear" prob="0.007" />
+			<entity name="animalBossGrace" prob="0.01" />
+			<entity name="animalDireWolf" prob="0.001" />
+			<entity name="animalMountainLion" prob="0.001" />
+			<entity name="none" prob="0.001"/>
+			<entity name="animalSpider01" prob="0.01" />
+			<entity name="animalSpider02" prob="0.01" />
+			<entity name="animalSpider03" prob="0.01" />
+		</entitygroup>
+	</insertAfter>
+	
+</configs>

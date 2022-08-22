@@ -194,6 +194,30 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_NutAndBolt" count="3"/>
 </recipe>
 
+<recipe name="safehouseT3UpgradeKit" count="1" craft_time="10">
+	<ingredient name="resourceWood" count="158"/>
+	<ingredient name="resourceScrapIron" count="24"/>
+</recipe>
+
+<recipe name="safehouseT4UpgradeKit" count="1" craft_time="10">
+	<ingredient name="resourceWood" count="208"/>
+	<ingredient name="resourceScrapIron" count="24"/>
+	<ingredient name="resourceCobblestones" count="100"/>
+</recipe>
+
+<recipe name="safehouseT5UpgradeKit" count="1" craft_time="10">
+	<ingredient name="resourceWood" count="208"/>
+	<ingredient name="resourceScrapIron" count="24"/>
+	<ingredient name="resourceCobblestones" count="200"/>
+</recipe>
+
+<recipe name="jz_SurvivorStash" count="1" craft_time="30" craft_exp_gain="5">
+	<ingredient name="resourceWood" count="15" />
+	<ingredient name="jz_FoodServingVeggie" count="3"/>
+	<ingredient name="jz_FoodServingFruit" count="3"/>
+    <ingredient name="jz_FoodServingGrain" count="3"/>
+</recipe>
+
 <recipe name="resourceScrapIron" count="1" >
 	<ingredient name="drinkCanEmpty" count="1"/>
 </recipe>
@@ -378,7 +402,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_FermentationBarrel" count="1" craft_time="60" craft_exp_gain="25" >
-	<ingredient name="wineBarrel" count="1" />
+	<ingredient name="jz_WineBarrelVariantHelper" count="1" />
 </recipe>
 
 <recipe name="cementMixer" count="1" craft_time="60" craft_exp_gain="25" tags="jz_ElectricianTag">

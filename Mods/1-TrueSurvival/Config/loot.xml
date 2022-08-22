@@ -3623,13 +3623,11 @@ If there is no hit the default quality is used.
 <lootgroup name="perkBooksT2">
 
 	<item name="bookEnforcerAPAmmo"/>
-	<item name="bookEnforcerApparel"/>
+
 	<item name="bookEnforcerCriminalPursuit"/>
 	<item name="bookEnforcerHPAmmo"/>
 	<item name="bookEnforcerDamage"/>
-	<item name="bookEnforcerIntimidation"/>
 	<item name="bookEnforcerPunks"/>
-	
 	<item name="bookShotgunMessiahBreachingSlugs"/>
 	<item name="bookShotgunMessiahDamage"/>
 	<item name="bookShotgunMessiahLimbShot"/>
@@ -5456,7 +5454,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupQuestFarmPlotsT2" count="all">
-	<item name="questRewardFarmT3Bundle"/>
+	<item name="questRewardFarmT2Bundle"/>
 </lootgroup>
 
 <lootgroup name="groupQuestFarmPlotsT3" count="all">
@@ -7732,13 +7730,11 @@ If there is no hit the default quality is used.
 	<item name="bookPistolPeteTakeAim"/>
 
 	<item name="bookEnforcerAPAmmo"/>
-	<item name="bookEnforcerApparel"/>
+	
 	<item name="bookEnforcerCriminalPursuit"/>
 	<item name="bookEnforcerHPAmmo"/>
 	<item name="bookEnforcerDamage"/>
-	<item name="bookEnforcerIntimidation"/>
 	<item name="bookEnforcerPunks"/>
-	
 	<item name="bookShotgunMessiahBreachingSlugs"/>
 	<item name="bookShotgunMessiahDamage"/>
 	<item name="bookShotgunMessiahLimbShot"/>
@@ -9249,11 +9245,9 @@ If there is no hit the default quality is used.
 	<item name="bookBatterUpMaintenance"/>
 	<item name="bookBatterUpMetalChain"/>
 	<item name="bookEnforcerAPAmmo"/>
-	<item name="bookEnforcerApparel"/>
 	<item name="bookEnforcerCriminalPursuit"/>
 	<item name="bookEnforcerHPAmmo"/>
 	<item name="bookEnforcerDamage"/>
-	<item name="bookEnforcerIntimidation"/>
 	<item name="bookEnforcerPunks"/>
 	<item name="bookFiremansAlmanacSpeed"/>
 	<item name="bookFiremansAlmanacAxes"/>
@@ -10016,15 +10010,15 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- vehicleMotorcycle storage -->
-<lootcontainer id="78" name="vehicleMotorcycle" count="0" size="9,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="78" name="vehicleMotorcycle" count="0" size="9,4" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
 </lootcontainer>
 
 <!-- vehicle4x4Truck storage -->
-<lootcontainer id="79" name="vehicle4x4Truck" count="0" size="9,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="79" name="vehicle4x4Truck" count="0" size="9,9" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
 </lootcontainer>
 
 <!-- vehicleGyrocopter storage -->
-<lootcontainer id="80" name="vehicleGyrocopter" count="0" size="9,5" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="80" name="vehicleGyrocopter" count="0" size="9,5" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
 </lootcontainer>
 
 <!-- 81 NOT USED -->
@@ -10319,7 +10313,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- JunkDrone -->
-<lootcontainer id="139" name="roboticDrone" count="0" size="8,2" sound_open="Drone/drone_storage_open" open_time="0" sound_close="Drone/drone_storage_close" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="139" name="roboticDrone" count="0" size="8,2" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
 </lootcontainer>
 
 <!-- cntStoreShelfElectronicsSingle etc. -->

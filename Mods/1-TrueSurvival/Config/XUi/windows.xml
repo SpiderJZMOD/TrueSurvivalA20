@@ -198,7 +198,7 @@
 	<window name="windowCompass" anchor="CenterTop" pos="-240,-9" width="480" height="43" controller="CompassWindow">
 		<sprite depth="0" sprite="ui_game_header_fill" pos="47,0" width="386" height="43" type="sliced" color="150,150,150,150" />
 		<sprite depth="1" sprite="ui_game_header_fill" pos="50,-3" width="380" height="37" type="sliced" color="50,50,50,220" />
-		<texture name="JZMODLogo" depth="4" pos="-580,-35" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival108.png"/>
+		<texture name="JZMODLogo" depth="4" pos="-580,-35" size="200,85" pivot="center" aspect_ratio="2.3" keep_aspect_ratio="BasedOnHeight" texture="@modfolder:Textures/True_Survival109.png"/>
 		<!--<texture depth="8" texture="Textures/UI/ui_game_compass" pos="50, -15" width="380" height="23" color="[iconColor]" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" />** pos="75,-25"-->
 		
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />
@@ -3940,25 +3940,25 @@
 		</panel>
 	</window>
 
-	<window name="saveDirtyPrefab" anchor="CenterCenter" pos="-250,150" width="500" height="200" controller="SaveDirtyPrefab" cursor_area="true">
+	<window name="saveDirtyPrefab" anchor="CenterCenter" pos="-250,175" width="500" height="250" controller="SaveDirtyPrefab" cursor_area="true">
 		<panel name="header" pos="0,0" height="43" depth="1" disableautobackground="true" >
 			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.7" />
 			<label style="header.name" pos="6,-6" text_key="xuiSaveDirtyPrefab" />
 		</panel>
-		<panel name="content" pos="0,-46" height="150" depth="1" pivot="center" disableautobackground="true" >
-			<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="150" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
-			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="146" width="496" color="[darkGrey]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.65" />
+		<panel name="content" pos="0,-46" height="200" depth="1" pivot="center" disableautobackground="true" >
+			<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="200" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="196" width="496" color="[darkGrey]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.65" />
 
-			<label name="lblText" pos="10, -5" depth="3" width="480" height="85" pivot="TopLeft" justify="left" text="{text}" visible="{is_not_save_new}" />
+			<label name="lblText" pos="10, -5" depth="3" width="480" height="74" pivot="TopLeft" justify="left" text="{# is_save_new ? localization('xuiSaveNewPrefabText') : format(localization('xuiSaveDirtyPrefabText'), current_prefab_name)}" />
 
-			<label name="lblSaveNewText" pos="10, -20" depth="3" width="480" height="36" pivot="Left" justify="Left" text_key="xuiSaveNewPrefabText" visible="{is_save_new}" />
-			<label name="lblSaveName" pos="10, -50" depth="3" width="100" height="36" pivot="Left" justify="Right" text_key="xuiPrefabSaveName" visible="{is_save_new}" />
-			<textfield name="txtSaveName" pos="115, -50" depth="3" width="380" height="32" pivot="Left" visible="{is_save_new}" />
-			<label name="lblPrefabExists" pos="10, -80" depth="3" width="480" height="36" pivot="Left" justify="Left" color="[red]" text_key="xuiPrefabAlreadyExists" />
-			<label name="lblInvalidName" pos="10, -80" depth="3" width="480" height="36" pivot="Left" justify="Left" color="[red]" text_key="xuiInvalidPrefabName" />
+																																									  
+			<label name="lblSaveName" pos="10, -100" depth="3" width="100" height="34" pivot="Left" justify="Right" text_key="xuiPrefabSaveName" visible="{request_name}" />
+			<textfield name="txtSaveName" pos="115, -100" depth="3" width="380" height="32" pivot="Left" visible="{request_name}" />
+			<label name="lblInvalidPrefabName" pos="10, -130" depth="3" width="480" height="36" pivot="Left" justify="Left" color="[red]" text_key="{# prefab_name_exists ? localization('xuiPrefabAlreadyExists') : localization('xuiInvalidPrefabName') }" visible="{# prefab_name_exists or prefab_name_invalid}" />
+																																							
 
-			<table columns="3" padding="8,10" pos="5, -93">
-				<simplebutton name="btnSave" depth="3" width="145" height="32" caption_key="xuiSave" />
+			<table columns="3" padding="8,10" pos="5, -143">
+				<simplebutton name="btnSave" depth="3" width="145" height="32" caption_key="xuiSave" enabled="{# !prefab_name_invalid and !prefab_name_exists}" />
 				<simplebutton name="btnCancel" depth="3" width="145" height="32" caption_key="xuiCancel" />
 				<simplebutton name="btnDontSave" depth="3" width="150" height="32" caption_key="xuiDontSave" />
 			</table>

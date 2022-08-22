@@ -1,0 +1,84 @@
+<configs>
+	<append xpath="/items">
+		<item name="meleeHandNPCMaster">
+			<property name="Tags" value="blunt,melee,light,perkFlurryOfBlows"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="13"/> 
+			<property name="Material" value="Morganic"/>
+			<property name="Canhold" value="false"/> 
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action0">			
+				<property name="Class" value="Melee"/><!-- not changing to SDX version yet due to extends  -->
+				<property name="Delay" value=".8" /> 
+				<property name="Range" value="1.65" />
+				<property name="Sphere" value="1.2"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="Block_range" value="1.65"/>
+			</property>
+			<property class="Action1">			
+				<property name="Class" value="Melee"/><!-- not changing to SDX version yet due to extends  -->
+				<property name="Delay" value=".8" /> 
+				<property name="Range" value="1.65" />
+				<property name="Sphere" value="1.2"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="Block_range" value="1.65"/>
+			</property>
+			
+			<effect_group name="meleeHandMaster" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+				<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="120"/>  -->
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+				buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+				weights=".11,.07,.07,.05,.29,.36,.11"/><!-- JZMOD-->
+			</effect_group>
+		</item>	
+		<!--  NPC Animal hand  -->
+
+		<item name="meleeHandAnimalTemplate">
+			<property name="Extends" value="meleeHandNPCMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="35"/>
+			<property class="Action0">
+				<property name="DamageEntity" value="14"/>
+				<property name="DamageBlock" value="16"/>
+			</property>
+			<effect_group name="meleeHandAnimalTemplate" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/>  A16 .7 -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="earth"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
+				buff="buffFatiguedTrigger,jz_BuffUpperBodySprainedTrigger,jz_BuffLowerBodySprainedTrigger,jz_BuffLacerationTrigger,jz_BuffGashTrigger,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
+				weights=".11,.07,.07,.05,.29,.36,.11"/><!-- JZMOD-->
+			</effect_group>
+		</item>	
+		
+		<item name="AnimalXSpidersLoadingHack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+			<property name="HoldType" value="45"/>
+			<property name="HoldingItemHidden" value="true"/>
+			<property name="Meshfile" value="#@modfolder:Resources/XythSpiders.unity3d?Spider01_X"/>
+			<property name="DropMeshfile"  value="#@modfolder:Resources/XythSpiders.unity3d?Spider01_X"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/> <!-- STK resource -->
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1000"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		<item name="meleeHandAnimalSpider">
+			<property name="Extends" value="meleeHandAnimalTemplate"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="35"/>
+			<property class="Action0">
+				<property name="Delay" value=".7"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Range" value="1.65"/>
+				<property name="DamageEntity" value="15"/>
+				<property name="DamageBlock" value="4"/>
+			</property>
+		</item>
+	</append>	  
+</configs>
