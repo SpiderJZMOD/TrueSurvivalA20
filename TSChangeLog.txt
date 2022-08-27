@@ -1,6 +1,14 @@
 ********************************************True Survival Change Log*******************************************
+8/27/2022 A20.6 Build #1.10
+-Updated Score for Spreadable Fire Improvements
+-Blocks will not give the fire debuff when walked on if the fire particle is not active
+-Improved Fire Bucket to better put out fires
+-Removed the ability for spitter/exploders to start fires
+-Radiated spitters/exploders will still start fires
+-Demo Zombie still starts fires
 
-7/22/2022 A20.5 Build# 1.09
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+8/22/2022 A20.6 Build# 1.09
 -Updated Mod to 20.6
 -Updated Score
 -Updated NPC Mod
