@@ -6566,6 +6566,7 @@ needed?
 		<property name="Explosion.RadiusBlocks" value="2"/>
 		<property name="Explosion.RadiusEntities" value="1"/>
 		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.BlockDamage" value="0"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
@@ -6629,6 +6630,7 @@ needed?
 		<property name="Explosion.RadiusBlocks" value="2"/>
 		<property name="Explosion.RadiusEntities" value="1"/>
 		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.BlockDamage" value="0"/>
 	</property>
 	<effect_group name="ammoProjectileZombieVomitFeral" tiered="false">
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
@@ -16189,7 +16191,7 @@ perkNightStalkerSilentNight
 	
 	<effect_group name="stick" tiered="false" >
 		<passive_effect name="MaxRange" operation="base_set" value="1"/>
-		<passive_effect name="BlockRange" operation="base_set" value="5"/>
+		<passive_effect name="BlockRange" operation="base_set" value="9"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
 		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
@@ -16197,7 +16199,7 @@ perkNightStalkerSilentNight
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 	</effect_group>
 	<effect_group name="Allow target block extinguish" tiered="false">
-		<triggered_effect trigger="onSelfDamagedBlock" action="RemoveFire, SCore" target="positionAOE" range="4"/> <!-- range is int, 2 blocks in all direction will have fire removed. -->
+		<triggered_effect trigger="onSelfDamagedBlock" action="RemoveFire, SCore" target="positionAOE" range="10"/>
 	</effect_group>
 </item>
 

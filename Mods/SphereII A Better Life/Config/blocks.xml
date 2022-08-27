@@ -133,6 +133,9 @@
 
 				<property name="SmarterEntities" value="false" />
 				<!-- gives trap avoidance to entities. -->
+				
+				<property name="UMATweaks"  value="false" /> 	<!-- Improvements on reducing load times of UMA Zombies -->
+				<property name="LowerResolutionUMA" value="false" /> 	<!-- Lower resolution on UMAs drastically -->
 			</property>
 
 			<property class="AdvancedProgression">
@@ -244,6 +247,9 @@
 				<property name="Logging" value="false"/>
 				<property name="CaveEnabled" value="false"/>
 
+				<property name="CavePath" value="@modfolder:/Caves/Stamps/cave11.png" />
+				<property name="CavePrefab" value="Large" />
+				
 				<!-- Legacy is the original style.  Sebastian is an alternative, FastNosieSIMD -->
 				<property name="GenerationType" value="Legacy" />
 				<!-- Generate cave system only in mountains (above terrain height 100, or random through the map. All for every chunk has a cave system ) -->
@@ -410,6 +416,27 @@
 		  <property name="Class" value="SpawnCube2SDX, SCore" />
 		  <property name="Config" value="eg=AnimalSwiming;buff=buffOrderStay;pc=0;keep=0" />
 	  </block>
+	  
+	  <!-- Cave air block -->
+		<block name="caveBlock02">
+			<property name="Extends" value="air"/>
+			<property name="StabilityFull" value="true"/>
+		</block>
+
+		<block name="cntCaveFloorRandomLootHelper">
+			<property name="Extends" value="cntWastelandRandomLootHelper"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+		<block name="cntCaveCeilingRandomLootHelper">
+			<property name="Extends" value="cntWastelandRandomLootHelper"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+
+		<block name="cntDeepCaveFloorRandomLootHelper">
+			<property name="Extends" value="cntWastelandRandomLootHelper"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+
   
   </append>
 
