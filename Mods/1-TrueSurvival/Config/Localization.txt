@@ -16,6 +16,7 @@ jz_BuffAcidSpitDesc,"That thing spit on you and it's burning your skin, you have
 jz_BuffStickyDesc,"That thing spit on you and it's all sticky, you can't even move. Maybe some water would wash it off.\n\nEffects:\n-0 Mobility\n-1 Wellness\n-1 Wellness is not treated"
 buffIllPneumonia01Desc,"You have caught Pneumonia from being so cold. Get warm immediately.\n\nEffects:\n-10 Wellness\n-1 Protein, Fiber, Essential Vitamine\n-3 Stamina per Sec\n-.01 Health per Sec"
 jz_BuffSnakeBiteDesc,"A snake bit and poisoned you and now your limping. You will need to find or make some [35bd00]Anti-Venom[-] or you will get very ill. [35bd00]Anti-Venom[-] can be crafted on the Campfire with a Venom Gland from a poisonous animal\n\nEffects:\n-1 Wellness\n-2 Stamina per Second\n-5% Mobility\n-5 Cold Resistance"
+jz_BuffFailingHealthhDesc,"Your health is failing. You must eat a more balanced diet that contains all the vitamin groups in order to have a more healthy diet.\n\n-1 Stamina per 3 sec\n -10% Mobility"
 jz_BuffSnakeBiteLvTwoDesc,"Your snake bite is getting worse and the venom is spreading. You need to get some [35bd00]Anti-Venom[-] soon. [35bd00]Anti-Venom[-] can be crafted on the Campfire with a Venom Gland from a poisonous animal\n\nEffects:\n-2 Wellness\n-3 Stamina per Second\n-15% Mobility\n-15 Cold Resistance"
 jz_BuffSnakeBiteLvThreeDesc,"The snake venom is coursing through your veins. If you can last the day you might just live. Or you can find or make some [35bd00]Anti-Venom[-].[35bd00]Anti-Venom[-] can be crafted on the Campfire with a Venom Gland from a poisonous animal\n\nEffects:\n-3 Wellness\n-5 Stamina per Second\n-50% Mobility\n-25 Cold Resistance"
 jz_buffStatusThirsty03Desc,"You are dying of dehydration! Find something to drink!\nHealth and stamina are recovering slower.\nEffects:\n-1 Wellness every 5 min\nYour maximum stamina is lowered by {cvar($buffStatusThirstyBlockage:0.0)}."
@@ -996,6 +997,7 @@ jz_perkArtOfMiningLanternLongDesc,"Lights: You can't work if you can't see. Lear
 jz_resourceBulletCasingDesc,"Bullet casings can be crafted at the forge and are used to craft firearm ammunition\n\nUnlock by learning any bullet recipe"
 jz_resourceBulletTipDesc,"Bullet tips can be crafted at the forge and are used to craft firearm ammunition\n\nUnlock by learning any bullet recipe"
 jz_foodCropYuccaFruitDesc,"Yucca fruit is edible and 3 can be scraped into a Fruit Serving, they can used to craft Fruit Juice to drink to gain hydration and Essential Vitamins. It is harvested from cacti and yucca plants."
+jz_foodCornMealDesc,"Stack 3 of these to scrap to a grain serving."
 jz_vehiclePlaceableGroupDesc,"This vehicle can be placed into the world like a block using the secondary action.\n\nRequires a workbench to craft.\nRequires Scavenged Parts to repair."
 jz_QIWorkbenchUpgradesImprovisedQL3Redo,"Improvised Upgrade Lv3"
 jz_QIWorkbenchUpgradesImprovisedQL4Redo,"Improvised Upgrade Lv4"
@@ -1804,7 +1806,7 @@ jz_FoodServingGrain,Grain Serving
 jz_FoodServingVeggie,Veggie Serving
 jz_FoodBioMass,Bio Mass
 bioMassDesc,"Rotting food and scraps that can be used in farming"
-jz_MedicalSutureKitDesc,"A clean needle and organic used to stitch up [f21b10]Lacerations[-]"
+jz_MedicalSutureKitDesc,"A clean needle and organic used to stitch up [f21b10]Lacerations[-]\n\nCrafted in the Workbench"
 jz_MedicalSutureKit,"Suture Kit"
 jz_meleeClubBaseballBatDesc,"This club was used in gladiatorial games of the past that were held in huge arenas."
 jz_gunBowPrimitiveDesc,"Good for hunting and killing zombies. Uses arrows for ammunition.\nHold reload to use alternate ammo."
@@ -1820,7 +1822,7 @@ jz_GallonOfDirtyRiverWaterDesc,A gallon of water collected from a unclean source
 jz_OldMilkJug,"Old Milk Jug"
 jz_OldMilkJugDesc,"A old empty milk jug that can be used to collect a gallon of water from a source"
 jz_FarmingWateringCan,Watering Can
-jz_FarmingWateringCanDesc,"A Watering Can used in farming. Can use fertilizer on planted seeds to increase yield, ounces of dirty water to water cultivated plants and Insecticide to remove insect infestations."
+jz_FarmingWateringCanDesc,"A Watering Can used in farming. With fertilizer in your inventory and the watering can in your hand, right click to fertilize. Fertilized planted increase yield.\n\nWith ounces of dirty water in your inventory and the watering can in your hand, right click to water.\n\n With insecticide in your inventory and the watering can in your hand, right click to use insecticide to remove insect infestations."
 jz_Insecticide,Insecticide
 jz_InsecticideDesc,Farming Insecticide used on cultivated plants that are having insect infestations
 jz_QIMilitarySecuritySoldier,"Soldiers Belongings"
