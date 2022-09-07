@@ -162,6 +162,7 @@
 		</objective>
 		
 		<reward type="Quest" id="jzquest_TutorialPt4" />
+		<reward type="Quest" id="jzquest_StoryLinePt1" />
 	</quest>
 	
 	<quest id="jzquest_TutorialPt4">
@@ -216,7 +217,6 @@
 			<property name="count" value="1" />
 		</objective>
 		<reward type="Quest" id="jzquest_TutorialPt7" />
-		<reward type="Quest" id="jzquest_StoryLinePt1" />
 	</quest>
 	
 	<quest id="jzquest_TutorialPt7">
@@ -282,6 +282,7 @@
 		<objective type="BlockPlace" id="jz_WorkstationImprovisedWorkbench" value="1" phase="1" />
 		
 		<reward type="Item" id="jz_QIBugOutBag" value="1" />
+		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL2" />
 		<reward type="Quest" id="jzquest_StoryLinePt2" />
 	</quest>
 	<quest id="jzquest_StoryLinePt2">
@@ -295,7 +296,7 @@
 		
         <objective type="FetchKeep" id="jz_QIDeadWalkieTalkie" value="1" phase="1"/>
 		
-		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL2" />
+		<!--<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL2" />-->
         <reward type="Recipe" id="jz_QIDeadWalkieTalkie" />
 		<reward type="Recipe" id="jz_QIGoodWalkieTalkie" />
        	<!--<reward type="Quest" id="jzquest_StoryLinePt3" />-->

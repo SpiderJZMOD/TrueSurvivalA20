@@ -49,12 +49,12 @@
     <Compile Include="Harmony\Animation\EmodelBaseLookAtUpdate.cs" />
     <Compile Include="Harmony\Animation\ModelBaseInitCommon.cs" />
     <Compile Include="Harmony\Atmosphere\Spook.cs" />
+    <Compile Include="Harmony\Blocks\BlockPlantGrowing.cs" />
     <Compile Include="Harmony\Blocks\BlockSecureLoot.cs" />
     <Compile Include="Harmony\Blocks\BlockWorkarounds.cs" />
-    <Compile Include="Harmony\Blocks\OnEntityCollidedWithBlock.cs" />
     <Compile Include="Harmony\Blocks\ChangeThisWaterBlock.cs" />
+    <Compile Include="Harmony\Blocks\OnEntityCollidedWithBlock.cs" />
     <Compile Include="Harmony\Blocks\OnEntityWalkingPatchFire.cs" />
-    <Compile Include="Harmony\EntityAlive\UpdateCurrentBlockposAndValueFire.cs" />
     <Compile Include="Harmony\Blocks\Particles.cs" />
     <Compile Include="Harmony\Dialog\DialogClose.cs" />
     <Compile Include="Harmony\Dialog\DialogFromXML.cs" />
@@ -63,6 +63,7 @@
     <Compile Include="Harmony\EAI\EAITarget.cs" />
     <Compile Include="Harmony\EntityAlive\AddScriptToTransform.cs" />
     <Compile Include="Harmony\EntityAlive\EntityAlivePatches.cs" />
+    <Compile Include="Harmony\EntityAlive\UpdateCurrentBlockposAndValueFire.cs" />
     <Compile Include="Harmony\EntityMoveHelper\DigStart.cs" />
     <Compile Include="Harmony\EntityMoveHelper\StartJump.cs" />
     <Compile Include="Harmony\EntityMoveHelper\Stop.cs" />
@@ -74,15 +75,15 @@
     <Compile Include="Harmony\FoodSpoilage\FoodSpoilage.cs" />
     <Compile Include="Harmony\GameManager\BroadcastHook.cs" />
     <Compile Include="Harmony\GameManager\FireHooks.cs" />
-    <Compile Include="Harmony\GamePath\UtilsDrawLine.cs" />
     <Compile Include="Harmony\GamePath\TraversalProvider.cs" />
-    <Compile Include="Harmony\ModEvents.cs" />
-    <Compile Include="Harmony\ItemActions\ItemClass.cs" />
+    <Compile Include="Harmony\GamePath\UtilsDrawLine.cs" />
     <Compile Include="Harmony\ItemActions\AdvancedItems.cs" />
     <Compile Include="Harmony\ItemActions\DurabilityAffectsDamage.cs" />
     <Compile Include="Harmony\ItemActions\ItemActionMelee.cs" />
+    <Compile Include="Harmony\ItemActions\ItemClass.cs" />
     <Compile Include="Harmony\Menu_ClearCache.cs" />
     <Compile Include="Harmony\MiniTurret\shouldIgnoreTarget.cs" />
+    <Compile Include="Harmony\ModEvents.cs" />
     <Compile Include="Harmony\NetPackage\QuestGotoPoint.cs" />
     <Compile Include="Harmony\NPCFeatures\DynamicPrefabGetTraderArea.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityAliveGroundDetection.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Harmony\NPCFeatures\EntityNPCMakeVulnerable.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityNPCSpeedFix.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityTraderEModalSetLookAt.cs" />
+    <Compile Include="Harmony\PlayerFeatures\EntityStats.cs" />
     <Compile Include="Harmony\PlayerFeatures\NerdPoll.cs" />
     <Compile Include="Harmony\PlayerFeatures\OneBlockCrouch.cs" />
     <Compile Include="Harmony\PlayerFeatures\PlayerMoveControllerUpdate.cs" />
@@ -128,6 +130,7 @@
     <Compile Include="Harmony\UtilityAI\UtilityAIPatches.cs" />
     <Compile Include="Harmony\Vehicles\NoVechileTake.cs" />
     <Compile Include="Harmony\WorldGen\CaveProject.cs" />
+    <Compile Include="Harmony\WorldGen\HeightMapCaveSystem.cs" />
     <Compile Include="Harmony\XML\ModInfoPatches.cs" />
     <Compile Include="Harmony\XUIC\SirillionThings.cs" />
     <Compile Include="Harmony\XUIC\XUiController.cs" />
@@ -138,6 +141,9 @@
     <Compile Include="Harmony\ZombieFeatures\RandomDeathSpawn.cs" />
     <Compile Include="Harmony\ZombieFeatures\RandomSize.cs" />
     <Compile Include="Harmony\ZombieFeatures\Transmogrifier.cs" />
+    <Compile Include="Harmony\ZombieFeatures\UMA\LowerResolutionUMA.cs" />
+    <Compile Include="Harmony\ZombieFeatures\UMA\UMATweaks.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\Animation\AvatarAnimalControllerSDX.cs" />
     <Compile Include="Scripts\Animation\MecanimSDX.cs" />
     <Compile Include="Scripts\Blocks\BlockCropControlPanel.cs" />
@@ -403,10 +409,12 @@
     <Compile Include="Scripts\UtilityAI\UAITaskFollowSDX.cs" />
     <Compile Include="Scripts\UtilityAI\UAITaskWanderSDX.cs" />
     <Compile Include="Scripts\Managers\CropManager.cs" />
+    <Compile Include="Scripts\WorldGen\HeightMapTunneler.cs" />
     <Compile Include="Scripts\WorldGen\LegacyCaveTunneler.cs" />
     <Compile Include="Scripts\WorldGen\SebastianCaveTunneler.cs" />
     <Compile Include="Scripts\WorldGen\Utilities\FastNoise.cs" />
     <Compile Include="Scripts\WorldGen\Utilities\MapGenerator.cs" />
+    <Compile Include="Scripts\WorldGen\Utilities\PathingWormTunneler.cs" />
     <Compile Include="Scripts\WorldGen\WinterProjectPrefab.cs" />
     <Compile Include="Scripts\XUiC\XUiC_CharacterFrameWindowSDX.cs" />
     <Compile Include="Scripts\XUiC\XUiC_DialogHireInformationSDX.cs" />
@@ -589,7 +597,9 @@
     <None Include="Scripts\Blocks\Readme.md" />
     <None Include="Scripts\Mods.dll.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Harmony\Weather\" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\7DaysToDie_Data\Managed\0Harmony.dll</HintPath>

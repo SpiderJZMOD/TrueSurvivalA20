@@ -247,7 +247,7 @@
 				<property name="Logging" value="false"/>
 				<property name="CaveEnabled" value="false"/>
 
-				<property name="CavePath" value="@modfolder:/Caves/Stamps/cave11.png" />
+				<property name="CavePath" value="@modfolder:/Caves/Stamps/testLegit.png" />
 				<property name="CavePrefab" value="Large" />
 				
 				<!-- Legacy is the original style.  Sebastian is an alternative, FastNosieSIMD -->
@@ -335,7 +335,7 @@
 				-->
 			</property>	
 		</block>
-
+	
 		<block name="PathingCube">
 			<property name="Shape" value="ModelEntity" />
 			<!--property name="Model" value="#@modfolder:Resources/PathingCube.unity3d?PathingCube"/-->
@@ -359,7 +359,27 @@
 			<property name="TakeDelay" value="3" />
 			<property name="Collide" value="sight"/>
 		</block>
+		
+		<!-- Cave air block -->
+		<block name="caveBlock02">
+			<property name="Extends" value="air"/>
+			<property name="StabilityFull" value="true"/>
+		</block>
 
+		<block name="cntCaveFloorRandomLootHelper">
+			<property name="Extends" value="cntWastelandRandomLootHelper"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+		<block name="cntCaveCeilingRandomLootHelper">
+			<property name="Extends" value="cntWastelandRandomLootHelper"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+
+		<block name="cntDeepCaveFloorRandomLootHelper">
+			<property name="Extends" value="cntWastelandRandomLootHelper"/>
+			<property name="CreativeMode" value="Dev"/>
+		</block>
+		
 		<block name="SpawnCube">
 			<property name="Extends" value="woodNoUpgradeMaster"/>
 			<property name="Model" value="#@modfolder:Resources/PathingCube.unity3d?PathingCube"/>
@@ -417,25 +437,7 @@
 		  <property name="Config" value="eg=AnimalSwiming;buff=buffOrderStay;pc=0;keep=0" />
 	  </block>
 	  
-	  <!-- Cave air block -->
-		<block name="caveBlock02">
-			<property name="Extends" value="air"/>
-			<property name="StabilityFull" value="true"/>
-		</block>
-
-		<block name="cntCaveFloorRandomLootHelper">
-			<property name="Extends" value="cntWastelandRandomLootHelper"/>
-			<property name="CreativeMode" value="Dev"/>
-		</block>
-		<block name="cntCaveCeilingRandomLootHelper">
-			<property name="Extends" value="cntWastelandRandomLootHelper"/>
-			<property name="CreativeMode" value="Dev"/>
-		</block>
-
-		<block name="cntDeepCaveFloorRandomLootHelper">
-			<property name="Extends" value="cntWastelandRandomLootHelper"/>
-			<property name="CreativeMode" value="Dev"/>
-		</block>
+	  
 
   
   </append>

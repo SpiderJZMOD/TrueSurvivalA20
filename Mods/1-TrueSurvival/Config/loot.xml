@@ -4523,6 +4523,7 @@ If there is no hit the default quality is used.
 	<item name="meleeToolSalvageT2Ratchet"/>
 	<item name="jz_Screwdriver"/>
 	<item name="jz_ConcreteSledge"/>
+	<item name="meleeWpnBladeT1HuntingKnife"/>
 	<item name="jz_MethaneTankBomb" />
     <item name="jz_EmptyPropaneTank" />
 	<item name="jz_Crowbar" />

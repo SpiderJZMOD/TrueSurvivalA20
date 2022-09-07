@@ -23,6 +23,24 @@ namespace SCore.Harmony.GameManagerPatches
             }
         }
 
+        // Allows the spread of the particles to catch things on fire.
+        [HarmonyPatch(typeof(GameManager))]
+        [HarmonyPatch("gmUpdate")]
+        public class GameManagergmUpdate
+        {
+            public static void Postfix()
+            {
+                if (SingletonMonoBehaviour<ConnectionManager>.Instance.IsServer)
+                {
+                    if (FireManager.Instance != null && FireManager.Instance.Enabled)
+                    {
+                        FireManager.Instance.FireUpdate();
+                        FireManager.Instance.LightsUpdate();
+                    }
+                }
+            }
+        }
+
 
         // Light reduction patch from ocbMaurice
         [HarmonyPatch(typeof(GameManager))]

@@ -7718,6 +7718,11 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster" />
 	<property name="CustomIcon" value="plantedMushroom1"/>
 	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="Mmushrooms"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Shape" value="Ext3dModel"/>
+	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
 	<property name="Model" value="OutdoorDecor/mushroom_growth" param1="main_mesh"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedMushroomLv2Random"/><!-- JZMOD -->
 	<property name="Collide" value="melee"/>
@@ -7730,6 +7735,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="DisplayInfo" value="Description"/>
 	<property name="Shape" value="Ext3dModel"/>
+	<property name="CreativeMode" value="Dev"/>
 	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="OutdoorDecor/mushroom_harvest" param1="main_mesh"/>
@@ -7755,7 +7761,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="plantedMushroom3Harvest"/>
 	<property name="DescriptionKey" value="plantedMushroom3HarvestDesc"/>
 	<property name="CustomIcon" value="plantedMushroom3Harvest"/>
-	<property name="CreativeMode" value="None"/>
+	<property name="CreativeMode" value="Dev"/>
 	<drop event="Harvest" name="foodCropMushrooms" count="2" tag="cropHarvest"/>
 	<!--<drop event="Harvest" name="foodCropMushrooms" prob="0.5" count="1" tag="bonusCropHarvest"/> JZMOD -->
 	<drop event="Harvest" name="foodCropMushrooms" count="1" tag="jz_GardenerHarvest"/><!-- JZMOD -->
@@ -8673,6 +8679,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Extends" value="cropsGrowingMaster"/>
 	<property name="CustomIcon" value="plantedPumpkin1"/>
 	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Mcorn"/>
+	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedPumpkinLv2Random"/><!-- JZMOD -->
 	<!--<drop event="Destroy" name="plantedPumpkin1" count="1"/> JZMOD -->
@@ -8734,6 +8742,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="RuntimeSwitch" value="true"/>
 	<drop event="Destroy" name="decoPumpkinJackOLantern" count="1"/>
 	<property name="EconomicValue" value="20"/>
+	<property name="SellableToTrader" value="false"/>
 </block>
 
 <!-- SPECIAL_BLOCK_SHAPE_OR_TEXTURE_DO_NOT_CONVERT -->
@@ -16801,7 +16810,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="BuffsWhenWalkedOn" value="jz_BuffBedMedRecover"/><!-- JZMOD -->
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="bed02" count="1" prob="1" tool_category="ToolCrowbar"/>  
+	<drop event="Destroy" name="bunkBedMade" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -21601,7 +21610,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Industrial/pallet_bags_basePrefab"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="125"/>
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="resourceCement" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceConcreteMix" count="10,100" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>

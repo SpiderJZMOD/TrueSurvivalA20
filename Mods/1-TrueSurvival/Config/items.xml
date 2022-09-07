@@ -8786,6 +8786,7 @@ needed?
 	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
 	<property name="Explosion.DamageBonus.water" value="0"/>
 	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="Explosion.BlockDamage" value="0"/>	
 	<property name="FuseTime" value="4"/> <!-- End: Needed for  time in sec, max 6 -->
 	<property name="StickPercent" value=".4"/>
 	<property name="UnlockedBy" value="thrownAmmoPipeBombSchematic,jz_Soldier"/><!-- JZMOD -->
@@ -8872,6 +8873,7 @@ needed?
 	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
 	<property name="Explosion.DamageBonus.water" value="0"/>
 	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="Explosion.BlockDamage" value="0"/>	
 	<property name="FuseTime" value="6"/>
 	<property name="FusePrimeOnActivate" value="true"/>
 	<property name="ExplodeOnHit" value="true"/>
@@ -9067,6 +9069,7 @@ add knockdown resist to armor
 	<property name="Explosion.DamageBonus.wood" value="1"/>
 	<property name="Explosion.DamageBonus.water" value="0"/>
 	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="Explosion.BlockDamage" value="0"/>	
 	<property name="FusePrimeOnActivate" value="true"/>
 	<property name="FuseTime" value="4"/> <!-- End: Needed for  time in sec, max 6 -->
 	<property name="StickPercent" value="1"/>
@@ -9154,6 +9157,7 @@ add knockdown resist to armor
 	<property name="Explosion.ParticleIndex" value="13"/>
 	<property name="Explosion.RadiusBlocks" value="5"/>
 	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="0"/>	
 	<!--<property name="Explosion.DamageBonus.stone" value="0"/><property name="Explosion.DamageBonus.metal" value="0"/><property name="Explosion.DamageBonus.earth" value="0"/><property name="Explosion.DamageBonus.cloth" value="5"/><property name="Explosion.DamageBonus.wood" value="0"/><property name="Explosion.DamageBonus.water" value="0"/>-->
 	<property name="FuseTime" value="4"/> <!-- End: Needed for  time in sec, max 6 -->
 	<property name="StickPercent" value=".2"/>
@@ -9316,6 +9320,7 @@ add knockdown resist to armor
 	<property name="Explosion.ParticleIndex" value="11"/>
 	<property name="Explosion.RadiusBlocks" value="1"/>
 	<property name="Explosion.RadiusEntities" value="1"/>
+	<property name="Explosion.BlockDamage" value="0"/>	
 	<property name="FuseTime" value="4"/> <!-- End: Needed for  time in sec, max 6 -->
 	<property name="StickPercent" value=".3"/>
 	<property name="ThrowableDecoy" value="true"/>
@@ -14933,8 +14938,7 @@ perkNightStalkerSilentNight
 	<property name="DisplayType" value="TSFoWaStHeWePrDy"/><!-- JZMOD -->
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Mprotein"/><!-- JZMOD -->
-	<property name="Weight" value="1"/><!-- JZMOD -->
+	<property name="Material" value="Morganic"/><!-- JZMOD -->
 	<property name="Stacknumber" value="125"/> <!-- STK resource -->
 	<property name="EconomicValue" value="15"/>
 	<property name="SellableToTrader" value="false"/><!-- JZMOD -->
@@ -19947,6 +19951,7 @@ perkNightStalkerSilentNight
 <item name="treasureQuestMaster">
 	<property name="Extends" value="questMaster"/>
 	<property name="CreativeMode" value="None"/>
+	<property name="Weight" value="0"/>
 	<property name="DescriptionKey" value="qt_desc"/>
 	<property name="CustomIcon" value="treasureQuestMaster"/>
 	<property name="PickupJournalEntry" value="treasureMapTip"/>
@@ -31178,7 +31183,7 @@ perkNightStalkerSilentNight
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="DescriptionKey" value="jz_AdhesiveStickySapDesc" />
 	<property name="Material" value="Madhesive" />
-	<property name="Weight" value="1" />
+	<property name="Weight" value="0" />
 </item>
 
 <item name="jz_AdhesiveClearTape">
@@ -36992,6 +36997,7 @@ perkNightStalkerSilentNight
 <item name="jz_StoveRepairKit">
 	<property name="Extends" value="jz_ToolCarvingKnife" />
 	<property name="DescriptionKey" value="jz_StoveRepairKitDesc" />
+	<property name="CustomIcon" value="resourceRepairKit" />
 	<property class="Action0">
 		 <property name="Allowed_upgrade_items" value="jz_StoveRepairKit"/>
 	</property>
@@ -37181,7 +37187,7 @@ perkNightStalkerSilentNight
 <item name="jz_SeedCoconut">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_PlantedCoconut1" />
-	<property name="DescriptionKey" value="desertCropDesc" />
+	<property name="DescriptionKey" value="desertCropTreeDesc" />
 	<property name="UnlockedBy" value="jz_SchematicCoconutSeed,jz_Farmer"/>
 	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">
@@ -37246,7 +37252,7 @@ perkNightStalkerSilentNight
 <item name="jz_SeedOrange">
 	<property name="Extends" value="jz_MasterItem" />
 	<property name="CustomIcon" value="jz_PlantedOrange1" />
-	<property name="DescriptionKey" value="forestNdesertCropDesc" />
+	<property name="DescriptionKey" value="forestNdesertCropTreeDesc" />
 	<property name="UnlockedBy" value="jz_SchematicOrangeSeed,jz_Farmer"/>
 	<property name="Group" value="Food/Cooking"/>
 	<property class="Action1">

@@ -2139,7 +2139,7 @@
 	<property name="Explosion.BlockDamage" value="500"/>
 	<property name="Explosion.EntityDamage" value="150"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="SpreadFire" value="false" />
 </entity_class>
 	
 <entity_class name="zombieFatCopFeral" extends="zombieFatCop">
@@ -2194,7 +2194,6 @@
 
 	<property name="Explosion.BlockDamage" value="750"/>
 	<property name="Explosion.EntityDamage" value="250"/>
-	<property name="Explosion.BlockDamage" value="1"/>
 </entity_class>
 
 
@@ -2557,7 +2556,6 @@
 	<property name="Explosion.BlockDamage" value="5000"/>
 	<property name="Explosion.EntityDamage" value="800"/>
 	<property name="Explosion.DamageBonus.earth" value=".1"/>
-	<property name="Explosion.BlockDamage" value="1"/>
 	<property name="StompsSpikes" value="true"/>
 	<property name="ExplodeDelay" value="2"/>
 	<property name="ExplodeHealthThreshold" value="0"/> <!-- Disable Health explosion -->
@@ -5398,8 +5396,8 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="Explosion.RadiusEntities" value="6"/>
 	<property name="Explosion.BlockDamage" value="500"/>
 	<property name="Explosion.EntityDamage" value="150"/>
-	<property name="Explosion.DamageBonus.earth" value="0"/> 
-	<property name="Explosion.BlockDamage" value="0"/>	
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<property name="SpreadFire" value="false" /> 	
 </entity_class>
 
 <entity_class name="jz_ZombieMoeFeralExplode" extends="zombieMoeFeral">
@@ -5412,7 +5410,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="Explosion.BlockDamage" value="500"/>
 	<property name="Explosion.EntityDamage" value="150"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="SpreadFire" value="false" />
 </entity_class>
 
 <entity_class name="jz_ZombieMoeRadiatedExplode" extends="zombieMoeRadiated">
@@ -5437,7 +5435,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="Explosion.BlockDamage" value="500"/>
 	<property name="Explosion.EntityDamage" value="150"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
-	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="SpreadFire" value="false" />
 </entity_class>
 
 <entity_class name="jz_ZombieFatHawaiianFeralExplode" extends="zombieFatHawaiianFeral">
@@ -5450,7 +5448,7 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="Explosion.BlockDamage" value="500"/>
 	<property name="Explosion.EntityDamage" value="150"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>  
-	<property name="Explosion.BlockDamage" value="0"/>
+	<property name="SpreadFire" value="false" />
 </entity_class>
 
 <entity_class name="jz_ZombieFatHawaiianRadiatedExplode" extends="zombieFatHawaiianRadiated">

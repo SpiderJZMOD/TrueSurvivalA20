@@ -4,30 +4,36 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using WorldGenerationEngineFinal;
+
 namespace Harmony.WorldGen
 {
     public class SCoreheightMapCaveSystem
     {
         // Make the world darker underground
-        [HarmonyPatch(typeof(GameManager))]
-        [HarmonyPatch("createWorld")]
+        [HarmonyPatch(typeof(WorldBiomeProviderFromImage))]
+        [HarmonyPatch("InitData")]
         public class SCoreHeightMapCaveSystemGameManager
         {
             private static readonly string AdvFeatureClass = "CaveConfiguration";
             private static readonly string CavePath = "CavePath";
             private static readonly string Feature = "CaveEnabled";
-            public static void Postfix(string _sWorldName)
+            public static void Postfix()
             {
                 if (!Configuration.CheckFeatureStatus(AdvFeatureClass, Feature))
                     return;
 
+                var configurationType = Configuration.GetPropertyValue(AdvFeatureClass, "GenerationType");
+                if (configurationType != "HeightMap")
+                    return;
+
+
+                // 	BiomeDefinition biomeAt = GameManager.Instance.World.ChunkCache.ChunkProvider.GetBiomeProvider().GetBiomeAt((int)vector.x, (int)vector.y);
+                //GameManager.Instance.World.ChunkCache.ChunkProvider.GetTerrainGenerator().GetTerrainHeightAt()
+              //  GameManager.Instance.World.ChunkCache.ChunkProvider.GetOverviewMap();
                 var caveStamp = Configuration.GetPropertyValue(AdvFeatureClass, CavePath);
 
                 var path = "";
                 path = ModManager.PatchModPathString(caveStamp);
-                if ( string.IsNullOrEmpty(path ))
-                    path = PathAbstractions.WorldsSearchPaths.GetLocation(_sWorldName, null, null).FullPath + "/cave6.png";
-
                 if (!File.Exists(path))
                 {
                     Log.Out("No Cave Map: " + path);
@@ -35,33 +41,22 @@ namespace Harmony.WorldGen
 
                 }
 
-                Texture2D texture2D = null;
-                texture2D = TextureUtils.LoadTexture(path, FilterMode.Point, false, false, null);
-                if (texture2D != null)
+                Texture2D texture2D = TextureUtils.LoadTexture(path, FilterMode.Point, false, false, null);
+                Log.Out($"Generating Texture from {path}: {texture2D.width} {texture2D.height}");
+                HeightMapTunneler.caveMapColor = new Color[texture2D.width, texture2D.height];
+                for (int y = 0; y < texture2D.height; y++)
                 {
-                    Log.Out($"Generated Texture from {path}: {texture2D.width} {texture2D.height}");
-                    HeightMapTunneler.caveMapColor = new Color[texture2D.width, texture2D.height];
-                    bool foundCave = false;
-                    for (int y = 0; y < texture2D.height; y++)
+                    for (int x = 0; x < texture2D.width; x++)
                     {
-                        var textwidth = "";
-                        for (int x = 0; x < texture2D.width; x++)
-                        {
-                            var pixel = texture2D.GetPixel(x, y);
-                            textwidth += " " + pixel.grayscale;
-                            if (pixel.grayscale > 0 && !foundCave && pixel.grayscale != 1)
-                            {
-                                Debug.Log("Cave Teleport: " + x + " " + y);
-                                foundCave = true;
-                            }
-                            HeightMapTunneler.caveMapColor[x, y] = pixel;
-                        }
-                        Debug.Log($"{y} 0 : {textwidth}");
-                    }
+                        var pixel = texture2D.GetPixel(x, y);
+                        if (pixel.r == 255)
+                            SphereCache.caveEntrances.Add(new Vector3i(x, 1, y));
 
+                        HeightMapTunneler.caveMapColor[x, y] = pixel;
+                    }
                 }
+
             }
         }
     }
 }
-    

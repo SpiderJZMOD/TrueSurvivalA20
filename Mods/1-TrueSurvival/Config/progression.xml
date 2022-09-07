@@ -2844,7 +2844,7 @@
 		</effect_group>
 	</perk>
 	<!--FOOD-->
-	<perk name="SP_StoveRepirKitSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Stove Repair Kit" desc_key="SP_StoveRepirKitSchematicDesc" icon="StoveCampfire">
+	<perk name="SP_StoveRepirKitSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Stove Repair Kit" desc_key="SP_StoveRepirKitSchematicDesc" icon="cntStoveOldVer1Closed">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_StoveRepairKit"/>
 			<effect_description level="1" desc_key="SP_StoveRepirKitSchematicDesc" long_desc_key="SP_StoveRepirKitSchematicDesc"/>
@@ -3523,7 +3523,7 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_GunTheHunterSchematic" parent="jz_ModSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Gun Flashlight" desc_key="SP_GunTheHunterSchematicDesc" icon="modGunMeleeTheHunter">
+	<perk name="SP_GunTheHunterSchematic" parent="jz_ModSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="The Hunter" desc_key="SP_GunTheHunterSchematicDesc" icon="modGunMeleeTheHunter">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMeleeTheHunter"/>
 			<effect_description level="1" desc_key="SP_GunTheHunterSchematicDesc" long_desc_key="SP_GunTheHunterSchematicDesc"/>

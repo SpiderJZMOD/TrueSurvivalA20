@@ -226,10 +226,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="jz_Rosemary" count="1"/>
 </recipe>
 
-<recipe name="resourceYuccaFibers" count="2" >
-	<ingredient name="jz_Rosemary" count="1"/>
-</recipe>
-
 <recipe name="frameShapes:VariantHelper" count="1" tags="learnable" >
 	<ingredient name="resourceWood" count="2"/>
 </recipe>
@@ -704,10 +700,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 <recipe name="jz_DrinkVeggieJuice" count="1" craft_time="20" craft_exp_gain="30">
 	<ingredient name="jz_FoodServingVeggie" count="15" />
+	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
 <recipe name="jz_DrinkFruitJuice" count="1" craft_time="20" craft_exp_gain="30" >
 	<ingredient name="jz_FoodServingFruit" count="15" />
+	<ingredient name="drinkJarEmpty" count="1"/>
 </recipe>
 
 <recipe name="jz_FoodVeggieSalad" count="1" craft_time="7" craft_exp_gain="8" tags="jz_ChefTag">
@@ -9221,171 +9219,129 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesImprovisedQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesImprovisedQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesImprovisedQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesImprovisedQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesPipeGunQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesPipeGunQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesPipeGunQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesPipeGunQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesToolQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesToolQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesToolQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesToolQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesElectronicQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesElectronicQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesElectronicQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesElectronicQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesLightArmorQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesLightArmorQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesLightArmorQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesLightArmorQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHeavyArmorQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHeavyArmorQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHeavyArmorQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHeavyArmorQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHandgunQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHandgunQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHandgunQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesHandgunQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesShotgunQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesShotgunQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesShotgunQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesShotgunQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesMachineGunQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesMachineGunQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesMachineGunQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesMachineGunQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesRlifeQL3Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesRlifeQL4Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesRlifeQL5Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIWorkbenchUpgradesRlifeQL6Redo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIStoveQuestRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <recipe name="jz_QIKitchenQuestRedo" count="1" craft_area="jz_ResearchDesk" craft_time="30" craft_exp_gain="0" tags="learnable">
-	<ingredient name="resourceYuccaFibers" count="1" />
 </recipe>
 
 <!-- QISatRadio Crafted ******************************************************************************************************************************************************* -->

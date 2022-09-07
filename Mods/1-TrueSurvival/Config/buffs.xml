@@ -29454,13 +29454,24 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<passive_effect name="Mobility" operation="perc_set" value=".25"/>
+			<requirement name="!EntityHasMovementTag" tags="driving"/>
+				<passive_effect name="Mobility" operation="perc_set" value=".25"/>
 		</effect_group>
-		<effect_group name="Trip Chance">
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".tripChance" operation="set" value="5"/> 
-			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="2.5">
-				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.tripChance"/>
-			</triggered_effect>
+		<effect_group name="Trip Chance Walking">
+			<requirement name="!EntityHasMovementTag" tags="driving"/>
+			<requirement name="EntityHasMovementTag" tags="walking"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".tripChance" operation="set" value="5"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="2.5">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.tripChance"/>
+				</triggered_effect>
+		</effect_group>
+		<effect_group name="Trip Chance Running">
+			<requirement name="!EntityHasMovementTag" tags="driving"/>
+			<requirement name="EntityHasMovementTag" tags="running"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".tripChance" operation="set" value="15"/> 
+				<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="2.5">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.tripChance"/>
+				</triggered_effect>
 		</effect_group>
 	</buff>
 		

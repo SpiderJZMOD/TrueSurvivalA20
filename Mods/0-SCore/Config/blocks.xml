@@ -226,7 +226,7 @@
 				<property name="Logging" value="false"/>
 				<property name="CaveEnabled" value="false"/>
 
-				<property name="CavePath" value="@modfolder:/Caves/Stamps/cave11.png" />
+				<property name="CavePath" value="@modfolder:/Caves/Stamps/testLegit.png" />
 				<property name="CavePrefab" value="Large" />
 				
 				<!-- Legacy is the original style.  Sebastian is an alternative, FastNosieSIMD -->
@@ -555,7 +555,7 @@
 			<property name="Model" value="#@modfolder:Resources/gupMagicPortal.unity3d?gupMagicPortal"/>
 		</block>
 		-->
-
+<!--
 		<block name="sphereiiAoETest">
 			<property name="Class" value="DecoAoE, SCore" />
 			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
@@ -574,7 +574,7 @@
 			<property name="VehicleHitScale" value="999"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
-
+-->
 	</append>
 	
 	
