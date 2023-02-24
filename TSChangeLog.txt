@@ -1,4 +1,48 @@
 ********************************************True Survival Change Log*******************************************
+2/23/2023 A20.6 Build #1.12
+-Updated Sphereii’s Score
+-Added the Quartz mod by Laydor
+-Added stronger and more variance to weather effects in each biome
+-Lowered the amount of Carrots and Potatoes growing in the wild
+-Fixed Players being able to trample crops
+-Changed explosive blocks to be able to catch on fire
+-Made POI Spotlights able to be picked up with the Crowbar
+-Added Kitchen Workstation crafting icon
+-Increased the number of quest to upgrade workstations
+-Staggered the progression of the quality of items on quality crafting workstations 
+-Fixed Orange trees allowing to much fertilizer to be used
+-Removed Scaffolding Block
+-Added new Score Feature - Carry Weight
+-Removed vanilla Encumbrance system
+-Everything but building blocks have a weight to them
+-At 100% your Max Carry Weight you will start to be slowed down
+-At 150% your Max Carry Weight you will not be able to move or gain Stamina
+-All old encumbrance effects by items converted to new weight system
+-Comprehensive Injuries System reconfigured to remove all bugs
+-Vanilla weather effects removed
+-New weather effects added Overheating, Heat Stroke, Freezing and Hypothermia 
+-Added notification system for losing Wellness, Nutrition or gaining Fatigue. Now whenever something effects them negatively you will know
+-Reconfigured the Fatigue system to degrade in relation to your hunger instead of time of day
+-Reconfigured all nutrition stats to degrade in relation to hunger instead of time of day
+-Added new Custom Stat Display on hud that shows Stamina, Health, Hunger, Thirst, All 3 nutrition stats and your Diet Level
+-The Custom Stat Display contains notches on each stat bar to represent the point at which negative effects happen
+-Changed the Compass to show Players current Temp, Weather Temp, Day and Time
+-Changed clothes pockets to give extra Carry Weight
+-Changed clothing to have 6 quality levels that can be damaged and need repairing
+-You can increase the quality of clothing by upgrading it to the next quality level
+-Fixed quality workstations crafting categories
+-Added 12 stats to display on stat display panel
+-Added 12 ingredient max for crafting
+-Changed Armor to break if not repaired
+-Rebalanced all food items stats. 
+-Removed some old and added new food items
+-Rebalanced the Nutrition System. Whereas before all nutrition was accumulative, now the nutrition stats increase the more complex and higher lv the dish is
+-Changed Food Serving from being a item received from scraping to a item crafted
+-Fixed all reported bugs
+-Added broken variants to all weapons, tools and vehicles
+-Broken items can be repaired to working condition even if you do not have the recipe to craft the item from scratch
+-And more things I forgot
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 9/6/2022 A20.6 Build #1.11
 -Updated Score
 -Fixed Mushrooms and Pumpkin growth stages
