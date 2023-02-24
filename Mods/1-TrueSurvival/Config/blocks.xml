@@ -44210,6 +44210,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,rocket"/>
 	<property name="CanPickup" value="true" param1="jz_SimpleCobblestoneShapesBlock"/>
 	<property name="LightOpacity" value="0"/>
+	<property class="RepairItems">
+		<property name="resourceCobblestones" value="1" />
+	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneShapes:cube"/>
 		<property name="Item" value="resourceCobblestones"/>
