@@ -64,6 +64,7 @@
     <Compile Include="Harmony\EntityAlive\AddScriptToTransform.cs" />
     <Compile Include="Harmony\EntityAlive\EntityAlivePatches.cs" />
     <Compile Include="Harmony\EntityAlive\UpdateCurrentBlockposAndValueFire.cs" />
+    <Compile Include="Harmony\EntityDrone\EntityDronePatches.cs" />
     <Compile Include="Harmony\EntityMoveHelper\DigStart.cs" />
     <Compile Include="Harmony\EntityMoveHelper\StartJump.cs" />
     <Compile Include="Harmony\EntityMoveHelper\Stop.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Harmony\NPCFeatures\EntityNPCMakeVulnerable.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityNPCSpeedFix.cs" />
     <Compile Include="Harmony\NPCFeatures\EntityTraderEModalSetLookAt.cs" />
+    <Compile Include="Harmony\PlayerFeatures\Encumbrance.cs" />
     <Compile Include="Harmony\PlayerFeatures\EntityStats.cs" />
     <Compile Include="Harmony\PlayerFeatures\NerdPoll.cs" />
     <Compile Include="Harmony\PlayerFeatures\OneBlockCrouch.cs" />
@@ -146,6 +148,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\Animation\AvatarAnimalControllerSDX.cs" />
     <Compile Include="Scripts\Animation\MecanimSDX.cs" />
+    <Compile Include="Scripts\Blocks\BlockClockDMT.cs" />
+    <Compile Include="Scripts\Blocks\BlockClockScript.cs" />
     <Compile Include="Scripts\Blocks\BlockCropControlPanel.cs" />
     <Compile Include="Scripts\Blocks\BlockFarmPlotSDX.cs" />
     <Compile Include="Scripts\Blocks\BlockMortSpawner.cs" />
@@ -236,6 +240,7 @@
     <Compile Include="Scripts\Entities\EntityUtilities.cs" />
     <Compile Include="Scripts\Entities\EntityZombieFlockSDX.cs" />
     <Compile Include="Scripts\Entities\EntityZombieFlyingSDX.cs" />
+    <Compile Include="Scripts\Entities\IEntityOrderReceiverSDX.cs" />
     <Compile Include="Scripts\Entities\LegacyEntityClasses.cs" />
     <Compile Include="Scripts\Entities\ModGeneralUtilities.cs" />
     <Compile Include="Scripts\Features\AdvLogging.cs" />
@@ -266,6 +271,7 @@
     <Compile Include="Scripts\Managers\SCoreQuestEventManager.cs" />
     <Compile Include="Scripts\Managers\WaterPipeManager.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAddBuffByFactionSDX.cs" />
+    <Compile Include="Scripts\MinEvents\MinEventActionAttachPrefabWithAnimationsToEntity.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionCheckFireProximity.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionClearOwner.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionSetOwner.cs" />
@@ -307,6 +313,7 @@
     <Compile Include="Scripts\MusicBoxes\MusicBoxScript.cs" />
     <Compile Include="Scripts\NetPackage\NetPackageAddBroadcastePosition.cs" />
     <Compile Include="Scripts\NetPackage\NetPackageAddExtinguishPosition.cs" />
+    <Compile Include="Scripts\NetPackage\NetPackageQuestBlockDestroyedSDX.cs" />
     <Compile Include="Scripts\NetPackage\NetPackageRemoveBroadcastPosition.cs" />
     <Compile Include="Scripts\NetPackage\NetPackageRemoveFirePosition.cs" />
     <Compile Include="Scripts\NetPackage\NetPackageAddFirePosition.cs" />

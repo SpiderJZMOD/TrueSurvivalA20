@@ -1,30 +1,6 @@
 ﻿<configs>
   <append xpath="/blocks">
-    <block name="terrClay">
-      <property name="CreativeMode" value="None"/>
-      <property name="Material" value="MresourceClayLump"/>
-      <property name="LPHardnessScale" value="2"/>
-      <property name="Shape" value="Terrain"/>
-      <property name="Mesh" value="terrain"/>
-      <property name="Texture" value="301,570,570,570,570,570"/>
-      <property name="ImposterExclude" value="true"/>
-      <property class="RepairItems">
-        <property name="resourceClayLump" value="30"/>
-      </property>
-      <drop event="Harvest" name="resourceClayLump" count="30" tag="oreWoodHarvest"/>
-      <drop event="Destroy" name="resourceYuccaFibers" count="1"/>
-      <drop event="Fall" name="resourceClayLump" count="30" prob="0.5" stick_chance="0"/>
-      <property name="CanMobsSpawnOn" value="true"/>
-      <property name="Map.Color" value="107,78,57"/>
-      <property name="EconomicValue" value="5"/>
-      <property name="EconomicBundleSize" value="1"/>
-      <property name="SellableToTrader" value="false"/>
-      <property name="FilterTags" value="fterrain"/>
-      <property name="SortOrder1" value="d0l0"/>
-      <property name="SortOrder2" value="0050"/>
-      <property name="DisplayType" value="blockTerrain"/>
-    </block>
-	
+     
 	<block name="ConfigFeatureBlock">
 			<property name="Extends" value="terrDesertGround"/>
 
@@ -62,11 +38,7 @@
 				<!-- reasonable block range seems to be around 10. -->
 				<property name="Debug" value="false" />
 				<!-- shows name of opened container/workstation in log -->
-				<!-- Not needed for remote Crafting -->
 				<property name="BroadcastManage" value="false"/>
-				<!-- Enable Broadcast Feature Experimental -->
-				<property name="InvertBroadcast" value="false"/>
-				<!-- enables broadcasting for all but selected containers-->
 				<!-- disable remote crafing on named workstations case sensitive-->
 				<property name="disablereceiver" value="forge, tbd" />
 				<!-- disable remote crafing from named containers. case sensitive e.g storageCrate, birdNest -->
@@ -81,6 +53,15 @@
 				<property name="bindtoWorkstation" value=""/>
 				<property name="enforcebindtoWorkstation" value="false"/>
 				<!-- disables remote crafting if not bound -->
+			</property>
+			
+			<property class="BlockUpgradeRepair" >
+				<!-- disables repair/upgrade when enemies nearby -->
+				<property name="BlockOnNearbyEnemies" value="true"/>
+				<property name="DistanceEnemy" value="25" />
+				<!-- remote repair/upgrade -->
+				<property name="ReadFromContainers" value="true"/>
+				<property name="Distance" value="40" />
 			</property>
 
 			<property class="AdvancedLockpicking" >
@@ -119,6 +100,26 @@
 				<property name="VehicleNoTake" value="false" />
 
 				<property name="ExtendedSigns" value="true" />
+				
+				<!-- Enables item weight encumbrance on the Player bag -->
+				<property name="Encumbrance" value="true" />
+
+				<!-- how much encumbrance before "max" threshold is set, and penalties are incurred. -->
+				<property name="MaxEncumbrance" value="150" />
+
+				<!-- This cvar value will be placed on the player and will be a percentage of encumbrance. -->
+				<!-- 1f = at max encumbrance. 1.5, 50% over encumbrance -->
+				<property name="EncumbranceCVar" value="encumbranceCVar" />
+				
+				<!-- Include Tool belt? -->
+				<property name="Encumbrance_ToolBelt" value="true" />
+				
+				<!-- Include equipment ? -->
+				<property name="Encumbrance_Equipment" value="true" />
+				
+				<!-- Each item that does not have a ItemWeight property will be weighed at this value. -->
+				<property name="MinimumWeight" value="0.0" />
+				
 			</property>
 
 			<property class="AdvancedZombieFeatures">
@@ -133,7 +134,7 @@
 
 				<property name="SmarterEntities" value="false" />
 				<!-- gives trap avoidance to entities. -->
-				
+
 				<property name="UMATweaks"  value="false" /> 	<!-- Improvements on reducing load times of UMA Zombies -->
 				<property name="LowerResolutionUMA" value="false" /> 	<!-- Lower resolution on UMAs drastically -->
 			</property>
@@ -308,19 +309,23 @@
 				
 				<!-- How much damage to do to the water source when it gets consumed -->
 				<property name="WaterDamage" value="1" />
+
+				<!-- Default particle for when a crop is used.-->
+				<!-- ie: #@modfolder:Resources/guppyFountainDisplay.unity3d?gupFountainDisplay from Bloom's -->
+				<property name="WaterParticle" value="NoParticle" />
 				
 			</property>
 
 			<property class="FireManagement" >
 				<property name="Logging" value="false"/>
-				<property name="FireEnable" value="true"/> 				<!-- Enables the feature -->
+				<property name="FireEnable" value="false"/> 				<!-- Enables the feature -->
 				<property name="HeatMapStrength" value="1"/> 			<!-- Determines how much each block contributes to heat -->
 				<property name="CheckInterval" value="20" /> 				<!-- How many seconds before checking blocks,spreading fire, etc -->
 				<property name="FireDamage" value="50" /> 				<!-- How much damage each time it checks will do the block. -->
 				<property name="SmokeTime" value="60" />					<!-- How long the smoke will stay on a block. -->
 				<property name="FireSound" value="FireMediumLoop" />		<!-- Sound Data Node to use. Can be over-ridden by individual block -->
 				<property name="BuffOnFire" value="buffBurningMolotov" /> <!-- The buff that is applied to the entity alive when they step into the flames -->
-				<property name="MaterialID" value="Mplants, Mcorn" /> 	<!-- Checks the material's id to see if it should ignite  -->
+				<property name="MaterialID" value="Mplants, Mcorn, MFuelBarrelMetal, Mmetal_vehicle_burns, Msteel_vehicle_burns" /> 	<!-- Checks the material's id to see if it should ignite  -->
 				<property name="MaterialDamage" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's damage category to see if it should ignite  -->
 				<property name="MaterialSurface" value="wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic" /> <!-- Checks the material's surface category to see if it should ignite -->
 				<property name="SmokeParticle" value="#@modfolder:Resources/PathSmoke.unity3d?P_PathSmoke_X" />		<!-- Fire particle to use -->
@@ -335,7 +340,7 @@
 				-->
 			</property>	
 		</block>
-	
+
 		<block name="PathingCube">
 			<property name="Shape" value="ModelEntity" />
 			<!--property name="Model" value="#@modfolder:Resources/PathingCube.unity3d?PathingCube"/-->
@@ -345,6 +350,7 @@
 			<property name="CreativeMode" value="Player" />
 			<property name="CanPickup" value="true"/>
 			<property name="Collide" value="sight"/>
+
 		</block>
 
 		<block name="PathingCube2">
@@ -359,7 +365,7 @@
 			<property name="TakeDelay" value="3" />
 			<property name="Collide" value="sight"/>
 		</block>
-		
+
 		<!-- Cave air block -->
 		<block name="caveBlock02">
 			<property name="Extends" value="air"/>
@@ -379,7 +385,7 @@
 			<property name="Extends" value="cntWastelandRandomLootHelper"/>
 			<property name="CreativeMode" value="Dev"/>
 		</block>
-		
+
 		<block name="SpawnCube">
 			<property name="Extends" value="woodNoUpgradeMaster"/>
 			<property name="Model" value="#@modfolder:Resources/PathingCube.unity3d?PathingCube"/>
@@ -399,6 +405,8 @@
 			<drop event="Fall" count="0" prob="0"/>
 			<property name="Collide" value="sight" />
 		</block>
+
+	
 
 		<block name="TestSpawnCube">
 			<property name="Extends" value="SpawnCube"/>
@@ -430,16 +438,149 @@
 			<!-- NumberToSpawn spawns each time it block ticks. -->
 			<property name="TickRate" value="10" />
 		</block>
+
+		<block name="portalMaster">
+			<property name="Class" value="Portal, SCore" />
+			<property name="CooldownBuff" value="buffTeleportCooldown" />
+			<property name="Delay" value="2000" />
+
+			<!-- Uncomment to hard code the portal ID-->
+			<!--property name="Location" value="Portal01" /-->
+
+			<!-- determines if the name of the portal is displayed -->
+			<property name="Display" value="true" />
+
+			<!-- If the player has this buff, they will be able to see the portal name. -->
+			<!--property name="DisplayBuff" value="buffyours" /-->
+
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/PathingCube.unity3d?PathingCube"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceRockSmall" value="100"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="15,28" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="SortOrder1" value="70r2"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="DescriptionKey" value="guppyPortal_desc"/>
+		</block>
+	
+		<block name="samplePortal01">
+			<property name="Extends" value="portalMaster"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
+			<property name="Location" value="samplePortal01" /> <!-- Legacy and default -->
+			<property name="Display" value="true" />
+			<property name="RequiredPower" value="0" />  <!-- Does not require power to operate -->
+		</block>
+
+		<block name="samplePortal01b">
+			<property name="Extends" value="portalMaster"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
+			<property name="Location" value="source=samplePortal01cb,destination=samplePortal01b" />
+			<property name="Display" value="true" />
+			<property name="RequiredPower" value="0" /> 	<!-- Does not require power to operate -->
+		</block>
+		<block name="samplePortal02">
+			<property name="Extends" value="portalMaster"/>
+			<property name="Class" value="PoweredPortal, SCore" />
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
+			<property name="Location" value="source=samplePortal02,destination=samplePortal03" />  <!-- I am Portal02, I go to Portal03 -->
+			<property name="RequiredPower" value="0" />
+			<!-- Does not require power to operate -->
+
+			<property name="Display" value="true" />
+		</block>
+
+		<block name="samplePortal03">
+			<property name="Extends" value="portalMaster"/>
+			<property name="Class" value="PoweredPortal, SCore" />
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
+			<property name="Location" value="source=samplePortal03,destination=NA" />  <!-- I am Portal03, I go to NA, which is not created, thus not anywhere-->
+			<property name="RequiredPower" value="0" />
+			<!-- Does not require power to operate -->
+
+			<property name="Display" value="true" />
+		</block>
+
+		<block name="samplePortal04">
+			<property name="Extends" value="portalMaster"/>
+			<property name="Class" value="PoweredPortal, SCore" />
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="Entities/Electrical/power_switchPrefab"/>
+			<!--property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/-->
+			<property name="Display" value="true" />
+		</block>
+
+		<block name="samplePortal05">
+			<property name="Extends" value="portalMaster"/>
+			<property name="Class" value="PoweredPortal, SCore" />
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
+			<!-- I am samplePortal05, I go to samplePortal03, which is inside a prefab called farm_02-->
+			<property name="Location" value="source=samplePortal05,destination=samplePortal03,prefab=farm_02" />
+			<property name="RequiredPower" value="0" />
+			<!-- Does not require power to operate -->
+
+			<property name="Display" value="true" />
+		</block>
+
+		<block name="samplePortal06">
+			<property name="Extends" value="portalMaster"/>
+			<property name="Class" value="PoweredPortal, SCore" />
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="Model" value="#@modfolder:Resources/gupFuturePortal.unity3d?guppyFuturePortal"/>
+			<property name="RequiredPower" value="0" />
+			<property name="Display" value="true" />
+			<property name="Delay" value="200" />
+		</block>
 		
+		<block name="terrClay">
+      <property name="CreativeMode" value="None"/>
+      <property name="Material" value="MresourceClayLump"/>
+      <property name="LPHardnessScale" value="2"/>
+      <property name="Shape" value="Terrain"/>
+      <property name="Mesh" value="terrain"/>
+      <property name="Texture" value="301,570,570,570,570,570"/>
+      <property name="ImposterExclude" value="true"/>
+      <property class="RepairItems">
+        <property name="resourceClayLump" value="30"/>
+      </property>
+      <drop event="Harvest" name="resourceClayLump" count="30" tag="oreWoodHarvest"/>
+      <drop event="Destroy" name="resourceYuccaFibers" count="1"/>
+      <drop event="Fall" name="resourceClayLump" count="30" prob="0.5" stick_chance="0"/>
+      <property name="CanMobsSpawnOn" value="true"/>
+      <property name="Map.Color" value="107,78,57"/>
+      <property name="EconomicValue" value="5"/>
+      <property name="EconomicBundleSize" value="1"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="FilterTags" value="fterrain"/>
+      <property name="SortOrder1" value="d0l0"/>
+      <property name="SortOrder2" value="0050"/>
+      <property name="DisplayType" value="blockTerrain"/>
+    </block>
+
 	  <block name="terrWaterSpawner">
 		  <property name="Extends" value="SpawnCube"/>
 		  <property name="Class" value="SpawnCube2SDX, SCore" />
 		  <property name="Config" value="eg=AnimalSwiming;buff=buffOrderStay;pc=0;keep=0" />
 	  </block>
-	  
-	  
-
-  
   </append>
 
 </configs>

@@ -212,8 +212,8 @@
 		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
 
 		<passive_effect name="CraftingTier" operation="base_set" value="1"/>
-		<passive_effect name="CarryCapacity" operation="base_set" value="27"/>
-		<passive_effect name="BagSize" operation="base_set" value="45"/> <!-- number of slots on the inventory UI -->
+		<passive_effect name="CarryCapacity" operation="base_set" value="153"/>
+		<passive_effect name="BagSize" operation="base_set" value="153"/> <!-- number of slots on the inventory UI 45-->
 
 		<passive_effect name="ProjectileStickChance" operation="base_set" value=".5"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_add" value="-2" tags="glass"/>
@@ -241,7 +241,7 @@
 		-->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="5" tags="Upgrading"/>
 
-		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,jz_BuffCarryWeightSystem"/>
 	</effect_group>
 
 	<effect_group>
@@ -256,6 +256,9 @@
 			<passive_effect name="ExpDeficitMaxPercentage" operation="base_set" value="0"/>
 	</effect_group>
 	<!-- ********************************************************* JZMOD ADDED ************************************************** -->
+	<effect_group name="JZMOD Fatigue System">
+		<passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$fatigueTicker"/>
+	</effect_group>
 	<effect_group name="JZMOD Crafting Quality">
 		<passive_effect name="CraftingTier" operation="base_add" value="1" tags="jz_CraftingQualityTwo"/>
 		<passive_effect name="CraftingTier" operation="base_add" value="2" tags="jz_CraftingQualityThree"/>
@@ -313,16 +316,26 @@
     </effect_group>   
     <effect_group name="Dead is Dead Reset">
 		<requirement name="CVarCompare" cvar="$jz_WellnessLv" operation="LTE" value="10"/>
-            <triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
+			<triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
             <triggered_effect trigger="onSelfDied" action="RemoveLandClaims, TrueSurvival" target="self"/>
             <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>
+			
+			 <!--<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Player_Reset" />
+			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Player_Reset_Remove_Vehicle" />
+			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Player_Reset_Remove_Turrets" />
+			<triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>-->
             <triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffResetPlayerOnRespawn"/>           		
     </effect_group>
     <effect_group name="Dead is Dead Reset">
 		<requirement name="HasBuff" buff="jz_BuffDeadIsDeadResetTag"/>
-            <triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
+			<triggered_effect trigger="onSelfDied" action="ResetSpawnPoints, TrueSurvival" target="self"/>
             <triggered_effect trigger="onSelfDied" action="RemoveLandClaims, TrueSurvival" target="self"/>
             <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>
+			
+			<!--<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Player_Reset" />
+			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Player_Reset_Remove_Vehicle" />
+			<triggered_effect trigger="onSelfDied" action="CallGameEvent" event="TS_Player_Reset_Remove_Turrets" />
+            <triggered_effect trigger="onSelfDied" action="RemovePlayerVehicle, TrueSurvival" target="self"/>-->
             <triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck01,buffStatusCheck02,buffResetPlayerOnRespawn"/>           		
     </effect_group>
    
@@ -551,18 +564,16 @@
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
 
 	<property name="ExperienceGain" value="400"/><!-- XP grunt -->
-	<!--<property name="LootDropProb" value=".02"/> JZMOD -->
-	<property name="LootListOnDeath" value="genericZombie"/> <!-- JZMOD-->
-	<!--<property name="LootDropEntityClass" value="EntityLootContainerRegular"/> JZMOD -->
+	<!--<property name="LootDropProb" value="1"/> JZMOD-->
+	<property name="LootListOnDeath" value="genericZombie"/>  
+	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="1"/> 
+	<!--<property name="LootDropEntityClass" value="jz_GoreLootContainerRegular"/>-->
 
-	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="1"/> <!-- JZMOD -->
-	<property name="TimeStayAfterDeath" value="10"/><!-- JZMOD -->
+	
+	<property name="TimeStayAfterDeath" value="5"/><!-- JZMOD -->
 	<property name="DeadBodyHitPoints" value="1000"/> <!-- For harvesting or resisting corpse destruction --> <!-- to adjust corpse destruction speed for the non-harvest zombie corpses. This property does not extend. -->
-
 	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper" />
-
 	<property name="Buffs" value="jz_BuffZombieBuffs"/><!-- JZMOD -->
-
   <effect_group name="Base Effects"> <!-- zombieTemplateMale -->
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 		<passive_effect name="HealthMax" operation="base_set" value="75,300"/><!-- JZMOD -->
@@ -581,7 +592,7 @@
 
 
 
-<!-- ***** ZOMBIES : SLIM,  slightly lower HP but faster ***** -->
+<!-- ***** ZOMBIES : SLIM,  slightly lower HP but faster ***** 0.9-->
 
 <entity_class name="zombieArlene" extends="zombieTemplateMale">
 	<property name="SizeScale" value="0.9"/>
@@ -5719,6 +5730,55 @@ Kinda sorta works but is buggy and we don't have time for that.
 		<passive_effect name="HealthMax" operation="base_set" value="10"/>
 	</effect_group>
 </entity_class>
+
+
+<entity_class name="jz_GoreLootContainerRegular">	
+	<!--<property name="HideInSpawnMenu" value="true"/>-->
+	<property name="Mesh" value="#Entities/Zombies?Zombies/corpse1Prefab.prefab"/>
+	<property name="ModelType" value="Custom"/>
+	<property name="Prefab" value="Backpack"/>
+	<property name="Class" value="EntityLootContainer"/>
+	<property name="Parent" value="Backpack"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="TimeStayAfterDeath" value="1200"/>
+	<property name="LootListOnDeath" value="genericZombie"/> 
+	<property name="Faction" value="none"/>
+	<property name="CorpseBlock" value="jz_ZombieLoot"/><property name="CorpseBlockChance" value="1"/>
+</entity_class>
+
+
+
+
+<!--Living Ammo
+<entity_class name="LivingAmmo" extends="animalTemplateTimidFlying">
+			<property name="Tags" value="entity_ammo,entity,familiar,summon"/>
+			<property name="Mesh" value="Animals/Vulture/animalVultureStandardRagdoll"/> 
+			<property name="Faction" value="companionanimals"/> 
+			<property name="LookAtAngle" value="0"/> 
+			<property name="SightRange" value="40"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="RootMotion" value="false"/>
+			<property name="PhysicsBody" value="ArcticFox"/>
+			<property name="IsEnemyEntity" value="false"/> 			
+			<property name="HandItem" value="meleeHandAnimalZombieVulture"/>
+			<property name="SizeScale" value="1"/> 
+			<property name="Weight" value="5"/> 
+			<property name="Mass" value="30"/> 
+
+			<property name="AITask-1" value="BreakBlock"/>
+			<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityZombie,0"/>
+			<property name="AITask-3" value="Look"/>
+			<property name="AITask-4" value="Wander"/>
+			<property name="AITask-5" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+			<property name="AITarget-2" value="BlockIf" data="condition=alert e 0"/>
+			<property name="AITarget-3" value="BlockingTargetTask"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityZombie,0,0"/>				
+			<property name="AITarget-5" value=""/>
+			<property name="ExperienceGain" value="0"/>
+			<property name="DeadBodyHitPoints" value="1"/>
+		</entity_class>-->
 
 </set>
 </configs> 

@@ -1,17 +1,21 @@
-﻿
+﻿using UnityEngine;
 
-// Clears the guard position
-// <triggered_effect trigger="onSelfBuffUpdate" action="GuardClear, SCore" />
-using UnityEngine;
-
+/// <summary>
+/// Clears the guard position.
+/// 
+/// <example>
+/// <code>
+/// &lt;triggered_effect trigger="onSelfBuffUpdate" action="GuardClear, SCore" /&gt;
+/// </code>
+/// </example>
+/// </summary>
 public class MinEventActionGuardClear : MinEventActionTargetedBase
 {
     public override void Execute(MinEventParams _params)
     {
-        var entityAliveSDX = _params.Self as EntityAliveSDX;
-        if (entityAliveSDX == null) return;
+        if (!(_params.Self is IEntityOrderReceiverSDX entityOrderReceiver)) return;
 
-        entityAliveSDX.guardPosition = Vector3.zero;
-        entityAliveSDX.guardLookPosition = Vector3.zero;
+        entityOrderReceiver.GuardPosition = Vector3.zero;
+        entityOrderReceiver.GuardLookPosition = Vector3.zero;
     }
 }

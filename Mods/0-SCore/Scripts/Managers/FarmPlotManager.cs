@@ -34,6 +34,7 @@ public class FarmPlotManager
         FarmPlots.Add(position, new FarmPlotData(position));    
     }
 
+ 
     public void Remove(Vector3i position)
     {
         if ( FarmPlots.ContainsKey(position))
@@ -44,6 +45,13 @@ public class FarmPlotManager
     {
         if ( FarmPlots.ContainsKey(position))
             return FarmPlots[position];
+
+        var lowerPosition = position + Vector3i.down;
+        if (FarmPlots.ContainsKey(lowerPosition))
+            return FarmPlots[lowerPosition];
+
+
+        
         return null; 
     }
     public FarmPlotData GetRandomCloseEntry(Vector3i position, float range = 50)
@@ -54,25 +62,50 @@ public class FarmPlotManager
         return null;
     }
 
-    public FarmPlotData GetFarmPlotsNearby( Vector3i position)
+    public FarmPlotData GetFarmPlotsNearby( Vector3i position, bool needWater = true)
     {
-        foreach( var neighbor in Vector3i.AllDirections)
+
+        var range = 1;
+        for (var x = -range; x <= range; x++)
         {
-            var blockPos = position + neighbor;
-            if (FarmPlots.ContainsKey(blockPos) && FarmPlots[blockPos].Visited == false)
-                return FarmPlots[blockPos];
+            for (var z = -range; z <= range; z++)
+            {
+                for (var y = position.y - 2; y <= position.y + 2; y++)
+                {
+                    var blockPos = new Vector3i(position.x + x, y, position.z + z);
+                    if (FarmPlots.ContainsKey(blockPos) && FarmPlots[blockPos].Visited == false)
+                    {
+                        if (!FarmPlots[blockPos].HasPlant() ) return FarmPlots[blockPos];
+
+                        if (needWater && FarmPlots[blockPos].HasWater())
+                            return FarmPlots[blockPos];
+                        if (!needWater)
+                            return FarmPlots[blockPos];
+                    }
+                }
+            }
         }
+
         return null;
     }
 
     public FarmPlotData GetFarmPlotsNearbyWithPlants(Vector3i position)
     {
-        foreach (var neighbor in Vector3i.AllDirections)
+
+        var range = 1;
+        for (var x = -range; x <= range; x++)
         {
-            var blockPos = position + neighbor;
-            if (FarmPlots.ContainsKey(blockPos) && FarmPlots[blockPos].HasPlant() && FarmPlots[blockPos].Visited == false)
-                return FarmPlots[blockPos];
+            for (var z = -range; z <= range; z++)
+            {
+                for (var y = position.y - 2; y <= position.y + 2; y++)
+                {
+                    var blockPos = new Vector3i(position.x + x, y, position.z + z);
+                    if (FarmPlots.ContainsKey(blockPos) && FarmPlots[blockPos].HasPlant() && FarmPlots[blockPos].Visited == false)
+                        return FarmPlots[blockPos];
+                }
+            }
         }
+
         return null;
     }
     public FarmPlotData GetClosesUnmaintainedWithPlants(Vector3i position, float range = 50)

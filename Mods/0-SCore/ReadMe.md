@@ -10,6 +10,272 @@ The 0-SCore is the key component to enable extra functionality for 7 Days To Die
 
 
 [ Change Log ]
+
+Version: 20.6.414.1626
+	[ Farming ]
+		- Fixed a bug where the Farmer would not see FarmPlots
+			- The BlockFarmPlosSDX was not setting IsNotifyOnLoadUnload to true, thus it was not registering being loaded and unloaded.
+
+	[ Encumbrance ]
+		- Fixed a bug where the encumbrance of equipment was not being done correctly
+
+Version: 20.6.413.1556
+
+	[ Craft / Repair From Containers ]
+		- Adjusted permission for Broadcast feature to allow members of the same party to access locked containers.
+
+
+Version: 20.6.412.1907
+
+	[ Craft / Repair From Containers ]
+		- Rolled back a fix when count of items were doubled.
+			- Seems this fixes it for some containers, but for others, it displays no items.
+
+	[ Fire Manager ]
+		- Integrated FuriousRamsay's fix for the MinEffectAddFireDamage.
+			- In some cases, a melee weapon will set fire to contents on the other side of a wall or door, if the ray cast went through the block.
+
+	[ Farming ]
+		- Fixed an issue where a water plant was doing damage to a sprinkler, instead of water block
+		- Added an additional scan for UAITaskFarming to do a wider scan if it doesn't find anything interesting.
+
+Version: 20.6.409.1626
+
+	[ Craft / Repair From Containers ]	
+		- If a container is open, do not include the contents in the broadcast scan.
+
+	[ Farming ]
+		- Fixed an issue where a Plant could not consume water from the water, through the sprinkler.
+		- Added a fix to help improve Farmer to reach corner farm plots
+		- If a PlantGrowingSDX block has a PlantGrowing.Wilt, it will flag the plant to wilt if there's no water
+
+		- Added new Config Block Entry called WaterParticle on CropManagement node.
+
+			- When a plant consumes water, this particle will be applied.
+			- When a plant is first planted, this particle will be applied.
+			- Default particle in Bloom's Family Farming is from Guppycur. 
+				It will run for 5 seconds, then stop looping.
+				The particle is not removed until the plant is removed.
+
+			Default: 
+				<property name="WaterParticle" value="NoParticle" />
+
+			Bloom's Family Farming XPath:
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CropManagement']/property[@name='WaterParticle']/@value">#@modfolder:Resources/guppyFountainDisplay.unity3d?gupFountainDisplay</set>
+			
+			- Each Plant can over-ride the particle at the block level, using the same property. 
+				<!-- No particle for this particular plant -->
+				<property name="WaterParticle" value="NoParticle" />
+
+Version: 20.6.408.1442
+
+	[ Craft From Containers 
+		- Fixed an issue where craft / repair from containers was checking tool belt, then containers. 
+			It was checking to see if the item was in the backpack, but not consuming it.
+
+
+Version: 20.6.408.1121
+
+	[ Craft From Containers ]
+		- Fixed an issue where GetItemCount() patch was searching for ingredients twice, resulting in mis-reporting (2x amount actually available )
+
+	[ Encumbrance ]
+		- Added basic encumbrance.
+		- Encumbrance check fires when something is added / removed from back pack, toolbelt, and equipment.
+		- Once encumbrance is calculated, it's total value is added to a cvar, specified in the Config block. By default, this is encumbranceCVar.
+		- The value of the cvar is based on percent.  When set to 1f, the player is considered at MaxEncumbrance. 
+			- A value of 1.5 means the player is considered to b e 50% over encumbered.
+		- Maximum Encumbrance is read from the Config Block. However, if the CVar "MaxEncumbrance" is set, it will use that value instead.
+			- If Max Encumrabrance drops below 0, it will be reset to the Config Block Entry.
+			- The CVar will not be reset, only the value being used to perform the calculation.
+
+		- New configuration options added to SCore's Config block
+				<!-- Enables item weight encumbrance on the Player bag -->
+				<property name="Encumbrance" value="false" />
+
+				<!-- how much encumbrance before "max" threshold is set, and penalties are incurred. -->
+				<property name="MaxEncumbrance" value="10000" />
+
+				<!-- This cvar value will be placed on the player and will be a percentage of encumbrance. -->
+				<!-- 1f = at max encumbrance. 1.5, 50% over encumbrance -->
+				<property name="EncumbranceCVar" value="encumbranceCVar" />
+				
+				<!-- Include Tool belt? -->
+				<property name="Encumbrance_ToolBelt" value="false" />
+				
+				<!-- Include equipment ? -->
+				<property name="Encumbrance_Equipment" value="false" />
+				
+				<!-- Each item that does not have a ItemWeight property will be weighed at this value. -->
+				<property name="MinimumWeight" value="0.1" />
+
+
+			Recommend XPath:
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance']/@value">true</set>
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance_ToolBelt']/@value">true</set>
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance_Equipment']/@value">true</set>
+				<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='MinimumWeight']/@value">1</set>
+
+		- Each item can have a property called ItemWeight which will over-ride the MinimumWeight from the SCore's block's entry.
+				<property name="ItemWeight" value="10" />
+
+		- ItemWeight can be 0, and can also be negative numbers.
+
+
+
+	[ Farming ]
+		- Fixed a bug where a water sprinkler was acting as an independent water source. 
+			-> Water sprinkler is now checking to see if its connected to a valid water source
+		- Fixed an issue where crops could be planted after a sprinkler was removed, and the area was no longer watered.
+		- Added debug information on pipes to show water source, and how much water is left.
+		- Added a Custom description for BlockPlantGrowing to show water information. This is for testing purposes.
+				<property name="DisplayInfo" value="Custom"/>
+		- Fixed an issue where Farmer would get bored and do nothing.
+
+
+Version:  20.6.405.854
+	[ Farming ]
+		- Fixed a bug where the water range check was incorrectly using the water range of air, rather than the plant.
+
+Version: 20.6.403.1003
+
+	[ Farming ]
+		- Fixed an issue where the sprinkler blocks were not registering themselves to the Valve System.
+			- Plants will check all valves ( sprinklers ) for their water range, then calculate if its within range of the valve.
+			- If there are no valves within range, plant will check for surrounding blocks for water.
+
+
+Version: 20.6.403.2043
+
+	[ Broadcast Feature ]
+		- Added code for Repair / Upgrade from storage
+		- Added check to see if enemy was nearby for Repair / Upgrade from storage
+
+	[ UAI Farming Task ]
+		- Moved seed decrements from UAI Task to the Manage method, to more accurately subtrack seed usage.
+		- Added water check to see if NPC can actually plant at the location.
+		- Added a Water Valve Check
+			- When a water block will scan for a water source, it'll check all the valves registered, and check if the plant is within range of the water block's water range
+			- In order for this water valve to be registered, it must be on. Just having a water valve that is not on, will not be sufficient for plant needs.
+					- This is different behaviour than using a regular non-valve water source.
+			- If the original valve is off when a plant checks, it will look for other valves to see if there's any water available on them.
+			- If none are found, it'll resort to legacy behaviour, and scan for water sources.
+
+			- BlockWaterSourceSDX has a new property. Default is 5f.
+				<property name="WaterRange" value="5" />
+
+
+	[ Trample Code ]
+		- Entities that have "notrample" cvar value greater than 0, will not cause crops to be damaged, if the crops damaged feature is enabled.
+		- Entities that have a "notrample" tag will not cause crops to be damaged.
+
+	[ Quest ]
+		- Added Localization support.
+			ObjectiveBuffSDX_keyword  ( fall back is ObjectiveBuff_keyword, which is simply Get in English )
+			<buff> If the buff name has a localization setting, it'll use that, in conjunaction with the keyword  Get <my buff>
+
+Version: 20.6.381.1359
+
+	[ Merge from khzmusik ]
+			- Fixed a null ref when an NPC would shoot a drone.
+
+			- Enhanced support for NPC Guard
+
+			The Guard command, when issued from a pathing cube, sets the NPC order to Guard. Since it is not issued by the NPCs leader or owner, the guard position is set to (exactly) where the NPC is standing.
+
+			This is different from the "GuardHere" response (aka "Stay where I am standing") in the hired NPC dialog menu. That dialog response sets the current order to Stay, and since it is issued by a player, 
+				the guard position is set to the center of the block where the player is standing.
+
+			This is all done by buffs. The buff from the pathing cube was already named "buffOrderGuard" in the C# code, but there was never a buff by that name in buffs.xml. So, I created a new buff for use by that code.
+
+			The buff used by the dialogs was "buffOrderGuardHere", which matched an existing buff in buffs.xml. That buff is unchanged.
+
+			Because the order is Guard, any NPC Core utility AI tasks that will not fire when the order is Stay, will still fire. This means NPCs will still run after enemies, reload, etc.
+
+			In order to have them stay where they are when initially spawned in, and return to their guard positions after they're done attacking enemies, a new AI task will need to be 
+				added in utilityai.xml. But this is not done in SCore.
+
+			No existing behavior should be affected by these changes; only POIs that have pathing cubes with "task=guard" will need these changes, and to my knowledge nobody is doing that.
+
+
+Version: 20.6.368.1433
+
+	[ Food Spoilage ]
+		- Fixed an issue with -99 not stopping spoilage when using PreserveBonus -99
+
+	[ RandomDeathSpawn ]
+		Bug Report #61:	Wrong spawns on multiplayer of "Burn Victim" #61 (https://github.com/SphereII/SphereII.Mods/issues/61 )
+			- Added isEntityRemote check before determine to spawn or not.
+
+	[ ObjectiveBlockDestroySDX ]
+		Added a NetPackage to help distribute the block being destroyed count to the party for shared accumulation
+
+	[ Fire Manager ]
+		- Disabled the extinguished check to see if a block has been flagged as extinguished or not.
+		- Added a check where extinguished removed a block from the fire map.
+		- New functionality is that each time a block is extinguished, it'll set the expired time, regardless if it's already in the list, counting down.
+			- If BlockA was extinguished, it can smoke for 20 seconds.
+			- After 20 seconds, BlockA can catch fire again.
+			- If BlockA is re-extinguished before the 20 seconds are past, expired time will be set back to 20.
+
+		- Old functionality is that each time a block is extinguished, it'll expire after the expired time, allowing it to re-ignite.
+			- If BlockA was extinguished, it can smoke for 20 seconds.
+			- After 20 seconds, BlockA can catch fire again.
+			- If BlockA is re-extinguished before the 20 seconds are past, it won't reset that time period.
+			
+
+Version: 20.6.297.1109
+
+	[ Enitity Alive SDX ]
+		- changes by kgiesing
+		
+		- With these changes, both EntityAliveSDX and EntityEnemySDX will implement that interface. 
+			- This should allow EntityEnemySDX to behave similarly to EntityAliveSDX
+
+			- This creates a new interface named IEntityOrderReceiverSDX, which should be used on any entity that can accept orders.
+
+			- Also, order-related blocks, MinEvents, and AI tasks are updated to use the interface type, rather than EntityAliveSDX directly.
+
+Version: 20.6.295.807
+
+	[ Broadcast Manager ]
+
+	- possible fix for Broadcastmanager not saving on Multiplayer games : by FuriousRamsay
+
+Version: 20.6.285.831
+
+	[ Broadcast Manager ]
+
+	- Broadcastmanager will now save and cleanup on exiting
+
+	- It should now be possible to broadcast from storages put down by other players
+		(storage must be locked if you don't want other players be able to remote craft from your storage)
+	
+	- Changed Button code for better support in custom UIs.
+	
+	[ Remote Crafting / Repairs ]
+	
+	- added remote repair/upgrade on  blocks by FuriousRamsay
+	- added blocking repair/upgrade when enemies nearby
+
+
+Version: 20.6.259.937
+
+	[ BlockClockDMT ]
+		- added in BlockClockDMT, which gives a working clock, updating an animator on the unity object every hour.
+		      <property name="Class" value="ClockDMT, SCore"/>
+
+	[ Spawn On Death ]
+		- Commented out code that would destroy the gore block, which may not be relevant anymore.
+
+	[ Remote Crafting ]
+		- Solved bug where broadcast button was not being hidden when broadcastmanager was disabled
+
+Version: 20.6.250.1020
+
+	[ Fire Manager ]
+		- Fixed a potential null ref when the fire check is firing before the game is fully loaded.
+
 Version: 20.6.249.1333
 
 	[ Random Death Spawn ]

@@ -150,33 +150,50 @@ If you do not declare them, the decorations of the main biome are used.
 	<biome name="snow" topsoil_block="terrSnow" biomemapcolor="#FFFFFF" lootstage_modifier = "1" lootstage_bonus="20">
 
 		<spectrum name="snow"/>
-
-		<weather name="default" prob="44">
-			<Temperature min="26" max="32" prob="1"/>
-			<CloudThickness min="10" max="30" prob="1"/>
+		
+		<weather name="TSNormalDay" prob="30">
+			<Temperature min="20" max="35" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="10" max="70" prob="65"/>
 			<Precipitation min="0" max="0" prob="1"/>
 			<Fog min="0" max="2" prob="1"/>
-			<Wind min="10" max="25" prob="1"/>
-			<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/> <!-- only one weather can have ParticleEffects -->
+			<Wind min="3" max="30" prob="1"/>
+			<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
 		</weather>
-		<weather name="fog" prob="8">
-			<Temperature min="20" max="30" prob="1"/>
-			<CloudThickness min="35" max="60" prob="1"/>
+		<weather name="TSColdDay" prob="15">
+			<Temperature min="-20" max="-15" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="10" max="70" prob="65"/>
 			<Precipitation min="0" max="0" prob="1"/>
-			<Fog min="7" max="18" prob="1"/>
+			<Fog min="0" max="2" prob="1"/>
+			<Wind min="3" max="30" prob="1"/>
+		</weather>
+		<weather name="TSHotDay" prob="10">
+			<Temperature min="35" max="45" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="10" max="70" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Fog min="0" max="2" prob="1"/>
+			<Wind min="3" max="30" prob="1"/>
+		</weather>
+		<weather name="fog" prob="7">
+			<Temperature min="-20" max="30" prob="1"/>
+			<CloudThickness min="35" max="90" prob="1"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Fog min="7" max="20" prob="1"/>
 			<Wind min="5" max="6" prob="1"/>
 			<spectrum name="Snowy"/>
 		</weather>
-		<weather name="snow" prob="40">
-			<Temperature min="18" max="28" prob="1"/>
-			<CloudThickness min="55" max="75" prob="1"/>
+		<weather name="snow" prob="30">
+			<Temperature min="-20" max="28" prob="1"/>
+			<CloudThickness min="55" max="90" prob="1"/>
 			<Precipitation min="30" max="60" prob="1"/>
 			<Fog min="1" max="5" prob="1"/>
-			<Wind min="18" max="25" prob="1"/>
+			<Wind min="18" max="30" prob="1"/>
 			<spectrum name="Snowy"/>
 		</weather>
 		<weather name="storm" prob="8">
-			<Temperature min="12" max="18" prob="1"/>
+			<Temperature min="-50" max="-1" prob="1"/>
 			<CloudThickness min="90" max="100" prob="1"/>
 			<Precipitation min="70" max="100" prob="1"/>
 			<Fog min="5" max="15" prob="1"/>
@@ -349,35 +366,51 @@ If you do not declare them, the decorations of the main biome are used.
 	<!-- Pine Forest Main Biome -->
 	<biome name="pine_forest" topsoil_block="terrForestGround" biomemapcolor="#004000" lootstage_modifier = "0" lootstage_bonus="0">
 
-		<weather name="default" prob="83">
-			<Temperature min="65" max="70" prob="1"/>
+		<weather name="TSNormalDay" prob="32">
+			<Temperature min="55" max="70" prob="1"/>
 			<CloudThickness min="0" max="0" prob="35"/>
 			<CloudThickness min="10" max="70" prob="65"/>
 			<Precipitation min="0" max="0" prob="1"/>
 			<Fog min="0" max="2" prob="1"/>
-			<Wind min="3" max="22" prob="1"/>
+			<Wind min="3" max="30" prob="1"/>
+		</weather>
+		<weather name="TSColdDay" prob="25">
+			<Temperature min="40" max="50" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="10" max="70" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Fog min="0" max="2" prob="1"/>
+			<Wind min="3" max="30" prob="1"/>
+		</weather>
+		<weather name="TSHotDay" prob="25">
+			<Temperature min="70" max="90" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="10" max="70" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Fog min="0" max="2" prob="1"/>
+			<Wind min="3" max="30" prob="1"/>
 		</weather>
 		<weather name="fog" prob="7">
-			<Temperature min="65" max="70" prob="1"/>
-			<CloudThickness min="35" max="70" prob="1"/>
+			<Temperature min="40" max="90" prob="1"/>
+			<CloudThickness min="35" max="85" prob="1"/>
 			<Precipitation min="0" max="0" prob="1"/>
-			<Fog min="16" max="27" prob="1"/>
+			<Fog min="16" max="35" prob="1"/>
 			<Wind min="2" max="5" prob="1"/>
 		</weather>
 		<weather name="rain" prob="7">
-			<Temperature min="65" max="70" prob="1"/>
+			<Temperature min="40" max="90" prob="1"/>
 			<CloudThickness min="70" max="90" prob="1"/>
 			<Precipitation min="30" max="80" prob="1"/>
 			<Fog min="1" max="3" prob="1"/>
-			<Wind min="10" max="25" prob="1"/>
+			<Wind min="10" max="35" prob="1"/>
 			<spectrum name="Rainy"/>
 		</weather>
-		<weather name="storm" prob="3">
-			<Temperature min="65" max="70" prob="1"/>
+		<weather name="storm" prob="4">
+			<Temperature min="40" max="90" prob="1"/>
 			<CloudThickness min="90" max="100" prob="1"/>
 			<Precipitation min="90" max="100" prob="1"/>
 			<Fog min="2" max="8" prob="1"/>
-			<Wind min="35" max="40" prob="1"/>
+			<Wind min="35" max="50" prob="1"/>
 			<spectrum name="Stormy"/>
 		</weather>
 
@@ -419,8 +452,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
-				<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.03"/>
-				<decoration type="block" blockname="plantedPotato3Harvest" prob="0.03"/> 
+				<decoration type="block" blockname="jz_PlantedCarrot3Harvest" prob="0.02"/>
+				<decoration type="block" blockname="plantedPotato3Harvest" prob="0.02"/> 
 				<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008" rotatemax="7"/>
 				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07" rotatemax="7"/>
 				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.07" rotatemax="7"/>
@@ -621,29 +654,42 @@ If you do not declare them, the decorations of the main biome are used.
 	<biome name="desert" topsoil_block="terrDesertGround" biomemapcolor="#FFE477" lootstage_modifier = "0.5" lootstage_bonus="10">
 
 		<spectrum name="desert"/>
-
-		<weather name="default" prob="87">
-			<Temperature min="95" max="105" prob="1"/>
-			<CloudThickness min="0" max="0" prob="33"/>
-			<CloudThickness min="10" max="50" prob="66"/>
+		<weather name="TSNormalDay" prob="35">
+			<Temperature min="85" max="105" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="0" max="50" prob="65"/>
 			<Precipitation min="0" max="0" prob="1"/>
-			<Wind min="8" max="25" prob="1"/>
+			<Wind min="10" max="30" prob="1"/>
 			<ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="7"/>
 		</weather>
-		<weather name="rain" prob="8">
-			<Temperature min="95" max="105" prob="1"/>
-			<CloudThickness min="55" max="75" prob="1"/>
+		<weather name="TSColdDay" prob="10">
+			<Temperature min="-5" max="-50" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="0" max="50" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Wind min="10" max="30" prob="1"/> 
+		</weather>
+		<weather name="TSHotDay" prob="25">
+			<Temperature min="100" max="135" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="0" max="50" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Wind min="10" max="30" prob="1"/>
+		</weather>
+		<weather name="rain" prob="5">
+			<Temperature min="-5" max="105" prob="1"/>
+			<CloudThickness min="55" max="90" prob="1"/>
 			<Precipitation min="25" max="55" prob="1"/>
 			<Fog min="1" max="4" prob="1"/>
 			<Wind min="15" max="35" prob="1"/>
 			<spectrum name="Rainy"/>
 		</weather>
-		<weather name="storm" prob="5">
-			<Temperature min="95" max="105" prob="1"/>
+		<weather name="storm" prob="25">
+			<Temperature min="120" max="150" prob="1"/>
 			<CloudThickness min="90" max="100" prob="1"/>
 			<Precipitation min="55" max="80" prob="1"/>
 			<Fog min="3" max="15" prob="1"/>
-			<Wind min="50" max="55" prob="1"/>
+			<Wind min="50" max="85" prob="1"/>
 			<spectrum name="Stormy"/>
 		</weather>
 
@@ -1025,25 +1071,40 @@ If you do not declare them, the decorations of the main biome are used.
 	<biome name="wasteland" topsoil_block="terrDestroyedStone" biomemapcolor="#ffa800" lootstage_modifier = "1.5" lootstage_bonus="30">
 
 		<spectrum name="burnt_forest"/>
-
-		<weather name="default" prob="80">
-			<Temperature min="50" max="90" prob="1"/>
-			<CloudThickness min="0" max="0" prob="30"/>
-			<CloudThickness min="10" max="70" prob="70"/>
+		<weather name="TSNormalDay" prob="35">
+			<Temperature min="45" max="80" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="0" max="70" prob="65"/>
 			<Precipitation min="0" max="0" prob="1"/>
 			<Fog min="0" max="5" prob="1"/>
-			<Wind min="7" max="20" prob="1"/>
+			<Wind min="10" max="30" prob="1"/>
+		</weather>
+		<weather name="TSColdDay" prob="10">
+			<Temperature min="15" max="35" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="0" max="70" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Fog min="0" max="5" prob="1"/>
+			<Wind min="10" max="30" prob="1"/>
+		</weather>
+		<weather name="TSHotDay" prob="25">
+			<Temperature min="85" max="105" prob="1"/>
+			<CloudThickness min="0" max="0" prob="35"/>
+			<CloudThickness min="0" max="70" prob="65"/>
+			<Precipitation min="0" max="0" prob="1"/>
+			<Fog min="0" max="5" prob="1"/>
+			<Wind min="10" max="30" prob="1"/>
 		</weather>
 		<weather name="rain" prob="15">
-			<Temperature min="50" max="90" prob="1"/>
+			<Temperature min="15" max="105" prob="1"/>
 			<CloudThickness min="75" max="90" prob="1"/>
 			<Precipitation min="30" max="80" prob="1"/>
 			<Fog min="2" max="5" prob="1"/>
-			<Wind min="10" max="25" prob="1"/>
+			<Wind min="10" max="30" prob="1"/>
 			<spectrum name="Rainy"/>
 		</weather>
 		<weather name="storm" prob="5">
-			<Temperature min="50" max="90" prob="1"/>
+			<Temperature min="5" max="115" prob="1"/>
 			<CloudThickness min="90" max="100" prob="1"/>
 			<Precipitation min="90" max="100" prob="1"/>
 			<Fog min="3" max="15" prob="1"/>

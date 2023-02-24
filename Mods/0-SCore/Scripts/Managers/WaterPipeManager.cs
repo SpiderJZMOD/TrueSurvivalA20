@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 
 // Water Pipe Manager to handle all piping data.
@@ -14,6 +15,7 @@ public class WaterPipeManager
     private Dictionary<Vector3i, PipeData> Pipes = new Dictionary<Vector3i, PipeData>();
     private int maxPipes = 50;
     private static Dictionary<Vector3i, Vector3i> WaterValve = new Dictionary<Vector3i, Vector3i>();
+
    
     public static WaterPipeManager Instance
     {
@@ -28,6 +30,10 @@ public class WaterPipeManager
         }
     }
 
+    public Dictionary<Vector3i, Vector3i> GetWaterValves()
+    {
+        return WaterValve;
+    }
     public int GetWaterDamage(Vector3i WaterPos)
     {
 
@@ -44,29 +50,72 @@ public class WaterPipeManager
 
     }
 
+    public string GetWaterSummary( Vector3i plantPos)
+    {
+        var result = true;
+        Vector3i WaterPos;
+        var plantData = CropManager.Instance.Get(plantPos);
+        if (plantData != null)
+        {
+            WaterPos = plantData.WaterPos;
+        }
+        else
+        {
+            WaterPos = WaterPipeManager.Instance.GetWaterForPosition(plantPos);
+        }
+
+        // If there's no set water position, create a temporary plant, to allow it to scan around.
+        if (WaterPos == Vector3i.zero)
+        {
+            var tempPlant = new PlantData(plantPos);
+            result = tempPlant.IsNearWater();
+        }
+
+        if ( !result )
+            return $"{Localization.Get("has_water")}: {result}";
+
+        var waterBlock = GameManager.Instance.World.GetBlock(WaterPos);
+        return $"{Localization.Get("has_water")}: {result}: Water Source {WaterPos}: Water Block: {waterBlock.Block.GetBlockName()} Water Damage Property: {GetWaterDamage(WaterPos)} Durability: {waterBlock.Block.MaxDamage - waterBlock.damage} / {waterBlock.Block.MaxDamage}";
+
+
+    }
     public Vector3i GetWaterForPosition(Vector3i position)
     {
+  
         if (Pipes.ContainsKey(position))
             return Pipes[position].GetWaterSource();
 
         var pipeData = new PipeData(position);
         Pipes.Add(position, pipeData);
-        return pipeData.DiscoverWaterFromPipes(position);
+        return  pipeData.DiscoverWaterFromPipes(position);
     }
 
     public void ToggleWaterValve(Vector3i valve, Vector3i pipePosition, bool turnOn = false)
     {
         if (turnOn)
         {
-            if (WaterValve.ContainsKey(valve))
-                WaterValve.Remove(valve);
+            WaterValve.Add(valve, pipePosition);
         }
         else
         {
-            if (!WaterValve.ContainsKey(valve))
-                WaterValve.Add(valve, pipePosition);
+            WaterValve.Remove(valve);
         }
     }
+
+    public void RemoveValve( Vector3i valve)
+    {
+        if (WaterValve.ContainsKey(valve))
+            WaterValve.Remove(valve);
+    }
+    public void AddValve(Vector3i valve)
+    {
+        if (WaterValve.ContainsKey(valve))
+            return;
+
+        WaterValve.Add(valve, valve);
+    }
+
+  
      public bool IsValveOff(Vector3i position)
     {
         return WaterValve.ContainsValue(position);

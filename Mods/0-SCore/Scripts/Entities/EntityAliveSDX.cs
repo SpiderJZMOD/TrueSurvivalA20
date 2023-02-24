@@ -22,7 +22,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 // ReSharper disable once CheckNamespace
-public class EntityAliveSDX : EntityTrader
+public class EntityAliveSDX : EntityTrader, IEntityOrderReceiverSDX
 {
     public List<string> lstQuests = new List<string>();
     public bool isAlwaysAwake;
@@ -35,6 +35,18 @@ public class EntityAliveSDX : EntityTrader
 
     [FormerlySerializedAs("GuardLookPosition")]
     public Vector3 guardLookPosition = Vector3.zero;
+
+    /// <inheritdoc/>
+    public List<Vector3> PatrolCoordinates => patrolCoordinates;
+
+    /// <inheritdoc/>
+    public Vector3 GuardPosition { get => guardPosition; set => guardPosition = value; }
+
+    /// <inheritdoc/>
+    public Vector3 GuardLookPosition { get => guardLookPosition; set => guardLookPosition = value; }
+
+    /// <inheritdoc/>
+    public Vector3 Position => position;
 
     public float flEyeHeight = -1f;
     public bool bWentThroughDoor;
@@ -334,7 +346,7 @@ public class EntityAliveSDX : EntityTrader
         if (this.emodel == null) return;
         var modelTransform = this.emodel.GetModelTransform();
         if (modelTransform == null) return;
-        foreach( var rigid in modelTransform.GetComponentsInChildren<Rigidbody>() )
+        foreach (var rigid in modelTransform.GetComponentsInChildren<Rigidbody>())
         {
             rigid.useGravity = _bDisplayed;
         }
@@ -533,6 +545,7 @@ public class EntityAliveSDX : EntityTrader
         scale = transform.localScale;
     }
 
+    /// <inheritdoc/>
     public virtual void UpdatePatrolPoints(Vector3 position)
     {
         // Center the x and z values of the passed in blocks for a unique check.
@@ -584,7 +597,7 @@ public class EntityAliveSDX : EntityTrader
 
     }
 
-
+    /// <inheritdoc/>
     public void SetupAutoPathingBlocks()
     {
         // If we already have a pathing code, don't re-scan.
@@ -616,12 +629,15 @@ public class EntityAliveSDX : EntityTrader
             // We need to apply the buffs during this scan, as the creation of the entity + adding buffs is not really MP safe.
             if (Task.ToLower() == "stay")
                 Buffs.AddBuff("buffOrderStay", -1, false);
-            if (Task.ToLower() == "wander")
+            else if (Task.ToLower() == "wander")
                 Buffs.AddBuff("buffOrderWander", -1, false);
-            if (Task.ToLower() == "guard")
+            else if (Task.ToLower() == "guard")
+                // Use the buff that issues the "guard" order, not the one that issues the "stay" order
                 Buffs.AddBuff("buffOrderGuard", -1, false);
-            if (Task.ToLower() == "follow")
+            else if (Task.ToLower() == "follow")
                 Buffs.AddBuff("buffOrderFollow", -1, false);
+            else
+                Log.Out($"    Entity: {entityName} ( {entityId} ) : Cannot perform task: {Task}");
         }
 
         var Buff = PathingCubeParser.GetValue(text, "buff");

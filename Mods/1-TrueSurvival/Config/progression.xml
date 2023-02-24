@@ -23,7 +23,6 @@
 			</requirements>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_WellnessLv" operation="set" value="20">	
                     <requirement name="NotHasBuff" buff="jz_BuffNotNew"/></triggered_effect>
-                <triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" buff="jz_BufffFatigueSystem" />		
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_TraderSortLvStoper" operation="set" value="1"/>	            
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_SkillLvMult" operation="set" value="1.015"/>
                 <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$jz_CardioXP" operation="set" value="0"/>
@@ -1111,8 +1110,8 @@
 				<requirement name="ProgressionLevel" progression_name="SP_VenisonAndPotatoSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_HoboStewSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_HoboStewSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_BlueberryPieSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_BlueberryPieSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_BlueberryCheeseCakeSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_BlueberryCheeseCakeSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PumpkinPieSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_PumpkinPieSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PumpkinBreadSchematic" level="-1">
@@ -1151,8 +1150,6 @@
 				<requirement name="ProgressionLevel" progression_name="SP_CanShamSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ShamChowderSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_ShamChowderSchematic" operation="LT" value="1"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_PumpkinCheesecakeSchematic" level="-1">
-				<requirement name="ProgressionLevel" progression_name="SP_PumpkinCheesecakeSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_NutritiousMealsSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_NutritiousMealsSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_SpicyMealsSchematic" level="-1">
@@ -1165,6 +1162,9 @@
 				<requirement name="ProgressionLevel" progression_name="SP_IceCreamSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_CanJamSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_CanJamSchematic" operation="LT" value="1"/></triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_OrangeMeringuePieSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_OrangeMeringuePieSchematic" operation="LT" value="1"/></triggered_effect>
 				
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_VinegarSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_VinegarSchematic" operation="LT" value="1"/></triggered_effect>
@@ -2111,7 +2111,7 @@
     
 	<perk name="SP_GhillieSetSchematic" parent="jz_ArmorSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Ghillie Suit Set" desc_key="SP_GhillieSetSchematicDesc" icon="apparelGhillieSuitJacket">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelGhillieSuitHood,apparelGhillieSuitJacket,apparelGhillieSuitPants"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingGhillieSuitHoodLv1,jz_ClothingGhillieSuitHoodLv2,jz_ClothingGhillieSuitHoodLv3,jz_ClothingGhillieSuitHoodLv4,jz_ClothingGhillieSuitHoodLv5,jz_ClothingGhillieSuitHoodLv6,jz_ClothingGhillieSuitPantsLv1,jz_ClothingGhillieSuitPantsLv2,jz_ClothingGhillieSuitPantsLv3,jz_ClothingGhillieSuitPantsLv4,jz_ClothingGhillieSuitPantsLv5,jz_ClothingGhillieSuitPantsLv6,jz_ClothingGhillieSuitJacketLv1,jz_ClothingGhillieSuitJacketLv2,jz_ClothingGhillieSuitJacketLv3,jz_ClothingGhillieSuitJacketLv4,jz_ClothingGhillieSuitJacketLv5,jz_ClothingGhillieSuitJacketLv6"/>
 			<effect_description level="1" desc_key="SP_GhillieSetSchematicDesc" long_desc_key="SP_GhillieSetSchematicDesc"/>
 		</effect_group>
 	</perk>
@@ -2193,42 +2193,42 @@
 		</effect_group>
 	</perk>
     
-	<perk name="SP_AllShapesFrameSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Frame Shapes" desc_key="SP_AllShapesFrameSchematicDesc" icon="frameShapes">
+	<perk name="SP_AllShapesFrameSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Frame Shapes" desc_key="SP_AllShapesFrameSchematicDesc" icon="shapeCube">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="frameShapes:VariantHelper"/>
 			<effect_description level="1" desc_key="SP_AllShapesFrameSchematicDesc" long_desc_key="SP_AllShapesFrameSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_AllShapesWoodSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Wood Shapes" desc_key="SP_AllShapesWoodSchematicDesc" icon="woodShapes">
+	<perk name="SP_AllShapesWoodSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Wood Shapes" desc_key="SP_AllShapesWoodSchematicDesc" icon="shapeCube">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="woodShapes:VariantHelper"/>
 			<effect_description level="1" desc_key="SP_AllShapesWoodSchematicDesc" long_desc_key="SP_AllShapesWoodSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_AllShapesIronSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Iron Shapes" desc_key="SP_AllShapesIronSchematicDesc" icon="corrugatedMetalShapes">
+	<perk name="SP_AllShapesIronSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Iron Shapes" desc_key="SP_AllShapesIronSchematicDesc" icon="shapeCube">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="corrugatedMetalShapes:VariantHelper"/>
 			<effect_description level="1" desc_key="SP_AllShapesIronSchematicDesc" long_desc_key="SP_AllShapesIronSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_AllShapesCobblestoneSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Cobblestone Shapes" desc_key="SP_AllShapesCobblestoneSchematicDesc" icon="cobblestoneShapes">
+	<perk name="SP_AllShapesCobblestoneSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Cobblestone Shapes" desc_key="SP_AllShapesCobblestoneSchematicDesc" icon="shapeCube">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="cobblestoneShapes:VariantHelper"/>
 			<effect_description level="1" desc_key="SP_AllShapesCobblestoneSchematicDesc" long_desc_key="SP_AllShapesCobblestoneSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_AllShapesConcreteSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Concrete Shapes" desc_key="SP_AllShapesConcreteSchematicDesc" icon="concreteShapes">
+	<perk name="SP_AllShapesConcreteSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Concrete Shapes" desc_key="SP_AllShapesConcreteSchematicDesc" icon="shapeCube">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="concreteShapes:VariantHelper"/>
 			<effect_description level="1" desc_key="SP_AllShapesConcreteSchematicDesc" long_desc_key="SP_AllShapesConcreteSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_AllShapesSteelSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Steel Shapes" desc_key="SP_AllShapesSteelSchematicDesc" icon="steelShapes">
+	<perk name="SP_AllShapesSteelSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Steel Shapes" desc_key="SP_AllShapesSteelSchematicDesc" icon="shapeCube">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="steelShapes:VariantHelper"/>
 			<effect_description level="1" desc_key="SP_AllShapesSteelSchematicDesc" long_desc_key="SP_AllShapesSteelSchematicDesc"/>
@@ -2270,14 +2270,14 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_IronSheetMetalSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Iron Sheet Metal" desc_key="jz_IronSheetMetalDesc" icon="rScrapIronCTRPlate">
+	<perk name="SP_IronSheetMetalSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Iron Sheet Metal" desc_key="jz_IronSheetMetalDesc" icon="corrugatedMetalSheet">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_IronSheetMetal"/>
 			<effect_description level="1" desc_key="jz_IronSheetMetalDesc" long_desc_key="jz_IronSheetMetalDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_SteelSheetMetalSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Steel Sheet Metal" desc_key="jz_SteelSheetMetalDesc" icon="steelCTRPlate">
+	<perk name="SP_SteelSheetMetalSchematic" parent="jz_CraftingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Steel Sheet Metal" desc_key="jz_SteelSheetMetalDesc" icon="garageDoorIndustrial">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_SteelSheetMetal"/>
 			<effect_description level="1" desc_key="jz_SteelSheetMetalDesc" long_desc_key="jz_SteelSheetMetalDesc"/>
@@ -2662,21 +2662,21 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_TomatoSeedSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Tomato Seed" desc_key="SP_TomatoSeedSchematicDesc" icon="jz_PlantedTomato1">
+	<perk name="SP_TomatoSeedSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Tomato Seed" desc_key="SP_TomatoSeedSchematicDesc" icon="jz_PlantedEggPlant1">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_SeedTomato"/>
 			<effect_description level="1" desc_key="SP_TomatoSeedSchematicDesc" long_desc_key="SP_TomatoSeedSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_OnionSeedSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Onion Seed" desc_key="SP_OnionSeedSchematicDesc" icon="jz_PlantedTomato1">
+	<perk name="SP_OnionSeedSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Onion Seed" desc_key="SP_OnionSeedSchematicDesc" icon="jz_PlantedEggPlant1">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_SeedOnion"/>
 			<effect_description level="1" desc_key="SP_OnionSeedSchematicDesc" long_desc_key="SP_OnionSeedSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_ChilliSeedSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Chilli Seed" desc_key="SP_ChilliSeedSchematicDec" icon="jz_PlantedChilli1">
+	<perk name="SP_ChilliSeedSchematic" parent="jz_FarmingRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Chilli Seed" desc_key="SP_ChilliSeedSchematicDec" icon="jz_PlantedEggPlant1">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_SeedChilli"/>
 			<effect_description level="1" desc_key="SP_ChilliSeedSchematicDec" long_desc_key="SP_ChilliSeedSchematicDec"/>
@@ -2844,7 +2844,7 @@
 		</effect_group>
 	</perk>
 	<!--FOOD-->
-	<perk name="SP_StoveRepirKitSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Stove Repair Kit" desc_key="SP_StoveRepirKitSchematicDesc" icon="cntStoveOldVer1Closed">
+	<perk name="SP_StoveRepirKitSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Stove Repair Kit" desc_key="SP_StoveRepirKitSchematicDesc" icon="resourceRepairKit">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_StoveRepairKit"/>
 			<effect_description level="1" desc_key="SP_StoveRepirKitSchematicDesc" long_desc_key="SP_StoveRepirKitSchematicDesc"/>
@@ -2914,10 +2914,17 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_BlueberryPieSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Blueberry Pie" desc_key="SP_BlueberryPieSchematicDesc" icon="foodBlueberryPie">
+	<perk name="SP_BlueberryCheeseCakeSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Blueberry Cheese Cake" desc_key="SP_BlueberryCheeseCakeSchematicDesc" icon="jz_FoodBlueberryCheeseCake">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodBlueberryPie"/>
-			<effect_description level="1" desc_key="SP_BlueberryPieSchematicDesc" long_desc_key="SP_BlueberryPieSchematicDesc"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodBlueberryCheeseCake"/>
+			<effect_description level="1" desc_key="SP_BlueberryCheeseCakeSchematicDesc" long_desc_key="SP_BlueberryCheeseCakeSchematicDesc"/>
+		</effect_group>
+	</perk>
+		
+	<perk name="SP_OrangeMeringuePieSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Orange Meringue Pie" desc_key="SP_OrangeMeringuePieSchematicDesc" icon="jz_FoodOrangeMeringuePie">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodOrangeMeringuePie"/>
+			<effect_description level="1" desc_key="SP_OrangeMeringuePieSchematicDesc" long_desc_key="SP_OrangeMeringuePieSchematicDesc"/>
 		</effect_group>
 	</perk>
 		
@@ -3018,29 +3025,22 @@
 			<effect_description level="1" desc_key="SP_FishTacosSchematicDesc" long_desc_key="SP_FishTacosSchematicDesc"/>
 		</effect_group>
 	</perk>
-	
-	<perk name="SP_PumpkinCheesecakeSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Pumpkin Cheesecake" desc_key="SP_PumpkinCheesecakeSchematicDesc" icon="foodPumpkinCheesecake">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodPumpkinCheesecake"/>
-			<effect_description level="1" desc_key="SP_PumpkinCheesecakeSchematicDesc" long_desc_key="SP_PumpkinCheesecakeSchematicDesc"/>
-		</effect_group>
-	</perk>
-	
-	<perk name="SP_NutritiousMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Nutritious Meals" desc_key="SP_NutritiousMealsSchematicDesc" icon="jz_FoodFourCourseMeal">
+		
+	<perk name="SP_NutritiousMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Nutritious Meals" desc_key="SP_NutritiousMealsSchematicDesc" icon="Meals">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodOneCourseMealNutritious,jz_FoodTwoCourseMealNutritious,jz_FoodThreeCourseMealNutritious,jz_FoodFourCourseMealNutritious"/>
 			<effect_description level="1" desc_key="SP_NutritiousMealsSchematicDesc" long_desc_key="SP_NutritiousMealsSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_SpicyMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Spicy Meals" desc_key="SP_SpicyMealsSchematicDesc" icon="foodPumpkinCheesecake">
+	<perk name="SP_SpicyMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Spicy Meals" desc_key="SP_SpicyMealsSchematicDesc" icon="Meals">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodFourCourseMealSpicy,jz_FoodThreeCourseMealSpicy,jz_FoodTwoCourseMealSpicy,jz_FoodOneCourseMealSpicy"/>
 			<effect_description level="1" desc_key="SP_SpicyMealsSchematicDesc" long_desc_key="SP_SpicyMealsSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_LacedMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Laced Meals" desc_key="SP_LacedMealsSchematicDesc" icon="foodPumpkinCheesecake">
+	<perk name="SP_LacedMealsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Laced Meals" desc_key="SP_LacedMealsSchematicDesc" icon="Meals">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodFourCourseMealLaced,jz_FoodThreeCourseMealLaced,jz_FoodTwoCourseMealLaced,jz_FoodOneCourseMealLaced"/>
 			<effect_description level="1" desc_key="SP_LacedMealsSchematicDesc" long_desc_key="SP_LacedMealsSchematicDesc"/>
@@ -3075,14 +3075,14 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_CanFoodsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Can Foods" desc_key="SP_CanFoodsSchematicDesc" icon="foodCanBeef">
+	<perk name="SP_CanFoodsSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Can Foods" desc_key="SP_CanFoodsSchematicDesc" icon="cntFoodPileSmall">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodCanPears,foodCanPeas,foodCanBeef,foodCanSham"/>
 			<effect_description level="1" desc_key="SP_CanFoodsSchematicDesc" long_desc_key="SP_CanFoodsSchematicDesc"/>
 		</effect_group>
 	</perk>
 	
-	<perk name="SP_MRESchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="MRE's" desc_key="SP_MRESchematicDesc" icon="jz_FoodMRELarge">
+	<perk name="SP_MRESchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="MRE's" desc_key="SP_MRESchematicDesc" icon="jz_FoodMRESmall">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodMRESmall,jz_FoodMREMedium,jz_FoodMRELarge"/>
 			<effect_description level="1" desc_key="SP_MRESchematicDesc" long_desc_key="SP_MRESchematicDesc"/>
@@ -4072,133 +4072,133 @@
        
     <perk name="SP_BandanaSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Bandana" desc_key="SP_BandanaSchematicDesc" icon="apparelBandana">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelBandana"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingBandanaLv5"/>
 			<effect_description level="1" desc_key="SP_BandanaSchematicDesc" long_desc_key="SP_BandanaSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_SuitJacketSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Suit Jacket" desc_key="SP_SuitJacketSchematicDesc" icon="apparelSuitJacket">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelSuitJacket"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingSuitJacketLv5"/>
 			<effect_description level="1" desc_key="SP_SuitJacketSchematicDesc" long_desc_key="SP_SuitJacketSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_SuitPantsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Suit Pants" desc_key="SP_SuitPantsSchematicDesc" icon="apparelSuitPants">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelSuitPants"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingSuitPantsLv5"/>
 			<effect_description level="1" desc_key="SP_SuitPantsSchematicDesc" long_desc_key="SP_SuitPantsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_FlannelShirtSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Flannel Shirt" desc_key="SP_FlannelShirtSchematicDesc" icon="apparelFlannelShirt">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelFlannelShirt"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingFlannelShirtLv5"/>
 			<effect_description level="1" desc_key="SP_FlannelShirtSchematicDesc" long_desc_key="SP_FlannelShirtSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_SweatshirtSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Sweatshirt" desc_key="SP_SweatshirtSchematicDesc" icon="apparelSweatshirt">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelSweatshirt"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingSweatshirtLv5"/>
 			<effect_description level="1" desc_key="SP_SweatshirtSchematicDesc" long_desc_key="SP_SweatshirtSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_PressboyCapSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Pressboy Cap" desc_key="SP_PressboyCapSchematicDesc" icon="apparelPressboyCap">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelPressboyCap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingPressboyCapLv5"/>
 			<effect_description level="1" desc_key="SP_PressboyCapSchematicDesc" long_desc_key="SP_PressboyCapSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_BallCapSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Ball Cap" desc_key="SP_BallCapSchematicDesc" icon="apparelBallCap">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelBallCap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingBallCapLv5"/>
 			<effect_description level="1" desc_key="SP_BallCapSchematicDesc" long_desc_key="SP_BallCapSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_SkullCapSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Skull Cap" desc_key="SP_SkullCapSchematicDesc" icon="apparelSkullCap">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelSkullCap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingSkullCapLv5"/>
 			<effect_description level="1" desc_key="SP_SkullCapSchematicDesc" long_desc_key="SP_SkullCapSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_DenimPantsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Denim Pants" desc_key="SP_DenimPantsSchematicDesc" icon="apparelDenimPants">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelDenimPants"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingDenimPantsLv5"/>
 			<effect_description level="1" desc_key="SP_DenimPantsSchematicDesc" long_desc_key="SP_DenimPantsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_DenimShortsPantsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Denim Shorts" desc_key="SP_DenimShortsPantsSchematicDesc" icon="apparelDenimShortsPants">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelDenimShortsPants"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingDenimShortsPantsLv5"/>
 			<effect_description level="1" desc_key="SP_DenimShortsPantsSchematicDesc" long_desc_key="SP_DenimShortsPantsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_GothPantsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Goth Pants" desc_key="SP_GothPantsSchematicDesc" icon="apparelGothPants">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelGothPants"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingGothPantsLv5"/>
 			<effect_description level="1" desc_key="SP_GothPantsSchematicDesc" long_desc_key="SP_GothPantsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_HoodySweatshirtSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Hoody Sweatshirt" desc_key="SP_HoodySweatshirtSchematicDesc" icon="apparelHoodySweatshirt">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelHoodySweatshirt"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingHoodySweatshirtLv5"/>
 			<effect_description level="1" desc_key="SP_HoodySweatshirtSchematicDesc" long_desc_key="SP_HoodySweatshirtSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CoatLeatherPonchoSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Leather Poncho" desc_key="SP_CoatLeatherPonchoSchematicDesc" icon="apparelCoatLeatherPoncho">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatLeatherPoncho"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingLeatherPonchoLv5"/>
 			<effect_description level="1" desc_key="SP_CoatLeatherPonchoSchematicDesc" long_desc_key="SP_CoatLeatherPonchoSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_OverallsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Overalls" desc_key="SP_OverallsSchematicDesc" icon="apparelOveralls">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelOveralls"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingOverallsLv5"/>
 			<effect_description level="1" desc_key="SP_OverallsSchematicDesc" long_desc_key="SP_OverallsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_SkirtSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Skirt" desc_key="SP_SkirtSchematicDesc" icon="apparelSkirt">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelSkirt"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingSkirtLv5"/>
 			<effect_description level="1" desc_key="SP_SkirtSchematicDesc" long_desc_key="SP_SkirtSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_WornBootsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Worn Boots" desc_key="SP_WornBootsSchematicDesc" icon="apparelWornBoots">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelWornBoots"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingWornBootsLv5"/>
 			<effect_description level="1" desc_key="SP_WornBootsSchematicDesc" long_desc_key="SP_WornBootsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_RunningShoesRegularSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Running Shoes Regular" desc_key="SP_RunningShoesRegularSchematicDesc" icon="apparelRunningShoesRegular">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelRunningShoesRegular"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingRunningShoesRegularLv5"/>
 			<effect_description level="1" desc_key="SP_RunningShoesRegularSchematicDesc" long_desc_key="SP_RunningShoesRegularSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_RunningShoesHPSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Running Shoes HP" desc_key="SP_RunningShoesHPSchematicDesc" icon="apparelRunningShoesRegular">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelRunningShoesHP"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingRunningShoesHPLv5"/>
 			<effect_description level="1" desc_key="SP_RunningShoesHPSchematicDesc" long_desc_key="SP_RunningShoesHPSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CowboyBootsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Cowboy Boots" desc_key="SP_CowboyBootsSchematicDesc" icon="apparelCowboyBoots">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCowboyBoots"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingCowboyBootsLv5"/>
 			<effect_description level="1" desc_key="SP_CowboyBootsSchematicDesc" long_desc_key="SP_CowboyBootsSchematicDesc"/>
 		</effect_group>
 	</perk>
@@ -4212,91 +4212,91 @@
     
     <perk name="SP_SuitDressShoesSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Suit Dress Shoes" desc_key="SP_SuitDressShoesSchematicDesc" icon="apparelSuitDressShoes">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelSuitDressShoes"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingSuitDressShoesLv5"/>
 			<effect_description level="1" desc_key="SP_SuitDressShoesSchematicDesc" long_desc_key="SP_SuitDressShoesSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CoatJacketGenericSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Jacket" desc_key="SP_CoatJacketGenericSchematicDesc" icon="apparelCoatJacketGeneric">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatJacketGeneric"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingJacketGenericLv5"/>
 			<effect_description level="1" desc_key="SP_CoatJacketGenericSchematicDesc" long_desc_key="SP_CoatJacketGenericSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CoatJacketLetterZUSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="ZU Jacket" desc_key="SP_CoatJacketLetterZUSchematicDesc" icon="apparelCoatJacketLetterZU">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatJacketLetterZU"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingJacketLetterZULv5"/>
 			<effect_description level="1" desc_key="SP_CoatJacketLetterZUSchematicDesc" long_desc_key="SP_CoatJacketLetterZUSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_TankTopSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Tank Top" desc_key="SP_TankTopSchematicDesc" icon="apparelTankTop">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelTankTop"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingTankTopLv5"/>
 			<effect_description level="1" desc_key="SP_TankTopSchematicDesc" long_desc_key="SP_TankTopSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_TShirtPlainSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="T Shirt" desc_key="SP_TShirtPlainSchematicDesc" icon="apparelTShirtPlain">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelTShirtPlain"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingTShirtPlainLv5"/>
 			<effect_description level="1" desc_key="SP_TShirtPlainSchematicDesc" long_desc_key="SP_TShirtPlainSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CowboyHatSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Cowboy Hat" desc_key="SP_CowboyHatSchematicDesc" icon="apparelCowboyHat">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCowboyHat"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingCowboyHatLv5"/>
 			<effect_description level="1" desc_key="SP_CowboyHatSchematicDesc" long_desc_key="SP_CowboyHatSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CoatLeatherDusterSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Leather Duster" desc_key="SP_CoatLeatherDusterSchematicDesc" icon="apparelCoatLeatherDuster">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatLeatherDuster"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingLeatherDusterLv5"/>
 			<effect_description level="1" desc_key="SP_CoatLeatherDusterSchematicDesc" long_desc_key="SP_CoatLeatherDusterSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_CoatPufferCoatSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Puffer Coat" desc_key="SP_CoatPufferCoatSchematicDesc" icon="apparelCoatPufferCoat">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelCoatPufferCoat"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingPufferCoatLv5"/>
 			<effect_description level="1" desc_key="SP_CoatPufferCoatSchematicDesc" long_desc_key="SP_CoatPufferCoatSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_ArmyPantsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Army Pants" desc_key="SP_ArmyPantsSchematicDesc" icon="apparelArmyPants">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelArmyPants"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingArmyPantsLv5"/>
 			<effect_description level="1" desc_key="SP_ArmyPantsSchematicDesc" long_desc_key="SP_ArmyPantsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_ArmyShirtSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Army Shirt" desc_key="SP_ArmyShirtSchematicDesc" icon="apparelArmyShirt">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelArmyShirt"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingArmyShirtLv5"/>
 			<effect_description level="1" desc_key="SP_ArmyShirtSchematicDesc" long_desc_key="SP_ArmyShirtSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_LongShirtSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Long Shirt" desc_key="SP_LongShirtSchematicDesc" icon="apparelLongShirt">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelLongShirt"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingLongShirtLv5"/>
 			<effect_description level="1" desc_key="SP_LongShirtSchematicDesc" long_desc_key="SP_LongShirtSchematicDesc"/>
 		</effect_group>
 	</perk>
     
     <perk name="SP_GothBootsSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Goth Boots" desc_key="SP_GothBootsSchematicDesc" icon="apparelGothBoots">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelGothBoots"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingGothBootsLv5"/>
 			<effect_description level="1" desc_key="SP_GothBootsSchematicDesc" long_desc_key="SP_GothBootsSchematicDesc"/>
 		</effect_group>
 	</perk>
     
 	<perk name="SP_TShirtZUSchematic" parent="jz_ClothingSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="ZU T Shirt" desc_key="SP_TShirtZUSchematicDesc" icon="apparelTShirtZU">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="apparelTShirtZU"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_ClothingTShirtZULv5"/>
 			<effect_description level="1" desc_key="SP_TShirtZUSchematicDesc" long_desc_key="SP_TShirtZUSchematicDesc"/>
 		</effect_group>
 	</perk>
@@ -4441,10 +4441,10 @@
 		</effect_group>
 		<effect_group>
 			<!-- wrench (or other relevant tools) do a base_add=1 to hop on the salvage train -->
-			<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="perkSalvageOperationsRank1LongDesc"/>
-			<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="perkSalvageOperationsRank2LongDesc"/>
-			<effect_description level="3" desc_key="perkSalvageOperationsRank3Desc" long_desc_key="perkSalvageOperationsRank3LongDesc"/>
-			<effect_description level="4" desc_key="perkSalvageOperationsRank4Desc" long_desc_key="perkSalvageOperationsRank4LongDesc"/>
+			<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="jz_perkSalvageOperationsRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="jz_perkSalvageOperationsRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkSalvageOperationsRank3Desc" long_desc_key="jz_perkSalvageOperationsRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkSalvageOperationsRank4Desc" long_desc_key="jz_perkSalvageOperationsRank4LongDesc"/>
 			<effect_description level="5" desc_key="perkSalvageOperationsRank5Desc" long_desc_key="perkSalvageOperationsRank5LongDesc"/>
 		</effect_group>
 	</perk>
@@ -4568,7 +4568,7 @@
 		</effect_group>
 	</perk>
 	
-	<perk name="perkCharismaticNature" min_level="0" max_level="5" base_skill_point_cost="0" cost_multiplier_per_level="0" parent="jz_PerkBooks" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
+	<perk name="perkCharismaticNature" min_level="0" max_level="4" base_skill_point_cost="0" cost_multiplier_per_level="0" parent="jz_PerkBooks" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
 		<effect_group>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="1" target="selfAOE" target_tags="ally,party" range="15">
 				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="1"/>
@@ -4623,7 +4623,6 @@
 			<effect_description level="2" desc_key="perkCharismaticNatureRank2Desc" long_desc_key="perkCharismaticNatureRank2LongDesc"/>
 			<effect_description level="3" desc_key="perkCharismaticNatureRank3Desc" long_desc_key="perkCharismaticNatureRank3LongDesc"/>
 			<effect_description level="4" desc_key="perkCharismaticNatureRank4Desc" long_desc_key="perkCharismaticNatureRank4LongDesc"/>
-			<effect_description level="5" desc_key="perkCharismaticNatureRank5Desc" long_desc_key="perkCharismaticNatureRank5LongDesc"/>
 		</effect_group>
 	</perk>
 
@@ -4988,7 +4987,7 @@
 		</effect_group>
 	</perk>
        
-    <perk name="jz_TraderJoeRep" parent="jz_TarderSkills" name_key="Trader Joel Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="Increase by completing more quest from this trader. Increases your selling price to the trader and grants access to more and better wears from the trader" icon="ui_game_symbol_barter">
+    <perk name="jz_TraderJoeRep" parent="jz_TarderSkills" name_key="Trader Joel Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="jz_TraderJoeRep" icon="ui_game_symbol_barter">
 		<effect_group>
             <requirement name="HasBuff" buff="jz_BuffAtTraderJoes" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
@@ -4999,7 +4998,7 @@
 		</effect_group>
 	</perk>
     
-     <perk name="jz_TraderJenRep" parent="jz_TarderSkills" name_key="Trader Jen Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="Increase by completing more quest from this trader. Increases your selling price to the trader and grants access to more and better wears from the trader" icon="ui_game_symbol_barter">
+     <perk name="jz_TraderJenRep" parent="jz_TarderSkills" name_key="Trader Jen Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="jz_TraderJenRep" icon="ui_game_symbol_barter">
 		<effect_group>
             <requirement name="HasBuff" buff="jz_BuffAtTraderJens" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
@@ -5010,7 +5009,7 @@
 		</effect_group>
 	</perk>
     
-     <perk name="jz_TraderBobRep" parent="jz_TarderSkills" name_key="Trader Bob Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="Increase by completing more quest from this trader. Increases your selling price to the trader and grants access to more and better wears from the trader" icon="ui_game_symbol_barter">
+     <perk name="jz_TraderBobRep" parent="jz_TarderSkills" name_key="Trader Bob Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="jz_TraderBobRep" icon="ui_game_symbol_barter">
 		<effect_group>
 			<requirement name="HasBuff" buff="jz_BuffAtTraderBobs" />
           <passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
@@ -5021,7 +5020,7 @@
 		</effect_group>
 	</perk>
     
-     <perk name="jz_TraderHughRep" parent="jz_TarderSkills" name_key="Trader Hugh Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="Increase by completing more quest from this trader. Increases your selling price to the trader and grants access to more and better wears from the trader" icon="ui_game_symbol_barter">
+     <perk name="jz_TraderHughRep" parent="jz_TarderSkills" name_key="Trader Hugh Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="jz_TraderHughRep" icon="ui_game_symbol_barter">
 		<effect_group>
             <requirement name="HasBuff" buff="jz_BuffAtTraderHughs" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>
@@ -5032,7 +5031,7 @@
 		</effect_group>
 	</perk>
     
-     <perk name="jz_TraderRektRep" parent="jz_TarderSkills" name_key="Trader Rekt Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="Increase by completing more quest from this trader. Increases your selling price to the trader and grants access to more and better wears from the trader" icon="ui_game_symbol_barter">
+     <perk name="jz_TraderRektRep" parent="jz_TarderSkills" name_key="Trader Rekt Reputation" min_level="0" max_level="50" base_skill_point_cost="0" cost_multiplier_per_level="0" desc_key="jz_TraderRektRep" icon="ui_game_symbol_barter">
 		<effect_group>
             <requirement name="HasBuff" buff="jz_BuffAtTraderRekts" />
 			<passive_effect name="BarteringSelling" operation="base_add" level="0,50" value="0,.25"/>

@@ -1658,10 +1658,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorStoragePocketSchematic"/>
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
+		<property name="ItemWeight" value="0.1" />
 
 		<effect_group tiered="false">
-			<passive_effect name="CarryCapacity" operation="base_add" value="1"/>
-			<display_value name="dCarryCapacity" value="1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsArmorStoragePocket"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsArmorStoragePocket"/>
+			<display_value name="TSAddCarryWeight" value="3"/>
+			<display_value name="TSItemWeight" value=".1"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1670,10 +1673,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorDoubleStoragePocketSchematic"/>
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
+		<property name="ItemWeight" value="0.2" />
 
 		<effect_group tiered="false">
-			<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
-			<display_value name="dCarryCapacity" value="2"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
+			<display_value name="TSAddCarryWeight" value="6"/>
+			<display_value name="TSItemWeight" value=".2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1682,10 +1688,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorTripleStoragePocketSchematic"/>
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
+		<property name="ItemWeight" value="0.3" />
 
 		<effect_group tiered="false">
-			<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
-			<display_value name="dCarryCapacity" value="3"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
+			<display_value name="TSAddCarryWeight" value="9"/>
+			<display_value name="TSItemWeight" value=".3"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1782,10 +1791,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
 		<property name="Group" value="Mods,Tool/Weapon Mods,clothing"/>
+		<property name="ItemWeight" value="0.1" />
 
 		<effect_group tiered="false">
-			<passive_effect name="CarryCapacity" operation="base_add" value="1"/>
-			<display_value name="dCarryCapacity" value="1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsClothingStoragePocket"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsClothingStoragePocket"/>
+			<display_value name="TSAddCarryWeight" value="3"/>
+			<display_value name="TSItemWeight" value=".1"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1795,10 +1807,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
 		<property name="Group" value="Mods,Tool/Weapon Mods,clothing"/>
+		<property name="ItemWeight" value="0.2" />
 
 		<effect_group tiered="false">
-			<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
-			<display_value name="dCarryCapacity" value="2"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsClothingCargoStoragePocket"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsClothingCargoStoragePocket"/>
+			<display_value name="TSAddCarryWeight" value="6"/>
+			<display_value name="TSItemWeight" value=".2"/>
 		</effect_group>
 	</item_modifier>
 

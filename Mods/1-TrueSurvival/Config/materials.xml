@@ -2032,5 +2032,29 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="jz_ScrapAdhesive"/>
 	<property name="Experience" value="5"/>
 </material>
+
+<material id="Mmetal_vehicle_burns">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="Experience" value="2"/>
+</material>
+
+<material id="Msteel_vehicle_burns">
+	<property name="damage_category" value="jzSteel"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="steel"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="7000"/>
+	<property name="Experience" value="6"/>
+</material>
 </set>
 </configs> 

@@ -13,6 +13,7 @@ All the perk tags:
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<!-- <display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true"/> -->
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedGunNoMag" display_group="groupRanged">
@@ -21,6 +22,7 @@ All the perk tags:
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<!-- <display_entry name="WeaponHandling" title_key="statWeaponHandling" display_type="Percent" show_inverted="true"/> -->
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedShotgun" display_group="groupRanged">
@@ -31,6 +33,7 @@ All the perk tags:
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedShotgunNoMag" display_group="groupRanged">
@@ -40,6 +43,7 @@ All the perk tags:
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedLauncher" display_group="groupRanged">
@@ -49,6 +53,7 @@ All the perk tags:
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkDemolitionsExpert,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedBow" display_group="groupRanged">
@@ -56,6 +61,7 @@ All the perk tags:
 			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="adminRanged" display_group="groupRanged">
@@ -63,6 +69,7 @@ All the perk tags:
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage"/>
 			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute"/>
 			<display_entry name="MaxRange" title_key="statMaxRange"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="melee" display_group="groupMelee">
@@ -72,6 +79,7 @@ All the perk tags:
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="meleeSpear" display_group="groupMelee">
@@ -82,6 +90,7 @@ All the perk tags:
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="meleeHeavy" display_group="groupMelee">
@@ -92,6 +101,7 @@ All the perk tags:
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="meleeKnife" display_group="groupMelee">
@@ -102,6 +112,7 @@ All the perk tags:
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkDeepCuts,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="meleeRepairTool" display_group="groupMelee">
@@ -111,6 +122,7 @@ All the perk tags:
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkAdvancedEngineering,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedRepairTool" display_group="groupMelee">
@@ -120,6 +132,7 @@ All the perk tags:
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkMiner69r"/>
 			<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="nailgun,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="motorTool" display_group="groupMelee">
@@ -128,6 +141,7 @@ All the perk tags:
 			<display_entry name="MagazineSize" title_key="statFuelCapacity" tags="perkMiner69r"/>
 			<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="simpleTool" display_group="groupMelee">
@@ -136,6 +150,7 @@ All the perk tags:
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage"/>
 			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="meleeTorch" display_group="groupMelee">
@@ -146,6 +161,7 @@ All the perk tags:
 			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute"/>
 			<display_entry name="dBurning" title_key="statBurning" display_type="Percent"/>
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="meleeTurret" display_group="groupMelee">
@@ -153,6 +169,7 @@ All the perk tags:
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="turretMelee"/>
 			<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="turretMelee"/>
 			<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkTurrets"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="rangedTurret" display_group="groupRanged">
@@ -161,15 +178,18 @@ All the perk tags:
 			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="turretRanged"/>
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkTurrets"/>
 			<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkTurrets"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="droneTurret" display_group="groupRanged">
 			<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkTurrets"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoBullet" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoBulletAP" display_group="groupAmmo">
@@ -178,11 +198,13 @@ All the perk tags:
 			<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<!--<display_entry name="dDegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>-->
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoBulletHP" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<!--<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>-->
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoShotgun" display_group="groupAmmo">
@@ -191,6 +213,7 @@ All the perk tags:
 			<!--<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>-->
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoShotgunSlug" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
@@ -199,6 +222,7 @@ All the perk tags:
 			<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoShotgunBreaching" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageShotgun" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
@@ -206,12 +230,14 @@ All the perk tags:
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="dDamageDoor" title_key="statBlockDamageDoor" display_leading_plus="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoJunkTurretRegular" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoJunkTurretAP" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
@@ -219,23 +245,27 @@ All the perk tags:
 			<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 			<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoArrow" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkArchery,admin"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoArrowAP" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkArchery,admin"/>
 			<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkArchery,admin"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoDart" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkArchery,admin"/>
 			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkArchery,admin"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoArrowFlaming" display_group="groupAmmo">
 			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkArchery,admin"/>
@@ -243,18 +273,21 @@ All the perk tags:
 			<display_entry name="dEntityDamageFire" title_key="statEntityDamageFire"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoArrowExploding" display_group="groupAmmo">
 			<display_entry name="EntityDamage" title_key="statEntityDamageExplosion" tags="perkArchery,admin"/>
 			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkArchery,admin"/>
 			<display_entry name="dExRadius" title_key="statExRadius"/>
 			<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoLauncher" display_group="groupAmmo">
 			<display_entry name="EntityDamage" title_key="statEntityDamageExplosion" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="dExRadius" title_key="statExRadius" tags="perkDemolitionsExpert,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="ammoGrenade" display_group="groupAmmo">
@@ -262,31 +295,37 @@ All the perk tags:
 			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="dExRadius" title_key="statExRadius"/>
 			<display_entry name="dFuseTime" title_key="statFuseTime" display_type="Time" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoGrenadeContact" display_group="groupAmmo">
 			<display_entry name="EntityDamage" title_key="statEntityDamageExplosion" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="dExRadius" title_key="statExRadius"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoGrenadeTimedCharge" display_group="groupAmmo">
 			<display_entry name="EntityDamage" title_key="statEntityDamageExplosion" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="dExDamageBlock" title_key="statBlockDamage"/>
 			<display_entry name="dExRadius" title_key="statExRadius"/>
 			<display_entry name="dFuseTime" title_key="statFuseTime" display_type="Time" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="ammoGrenadeFire" display_group="groupAmmo">
 			<display_entry name="dExDamageFire" title_key="statEntityDamageFire"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkDemolitionsExpert,admin"/>
 			<display_entry name="dExRadius" title_key="statExRadius"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="modCarryCapacity" display_group="modAttire">
-			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>
+			<display_entry name="TSAddCarryWeight" title_key="Added Carry Weight" display_leading_plus="true"/>  <!-- JZMOD -->
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="modNoiseReduction" display_group="modAttire">
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseReduction" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="jz_modChainmail" display_group="modAttire">
@@ -294,22 +333,26 @@ All the perk tags:
 			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResist" display_leading_plus="true"/>
 			<display_entry name="dNoiseMultiplier" title_key="Noisier" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		
 		<item_display_info display_type="modTempResist" display_group="modAttire">
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist" display_leading_plus="true"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist" display_leading_plus="true"/>
 			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statExplosionResistance" display_leading_plus="true" tags="heat,electrical"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="modArmor" display_group="modAttire">
 			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResist" display_leading_plus="true"/>
 			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statExplosionResistance" display_leading_plus="true" tags="heat,electrical"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="modArmorMobility" display_group="modAttire" >
 			<display_entry name="dStaminaChangeOT" title_key="statStaminaChangeOT" display_type="Decimal2" display_leading_plus="true"/>
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" display_leading_plus="true" show_inverted="true" negative_preferred="false"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armor" display_group="groupAttire" >
@@ -324,6 +367,7 @@ All the perk tags:
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armorLight" display_group="groupAttire" >
@@ -334,6 +378,7 @@ All the perk tags:
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="lightArmorDeg,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armorLightStealth" display_group="groupAttire" >
@@ -344,6 +389,7 @@ All the perk tags:
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="lightArmorDeg,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armorLightTempResist" display_group="groupAttire" >
@@ -354,6 +400,7 @@ All the perk tags:
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="lightArmorDeg,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armorHeavy" display_group="groupAttire" >
@@ -364,6 +411,7 @@ All the perk tags:
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="heavyArmorDeg,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armorHeavyHeatResist" display_group="groupAttire" >
@@ -374,6 +422,7 @@ All the perk tags:
 			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="heavyArmorDeg,admin"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="armorGasmask" display_group="groupAttire">
@@ -384,90 +433,112 @@ All the perk tags:
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
 			<display_entry name="DegradationMax" title_key="statDegradationMax"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="clothing" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
-			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>  <!-- JZMOD -->																																															   
+			<display_entry name="TSDegradation" title_key="statDegradationMax"/> <!-- JZMOD -->
+			<display_entry name="TSAddCarryWeight" title_key="Added Carry Weight" display_leading_plus="true"/>  <!-- JZMOD -->	
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->			
 		</item_display_info>
 		<item_display_info display_type="clothingRunningShoes" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegenRunning" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="clothingJacketLetter" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
 			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
-			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>  <!-- JZMOD -->																																																
+			<display_entry name="TSAddCarryWeight" title_key="Added Carry Weight" display_leading_plus="true"/>  <!-- JZMOD -->																																															
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="clothingHazMat" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
 			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statElementalDamageResist"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="clothingShades" display_group="groupAttire">
 			<display_entry name="AttributeLevel" tags="attPerception" title_key="statShowPerception" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="apparelToughGuySunglasses" display_group="groupAttire">
-			<display_entry name="AttributeLevel" tags="attFortitude" title_key="statShowFortitude" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="clothingAviatorGoggles" display_group="groupAttire">
 			<display_entry name="LootGamestage" title_key="statLootGamestage" display_leading_plus="true"/>
 			<display_entry name="dTreasureBlocksPerReduction" title_key="statTreasureRadius" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="clothingSkiGoggles" display_group="groupAttire" >
-			<display_entry name="AttributeLevel" tags="attAgility" title_key="statShowAgility" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
+		
 		<item_display_info display_type="clothingNerdGlasses" display_group="groupAttire">
-			<display_entry name="AttributeLevel" tags="attIntellect" title_key="statShowIntellect" display_leading_plus="true"/>
 			<display_entry name="dCraftingTime" title_key="statCraftingTime" display_type="Percent" display_leading_plus="true" negative_preferred="true"/>
 			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
+		
 		<item_display_info display_type="clothingBarter" display_group="groupAttire" >
 			<display_entry name="Bartering" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
+		
 		<item_display_info display_type="clothingToughGuy" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
 			<display_entry name="dHealthMax" title_key="statHealthAmount" display_leading_plus="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="clothingGhillie" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
+			<display_entry name="TSDegradation" title_key="statDegradationMax"/> <!-- JZMOD -->
 			<display_entry name="dLightMultiplier" title_key="statVisibility" display_type="Percent" display_leading_plus="true" show_inverted="false" negative_preferred="false"/>
 			<display_entry name="dNoiseMultiplier" title_key="statNoiseReduction" display_type="Percent" display_leading_plus="true" show_inverted="false" negative_preferred="false"/>
-			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>  <!-- JZMOD -->																																																
+			<display_entry name="TSAddCarryWeight" title_key="Added Carry Weight" display_leading_plus="true"/>  <!-- JZMOD -->																																																
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
+		
 		<item_display_info display_type="clothingGhillieHood" display_group="groupAttire" >
 			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
 			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
+			<display_entry name="TSDegradation" title_key="statDegradationMax"/> <!-- JZMOD -->
 			<display_entry name="dLightMultiplier" title_key="statVisibility" display_type="Percent" display_leading_plus="true" show_inverted="false" negative_preferred="false"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="clothingCigar" display_group="groupAttire" >
 			<display_entry name="BarteringBuying" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="TSFoodIncrease" title_key="Hunger Suppression" display_type="Percent"/> <!-- JZMOD -->	
 			<display_entry name="TSStaminaLoss" title_key="Stamina Suppression" display_type="Percent"/> <!-- JZMOD -->																													   
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="water" display_group="groupConsumables">
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterDysentery" display_group="groupConsumables">
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterGoldenrod" display_group="groupConsumables">
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dCureDysentery" title_key="statCureDysentery" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterRedTea" display_group="groupConsumables">
@@ -475,6 +546,7 @@ All the perk tags:
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterGoldenrodRedTea" display_group="groupConsumables">
@@ -483,6 +555,7 @@ All the perk tags:
 			<display_entry name="dCureDysentery" title_key="statCureDysentery" display_type="Percent"/>
 			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterCoffee" display_group="groupConsumables">
@@ -490,6 +563,7 @@ All the perk tags:
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dHypothermalResist" title_key="statHypothermalResist"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterMegaCrush" display_group="groupConsumables">
@@ -497,6 +571,7 @@ All the perk tags:
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterBeer" display_group="groupConsumables">
@@ -504,6 +579,7 @@ All the perk tags:
 			<display_entry name="dEntityDamageBrawling" title_key="statEntityDamageBrawling" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterGrandpasMoonshine" display_group="groupConsumables">
@@ -513,22 +589,26 @@ All the perk tags:
 			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterGrandpasAwesomeSauce" display_group="groupConsumables">
 			<display_entry name="dBartering" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="waterGrandpasLearningElixir" display_group="groupConsumables">
 			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="food" display_group="groupConsumables">
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name=".foodStaminaBonusAdd" title_key="statFoodStaminaBonus"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodRaw" display_group="groupConsumables">
@@ -536,13 +616,14 @@ All the perk tags:
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool"/>
 			<display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodCureInfection" display_group="groupConsumables">
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool"/>
 			<display_entry name="dCureInfection" title_key="jz_statCureInfection" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodWater" display_group="groupConsumables">
@@ -550,6 +631,7 @@ All the perk tags:
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name=".foodStaminaBonusAdd" title_key="statFoodStaminaBonus"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodWaterRaw" display_group="groupConsumables">
@@ -557,6 +639,7 @@ All the perk tags:
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodWaterNegative" display_group="groupConsumables">
@@ -564,6 +647,7 @@ All the perk tags:
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name=".foodStaminaBonusAdd" title_key="statFoodStaminaBonus"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodShamChowder" display_group="groupConsumables">
@@ -572,6 +656,7 @@ All the perk tags:
 			<display_entry name=".foodStaminaBonusAdd" title_key="statFoodStaminaBonus"/>
 			<display_entry name="dFortitude" title_key="statShowFortitude" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodPumpkinCheesecake" display_group="groupConsumables">
@@ -580,6 +665,7 @@ All the perk tags:
 			<display_entry name=".foodStaminaBonusAdd" title_key="statFoodStaminaBonus"/>
 			<display_entry name="dBartering" title_key="statBarteringBuy" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drinkYuccaSmoothie" display_group="groupConsumables">
@@ -589,26 +675,31 @@ All the perk tags:
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 			<display_entry name="dHypothermalResist" title_key="statHypothermalResist" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
-			<display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
+			<display_entry name="$jz_PlayerFruitVitamin" title_key="Essential Vitamins" display_type="Decimal2"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="foodWaterOnlyRaw" display_group="groupConsumables">
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="ddummyNoBonus" title_key="statFoodStaminaBonus" display_type="Bool"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="cureInfection" display_group="groupConsumables">
 			<display_entry name="dCureInfection" title_key="jz_statCureInfection" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		
 		<item_display_info display_type="medical" display_group="groupConsumables">
 			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="medicalFirstAidKit" display_group="groupConsumables">
 			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
 			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="medicalVitamins" display_group="groupConsumables">
@@ -616,9 +707,10 @@ All the perk tags:
 			<display_entry name="dDiseaseResist" title_key="statDiseaseResist" display_type="Percent"/>
 			<display_entry name="dStopsWeakness" title_key="statStopsWeakness" display_type="Percent"/>
 			<display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-			<display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-			<display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-			<display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
+			<display_entry name="$jz_PlayerProteinVitamin" title_key="Protein" display_type="Decimal2"/>
+			<display_entry name="$jz_PlayerVeggieVitamin" title_key="Fiber" display_type="Decimal2"/>
+			<display_entry name="$jz_PlayerFruitVitamin" title_key="Essential Vitamins" display_type="Decimal2"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="medicalPainkillers" display_group="groupConsumables">
@@ -628,31 +720,36 @@ All the perk tags:
 			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" />
 			<display_entry name="dStopsConcussion" title_key="statStopsConcussion" display_type="Percent"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 			
 		</item_display_info>
 
 		<item_display_info display_type="sewingKit" display_group="groupConsumables">
 			<display_entry name="dStopsBleeding" title_key="statStopsBleeding" display_type="Percent"/>
 			<display_entry name="dStopsLaceration" title_key="statStopsLaceration" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugSteroids" display_group="groupConsumables">
-			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>
+			<display_entry name="TSAddCarryWeight" title_key="Added Carry Weight" display_leading_plus="true"/>  <!-- JZMOD -->
 			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugRecog" display_group="groupConsumables">
 			<display_entry name="dEntityDamage" title_key="statEntityDamageRanged" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugFortBites" display_group="groupConsumables">
 			<display_entry name="dHealthLoss" title_key="statHealthLoss" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugAtomJunkies" display_group="groupConsumables">
@@ -660,12 +757,14 @@ All the perk tags:
 			<display_entry name="dExDamageBlock" display_type="Percent" title_key="statBlockDamageExplosion" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugCovertCats" display_group="groupConsumables">
 			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugEyeKandy" display_group="groupConsumables">
@@ -673,12 +772,14 @@ All the perk tags:
 			<display_entry name="dLootGamestagePerc" title_key="statLootGamestage" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugHackers" display_group="groupConsumables">
 			<display_entry name="dHarvestSalvage" title_key="statHarvestSalvage" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugHealthBar" display_group="groupConsumables">
@@ -687,42 +788,49 @@ All the perk tags:
 			<display_entry name="dNaturalCritHealing" title_key="statNaturalCritHealing" display_type="Percent"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugJailBreakers" display_group="groupConsumables">
 			<display_entry name="dLockpickSuccess" title_key="statLockpickSuccess" display_type="Percent"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugNerdTats" display_group="groupConsumables">
 			<display_entry name="dShockAOERadius" title_key="statShockAOERadius" display_type="Decimal2"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugOhShitzDrops" display_group="groupConsumables">
 			<display_entry name="dFallDamage" title_key="statFallDamage" display_type="Percent"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugRockBusters" display_group="groupConsumables">
 			<display_entry name="dHarvestMining" title_key="statHarvestMining" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugSkullCrushers" display_group="groupConsumables">
 			<display_entry name="dEntityDamage" title_key="statEntityDamageMelee" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="drugSugarButts" display_group="groupConsumables">
 			<display_entry name="dBarteringSellBuy" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<!-- UNODIR every block will show this display -->
@@ -732,6 +840,7 @@ All the perk tags:
 			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/> <!-- will show 0 or 1 without show_bool -->
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockFallDamage" display_group="groupBlocks">
@@ -741,6 +850,7 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
 			<display_entry name="FallDamage" title_key="statFallDamage" display_type="Percent" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockHardened" display_group="groupBlocks">
@@ -750,6 +860,7 @@ All the perk tags:
 			<display_entry name="ExplosionResistance" title_key="statExplosionResistance" display_type="Percent" show_inverted="true"/>
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockHardenedMulti" display_group="groupBlocks">
@@ -759,6 +870,7 @@ All the perk tags:
 			<display_entry name="ExplosionResistance" title_key="statExplosionResistance" display_type="Percent" show_inverted="true"/>
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockMulti" display_group="groupBlocks">
@@ -767,6 +879,7 @@ All the perk tags:
 			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockShootThrough" display_group="groupBlocks">
@@ -776,6 +889,7 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="canShootThrough" title_key="statCanShootThrough" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="blockShootThroughHardened" display_group="groupBlocks">
 			<display_entry name="Mass" title_key="statMass" negative_preferred="true"/>
@@ -785,6 +899,7 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="canShootThrough" title_key="statCanShootThrough" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockElectrical" display_group="groupBlocks">
@@ -794,6 +909,7 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
 			<display_entry name="RequiredPower" title_key="statRequiredPower"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockElectricalHardened" display_group="groupBlocks">
@@ -804,6 +920,7 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
 			<display_entry name="RequiredPower" title_key="statRequiredPower"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockElectricalMulti" display_group="groupBlocks">
@@ -813,6 +930,7 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
 			<display_entry name="RequiredPower" title_key="statRequiredPower"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockElectricalHardenedMulti" display_group="groupBlocks">
@@ -823,12 +941,14 @@ All the perk tags:
 			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
 			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
 			<display_entry name="RequiredPower" title_key="statRequiredPower"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockTerrain" display_group="groupBlocks">
 			<display_entry name="Mass" title_key="statMass" negative_preferred="true"/>
 			<display_entry name="StabilityGlue" title_key="statStabilityGlue"/>
 			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockTerrainFertile" display_group="groupBlocks">
@@ -836,6 +956,7 @@ All the perk tags:
 			<display_entry name="StabilityGlue" title_key="statStabilityGlue"/>
 			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
 			<display_entry name="FertileLevel" title_key="statFertileLevel"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="blockTerrainHardened" display_group="groupBlocks">
@@ -843,209 +964,111 @@ All the perk tags:
 			<display_entry name="StabilityGlue" title_key="statStabilityGlue"/>
 			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
 			<display_entry name="ExplosionResistance" title_key="statExplosionResistance" display_type="Percent" show_inverted="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 		<item_display_info display_type="toolAnvil" display_group="workstationTools">
 			<display_entry name="dCraftingTime" title_key="statCraftingTimeForge" display_type="Percent" display_leading_plus="true" negative_preferred="false"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 		<item_display_info display_type="toolBellows" display_group="workstationTools">
 			<display_entry name="dCraftingSmeltTime" title_key="statCraftingSmeltTime" display_type="Percent" display_leading_plus="true" negative_preferred="false"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> <!-- JZMOD -->
 		</item_display_info>
 
 <!--  *************************************************************** JZMOD ITEM DISPLAYS ************************************************ -->
-        <item_display_info display_type="TSFoodHealth" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+        <item_display_info display_type="armorClothDisplay" display_group="groupAttire" >
+			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResistLight"/>
+			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statExplosionResistance" tags="heat,electrical"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="lightArmorDeg,admin"/>
+			<display_entry name="TSResistFatigue" display_type="Percent" title_key="Fatigue Resistance" />
+			<display_entry name="TSResistStun" display_type="Percent" title_key="Stun Resistance" />
+			<display_entry name="TSResistLaceration" display_type="Percent" title_key="Laceration Resistance" />
+			<display_entry name="TSResistGash" display_type="Percent" title_key="Gash Resistance" />
+			<display_entry name="TSResistBites" display_type="Percent" title_key="Bite Resistance" />
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
 		</item_display_info>
-        
-        <item_display_info display_type="TSWaDy" display_group="groupConsumables">
-			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-			<display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-		</item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeDy" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStDy" display_group="groupConsumables">
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeWeDy" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-                
-        <item_display_info display_type="TSFoWaStHePrDy" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeWePrDy" display_group="groupConsumables">
-			<display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-         <item_display_info display_type="TSFoWaStHePrVeDy" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeVeDy" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeFrDy" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
-            <display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeVe" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-        </item_display_info>
-        
-		<item_display_info display_type="TSFoWaStHeWeVe" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-        </item_display_info>
-      
-        <item_display_info display_type="TSFoWaStHePr" display_group="groupConsumables">
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeWePrVe" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHePrVe" display_group="groupConsumables">
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-        </item_display_info>
-             
-        <item_display_info display_type="TSFoWaHeWePrFrVe" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-			<display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>      
-        </item_display_info>
-                
-        <item_display_info display_type="TSFoWaStHePrFrVe" display_group="groupConsumables">
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-			<display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSFoWaStHeWeFr" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
-        </item_display_info>
-               
-        <item_display_info display_type="TSFoWaStHeWePr" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-        </item_display_info>
-        
-         <item_display_info display_type="TSFoWaStHeWePrFr" display_group="groupConsumables">
-            <display_entry name="$jz_WellnessLv" title_key="Wellness"/>
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSProtein" title_key="Protein" display_type="Decimal2"/>
-            <display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSWaFr" display_group="groupConsumables">
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
-        </item_display_info>
-        
-        <item_display_info display_type="TSWaVe" display_group="groupConsumables">
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSVeggie" title_key="Fiber" display_type="Decimal2"/>
-        </item_display_info>
-        
-         <item_display_info display_type="TSFoWaStHeFr" display_group="groupConsumables">
-            <display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
-            <display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-            <display_entry name="TSStaminaLoss" title_key="Stamina"/>
-            <display_entry name="TSFruit" title_key="Essential Vitamins" display_type="Decimal2"/>
-        </item_display_info>
 		
+		<item_display_info display_type="armorLightDisplay" display_group="groupAttire" >
+			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResistLight"/>
+			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statExplosionResistance" tags="heat,electrical"/>
+			<display_entry name="dStaminaChangeOT" title_key="statStaminaChangeOT" display_type="Decimal2"/>
+			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
+			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="lightArmorDeg,admin"/>
+			<display_entry name="TSResistFatigue" display_type="Percent" title_key="Fatigue Resistance" />
+			<display_entry name="TSResistStun" display_type="Percent" title_key="Stun Resistance" />
+			<display_entry name="TSResistBreak" display_type="Percent" title_key="Break Resistance" />
+			<display_entry name="TSResistBurn" display_type="Percent" title_key="Burn Resistance" />
+			<display_entry name="TSResistLaceration" display_type="Percent" title_key="Laceration Resistance" />
+			<display_entry name="TSResistGash" display_type="Percent" title_key="Gash Resistance" />
+			<display_entry name="TSResistBites" display_type="Percent" title_key="Bite Resistance" />
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
+				
+		<item_display_info display_type="armorHeavyDisplay" display_group="groupAttire" >
+			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResistHeavy"/>
+			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statExplosionResistance" tags="heat,electrical"/>
+			<display_entry name="dStaminaChangeOT" title_key="statStaminaChangeOT" display_type="Decimal2"/>
+			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
+			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="heavyArmorDeg,admin"/>
+			<display_entry name="TSResistFatigue" display_type="Percent" title_key="Fatigue Resistance" />
+			<display_entry name="TSResistStun" display_type="Percent" title_key="Stun Resistance" />
+			<display_entry name="TSResistBreak" display_type="Percent" title_key="Break Resistance" />
+			<display_entry name="TSResistBurn" display_type="Percent" title_key="Burn Resistance" />
+			<display_entry name="TSResistLaceration" display_type="Percent" title_key="Laceration Resistance" />
+			<display_entry name="TSResistGash" display_type="Percent" title_key="Gash Resistance" />
+			<display_entry name="TSResistBites" display_type="Percent" title_key="Bite Resistance" />
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
+		
+		<item_display_info display_type="armorHeavyHeatResistDisplay" display_group="groupAttire" >
+			<display_entry name="PhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResistHeavy"/>
+			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
+			<display_entry name="dStaminaChangeOT" title_key="statStaminaChangeOT" display_type="Decimal2"/>
+			<display_entry name="Mobility" title_key="statMobility" display_type="Percent" show_inverted="true" negative_preferred="false"/>
+			<display_entry name="dNoiseMultiplier" title_key="statNoiseIncrease" display_type="Percent" show_inverted="false" negative_preferred="true"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="heavyArmorDeg,admin"/>
+			<display_entry name="TSResistFatigue" display_type="Percent" title_key="Fatigue Resistance" />
+			<display_entry name="TSResistStun" display_type="Percent" title_key="Stun Resistance" />
+			<display_entry name="TSResistBreak" display_type="Percent" title_key="Break Resistance" />
+			<display_entry name="TSResistBurn" display_type="Percent" title_key="Burn Resistance" />
+			<display_entry name="TSResistLaceration" display_type="Percent" title_key="Laceration Resistance" />
+			<display_entry name="TSResistGash" display_type="Percent" title_key="Gash Resistance" />
+			<display_entry name="TSResistBites" display_type="Percent" title_key="Bite Resistance" />
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
+		
+		<item_display_info display_type="clothingDisplay" display_group="groupAttire" >
+			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist"/>
+			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist"/>
+			<display_entry name="TSDegradation" title_key="statDegradationMax"/> 
+			<display_entry name="TSPocketWeight" title_key="Carry Weight" display_leading_plus="true"/>  	
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 		
+		</item_display_info>
+		
+	    <item_display_info display_type="TSFood" display_group="groupConsumables">
+			<display_entry name="$jz_WellnessLv" title_key="Wellness"/>
+			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="TSStaminaLoss" title_key="Stamina"/>
+			<display_entry name="$fatigueTicker" title_key="Fatigue"/>
+			<display_entry name="$jz_PlayerProteinVitamin" title_key="Protein" display_type="Decimal2"/>
+            <display_entry name="$jz_PlayerVeggieVitamin" title_key="Fiber" display_type="Decimal2"/>
+			<display_entry name="$jz_PlayerFruitVitamin" title_key="Essential Vitamins" display_type="Decimal2"/>  
+			<display_entry name="dDysenteryRisk" title_key="statDysenteryRisk" display_type="Percent" negative_preferred="true"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
+        
 		<item_display_info display_type="cureZVirusInfection" display_group="groupConsumables">
 			<display_entry name="dCureZvirusInfection" title_key="jz_statCureZVirusInfection" display_type="Percent"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
+		</item_display_info>
+		
+		<item_display_info display_type="TSItemDisplay" display_group="groupConsumables">
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight"/> 
 		</item_display_info>
 	</item_display>
 
@@ -1113,6 +1136,7 @@ All the perk tags:
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 
 		<crafting_category_list display_type="workbench">
@@ -1220,74 +1244,824 @@ All the perk tags:
 			<crafting_category name="Food/Cooking" icon="ui_game_symbol_assemble" display_name="Seeds" />
 			<crafting_category name="Other" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
-		
+		<!-- IMPROVISED WORKBENCH -->
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbench">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv2">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv3">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv4">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv5">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv6">
-			<crafting_category name="Stoneaxe" icon="ui_game_symbol_assemble" display_name="Stoneaxe" />
-			<crafting_category name="StoneShovel" icon="ui_game_symbol_assemble" display_name="StoneShovel" />
-			<crafting_category name="Knuckles" icon="ui_game_symbol_assemble" display_name="Knuckles" />
-			<crafting_category name="BoneKnife" icon="ui_game_symbol_assemble" display_name="BoneKnife" />
-			<crafting_category name="Clubs" icon="ui_game_symbol_assemble" display_name="Clubs" />
-			<crafting_category name="StoneSledge" icon="ui_game_symbol_assemble" display_name="StoneSledge" />
-			<crafting_category name="Spears" icon="ui_game_symbol_assemble" display_name="Spears" />
-			<crafting_category name="Archery" icon="ui_game_symbol_assemble" display_name="Bows" />
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv7">
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv8">
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv9">
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationImprovisedWorkbenchLv10">
+			<crafting_category name="Stoneaxe" icon="WhiteStoneAxe" display_name="Stoneaxe" />
+			<crafting_category name="StoneShovel" icon="WhiteStoneShovel" display_name="StoneShovel" />
+			<crafting_category name="Knuckles" icon="WhiteKnuckles" display_name="Knuckles" />
+			<crafting_category name="BoneKnife" icon="WhiteBoneKnife" display_name="BoneKnife" />
+			<crafting_category name="Clubs" icon="WhiteClub" display_name="Clubs" />
+			<crafting_category name="StoneSledge" icon="WhiteStoneSledgehammer" display_name="StoneSledge" />
+			<crafting_category name="Spears" icon="WhiteSpear" display_name="Spears" />
+			<crafting_category name="Archery" icon="WhiteBow" display_name="Bows" />
+		</crafting_category_list>
+		<!-- PIPE GUN WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationPipeGunWorkbench">
+			<crafting_category name="Pistol" icon="WhitePipePistol" display_name="Pistol" />
+			<crafting_category name="Shotgun" icon="WhitePipeShotgun" display_name="Shotgun" />
+			<crafting_category name="MachineGun" icon="WhitePipeMachineGun" display_name="Machine Gun" />
+			<crafting_category name="Rifle" icon="WhitePipeRifle" display_name="Rifle" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationPipeGunWorkbenchLv2">
+			<crafting_category name="Pistol" icon="WhitePipePistol" display_name="Pistol" />
+			<crafting_category name="Shotgun" icon="WhitePipeShotgun" display_name="Shotgun" />
+			<crafting_category name="MachineGun" icon="WhitePipeMachineGun" display_name="Machine Gun" />
+			<crafting_category name="Rifle" icon="WhitePipeRifle" display_name="Rifle" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationPipeGunWorkbenchLv3">
+			<crafting_category name="Pistol" icon="WhitePipePistol" display_name="Pistol" />
+			<crafting_category name="Shotgun" icon="WhitePipeShotgun" display_name="Shotgun" />
+			<crafting_category name="MachineGun" icon="WhitePipeMachineGun" display_name="Machine Gun" />
+			<crafting_category name="Rifle" icon="WhitePipeRifle" display_name="Rifle" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationPipeGunWorkbenchLv4">
+			<crafting_category name="Pistol" icon="WhitePipePistol" display_name="Pistol" />
+			<crafting_category name="Shotgun" icon="WhitePipeShotgun" display_name="Shotgun" />
+			<crafting_category name="MachineGun" icon="WhitePipeMachineGun" display_name="Machine Gun" />
+			<crafting_category name="Rifle" icon="WhitePipeRifle" display_name="Rifle" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationPipeGunWorkbenchLv5">
+			<crafting_category name="Pistol" icon="WhitePipePistol" display_name="Pistol" />
+			<crafting_category name="Shotgun" icon="WhitePipeShotgun" display_name="Shotgun" />
+			<crafting_category name="MachineGun" icon="WhitePipeMachineGun" display_name="Machine Gun" />
+			<crafting_category name="Rifle" icon="WhitePipeRifle" display_name="Rifle" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationPipeGunWorkbenchLv6">
+			<crafting_category name="Pistol" icon="WhitePipePistol" display_name="Pistol" />
+			<crafting_category name="Shotgun" icon="WhitePipeShotgun" display_name="Shotgun" />
+			<crafting_category name="MachineGun" icon="WhitePipeMachineGun" display_name="Machine Gun" />
+			<crafting_category name="Rifle" icon="WhitePipeRifle" display_name="Rifle" />
+		</crafting_category_list>
+	<!-- LIGHT AZRMOR WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbench">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv2">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv3">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv4">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv5">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv6">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv7">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv8">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv9">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationLightArmorWorkbenchLv10">
+			<crafting_category name="Hat" icon="WhiteLightHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteLightChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteLightGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteLightPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteLightBoots" display_name="Boots" />
+		</crafting_category_list>
+		<!-- HEAVY ARMOR WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbench">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv2">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv3">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv4">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv5">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv6">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv7">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv8">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv9">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHeavyArmorWorkbenchLv10">
+			<crafting_category name="Hat" icon="WhiteHeavyHat" display_name="Hat" />
+			<crafting_category name="Chest" icon="WhiteHeavyChest" display_name="Chest" />
+			<crafting_category name="Gloves" icon="WhiteHeavyGloves" display_name="Gloves" />
+			<crafting_category name="Pants" icon="WhiteHeavyPants" display_name="Pants" />
+			<crafting_category name="Boots" icon="WhiteHeavyBoots" display_name="Boots" />
+		</crafting_category_list>
+		<!-- ADVANCED WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationToolWorkbench">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv2">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv3">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv4">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv5">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv6">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv7">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv8">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv9">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationToolWorkbenchLv10">
+			<crafting_category name="Blades" icon="WhiteBlades" display_name="Blades" />
+			<crafting_category name="Clubs" icon="WhiteClubs" display_name="Clubs" />
+			<crafting_category name="Axes" icon="WhiteAxes" display_name="Axes" />
+			<crafting_category name="Pickaxes" icon="WhitePickaxes" display_name="Pickaxes" />
+			<crafting_category name="Shovels" icon="WhiteShovels" display_name="Shovels" />
+			<crafting_category name="SledgeHammers" icon="WhiteSledgeHammers" display_name="Sledge Hammers" />
+			<crafting_category name="Crossbows" icon="WhiteCrossbows" display_name="Crossbows" />
+			<crafting_category name="Tools" icon="WhiteTools" display_name="Tools" />
+			<crafting_category name="PowerTools" icon="WhitePowerTools" display_name="Power Tools" />
+		</crafting_category_list>
+		<!-- ELECTRONIC WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationElectronicWorkbench">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv2">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv3">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv4">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv5">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv6">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv7">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv8">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv9">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv10">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv11">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationElectronicWorkbenchLv12">
+			<crafting_category name="StunBaton" icon="WhiteStunBaton" display_name="Stun Baton" />
+			<crafting_category name="CarBattery" icon="WhiteCarBattery" display_name="Car Battery" />
+			<crafting_category name="SolarCell" icon="WhiteSolarCell" display_name="Solar Cell" />
+			<crafting_category name="Turrets" icon="WhiteTurrets" display_name="Turrets" />
+			<crafting_category name="Drone" icon="WhiteDrone" display_name="Drone" />
+		</crafting_category_list>
+		<!-- HANDGUN WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationHandgunWorkbench">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv2">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv3">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv4">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv5">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv6">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv7">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv8">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv9">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv10">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv11">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationHandgunWorkbenchLv12">
+			<crafting_category name="Pistol" icon="WhitePistol" display_name="Pistol" />
+			<crafting_category name="Magnum" icon="WhiteMagnum" display_name="Magnum" />
+			<crafting_category name="DesertVulture" icon="WhiteDesertVulture" display_name="Desert Vulture" />
+			<crafting_category name="SMG" icon="WhiteSMG" display_name="SMG" />
+		</crafting_category_list>
+		<!-- SHOTGUN WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationShotgunWorkbench">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv2">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv3">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv4">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv5">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv6">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv7">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv8">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv9">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationShotgunWorkbenchLv10">
+			<crafting_category name="DoubleBarrel" icon="WhiteDoubleBarrel" display_name="Double Barrel" />
+			<crafting_category name="Pump" icon="WhitePump" display_name="Pump" />
+			<crafting_category name="Auto" icon="WhiteAuto" display_name="Auto" />
+		</crafting_category_list>
+		<!-- MACHINE GUN WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbench">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv2">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv3">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv4">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv5">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv6">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv7">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv8">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv9">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationMachineGunWorkbenchLv10">
+			<crafting_category name="AK47" icon="WhiteAK47" display_name="AK47" />
+			<crafting_category name="AR" icon="WhiteAR" display_name="AR" />
+			<crafting_category name="M60" icon="WhiteM60" display_name="M60" />
+		</crafting_category_list>
+		<!-- RIFLE WORKBENCH -->
+ 		<crafting_category_list display_type="jz_WorkstationRifleWorkbench">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv2">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv3">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv4">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv5">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv6">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv7">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv8">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv9">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv10">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv11">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="jz_WorkstationRifleWorkbenchLv12">
+			<crafting_category name="Hunting" icon="WhiteHunting" display_name="Hunting" />
+			<crafting_category name="LeverAction" icon="WhiteLeverAction" display_name="Lever Action" />
+			<crafting_category name="Sniper" icon="WhiteSniper" display_name="Sniper" />
+			<crafting_category name="RocketLauncher" icon="WhiteRocketLauncher" display_name="Rocket Launcher" />
 		</crafting_category_list>
 	</crafting_category_display>
-
+	
 	<trader_category_display>
 		<trader_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
 		<trader_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />

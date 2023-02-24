@@ -1867,15 +1867,17 @@
 	</placeholder>
 	
 	<placeholder name="jz_GoreDecorRandomHelper">
-		<block name="jz_GoreBlockHumanBones" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones2" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones3" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones4" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones5" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones6" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones7" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones8" prob="11.11" />
-		<block name="jz_GoreBlockHumanBones9" prob="11.11" />					  
+		<block name="jz_GoreBlockHumanBones" prob=".09" />
+		<block name="jz_GoreBlockHumanBones2" prob=".09" />
+		<block name="jz_GoreBlockHumanBones3" prob=".09" />
+		<block name="jz_GoreBlockHumanBones4" prob=".09" />
+		<block name="jz_GoreBlockHumanBones5" prob=".09" />
+		<block name="jz_GoreBlockHumanBones6" prob=".09" />
+		<block name="jz_GoreBlockHumanBones7" prob=".09" />
+		<block name="jz_GoreBlockHumanBones8" prob=".09" />
+		<block name="jz_GoreBlockHumanBones9" prob=".09" />	
+		<block name="goreBlockHumanBones" prob=".1" />
+		<block name="goreHumanSkull" prob=".09" />			
 	</placeholder>
 	
 	<placeholder name="jz_SmallRockRandomHelper">

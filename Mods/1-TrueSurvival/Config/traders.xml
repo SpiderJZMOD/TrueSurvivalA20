@@ -88,48 +88,288 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="modArmorBallCap"/>
 		</trader_item_group>
        
+		<trader_item_group name="GhillieSuitHood" count="1">
+			<item name="jz_ClothingGhillieSuitHoodLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingGhillieSuitHoodLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingGhillieSuitHoodLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="GhillieSuitPants" count="1">
+			<item name="jz_ClothingGhillieSuitPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingGhillieSuitPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingGhillieSuitPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="GhillieSuitJacket" count="1">
+			<item name="jz_ClothingGhillieSuitJacketLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingGhillieSuitJacketLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingGhillieSuitJacketLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="HazmatBoots" count="1">
+			<item name="jz_ClothingHazmatBootsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingHazmatBootsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingHazmatBootsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="HazmatPants" count="1">
+			<item name="jz_ClothingHazmatPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingHazmatPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingHazmatPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="HazmatJacket" count="1">
+			<item name="jz_ClothingHazmatJacketLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingHazmatJacketLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingHazmatJacketLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="HazmatGloves" count="1">
+			<item name="jz_ClothingHazmatGlovesLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingHazmatGlovesLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingHazmatGlovesLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="HazmatMask" count="1">
+			<item name="jz_ClothingHazmatMaskLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingHazmatMaskLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingHazmatMaskLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="CowboyHat" count="1">
+			<item name="jz_ClothingCowboyHatLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingCowboyHatLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingCowboyHatLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="BallCap" count="1">
+			<item name="jz_ClothingBallCapLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingBallCapLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingBallCapLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="SkullCap" count="1">
+			<item name="jz_ClothingSkullCapLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingSkullCapLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingSkullCapLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="PressboyCap" count="1">
+			<item name="jz_ClothingPressboyCapLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingPressboyCapLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingPressboyCapLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="Bandana" count="1">
+			<item name="jz_ClothingBandanaLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingBandanaLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingBandanaLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="DenimPants" count="1">
+			<item name="jz_ClothingDenimPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingDenimPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingDenimPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="DenimShortsPants" count="1">
+			<item name="jz_ClothingDenimShortsPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingDenimShortsPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingDenimShortsPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="ArmyPants" count="1">
+			<item name="jz_ClothingArmyPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingArmyPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingArmyPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="Overalls" count="1">
+			<item name="jz_ClothingOverallsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingOverallsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingOverallsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="Skirt" count="1">
+			<item name="jz_ClothingSkirtLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingSkirtLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingSkirtLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="GothPants" count="1">
+			<item name="jz_ClothingGothPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingGothPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingGothPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="WornBoots" count="1">
+			<item name="jz_ClothingWornBootsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingWornBootsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingWornBootsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="RunningShoesRegular" count="1">
+			<item name="jz_ClothingRunningShoesRegularLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingRunningShoesRegularLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingRunningShoesRegularLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="RunningShoesHP" count="1">
+			<item name="jz_ClothingRunningShoesHPLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingRunningShoesHPLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingRunningShoesHPLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="CowboyBoots" count="1">
+			<item name="jz_ClothingCowboyBootsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingCowboyBootsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingCowboyBootsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="GothBoots" count="1">
+			<item name="jz_ClothingGothBootsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingGothBootsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingGothBootsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="LongShirt" count="1">
+			<item name="jz_ClothingLongShirtLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingLongShirtLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingLongShirtLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="ArmyShirt" count="1">
+			<item name="jz_ClothingArmyShirtLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingArmyShirtLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingArmyShirtLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="Sweatshirt" count="1">
+			<item name="jz_ClothingSweatshirtLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingSweatshirtLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingSweatshirtLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="FlannelShirt" count="1">
+			<item name="jz_ClothingFlannelShirtLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingFlannelShirtLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingFlannelShirtLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="TShirtPlain" count="1">
+			<item name="jz_ClothingTShirtPlainLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingTShirtPlainLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingTShirtPlainLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="TShirtZU" count="1">
+			<item name="jz_ClothingTShirtZULv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingTShirtZULv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingTShirtZULv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="TankTop" count="1">
+			<item name="jz_ClothingTankTopLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingTankTopLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingTankTopLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="HoodySweatshirt" count="1">
+			<item name="jz_ClothingHoodySweatshirtLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingHoodySweatshirtLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingHoodySweatshirtLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="Poncho" count="1">
+			<item name="jz_ClothingLeatherPonchoLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingLeatherPonchoLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingLeatherPonchoLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="Duster" count="1">
+			<item name="jz_ClothingLeatherDusterLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingLeatherDusterLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingLeatherDusterLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="PufferCoat" count="1">
+			<item name="jz_ClothingPufferCoatLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingPufferCoatLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingPufferCoatLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="JacketGeneric" count="1">
+			<item name="jz_ClothingJacketGenericLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingJacketGenericLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingJacketGenericLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="JacketLetterZU" count="1">
+			<item name="jz_ClothingJacketLetterZULv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingJacketLetterZULv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingJacketLetterZULv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="SuitPants" count="1">
+			<item name="jz_ClothingSuitPantsLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingSuitPantsLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingSuitPantsLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
+		<trader_item_group name="SuitJacket" count="1">
+			<item name="jz_ClothingSuitJacketLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingSuitJacketLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingSuitJacketLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+		
+		<trader_item_group name="SuitDressShoes" count="1">
+			<item name="jz_ClothingSuitDressShoesLv3" quality="3" prob=".6"/>
+			<item name="jz_ClothingSuitDressShoesLv4" quality="4" prob=".3"/>
+			<item name="jz_ClothingSuitDressShoesLv5" quality="5" prob=".1"/>
+		</trader_item_group>
+
 		<trader_item_group name="suitAll">
-			<item name="apparelSuitPants"/>
-			<item name="apparelSuitJacket"/>
-			<item name="apparelSuitDressShoes"/>
+			<item group="SuitPants"/>
+			<item group="SuitJacket"/>
+			<item group="SuitDressShoes"/>
 		</trader_item_group>
 
 		<trader_item_group name="pantsAll">
-			<item name="apparelDenimPants"/>
-			<item name="apparelArmyPants"/>
+			<item group="DenimPants"/>
+			<item group="ArmyPants"/>
 		</trader_item_group>
 
 		<trader_item_group name="shirtLongAll">
-			<item name="apparelLongShirt"/>
-			<item name="apparelArmyShirt"/>
+			<item group="LongShirt"/>
+			<item group="ArmyShirt"/>
 		</trader_item_group>
 
 		<trader_item_group name="skullCapAll">
-			<item name="apparelSkullCap"/>
+			<item group="SkullCap"/>
 			<item name="modArmorSkullCap" prob="0.2"/>
 		</trader_item_group>
 
 		<trader_item_group name="ballCapAll">
-			<item name="apparelBallCap"/>
+			<item group="BallCap"/>
 			<item name="modArmorBallCap" prob="0.2"/>
 		</trader_item_group>
 
 		<trader_item_group name="pressboyCapAll">
-			<item name="apparelPressboyCap"/>
+			<item group="PressboyCap"/>
 			<item name="modArmorPressboyCap" prob="0.2"/>
 		</trader_item_group>
 
 		<trader_item_group name="cowboyHatAll">
-			<item name="apparelCowboyHat"/>
+			<item group="CowboyHat"/>
 			<item name="modArmorCowboyHat" prob="0.2"/>
 		</trader_item_group>
 
 		<trader_item_group name="hazmatGear" count="1,2">
-			<item name="apparelHazmatBoots"/>
-			<item name="apparelHazmatPants"/>
-			<item name="apparelHazmatJacket"/>
-			<item name="apparelHazmatGloves"/>
-			<item name="apparelHazmatMask"/>
+			<item group="HazmatBoots"/>
+			<item group="HazmatPants"/>
+			<item group="HazmatJacket"/>
+			<item group="HazmatGloves"/>
+			<item group="HazmatMask"/>
 			<item name="resourceMilitaryFiber" count="1,6" prob="2"/>
 		</trader_item_group>
 
@@ -141,33 +381,33 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="Clothes" count="1">
-			<item name="apparelCoatPufferCoat"/>
+			<item group="PufferCoat"/>
 			<item group="hats"/>
 			<item group="shirtLongAll"/>
 			<item group="pantsAll"/>
-			<item name="apparelSkirt" prob="0.5"/>
-			<item name="apparelTankTop"/>
-			<item name="apparelBandana"/>
-			<item name="apparelSweatshirt"/>
-            <item name="apparelOveralls"/>
+			<item group="Skirt" prob="0.5"/>
+			<item group="TankTop"/>
+			<item group="Bandana"/>
+			<item group="Sweatshirt"/>
+            <item group="Overalls"/>
 			<item group="cowboyHatAll"/>
-			<item name="apparelHoodySweatshirt"/>
+			<item group="HoodySweatshirt"/>
 			<item group="pressboyCapAll"/>
 			<item group="suitAll" prob="0.2"/>
-			<item name="apparelCowboyBoots"/>
-            <item name="apparelDenimShortsPants"/>
-			<item name="apparelTShirtPlain"/>
-			<item name="apparelWornBoots"/>
+			<item group="CowboyBoots"/>
+            <item group="DenimShortsPants"/>
+			<item group="TShirtPlain"/>
+			<item group="WornBoots"/>
 			<item name="apparelShades" prob=".7"/>
 			<item name="apparelNerdGlasses" prob=".7"/>
 			<item name="apparelSkiGoggles" prob=".7"/>
 			<item name="apparelAviatorGoggles" prob=".7"/>
 			<item name="armorFootballHelmet"/>
-			<item name="apparelCoatLeatherDuster" prob="0.2"/>
+			<item group="Duster" prob="0.2"/>
 			<item group="hazmatGear" prob="0.1"/>
 			<item name="apparelFacialPiercings" prob="0.1"/>
-			<item name="apparelGothBoots" prob=".3"/>
-			<item name="apparelGothPants" prob=".3"/>
+			<item group="GothBoots" prob=".3"/>
+			<item group="GothPants" prob=".3"/>
 		</trader_item_group>
 		
         <!-- TRADER 8-->

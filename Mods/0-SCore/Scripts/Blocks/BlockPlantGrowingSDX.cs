@@ -19,14 +19,18 @@ public class BlockPlantGrowingSDX : BlockPlantGrowing
         if (this.Properties.Values.ContainsKey("RequireWater"))
             this.requireWater = StringParsers.ParseBool(this.Properties.Values["RequireWater"]);
 
-        if (this.Properties.Values.ContainsKey("Wilt"))
-            this.willWilt = StringParsers.ParseBool(this.Properties.Values["Wilt"]);
-
         if (this.Properties.Values.ContainsKey("WaterRange"))
             this.waterRange = int.Parse(this.Properties.Values["WaterRange"]);
 
         if (this.Properties.Values.ContainsKey("PlantGrowing.Wilt"))
+        {
             this.wiltedPlant = ItemClass.GetItem(this.Properties.Values["PlantGrowing.Wilt"], false).ToBlockValue();
+            this.willWilt = true;
+        }
+
+        if (this.Properties.Values.ContainsKey("Wilt"))
+            this.willWilt = StringParsers.ParseBool(this.Properties.Values["Wilt"]);
+
     }
 
 
@@ -45,7 +49,7 @@ public class BlockPlantGrowingSDX : BlockPlantGrowing
 
         if (requireWater == false) return true;
 
-        return CropManager.Instance.IsNearWater(_blockPos);
+        return CropManager.Instance.IsNearWater(_blockPos, waterRange);
     }
 
     // When chunk is loaded, force add the block. This will be valiated on the update check in the crop manager, but
@@ -75,12 +79,17 @@ public class BlockPlantGrowingSDX : BlockPlantGrowing
         if (requireWater)
         {
             var plantData = CropManager.Instance.GetPlant(_blockPos);
-            if (plantData != null && plantData.CanStay() == false)
+            if (plantData != null)
             {
-                // This Removes unregisters the block if it cannot stay, such as if it can't find water, etc.
-                // It'll call CheckPlantAlive() and re-scan for water before it dies.
-                plantData.Remove();
-                return false;
+                // Check to see if it can stay, and consume water.
+                var canStay = plantData.CanStay();
+                if (!canStay)
+                {
+                    // This Removes unregisters the block if it cannot stay, such as if it can't find water, etc.
+                    // It'll call CheckPlantAlive() and re-scan for water before it dies.
+                    plantData.Remove();
+                    return false;
+                }
             }
         }
 
@@ -118,6 +127,16 @@ public class BlockPlantGrowingSDX : BlockPlantGrowing
         blockValue.meta2 = 0;
         _blockValue = blockValue;
         _world.SetBlockRPC(_clrIdx, _blockPos, _blockValue);
+    }
+
+
+
+    //	<property name="DisplayInfo" value="Custom"/> <!-- also valid: "Name" -->
+
+    public override string GetCustomDescription(Vector3i _blockPos, BlockValue _bv)
+    {
+        var text = base.GetLocalizedBlockName();
+        return $"{text} \n {WaterPipeManager.Instance.GetWaterSummary(_blockPos)}";
     }
 }
 

@@ -114,12 +114,26 @@ public class CropManager
 
     public PlantData GetPlantDataNearby(Vector3i position)
     {
-        foreach (var neighbor in Vector3i.AllDirections)
+        var range = 1;
+        for (var x = -range; x <= range; x++)
         {
-            var blockPos = position + neighbor;
-            if (CropMap.ContainsKey(blockPos) && CropMap[blockPos].Visited == false)
-                return CropMap[blockPos];
+            for (var z = -range; z <= range; z++)
+            {
+                for (var y = position.y - 2; y <= position.y + 2; y++)
+                {
+                    var blockPos = new Vector3i(position.x + x, y, position.z + z);
+                    if (CropMap.ContainsKey(blockPos) && CropMap[blockPos].Visited == false)
+                        return CropMap[blockPos];
+                }
+            }
         }
+
+        //foreach (var neighbor in Vector3i.AllDirections)
+        //{
+        //    var blockPos = position + neighbor;
+        //    if (CropMap.ContainsKey(blockPos) && CropMap[blockPos].Visited == false)
+        //        return CropMap[blockPos];
+        //}
         return null;
     }
 
@@ -148,12 +162,12 @@ public class CropManager
         AdvLogging.DisplayLog(AdvFeatureClass, $"Checking Crops for Water: {CropMap.Count} Plants registered.");
         currentTime = checkTime;
     }
-    public bool IsNearWater(Vector3i _blockPos)
+    public bool IsNearWater(Vector3i _blockPos, float waterRange = 5f)
     {
         var plantData = Get(_blockPos);
         if ( plantData == null )
             plantData = new PlantData(_blockPos); 
-        return plantData.IsNearWater();
+        return plantData.IsNearWater(waterRange);
     }
 
     public void Remove(Vector3i _blockPos)

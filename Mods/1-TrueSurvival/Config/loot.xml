@@ -2074,6 +2074,44 @@ If there is no hit the default quality is used.
 	</lootqualitytemplate>
 </lootqualitytemplates>
 
+<lootqualitytemplates>
+	<lootqualitytemplate name="Quality1Always">
+		<qualitytemplate level="1,999999" default_quality="1">
+			<loot quality="1" prob="1"/>
+			<loot quality="2" prob="0"/>
+			<loot quality="3" prob="0"/>
+			<loot quality="4" prob="0"/>
+			<loot quality="5" prob="0"/>
+			<loot quality="6" prob="0"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>
+
+<lootqualitytemplates>
+	<lootqualitytemplate name="Quality2Always">
+		<qualitytemplate level="1,999999" default_quality="2">
+			<loot quality="2" prob="1"/>
+			<loot quality="1" prob="0"/>
+			<loot quality="3" prob="0"/>
+			<loot quality="4" prob="0"/>
+			<loot quality="5" prob="0"/>
+			<loot quality="6" prob="0"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>
+
+<lootqualitytemplates>
+	<lootqualitytemplate name="Quality3Always">
+		<qualitytemplate level="1,999999" default_quality="3">
+			<loot quality="3" prob="1"/>
+			<loot quality="1" prob="0"/>
+			<loot quality="2" prob="0"/>
+			<loot quality="4" prob="0"/>
+			<loot quality="5" prob="0"/>
+			<loot quality="6" prob="0"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>
 
 <!-- *** Loot_Groups -->
 
@@ -2700,57 +2738,778 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Clothing_Groups -->
+
+<lootgroup name="GhillieSuitHoodLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingGhillieSuitHoodLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitHoodLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingGhillieSuitHoodLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitHoodLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingGhillieSuitHoodLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitHood" count="1">
+	<item group="GhillieSuitHoodLv1" prob=".6"/>
+	<item group="GhillieSuitHoodLv2" prob=".3"/>
+	<item group="GhillieSuitHoodLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingGhillieSuitPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingGhillieSuitPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingGhillieSuitPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitPants" count="1">
+	<item group="GhillieSuitPantsLv1" prob=".6"/>
+	<item group="GhillieSuitPantsLv2" prob=".3"/>
+	<item group="GhillieSuitPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitJacketLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingGhillieSuitJacketLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitJacketLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingGhillieSuitJacketLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitJacketLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingGhillieSuitJacketLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GhillieSuitJacket" count="1">
+	<item group="GhillieSuitJacketLv1" prob=".6"/>
+	<item group="GhillieSuitJacketLv2" prob=".3"/>
+	<item group="GhillieSuitJacketLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="HazmatBootsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingHazmatBootsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatBootsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingHazmatBootsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatBootsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingHazmatBootsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatBoots" count="1">
+	<item group="HazmatBootsLv1" prob=".6"/>
+	<item group="HazmatBootsLv2" prob=".3"/>
+	<item group="HazmatBootsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="HazmatPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingHazmatPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingHazmatPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingHazmatPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatPants" count="1">
+	<item group="HazmatPantsLv1" prob=".6"/>
+	<item group="HazmatPantsLv2" prob=".3"/>
+	<item group="HazmatPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="HazmatJacketLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingHazmatJacketLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatJacketLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingHazmatJacketLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatJacketLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingHazmatJacketLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatJacket" count="1">
+	<item group="HazmatJacketLv1" prob=".6"/>
+	<item group="HazmatJacketLv2" prob=".3"/>
+	<item group="HazmatJacketLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="HazmatGlovesLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingHazmatGlovesLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatGlovesLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingHazmatGlovesLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatGlovesLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingHazmatGlovesLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatGloves" count="1">
+	<item group="HazmatGlovesLv1" prob=".6"/>
+	<item group="HazmatGlovesLv2" prob=".3"/>
+	<item group="HazmatGlovesLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="HazmatMaskLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingHazmatMaskLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatMaskLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingHazmatMaskLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatMaskLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingHazmatMaskLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HazmatMask" count="1">
+	<item group="HazmatMaskLv1" prob=".6"/>
+	<item group="HazmatMaskLv2" prob=".3"/>
+	<item group="HazmatMaskLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="CowboyHatLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingCowboyHatLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="CowboyHatLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingCowboyHatLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="CowboyHatLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingCowboyHatLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="CowboyHat" count="1">
+	<item group="CowboyHatLv1" prob=".6"/>
+	<item group="CowboyHatLv2" prob=".3"/>
+	<item group="CowboyHatLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="BallCapLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingBallCapLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="BallCapLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingBallCapLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="BallCapLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingBallCapLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="BallCap" count="1">
+	<item group="BallCapLv1" prob=".6"/>
+	<item group="BallCapLv2" prob=".3"/>
+	<item group="BallCapLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="SkullCapLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingSkullCapLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SkullCapLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingSkullCapLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SkullCapLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingSkullCapLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SkullCap" count="1">
+	<item group="SkullCapLv1" prob=".6"/>
+	<item group="SkullCapLv2" prob=".3"/>
+	<item group="SkullCapLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="PressboyCapLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingPressboyCapLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PressboyCapLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingPressboyCapLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PressboyCapLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingPressboyCapLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PressboyCap" count="1">
+	<item group="PressboyCapLv1" prob=".6"/>
+	<item group="PressboyCapLv2" prob=".3"/>
+	<item group="PressboyCapLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="BandanaLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingBandanaLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="BandanaLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingBandanaLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="BandanaLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingBandanaLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="Bandana" count="1">
+	<item group="BandanaLv1" prob=".6"/>
+	<item group="BandanaLv2" prob=".3"/>
+	<item group="BandanaLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="DenimPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingDenimPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DenimPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingDenimPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DenimPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingDenimPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DenimPants" count="1">
+	<item group="DenimPantsLv1" prob=".6"/>
+	<item group="DenimPantsLv2" prob=".3"/>
+	<item group="DenimPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="DenimShortsPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingDenimShortsPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DenimShortsPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingDenimShortsPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DenimShortsPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingDenimShortsPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DenimShortsPants" count="1">
+	<item group="DenimShortsPantsLv1" prob=".6"/>
+	<item group="DenimShortsPantsLv2" prob=".3"/>
+	<item group="DenimShortsPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="ArmyPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingArmyPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="ArmyPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingArmyPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="ArmyPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingArmyPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="ArmyPants" count="1">
+	<item group="ArmyPantsLv1" prob=".6"/>
+	<item group="ArmyPantsLv2" prob=".3"/>
+	<item group="ArmyPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="OverallsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingOverallsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="OverallsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingOverallsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="OverallsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingOverallsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="Overalls" count="1">
+	<item group="OverallsLv1" prob=".6"/>
+	<item group="OverallsLv2" prob=".3"/>
+	<item group="OverallsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="SkirtLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingSkirtLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SkirtLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingSkirtLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SkirtLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingSkirtLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="Skirt" count="1">
+	<item group="SkirtLv1" prob=".6"/>
+	<item group="SkirtLv2" prob=".3"/>
+	<item group="SkirtLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="GothPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingGothPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GothPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingGothPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GothPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingGothPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GothPants" count="1">
+	<item group="GothPantsLv1" prob=".6"/>
+	<item group="GothPantsLv2" prob=".3"/>
+	<item group="GothPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="WornBootsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingWornBootsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="WornBootsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingWornBootsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="WornBootsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingWornBootsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="WornBoots" count="1">
+	<item group="WornBootsLv1" prob=".6"/>
+	<item group="WornBootsLv2" prob=".3"/>
+	<item group="WornBootsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesRegularLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingRunningShoesRegularLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesRegularLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingRunningShoesRegularLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesRegularLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingRunningShoesRegularLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesRegular" count="1">
+	<item group="RunningShoesRegularLv1" prob=".6"/>
+	<item group="RunningShoesRegularLv2" prob=".3"/>
+	<item group="RunningShoesRegularLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesHPLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingRunningShoesHPLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesHPLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingRunningShoesHPLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesHPLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingRunningShoesHPLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="RunningShoesHP" count="1">
+	<item group="RunningShoesHPLv1" prob=".6"/>
+	<item group="RunningShoesHPLv2" prob=".3"/>
+	<item group="RunningShoesHPLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="CowboyBootsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingCowboyBootsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="CowboyBootsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingCowboyBootsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="CowboyBootsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingCowboyBootsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="CowboyBoots" count="1">
+	<item group="CowboyBootsLv1" prob=".6"/>
+	<item group="CowboyBootsLv2" prob=".3"/>
+	<item group="CowboyBootsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="GothBootsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingGothBootsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GothBootsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingGothBootsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GothBootsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingGothBootsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="GothBoots" count="1">
+	<item group="GothBootsLv1" prob=".6"/>
+	<item group="GothBootsLv2" prob=".3"/>
+	<item group="GothBootsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="LongShirtLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingLongShirtLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="LongShirtLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingLongShirtLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="LongShirtLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingLongShirtLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="LongShirt" count="1">
+	<item group="LongShirtLv1" prob=".6"/>
+	<item group="LongShirtLv2" prob=".3"/>
+	<item group="LongShirtLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="ArmyShirtLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingArmyShirtLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="ArmyShirtLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingArmyShirtLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="ArmyShirtLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingArmyShirtLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="ArmyShirt" count="1">
+	<item group="ArmyShirtLv1" prob=".6"/>
+	<item group="ArmyShirtLv2" prob=".3"/>
+	<item group="ArmyShirtLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="SweatshirtLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingSweatshirtLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SweatshirtLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingSweatshirtLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SweatshirtLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingSweatshirtLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="Sweatshirt" count="1">
+	<item group="SweatshirtLv1" prob=".6"/>
+	<item group="SweatshirtLv2" prob=".3"/>
+	<item group="SweatshirtLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="FlannelShirtLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingFlannelShirtLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="FlannelShirtLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingFlannelShirtLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="FlannelShirtLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingFlannelShirtLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="FlannelShirt" count="1">
+	<item group="FlannelShirtLv1" prob=".6"/>
+	<item group="FlannelShirtLv2" prob=".3"/>
+	<item group="FlannelShirtLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="TShirtPlainLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingTShirtPlainLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TShirtPlainLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingTShirtPlainLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TShirtPlainLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingTShirtPlainLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TShirtPlain" count="1">
+	<item group="TShirtPlainLv1" prob=".6"/>
+	<item group="TShirtPlainLv2" prob=".3"/>
+	<item group="TShirtPlainLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="TShirtZULv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingTShirtZULv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TShirtZULv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingTShirtZULv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TShirtZULv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingTShirtZULv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TShirtZU" count="1">
+	<item group="TShirtZULv1" prob=".6"/>
+	<item group="TShirtZULv2" prob=".3"/>
+	<item group="TShirtZULv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="TankTopLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingTankTopLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TankTopLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingTankTopLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TankTopLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingTankTopLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="TankTop" count="1">
+	<item group="TankTopLv1" prob=".6"/>
+	<item group="TankTopLv2" prob=".3"/>
+	<item group="TankTopLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="HoodySweatshirtLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingHoodySweatshirtLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HoodySweatshirtLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingHoodySweatshirtLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HoodySweatshirtLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingHoodySweatshirtLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="HoodySweatshirt" count="1">
+	<item group="HoodySweatshirtLv1" prob=".6"/>
+	<item group="HoodySweatshirtLv2" prob=".3"/>
+	<item group="HoodySweatshirtLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="PonchoLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingLeatherPonchoLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PonchoLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingLeatherPonchoLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PonchoLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingLeatherPonchoLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="Poncho" count="1">
+	<item group="PonchoLv1" prob=".6"/>
+	<item group="PonchoLv2" prob=".3"/>
+	<item group="PonchoLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="DusterLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingLeatherDusterLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DusterLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingLeatherDusterLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="DusterLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingLeatherDusterLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="Duster" count="1">
+	<item group="DusterLv1" prob=".6"/>
+	<item group="DusterLv2" prob=".3"/>
+	<item group="DusterLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="PufferCoatLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingPufferCoatLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PufferCoatLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingPufferCoatLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PufferCoatLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingPufferCoatLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="PufferCoat" count="1">
+	<item group="PufferCoatLv1" prob=".6"/>
+	<item group="PufferCoatLv2" prob=".3"/>
+	<item group="PufferCoatLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="JacketGenericLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingJacketGenericLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="JacketGenericLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingJacketGenericLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="JacketGenericLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingJacketGenericLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="JacketGeneric" count="1">
+	<item group="JacketGenericLv1" prob=".6"/>
+	<item group="JacketGenericLv2" prob=".3"/>
+	<item group="JacketGenericLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="JacketLetterZULv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingJacketLetterZULv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="JacketLetterZULv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingJacketLetterZULv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="JacketLetterZULv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingJacketLetterZULv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="JacketLetterZU" count="1">
+	<item group="JacketLetterZULv1" prob=".6"/>
+	<item group="JacketLetterZULv2" prob=".3"/>
+	<item group="JacketLetterZULv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="SuitPantsLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingSuitPantsLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitPantsLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingSuitPantsLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitPantsLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingSuitPantsLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitPants" count="1">
+	<item group="SuitPantsLv1" prob=".6"/>
+	<item group="SuitPantsLv2" prob=".3"/>
+	<item group="SuitPantsLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="SuitJacketLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingSuitJacketLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitJacketLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingSuitJacketLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitJacketLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingSuitJacketLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitJacket" count="1">
+	<item group="SuitJacketLv1" prob=".6"/>
+	<item group="SuitJacketLv2" prob=".3"/>
+	<item group="SuitJacketLv3" prob=".1"/>
+</lootgroup>
+
+<lootgroup name="SuitDressShoesLv1" loot_quality_template="Quality1Always">
+	<item name="jz_ClothingSuitDressShoesLv1" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitDressShoesLv2" loot_quality_template="Quality2Always">
+	<item name="jz_ClothingSuitDressShoesLv2" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitDressShoesLv3" loot_quality_template="Quality3Always">
+	<item name="jz_ClothingSuitDressShoesLv3" mods="dye" mod_chance="0"/>
+</lootgroup>
+
+<lootgroup name="SuitDressShoes" count="1">
+	<item group="SuitDressShoesLv1" prob=".6"/>
+	<item group="SuitDressShoesLv2" prob=".3"/>
+	<item group="SuitDressShoesLv3" prob=".1"/>
+</lootgroup>
+
 <lootgroup name="groupApparelSuit">
-	<item name="apparelSuitPants" mods="dye" mod_chance="0"/>
-	<item name="apparelSuitJacket" mods="dye" mod_chance="0"/>
-	<item name="apparelSuitDressShoes" mods="dye" mod_chance="0"/>
+	<item group="SuitPants" />
+	<item group="SuitJacket" />
+	<item group="SuitDressShoes" />
 </lootgroup>
 
 <lootgroup name="groupApparelPants">
-	<item name="apparelDenimPants" mods="dye" mod_chance="0"/>
-	<item name="apparelArmyPants" mods="dye" mod_chance="0"/>
-	<item name="apparelSkirt" mods="dye" mod_chance="0"/>
-	<item name="apparelDenimShortsPants" mods="dye" mod_chance="0"/>
-	<item name="apparelOveralls" mods="dye" mod_chance="0"/>
-	<item name="apparelGothPants"/>
+	<item group="DenimPants" />
+	<item group="ArmyPants" />
+	<item group="Skirt" />
+	<item group="DenimShortsPants" />
+	<item group="Overalls"/>
+	<item group="GothPants"/>
 </lootgroup>
 
 <lootgroup name="groupApparelShirtLong">
-	<item name="apparelLongShirt" mods="dye" mod_chance="0"/>
-	<item name="apparelArmyShirt"/>
-	<item name="apparelHoodySweatshirt" mods="dye" mod_chance="0"/>
-	<item name="apparelSweatshirt" mods="dye" mod_chance="0"/>
-	<item name="apparelFlannelShirt" mods="dye" mod_chance="0"/>
+	<item group="LongShirt" />
+	<item group="ArmyShirt"/>
+	<item group="HoodySweatshirt" />
+	<item group="Sweatshirt"/>
+	<item group="FlannelShirt"/>
 </lootgroup>
 
 <lootgroup name="groupApparelTankTopTShirt">
-	<item name="apparelTankTop" mods="dye" mod_chance="0"/>
-	<item name="apparelTShirtPlain" mods="dye" mod_chance="0"/>
+	<item group="TankTop" />
+	<item group="TShirtPlain" />
 </lootgroup>
 
 <lootgroup name="groupApparelCoats">
-	<item name="apparelCoatLeatherPoncho"/>
-	<item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatPufferCoat" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatJacketGeneric" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatJacketLetterZU" mods="dye" mod_chance="0"/>
+	<item group="Poncho"/>
+	<item group="Duster" />
+	<item group="PufferCoat" />
+	<item group="JacketGeneric" />
+	<item group="JacketLetterZU" />
 </lootgroup>
 
 <lootgroup name="groupApparelHats">
-	<item name="apparelSkullCap" mods="dye" mod_chance="0"/>
-	<item name="apparelPressboyCap" mods="dye" mod_chance="0"/>
-	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
-	<item name="apparelCowboyHat" mods="dye" mod_chance="0"/>
+	<item group="SkullCap" />
+	<item group="PressboyCap" />
+	<item group="BallCap" />
+	<item group="CowboyHat" />
 	<item name="modArmorSkullCap" loot_prob_template="low"/>
 	<item name="modArmorPressboyCap" loot_prob_template="low"/>
 	<item name="modArmorBallCap" loot_prob_template="low"/>
 	<item name="modArmorCowboyHat" loot_prob_template="low"/>
-	<item name="armorClothHat"/>
-	<item name="armorFootballHelmet"/>
+	<item name="armorClothHat" mods="dye" mod_chance="0"/>
+	<item name="armorFootballHelmet" mods="dye" mod_chance="0"/>
 </lootgroup>
 
 <lootgroup name="groupApparelFaceCover">
-	<item name="apparelBandana" mods="dye" mod_chance="0"/>
+	<item group="Bandana" />
 	<item name="apparelShades" loot_prob_template="high"/>
 	<item name="apparelToughGuySunglasses" loot_prob_template="high"/>
 	<item name="apparelNerdGlasses" loot_prob_template="high"/>
@@ -2759,20 +3518,20 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupApparelBootsShoes">
-	<item name="apparelWornBoots"/>
-	<item name="apparelGothBoots"/>
-	<item name="apparelCowboyBoots"/>
-	<item name="apparelRunningShoesRegular" loot_prob_template="low"/>
-	<item name="apparelRunningShoesHP" loot_prob_template="veryLow"/>
+	<item group="WornBoots"/>
+	<item group="GothBoots"/>
+	<item group="CowboyBoots"/>
+	<item group="RunningShoesRegular" loot_prob_template="low"/>
+	<item group="RunningShoesHP" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupApparelShoesAll">
-	<item name="apparelWornBoots" mods="dye" mod_chance="0"/>
-	<item name="apparelCowboyBoots" mods="dye" mod_chance="0"/>
-	<item name="apparelGothBoots" mods="dye" mod_chance="0"/>
-	<item name="apparelSuitDressShoes" mods="dye" mod_chance="0"/>
-	<item name="apparelRunningShoesRegular" loot_prob_template="low"/>
-	<item name="apparelRunningShoesHP" loot_prob_template="veryLow"/>
+	<item group="WornBoots" />
+	<item group="CowboyBoots" />
+	<item group="GothBoots" />
+	<item group="SuitDressShoes" />
+	<item group="RunningShoesRegular" loot_prob_template="low"/>
+	<item group="RunningShoesHP" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupApparelClothes">
@@ -2807,12 +3566,12 @@ If there is no hit the default quality is used.
 <lootgroup name="groupWarmClothes">
 	<item group="groupApparelShirtLong"/>
 	<item group="groupApparelPants"/>
-	<item name="apparelCoatPufferCoat" mods="dye" mod_chance="0"/>
-	<item name="apparelSkullCap" mods="dye" mod_chance="0"/>
-	<item name="apparelSweatshirt" mods="dye" mod_chance="0"/>
-	<item name="apparelFlannelShirt" mods="dye" mod_chance="0"/>
-	<item name="apparelOveralls" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
+	<item group="PufferCoat" />
+	<item group="SkullCap" />
+	<item group="Sweatshirt" />
+	<item group="FlannelShirt" />
+	<item group="Overalls" />
+	<item group="Duster" />
 	<item name="apparelSkiGoggles" loot_prob_template="med"/>
 	<item name="resourceSewingKit"/>
 </lootgroup>
@@ -2841,11 +3600,11 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupApparelHazmat">
-	<item name="apparelHazmatBoots"/>
-	<item name="apparelHazmatPants"/>
-	<item name="apparelHazmatJacket"/>
-	<item name="apparelHazmatGloves"/>
-	<item name="apparelHazmatMask"/>
+	<item group="HazmatBoots"/>
+	<item group="HazmatPants"/>
+	<item group="HazmatJacket"/>
+	<item group="HazmatGloves"/>
+	<item group="HazmatMask"/>
 	<item name="resourceMilitaryFiber" count="1,5" loot_prob_template="low"/>
 </lootgroup>
 
@@ -2931,16 +3690,19 @@ If there is no hit the default quality is used.
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- *** Perception_Based_Lootgroups -->
-<lootgroup name="groupWeaponsT1_DeadEye" count="all" >
-	<item name="gunRifleT1HuntingRifleParts" count="1,3"/>
+<lootgroup name="groupWeaponsT1_DeadEye">
+	<item name="gunRifleT1HuntingRifleParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenHuntingRifle" count="1" prob="0.25" />
 </lootgroup>
 
-<lootgroup name="groupWeaponsT2_DeadEye" count="all" >
-	<item name="jz_GunPartsLeverActionRifle" count="1,3"/>
+<lootgroup name="groupWeaponsT2_DeadEye">
+	<item name="jz_GunPartsLeverActionRifle" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenLeverActionRifle" count="1" prob="0.25" />
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_DeadEye" count="all" >
-	<item name="jz_GunPartsSniperRifle" count="1,3"/>
+<lootgroup name="groupWeaponsT3_DeadEye">
+	<item name="jz_GunPartsSniperRifle" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenSniperRifle" count="1" prob="0.25" />
 </lootgroup>
 
 <lootgroup name="groupWeaponsT1_Demolitionist">
@@ -2954,16 +3716,16 @@ If there is no hit the default quality is used.
 	<item group="groupAmmoRocket" prob="0.3"  count="1,2"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Demolitionist01" count="all" >
-	<item name="gunExplosivesT3RocketLauncherParts" count="1,3"/>
-	<item group="groupAmmoRocket"/>
+<lootgroup name="groupWeaponsT3_Demolitionist01"  >
+	<item name="gunExplosivesT3RocketLauncherParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenAutoRocketLauncher" count="1" prob="0.25" />
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_Demolitionist">
 	<item group="groupWeaponsT3_Demolitionist01" prob="0.4"/>
-	<item group="groupAmmoRocket" prob="0.6"  count="1,2"/>
-	<item name="thrownGrenadeContact" count="1,3"/>
-	<item name="thrownTimedCharge" count="1,3"/>
+	<item group="groupAmmoRocket" count="1,2" prob="0.1"/>
+	<item name="thrownGrenadeContact" count="1,3" prob="0.25"/>
+	<item name="thrownTimedCharge" count="1,3" prob="0.25"/>
 </lootgroup>
 
 <lootgroup name="groupWeapons_Demolitionist">
@@ -2984,38 +3746,46 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Strength_Based_Lootgroups -->
-<lootgroup name="groupWeaponsT1_Boomstick" count="all" >
-	<item name="gunShotgunT1DoubleBarrelParts" count="1,3"/>
+<lootgroup name="groupWeaponsT1_Boomstick" >
+	<item name="gunShotgunT1DoubleBarrelParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenDoubleBarrel" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT2_Boomstick" count="all" >
-	<item name="jz_GunPartsPumpShotgun" count="1,3"/>
+<lootgroup name="groupWeaponsT2_Boomstick" >
+	<item name="jz_GunPartsPumpShotgun" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenPumpShotgun" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Boomstick" count="all" >
-	<item name="jz_GunPartsAutoShotgun" count="1,3"/>
+<lootgroup name="groupWeaponsT3_Boomstick" >
+	<item name="jz_GunPartsAutoShotgun" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenAutoShotgun" count="1"  prob="0.25"/>
 </lootgroup>
 
 <!-- *** Fortitude_Based_Lootgroups -->
-<lootgroup name="groupWeaponsT1_Machinegunner" count="all" >
-	<item name="gunMGT1AK47Parts" count="1,3"/>
+<lootgroup name="groupWeaponsT1_Machinegunner" >
+	<item name="gunMGT1AK47Parts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenAK47" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT2_Machinegunner" count="all" >
-	<item name="jz_GunPartsAR" count="1,3"/>
+<lootgroup name="groupWeaponsT2_Machinegunner" >
+	<item name="jz_GunPartsAR" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenAR" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Machinegunner" count="all" >
-	<item name="jz_GunPartsM60" count="1,3"/>
+<lootgroup name="groupWeaponsT3_Machinegunner" >
+	<item name="jz_GunPartsM60" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenAutoM60" count="1"  prob="0.25"/>
 </lootgroup>
 
 <!-- *** Agility_Based_Lootgroups -->
-<lootgroup name="groupWeaponsT1_Archery01" count="all" >
-	<item name="gunBowT1WoodenBowParts" count="1,3"/>
+<lootgroup name="groupWeaponsT1_Archery01"  >
+	<item name="gunBowT1WoodenBowParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenWoodenBow" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT1_Archery02" count="all" >
-	<item name="jz_GunPartsCrossbow" count="1,3"/>
+<lootgroup name="groupWeaponsT1_Archery02" >
+	<item name="jz_GunPartsCrossbow" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenIronCrossbow" count="1"  prob="0.25"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT1_Archery">
@@ -3023,12 +3793,14 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT1_Archery02"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Archery01" count="all" >
-	<item name="gunBowT1WoodenBowParts" count="2,4"/>
+<lootgroup name="groupWeaponsT3_Archery01" >
+	<item name="gunBowT1WoodenBowParts" count="2,4" prob="0.75"/>
+	<item name="jz_BrokenCompoundBow" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Archery02" count="all" >
-	<item name="jz_GunPartsCrossbow" count="2,4"/>
+<lootgroup name="groupWeaponsT3_Archery02" >
+	<item name="jz_GunPartsCrossbow" count="2,4" prob="0.75"/>
+	<item name="jz_BrokenCompoundCrossbow" count="1"  prob="0.25"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_Archery">
@@ -3036,20 +3808,24 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT3_Archery02"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT1_Gunslinger" count="all" >
-	<item name="gunHandgunT1PistolParts" count="1,3"/>
+<lootgroup name="groupWeaponsT1_Gunslinger" >
+	<item name="gunHandgunT1PistolParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenPistol" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT2_Gunslinger" count="all" >
-	<item name="jz_GunPartsMagnum" count="1,3"/>
+<lootgroup name="groupWeaponsT2_Gunslinger" >
+	<item name="jz_GunPartsMagnum" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenMagnum" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Gunslinger01" count="all" >
-	<item name="jz_GunPartsSMG" count="1,4"/>
+<lootgroup name="groupWeaponsT3_Gunslinger01" >
+	<item name="jz_GunPartsSMG" count="1,4" prob="0.75"/>
+	<item name="jz_BrokenSMG" count="1"  prob="0.25"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Gunslinger02" count="all" >
-	<item name="jz_GunPartsVulture" count="2,4"/>
+<lootgroup name="groupWeaponsT3_Gunslinger02" >
+	<item name="jz_GunPartsVulture" count="2,4" prob="0.75"/>
+	<item name="jz_BrokenVulture" count="1"  prob="0.25"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_Gunslinger">
@@ -3058,52 +3834,81 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupWeaponsT1HuntingKnife" loot_quality_template="QLTemplateT2">
-	<item name="meleeWpnBladeT1HuntingKnife"/>
+	<item name="meleeWpnBladeT1HuntingKnife" prob="0.75"/>
+	<item name="jz_BrokenHuntingKnife" count="1"  prob="0.25"/>
 </lootgroup>
 <!-- *** Intellect_Based_Lootgroups -->
 <lootgroup name="groupWeaponsT1_TurretsSyndrome" >
-	<item name="gunBotRoboticsParts" count="1,2"/>
+	<item name="gunBotRoboticsParts" count="1,2" prob="0.75"/>
+	<item name="jz_BrokenJunkSledge" count="1"  prob="0.25"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_TurretsSyndrome" >
-	<item name="gunBotRoboticsParts" count="1,3"/>
+	<item name="gunBotRoboticsParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenJunkTurret" count="1"  prob="0.25"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_TurretsSyndrome" >
-	<item name="gunBotRoboticsParts" count="2,4"/>
+	<item name="gunBotRoboticsParts" count="1,4" prob="0.75"/>
+	<item name="jz_BrokenJunkDrone" count="1"  prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT1_IronSledgehammer" >
+	<item name="jz_BrokenIronSledgehammer" count="1" prob="0.75"/>
+	<item name="meleeWpnSledgeT1IronSledgehammer" count="1"  prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT2_StunBaton" >
+	<item name="meleeWpnBatonT2StunBatonParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenStunBaton" count="1"  prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT3_SteelClub" >
+	<item name="meleeWpnClubT3SteelClubParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenSteelClub" count="1"  prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT3_SteelSledgehammer" >
+	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenSteelSledgehammer" count="1"  prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT3_Machete" >
+	<item name="meleeWpnBladeT3MacheteParts" count="1,3" prob="0.75"/>
+	<item name="jz_BrokenMachete" count="1"  prob="0.25"/>
 </lootgroup>
 
 <!-- *** T1_Melee_Weapons -->
 <lootgroup name="groupWeaponsT1_Melee" loot_quality_template="QLTemplateT1">
-	<item name="meleeWpnClubT1BaseballBat"/>
-	<item name="meleeWpnSledgeT1IronSledgehammer"/>
-	<item name="meleeWpnKnucklesT1IronKnuckles"/>
-	<item name="meleeWpnBladeT1HuntingKnife"/>
-	<item name="meleeWpnBatonT2StunBatonParts" count="1,3"/>
+	<item group="groupWeaponsT1HuntingKnife" />
+	<item group="groupWeaponsT1_IronSledgehammer" />
+	<item group="groupWeaponsT2_StunBaton"/>
 	<item name="jz_MeleeRebar"/>
 	<item name="jz_MeleePipe"/>
-	<item name="jz_MeleeTableLeg"/>
-	<item name="jz_MeleePlank"/>
+	<item name="jz_MeleeTableLeg" />
+	<item name="jz_MeleePlank" />
+	<item name="meleeWpnClubT1BaseballBat" />
+	<item name="meleeWpnKnucklesT1IronKnuckles"/>
 </lootgroup>
 
 <!-- *** T2&T3_Melee_Weapons -->
 <lootgroup name="groupWeaponsT2_Melee" >
-	<item name="meleeWpnSpearT3SteelSpearParts" count="1,3"/>
-	<item name="meleeWpnClubT3SteelClubParts" count="1,3"/>
-	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,3"/>
+	<item name="meleeWpnSpearT3SteelSpearParts"/>
+	<item group="groupWeaponsT3_SteelClub"/>
+	<item group="groupWeaponsT3_SteelSledgehammer"/>
 	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="1,3"/>
-	<item name="meleeWpnBladeT3MacheteParts" count="1,3"/>
-	<item name="meleeWpnBatonT2StunBatonParts" count="1,3"/>
+	<item group="groupWeaponsT3_Machete"/>
+	<item group="groupWeaponsT2_StunBaton"/>
 </lootgroup>
 
 <!-- *** Melee_Weapon_Parts -->
 <lootgroup name="groupWeapons_MeleeParts">
-	<item name="meleeWpnSpearT3SteelSpearParts" count="2,5"/>
-	<item name="meleeWpnClubT3SteelClubParts" count="2,5"/>
-	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="2,5"/>
-	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="2,5"/>
-	<item name="meleeWpnBladeT3MacheteParts" count="2,5"/>
-	<item name="meleeWpnBatonT2StunBatonParts" count="2,5"/>
+	<item group="groupWeaponsT3_SteelClub"/>
+	<item group="groupWeaponsT3_SteelSledgehammer"/>
+	<item group="groupWeaponsT3_Machete"/>
+	<item group="groupWeaponsT2_StunBaton"/>
+	<item name="meleeWpnSpearT3SteelSpearParts"/>
+	<item name="meleeWpnKnucklesT3SteelKnucklesParts"/>
 </lootgroup>
 
 <!-- *** Melee_Weapons_Scaled -->
@@ -3166,22 +3971,22 @@ If there is no hit the default quality is used.
 
 <!-- *** Ranged_Weapon_Parts -->
 <lootgroup name="groupWeapons_RangedParts">
-	<item name="gunBowT1WoodenBowParts" count="1,4"/>
-	<item name="jz_GunPartsCrossbow" count="1,4"/>
-	<item name="gunHandgunT1PistolParts" count="1,4"/>
-	<item name="gunMGT1AK47Parts" count="1,4"/>
-	<item name="gunRifleT1HuntingRifleParts" count="1,4"/>
-	<item name="gunShotgunT1DoubleBarrelParts" count="1,4"/>
-	<item name="jz_GunPartsMagnum" count="1,4"/>
-	<item name="jz_GunPartsVulture" count="1,4"/>
-	<item name="jz_GunPartsSMG" count="1,4"/>
-	<item name="jz_GunPartsPumpShotgun" count="1,4"/>
-	<item name="jz_GunPartsAutoShotgun" count="1,4"/>
-	<item name="jz_GunPartsAR" count="1,4"/>
-	<item name="jz_GunPartsM60" count="1,4"/>
-	<item name="jz_GunPartsLeverActionRifle" count="1,4"/>
-	<item name="jz_GunPartsSniperRifle" count="1,4"/>
-	<item name="gunExplosivesT3RocketLauncherParts" count="1,4"/>
+	<item group="groupWeaponsT1_Archery01"/>
+	<item group="groupWeaponsT3_Archery02"/>
+	<item group="groupWeaponsT1_Gunslinger"/>
+	<item group="groupWeaponsT1_Machinegunner"/>
+	<item group="groupWeaponsT1_DeadEye"/>
+	<item group="groupWeaponsT1_Boomstick"/>
+	<item group="groupWeaponsT2_Gunslinger"/>
+	<item group="groupWeaponsT3_Gunslinger02"/>
+	<item group="groupWeaponsT3_Gunslinger01"/>
+	<item group="groupWeaponsT2_Boomstick"/>
+	<item group="groupWeaponsT3_Boomstick"/>
+	<item group="groupWeaponsT2_Machinegunner"/>
+	<item group="groupWeaponsT3_Machinegunner"/>
+	<item group="groupWeaponsT2_DeadEye" />
+	<item group="groupWeaponsT3_DeadEye" />
+	<item group="groupWeaponsT3_Demolitionist01"/>
 </lootgroup>
 
 <!-- *** Ranged_Weapons_Scaled -->
@@ -3228,8 +4033,8 @@ If there is no hit the default quality is used.
 <!-- *** T1_Melee_Weapons_Small -->
 <lootgroup name="groupWeaponsT1_MeleeSmall" loot_quality_template="QLTemplateT1">
 	<item name="meleeWpnKnucklesT1IronKnuckles"/>
-	<item name="meleeWpnBladeT1HuntingKnife"/>
-	<item name="meleeWpnBatonT2StunBatonParts" count="1,3"/>
+	<item group="groupWeaponsT1HuntingKnife"/>
+	<item group="groupWeaponsT2_StunBaton"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsMeleeScaledNoStoneSmall">
@@ -3445,6 +4250,8 @@ If there is no hit the default quality is used.
 <lootgroup name="groupGrillGoodFood">
 	<item name="foodCharredMeat" count="1,2" />
 	<item name="foodGrilledMeat" count="1,2" />
+	<item name="jz_FoodGrilledFruit" count="1,2" />
+	<item name="jz_FoodGrilledVeggie" count="1,2" />
 </lootgroup>
 
 <lootgroup name="groupGrillBadFood">
@@ -4035,7 +4842,8 @@ If there is no hit the default quality is used.
 	<item name="foodHoboStewSchematic"/>
 	<item name="foodShamChowderSchematic"/>	
 	<item name="jz_SchematicOnionSeed"/>
-	<item name="jz_SchematicTomatoSeed"/>		
+	<item name="jz_SchematicTomatoSeed"/>
+	<item name="jz_SchematicOrangeMeringuePie"/>	
 </lootgroup>
 
 <!-- *** T2_Farming_Food_Schematics -->
@@ -4056,6 +4864,7 @@ If there is no hit the default quality is used.
 	<item name="drinkJarGrandpasAwesomeSauceSchematic"/>
 	<item name="drinkJarGrandpasLearningElixirSchematic"/>
 	<item name="drinkJarGrandpasMoonshineSchematic"/>
+	<item name="jz_SchematicBlueberryCheeseCake"/>
 	<item name="foodGumboStewSchematic" loot_prob_template="med"/>
 	<item name="foodShepardsPieSchematic" loot_prob_template="med"/>
 	<item name="foodSpaghettiSchematic" loot_prob_template="med"/>
@@ -4241,6 +5050,11 @@ If there is no hit the default quality is used.
     <item name="jz_FoodIceCream" />
     <item name="jz_FoodCoconutCheesecake" />
     <item name="jz_DrinkCoconutMilk" /> 
+	<item name="jz_FoodGrilledFruit" /> 
+	<item name="jz_FoodGrilledVeggie" /> 
+	<item name="jz_FoodVeggieSandwich" /> 
+	<item name="jz_FoodOrangeMeringuePie" /> 
+	<item name="jz_FoodBlueberryCheeseCake" /> 
 </lootgroup>
 
 <lootgroup name="farmCrops">
@@ -4305,6 +5119,26 @@ If there is no hit the default quality is used.
 	<item group="metalpipeScrap"/>
 </lootgroup>
     
+<lootgroup name="groupToolsClawHammer" >
+	<item name="jz_BrokenClawHammer" prob="0.75"/>
+	<item name="meleeToolRepairT1ClawHammer" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsWrench" >
+	<item name="jz_BrokenWrench" prob="0.75"/>
+	<item name="meleeToolSalvageT1Wrench" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsScrewdriver" >
+	<item name="jz_BrokenScrewdriver" prob="0.75"/>
+	<item name="jz_Screwdriver" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsWelder" >
+	<item name="jz_BrokenWelder" prob="0.75"/>
+	<item name="jz_WelderTool" prob="0.25"/>
+</lootgroup>
+
 <lootgroup name="workbenchSchematics">
 	<item name="bookFiremansAlmanacEquipment"  />
     <item name="jz_SchematicMethaneProducer"  />
@@ -4381,13 +5215,13 @@ If there is no hit the default quality is used.
 </lootgroup> 
 
 <lootgroup name="workbenchTools">
-    <item name="meleeToolRepairT1ClawHammer"/>
-	<item name="jz_BulletPress"/>
-	<item name="jz_MortarAndPestle"/>
-	<item name="jz_Screwdriver"/>
-	<item name="jz_WelderTool"/>
-	<item name="meleeToolSalvageT1Wrench"/>
-	<item name="toolAndDieSet"/>
+	<item group="groupToolsClawHammer" />
+	<item group="groupToolsWrench" />
+	<item group="groupToolsScrewdriver" />
+	<item group="groupToolsWelder"/>
+	<item name="toolAndDieSet" />
+	<item name="jz_BulletPress" />
+	<item name="jz_MortarAndPestle" />
 </lootgroup> 
                                                 
 <lootgroup name="forgeMolds" >
@@ -4432,7 +5266,7 @@ If there is no hit the default quality is used.
 <lootgroup name="forgeTools" >
     <item name="toolAnvil" />
     <item name="toolForgeCrucible" />
-    <item name="jz_WelderTool"/>
+    <item group="groupToolsWelder"/>
     <item name="toolAndDieSet" />
 	<item name="toolBellows" />
 </lootgroup>
@@ -4478,9 +5312,9 @@ If there is no hit the default quality is used.
 <lootgroup name="workstationToolsScaled" count="1">
 	<item name="jz_MortarAndPestle" loot_prob_template="TSEarlyOnly"/>	
 	<item name="toolAnvil" loot_prob_template="TSEarlyOnly"/>	
-	<item name="meleeToolSalvageT1Wrench" loot_prob_template="TSEarlyOnly"/>	
+	<item group="groupToolsWrench" loot_prob_template="TSEarlyOnly"/>	
 	<item name="jz_ToolCircularSaw" loot_prob_template="TSEarlyOnly"/>	 
-	<item name="meleeToolRepairT1ClawHammer" loot_prob_template="TSEarlyOnly"/>	
+	<item group="groupToolsClawHammer" loot_prob_template="TSEarlyOnly"/>	
 	<item name="toolBeaker" loot_prob_template="ProbT0"/>	
 	<item name="jz_LabEquipment" loot_prob_template="ProbT0"/>	
 	<item name="jz_Still" loot_prob_template="ProbT0"/>	
@@ -4488,7 +5322,7 @@ If there is no hit the default quality is used.
     <item name="toolForgeCrucible" loot_prob_template="ProbT1"/>
     <item name="toolAndDieSet" loot_prob_template="ProbT1"/>
 	<item name="toolBellows" loot_prob_template="ProbT1Cap"/>	
-	<item name="jz_Screwdriver" loot_prob_template="ProbT2Cap"/>	
+	<item group="groupToolsScrewdriver" loot_prob_template="ProbT2Cap"/>	
 	<item name="jz_WelderTool" loot_prob_template="ProbT2Cap"/>	
 </lootgroup>
 
@@ -4500,44 +5334,95 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** T1_Tool_Loot -->
+<lootgroup name="groupToolsT1IronPickaxe" >
+	<item name="jz_BrokenIronPickaxe" prob="0.75"/>
+	<item name="meleeToolPickT1IronPickaxe" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsT1IronShovel" >
+	<item name="jz_BrokenIronShovel" prob="0.75"/>
+	<item name="meleeToolShovelT1IronShovel" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsT1IronFireaxe" >
+	<item name="jz_BrokenFireaxe" prob="0.75"/>
+	<item name="meleeToolAxeT1IronFireaxe" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsMasonHammer" >
+	<item name="jz_BrokenMasonHammer" prob="0.75"/>
+	<item name="jz_MasonHammer" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsConcreteSledge" >
+	<item name="jz_BrokenConcreteSledge" prob="0.75"/>
+	<item name="jz_ConcreteSledge" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsT2SteelPickaxe" >
+	<item name="jz_BrokenSteelPickaxe" prob="0.75"/>
+	<item name="meleeToolPickT2SteelPickaxe" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsT2SteelShovel" >
+	<item name="jz_BrokenSteelShovel" prob="0.75"/>
+	<item name="meleeToolShovelT2SteelShovel" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsT3Chainsaw" >
+	<item name="jz_BrokenChainsaw" prob="0.75"/>
+	<item name="meleeToolAxeT3Chainsaw" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupToolsT3Auger" >
+	<item name="jz_BrokenAuger" prob="0.75"/>
+	<item name="meleeToolPickT3Auger" prob="0.25"/>
+</lootgroup>
+
+<lootgroup name="groupWeaponsT3SteelSledgehammer" >
+	<item name="jz_BrokenSteelSledgehammer" prob="0.75"/>
+	<item name="meleeWpnSledgeT3SteelSledgehammer" prob="0.25"/>
+</lootgroup>
+
 <lootgroup name="groupToolsT1" loot_quality_template="QLTemplateT2">
-	<item name="meleeToolPickT1IronPickaxe"/>
-	<item name="meleeToolShovelT1IronShovel"/>
-	<item name="meleeToolAxeT1IronFireaxe"/>
-	<item name="meleeWpnSledgeT1IronSledgehammer"/>
-	<item name="meleeToolRepairT1ClawHammer"/>
-	<item name="meleeToolSalvageT1Wrench"/>
-	<item name="jz_MasonHammer"/>
+	<item group="groupToolsT1IronPickaxe" />
+	<item group="groupToolsT1IronShovel" />
+	<item group="groupToolsT1IronFireaxe" />
+	<item group="groupWeaponsT1_IronSledgehammer" />
+	<item group="groupToolsClawHammer" />
+	<item group="groupToolsWrench" />
+	<item group="groupToolsMasonHammer" />
+	<item group="groupToolsScrewdriver" />
+	<item name="jz_Crowbar"  />
 	<item name="jz_FarmingWateringCan" />
 	<item name="jz_Insecticide" count="1,12" />
-	<item name="meleeToolPaintTool"  />
-	<item name="jz_Crowbar" />
-	<item name="jz_Screwdriver"/>
+	<item name="meleeToolPaintTool" />
 </lootgroup>
 
 <!-- *** T2_Tool_Loot -->
 <lootgroup name="groupToolsT2" loot_quality_template="QLTemplateT3">
-	<item name="meleeToolShovelT2SteelShovel"/>
-	<item name="meleeToolPickT2SteelPickaxe"/>
+	<item group="groupToolsWelder" />
+	<item group="groupToolsConcreteSledge"/>
+	<item group="groupToolsScrewdriver"/>
+	<item group="groupToolsT2SteelPickaxe"/>
+	<item group="groupToolsT2SteelShovel"/>
+	<item group="groupWeaponsT1HuntingKnife"/>
+	<item name="jz_Crowbar"/>
+	<item name="jz_MethaneTankBomb"/>
 	<item name="meleeToolAllSteelParts" count="1,4"/>
 	<item name="meleeToolSalvageT2Ratchet"/>
-	<item name="jz_Screwdriver"/>
-	<item name="jz_ConcreteSledge"/>
-	<item name="meleeWpnBladeT1HuntingKnife"/>
-	<item name="jz_MethaneTankBomb" />
-    <item name="jz_EmptyPropaneTank" />
-	<item name="jz_Crowbar" />
+	<item name="jz_EmptyPropaneTank"/>
 </lootgroup>
 
 <!-- *** T3_Tool_Loot -->
 <lootgroup name="groupToolsT3" loot_quality_template="QLTemplateT3">
-	<item name="meleeToolAxeT3Chainsaw"/>
-	<item name="meleeToolPickT3Auger"/>
+	<item group="groupToolsT3Chainsaw"/>
+	<item group="groupToolsT3Auger" />
+	<item group="groupWeaponsT3SteelSledgehammer" loot_prob_template="medLow" />
+	<item group="groupToolsWelder"/>
+	<item name="meleeToolWireTool"/>
 	<item name="meleeToolRepairT3Nailgun"/>
 	<item name="meleeToolSalvageT3ImpactDriver"/>
-	<item name="jz_WelderTool"/>
-	<item name="meleeToolWireTool" />
-	<item name="meleeWpnSledgeT3SteelSledgehammer" loot_prob_template="medLow"/>
 </lootgroup>
 
 <!-- *** Tool_Loot_Scaled -->
@@ -4612,7 +5497,7 @@ If there is no hit the default quality is used.
 
 <!-- *** Utility_Group -->
 <lootgroup name="groupUtilityItems">
-	<item name="resourceRepairKit" count="1,3"/>
+	<item name="resourceRepairKit" count="1"/>
 	<item name="resourceLockPick" count="1,3"/>
 	<item name="meleeToolPaintTool" loot_prob_template="veryLow"/>
 	<item name="meleeToolWireTool" loot_prob_template="veryLow"/>
@@ -4648,10 +5533,10 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="toolRepairs">
-    <item name="resourceRepairKit" count="1,3" />
-    <item name="jz_SharpeningStone" count="1,3" />
-    <item name="jz_ScavengedParts" count="1,3" />
-    <item name="resourceMetalPipe" count="1,3" />
+    <item name="resourceRepairKit" count="1" />
+    <item name="jz_SharpeningStone" count="1" />
+    <item name="jz_ScavengedParts" count="1" />
+    <item name="resourceMetalPipe" count="1" />
 </lootgroup>   
 
 <lootgroup name="woodDoorsAndHatches">
@@ -4681,6 +5566,26 @@ If there is no hit the default quality is used.
     <item group="steelDoorsAndHatches" loot_prob_template="ProbT3"/>
 </lootgroup>   
       
+<lootgroup name="bicycleChance">
+	<item name="jz_BrokenBicycle" prob=".6" />
+    <item name="vehicleBicyclePlaceable" prob=".4" />
+</lootgroup> 
+
+<lootgroup name="minibikeChance">
+	<item name="jz_BrokenMinibike" prob=".6" />
+    <item name="vehicleMinibikePlaceable" prob=".4" />
+</lootgroup> 
+
+<lootgroup name="motorcycleChance">
+	<item name="jz_BrokenMotorcycle" prob=".6" />
+    <item name="vehicleMotorcyclePlaceable" prob=".4" />
+</lootgroup> 
+
+<lootgroup name="4x4Chance">
+	<item name="jz_Broken4x4Truck" prob=".6" />
+    <item name="vehicle4x4TruckPlaceable" prob=".4" />
+</lootgroup> 
+
 <lootgroup name="workingStiffs">
 	<item group="allDoorsAndHatches" />
 	<item group="groupAutomotive" />
@@ -4699,8 +5604,8 @@ If there is no hit the default quality is used.
     <item name="jz_MethaneTankBomb" />
     <item name="jz_EmptyPropaneTank" />
 	<item name="resourceForgedSteel" count="1,20" />
-	<item name="vehicleBicyclePlaceable" />
-    <item name="vehicleMinibikePlaceable" />
+	<item group="bicycleChance" />
+    <item group="minibikeChance" />
 	<item name="resourceDoorKnob" />  
     <item name="jz_MethaneTankBomb" />
     <item name="jz_EmptyPropaneTank" />
@@ -4866,37 +5771,38 @@ If there is no hit the default quality is used.
 </lootgroup>
 <!-- *** Weapon_Parts -->
 <lootgroup name="weaponPartsT1">
-	<item name="gunMGT1AK47Parts" count="1,4"/>
-	<item name="gunHandgunT1PistolParts" count="1,4"/>
-	<item name="gunBowT1WoodenBowParts" count="1,4"/>
-	<item name="gunRifleT1HuntingRifleParts" count="1,4"/>
-	<item name="gunShotgunT1DoubleBarrelParts" count="1,4"/>
-	<item name="jz_GunPartsCrossbow" count="1,4"/>
+	<item group="groupWeaponsT1_Machinegunner" />
+	<item group="groupWeaponsT1_Gunslinger" />
+	<item group="groupWeaponsT3_Archery01" />
+	<item group="groupWeaponsT1_DeadEye" />
+	<item group="groupWeaponsT1_Boomstick" />
+	<item group="groupWeaponsT1_Archery02" />
 </lootgroup>
 
 <lootgroup name="weaponPartsT2">
-	<item name="meleeWpnBatonT2StunBatonParts" count="1,4"/>
-	<item name="jz_GunPartsMagnum" count="1,4"/>
-	<item name="jz_GunPartsPumpShotgun" count="1,4"/>
-	<item name="jz_GunPartsAR" count="1,4"/>
-	<item name="gunBotRoboticsParts" count="1,4"/>
-	<item name="jz_GunPartsCrossbow" count="1,4"/>
-	<item name="gunBowT1WoodenBowParts" count="1,4"/>
+	<item group="groupWeaponsT2_StunBaton"/>
+	<item group="groupWeaponsT2_Gunslinger" />
+	<item group="groupWeaponsT2_Boomstick" />
+	<item group="groupWeaponsT2_Machinegunner" />
+	<item group="groupWeaponsT1_TurretsSyndrome" />
+	<item group="groupWeaponsT2_TurretsSyndrome" />
+	<item group="groupWeaponsT3_Archery02" />
+	<item group="groupWeaponsT3_Archery01" />
 </lootgroup>
 
 <lootgroup name="weaponPartsT3">
-	<item name="gunExplosivesT3RocketLauncherParts" count="1,4"/>
-	<item name="gunBotRoboticsParts" count="1,4"/>
-	<item name="meleeWpnBladeT3MacheteParts" count="1,4"/>
-	<item name="meleeWpnSpearT3SteelSpearParts" count="1,4"/>
-	<item name="meleeWpnClubT3SteelClubParts" count="1,4"/>
-	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,4"/>
-	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="1,4"/>
-	<item name="jz_GunPartsVulture" count="1,4"/>
-	<item name="jz_GunPartsSMG" count="1,4"/>
-	<item name="jz_GunPartsAutoShotgun" count="1,4"/>
-	<item name="jz_GunPartsM60" count="1,4"/>
-	<item name="jz_GunPartsSniperRifle" count="1,4"/>
+	<item group="groupWeaponsT3_Demolitionist01"/>
+	<item group="groupWeaponsT3_TurretsSyndrome"/>
+	<item group="groupWeaponsT3_Machete"/>
+	<item name="meleeWpnSpearT3SteelSpearParts"/>
+	<item group="groupWeaponsT3_SteelClub"/>
+	<item group="groupWeaponsT3_SteelSledgehammer"/>
+	<item name="meleeWpnKnucklesT3SteelKnucklesParts"/>
+	<item group="groupWeaponsT3_Gunslinger02"/>
+	<item group="groupWeaponsT3_Gunslinger01"/>
+	<item group="groupWeaponsT3_Boomstick"/>
+	<item group="groupWeaponsT3_Machinegunner"/>
+	<item group="groupWeaponsT3_DeadEye"/>
 </lootgroup>
 
 <lootgroup name="weaponPartsScaled">
@@ -4930,7 +5836,7 @@ If there is no hit the default quality is used.
 	<item name="meleeToolSalvageT2Ratchet"/>
 	<item name="meleeToolSalvageT3ImpactDriver"/>
 	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
-	<item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
+	<item group="Duster" />
 	<item name="gunBowT3CompoundBow"/>
 	<item name="ammoArrowSteelAP" count="500"/>
 	<item name="resourceLockPick" count="50"/>
@@ -6776,8 +7682,8 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupSinks03" count="1">
-	<item name="meleeToolSalvageT1Wrench" loot_prob_template="low"/>
-	<item name="jz_Screwdriver" loot_prob_template="low"/>
+	<item group="groupToolsWrench" loot_prob_template="low"/>
+	<item group="groupToolsScrewdriver" loot_prob_template="low"/>
 	<item group="groupWeaponsT1HuntingKnife" loot_prob_template="veryLow"/>
 	<item group="booksAllScaled" loot_prob_template="veryLow"/>
 	<item name="resourceAcid" loot_prob_template="veryLow"/>
@@ -6857,10 +7763,10 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="WorkingVehiclePlaceable" >
-	<item name="vehicleMinibikePlaceable" prob="35" />
-	<item name="vehicleBicyclePlaceable" prob="50" />
-	<item name="vehicleMotorcyclePlaceable" prob="10" />
-	<item name="vehicle4x4TruckPlaceable" prob="5" />
+	<item group="minibikeChance" prob="35" />
+	<item group="bicycleChance" prob="50" />
+	<item group="motorcycleChance" prob="10" />
+	<item group="4x4Chance" prob="5" />
 </lootgroup>
 
 <!-- *** Car_Loot -->
@@ -7196,14 +8102,14 @@ If there is no hit the default quality is used.
 	<item name="resourceOil" count="1,2" loot_prob_template="med"/>
 	<item name="resourceRepairKit" count="1,2" loot_prob_template="med"/>
 	<item name="resourceForgedIron" count="1,4" loot_prob_template="low"/>
-	<item name="meleeWpnBladeT3MacheteParts" loot_prob_template="low"/>
+	<item group="groupWeaponsT3_Machete" loot_prob_template="low"/>
 </lootgroup>
 
 <lootgroup name="groupRollingToolbox03">
 	<item name="meleeToolPaintTool" loot_prob_template="med"/>
 	<item name="meleeToolWireTool" loot_prob_template="medLow"/>
-	<item name="meleeToolSalvageT1Wrench" loot_prob_template="low"/>
-	<item name="meleeToolRepairT1ClawHammer" loot_prob_template="veryLow"/>
+	<item group="groupToolsWrench" loot_prob_template="low"/>
+	<item group="groupToolsClawHammer" loot_prob_template="veryLow"/>
 	<item name="resourceForgedSteel" count="1,4" loot_prob_template="veryLow"/>
 </lootgroup>
 
@@ -7223,8 +8129,7 @@ If there is no hit the default quality is used.
 <!-- *** MoPower_Loot -->
 <lootgroup name="groupStunBaton">
 	<item name="meleeWpnBatonT2StunBatonSchematic" loot_prob_template="med"/>
-	<item name="meleeWpnBatonT2StunBatonParts" loot_prob_template="med"/>
-	<item name="meleeWpnBatonT2StunBaton" loot_prob_template="med"/>
+	<item group="groupWeaponsT2_StunBaton" loot_prob_template="med"/>
 </lootgroup>
 
 <lootgroup name="groupTechJunkieBooks">
@@ -7258,9 +8163,9 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupRobotics">
-	<item name="gunBotRoboticsParts" count="1,4" loot_prob_template="med"/>
-	<item name="gunBotT1JunkSledge" loot_prob_template="veryLow"/>
-	<item name="gunBotT2JunkTurret" loot_prob_template="veryLow"/>
+	<item group="groupWeaponsT1_TurretsSyndrome" loot_prob_template="veryLow"/>
+	<item group="groupWeaponsT2_TurretsSyndrome" loot_prob_template="veryLow"/>
+	<item group="groupWeaponsT3_TurretsSyndrome" loot_prob_template="veryLow"/>
 	<item group="groupDrone" loot_prob_template="ProbT3"/>
 </lootgroup>
 
@@ -7455,7 +8360,7 @@ If there is no hit the default quality is used.
 
 <!-- *** Pass_N_Gas -->
 <lootgroup name="groupPassNGas01">
- 	<item name="resourceRepairKit" count="2,5" loot_prob_template="medLow"/>
+ 	<item name="resourceRepairKit" count="1,2" loot_prob_template="medLow"/>
 	<item group="groupToolsTiered" loot_prob_template="med"/>
 	<item group="schematicsToolsCommon" loot_prob_template="med"/>
 </lootgroup>
@@ -7785,6 +8690,8 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupShotgunMessiahCrate04">
+	<item name="jz_BrokenShotgunTurret" loot_prob_template="med"/>
+	<item name="jz_BrokenAutoTurret" loot_prob_template="med"/>
 	<item group="groupAmmoSmall" loot_prob_template="med"/>
 	<item group="groupAmmoResourcesSmall" loot_prob_template="med"/>
 	<item group="groupWeaponsRangedScaledNoStone" loot_prob_template="med"/>
@@ -9615,11 +10522,11 @@ If there is no hit the default quality is used.
 <lootgroup name="zombieUtilityWorker">
 	<item group="groupApparelShirtLong" prob="7" />
 	<item group="groupApparelPants" prob="7" />
-	<item name="apparelDenimShortsPants" mods="dye" mod_chance="0.00" prob="7"/>
+	<item group="DenimShortsPants" prob="7"/>
 	<item group="groupApparelTankTopTShirt" prob="7" />
-	<item name="apparelBandana" prob="7" />
+	<item group="Bandana" prob="7" />
 	<item group="groupToolsTiered" prob="3" />
-	<item name="apparelWornBoots" prob="7" />
+	<item group="WornBoots" prob="7" />
 	<item name="apparelShades" prob="7" />
 	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" prob="20" />
 	<item name="meleeToolFlashlight02" prob="7" />
@@ -9648,7 +10555,7 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
-<lootcontainer id="2" name="playerBackpack" count="0" size="8,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="2" name="playerBackpack" count="0" size="9,15" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
 	<item name="cobweb" count="0" prob="0.01"/>
 </lootcontainer>
 
@@ -9733,8 +10640,8 @@ If there is no hit the default quality is used.
 </lootcontainer>
 
 <!-- cars-->
-<lootcontainer id="19" name="cars" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
-	<item group="groupCars"/>
+<lootcontainer id="19" name="cars" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate" >
+	<item group="groupCars"/>  
 </lootcontainer>
 
 <!-- 20_NOT_USED -->
@@ -10035,7 +10942,7 @@ If there is no hit the default quality is used.
 <lootcontainer id="84" name="pants" count="1,3" size="7,2" sound_open="open_clothes_rack" sound_close="close_clothes_rack" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 	<item name="resourceCloth" count="2,7" prob=".08"/>
 	<item group="groupApparelPants" prob="1"/>
-	<item name="apparelSuitPants" prob=".1" mods="dye" mod_chance="0"/>
+	<item group="SuitPants" prob=".1"/>
 </lootcontainer>
 
 <!-- metal clothes rack, shirts -->
@@ -10333,7 +11240,7 @@ If there is no hit the default quality is used.
 <lootcontainer id="142" name="pantsShelves" count="1,3" size="7,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
 	<item name="resourceCloth" count="2,7" prob=".08"/>
 	<item group="groupApparelPants" prob="1"/>
-	<item name="apparelSuitPants" prob=".1" mods="dye" mod_chance="0"/>
+	<item group="SuitPants" prob=".1" />
 </lootcontainer>
 
 <!-- wineBarrel -->
@@ -10660,9 +11567,9 @@ If there is no hit the default quality is used.
 <!-- ZombieSkateboarder -->
 <lootcontainer id="302" name="skateboarderZombie" count="0,2" size="4,3" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="QLTemplateT1">
 	<item group="junkPersonal" prob="50" />
-	<item name="apparelHoodySweatshirt" mods="dye" mod_chance="0.00" prob="2.5"/>
-	<item name="apparelDenimPants" mods="dye,dye" mod_chance="1" prob="2.5"/>
-	<item name="apparelRunningShoesRegular" mods="dye,dye" mod_chance="1" prob="2"/>
+	<item group="HoodySweatshirt" prob="2.5"/>
+	<item group="DenimPants" prob="2.5"/>
+	<item group="RunningShoesRegular" prob="2"/>
 	<item name="resourceMechanicalParts" count="1,3" prob="1" />
 	<item group="groupTreasureMaps"  prob="1" />
     <item group="empty" prob="40" />
@@ -10672,8 +11579,8 @@ If there is no hit the default quality is used.
 <lootcontainer id="304" name="bikerZombie" count="1,2" size="4,3" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="QLTemplateT1">
 	<item group="junkPersonal" prob="45" />
 	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob="2"/>
-	<item name="apparelGothPants" prob="2" />
-	<item name="apparelGothBoots" prob="2" />
+	<item group="GothPants" prob="2" />
+	<item group="GothBoots" prob="2" />
 	<item name="apparelShades" prob="6" />
 	<item name="drinkJarBeer" prob="2" />
 	<item name="jz_MedicalSalineSolution" prob="1" />
@@ -10682,10 +11589,10 @@ If there is no hit the default quality is used.
 	<item name="drugPainkillers" prob="1" />
 	<item group="groupWeaponsAllScaled" prob="1" />
 	<item group="groupRareToolsTiered" prob="1" />
-	<item name="meleeWpnClubT3SteelClub" prob="1" />
+	<item group="groupWeaponsT3_SteelClub" prob="1" />
 	<item name="meleeWpnClubT1BaseballBat" prob="2" />
-	<item name="meleeWpnBladeT1HuntingKnife" prob="1" />
-	<item name="meleeWpnBladeT3Machete" prob="2" />
+	<item group="groupWeaponsT1HuntingKnife" prob="1" />
+	<item group="groupWeaponsT3_Machete" prob="2" />
 	<item group="professionPageChance" prob="1" />
 	<item group="booksAllScaled" prob="1" />
     <item group="empty" prob="25" />
@@ -10723,7 +11630,7 @@ If there is no hit the default quality is used.
 	<item name="armorMilitaryVest" prob="5" />
 	<item name="resourceMilitaryFiber" count="1,4" prob="10" />
     <item name="jz_PoliceBaton" prob="6" />
-    <item name="jz_GunPartsMagnum" prob="5" />
+    <item group="groupWeaponsT2_Gunslinger" prob="5" />
     <item group="empty" prob="20" />
 </lootcontainer>
 
@@ -10740,7 +11647,7 @@ If there is no hit the default quality is used.
 	<item group="junkPersonal" prob="21" />
 	<item group="rottenFood" prob="9" />
 	<item name="jz_DrinkCleanOuncesOfWater" count="5,32" prob="7" />
-	<item name="gunHandgunT1PistolParts" prob="4" />
+	<item group="groupWeaponsT1_Gunslinger" prob="4" />
    	<item group="cannedfood" prob="7" />
 	<item name="drugPainkillers" prob="6" />
 	<item group="groupAmmoSmall" prob="13" />
@@ -10751,7 +11658,7 @@ If there is no hit the default quality is used.
 <!-- feral zombie loot -->
 <lootcontainer id="311" name="feralZombie" count="1,2" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="QLTemplateT1">
 	<item group="junkPersonal" prob="10" />
-	<item name="jz_GunPartsCrossbow" prob="9" />
+	<item group="groupWeaponsT1_Archery02" prob="9" />
     <item group="groupWeaponsAllScaled" prob="9" />
 	<item group="groupArmorScaled" prob="8" />
 	<item group="professionPageChance" prob="10" />
@@ -10818,7 +11725,7 @@ If there is no hit the default quality is used.
 	<item name="resourceCoal" count="5,15" />
 </lootcontainer>
 <!-- Helicopters-->
-<lootcontainer id="320" name="Helicopters" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="320" name="Helicopters" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
     <item group="vehiclePartsTiered" prob="5" />
 	<item group="groupWeaponsRangedScaled" count="1,2" prob="15" />
 	<item group="groupAmmoAdvanced" count="1,2" prob="15" />
@@ -10831,10 +11738,10 @@ If there is no hit the default quality is used.
     <item group="booksAllScaled"  prob="4" />
 </lootcontainer>
 <!--Police Vehicles-->
-<lootcontainer id="321" name="PoliceVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="321" name="PoliceVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="35" />
 	<item group="groupWeaponsRangedScaled" prob="10" />
-	<item name="meleeWpnBatonT2StunBaton" prob="11" />
+	<item group="groupWeaponsT2_StunBaton" prob="11" />
 	<item name="jz_PoliceBaton" prob="10" />
     <item group="WorkingVehiclePlaceable" prob="1" />
 	<item name="ammo9mmBulletBall" count="3,40" prob="11"/>	
@@ -10842,7 +11749,7 @@ If there is no hit the default quality is used.
 	<item name="ammo762mmBulletBall" count="3,25" prob="11"/>			
 </lootcontainer>
 <!-- Medical Vehicles   NOT USED -->
-<lootcontainer id="322" name="MedicalVehicles"  count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="322" name="MedicalVehicles"  count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="50" />
 	<item group="groupMedicineCabinet" prob="48" />
     <item group="WorkingVehiclePlaceable" prob="1" />
@@ -10850,7 +11757,7 @@ If there is no hit the default quality is used.
 	<item name="medicalPlasterCastSchematic" prob=".5" />
 </lootcontainer>
 <!-- Military Vehicles-->
-<lootcontainer id="323" name="MilitaryVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="323" name="MilitaryVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="5" />
 	<item group="groupWeaponsRangedScaled" count="1,2" prob="15" />
 	<item group="groupAmmoAdvanced" count="1,2" prob="15" />
@@ -10861,7 +11768,7 @@ If there is no hit the default quality is used.
     <item group="booksAllScaled"  prob="4" />
 </lootcontainer>
 <!-- Military Crashes-->
-<lootcontainer id="324" name="MilitaryCrashes" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="324" name="MilitaryCrashes" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="40" />
 	<item group="groupAmmoAdvanced" count="1,2" prob="15" />
 	<item group="groupArmorScaled" count="1,2" prob="20" />
@@ -10869,7 +11776,7 @@ If there is no hit the default quality is used.
 	<item group="professionPageChance" prob="5" />
 </lootcontainer>
 <!-- Farming Vehicles-->
-<lootcontainer id="325" name="FarmingVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="325" name="FarmingVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="15" />
 	<item group="seeds" prob="15" />
     <item group="WorkingVehiclePlaceable" prob="1" />
@@ -10878,7 +11785,7 @@ If there is no hit the default quality is used.
 	<item group="rottenFood" prob="29" />
 </lootcontainer>
 <!-- Construction Vehicles-->
-<lootcontainer id="326" name="ConstructionVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="326" name="ConstructionVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="64" />
 	<item group="groupRareToolsTiered" prob="10" />
 	<item group="workingStiffs" prob="10" />
@@ -10888,7 +11795,7 @@ If there is no hit the default quality is used.
 	<item group="booksAllScaled"  prob="5" />
 </lootcontainer>
 <!-- Garbage Vehicles-->
-<lootcontainer id="327" name="GarbageVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="QLTemplateT1">
+<lootcontainer id="327" name="GarbageVehicles" count="0,3" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="20" loot_quality_template="QLTemplateT1">
 	<item group="vehiclePartsTiered" prob="49" />
     <item group="WorkingVehiclePlaceable" prob="1" />
 	<item group="rottenFood" prob="50" />
