@@ -10000,7 +10000,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>		
 	</buff>
 	
-	<buff name="Healthy_Diet" remove_on_death="false" hidden="true" >
+	<buff name="Healthy_Diet" name_key="Healthy Diet" remove_on_death="false" hidden="true" >
 		<stack_type value="ignore"/>
 		<duration value="4"/>
 		<effect_group>
@@ -11078,6 +11078,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckBandaged"/>
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckNeedsBandage"/>  
 				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffFireBurnNeckHealing"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffPackMule"/>	
 				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffNewbieCoat"  />
 				<!--<triggered_effect trigger="onSelfBuffFinish" action="GiveQuestSDX, SCore" target="self" quest="quest_PlayerRespawn" />-->
         </effect_group>
@@ -11788,7 +11789,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<duration value=".1"/>
 		<effect_group>
 			<passive_effect name="BuffResistance" operation="base_subtract" value="5" tags="jz_BuffLacerationLeftFoot,jz_BuffLacerationRightFoot,jz_BuffLacerationLeftLeg,jz_BuffLacerationRightLeg,jz_BuffLacerationLeftArm,jz_BuffLacerationRightArm,jz_BuffLacerationLeftHand,jz_BuffLacerationRightHand,jz_BuffLacerationStomach,jz_BuffLacerationNeck"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationLeftFoot"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffLacerationStomach"/>
 		</effect_group>
 	</buff>
 	
@@ -30925,6 +30926,235 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 		
+	<buff name="jz_BuffPackMule" hidden="true" remove_on_death="false" name_key="jz_BuffPackMule" description_key="jz_BuffPackMule" icon="ui_game_symbol_stomach">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="9"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="9"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="9"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="2"/>
+			<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="18"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="9"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="18"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="3"/>
+			<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="12"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="30"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="4"/>
+			<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="42"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="12"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="42"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="5"/>
+			<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="54"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="12"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="54"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="MaxEncumbrance" operation="subtract" value="@$PackMuleAmmount"/>
+		</effect_group>
+	</buff>
+	<!-- ******************************************************** JZMOD TESTING ******************************************** -->
+	<!-- JZMOD MAP EVENT SYSTEM -->
+	<buff name="jz_BuffDayCounter" hidden="true"  remove_on_death="false"><!-- need to save event incase player logs off and on during event -->
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="SetDateToCVar, SCore" target="self"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NextEventDay" operation="set" value="10"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffEventDayMath">
+				<requirement name="CVarCompare" cvar="$CurrentDay" operation="GT" value="@$NextEventDay"/></triggered_effect>		
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="jz_BuffEventSystemStart">
+				<requirement name="CVarCompare" cvar="$CurrentDay" operation="Equals" value="@$NextEventDay"/></triggered_effect>		
+							
+			<triggered_effect trigger="onSelfBuffUpdate" action="SetDateToCVar, SCore" target="self"/>	
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffEventDayMath">
+				<requirement name="CVarCompare" cvar="$CurrentDay" operation="GT" value="@$NextEventDay"/></triggered_effect>	
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffEventSystemStart">
+				<requirement name="CVarCompare" cvar="$CurrentDay" operation="Equals" value="@$NextEventDay"/></triggered_effect>		
+
+			<triggered_effect trigger="onSelfEnteredGame" action="SetDateToCVar, SCore" target="self"/>	
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="jz_BuffEventDayMath">
+				<requirement name="CVarCompare" cvar="$CurrentDay" operation="GT" value="@$NextEventDay"/></triggered_effect>		
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="jz_BuffEventSystemStart">
+				<requirement name="CVarCompare" cvar="$CurrentDay" operation="Equals" value="@$NextEventDay"/></triggered_effect>					
+		</effect_group>
+	</buff>
+			
+	<buff name="jz_BuffEventDayMath" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".1"/>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="$CurrentDay" operation="GT" value="@$NextEventDay"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NextEventDay" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NextEventDay" operation="add" value="10"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="$CurrentDay" operation="LTE" value="@$NextEventDay"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="jz_BuffEventDayMath"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffEventDayMath"/>
+		</effect_group>
+	</buff>
+			
+	<buff name="jz_BuffEventSystemStart" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value=".5"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".MapEventList" operation="set" value="randomint(1,3)"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffToxicFog,jz_BuffAcidRain" weights="50,50">
+				<requirement name="CVarCompare" cvar=".MapEventList" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffAcidRain,jz_BuffToxicFog" weights="50,50">
+				<requirement name="CVarCompare" cvar=".MapEventList" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" fireOneBuff="true" buff="jz_BuffToxicFog,jz_BuffAcidRain" weights="50,50">
+				<requirement name="CVarCompare" cvar=".MapEventList" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".MapEventList" operation="set" value="0"/>
+		</effect_group>
+	</buff>		
+	<!-- JZMOD MAP EVENTS -->
+	<!--JZMOD TOXIC FOG -->
+	<buff name="jz_BuffToxicFog" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="Start">
+			<requirement name="TimeOfDay" operation="LTE" value="2350"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.1 0.3 0.1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather fog 0.65"/>						
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather clouds 1"/>			
+		</effect_group>
+		<effect_group name="End">
+			<requirement name="TimeOfDay" operation="GT" value="2350"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather fog 0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.4620771 0.5271153 0.5840786"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather clouds 0"/>		
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffToxicFog"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffToxicFogPlayerEffects"/>	
+		</effect_group>
+		<effect_group name="Backup Clean up">
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather fog 0"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.4620771 0.5271153 0.5840786"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather clouds 0"/>		
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveBuff" buff="jz_BuffToxicFog"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveBuff" buff="jz_BuffToxicFogPlayerEffects"/>	
+					
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather fog 0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.4620771 0.5271153 0.5840786"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather clouds 0"/>		
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffToxicFog"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffToxicFogPlayerEffects"/>	
+		</effect_group>
+		<effect_group name="Toxic Fog: Palayer Effects">
+			<requirement name="!IsIndoors"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffToxicFogPlayerEffects"/>	
+		</effect_group>
+	</buff>
+						
+	<buff name="jz_BuffToxicFogPlayerEffects" name_key="Toxic Fog" description_key="jz_BuffToxicFogPlayerEffectsDesc" tooltip_key="Cough..Cough You cant Breath" icon="ui_game_symbol_oxygen" icon_color="255,128,0">
+		<damage_type value="Suffocation"/>
+		<display_value value=".ToxicFogSufficationDisplay"/><display_value_key value="{0}"/>
+		<effect_group>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="jz_BuffToxicFogPlayerEffects"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffToxicFogPlayerEffects">
+				<requirement name="IsIndoors"/> </triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ToxicFogSufficationTimer" operation="set" value="@$DrowningTimerMax"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ToxicFogSufficationTimer" operation="subtract" value="1">
+				<requirement name="CVarCompare" cvar="$ToxicFogSufficationTimer" operation="GT" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ToxicFogSufficationDisplay" operation="set" value="@$DrowningTimerMax"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ToxicFogSufficationDisplay" operation="set" value="@$ToxicFogSufficationTimer"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ToxicFogSufficationTimer" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ToxicFogSufficationDisplay" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="$ToxicFogSufficationTimer" operation="LTE" value="0"/>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="jz_BuffToxicFogPlayerEffects"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="1" />
+		</effect_group>
+	</buff>
+	<!-- JZMOD Acid Rain-->		
+	<buff name="jz_BuffAcidRain" hidden="true" remove_on_death="false">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="Start">
+			<requirement name="TimeOfDay" operation="LTE" value="2350"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.12 0.06 0.15"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather fog 0.3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather clouds 1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ExecuteConsoleCommand, SCore" command="weather rain 1"/>					
+		</effect_group>
+		<effect_group name="End">
+			<requirement name="TimeOfDay" operation="GT" value="2350"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather fog 0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.4620771 0.5271153 0.5840786"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather clouds 0"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="ExecuteConsoleCommand, SCore" command="weather rain 0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffAcidRain"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffAcidRainPlayerEffects"/>						
+		</effect_group>
+		<effect_group name="Backup Clean up">
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather fog 0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.4620771 0.5271153 0.5840786"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather clouds 0"/>	
+			<triggered_effect trigger="onSelfBuffRemove" action="ExecuteConsoleCommand, SCore" command="weather rain 0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffAcidRain"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="jz_BuffAcidRainPlayerEffects"/>	
+			
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather fog 0"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather fogcolor 0.4620771 0.5271153 0.5840786"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather clouds 0"/>	
+			<triggered_effect trigger="onSelfLeaveGame" action="ExecuteConsoleCommand, SCore" command="weather rain 0"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveBuff" buff="jz_BuffAcidRain"/>
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveBuff" buff="jz_BuffAcidRainPlayerEffects"/>		
+		</effect_group>
+		<effect_group name="Acid Rain: Palayer Effects">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="jz_BuffAcidRainPlayerEffects">
+				<requirement name="!IsIndoors"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffAcidRainPlayerEffects">
+				<requirement name="IsIndoors"/></triggered_effect>
+		</effect_group>
+	</buff>
+			
+	<buff name="jz_BuffAcidRainPlayerEffects" hidden="false" remove_on_death="false" name_key="Acid Rain" description_key="jz_BuffAcidRainPlayerEffectsDesc" tooltip_key="Owww! This rain is melting my gear." icon="ui_game_symbol_oxygen" icon_color="255,0,0" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="6"/>
+		<effect_group >
+			<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="TS_AcidRain_Event" />	
+			<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="TS_AcidRain_Event" />		
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="-1"/>	
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player#painsm"/>				
+		</effect_group>
+	</buff>	
+			
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<buff name="jz_BuffTestOff" hidden="false" remove_on_death="true" name_key="Coconut Milk" description_key="jz_BuffCoconutMilk" icon="ui_game_symbol_stomach">
 		<stack_type value="ignore"/>
 		<duration value="10"/>
@@ -31082,6 +31312,13 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 						</triggered_effect>							
 					</effect_group>					
 			</buff>	
+			
+			
+			
+			
+			
+			
+			
 <!--
 	<buff name="buffDroneHealPE" hidden="true"> test when you have a chance
 		<update_rate value=".1"/>

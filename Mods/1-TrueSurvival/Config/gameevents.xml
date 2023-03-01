@@ -5131,6 +5131,34 @@
 		</action>
 
 	</action_sequence>
+	
+	<action_sequence name="TS_AcidRain_Event">
+            <property name="category" value="twitch_actions" />
+            <action class="AddPartyToGroup">
+                <property name="phase" value="0" />
+                <property name="group_name" value="party" />
+            </action>
+            <action class="PlaySound">
+                <property name="phase" value="1" />
+                <property name="sound" value="fx_acid" />
+                <property name="inside_head" value="true" />
+                <property name="target_group" value="party" />
+            </action>
+            <action class="AddItemDurability">
+                <property name="phase" value="2" />
+                <property name="items_location" value="Equipment" />
+                <property name="amount" value="-1" />
+                <property name="is_percent" value="true" />
+                <property name="target_group" value="party" />
+            </action>
+            <action class="AddItemDurability">
+                <property name="phase" value="2" />
+                <property name="items_location" value="Toolbelt" />
+                <property name="amount" value="-1" />
+                <property name="is_percent" value="true" />
+                <property name="target_group" value="party" />
+            </action>
+        </action_sequence>
 <!--
 
 	<action_sequence name="spawn_cratesforparty">

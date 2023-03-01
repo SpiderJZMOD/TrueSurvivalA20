@@ -12902,7 +12902,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelOpenPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/>   
+	<drop event="Destroy" name="jz_IBRetroFridgeClosed" count="0" prob="1" tool_category="ToolCrowbar"/>   
 	<drop event="Destroy" name="cntFridgeStainlessSteel" count="1" prob="1" tool_category="ToolCrowbar"/>       
 </block>
 
@@ -12912,6 +12912,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelClosedPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="jz_refrigeratorGroupDesc"/>
+	<property name="ItemWeight" value="150" />
 	<!--JZMOD CROWBAR-->
 	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/>   
 	<drop event="Destroy" name="cntFridgeStainlessSteel" count="1" prob="1" tool_category="ToolCrowbar"/>   
@@ -12947,7 +12948,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapPolymers" value="8"/>
 	</property>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="cntCoolerClosed" count="1"/>
+	<drop event="Destroy" name="jz_IBCoolerClosed" count="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="300"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
@@ -12993,10 +12994,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="CustomIconTint" value="183C65"/>
 	<property name="TintColor" value="183C65"/>
 	<property name="PreserveBonus" value="3" />
-	<property name="TakeDelay" value="15"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="cooler"/>
-	<property name="ItemWeight" value="7" />
+	<property name="ItemWeight" value="10" />
 </block>
 
 <!-- Red -->
@@ -20670,6 +20670,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="6"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
+	<property name="ItemWeight" value="5" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -21596,11 +21597,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 <!-- NOT_A_SHAPE -->
 <block name="decoHandTruck">
 	<property name="Extends" value="decoEntityMetalMaster" param1="RepairItems"/>
+	<property name="DisplayType" value="blockMulti"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Model" value="Entities/Commercial/handTruckPrefab"/>
+	<property name="CanPickup" value="true" param1="jz_HandTruck"/>
+	<property name="ItemWeight" value="20" />
 	<property class="RepairItems">
 		<property name="resourceMechanicalParts" value="2"/>
-		<property name="resourceForgedIron" value="1"/>
+		<property name="resourceMetalPipe" value="5"/>
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
@@ -21943,6 +21947,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
@@ -21993,6 +21998,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="forge"/>
 		<property name="Modules" value="tools,output,fuel,material_input"/>
@@ -22082,6 +22088,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<!--<property name="RecipeList" value="backpack, workbench"/>-->
 	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 	<property name="Stacknumber" value="1"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
 		<property name="CraftingAreaRecipes" value="player,workbench"/>
@@ -22172,6 +22179,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
 	</property>
@@ -22267,6 +22275,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,fuel,input"/>
 	</property>
@@ -25983,6 +25992,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="444"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
 	<property name="SortOrder1" value="70a0"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -29982,6 +29992,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="IsTerrainDecoration" value="false"/>
 	<property name="Collide" value="melee,rocket"/>
+	<property name="ItemWeight" value="1" />
 	<property name="Texture" value="518"/>
 	<property name="FuelValue" value="150"/>
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
@@ -29998,6 +30009,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_traps"/>
 	<property name="SortOrder1" value="70g0"/>
 	<property name="Tags" value="jz_CrowBarTag"/>
+	
 	<!--JZMOD CROWBAR-->
 	<drop event="Destroy" name="barbedFence" count="1" prob="1" tool_category="ToolCrowbar"/>  
 </block>
@@ -30522,6 +30534,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="resourceScrapIron" count="3,7"/>
 	<property name="FilterTags" value="MC_building,SC_decor"/>
 	<property name="SortOrder1" value="70g0"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -30558,6 +30571,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="97"/>
 	<property name="FilterTags" value="MC_building,SC_traps"/>
 	<property name="SortOrder1" value="70g0"/>
+	<property name="ItemWeight" value="1" />
 	<!--
 	Incendiary mine:
 	<property name="Explosion.ParticleIndex" value="10"/>
@@ -30599,6 +30613,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="115"/>
 	<property name="FilterTags" value="MC_building,SC_traps"/>
 	<property name="SortOrder1" value="70g0"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -30614,6 +30629,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="300"/>
 	<property name="EconomicValue" value="120"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -30629,6 +30645,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="450"/>
 	<property name="EconomicValue" value="146"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -30644,6 +30661,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="690"/>
 	<property name="EconomicValue" value="182"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <!-- NOT_A_SHAPE -->
@@ -33425,11 +33443,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Destroy" name="resourceMechanicalParts" count="1"/>
 </block>
 
-
-
-
 <!-- *** NEW_BLOCKS_FROM_ART_TEAM -->
-
 <block name="trashGround01">
 	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -33681,6 +33695,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <!-- **************************************************************** TRUE SURVIVAL BLOCKS ********************************************************* -->
 <!-- JZMOD WORKSTATIONS -->
+
 <block name="wallTorchLightPlayer">
  	<property name="Material" value="Mpaper"/>
 	<property name="MaxDamage" value="1"/>
@@ -33770,6 +33785,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapTime" value="1200" />
 	<property name="HeatMapFrequency" value="25" />
 	<property name="Stacknumber" value="1" />
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output" />
 	</property>
@@ -33804,6 +33820,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2" />
 	<property name="HeatMapTime" value="1200" />
 	<property name="MaxDamage" value="100" />
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -33820,7 +33837,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<drop event="Harvest" name="resourceRockSmall" count="10" />
 	<drop event="Destroy" name="resourceRockSmall" count="10" />
 	<drop event="Destroy" count="0" />
-	<property name="Group" value="Food/Cooking" />
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="StoneMillDesc" />
 	<property name="SellableToTrader" value="false" />
 	<property name="TakeDelay" value="15"/>
@@ -33842,6 +33859,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="1" />
 	<property name="HeatMapTime" value="1200" />
 	<property name="HeatMapFrequency" value="25" />
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output" />
 	</property>
@@ -33890,6 +33908,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="electronicParts" value="10" />
 	</property>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="jz_SteelForge" />
 		<property name="Modules" value="tools,output,fuel,material_input" />
@@ -33923,6 +33942,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceRockSmall" value="50" />
 	</property>
+	<property name="ItemWeight" value="5" />
 	<property class="Workstation">
 		<property name="Modules" value="output" />
 	</property>
@@ -33953,6 +33973,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="resourceWood" value="50" />
 	</property>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output" />
 	</property>
@@ -33982,6 +34003,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="MultiBlockDim" value="2,2,2" />
     <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property class="RepairItems"> <property name="resourceScrapIron" value="50" /> </property>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output" />
 	</property>
@@ -34024,6 +34046,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34074,6 +34097,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34123,6 +34147,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34169,6 +34194,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire,stove"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34219,6 +34245,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire,stove"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34269,6 +34296,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire,stove"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34318,6 +34346,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34367,6 +34396,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="campfire"/>
 		<property name="Modules" value="tools,output,fuel,input"/>
@@ -34422,6 +34452,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="electronicParts" value="10" />
 	</property>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="jz_KitchenWorkbench" />
 		<property name="Modules" value="output,fuel,material_input" />
@@ -34476,6 +34507,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34523,6 +34555,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34570,6 +34603,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34617,6 +34651,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34663,6 +34698,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34710,6 +34746,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34757,6 +34794,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34804,6 +34842,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34851,6 +34890,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34898,6 +34938,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34944,7 +34985,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -34996,7 +35037,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35048,7 +35089,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35100,7 +35141,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35152,7 +35193,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35204,7 +35245,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
-	
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35251,6 +35292,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35303,6 +35345,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35355,6 +35398,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35407,6 +35451,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35459,6 +35504,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35511,6 +35557,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35563,6 +35610,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35615,6 +35663,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35667,6 +35716,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35719,6 +35769,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35765,6 +35816,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35817,6 +35869,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35869,6 +35922,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35921,6 +35975,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -35973,6 +36028,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36025,6 +36081,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36077,6 +36134,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36129,6 +36187,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36181,6 +36240,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36233,6 +36293,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36279,6 +36340,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36331,6 +36393,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36383,6 +36446,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36435,6 +36499,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36487,6 +36552,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36539,6 +36605,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36591,6 +36658,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36643,6 +36711,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36695,6 +36764,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36747,6 +36817,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36793,6 +36864,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36845,6 +36917,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36897,6 +36970,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -36949,6 +37023,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37001,6 +37076,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37053,6 +37129,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37105,6 +37182,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37157,6 +37235,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37209,6 +37288,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37261,6 +37341,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37313,6 +37394,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37365,6 +37447,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37411,6 +37494,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37463,6 +37547,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37515,6 +37600,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37567,6 +37653,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37619,6 +37706,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37671,6 +37759,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37723,6 +37812,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37775,6 +37865,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37827,6 +37918,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37879,6 +37971,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37931,6 +38024,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -37983,6 +38077,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38029,6 +38124,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38081,6 +38177,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38133,6 +38230,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38185,6 +38283,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38237,6 +38336,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38289,6 +38389,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38341,6 +38442,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38393,6 +38495,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38445,6 +38548,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38497,6 +38601,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38543,6 +38648,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38595,6 +38701,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38647,6 +38754,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38699,6 +38807,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38751,6 +38860,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38803,6 +38913,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38855,6 +38966,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38907,6 +39019,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -38959,6 +39072,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39011,6 +39125,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39057,6 +39172,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39109,6 +39225,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39161,6 +39278,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39213,6 +39331,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39265,6 +39384,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39317,6 +39437,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39369,6 +39490,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39421,6 +39543,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39473,6 +39596,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39525,6 +39649,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39577,6 +39702,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39629,6 +39755,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
+	<property name="ItemWeight" value="25" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
 	</property>
@@ -39653,6 +39780,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="UnlockedBy" value="jz_SchematicMethaneProducer"/>
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ItemWeight" value="1" />
+	<property name="CanPickup" value="true"/>
 	<property class="Explosion">
 		<property name="ParticleIndex" value="13"/>
 		<property name="RadiusBlocks" value="1"/>
@@ -39683,6 +39812,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="IsTerrainDecoration" value="true" />
     <property name="Weight" value="20" />
 	<property name="LootList" value="playerStorage" />
+	<property name="ItemWeight" value="10" />
 	<property class="RepairItems">
 		<property name="resourceCloth" value="10" />
 	</property>
@@ -39702,25 +39832,25 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Collide" value="movement,melee,bullet,rocket" />
 	<property name="FuelValue" value="15" />
 	<property name="IsTerrainDecoration" value="true" />
+	<property name="EconomicValue" value="100"/>
+	<property name="SellableToTrader" value="false" />
+	<property name="Group" value="Tools/Traps" />
+	<property name="DescriptionKey" value="setUpASpikeTrapDesc" />
+	<property name="CanPickup" value="true"/>
 	<property class="RepairItems">
 		<property name="jz_Stick" value="3" />
 	</property>
-	<property name="CanPickup" value="true" />
+	<property name="ItemWeight" value="1" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="trapSpikesNew" />
 		<property name="Item" value="jz_Stick" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
-    <property name="EconomicValue" value="100"/>
-	<property name="SellableToTrader" value="false" />
-	<property name="Group" value="Tools/Traps" />
-	<property name="DescriptionKey" value="setUpASpikeTrapDesc" />
 	<!--JZMOD ANY-->
 	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1" />
 </block>
-
 
 <block name="jz_GasTank">
 	<property name="CustomIcon" value="toolCookingPot"/>
@@ -39732,13 +39862,14 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="CanPickup" value="true" param1="toolCookingPot"/>
+	<property name="CanPickup" value="true" />
 	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Group" value="Tools/Traps,Food/Cooking"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
+	<property name="ItemWeight" value="1" />
 </block>
 
 <block name="jz_Palmtree1">
@@ -43667,6 +43798,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Stacknumber" value="1" />
 	<property name="HeatMapStrength" value="0" />
 	<property name="HeatMapTime" value="0" />
+	<property name="ItemWeight" value="25" />
 	<property name="MaxDamage" value="5000" />
 	<property class="Workstation">
 		<property name="Modules" value="output,input" />
@@ -43866,7 +43998,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="MaxDamage" value="200"/>
 	<property name="PlantGrowing.Next" value="jz_PlantedOrange1Dry"/>
     <property class="UpgradeBlock">
-		<property name="ToBlock" value="jz_PlantedFertilizedOrange1Dry"/>
+		<property name="ToBlock" value="jz_PlantedFertilizedOrangeBare"/>
 		<property name="Item" value="resourceFertilizer"/>
 		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="1"/>
@@ -44019,6 +44151,22 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="BigDecorationRadius" value="4"/>
 	<property name="PlantGrowing.FertileLevel" value="16"/>
   	<drop event="Destroy" name="jz_PlantedOrange1" count="0"/>
+</block>
+
+<block name="jz_PlantedFertilizedOrangeBare">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/Trees?White_Oak22Prefab.prefab"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fCropsDestroy"/> 
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,4,1"/>
+	<property name="BigDecorationRadius" value="4"/>
+    <property name="MaxDamage" value="200"/>
+	<property name="PlantGrowing.Next" value="jz_PlantedFertilizedOrange1Dry"/>
+    <!--JZMOD ANY-->
+	<drop event="Destroy" name="jz_Stick" count="4,10"/>
+	<drop event="Destroy" name="jz_FreshTimber" count="3,6"/>         
 </block>
 
 <block name="jz_PlantedFertilizedOrange1Dry">
@@ -45507,6 +45655,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
 	<property name="Material" value="MwoodReinforced"/>
+	<property name="ItemWeight" value="2" />
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" name="resourceWood" count="2,9" prob="1" />
 	<drop event="Destroy" name="jz_FoodServingVeggie" count="1,3" prob="0.4"/>
@@ -45525,6 +45674,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="8"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="ItemWeight" value="5" />
 </block>
 
 <block name="jz_WineBarrelVariantHelper">
@@ -45538,6 +45688,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicValue" value="8"/>
 	<property name="Group" value="Building,advBuilding"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+	<property name="ItemWeight" value="5" />
 </block>
 
 

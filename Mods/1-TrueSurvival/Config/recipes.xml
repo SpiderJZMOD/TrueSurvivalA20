@@ -12076,7 +12076,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbench" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12096,7 +12096,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv2" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12116,7 +12116,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv3" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12136,7 +12136,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv4" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12156,7 +12156,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv5" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12176,7 +12176,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv6" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12196,7 +12196,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv7" craft_time="15" craft_exp_gain="20" tags="jz_CraftingQualityOne,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="6"/>
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="jz_ScrapAdhesive" count="14"/>
@@ -12216,7 +12216,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv8" craft_time="30" craft_exp_gain="40" tags="jz_CraftingQualityTwo,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="7"/>
 	<ingredient name="resourceForgedSteel" count="11"/>
 	<ingredient name="jz_ScrapAdhesive" count="16"/>
@@ -12236,7 +12236,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv9" craft_time="45" craft_exp_gain="60" tags="jz_CraftingQualityThree,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="8"/>
 	<ingredient name="resourceForgedSteel" count="12"/>
 	<ingredient name="jz_ScrapAdhesive" count="18"/>
@@ -12256,7 +12256,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv10" raft_time="60" craft_exp_gain="80" tags="jz_CraftingQualityFour,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="9"/>
 	<ingredient name="resourceForgedSteel" count="13"/>
 	<ingredient name="jz_ScrapAdhesive" count="20"/>
@@ -12276,7 +12276,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv11" raft_time="60" craft_exp_gain="80" tags="jz_CraftingQualityFour,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="9"/>
 	<ingredient name="resourceForgedSteel" count="13"/>
 	<ingredient name="jz_ScrapAdhesive" count="20"/>
@@ -12296,7 +12296,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="gunBotT3JunkDrone" count="1" craft_area="jz_WorkstationElectronicWorkbenchLv12" raft_time="60" craft_exp_gain="80" tags="jz_CraftingQualityFour,ElectronicCrafting,jz_ElectricianTag">
-	<ingredient name="jz_BrokenJunkTurret" count="1"/>
+	<ingredient name="jz_BrokenJunkDrone" count="1"/>
 	<ingredient name="resourceOil" count="9"/>
 	<ingredient name="resourceForgedSteel" count="13"/>
 	<ingredient name="jz_ScrapAdhesive" count="20"/>

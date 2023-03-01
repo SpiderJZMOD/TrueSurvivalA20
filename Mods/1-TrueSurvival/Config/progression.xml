@@ -3180,6 +3180,13 @@
 		</effect_group>
 	</perk>
 	
+	<perk name="SP_ClubT1BaseballBatSchematic" parent="jz_MeleeSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Baseball Bat" desc_key="jz_meleeWpnClubT1BaseballBatDesc" icon="meleeWpnClubT1BaseballBat">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeWpnClubT1BaseballBat"/>
+			<effect_description level="1" desc_key="jz_meleeWpnClubT1BaseballBatDesc" long_desc_key="jz_meleeWpnClubT1BaseballBatDesc"/>
+		</effect_group>
+	</perk>
+	
     <perk name="SP_ClubT3SteelClubSchematic" parent="jz_MeleeSchematics" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Steel Club" desc_key="meleeWpnClubT3SteelClubDesc" icon="meleeWpnClubT3SteelClub">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeWpnClubT3SteelClub"/>
@@ -4451,13 +4458,15 @@
 	
     <perk name="perkPackMule" min_level="0" max_level="5" base_skill_point_cost="0" cost_multiplier_per_level="0" parent="jz_PerkBooks" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
 		<effect_group>
-			<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="3,6,10,14,18"/>
-			
-			<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="perkPackMuleRank1LongDesc" />
-			<effect_description level="2" desc_key="perkPackMuleRank2Desc" long_desc_key="perkPackMuleRank2LongDesc"/>
-			<effect_description level="3" desc_key="perkPackMuleRank3Desc" long_desc_key="perkPackMuleRank3LongDesc"/>
-			<effect_description level="4" desc_key="perkPackMuleRank4Desc" long_desc_key="perkPackMuleRank4LongDesc"/>
-			<effect_description level="5" desc_key="perkPackMuleRank5Desc" long_desc_key="perkPackMuleRank5LongDesc"/>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" buff="jz_BuffPackMule">
+				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="GTE" value="1"/>
+				<requirement name="NotHasBuff" buff="jz_BuffPackMule"/></triggered_effect>
+						
+			<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="jz_perkPackMuleRank1LongDesc" />
+			<effect_description level="2" desc_key="perkPackMuleRank2Desc" long_desc_key="jz_perkPackMuleRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkPackMuleRank3Desc" long_desc_key="jz_perkPackMuleRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkPackMuleRank4Desc" long_desc_key="jz_perkPackMuleRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkPackMuleRank5Desc" long_desc_key="jz_perkPackMuleRank5LongDesc"/>
 		</effect_group>
 	</perk>
 	

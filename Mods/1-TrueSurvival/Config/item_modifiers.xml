@@ -55,6 +55,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<property name="Group" value="Mods,Tool/Weapon Mods"/>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		<property name="SellableToTrader" value="false"/>
+		<property name="DisplayType" value="TSItemDisplay"/>
 	</item_modifier>
 
 	<!--Weapon Attachments
@@ -65,6 +66,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunBarrelExtender" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunBarrelExtenderSchematic"/>
+		<property name="ItemWeight" value="1" />
 		<!--DamageFalloffRange increased by x meters-->
 		<effect_group tiered="false">
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/>
@@ -80,12 +82,14 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<passive_effect name="WeaponHandling" operation="perc_add" value="-.08">
 				<requirement name="NotHasBuff" buff="buffHoldBreathAiming01"/>
 			</passive_effect>
+			<display_value name="TSItemWeight" value="1"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modGunMuzzleBrake" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunMuzzleBrakeSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
 		<effect_group tiered="false">
 			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
@@ -93,6 +97,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.15"/>
 			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.15"/>
 			<passive_effect name="WeaponHandling" operation="perc_add" value=".08"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 			<!-- <passive_effect name="DamageFalloffRange" operation="base_add" value="-5"/> -->
 	</item_modifier>
@@ -118,6 +123,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunSoundSuppressorSilencer" installable_tags="gun" modifier_tags="barrelAttachment" blocked_tags="noMods,noSilencer" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunSoundSuppressorSilencerSchematic"/>
+		<property name="ItemWeight" value="1.2" />
 		<!--Decreases sound footprint by x% -->
 		<item_property_overrides name="*">
 			<property name="Sound_start" value="pistol_s_fire"/>
@@ -234,7 +240,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 			</passive_effect>
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2"/>
 			<passive_effect name="MaxRange" operation="perc_add" value="-.25"/>
-
+			<display_value name="TSItemWeight" value="1.2"/>
 			<!--<passive_effect name="MaxRange" operation="perc_add" value="-.25">
 				<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
 			</passive_effect>-->
@@ -245,7 +251,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunLaserSight" installable_tags="sideAttachments" modifier_tags="sideAttachment" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunLaserSightSchematic"/>
-
+		<property name="ItemWeight" value=".3" />
 		<item_property_overrides name="*">
 			<property name="CrosshairOnAim" value="true"/>
 		</item_property_overrides>
@@ -339,6 +345,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
+			<display_value name="TSItemWeight" value=".3"/>
 			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.2"/>
 			<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
 		</effect_group>
@@ -349,6 +356,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunFlashlightSchematic"/>
 		<property name="LightValue" value=".5"/>
+		<property name="ItemWeight" value=".5" />
 
 		<item_property_overrides name="gunHandgunT1Pistol">
 			<property name="SideOffset" value="0,.0198,.0475"/>
@@ -436,6 +444,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 				<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
 				<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
 				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="flashlight_lightSource"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -445,7 +454,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunScopeSmall" installable_tags="smallTopAttachments" modifier_tags="scope" blocked_tags="noMods,noScopes" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunScopeSmallSchematic"/>
-
+		<property name="ItemWeight" value="1" />
 		<item_property_overrides name="*">
 			<property name="CrosshairOnAim" value="true"/>
 			<property name="Zoom_overlay" value="#Other/Items?Weapons/HUD/sniper_zoom_overlay.tga"/>
@@ -538,6 +547,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 
 		<effect_group tiered="false" name="mod effects">
 			<!-- removed shotgun perk, turrets -->
+			<display_value name="TSItemWeight" value="1"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1" tags="perkDeadEye,perkArchery,admin">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
@@ -552,7 +562,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunScopeMedium" installable_tags="mediumTopAttachments" modifier_tags="scope" blocked_tags="noMods,noScopes" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunScopeMediumSchematic"/>
-
+		<property name="ItemWeight" value="1.5" />
 		<item_property_overrides name="*">
 			<property name="CrosshairOnAim" value="true"/>
 			<property name="Zoom_overlay" value="#Other/Items?Weapons/HUD/sniper_zoom_overlay.tga"/>
@@ -611,6 +621,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
+			<display_value name="TSItemWeight" value="1.5"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.18" tags="perkDeadEye,perkArchery,admin">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
@@ -625,7 +636,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunScopeLarge" installable_tags="largeTopAttachments" modifier_tags="scope" blocked_tags="noMods,noScopes" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunScopeLargeSchematic"/>
-
+		<property name="ItemWeight" value="2" />
 		<item_property_overrides name="*">
 			<property name="CrosshairOnAim" value="true"/>
 			<property name="Zoom_overlay" value="#Other/Items?Weapons/HUD/sniper_zoom_overlay.tga"/>
@@ -680,6 +691,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
+			<display_value name="TSItemWeight" value="2"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkDeadEye,perkArchery,admin">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
@@ -694,7 +706,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunReflexSight" installable_tags="smallTopAttachments" modifier_tags="scope" blocked_tags="noMods,bow" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunReflexSightSchematic"/>
-
+		<property name="ItemWeight" value="2" />
 		<item_property_overrides name="*">
 			<!--<property name="CrosshairOnAim" value="true"/>-->
 			<property name="Zoom_max_out" value="55"/>
@@ -833,6 +845,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		</effect_group>
 
 		<effect_group tiered="false" name="mod effects">
+			<display_value name="TSItemWeight" value="2"/>
 			<passive_effect name="WeaponHandling" operation="perc_add" value=".3"/>
 		</effect_group>
 	</item_modifier>
@@ -840,8 +853,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunTriggerGroupSemi" installable_tags="firingMode" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunTriggerGroupSemiSchematic"/>
-
+		<property name="ItemWeight" value=".2" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
 			<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".05"/>
@@ -852,8 +866,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunTriggerGroupBurst3Schematic"/>
 		<property name="CustomIcon" value="modGunTriggerGroupBurst"/>
-
+		<property name="ItemWeight" value=".4" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".4"/>
 			<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".05"/>
@@ -863,8 +878,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunTriggerGroupAutomatic" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunTriggerGroupAutomaticSchematic"/>
-
+		<property name="ItemWeight" value=".6" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".6"/>
 			<passive_effect name="BurstRoundCount" operation="base_set" value="999"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".12"/>
 			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".06"/>
@@ -874,7 +890,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunBipod" installable_tags="bottomAttachments" modifier_tags="accuracy" blocked_tags="noMods,shortRange" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunBipodSchematic"/>
+		<property name="ItemWeight" value="1.5" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.08"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.09">
 				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
@@ -890,7 +908,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunForegrip" installable_tags="bottomAttachments,turretRanged" modifier_tags="grips" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunForegripSchematic"/>
+		<property name="ItemWeight" value=".8" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".8"/>
 			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.15"/>
 			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.15"/>
 			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.15"/>
@@ -908,8 +928,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunRetractingStock" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunRetractingStockSchematic"/>
-
+		<property name="ItemWeight" value=".5" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".5"/>
 			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.15"/>
 		</effect_group>
 	</item_modifier>
@@ -929,7 +950,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modShotgunSawedOffBarrel" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modShotgunSawedOffBarrelSchematic"/>
-
+		<property name="ItemWeight" value=".5" />
 		<!--<item_property_overrides name="gunShotgunT2PumpShotgun">
 			<property name="HandMeshfile" value="#Other/Items?Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab.prefab"/>
 		</item_property_overrides>-->
@@ -937,7 +958,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<effect_group tiered="false" name="Base Effects">
 			<passive_effect name="MaxRange" operation="perc_add" value="-.15"/>
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.15"/>
-
+			<display_value name="TSItemWeight" value=".5"/>
 			<passive_effect name="SpreadDegreesVertical" operation="perc_set" value="1.2"/>
 			<passive_effect name="SpreadDegreesHorizontal" operation="perc_set" value="1.2"/>
 		</effect_group>
@@ -946,9 +967,10 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunDuckbill" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunDuckbillSchematic"/>
-
+		<property name="ItemWeight" value=".2" />
 		<!--flattens vertical and increases horizontal spread of damage for shotguns-->
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
 			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.45"/>
 			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".75"/>
 		</effect_group>
@@ -957,9 +979,10 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunChoke" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunChokeSchematic"/>
-
+		<property name="ItemWeight" value=".4" />
 		<!--Adds increased DamageFalloffRange by x meters and decreases spread by x%-->
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".4"/>
 			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.4"/>
 			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.4"/>
 		</effect_group>
@@ -968,7 +991,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunMagazineExtender" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunMagazineExtenderSchematic"/>
+		<property name="ItemWeight" value=".7" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".7"/>
 			<passive_effect name="MagazineSize" operation="perc_add" value=".5"/>
 		</effect_group>
 	</item_modifier>
@@ -976,7 +1001,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunDrumMagazineExtender" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="perkAutoWeaponsDrumMag"/>
+		<property name="ItemWeight" value="2.5" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.5"/>
 			<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.25"/>
 		</effect_group>
@@ -985,7 +1012,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 	<item_modifier name="modGunShotgunTubeExtenderMagazine" installable_tags="modGunShotgunTubeExtenderMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="perkShotgunMessiahMagazine"/>
+		<property name="ItemWeight" value="1" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
 			<passive_effect name="MagazineSize" operation="perc_add" value=".375"/>
 		</effect_group>
 	</item_modifier>
@@ -1057,6 +1086,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modGunCrippleEm" installable_tags="ranged" modifier_tags="crippling" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunCrippleEmSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<!--Each shot has a chance to cripple-->
 		<effect_group tiered="false">
 			<requirement name="EntityTagCompare" target="other" tags="walker"/>
@@ -1069,13 +1099,16 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<requirement name="HoldingItemHasTags" tags="shotgun"/>
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,800" operation="LTE" value="20"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modGunBowPolymerString" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunBowPolymerStringSchematic"/>
+		<property name="ItemWeight" value=".2" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
 			<passive_effect name="ProjectileVelocity" operation="perc_add" value=".15"/>
 		</effect_group>
 	</item_modifier>
@@ -1083,7 +1116,9 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modGunBowArrowRest" installable_tags="bow" modifier_tags="accuracy" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunBowArrowRestSchematic"/>
+		<property name="ItemWeight" value=".2" />
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
 			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.1"/>
 			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.1"/>
 		</effect_group>
@@ -1094,30 +1129,36 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modGunMeleeTheHunter" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunMeleeTheHunterSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<!--Do double damage to living enemies-->
 		<effect_group tiered="false">
 			<requirement name="EntityTagCompare" target="other" tags="animal"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value=".25"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modGunMeleeRadRemover" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunMeleeRadRemoverSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<!-- Increases damage against irradiated enemies, all melee only -->
 		<effect_group tiered="false">
 			<requirement name="EntityTagCompare" target="other" tags="radiated"/>
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modGunMeleeBlessedMetal" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunMeleeBlessedMetalSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<!--Do double damage to evil / undead-->
 		<effect_group tiered="false">
 			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1136,6 +1177,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modGunMeleeNiCdBattery" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="CreativeMode" value="Test"/>
+		<property name="ItemWeight" value=".25" />
 		<!-- <property name="UnlockedBy" value="modGunMeleeNiCdBatterySchematic"/> -->
 
 		<!-- Changes damage type to electric -->
@@ -1144,6 +1186,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		</item_property_overrides>
 
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".25"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
 		</effect_group>
 	</item_modifier>
@@ -1151,7 +1194,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modGunMeleeFlammableOil" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="CreativeMode" value="Test"/>
-
+		<property name="ItemWeight" value=".3" />
 		<!-- <property name="UnlockedBy" value="modGunMeleeFlammableOilSchematic"/> -->
 
 		<!-- Changes damage type to heat -->
@@ -1160,6 +1203,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		</item_property_overrides>
 
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
 		</effect_group>
 	</item_modifier>
@@ -1167,6 +1211,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modGunMeleeLiquidNitrogen" installable_tags="weapon,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="CreativeMode" value="Test"/>
+		<property name="ItemWeight" value=".4" />
 		<!-- <property name="UnlockedBy" value="modGunMeleeLiquidNitrogenSchematic"/> -->
 
 		<!-- Changes damage type to cold -->
@@ -1175,6 +1220,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		</item_property_overrides>
 
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".4"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
 		</effect_group>
 	</item_modifier>
@@ -1185,8 +1231,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modMeleeTemperedBlade" installable_tags="perkDeepCuts,axe,shovel,perkBrawler,perkJavelinMaster" modifier_tags="damage" blocked_tags="noMods,noBlades" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeTemperedBladeSchematic"/>
+		<property name="ItemWeight" value=".25" />
 		<!-- reduce DR of armor by x, blade weapons -->
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".25"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".1"/>
 			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.15" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 		</effect_group>
@@ -1195,6 +1243,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modMeleeSerratedBlade" installable_tags="knife,machete,axe,shovel,perkBrawler,perkJavelinMaster" modifier_tags="damage" blocked_tags="noMods,noBlades" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeSerratedBladeSchematic"/>
+		<property name="ItemWeight" value=".25" />
 		<effect_group tiered="false">
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
 			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
@@ -1203,25 +1252,29 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<effect_group tiered="false">
 			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+			<display_value name="TSItemWeight" value=".25"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeWeightedHead" installable_tags="light,medium,heavy,turretMelee" modifier_tags="damage" blocked_tags="noMods,perkDeepCuts" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeWeightedHeadSchematic"/>
+		<property name="ItemWeight" value="1.5" />
 		<!-- Increases stun chance; increases stamina use, axe, hammer, club -->
 		<effect_group tiered="false">
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01"/>
+			<display_value name="TSItemWeight" value="1.5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeStructuralBrace" installable_tags="melee,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeStructuralBraceSchematic"/>
-
+		<property name="ItemWeight" value=".5" />
 		<!-- Increases durability, increases block efficiency, all melee -->
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".5"/>
 			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.25" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 		</effect_group>
 	</item_modifier>
@@ -1229,7 +1282,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modMeleeErgonomicGrip" installable_tags="melee,bow" modifier_tags="health" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeErgonomicGripSchematic"/>
-
+		<property name="ItemWeight" value=".35" />
 		<!-- Reduces Stamina usage on all attacks, all melee -->
 		<effect_group tiered="false">
 			<requirement name="!HoldingItemHasTags" tags="perkArchery"/>
@@ -1238,24 +1291,26 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<effect_group tiered="false">
 			<requirement name="HoldingItemHasTags" tags="perkArchery"/>
 			<passive_effect name="WeaponHandling" operation="perc_add" value=".1"/>
+			<display_value name="TSItemWeight" value=".35"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeFortifyingGrip" installable_tags="melee" modifier_tags="health" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeFortifyingGripSchematic"/>
-
+		<property name="ItemWeight" value=".5" />
 		<!-- Gain HP/sec when under 50% HP -->
 		<effect_group tiered="false">
 			<requirement name="StatComparePercCurrentToModMax" stat="health" operation="LTE" value=".5"/>
 			<passive_effect name="HealthChangeOT" operation="base_add" value=".2"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeClubBarbedWire" installable_tags="club" modifier_tags="shaft" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeClubBarbedWireSchematic"/>
-
+		<property name="ItemWeight" value=".3" />
 		<item_property_overrides name="*">
 			<property name="Material" value="Mmetal"/>
 		</item_property_overrides>
@@ -1288,13 +1343,14 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<requirement name="HasBuff" target="other" buff="buffInjuryBleeding"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
 				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+			<display_value name="TSItemWeight" value=".3"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeClubMetalSpikes" installable_tags="club" modifier_tags="shaft" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeClubMetalSpikesSchematic"/>
-
+		<property name="ItemWeight" value=".7" />
 		<item_property_overrides name="*">
 			<property name="Material" value="Mmetal"/>
 			<property name="Damage_type" value="Piercing"/>
@@ -1318,13 +1374,14 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
+			<display_value name="TSItemWeight" value=".7"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeClubMetalChain" installable_tags="club" modifier_tags="shaft" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="perkBatterUpMetalChain"/>
-
+		<property name="ItemWeight" value="1.3" />
 		<item_property_overrides name="*">
 			<property name="Material" value="Mmetal"/>
 		</item_property_overrides>
@@ -1348,13 +1405,14 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<effect_group tiered="false">
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10"/>
 			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01"/>
+			<display_value name="TSItemWeight" value="1.3"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeClubBurningShaft" installable_tags="longShaft" modifier_tags="fire" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeClubBurningShaftSchematic"/>
-
+		<property name="ItemWeight" value=".5" />
 		<item_property_overrides name="*">
 			<property name="LightValue" value=".25"/> <!-- has no effect on a mod -->
 			<property name="LightSource" value="lightSource"/>
@@ -1421,6 +1479,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<passive_effect name="HypothermalResist" operation="base_add" value="4">
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
 			</passive_effect>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 
 		<effect_group name="light/douse torch always" tiered="false">
@@ -1463,84 +1522,102 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modMeleeFiremansAxeMod" installable_tags="axe" modifier_tags="damageDirt,damageStone,damageIron" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="perkFiremansAlmanacAxes"/>
+		<property name="ItemWeight" value=".7" />
 		<effect_group tiered="false">
 			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".25"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+			<display_value name="TSItemWeight" value=".7"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeGraveDigger" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeGraveDiggerSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<effect_group tiered="false">
 			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="earth"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeBunkerBuster" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeBunkerBusterSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<effect_group tiered="false">
 			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="stone"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeIronBreaker" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeIronBreakerSchematic"/>
+		<property name="ItemWeight" value=".5" />
 		<effect_group tiered="false">
 			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="metal"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeWoodSplitter" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modMeleeWoodSplitterSchematic"/>
+		<property name="ItemWeight" value=".75" />
 		<effect_group tiered="false">
 			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="wood"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+			<display_value name="TSItemWeight" value=".75"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeDiamondTip" installable_tags="tool,perkBrawler,perkJavelinMaster,perkDeepCuts" modifier_tags="durability" blocked_tags="noMods,noBlades" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="perkArtOfMiningDiamondTools"/>
+		<property name="ItemWeight" value=".2" />
 		<effect_group tiered="false">
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-.4" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_value name="TSItemWeight" value=".2"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.4" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modMeleeStunBatonRepulsor" installable_tags="perkElectrocutioner" modifier_tags="knockback" blocked_tags="noMods,noStunEffect" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="perkTechJunkie5Repulsor"/>
+		<property name="ItemWeight" value=".6" />
 		<effect_group tiered="false">
-				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffmodMeleeStunBatonRepulsor"/>
-				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<display_value name="TSItemWeight" value=".6"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modFuelTankSmall" installable_tags="motorTool" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modFuelTankSmallSchematic"/>
+		<property name="ItemWeight" value="1" />
 		<effect_group tiered="false">
 			<passive_effect name="MagazineSize" operation="perc_add" value=".5"/>
+			<display_value name="TSItemWeight" value="1"/>
 		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modFuelTankLarge" installable_tags="motorTool" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modFuelTankLargeSchematic"/>
+		<property name="ItemWeight" value="1.75" />
 		<effect_group tiered="false">
-			<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+			<passive_effect name="MagazineSize" operation="perc_add" value="1.75"/>
+			<display_value name="TSItemWeight" value="1.75"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1550,6 +1627,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modArmorBandolier" installable_tags="armorChest,armorLegs" modifier_tags="ammo" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorBandolierSchematic"/>
+		<property name="ItemWeight" value="2" />
 		<!-- Reload Guns X% faster;  would like to add it to "legs" but buffs dont stack like that -->
 		<effect_group tiered="false">
 			<requirement name="ItemHasTags" tags="armorChest"/>
@@ -1560,6 +1638,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<requirement name="ItemHasTags" tags="armorLegs"/>
 				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffBandolierLegs"/>
 				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffBandolierLegs"/>
+			<display_value name="TSItemWeight" value="2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1576,10 +1655,12 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	<item_modifier name="modRadiationReady" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="CreativeMode" value="Test"/>
+		<property name="ItemWeight" value="1" />
 		<!-- <property name="UnlockedBy" value="modRadiationReadySchematic"/> -->
 
 		<!--Increase radiation resistance by x%-->
 		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
 			<passive_effect name="ElementalDamageResist" operation="perc_add" value=".5" tags="radiation"/>
 		</effect_group>
 	</item_modifier>
@@ -1588,10 +1669,11 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
 		<property name="DisplayType" value="modTempResist"/>
-
+		<property name="ItemWeight" value=".4" />
 		<effect_group tiered="false">
 			<passive_effect name="HypothermalResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_add" value="1" tags="heat,electrical"/>
+			<display_value name="TSItemWeight" value=".4"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1599,10 +1681,11 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorCoolingMeshSchematic"/>
 		<property name="DisplayType" value="modTempResist"/>
-
+		<property name="ItemWeight" value=".2" />
 		<effect_group tiered="false">
 			<passive_effect name="HyperthermalResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_add" value="1" tags="heat,electrical"/>
+			<display_value name="TSItemWeight" value=".2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1610,12 +1693,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorImprovedFittingsSchematic"/>
 		<property name="DisplayType" value="modArmorMobility"/>
-
+		<property name="ItemWeight" value=".3" />
 		<effect_group tiered="false">
 			<passive_effect name="Mobility" operation="perc_add" value=".02"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".014" tags="walking"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".028" tags="running"/>
 			<display_value name="dStaminaChangeOT" value=".028"/>
+			<display_value name="TSItemWeight" value=".3"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1623,12 +1707,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorCustomizedFittingsSchematic"/>
 		<property name="DisplayType" value="modArmorMobility"/>
-
+		<property name="ItemWeight" value=".5" />
 		<effect_group tiered="false">
 			<passive_effect name="Mobility" operation="perc_add" value=".03"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".021" tags="walking"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0562" tags="running"/>
 			<display_value name="dStaminaChangeOT" value=".0562"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1636,9 +1721,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorPlatingBasicSchematic"/>
 		<property name="DisplayType" value="modArmor"/>
-
+		<property name="ItemWeight" value=".8" />
 		<effect_group tiered="false">
 			<passive_effect name="PhysicalDamageResist" operation="base_add" value="1"/>
+			<display_value name="TSItemWeight" value=".8"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1648,8 +1734,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorPlatingReinforcedSchematic"/>
 		<property name="DisplayType" value="modArmor"/>
 		<property name="DescriptionKey" value="modArmorPlatingBasicDesc"/>
+		<property name="ItemWeight" value="1.8" />
 		<effect_group tiered="false">
 			<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
+			<display_value name="TSItemWeight" value="1.8"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1658,13 +1746,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorStoragePocketSchematic"/>
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
-		<property name="ItemWeight" value="0.1" />
+		<property name="ItemWeight" value="0.5" />
 
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsArmorStoragePocket"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsArmorStoragePocket"/>
 			<display_value name="TSAddCarryWeight" value="3"/>
-			<display_value name="TSItemWeight" value=".1"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1673,13 +1761,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorDoubleStoragePocketSchematic"/>
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
-		<property name="ItemWeight" value="0.2" />
+		<property name="ItemWeight" value="1" />
 
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
 			<display_value name="TSAddCarryWeight" value="6"/>
-			<display_value name="TSItemWeight" value=".2"/>
+			<display_value name="TSItemWeight" value="1"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1688,13 +1776,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorTripleStoragePocketSchematic"/>
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
-		<property name="ItemWeight" value="0.3" />
+		<property name="ItemWeight" value="2" />
 
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsArmorDoubleStoragePocket"/>
 			<display_value name="TSAddCarryWeight" value="9"/>
-			<display_value name="TSItemWeight" value=".3"/>
+			<display_value name="TSItemWeight" value="2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1703,10 +1791,12 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorMuffledConnectorsSchematic"/>
 		<property name="DisplayType" value="modNoiseReduction"/>
 		<property name="Material" value="Msteel"/>
+		<property name="ItemWeight" value=".2" />
 
 		<effect_group tiered="false">
 			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.04"/><display_value name="dNoiseMultiplier" value="-.04"/>
-		</effect_group>
+			<display_value name="TSItemWeight" value=".2"/>
+	</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modArmorAdvancedMuffledConnectors" installable_tags="armor" modifier_tags="stealth" blocked_tags="noMods,padded" type="attachment">
@@ -1714,9 +1804,11 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorAdvancedMuffledConnectorsSchematic"/>
 		<property name="DisplayType" value="modNoiseReduction"/>
 		<property name="Material" value="Msteel"/>
-
+		<property name="ItemWeight" value=".4" />
+		
 		<effect_group tiered="false">
 			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.08"/><display_value name="dNoiseMultiplier" value="-.08"/>
+			<display_value name="TSItemWeight" value=".4"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1724,10 +1816,12 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorImpactBracingSchematic"/>
 		<property name="Material" value="Msteel"/>
-
+		<property name="ItemWeight" value=".6" />
+		
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffImpactBracing"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffImpactBracing"/>
+			<display_value name="TSItemWeight" value=".6"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1735,9 +1829,11 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modArmorWaterPurifierSchematic"/>
 		<property name="Material" value="Msteel"/>
-
+		<property name="ItemWeight" value=".3" />
+		
 		<effect_group tiered="false">
 			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffDysenteryCatchDrink"/>
+			<display_value name="TSItemWeight" value=".3"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1745,6 +1841,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="CreativeMode" value="Dev"/>
 		<!-- <property name="UnlockedBy" value="modArmorJumpJetsSchematic"/> -->
+		<property name="ItemWeight" value="2" />
 		<property name="CustomIcon" value="flamethrowerTrap"/>
 		<effect_group tiered="false">
 				<!-- <triggered_effect trigger="onSelfItemActivate" action="AddBuff" buff="buffJumpJetsActivated"/>
@@ -1766,6 +1863,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 				<requirement name="IsItemActive"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfJump" action="AddBuff" buff="buffJumpJetsAirborne"/>
+			<display_value name="TSItemWeight" value="2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1774,6 +1872,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="UnlockedBy" value="modArmorHelmetLightSchematic,perkArtOfMiningLantern"/>
 		<property name="Material" value="Msteel"/>
 		<property name="LightValue" value=".4"/>
+		<property name="ItemWeight" value=".5" />
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="CameraNode" localPos="0,0,0" localRot="-90,0,0"/>
@@ -1783,6 +1882,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightCam" active="@.IsFPV"/>
 			<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
 			<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightCam" active="false"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 <!-- Clothing mods = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
@@ -1807,13 +1907,13 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="DisplayType" value="modCarryCapacity"/>
 		<property name="Material" value="Mleather"/>
 		<property name="Group" value="Mods,Tool/Weapon Mods,clothing"/>
-		<property name="ItemWeight" value="0.2" />
+		<property name="ItemWeight" value="0.3" />
 
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffPocketsClothingCargoStoragePocket"/>
 			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffPocketsClothingCargoStoragePocket"/>
 			<display_value name="TSAddCarryWeight" value="6"/>
-			<display_value name="TSItemWeight" value=".2"/>
+			<display_value name="TSItemWeight" value=".3"/>
 		</effect_group>
 	</item_modifier>
 
@@ -1831,6 +1931,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="DescriptionKey" value="modDyeGroupDesc"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modDyeRed" installable_tags="clothing,armor,weapon,tool,vehicle,drone" modifier_tags="dye" type="attachment" cosmetic_install_chance=".13">
@@ -1840,7 +1944,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIconTint" value="149,52,54"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="212,84,84"/>
 			<property name="CustomIconTint" value="149,52,54"/>
@@ -1891,7 +1998,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIconTint" value="128,152,120"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="74,130,74"/>
 			<property name="CustomIconTint" value="128,152,120"/>
@@ -1936,7 +2046,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIconTint" value="47,47,47"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="70,70,70"/>
 			<property name="CustomIconTint" value="47,47,47"/>
@@ -2008,7 +2121,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIconTint" value="74,93,134"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="70,89,127"/><!-- this if for guns and handheld items -->
 			<property name="CustomIconTint" value="74,93,134"/>
@@ -2066,7 +2182,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="132,105,84"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="132,105,84"/>
 			<property name="CustomIconTint" value="132,105,84"/>
@@ -2104,7 +2223,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="240,162,251"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="188,148,188"/>
 			<property name="CustomIconTint" value="188,148,188"/>
@@ -2155,7 +2277,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="113,97,129"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="113,97,129"/>
 			<property name="CustomIconTint" value="113,97,129"/>
@@ -2201,7 +2326,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="218,200,135"/>
 		<property name="Material" value="Mpaint"/>
 		<property name="Weight" value="20"/>
-
+		<property name="ItemWeight" value=".3" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
 		<item_property_overrides name="*">
 			<property name="TintColor" value="218,200,135"/>
 			<property name="CustomIconTint" value="218,200,135"/>
@@ -2261,15 +2389,16 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="EconomicValue" value="440"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="DisplayType" value="clothing"/>
+		<property name="ItemWeight" value=".5" />
 		<item_property_overrides name="*">
 			<property name="UMA.Mesh" value="gear_cowboyhat"/>
 			<property name="UMA.Overlay0" value="gear_cowboyhat"/>
 			<property name="UMA.ShowAltHair" value="true"/>
 		</item_property_overrides>
-
 		<effect_group tiered="false">
 			<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="10.5,14.3"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2279,6 +2408,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="EconomicValue" value="440"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="DisplayType" value="clothing"/>
+		<property name="ItemWeight" value=".5" />
 		<item_property_overrides name="*">
 			<property name="UMA.Mesh" value="gear_skullcap"/>
 			<property name="UMA.Overlay0" value="gear_skullcap"/>
@@ -2288,6 +2418,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<effect_group tiered="false">
 			<passive_effect name="HypothermalResist" operation="base_add" value="10.5,13.2"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="1.5,2.5"/>
+			<display_value name="TSItemWeight" value=".5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2297,6 +2428,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="EconomicValue" value="440"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="DisplayType" value="clothing"/>
+		<property name="ItemWeight" value="2" />
 		<item_property_overrides name="*">
 			<property name="UMA.Mesh" value="gear_pressboy_cap"/>
 			<property name="UMA.Overlay0" value="gear_ballcap"/>
@@ -2306,6 +2438,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<effect_group tiered="false">
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
+		<display_value name="TSItemWeight" value="2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2315,6 +2448,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="EconomicValue" value="440"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="DisplayType" value="clothing"/>
+		<property name="ItemWeight" value="2" />
 		<item_property_overrides name="*">
 			<property name="UMA.Mesh" value="gear_ballcap"/>
 			<property name="UMA.Overlay0" value="gear_ballcap"/>
@@ -2324,6 +2458,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<effect_group tiered="false">
 		<passive_effect name="HypothermalResist" operation="base_add" value="1.8,4.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="7.5,10.5"/>
+		<display_value name="TSItemWeight" value="2"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2348,8 +2483,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modVehicleFuelSaverSchematic"/>
 		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<property name="ItemWeight" value="2.5" />
 		<effect_group tiered="false">
 			<passive_effect name="VehicleFuelUsePer" operation="perc_set" value=".5"/>
+			<display_value name="TSItemWeight" value="2.5"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2357,8 +2494,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modVehicleOffRoadHeadlightsSchematic"/>
 		<property name="CustomIcon" value="modVehicleOffRoadHeadlights"/>
+		<property name="ItemWeight" value="4" />
 		<effect_group tiered="false">
 			<passive_effect name="LightIntensity" operation="perc_set" value="2.2"/>
+			<display_value name="TSItemWeight" value="4"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2366,9 +2505,11 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modVehicleSuperChargerSchematic"/>
 		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="ItemWeight" value="8" />
 		<effect_group tiered="false">
 			<passive_effect name="VehicleVelocityMaxPer" operation="perc_set" value="1.25"/>
 			<passive_effect name="VehicleVelocityMaxTurboPer" operation="perc_set" value="1.15"/>
+			<display_value name="TSItemWeight" value="8"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2376,8 +2517,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modVehicleExpandedSeatSchematic"/>
 		<property name="CustomIcon" value="modVehicleExpandedSeat"/>
+		<property name="ItemWeight" value="10" />
 		<effect_group tiered="false">
 			<passive_effect name="VehicleSeats" operation="base_add" value="2"/>
+			<display_value name="TSItemWeight" value="10"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2385,8 +2528,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modVehicleReserveFuelTankSchematic"/>
 		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="ItemWeight" value="13" />
 		<effect_group tiered="false">
 			<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="1.5"/>
+			<display_value name="TSItemWeight" value="13"/>
 		</effect_group>
 	</item_modifier>
 
@@ -2397,30 +2542,50 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modRoboticDroneArmorPlatingModSchematic"/>
 	    <!-- <property name="Group" value="Mods,Tool/Weapon Mods,Robotics"/> -->
+		<property name="ItemWeight" value=".5" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".5"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modRoboticDroneCargoMod" installable_tags="drone" modifier_tags="droneStorage" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modRoboticDroneCargoModSchematic"/>
 	    <!-- <property name="Group" value="Mods,Tool/Weapon Mods,Robotics"/> -->
+		<property name="ItemWeight" value="1" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modRoboticDroneMoraleBoosterMod" installable_tags="drone" modifier_tags="droneMorale" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modRoboticDroneMoraleBoosterModSchematic"/>
 	    <!-- <property name="Group" value="Mods,Tool/Weapon Mods,Robotics"/> -->
+		<property name="ItemWeight" value=".5" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".5"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modRoboticDroneHeadlampMod" installable_tags="drone" modifier_tags="droneLamp" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modRoboticDroneHeadlampModSchematic"/>
 		<!-- <property name="Group" value="Mods,Tool/Weapon Mods,Robotics"/> -->
+		<property name="ItemWeight" value=".5" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".5"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modRoboticDroneMedicMod" installable_tags="drone" modifier_tags="droneWeapon" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modRoboticDroneMedicModSchematic"/>
 	    <!-- <property name="Group" value="Mods,Tool/Weapon Mods,Robotics"/> -->
+		<property name="ItemWeight" value=".4" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".4"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modRoboticDroneWeaponMod" installable_tags="drone" modifier_tags="droneWeapon" type="attachment">
@@ -2428,6 +2593,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	    <property name="CreativeMode" value="None"/>
 		<property name="UnlockedBy" value="modRoboticDroneWeaponModSchematic"/>
 		<!-- <property name="Group" value="Mods,Tool/Weapon Mods,Robotics"/> -->
+		<property name="ItemWeight" value="2" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="modRoboticDroneStunWeaponMod" installable_tags="drone" modifier_tags="droneWeapon" type="attachment">
@@ -2440,6 +2609,10 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01"/>
 		</effect_group> -->
+		<property name="ItemWeight" value="1" />
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
 	</item_modifier>
 
 
@@ -2462,12 +2635,14 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="jz_SchematicChainmailMod"/>
 		<property name="DisplayType" value="jz_modChainmail"/>
-
+		<property name="ItemWeight" value="2" />
+		
 		<effect_group tiered="false">
 			<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="jz_BuffZombieBite"/><display_value name="TSBiteResist" value=".04"/>
 			<passive_effect name="PhysicalDamageResist" operation="base_add" value="1" />
 			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".02"/><display_value name="dNoiseMultiplier" value=".02"/>
 			<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
+			<display_value name="TSItemWeight" value="2"/>
 		</effect_group>
 	</item_modifier>
 </set>

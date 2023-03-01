@@ -4855,9 +4855,9 @@ If there is no hit the default quality is used.
 	<item name="jz_SchematicBrainShnitzel" />
 	<item name="jz_SchematicBearStew" />
 	<item name="foodSteakAndPotatoSchematic"/>
-	<item name="foodPumpkinCheesecakeSchematic"/>
+	<item name="jz_SchematicBlueberryCheeseCake"/>
 	<item name="foodPumpkinPieSchematic"/>
-	<item name="foodBlueberryPieSchematic"/>
+	<item name="jz_SchematicOrangeMeringuePie"/>
 	<item name="plantedHop1Schematic"/>
 	<item name="plantedCoffee1Schematic"/>
 	<item name="plantedAloe1Schematic"/>
@@ -5017,18 +5017,16 @@ If there is no hit the default quality is used.
 
 <lootgroup name="coldfood"> 
 	<item name="foodEgg" />
-	<item name="foodBlueberryPie" />
+	<item name="jz_FoodOrangeMeringuePie" />
     <item name="foodPumpkinPie" />
 	<item name="foodMeatStew" />
 	<item name="foodRawMeat" />
 	<item name="jz_FoodBread" />
 	<item name="foodBaconAndEggs" />
-	<item name="foodBakedPotato" />
-    <item name="foodPumpkinBread" />
+	<item name="foodPumpkinBread" />
     <item name="foodBoiledMeat" />
     <item name="foodCharredMeat" />
     <item name="foodCornBread" />
-    <item name="foodCornOnTheCob" />
     <item name="foodEggBoiled" />
     <item name="foodGrilledMeat" />
     <item name="foodHoboStew" />
@@ -7082,7 +7080,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupFoodRare">
-	<item name="foodBlueberryPie"/>
+	<item name="jz_FoodOrangeMeringuePie"/>
 	<item name="foodMeatStew"/>
 	<item name="foodShamChowder"/>
 	<item name="foodHoboStew"/>
@@ -9222,9 +9220,8 @@ If there is no hit the default quality is used.
 <!-- *** Airdrop_Food -->
 <lootgroup name="airdropfood">
 	<item group="cannedfood"/>
-	<item name="foodCornOnTheCob" count="1,2"/>
+	<item name="jz_FoodGrilledVeggie" count="2,4"/>
 	<item name="foodCornBread" count="1,2"/>
-	<item name="foodBakedPotato" count="1,2"/>
 </lootgroup>
 
 <!-- *** Airdrop_Medical -->
@@ -10057,7 +10054,7 @@ If there is no hit the default quality is used.
 	<item name="foodBoiledMeat" count="2,4"/>
 	<item name="foodGrilledMeat" count="2,4"/>
 	<item name="foodBaconAndEggs" count="2,4"/>
-	<item name="foodBlueberryPie" count="2,3"/>
+	<item name="jz_FoodOrangeMeringuePie" count="2,3"/>
 	<item name="foodVegetableStew" count="2,4"/>
 </lootgroup>
 
@@ -10067,7 +10064,7 @@ If there is no hit the default quality is used.
 	<item name="foodChiliDog" count="2,3"/>
 	<item name="foodFishTacos" count="2,3"/>
 	<item name="foodPumpkinPie" count="2,3"/>
-	<item name="foodPumpkinCheesecake" count="2,3"/>
+	<item name="jz_FoodBlueberryCheeseCake" count="2,3"/>
 	<item name="foodPumpkinBread" count="2,3"/>
 	<item name="foodTunaFishGravyToast" count="2,3"/>
 	<item name="foodSteakAndPotato" count="2,3"/>

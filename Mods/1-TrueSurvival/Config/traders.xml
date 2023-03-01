@@ -921,12 +921,12 @@ quality_mod: adjusts the price range of all items with a quality level.
             <item name="foodMeatStew" />           
             <item name="jz_FoodBread" />
             <item name="foodBaconAndEggs" />
-            <item name="foodBakedPotato" />
             <item name="foodPumpkinBread" />
             <item name="foodBoiledMeat" />
             <item name="foodCharredMeat" />
             <item name="foodCornBread" />
-            <item name="foodCornOnTheCob" />
+            <item name="jz_FoodGrilledVeggie" />
+			<item name="jz_FoodGrilledFruit" />
             <item name="foodEggBoiled" />
             <item name="foodGrilledMeat" />
             <item name="foodHoboStew" />
@@ -939,7 +939,7 @@ quality_mod: adjusts the price range of all items with a quality level.
             <item name="jz_FoodGlazedMeat" />
             <item name="jz_FoodMeatPie" />
             <item name="jz_FoodKabob" />
-            <item name="foodBlueberryPie" />
+            <item name="jz_FoodOrangeMeringuePie" />
             <item name="foodPumpkinPie" />            
             <item name="foodFishTacos" count="1,2"/>
 		</trader_item_group>
@@ -948,6 +948,10 @@ quality_mod: adjusts the price range of all items with a quality level.
             <item name="foodChiliDog" count="1,2"/>
             <item name="jz_FoodBearStew" />
             <item name="jz_FoodBrainShnitzel" />
+            <item name="foodSteakAndPotato" />
+			
+			<item name="jz_FoodCoconutCheesecake" />
+            <item name="jz_FoodBlueberryCheeseCake" />
             <item name="foodSteakAndPotato" />
 		</trader_item_group>
         
@@ -1052,13 +1056,14 @@ quality_mod: adjusts the price range of all items with a quality level.
         </trader_item_group>
 
         <trader_item_group name="T3CookingBooks" count="1">
-			<item name="foodBlueberryPieSchematic"  />
+			<item name="jz_SchematicOrangeMeringuePie"  />
             <item name="foodPumpkinPieSchematic"  />
             <item name="jz_SchematicCarrotCake"  />
-            <item name="foodPumpkinCheesecakeSchematic"  />
+            <item name="jz_SchematicBlueberryCheeseCake"  />
             <item name="jz_SchematicBrainShnitzel"  />
             <item name="foodSteakAndPotatoSchematic"  />
-            <item name="jz_SchematicBearStew"  />
+            <item name="jz_SchematicCoconutCheesecake"  />
+			<item name="jz_SchematicBearStew"  />
         </trader_item_group>
 
         <trader_item_group name="T1WeaponBooks" count="1">
