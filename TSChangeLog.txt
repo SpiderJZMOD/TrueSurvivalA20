@@ -1,4 +1,16 @@
 ********************************************True Survival Change Log*******************************************
+2/28/2023 A20.6 Build #1.13
+-Finished putting weight amounts on everything
+-Added the ability to pick up Hand Trucks
+-When held in the hand a Hand Truck will increase your Max Carry Weight by 400
+-Fixed Stones Mills crafting category in Forge
+-Fixed fertilizing a Bare Orange tree leading to a harvestable crop with no grow time
+-Fixed the Pack Mule perk to give more Max Carry Weight 
+-Fixed all items that did not have a stat display to have one and show the items weight
+-Fixed Broken Drones recipe
+-Turned back on Sphereii’s Fire 
+-Turned on Sphereii’s Crafting From Containers
+////////////////////////////////////////////////////////////////////////////
 2/23/2023 A20.6 Build #1.12
 -Updated Sphereii’s Score
 -Added the Quartz mod by Laydor

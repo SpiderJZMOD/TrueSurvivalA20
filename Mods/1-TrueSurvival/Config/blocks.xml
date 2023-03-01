@@ -12902,7 +12902,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Appliances/fridgeStainlessSteelOpenPrefab" param1="main_mesh"/>
 	<property name="CreativeMode" value="Player"/>
 	<!--JZMOD CROWBAR-->
-	<drop event="Destroy" name="jz_IBRetroFridgeClosed" count="0" prob="1" tool_category="ToolCrowbar"/>   
+	<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0" prob="1" tool_category="ToolCrowbar"/>   
 	<drop event="Destroy" name="cntFridgeStainlessSteel" count="1" prob="1" tool_category="ToolCrowbar"/>       
 </block>
 
@@ -12948,7 +12948,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="resourceScrapPolymers" value="8"/>
 	</property>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="jz_IBCoolerClosed" count="1"/>
+	<drop event="Destroy" name="cntCoolerClosed" count="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="300"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
