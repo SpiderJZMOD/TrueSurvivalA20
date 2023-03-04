@@ -1,4 +1,16 @@
 ********************************************True Survival Change Log*******************************************
+3/4/2023 A20.6 Build #1.14
+-Fixed Light and Heavy Armor workstation block positioning 
+-Fixed Hot and Cold screen effect getting stuck on screen
+-Fixed some bugs in the Hand Truck. Works better now.
+-Made Sticky Vomit projectile to be smaller
+-Fixed all reported localization bugs
+-Increased the chance to find a Broken or working Hunting Knife in loot
+-Fixed bug in Lv 5 Improvised Workstation upgrading quest that did not reward tool
+-Updated the recipes to craft vanilla workstations
+-Fixed alternate campfire workstations to have the “Other” crafting category
+-Fixed compass day number to turn red on horde night
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 2/28/2023 A20.6 Build #1.13
 -Finished putting weight amounts on everything
 -Added the ability to pick up Hand Trucks
