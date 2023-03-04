@@ -33709,14 +33709,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems"> <property name="jz_Stick" value="1"/> </property>
 	<drop event="Destroy" name="meleeToolTorch" count="1"/>
 	<property name="Group" value="Building,advBuilding"/>
-	<property name="DescriptionKey" value="torchGroupDesc"/>
-	<property name="FilterTags" value="fdecor,felectrical"/>
-	<property name="SortOrder1" value="70a0"/>
 	<property name="CreativeMode" value="Player"/>
-    <property name="CanPickup" value="false"/>
-	<property name="CustomIcon" value="wallTorchLight"/>
+    <property name="CustomIcon" value="wallTorchLight"/>
 	<property name="Stacknumber" value="50"/>
-	<property name="Place" value="Torch"/>
+	
 	<property name="HeatMapStrength" value="1"/>
 	<property name="HeatMapTime" value="4000"/>
     <property name="HeatMapFrequency" value="1000"/>
@@ -35318,7 +35314,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv2Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35371,7 +35367,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv3Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35424,7 +35420,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv3Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35477,7 +35473,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv4Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+     <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35530,7 +35526,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv4Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35583,7 +35579,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv5Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35636,7 +35632,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv5Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35689,7 +35685,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv6Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35742,7 +35738,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZLightArmorWorkbench.unity3d?LightArmorWorkbenchLv6Prefab" />
     <property name="ModelOffset" value="-.5,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35788,8 +35784,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv1Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35841,8 +35837,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv2Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35894,8 +35890,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv3Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+	<property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -35947,8 +35943,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv3Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -36000,8 +35996,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv4Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -36053,8 +36049,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv4Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -36106,8 +36102,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv5Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -36159,8 +36155,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv5Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -36212,8 +36208,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv6Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -36265,8 +36261,8 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Path" value="solid"/>
     <property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/JZWorkbenchHeavyArmor.unity3d?HeavyArmorWorkbenchLv6Prefab" />
-    <property name="ModelOffset" value="0,0,0" />
-    <property name="MultiBlockDim" value="1,2,2" />
+    <property name="ModelOffset" value="-.5,0,0" />
+    <property name="MultiBlockDim" value="1,2,3" />
     <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="StabilitySupport" value="false"/>
@@ -45177,6 +45173,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 
 <block name="jz_PlantedTomato3FertilizedHarvestPlayer">
 	<property name="Extends" value="jz_PlantedTomato3HarvestPlayer"/>
+	<property name="CreativeMode" value="Player"/>
     <property name="Tags" value="jz_PlayerCropTag"/>
 	<drop event="Harvest" name="jz_FoodTomato" count="3" tag="cropHarvest"/>
 	<drop event="Harvest" name="jz_FoodTomato" count="1" tag="jz_GardenerHarvest"/>

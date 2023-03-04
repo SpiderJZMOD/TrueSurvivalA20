@@ -1061,7 +1061,7 @@
 		</objective>
 
 		<reward type="Exp" value="500"/>
-		<reward type="Item" id="jz_BrokenToolHandDrill " value="1" />
+		<reward type="Item" id="jz_BrokenToolHandDrill" value="1" />
 		<reward type="Recipe" id="jz_ToolHandDrill" />
 		<reward type="Quest" id="jzquest_WorkbenchUpgradesImprovisedQL5A" />
     </quest>
@@ -1195,7 +1195,7 @@
 	<quest id="jzquest_WorkbenchUpgradesImprovisedQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesImprovised"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesImprovised"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="ImprovisedIcon"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2012,7 +2012,7 @@
 	<quest id="jzquest_WorkbenchUpgradesToolQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesTool"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesTool"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="Advanced"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2525,7 +2525,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="Electronic"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2667,7 +2667,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL10">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
+		<property name="description_key" value="jzquest_Lv10Crafting_description" />
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2713,7 +2713,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL10A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="description_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
 		<property name="icon" value="Electronic"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2734,7 +2734,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL11">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
+		<property name="description_key" value="jzquest_Lv11Crafting_description" />
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2779,7 +2779,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL11A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv11Crafting_description"/>
 		<property name="icon" value="Electronic"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -2794,7 +2794,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL12">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
+		<property name="description_key" value="jzquest_Lv12Crafting_description" />
 		<property name="icon" value="Electronic" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -2840,7 +2840,7 @@
 	<quest id="jzquest_WorkbenchUpgradesElectronicQL12A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesElectronic"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesElectronic"/>
-		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv12Crafting_description"/>
 		<property name="icon" value="Electronic"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -3158,7 +3158,7 @@
 	<quest id="jzquest_WorkbenchUpgradesLightArmorQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesLightArmor"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesLightArmor"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="LightArmor"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -3671,7 +3671,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHeavyArmorQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHeavyArmor"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHeavyArmor"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="HeavyArmor"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -4184,7 +4184,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="Handgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -4326,7 +4326,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL10">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
+		<property name="description_key" value="jzquest_Lv10Crafting_description" />
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -4372,7 +4372,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL10A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="description_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
 		<property name="icon" value="Handgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -4393,7 +4393,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL11">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
+		<property name="description_key" value="jzquest_Lv11Crafting_description" />
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -4438,7 +4438,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL11A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv11Crafting_description"/>
 		<property name="icon" value="Handgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -4453,7 +4453,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL12">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
+		<property name="description_key" value="jzquest_Lv12Crafting_description" />
 		<property name="icon" value="Handgun" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -4499,7 +4499,7 @@
 	<quest id="jzquest_WorkbenchUpgradesHandgunQL12A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesHandgun"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesHandgun"/>
-		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv12Crafting_description"/>
 		<property name="icon" value="Handgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -4817,7 +4817,7 @@
 	<quest id="jzquest_WorkbenchUpgradesShotgunQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesShotgun"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesShotgun"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="Shotgun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -5330,7 +5330,7 @@
 	<quest id="jzquest_WorkbenchUpgradesMachineGunQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesMachineGun"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesMachineGun"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="MachineGun"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -5843,7 +5843,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL7A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="description_key" value="jzquest_Lv6Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv7Crafting_description"/>
 		<property name="icon" value="Rifle"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -5985,7 +5985,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL10">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv9Crafting_description" />
+		<property name="description_key" value="jzquest_Lv10Crafting_description" />
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -6031,7 +6031,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL10A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="description_key" value="jzquest_Lv9Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
 		<property name="icon" value="Rifle"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -6052,7 +6052,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL11">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
+		<property name="description_key" value="jzquest_Lv11Crafting_description" />
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -6097,7 +6097,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL11A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv11Crafting_description"/>
 		<property name="icon" value="Rifle"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>
@@ -6112,7 +6112,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL12">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle" />
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle" />
-		<property name="description_key" value="jzquest_Lv10Crafting_description" />
+		<property name="description_key" value="jzquest_Lv12Crafting_description" />
 		<property name="icon" value="Rifle" />
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="hard"/>
@@ -6158,7 +6158,7 @@
 	<quest id="jzquest_WorkbenchUpgradesRifleQL12A">
 		<property name="name_key" value="jzquest_WorkbenchUpgradesRifle"/>
 		<property name="subtitle_key" value="jzquest_WorkbenchUpgradesRifle"/>
-		<property name="description_key" value="jzquest_Lv10Crafting_description"/>
+		<property name="description_key" value="jzquest_Lv12Crafting_description"/>
 		<property name="icon" value="Rifle"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="easy"/>

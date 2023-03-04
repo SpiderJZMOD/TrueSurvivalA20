@@ -281,7 +281,7 @@
 		<texture depth="8" texture="Textures/UI/Compass/overlay-{gamelanguage}" pos="50, -12" width="380" height="27" color="[iconColor]" name="compassTexture3" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.0625 - 0.125},0" />
 
 		<sprite pos="270,-60" sprite="" color="255,255,255,255" globalopacitymod="1.8">
-			<label depth="2" width="300" height="30" text="{day}" font_size="23" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" width="300" height="30" text=" [{daycolor}]{day}[-]" font_size="23" pivot="center" effect="outline" upper_case="true" justify="center"/>
 		</sprite>
 		<!-- JZMOD ADDED -->
 		<sprite name="TSHudCalendarIcon" depth="10" pos="280,-45" size="25,25" sprite="TSHudCalendar" />

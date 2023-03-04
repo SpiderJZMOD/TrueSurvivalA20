@@ -4282,7 +4282,7 @@ If there is no hit the default quality is used.
 	<item name="jz_GlassPlate" loot_prob_template="med"/>
 	<item name="jz_BrassPlatter" loot_prob_template="med"/>
 	<item group="groupGrillFoodScaled" loot_prob_template="low"/>
-	<item group="groupWeaponsT1HuntingKnife" loot_prob_template="veryLow"/>
+	<item group="groupWeaponsT1HuntingKnife" loot_prob_template="medLow"/>
 	<item name="toolCookingGrill" loot_prob_template="veryLow"/>
 </lootgroup>
 
@@ -5386,6 +5386,7 @@ If there is no hit the default quality is used.
 	<item group="groupToolsT1IronPickaxe" />
 	<item group="groupToolsT1IronShovel" />
 	<item group="groupToolsT1IronFireaxe" />
+	<item group="groupWeaponsT1HuntingKnife"/>
 	<item group="groupWeaponsT1_IronSledgehammer" />
 	<item group="groupToolsClawHammer" />
 	<item group="groupToolsWrench" />
@@ -5404,7 +5405,6 @@ If there is no hit the default quality is used.
 	<item group="groupToolsScrewdriver"/>
 	<item group="groupToolsT2SteelPickaxe"/>
 	<item group="groupToolsT2SteelShovel"/>
-	<item group="groupWeaponsT1HuntingKnife"/>
 	<item name="jz_Crowbar"/>
 	<item name="jz_MethaneTankBomb"/>
 	<item name="meleeToolAllSteelParts" count="1,4"/>
@@ -6027,41 +6027,6 @@ If there is no hit the default quality is used.
 	<item name="armorSteelGloves"/>
 	<item name="armorSteelLegs"/>
 	<item name="armorSwatHelmet"/>
-	<item name="apparelArmyPants" mods="dye" mod_chance="0"/>
-	<item name="apparelArmyShirt" mods="dye" mod_chance="0"/>
-	<item name="apparelAviatorGoggles" mods="dye" mod_chance="0"/>
-	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
-	<item name="apparelBandana" mods="dye" mod_chance="0"/>
-	<item name="apparelCowboyBoots" mods="dye" mod_chance="0"/>
-	<item name="apparelCowboyHat" mods="dye" mod_chance="0"/>
-	<item name="apparelDenimPants" mods="dye" mod_chance="0"/>
-	<item name="apparelDenimShortsPants" mods="dye" mod_chance="0"/>
-	<item name="apparelSuitDressShoes" mods="dye" mod_chance="0"/>
-	<item name="apparelFlannelShirt" mods="dye" mod_chance="0"/>
-	<item name="apparelSkiGoggles" mods="dye" mod_chance="0"/>
-	<item name="apparelHazmatBoots" mods="dye" mod_chance="0"/>
-	<item name="apparelHazmatGloves" mods="dye" mod_chance="0"/>
-	<item name="apparelHazmatMask" mods="dye" mod_chance="0"/>
-	<item name="apparelHazmatPants" mods="dye" mod_chance="0"/>
-	<item name="apparelHazmatJacket" mods="dye" mod_chance="0"/>
-	<item name="apparelHoodySweatshirt" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatLeatherPoncho" mods="dye" mod_chance="0"/>
-	<item name="apparelNerdGlasses" mods="dye" mod_chance="0"/>
-	<item name="apparelOveralls" mods="dye" mod_chance="0"/>
-	<item name="apparelPressboyCap" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatPufferCoat" mods="dye" mod_chance="0"/>
-	<item name="apparelRunningShoesRegular" mods="dye" mod_chance="0"/>
-	<item name="apparelShades" mods="dye" mod_chance="0"/>
-	<item name="apparelLongShirt" mods="dye" mod_chance="0"/>
-	<item name="apparelSkirt" mods="dye" mod_chance="0"/>
-	<item name="apparelSkullCap" mods="dye" mod_chance="0"/>
-	<item name="apparelSuitJacket" mods="dye" mod_chance="0"/>
-	<item name="apparelSuitPants" mods="dye" mod_chance="0"/>
-	<item name="apparelSweatshirt" mods="dye" mod_chance="0"/>
-	<item name="apparelTankTop" mods="dye" mod_chance="0"/>
-	<item name="apparelTShirtPlain" mods="dye" mod_chance="0"/>
-	<item name="apparelWornBoots" mods="dye" mod_chance="0"/>
 </lootgroup>
 
 <!-- *** Quest_Rewards -->
@@ -7682,7 +7647,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupSinks03" count="1">
 	<item group="groupToolsWrench" loot_prob_template="low"/>
 	<item group="groupToolsScrewdriver" loot_prob_template="low"/>
-	<item group="groupWeaponsT1HuntingKnife" loot_prob_template="veryLow"/>
+	<item group="groupWeaponsT1HuntingKnife" loot_prob_template="Low"/>
 	<item group="booksAllScaled" loot_prob_template="veryLow"/>
 	<item name="resourceAcid" loot_prob_template="veryLow"/>
 </lootgroup>

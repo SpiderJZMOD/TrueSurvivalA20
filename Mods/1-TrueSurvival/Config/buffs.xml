@@ -11566,6 +11566,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="jz_BuffThrobbingPainScreenRestart"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
 		</effect_group>
 	</buff>   
 	<!-- SPLASH OF WATER-->
@@ -30242,7 +30243,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffElementHot"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".1" fade="3" effect_name="Hot"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity=".1" fade="3" effect_name="Hot"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="hotWeatherTip"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffOverHeatingWarning">
 				<requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="19"/></triggered_effect>
@@ -30419,7 +30420,7 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="jz_BuffFreezingWarning"/>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".1" fade="3" effect_name="Cold"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity=".1" fade="3" effect_name="Cold"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Cold"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddJournalEntry" journal="coldWeatherTip"/>
 			
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffFreezingWarning">
@@ -30888,6 +30889,8 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="400"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="MaxEncumbrance" operation="subtract" value="400"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="jz_BuffHandTruck">
+				<requirement name="!HoldingItemHasTags" tags="HandTruckTag"/></triggered_effect>
 		</effect_group>
 	</buff>
 	
@@ -30902,7 +30905,6 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$WellnessSubtract" operation="set" value="0"/>
 		</effect_group>
 	</buff>
-	
 	
 	<buff name="jz_BuffFatigueGain" hidden="false" remove_on_death="true" name_key="Fatigue Gain" icon="FatigueIcon" icon_color="255,0,0">
 		<stack_type value="ignore"/>
@@ -30965,7 +30967,9 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 	</buff>
 	<!-- ******************************************************** JZMOD TESTING ******************************************** -->
 	<!-- JZMOD MAP EVENT SYSTEM -->
-	<buff name="jz_BuffDayCounter" hidden="true"  remove_on_death="false"><!-- need to save event incase player logs off and on during event -->
+	<!-- need to save event incase player logs off and on during event -->
+	<!-- try world cvar thats saved for chosen event -->
+	<buff name="jz_BuffDayCounter" hidden="true"  remove_on_death="false">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<update_rate value="5"/>

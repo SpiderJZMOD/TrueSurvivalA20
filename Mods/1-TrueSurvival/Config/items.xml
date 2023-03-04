@@ -11651,7 +11651,7 @@ add knockdown resist to armor
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Group" value="TCArmor,Hat"/>
-	<property name="DescriptionKey" value="jz_armorFootballGroupDesc"/>
+	<property name="DescriptionKey" value="jz_armorFootballHelmetDesc"/>
 	<property name="ItemWeight" value="4.5" /><!-- JZMOD -->
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<effect_group name="leather w scrap AR">
@@ -40240,7 +40240,7 @@ perkNightStalkerSilentNight
 		<property name="Velocity" value="15"/><!--18-->
 		<property name="FlyTime" value="1"/><!--2-->
 		<property name="LifeTime" value="4"/><!--4-->
-		<property name="CollisionRadius" value="2"/><!--.5-->
+		<property name="CollisionRadius" value="1"/><!--.5-->
 		<property name="Buff" value="jz_BuffSticky"/>
 	</property>
 	<effect_group name="VomitSticky" tiered="false">
@@ -42433,7 +42433,7 @@ perkNightStalkerSilentNight
 
 	<effect_group tiered="false">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="jz_BuffDeadIsDeadResetTag"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-50"/><display_value name="foodHealthAmount" value="-200"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-100"/><display_value name="foodHealthAmount" value="-200"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInternalBleeding"/>
 	</effect_group>
 </item>
@@ -48935,11 +48935,10 @@ perkNightStalkerSilentNight
 	<property name="DescriptionKey" value="jz_HandTruckDesc" />
 	<property name="CustomIcon" value="decoHandTruck"/>
 	<property name="ItemWeight" value="20" />
+	<property name="Tags" value="HandTruckTag" />
 	<effect_group name="Hand Truck Effect">
 		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="jz_BuffHandTruck"/>
-		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="jz_BuffHandTruck"/>
-		
-		<display_value name="TSAddCarryWeight" value="-400"/>
+		<display_value name="TSAddCarryWeight" value="400"/>
 		<display_value name="TSItemWeight" value="20"/>
 	</effect_group>
 </item>

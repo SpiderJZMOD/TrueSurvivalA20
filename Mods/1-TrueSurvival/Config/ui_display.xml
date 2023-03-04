@@ -1180,24 +1180,29 @@ All the perk tags:
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_GasGrillCampfire">
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_CharcoalGrillCampfire">
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_WallOvenCampfire">
-			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
-			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
-			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+			<crafting_category name="StoveTop" icon="ui_game_symbol_fork" display_name="Stove Top" />
+			<crafting_category name="Oven" icon="ui_game_symbol_fork" display_name="Oven" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="Drinks" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="Chemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_OldStoveCampfire">
@@ -1205,6 +1210,7 @@ All the perk tags:
 			<crafting_category name="Oven" icon="ui_game_symbol_fork" display_name="Oven" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="Drinks" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="Chemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_ModernStoveCampfire">
@@ -1212,6 +1218,7 @@ All the perk tags:
 			<crafting_category name="Oven" icon="ui_game_symbol_fork" display_name="Oven" />
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="Drinks" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="Chemicals" />
+			<crafting_category name="CFOther" icon="ui_game_symbol_assemble" display_name="Other" />
 		</crafting_category_list>
 		
 		<crafting_category_list display_type="jz_KitchenWorkbench">

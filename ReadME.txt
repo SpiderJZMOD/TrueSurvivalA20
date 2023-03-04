@@ -4,7 +4,7 @@ Installation:
 For A20.6 Build. Drop the Mods Folder into your 7 Days To Die main directory and start the game with EAC Turned OFF.
 
 
-Needed Game Settings For True Survival-
+Needed Game Settings For True Survival to operate as intended-
 
 Difficulty Setting- Adventurer
 days- 60-90min
@@ -17,7 +17,7 @@ xp multiplier - 100%
 Block Damages - 100%
 Loot - 100%
 Drop all on death
-Spawning - 64
+Spawning(Alive & Bloodmoon) - 64
 Bedroll - 30 blocks 
 
 
