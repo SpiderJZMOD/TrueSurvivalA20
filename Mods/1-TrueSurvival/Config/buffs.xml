@@ -30169,18 +30169,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
         </effect_group>
 	</buff>
 		
-	<buff name="jz_BuffSpicyMeal" name_key="Spicy Meal" remove_on_death="true" description_key="jz_BuffSpicyMealDec" icon="NeckBandaged" >
-		<stack_type value="replace"/>
-		<duration value="1200"/>
+	<buff name="jz_BuffSpicyMeal" name_key="Spicy Meal" remove_on_death="true" description_key="jz_BuffSpicyMealDec" icon="SpicyBuff" >
+		<stack_type value="duration"/>
+		<duration value="600"/>
         <effect_group>   
-         	<passive_effect name="Mobility" operation="base_add" value=".1" />
+			<passive_effect name="Mobility" operation="base_add" value=".1" />
 			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
-			<passive_effect name="HyperthermalResist" operation="base_add" value="-10"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="-10"/>    
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffLacedMeal" name_key="Laced Meal" remove_on_death="true" description_key="jz_BuffLacedMealDesc" icon="NeckBandaged" >
-		<stack_type value="replace"/>
+	<buff name="jz_BuffLacedMeal" name_key="Laced Meal" remove_on_death="true" description_key="jz_BuffLacedMealDesc" icon="LacedBuff" >
+		<stack_type value="duration"/>
 		<duration value="1200"/>
         <effect_group>   
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Stamina" operation="add" value="2"/>
@@ -30188,21 +30188,18 @@ The abrasion healing rate is fastest with a first aid kit, then a medicated band
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffCoconutCheesecake" name_key="Coconut Cheesecake" remove_on_death="true" description_key="jz_BuffCoconutCheesecakeDesc" icon="NeckBandaged" >
-		<stack_type value="replace"/>
-		<duration value="1200"/>
+	<buff name="jz_BuffDessert" name_key="Sweet Dessert" remove_on_death="true" description_key="jz_BuffDessertDesc" icon="CheeseCakeBuff" >
+		<stack_type value="duration"/>
+		<duration value="300"/>
         <effect_group>   
-			<passive_effect name="HealthMax" operation="base_add" value="40"/>
-			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
-			<passive_effect name="HyperthermalResist" operation="base_add" value="-10"/>
+			<passive_effect name="Mobility" operation="base_add" value=".2" />
 		</effect_group>
 	</buff>
 	
-	<buff name="jz_BuffIceCream" name_key="Ice Cream" remove_on_death="true" description_key="jz_BuffIceCreamDesc" icon="NeckBandaged" >
-		<stack_type value="replace"/>
-		<duration value="1200"/>
+	<buff name="jz_BuffCoolingFood" name_key="Cooling Meal" remove_on_death="true" description_key="jz_BuffCoolingFoodDesc" icon="IceCreamBuff" >
+		<stack_type value="duration"/>
+		<duration value="600"/>
         <effect_group>   
-			<passive_effect name="StaminaMax" operation="base_add" value="40"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="-10"/>
 			<passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
 		</effect_group>

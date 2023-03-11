@@ -1136,6 +1136,8 @@
 				<requirement name="ProgressionLevel" progression_name="SP_MeatPieSchematic" operation="LT" value="1"/></triggered_effect>
             <triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_GumboStewSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_GumboStewSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_FruitSoupSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_FruitSoupSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_ShepardsPieSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_ShepardsPieSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_SpaghettiSchematic" level="-1">
@@ -1502,6 +1504,8 @@
 				<requirement name="ProgressionLevel" progression_name="SP_VinegarSchematic" operation="LT" value="1"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_HotSauceSchematic" level="-1">
 				<requirement name="ProgressionLevel" progression_name="SP_HotSauceSchematic" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="SP_FruitSoupSchematic" level="-1">
+				<requirement name="ProgressionLevel" progression_name="SP_FruitSoupSchematic" operation="LT" value="1"/></triggered_effect>
 			
 			<effect_description level="1" desc_key="jz_HobbiesCookingLongDesc" long_desc_key="jz_HobbiesCookingLongDesc"/>
 		</effect_group>
@@ -2976,11 +2980,18 @@
 			<effect_description level="1" desc_key="SP_PumpkinPieSchematicDesc" long_desc_key="SP_PumpkinPieSchematicDesc"/>
 		</effect_group>
 	</perk>
-	    
-    <perk name="SP_GumboStewSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Gumbo Stew" desc_key="SP_GumboStewSchematicDesc" icon="foodGumboStew">
+	
+	<perk name="SP_GumboStewSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Gumbo Stew" desc_key="SP_GumboStewSchematicDesc" icon="foodGumboStew">
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodGumboStew"/>
 			<effect_description level="1" desc_key="SP_GumboStewSchematicDesc" long_desc_key="SP_GumboStewSchematicDesc"/>
+		</effect_group>
+	</perk>
+    
+    <perk name="SP_FruitSoupSchematic" parent="jz_FoodRecipes" min_level="0" max_level="1" base_skill_point_cost="0" name_key="Fruit Soup" desc_key="SP_FruitSoupSchematicDesc" icon="jz_FoodFruitSoup">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="jz_FoodFruitSoup"/>
+			<effect_description level="1" desc_key="SP_FruitSoupSchematicDesc" long_desc_key="SP_FruitSoupSchematicDesc"/>
 		</effect_group>
 	</perk>
 	

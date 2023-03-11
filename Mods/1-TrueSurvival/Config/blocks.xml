@@ -4984,7 +4984,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="ladderMetal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_ScrapSteel" count="15" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="DescriptionKey" value="ladderMetalDesc"/>
@@ -10190,7 +10190,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<!--JZMOD SCREWDRIVER-->
 	<drop event="Harvest" name="resourceElectricParts" count="0,1" tag="ToolScrewdriver" />    
 	<drop event="Harvest" name="jz_ScrapWire" count="0,1" tag="ToolScrewdriver" />
-	<drop event="Harvest" name="resourceScrapIron" count="1,3" tag="ToolScrewdriver"/>	
+	<drop event="Harvest" name="jz_ScrapSteel" count="1,3" tag="ToolScrewdriver"/>	
 </block>
 
 <block name="powerSwitch02">
@@ -10244,7 +10244,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceScrapIron" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="jz_ScrapSteel" count="2,6" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<property name="FilterTags" value="MC_building,SC_electrical"/>
 	<property name="SortOrder1" value="70e2"/>
@@ -17032,7 +17032,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property class="RepairItems">
 		<property name="jz_SteelSheetMetal" value="10"/>
 	</property>
-	<drop event="Harvest" name="resourceScrapIron" count="60" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_ScrapSteel" count="30" tag="allHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="284"/>
@@ -21373,15 +21373,18 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Appliances/ac_unitPrefab"/>
 	<property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="52"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="1,20"/>
-	<drop event="Destroy" name="resourceRadiator" count="1" prob="0.7" tag="salvageHarvest"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="450"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 	<property name="Tags" value="ToolScrewdriver"/>
+	<!--JZMOD ANY-->
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,20"/>
+	<!--JZMOD WRENCH-->
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="jz_SteelPipe" count="0,2" prob="0.7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceRadiator" count="1" prob="0.7" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<!--JZMOD SCREWDRIVER-->
 	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="ToolScrewdriver" />    
 	<drop event="Harvest" name="resourceElectronicParts" count="0,2" tag="ToolScrewdriver" /> 
@@ -21396,14 +21399,18 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Appliances/vent_fanPrefab"/>
 	<property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="168"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="450"/> <!-- disassemble value -->
 	<property name="FilterTags" value="MC_building,SC_decor,MC_outdoor,SC_decor"/>
 	<property name="Tags" value="ToolScrewdriver"/>
+	<!--JZMOD ANY-->
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,20"/>
+	<!--JZMOD WRENCH-->
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
+	<drop event="Destroy" name="jz_SteelPipe" count="0,2" prob="0.7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceRadiator" count="1" prob="0.7" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<!--JZMOD SCREWDRIVER-->
 	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="ToolScrewdriver" />    
 	<drop event="Harvest" name="resourceElectronicParts" count="0,2" tag="ToolScrewdriver" /> 
@@ -21416,11 +21423,15 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Model" value="Entities/Appliances/vent_fan_doublePrefab"/>
 	<property name="MultiBlockDim" value="2,1,1"/>
 	<property name="DisplayType" value="blockMulti"/>
+	<!--JZMOD ANY-->
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,20"/>
+	<!--JZMOD WRENCH-->
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,5" tag="salvageHarvest"/>
-	<drop event="Destroy" name="resourceScrapIron" count="5,20"/>
-	<property name="Tags" value="ToolScrewdriver"/>
+	<drop event="Destroy" name="jz_SteelPipe" count="0,2" prob="0.7" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceRadiator" count="1" prob="0.7" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<!--JZMOD SCREWDRIVER-->
 	<drop event="Harvest" name="resourceElectricParts" count="3,12" tag="ToolScrewdriver" />    
 	<drop event="Harvest" name="resourceElectronicParts" count="0,2" tag="ToolScrewdriver" /> 
@@ -26419,8 +26430,10 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="DisplayType" value="blockHardenedMulti"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="DescriptionKey" value="jailBarsDesc"/>
-	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
+	<property name="Tags" value="ToolWrench"/>
+	<drop event="Harvest" name="jz_ScrapSteel" count="10,30" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
+	<drop event="Destroy" name="jz_SteelPipe" count="6" tag="ToolWrench"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
@@ -26713,8 +26726,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 		<property name="UpgradeHitCount" value="6"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="resourceScrapIron" count="96" tag="allHarvest"/>
+	<drop event="Harvest" name="jz_ScrapSteel" count="25" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceDoorKnob" count="1" tag="allHarvest"/>
+	<drop event="Destroy" name="jz_SteelPipe" count="6" tag="ToolWrench"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,advBuilding"/>
