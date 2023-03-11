@@ -1,6 +1,0 @@
-﻿<configs>
-
-<set xpath="/items/item[@name='casinoCoin']/property[@name='Tags']/@value">dukes,currency</set>
-<!-- ..... Wallet and Bank currency ^ ..... -->
-
-</configs>

@@ -1,4 +1,19 @@
 ********************************************True Survival Change Log*******************************************
+3/11/2023 A20.6 Build #1.15
+-Changed blocks made of steel material to drop Scrap Steel instead of iron
+-Added the chance to get Steel Pipes when wrenching some steel world blocks
+-Updated food buffs effects and icons
+-Fixed food items that lowered hydration wo lower hydration 
+-Fixed bug where lower hydration stat was displaying as double the proper amount
+-Fixed food items missing stat menus
+-Changed Better Digestion to not have a max duration
+-Added Better Digestion to Meat and Bear Stew
+-Fixed Dysentery Cure from triggering if you did not have dysentery and causing Wellness loss 
+-Fixed some food items not showing Stamina loss stat numbers
+-Added missing food item, recipe and book for Fruit Soup
+-Fixed reported localization errors
+-Slightly moved day counter on compass so double digits look correct
+//////////////////////////////////////////////////////////////////////////////
 3/4/2023 A20.6 Build #1.14
 -Fixed Light and Heavy Armor workstation block positioning 
 -Fixed Hot and Cold screen effect getting stuck on screen

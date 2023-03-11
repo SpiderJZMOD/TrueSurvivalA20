@@ -4828,6 +4828,7 @@ If there is no hit the default quality is used.
 	<item name="jz_SchematicFertilizer" />
     <item name="jz_SchematicFarmPlot" />
 	<item name="foodVegetableStewSchematic"/>
+	<item name="jz_SchematicFruitSoup"/>
 	<item name="foodMeatStewSchematic"/>
 	<item name="foodPumpkinBreadSchematic"/>
 	<item name="plantedYucca1Schematic"/>

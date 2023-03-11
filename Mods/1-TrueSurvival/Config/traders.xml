@@ -1053,6 +1053,7 @@ quality_mod: adjusts the price range of all items with a quality level.
             <item name="foodPumpkinBreadSchematic"  />
             <item name="foodMeatStewSchematic"  />
             <item name="foodVegetableStewSchematic"  />
+			<item name="jz_SchematicFruitSoup"/>
         </trader_item_group>
 
         <trader_item_group name="T3CookingBooks" count="1">
